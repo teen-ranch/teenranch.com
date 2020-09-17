@@ -1,0 +1,222 @@
+@import 'styles/vars';
+header {
+    position: sticky;
+    top:0;
+    z-index: 1;
+}
+.container--header {
+    border-bottom: 1px solid #fafafa;
+    height: 100px;
+    background: #fff;
+   
+    // background: $primary-dark;
+
+    .logo {
+        height: 60px;
+        // padding-top: 20px;
+    }
+
+    nav {
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;            
+        }
+
+        ul li {
+            display: inline-block;
+        }
+
+        a {
+            display: inline-block;
+            padding: 1.2rem 2.5rem;
+            line-height: 20px;
+            font-size: 1.6rem;
+            letter-spacing: 0.02em;
+            color: $primary-dark;
+            cursor: pointer;
+        }
+
+        a:hover {
+            color: $primary-light;
+        }
+
+        a.active {
+            color: $primary-light;
+        }
+
+        a.ctaLink {
+            background: $primary-light;
+            border-radius: $border-radius;
+            color: $primary-white;
+        }
+
+        a.ctaLink:hover {
+            background: darken($primary-light, 5);
+        }
+
+        .giveLink a {
+            border: 1px solid $primary-red;
+            border-radius: $border-radius;
+            color: $primary-red;
+        }
+        .giveLink a:hover {
+            background-color: lighten($primary-red, 48);
+        }
+
+        .subNavDivider {
+            // font-style: italic;
+            border-bottom: 1px solid #efefef;
+            margin-top: 1rem;
+            color: #999;
+            font-size: 1.2rem;
+            letter-spacing: 0.02em;
+            padding: .5rem 0;
+        }
+
+    }
+
+}
+
+@media screen and (min-width:64em) {
+    header {
+
+        // position: relative;
+        // position: sticky;
+        // top:0;
+        // z-index: 1;
+        .constrain {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .hamburgerMenu {
+            display: none !important;
+        }
+
+        li {
+            height: 100px;
+            position: relative;
+            a {
+                margin-top: 25px;
+            }
+        }
+
+        a.ctaLink {
+            margin-left: 2.5rem;
+        }
+
+        li:hover {
+            .subNav {
+                display: flex;
+            }
+        }
+        .subNav {
+            background: #fff;
+            position: absolute;
+            display: none;
+            border-radius: $border-radius;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+            padding: 4rem;
+            left: 50%;
+            top: 8rem;
+            transform: translateX(-50%);
+            z-index: 1;
+
+            li {
+                height: auto;
+                padding: 2rem 4rem;
+            }
+            
+            a {
+                font-size: 2rem;
+                margin: 0;
+                padding: 1rem 0;
+                white-space: nowrap;
+            }
+            
+            .subSubNav {
+                li {
+                    display: block;
+                    height: auto;
+                    padding: 0;
+                    a {
+                        margin: 0;
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+}
+@media screen and (max-width:63.999em) {
+    
+    .container--header {
+        height: 60px;
+        .logo {
+            height: 40px;
+            padding-top: 10px;
+        }
+        ul li {
+            display: block;
+            width: 100%;
+            // text-align: center;
+            a {
+                display: block;
+                padding: 1.2rem 0;
+            }
+        }
+
+        .subNavDivider {
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
+        ul.subSubNav {
+            li {
+                padding-left: 2rem;
+            }
+        }
+
+    }
+
+    .menu {
+        display: none;
+    }
+    .menu--expanded {
+        display: block;
+        padding-bottom: 2rem;
+    }
+
+    .header--expanded {
+        height: 100%;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        bottom: 0;
+        top: 0;
+        overflow-y: scroll;
+    }
+
+    .hamburgerMenu {
+        float: right;
+        background: none;
+        border: none;
+        appearance: none;
+        outline: none;
+        margin-right: -1rem;
+        margin-top: 1rem;
+    }
+
+    .giveLink a {
+        text-align: center;
+        margin: 0 0 1rem 0;
+    }
+    .ctaLink {
+        text-align: center;
+    }
+}

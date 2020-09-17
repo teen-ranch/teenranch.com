@@ -1,0 +1,42 @@
+@import 'styles/vars';
+
+.programContainer {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 8rem;
+    margin-top: 4rem;
+
+    .programImage {
+
+        img {
+            display: block;
+            width: 100%;
+            border-radius: 4px;
+            box-shadow: 
+                0 12px 24px rgba(0,0,0,0.3),
+                0 0 6px rgba(0,0,0,0.3)
+            ;
+        }
+
+    }
+
+}
+
+@media screen and (min-width:64em) {
+
+    .programContainer {
+        display: grid;
+        gap: 4rem;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .programContainer--swap {
+        grid-template-columns: 1fr 1fr;
+        .programBody {
+            grid-column-start: 1;
+            grid-row-start: 1;
+        }
+    }
+
+}

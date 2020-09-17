@@ -1,0 +1,89 @@
+@import 'styles/vars';
+
+.hamburgerMenu {
+    width: 44px;
+    height: 44px;
+    display: inline-block;
+    cursor: pointer;
+    overflow: visible;
+
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+}
+.hamburgerMenu:hover,
+.hamburgerMenu--active:hover {
+    opacity: 0.7;
+}
+
+.hamburgerBox {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+}
+
+.hamburgerInner {
+    top: 50%;
+    margin-top: -1px;
+}
+
+.hamburgerInner,
+.hamburgerInner::before,
+.hamburgerInner::after {
+    width: 18px;
+    height: 2px;
+    background: $primary-dark;
+    position: absolute;
+    left: 3px;
+
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease
+}
+.hamburgerInner::before,
+.hamburgerInner::after {
+    content: "";
+    display: block;
+}
+.hamburgerInner::before {
+    // top: 6px;
+    top: -5px;
+    left: 0;
+}
+.hamburgerInner::after {
+    bottom: -5px;
+    left: 0;
+}
+
+// Animation
+.hamburgerInner {
+    transition-duration: 0.075s;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburgerInner::before {
+    transition: top 0.075s 0.12s ease, opacity 0.075s ease;
+}
+
+.hamburgerInner::after {
+    transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburgerMenu--active .hamburgerInner {
+    transform: rotate(45deg);
+    transition-delay: 0.12s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
+}
+
+.hamburgerMenu--active .hamburgerInner::before {
+    top: 0;
+    opacity: 0;
+    transition: top 0.075s ease, opacity 0.075s 0.12s ease;
+}
+
+.hamburgerMenu--active .hamburgerInner::after {
+    bottom: 0;
+    transform: rotate(-90deg);
+    transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
