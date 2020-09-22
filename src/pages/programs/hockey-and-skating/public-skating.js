@@ -19,6 +19,15 @@ export default () => {
 			/>
             <Container type='body'>
 
+                <div style={{ textAlign: 'center', color: 'red', fontWeight: 'bold' }}>
+                    <p style={{ textTransform: 'uppercase' }}>
+                        Public skating is cancelled.
+                    </p>
+                    <p>
+                        Due to ongoing COVID-19 restrictions, public skating has been cancelled. We hope to be able to offer this program again soon!
+                    </p>
+                </div>
+
                 <Program src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/familyDay.jpg' name='Public skating'>
 
                     <p>
