@@ -44,7 +44,7 @@ export default () => {
                             </td></tr>
                             <tr><td>August 23</td><td>Teen Ranch</td><td>Entries closed</td></tr>
                             <tr><td>September 20</td><td>Teen Ranch</td><td>Entries closed</td></tr>
-                            <tr><td>September 27</td><td>Teen Ranch</td><td><Button target="_blank" href="https://forms.zohopublic.com/teenranch1/form/HorseShowSeptember272020/formperma/-954t2VeE0yq-aSu_fU5RI6Qnid5lhJUWLRIWLEk_pw?referrername=teenranch.com">September 27th entry form</Button></td></tr>
+                            <tr><td>September 27</td><td>Teen Ranch</td><td>Entries closed</td></tr>
                         </tbody>
                     </table>
                 </div>

@@ -80,6 +80,19 @@ export default () => {
                                     <a target="_blank" rel="noopener noreferrer" href="https://kiriashantz-photography.pixieset.com/teenranchhunterjumper-ring4/?fbclid=IwAR2-VhD1HgjTFKWplGO0wdns7-Wr8wbH9BoHIX-Au8rx4Hkst_9j0n8Z68Y">Ring 4 - All divisions</a>
                                 </td>
                             </tr>
+                            <tr>
+                                <td>September 20</td>
+                                <td>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/media/set/?vanity=PACTInc.Photography&set=a.2779049475750167">Novice Hack</a><br/>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/media/set/?vanity=PACTInc.Photography&set=a.2779059832415798">Intermediate Hunter 2'3"</a><br/>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/media/set/?vanity=PACTInc.Photography&set=a.2779072465747868">Novice Equitation 2'</a><br/>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/media/set/?vanity=PACTInc.Photography&set=a.2779085025746612">Green Hunter 2'</a><br/>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/media/set/?vanity=PACTInc.Photography&set=a.2779096235745491">Short Stirrup</a><br/>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/media/set/?vanity=PACTInc.Photography&set=a.2779107499077698">Candids</a>
+                                </td>
+                                <td></td>
+                                <td><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/media/set/?set=a.178696910542614&type=3">Ring 4</a></td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
