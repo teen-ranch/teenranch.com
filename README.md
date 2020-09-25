@@ -21,5 +21,6 @@ We only track information necessary to run our sports and retreat programs and o
 
 * [React](https://reactjs.org) - A JavaScript library for building modern interfaces
 * [Gatsby](https://gatsbyjs.com) - React-based static site generator
+* [Tueri](https://tueri.io) - Image hosting and transformation pipeline
 * [Netlify](https://www.netlify.com) - Hosting and Content Delivery Network (CDN)
 * [Plausible](https://plausible.io) - Privacy-friendly analytics
