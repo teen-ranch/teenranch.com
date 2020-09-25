@@ -2,7 +2,7 @@
 <a href="https://teenranch.com">
 <img alt="Teen Ranch Logo" src="./src/components/Header/teenRanchLogo_lightBGR.svg" />
 </a>
-<h1>
+<h1 align="center">
 The teenranch.com code repository
 </h1>
 </p>
