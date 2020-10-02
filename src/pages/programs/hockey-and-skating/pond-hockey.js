@@ -30,8 +30,14 @@ export default () => {
                     <h3>When</h3>
                     <p>
                         Saturdays: October 17, 2020 - February 27, 2021
-                        <br/>
-                        (No session December 26, 2020, January 2, 2021 or January 30, 2021)
+                        <br/><br/>
+                        <strong>No sessions on:</strong>
+                        <ul>
+                            <li>December 26, 2020</li>
+                            <li>January 2, 2021</li>
+                            <li>January 30, 2021</li>
+                            <li>February 13, 2021</li>
+                        </ul>
                     </p>
 
                     <div className="staffTable">
