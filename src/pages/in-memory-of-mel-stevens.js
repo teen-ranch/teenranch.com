@@ -26,7 +26,7 @@ export default () => {
                     <h3>In loving memory of Mel Stevens</h3>
 
                     <p>
-                        With great thankfulness to God for the life of Mel Stevens. Mel was promoted to glory at Headwaters Health Care Centre on August 8, 2020. He gave his life to the Lord through servant hood in music, sports, and Christian camping. He leaves behind his wife Betty and children Tim(Ann), Michele, Steven(Christine), Lee(Mark), Sheryl, and Corrie(Jim). Mel was a true disciple and example of Jesus’ teachings to his grandchildren Dane(Katie), Matthew, Michael, Janet, Rachel, Abby, Aly(James), Madi, Dustin, Cody, Ella, Katie, Luke, Grace, Elly, and Ty, as well as his great-grandchildren Lochlan and Elowen. Mel will be truly missed by his brother Dave(Darlene) Stevens. Predeceased by his wife Janet, granddaughter Layne, brother Ron and parents Allin and Bernice.
+                        Mel Stevens was promoted to glory August 8, 2020 having wholeheartedly invested his life to serve God through music, sports, and Christian camping.
                     </p>
 
                     <p>
@@ -46,7 +46,7 @@ export default () => {
                     </p>
 
                     <p>
-                    Im memory of Mel, a financial gift to Teen Ranch or Teen Ranch Ministries will be gratefully received. Details can be found at <Link to='/give/'>teenranch.com/give</Link>
+                        In memory of Mel, a financial gift to Teen Ranch or Teen Ranch Ministries will be gratefully received. Details can be found at <Link to='/give/'>teenranch.com/give</Link>
                     </p>
 
                     <div className='liveServiceLink'>
