@@ -7,6 +7,7 @@ import { Link } from '@reach/router'
 import './mel-stevens.scss'
 
 import Video from 'components/Video'
+import ExternalLink from 'components/ExternalLink'
 
 export default () => {
 
@@ -65,8 +66,8 @@ export default () => {
                     <h3>Articles</h3>
 
                     <ul>
-                        <li><a target="_blank" rel="noopener noreferrer" href="http://caledoncitizen.com/?p=33165">Caledon Citizen: Teen Ranch founder Mel Stevens remembered by friends, family and the local community</a></li>
-                        <li><a target="_blank" rel="noopener noreferrer" href="https://mailchi.mp/a1bed8a3243b/ccicanada-feb-7862358?e=2b0cf48f76#templateHeader">CCI Canada: Mel Stevens - Servant In a White Stetson</a></li>
+                        <li><ExternalLink href="http://caledoncitizen.com/?p=33165">Caledon Citizen: Teen Ranch founder Mel Stevens remembered by friends, family and the local community</ExternalLink></li>
+                        <li><ExternalLink rel="noopener noreferrer" href="https://mailchi.mp/a1bed8a3243b/ccicanada-feb-7862358?e=2b0cf48f76#templateHeader">CCI Canada: Mel Stevens - Servant In a White Stetson</ExternalLink></li>
                     </ul>
 
                 </div>
