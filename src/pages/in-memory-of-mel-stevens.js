@@ -6,6 +6,8 @@ import { Link } from '@reach/router'
 
 import './mel-stevens.scss'
 
+import Video from 'components/Video'
+
 export default () => {
 
 	return (
@@ -21,23 +23,10 @@ export default () => {
             <Container type='body' constrain={false}>
                 <div style={{ maxWidth: '680px', margin: '0 auto', fontSize: '18px', color: 'rgb(41, 41, 41)', letterSpacing: '0.01em', lineHeight: '26px', padding: '0 2rem' }}>
 
-                    <div className='liveServiceLink'>
-
-                        {/* <p><strong>If you didn't get a chance, or had trouble watching the service live, the recording will be posted here later today.</strong></p> */}
-                        <p><i>Thank you Rob, April, Bobbi, Joe and the Fawcett Funeral Home staff for your tremendous generosity of time, effort, and service to help us honor Mel Stevens' life and the God he served, by God's grace, so well.</i></p>
-
-                        <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=IV2kh5DB5HQ"><i className='material-icons'>play_circle_filled</i>Watch the service here</a>
-
-                    </div>
-
-                    <h3>Obituary</h3>
+                    <h3>In loving memory of Mel Stevens</h3>
 
                     <p>
                         With great thankfulness to God for the life of Mel Stevens. Mel was promoted to glory at Headwaters Health Care Centre on August 8, 2020. He gave his life to the Lord through servant hood in music, sports, and Christian camping. He leaves behind his wife Betty and children Tim(Ann), Michele, Steven(Christine), Lee(Mark), Sheryl, and Corrie(Jim). Mel was a true disciple and example of Jesus’ teachings to his grandchildren Dane(Katie), Matthew, Michael, Janet, Rachel, Abby, Aly(James), Madi, Dustin, Cody, Ella, Katie, Luke, Grace, Elly, and Ty, as well as his great-grandchildren Lochlan and Elowen. Mel will be truly missed by his brother Dave(Darlene) Stevens. Predeceased by his wife Janet, granddaughter Layne, brother Ron and parents Allin and Bernice.
-                    </p>
-
-                    <p>
-                        To respect the social distancing guidelines currently in place, a virtual tribute and live-stream service will be offered on Thursday, August 13 beginning with a photo tribute, the story of Teen Ranch and accomplishment highlights at 10 am followed by the funeral service at 11 am. A financial gift to Teen Ranch or Teen Ranch Ministries will be gratefully received. You can give directly to Teen Ranch at <Link to='/give/'>teenranch.com/give</Link>
                     </p>
 
                     <p>
@@ -57,15 +46,28 @@ export default () => {
                     </p>
 
                     <p>
-                    In lieu of flowers, a financial gift to Teen Ranch or Teen Ranch Ministries will be gratefully received. Details can be found at <Link to='/give/'>teenranch.com/give</Link>
+                    Im memory of Mel, a financial gift to Teen Ranch or Teen Ranch Ministries will be gratefully received. Details can be found at <Link to='/give/'>teenranch.com/give</Link>
                     </p>
 
-                    <h3>Service details</h3>
+                    <div className='liveServiceLink'>
 
-                    <h5>Thursday, August 13th, 2020 @ 11:00am</h5>
+                        <p><i>Thank you Rob, April, Bobbi, Joe and the Fawcett Funeral Home staff for your tremendous generosity of time, effort, and service to help us honor Mel Stevens' life and the God he served, by God's grace, so well.</i></p>
 
-                    A link to view the service online will be updated closer to the service time. Please visit www.fawcettfuneralhome.ca and click on Mel's photo obituary on Thursday morning. To respect the social distancing guidelines currently in place funeral attendance is limited to invitation only. A virtual tribute and live-stream service will be offered on Thursday, August 13 beginning with a photo tribute, the story of Teen Ranch and accomplishment highlights at 10 am followed by the funeral service at 11 am.
-                    
+                    </div>
+
+                    <h3>Videos</h3>
+
+                    <Video src='https://www.youtube.com/embed/XU-oqJ5s7UM' />
+                    <Video src='https://www.youtube.com/embed/FWyFqFVfNZ0' />
+                    <Video src='https://www.youtube.com/embed/ac0bdQzgVe0' />
+                    <Video src='https://www.youtube.com/embed/M4T26xw_KHw' />
+
+                    <h3>Articles</h3>
+
+                    <ul>
+                        <li><a target="_blank" rel="noopener noreferrer" href="http://caledoncitizen.com/?p=33165">Caledon Citizen: Teen Ranch founder Mel Stevens remembered by friends, family and the local community</a></li>
+                        <li><a target="_blank" rel="noopener noreferrer" href="https://mailchi.mp/a1bed8a3243b/ccicanada-feb-7862358?e=2b0cf48f76#templateHeader">CCI Canada: Mel Stevens - Servant In a White Stetson</a></li>
+                    </ul>
 
                 </div>
 
