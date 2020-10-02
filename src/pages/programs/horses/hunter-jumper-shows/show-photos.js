@@ -88,7 +88,7 @@ export default () => {
                                     <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/media/set/?vanity=PACTInc.Photography&set=a.2779072465747868">Ring 1 - Novice Equitation 2'</a><br/>
                                     <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/media/set/?vanity=PACTInc.Photography&set=a.2779085025746612">Ring 1 - Green Hunter 2'</a><br/>
                                     <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/media/set/?vanity=PACTInc.Photography&set=a.2779096235745491">Ring 1 - Short Stirrup</a><br/>
-                                    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/media/set/?vanity=PACTInc.Photography&set=a.2779107499077698">Ring 1 - Candids</a>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/media/set/?vanity=PACTInc.Photography&set=a.2779107499077698">Ring 1 - Candid Photos</a>
                                 </td>
                                 <td>
                                     <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/media/set/?vanity=sutherlandimages&set=a.825882441538665">Ring 3 - Open Hack</a><br/>
@@ -99,6 +99,20 @@ export default () => {
                                     <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/media/set/?vanity=sutherlandimages&set=a.827496664710576">Ring 3 - Jumper</a>
                                 </td>
                                 <td><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/media/set/?set=a.178696910542614&type=3">Ring 4 - All divisions</a></td>
+                            </tr>
+                            <tr>
+                                <td>September 27</td>
+                                <td></td>
+                                <td>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/media/set/?vanity=PACTInc.Photography&set=a.2785272471794534">Ring 3 - Open Hack</a><br/>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/media/set/?vanity=PACTInc.Photography&set=a.2785288155126299">Ring 3 - 2' Hunter</a><br/>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/media/set/?vanity=PACTInc.Photography&set=a.2785309648457483">Ring 3 - 2'3" Hunter</a><br/>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/media/set/?vanity=PACTInc.Photography&set=a.2785322571789524">Ring 3 - Open Equitation</a><br/>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/media/set/?vanity=PACTInc.Photography&set=a.2785340678454380">Ring 3 - Hi/Low Hunter</a><br/>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/media/set/?vanity=PACTInc.Photography&set=a.2785372618451186">Ring 3 - Jumper</a><br/>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/media/set/?vanity=PACTInc.Photography&set=a.2785389985116116">Ring 3 - Candid Photos</a>
+                                </td>
+                                <td></td>
                             </tr>
                         </tbody>
                     </table>
