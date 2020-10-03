@@ -11,14 +11,14 @@ export default () => {
             <Heading
                 src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/DSC_0513.JPG'
                 alt='Smiling kids playing hockey'
-				title='Pond hockey league'
+				title='Pond hockey'
                 subtitle='A year-long development program for boys and girls ages 5-17'
-                metaTitle='Pond hockey league'
-                metaDescription='Pond hockey league is a year-long development program for boys and girls ages 5-17 years old. There are three levels: Learn to Play, Junior and Senior to accommodate all levels of development.'
+                metaTitle='Pond hockey'
+                metaDescription='Pond hockey is a year-long development program for boys and girls ages 5-17 years old. There are three levels: Learn to Play, Junior and Senior to accommodate all levels of development.'
 			/>
             <Container type='body'>
 
-                <Program src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/DSC_0513.JPG' name='Pond hockey league'>
+                <Program src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/DSC_0513.JPG' name='Pond hockey'>
 
                     <p>
                         Pond Hockey is a year-long development program for boys and girls ages 5-17 years old. There are three levels: Learn to Play, Junior and Senior to accommodate all levels of development. This is not a graduated program, Teen Ranch staff will assess your child and place them in an appropriate level. Don't worry! If your skill level progresses quickly, the coaching staff may move you to the next level. If the level that you are in is too difficult they can accommodate your learning needs in a lower level.
@@ -30,8 +30,14 @@ export default () => {
                     <h3>When</h3>
                     <p>
                         Saturdays: October 17, 2020 - February 27, 2021
-                        <br/>
-                        (No session December 26, 2020, January 2, 2021 or January 30, 2021)
+                        <br/><br/>
+                        <strong>No sessions on:</strong>
+                        <ul>
+                            <li>December 26, 2020</li>
+                            <li>January 2, 2021</li>
+                            <li>January 30, 2021</li>
+                            <li>February 13, 2021</li>
+                        </ul>
                     </p>
 
                     <div className="staffTable">

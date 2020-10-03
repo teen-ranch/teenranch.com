@@ -46,11 +46,11 @@ export default function Header({ location }) {
                                     </ul>
                                     <div className='subNavDivider'>Leagues</div>
                                     <ul className='subSubNav'>
-                                        <li><NavLink to='/programs/hockey-and-skating/pond-hockey-league'>Pond hockey league</NavLink></li>
                                         <li><NavLink to='/programs/hockey-and-skating/mens-hockey-league'>Men's hockey league</NavLink></li>
                                     </ul>
                                     <div className='subNavDivider'>Recreation</div>
                                     <ul className='subSubNav'>
+                                        <li><NavLink to='/programs/hockey-and-skating/pond-hockey'>Pond hockey</NavLink></li>
                                         <li><NavLink to='/programs/hockey-and-skating/ice-rental'>Ice rental</NavLink></li>
                                         <li><NavLink to='/programs/hockey-and-skating/public-skating'>Public skating</NavLink></li>
                                     </ul>

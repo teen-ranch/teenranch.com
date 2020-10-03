@@ -3,6 +3,7 @@ import Container from 'components/Container'
 import Heading from 'components/Heading'
 import Button from 'components/Button'
 import Program from 'components/Program'
+import ExternalLink from 'components/ExternalLink'
 
 export default () => {
 
@@ -51,7 +52,7 @@ export default () => {
                 <p>This program is for the beginner skater and will focus on the basic skills of balance, forward and backward skating and stopping.</p>
 
                 <h3>Intro to figure skating</h3>
-                <p>Skaters that have achieved basic skills and have an interest in figure skating will be introduced to edges, turns, crosscuts, spins and jumps. A figure skate with good fit and support will speed progress. We recommend <a target="_blank" rel="noopener noreferrer" href="https://www.skatingboutique.com/">skatingboutique.com</a> When participants have mastered introductory figure skating skills, they will be invited to join the Dufferin-Peel Skating Club to pursue Skate Canada tests and competitions.</p>
+                <p>Skaters that have achieved basic skills and have an interest in figure skating will be introduced to edges, turns, crosscuts, spins and jumps. A figure skate with good fit and support will speed progress. We recommend <ExternalLink href="https://www.skatingboutique.com/">skatingboutique.com</ExternalLink> When participants have mastered introductory figure skating skills, they will be invited to join the Dufferin-Peel Skating Club to pursue Skate Canada tests and competitions.</p>
 
                 <h3>Intro to hockey skating</h3>
                 <p>

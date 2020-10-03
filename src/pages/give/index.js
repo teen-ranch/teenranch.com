@@ -3,6 +3,7 @@ import Container from 'components/Container'
 import Heading from 'components/Heading'
 
 import './give.scss'
+import ExternalLink from 'components/ExternalLink'
 
 export default () => {
 
@@ -53,7 +54,7 @@ export default () => {
 
                             <h5>How to donate to Teen Ranch Ministries:</h5>
                             <ul>
-                                <li><strong>Online:</strong> <a target="_blank" rel="noopener noreferrer" href="https://teenranchministries.org/donate">https://teenranchministries.org</a></li>
+                                <li><strong>Online:</strong> <ExternalLink href="https://teenranchministries.org/donate">https://teenranchministries.org</ExternalLink></li>
                                 <li><strong>E-transfer:</strong> <a href="mailto:giving@teenranchministries.org">giving@teenranchministries.org</a></li>
                                 <li><strong>Cheque:</strong> payable to "Teen Ranch Ministries"</li>
                                 <li><strong>Cash:</strong> indicate monies are for "Teen Ranch Ministries"</li>
