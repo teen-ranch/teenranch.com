@@ -4,9 +4,27 @@ import Heading from 'components/Heading'
 
 import ExternalLink from 'components/ExternalLink'
 
+import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
+
+import Grid from 'components/Grid'
+import Sponsor from 'components/Sponsor'
+
 import '../horses.scss'
 
-export default () => {
+const URLS = {
+    'J & R Photography': 'https://www.facebook.com/jandrphoto/',
+    'Anneli Tapanila Photography': 'https://www.facebook.com/annelitapanilaphotography',
+    'Brydon Clark Photography': 'https://www.facebook.com/Brydon-Clark-Photography-112027537209552/',
+    'Kiria Shantz Photography': 'https://www.facebook.com/KiriaSPhotography',
+    'PACT Photography': 'https://www.facebook.com/PACTInc.Photography/',
+    'Sutherland Images': 'https://www.facebook.com/sutherlandimages',
+    'Teresa Finnerty Photography': 'https://www.facebook.com/teresamaefinnertyfoto'
+}
+
+export default ({ data }) => {
+
+    const { images } = data
 
 	return (
         <>
@@ -128,6 +146,48 @@ export default () => {
 
 
             </Container>
+
+            <Container type='body'>
+
+                <h2>Photographers</h2>
+
+                <Grid
+                    lg={2}
+                    xl={3}
+                    gap={ false }
+                >
+
+                    {
+                        images && images.edges && images.edges.map((edge, i) => {
+
+                            const url = URLS[edge.node.name]
+
+                            return <Sponsor key={i}><a target="_blank" rel="noopener noreferrer" href={ url }><Img fluid={ edge.node.childImageSharp.fluid } alt={ edge.node.name } /></a></Sponsor>
+
+                        })
+                    }
+
+                </Grid>
+
+            </Container>
+
         </>
     )
 }
+
+export const query = graphql`
+    query {
+        images: allFile(filter: { relativeDirectory: { eq: "hunter-jumper/photographers" }}) {
+            edges {
+            node {
+                name
+                childImageSharp {
+                    fluid {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
+            }
+        }
+    }
+`
