@@ -3,10 +3,17 @@ import Container from 'components/Container'
 import Heading from 'components/Heading'
 import Button from 'components/Button'
 import Program from 'components/Program'
+import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
+
+import Grid from 'components/Grid'
+import Sponsor from 'components/Sponsor'
 
 import '../horses.scss'
 
-export default () => {
+export default ({ data }) => {
+    
+    const { images } = data
 
 	return (
         <>
@@ -143,6 +150,45 @@ export default () => {
                 </ul>
 
             </Container>
+
+            <Container type='body'>
+
+                <h2>Sponsors</h2>
+
+                <Grid
+                    lg={3}
+                    xl={5}
+                    gap={ false }
+                >
+
+                    {
+                        images && images.edges && images.edges.map((edge, i) => {
+
+                            return <Sponsor key={i}><Img fluid={ edge.node.childImageSharp.fluid } alt={ edge.node.name } /></Sponsor>
+
+                        })
+                    }
+
+                </Grid>
+
+            </Container>
         </>
     )
 }
+
+export const query = graphql`
+    query {
+        images: allFile(filter: { relativeDirectory: { eq: "hunter-jumper/sponsors" }}) {
+            edges {
+            node {
+                name
+                childImageSharp {
+                    fluid {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
+            }
+        }
+    }
+`
