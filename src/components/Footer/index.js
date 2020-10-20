@@ -9,7 +9,7 @@ export default function Footer() {
 
     const data = useStaticQuery(query)
 
-    console.log(data)
+    // console.log(data)
     
     return (
         <footer>

@@ -70,6 +70,11 @@ export default function Header({ location }) {
                                         <li><NavLink to='/programs/horses/trail-rides'>Trail rides</NavLink></li>
                                     </ul>
                                 </li>
+                                <li><NavLink to='/events'>Events</NavLink>
+                                    <ul className='subSubNav'>
+                                        <li><NavLink to='/events/october-maskquerade'>October MASKquerade</NavLink></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </li>
                         <li><NavLink to="/staff/">Staff</NavLink></li>
