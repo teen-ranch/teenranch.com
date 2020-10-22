@@ -50,6 +50,7 @@
     ]
   },
   "devDependencies": {
+    "gatsby-plugin-force-trailing-slashes": "^1.0.4",
     "prettier": "2.1.0"
   },
   "repository": {

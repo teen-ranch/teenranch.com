@@ -1,8 +1,66 @@
 @import 'styles/vars';
 
 footer {
-    text-align: center;
-    padding: 6rem 0;
-    color: $primary-black;
+    padding: 8rem 0;
+    color: $primary-white;
     font-size: 1.2rem;
+    background: $primary-dark;
+
+    .footerTitle {
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        letter-spacing: 0.02em;
+        font-weight: bold;
+    }
+
+    .subNavDivider {
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    .copyright {
+        text-align: center;
+        font-size: 1.1rem;
+        letter-spacing: 0.15em;
+        line-height: 2rem;
+        margin-top: 8rem;
+        text-transform: uppercase;
+        color: rgba(255,255,255,0.4);
+    }
+
+    .footerNavigation {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            padding-bottom: 1.5rem;
+            a {
+                font-size: 1.4rem;
+            }
+        }
+
+    }
+   
+}
+
+@media screen and (min-width: $lg) {
+
+    .footer__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+
+
+        .footerNavigation {
+
+            li {
+                padding-bottom: 1.5rem;
+            }
+
+        }
+
+    }
+
 }

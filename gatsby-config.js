@@ -35,7 +35,12 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-sitemap`,
-    `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        navigateFallbackWhitelist: [/\/$/]
+      }
+    },
     'gatsby-plugin-resolve-src',
     {
       resolve: `gatsby-plugin-canonical-urls`,
@@ -58,6 +63,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-force-trailing-slashes`
   ],
 }
