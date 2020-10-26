@@ -12,6 +12,7 @@ footer {
         font-size: 1.2rem;
         letter-spacing: 0.02em;
         font-weight: bold;
+        color: rgba(255,255,255,0.4);
     }
 
     .subNavDivider {
@@ -38,6 +39,7 @@ footer {
             padding-bottom: 1.5rem;
             a {
                 font-size: 1.4rem;
+                color: lighten($primary-light, 20);
             }
         }
 
