@@ -140,6 +140,18 @@ export default ({ data }) => {
                                     <ExternalLink href="https://www.facebook.com/media/set/?set=a.831318784328364&type=3">Ring 4 - All divisions</ExternalLink>
                                 </td>
                             </tr>
+							<tr>
+								<td>October 25</td>
+								<td>
+									<ExternalLink href="https://www.facebook.com/media/set/?vanity=jandrphoto&set=a.2538096613149877">Ring 1 - All divisions</ExternalLink>
+								</td>
+								<td>
+									<ExternalLink href="https://www.facebook.com/media/set/?vanity=jandrphoto&set=a.2538110273148511">Ring 3 - All divisions</ExternalLink>
+								</td>
+								<td>
+									<ExternalLink href="https://www.facebook.com/media/set/?vanity=jandrphoto&set=a.2538087136484158">Ring 4 - All divisions</ExternalLink>
+								</td>
+							</tr>
                         </tbody>
                     </table>
                 </div>
