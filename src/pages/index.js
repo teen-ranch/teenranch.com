@@ -4,8 +4,11 @@ import Heading from 'components/Heading'
 // import Button from 'components/Button'
 import { Img } from 'components/Tueri'
 import { Link } from '@reach/router'
+import { graphql } from 'gatsby'
+import Program from 'components/Program'
+import Button from 'components/Button'
 
-export default () => {
+export default ({ data }) => {
 	
 	return (
 	
@@ -49,6 +52,34 @@ export default () => {
 				metaTitle='A premier sports resort and retreat centre since 1967'
 				metaDescription='Less than an hour from Toronto in the heart of Caledon, Ontario'
 			/>
+
+			<Container type='body'>
+
+				<Program
+					src={data.file.childImageSharp.fluid}
+					name='Leadership & Development: Adventure Bible Program'
+				>
+					<p>This solid, Christ-centered experiential program is designed to ground young adults in God's Word and equip them for a vibrant walk with Jesus while challenging them through adventure and outreach.</p>
+
+					<Button to='/programs/leadership/adventure-bible-program/'>Learn more</Button>
+				</Program>
+
+			</Container>
+
 		</>
 	)
 }
+
+export const query = graphql`
+
+    query {
+
+        file(relativePath: { eq: "stock/chang-duong-Sj0iMtq_Z4w-unsplash.jpg" }) {
+			childImageSharp {
+				fluid(maxWidth: 1920 quality: 64) {
+					...GatsbyImageSharpFluid_withWebp
+				}
+			}
+		}
+	}
+`

@@ -52,9 +52,9 @@ export default function Footer() {
 
                     <div>
                         <div className='footerTitle'>Events</div>
-                        <ul className='footerNavigation'>
+                        {/* <ul className='footerNavigation'>
                             <li><Link to='/events/october-maskquerade/'>October MASKquerade</Link></li>
-                        </ul>
+                        </ul> */}
 
                         <div className='footerTitle'>Leadership</div>
                         <ul className='footerNavigation'>
@@ -65,8 +65,9 @@ export default function Footer() {
                     <div>
                         <div className='footerTitle'>Teen Ranch Canada</div>
                         <ul className='footerNavigation'>
-                            <li><Link to='/about-teen-ranch/'>About Teen Ranch</Link></li>
+                            {/* <li><Link to='/about-teen-ranch/'>About Teen Ranch</Link></li> */}
                             <li><Link to='/teen-ranch-statement-of-faith/'>Our statement of faith</Link></li>
+                            <li><Link to='/facilities/'>Our facilities</Link></li>
                             <li><Link to='/contact/'>Contact Teen Ranch</Link></li>
                         </ul>
                     </div>

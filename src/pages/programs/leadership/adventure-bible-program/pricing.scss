@@ -1,0 +1,176 @@
+@import 'styles/vars';
+
+.priceWrapper {
+    box-shadow: 
+        0 1px 1px 0 rgba(60,64,67,.08),
+        0 4px 12px 1px rgba(60,64,67,.26)
+    ;
+    border-radius: 20px;
+    margin: 6rem 0;
+}
+
+.priceContainer {
+    max-width: 320px;
+    background: #fff;
+    border-radius: 20px 0 0 20px;
+    flex: 1 0;
+    padding: 8rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .price {
+        color: $primary-light;
+        font-size: 8rem;
+        letter-spacing: 0.02em;
+        sm {
+            font-size: 3.6rem;
+        }
+        strike {
+            font-size: 3rem;
+            sm {
+                font-size: 3rem;
+            }
+        }
+    }
+
+    // .pricePer {
+    //     font-size: 4rem;
+    //     color: rgba(0,0,0,0.6);
+    // }
+
+    .priceDisclaimer {
+        margin-top: 1rem;
+        font-size: 2.2rem;
+    }
+
+    .button {
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    .onlinePaymentContainer {
+        margin-top: 8rem;
+        letter-spacing: 0.02em;
+
+        .onlinePaymentTitle {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .onlinePaymentDisclaimer {
+            font-size: 1.1rem;
+            margin-top: -1rem;
+            margin-bottom: 8rem;
+        }
+
+        .onlinePaymentRate {
+            margin: 1rem 0;
+            font-size: 2rem;
+        }
+
+        .onlinePaymentOptional {
+            font-size: 1.2rem;
+            margin-bottom: -4rem;
+            color: rgba(0,0,0,0.6);
+        }
+    }
+
+}
+
+.priceFeatures {
+    background: #eee;
+    flex: 1 0;
+    padding: 8rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .priceBenefits {
+        list-style: none;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        line-height: 24px;
+        margin: 1rem 0;
+        letter-spacing: 0.02em;
+        color: rgba(0,0,0,0.75);
+        font-size: 1.8rem;
+        li {
+            padding: .5rem 0;
+            white-space: nowrap;
+        }
+        i {
+            vertical-align: bottom;
+            margin-right: 1rem;
+            color: lighten($primary-dark, 20);
+        }
+
+    }
+
+    .button {
+        margin-top: 4rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+}
+
+.sessionContainer {
+    margin: 6rem 0;
+    box-shadow: 
+        0 1px 1px 0 rgba(60,64,67,.08),
+        0 4px 12px 1px rgba(60,64,67,.16)
+    ;
+    border-radius: 10px;
+    padding: 4rem;
+
+    .sessionTitle {
+        text-align: center;
+        color: $primary-light;
+        font-size: 3rem;
+        .sessionYear {
+            font-size: .8em;
+        }
+    }
+
+    .sessionDate {
+        padding: 2rem 0;
+        text-align: center;
+        color: rgba(0,0,0,0.75);
+        font-size: 1.8rem;
+    }
+
+}
+
+
+@media screen and (min-width: $lg) {
+
+    .priceOuterWrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .priceWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .priceFeatures {
+        border-radius: 0 20px 20px 0;
+    }
+
+    .sessionWrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sessionContainer:not(:first-of-type) {
+        margin-left: 4rem;
+    }
+
+}

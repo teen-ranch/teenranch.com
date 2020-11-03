@@ -17,3 +17,16 @@
     background: darken($primary-light, 10);
     color: $primary-white;
 }
+
+.buttonContainer {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.button.cta {
+
+    font-size: 2rem;
+    padding: 2rem 6rem;
+    margin: 0 auto;
+
+}

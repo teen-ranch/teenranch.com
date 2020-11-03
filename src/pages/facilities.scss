@@ -1,0 +1,10 @@
+@import 'styles/vars';
+
+@media screen and (min-width: $lg) {
+
+    .facilityWrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
