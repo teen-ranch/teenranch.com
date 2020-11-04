@@ -12,6 +12,8 @@ import { PrimaryButton, CTAButton } from 'components/Button'
 
 import Img from 'gatsby-image'
 
+import './adventure-bible-program/pricing.scss'
+
 export const frontmatter = {
     title: 'Adventure Bible Program',
     path: '/programs/leadership/adventure-bible-program/'
@@ -63,7 +65,11 @@ export default function Programs({ data }) {
                     Winter, Spring, and Fall options are available for the busy young adult to take a brief time away to solidify their faith or to combine sessions to make the greatest training experience possible during a gap year or break from university or work. These sessions can be taken in any order and will pair with Teen Ranch camp and ministry programs for the avid young adult seeking to gain added leadership and ministry experience and invest in young people in-between the offered program sessions or after their time.
                 </p>
 
-                <CTAButton target="_blank" href="https://forms.zohopublic.com/teenranch1/form/APBInfo/formperma/7rxw-sxZPcZvLMAHZkGtR2OhXfLV2e8W16n6NbLuktQ">Apply Now</CTAButton>
+                <CTAButton target="_blank" href="https://zfrmz.com/uFexR2s79N4btrSyO7nO">Apply Now</CTAButton>
+                <div className='priceLink'>
+                    <Link to='/programs/leadership/adventure-bible-program/pricing/'>See pricing</Link> | <a href="mailto:camp@teenranch.com?subject=Adventure%20Bible%20Program">More info</a>
+                </div>
+
 
                 <Program
                     name='Growth'
@@ -135,7 +141,10 @@ export default function Programs({ data }) {
 
                 </Program>
 
-                <CTAButton target="_blank" href="https://forms.zohopublic.com/teenranch1/form/APBInfo/formperma/7rxw-sxZPcZvLMAHZkGtR2OhXfLV2e8W16n6NbLuktQ">Apply Now</CTAButton>
+                <CTAButton target="_blank" href="https://zfrmz.com/uFexR2s79N4btrSyO7nO">Apply Now</CTAButton>
+                <div className='priceLink'>
+                    <Link to='/programs/leadership/adventure-bible-program/pricing/'>See pricing</Link> | <a href="mailto:camp@teenranch.com?subject=Adventure%20Bible%20Program">More info</a>
+                </div>
 
                 <h3>Sample schedule</h3>
 
@@ -148,7 +157,8 @@ export default function Programs({ data }) {
                     <li><strong>The Saturday Special:</strong> Eat out or bag supper</li>
                 </ul>
 
-                <PrimaryButton target="_blank" href="/adventureBibleProgram_covid19Policy.pdf">Covid-19 Policy</PrimaryButton>
+                <div><PrimaryButton target="_blank" href="/adventureBibleProgram_covid19Policy.pdf">Covid-19 Policy</PrimaryButton></div>
+                <div><PrimaryButton  to="/facilities/">Our facilities</PrimaryButton></div>
 
             </Container>
         </>

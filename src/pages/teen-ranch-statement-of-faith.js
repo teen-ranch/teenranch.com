@@ -63,16 +63,6 @@ export default ({ data }) => {
                         We are to be part of Christ’s Body, the Church, composed of all true believers, which exists to
                         proclaim God’s truth, to stimulate growth to maturity and to worship God.
                     </p>
-                    
-                    <p>
-                        <i>
-                            The Teen Ranch Statement of Faith endeavors to summarize the fundamental beliefs embraced by the Board
-                            and Senior Staff. Since the Ranch is interdenominational and staff comes from various backgrounds and
-                            denominations, personal beliefs with concern to disputable or controversial doctrinal issues should <strong>not</strong> be
-                            stressed in relationships with fellow staff members or guests, nor included in our <strong>teaching</strong>. <strong>We ask staff to
-                            avoid creating division, but instead, work toward order and harmony for God’s glory.</strong>
-                        </i>
-                    </p>
 
                     <p>
                         <i>
