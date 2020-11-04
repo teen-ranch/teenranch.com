@@ -44,3 +44,11 @@ export default function Button({ children, style, className, to, href, onClick, 
 
     return <El { ...elementType.properties }>{ children }</El>
 }
+
+export function PrimaryButton({ ...rest }) {
+    return <Button className='primary' {...rest} />
+}
+
+export function CTAButton({ ...rest }) {
+    return <div className='buttonContainer'><Button className='cta' { ...rest }/></div>
+}

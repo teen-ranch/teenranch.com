@@ -31,50 +31,57 @@ export default function Header({ location }) {
                         <li><a target="_blank" rel="noopener" href='https://shop.teenranch.com'>Shop</a></li>
                         <li><NavLink to="/programs">Programs</NavLink>
                             <ul className='subNav'>
-                                <li><NavLink to='/programs/hockey-and-skating'>Hockey & skating</NavLink>
+                                <li><NavLink to='/programs/hockey-and-skating/'>Hockey & skating</NavLink>
                                     <div className='subNavDivider'>Skating</div>
                                     <ul className='subSubNav'>
-                                        <li><NavLink to='/programs/hockey-and-skating/learn-to-skate'>Learn to skate</NavLink></li>
-                                        <li><NavLink to='/programs/hockey-and-skating/skating-development'>Skating development</NavLink></li>
-                                        <li><NavLink to='/programs/hockey-and-skating/starskate-and-competitive-figure-skating'>STARSkate & Competitive Figure Skating</NavLink></li>
+                                        <li><NavLink to='/programs/hockey-and-skating/learn-to-skate/'>Learn to skate</NavLink></li>
+                                        <li><NavLink to='/programs/hockey-and-skating/skating-development/'>Skating development</NavLink></li>
+                                        <li><NavLink to='/programs/hockey-and-skating/starskate-and-competitive-figure-skating/'>STARSkate & Competitive Figure Skating</NavLink></li>
                                     </ul>
                                     <div className='subNavDivider'>Skills</div>
                                     <ul className='subSubNav'>
-                                        <li><NavLink to='/programs/hockey-and-skating/pre-season-skills-and-skating'>Pre-season skills & skating</NavLink></li>
-                                        <li><NavLink to='/programs/hockey-and-skating/skills-development'>Skills development</NavLink></li>
-                                        <li><NavLink to='/programs/hockey-and-skating/adult-hockey-skills'>Adult hockey skills</NavLink></li>
+                                        <li><NavLink to='/programs/hockey-and-skating/pre-season-skills-and-skating/'>Pre-season skills & skating</NavLink></li>
+                                        <li><NavLink to='/programs/hockey-and-skating/skills-development/'>Skills development</NavLink></li>
+                                        <li><NavLink to='/programs/hockey-and-skating/adult-hockey-skills/'>Adult hockey skills</NavLink></li>
                                     </ul>
                                     <div className='subNavDivider'>Leagues</div>
                                     <ul className='subSubNav'>
-                                        <li><NavLink to='/programs/hockey-and-skating/mens-hockey-league'>Men's hockey league</NavLink></li>
+                                        <li><NavLink to='/programs/hockey-and-skating/mens-hockey-league/'>Men's hockey league</NavLink></li>
                                     </ul>
                                     <div className='subNavDivider'>Recreation</div>
                                     <ul className='subSubNav'>
-                                        <li><NavLink to='/programs/hockey-and-skating/pond-hockey'>Pond hockey</NavLink></li>
-                                        <li><NavLink to='/programs/hockey-and-skating/ice-rental'>Ice rental</NavLink></li>
-                                        <li><NavLink to='/programs/hockey-and-skating/public-skating'>Public skating</NavLink></li>
+                                        <li><NavLink to='/programs/hockey-and-skating/pond-hockey/'>Pond hockey</NavLink></li>
+                                        <li><NavLink to='/programs/hockey-and-skating/ice-rental/'>Ice rental</NavLink></li>
+                                        <li><NavLink to='/programs/hockey-and-skating/public-skating//'>Public skating</NavLink></li>
                                     </ul>
                                 </li>
                                 <li><NavLink to='/programs/horses/'>Horses</NavLink>
                                     <div className='subNavDivider'>Shows</div>
                                     <ul className='subSubNav'>
-                                        <li><NavLink to='/programs/horses/hunter-jumper-shows'>Hunter / Jumper shows</NavLink></li>
+                                        <li><NavLink to='/programs/horses/hunter-jumper-shows/'>Hunter / Jumper shows</NavLink></li>
                                     </ul>
                                     <div className='subNavDivider'>Schooling</div>
                                     <ul className='subSubNav'>
-                                        <li><NavLink to='/programs/horses/riding-lessons'>Riding lessons</NavLink></li>
-                                        <li><NavLink to='/programs/horses/schooling-ring-rental'>Schooling ring rental</NavLink></li>
+                                        <li><NavLink to='/programs/horses/riding-lessons/'>Riding lessons</NavLink></li>
+                                        <li><NavLink to='/programs/horses/schooling-ring-rental/'>Schooling ring rental</NavLink></li>
                                     </ul>
                                     <div className='subNavDivider'>Recreation</div>
                                     <ul className='subSubNav'>
-                                        <li><NavLink to='/programs/horses/trail-rides'>Trail rides</NavLink></li>
+                                        <li><NavLink to='/programs/horses/trail-rides/'>Trail rides</NavLink></li>
                                     </ul>
                                 </li>
-                                <li><NavLink to='/events'>Events</NavLink>
-                                    <ul className='subSubNav'>
-                                        <li><NavLink to='/events/october-maskquerade'>October MASKquerade</NavLink></li>
-                                    </ul>
-                                </li>
+                                <div>
+                                    {/* <li><NavLink to='/events'>Events</NavLink>
+                                        <ul className='subSubNav'>
+                                            <li><NavLink to='/events/october-maskquerade/'>October MASKquerade</NavLink></li>
+                                        </ul>
+                                    </li> */}
+                                    <li><NavLink to='/programs/leadership/'>Leadership & Development</NavLink>
+                                        <ul className='subSubNav'>
+                                            <li><NavLink to='/programs/leadership/adventure-bible-program/'>Adventure Bible Program</NavLink></li>
+                                        </ul>
+                                    </li>
+                                </div>
                             </ul>
                         </li>
                         <li><NavLink to="/staff/">Staff</NavLink></li>

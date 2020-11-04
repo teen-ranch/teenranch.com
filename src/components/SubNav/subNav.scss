@@ -1,0 +1,37 @@
+@import 'styles/vars';
+
+.container--subNav {
+    background: $primary-dark;
+    position: sticky;
+    top: 60px;
+    z-index: 1;
+
+    .constrain {
+        display: flex;
+        justify-content: center;
+    }
+
+    a {
+        padding: 2rem 2rem;
+        display: block;
+        color: rgba(255,255,255,0.6);
+    }
+
+    a.active, a:hover {
+        color: lighten($primary-light,20);
+    }
+
+}
+
+@media screen and (min-width:64em) {
+
+    .container--subNav {
+        top: 101px;
+
+        a {
+            padding: 2rem 3rem;
+        }
+
+    }
+
+}

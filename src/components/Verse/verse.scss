@@ -1,0 +1,17 @@
+@import 'styles/vars';
+
+.verseContainer {
+    text-align: center;
+    font-size: 1.8rem;
+    max-width: 80%;
+    margin: 0 auto;
+    font-style: italic;
+    color: $primary-light;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    .verseReference {
+        margin-top: 1rem;
+        font-size: 1.6rem;
+    }
+}
