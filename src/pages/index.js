@@ -28,9 +28,10 @@ export default ({ data }) => {
 					<table
 						className='covidTable'
 					>
-						<tr><th>Hockey & skating programs</th><td>PAUSED</td></tr>
-						<tr><th>Horse programs</th><td>ACTIVE</td></tr>
 						<tr><th>Christmas festival</th><td>ACTIVE</td></tr>
+						<tr><th>Trail rides</th><td>ACTIVE</td></tr>
+						<tr><th>Horse programs</th><td>PAUSED</td></tr>
+						<tr><th>Hockey & skating programs</th><td>PAUSED</td></tr>
 					</table>
 				</div>
 			</Container>
