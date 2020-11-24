@@ -13,7 +13,7 @@
     .eventCalendar {
 
         border-radius: 4px;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        box-shadow: 0 1px 3px rgba(0,0,0,0.2);
         overflow: hidden;
 
         margin-right: 2rem;
@@ -21,7 +21,7 @@
 
         .eventCalendarMonth {
             background: $primary-red;
-            padding: .5rem 0;
+            padding: .2rem 0;
             color: $primary-white;
             width: 60px;
             text-transform: uppercase;
@@ -30,8 +30,23 @@
 
         .eventCalendarDay {
             font-size: 2.6rem;
-            padding: .5rem 1rem;
+            padding: .9rem 0;
         }
+    }
+
+    .eventDate {
+        color: rgba(0,0,0,0.7);
+        margin-bottom: 1rem;
+    }
+
+    .eventTitle {
+        color: $primary-dark;
+        font-size: 2rem;
+    }
+
+    .eventVenue {
+        margin-top: 1rem;
+        font-size: 1.4rem;
     }
 
 }

@@ -17,14 +17,17 @@ const EVENT_ATTENDANCE_MODE = {
     MIXED: 'MixedEventAttendanceMode'
 }
 
-export default function ({ title, venue, description, startDate, endDate, price, status = 'SCHEDULED', attendanceMode = 'OFFLINE' }){
+export default function ({ title, venue, description, startDate, startTime, endDate, endTime, price, status = 'SCHEDULED', attendanceMode = 'OFFLINE' }){
+
+    const startsAt = startDate + (startTime ? 'T' + startTime + '-05:00' : '')
+    const endsAt = endDate + (endTime ? 'T' + endTime + '-05:00' : '')
 
     const data = {
         "@context": "https://schema.org/",
         "@type": "Event",
         name: title,
-        startDate: startDate + '-05:00',
-        ...(endDate && { endDate: endDate + '-05:00' }),
+        startDate: startsAt,
+        ...(endDate && { endDate: endsAt }),
         description,
         eventStatus: `https://schema.org/${ EVENT_TYPE[status] }`,
         eventAttendanceMode: `https://schema.org/${ EVENT_ATTENDANCE_MODE[attendanceMode] }`,
@@ -50,24 +53,48 @@ export default function ({ title, venue, description, startDate, endDate, price,
         
     }
 
+    if (DateTime.fromISO(endsAt) < DateTime.local()) return null
+
     return (
         <>
             <div className='eventContainer'>
-                <div className='eventCalendar'>
-                    <div className='eventCalendarMonth'>{ DateTime.fromISO(startDate).toFormat('LLL') }</div>
-                    <div className='eventCalendarDay'>{ DateTime.fromISO(startDate).day }</div>
+                <div
+                    // style={{
+                    //     display: 'flex',
+                    //     justifyContent: 'center',
+                    //     alignItems: 'center'
+                    // }}
+                >
+                    <div className='eventCalendar'>
+                        <div className='eventCalendarMonth'>{ DateTime.fromISO(startsAt).toFormat('LLL') }</div>
+                        <div className='eventCalendarDay'>{ DateTime.fromISO(startsAt).day }</div>
+                    </div>
                 </div>
-                <div className='eventTitle'>{ title }</div>
-                <div >{ startDate }</div>
-                {
-                    endDate && <div>{ endDate }</div>
-                }
-                <script type='application/ld+json'
-                    dangerouslySetInnerHTML={{
-                        __html: JSON.stringify(data)
-                    }}
-                />                
+                <div>
+                    <div className='eventDate'>
+                        { DateTime.fromISO(startsAt).toFormat('ccc, LLL d @ t') }
+                        {
+                            endDate && (
+                                <>
+                                    <span> - </span>
+                                    { DateTime.fromISO(endsAt).toFormat(DateTime.fromISO(startDate).toMillis() === DateTime.fromISO(endDate).toMillis() ? 't' : 'ccc, LLL d @ t') }
+                                </>
+                            )
+                        }
+                    </div>
+                    <div className='eventTitle'>
+                        { title }
+                    </div>
+                    <div className='eventVenue'>
+                        <strong>{ venue.name }:</strong> { venue.address.address } { venue.address.city }, { venue.address.province } { venue.address.postalCode }
+                    </div>
+                </div>
             </div>
+            <script type='application/ld+json'
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(data)
+                }}
+            />                
         </>
     )
 }
