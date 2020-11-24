@@ -96,7 +96,7 @@ export default function ({ data }) {
                     </p>
 
                     <p>
-                        You won't find another interactive Christmas event like this one. This is the ultimate way to create memories and share the holidays with your family.
+                        You won't find another interactive Christmas event like this one. This is the ultimate way to create memories and share the holidays with your family from the safety and comfort of your vehicle.
                     </p>
 
                     <h2>Cost</h2>
