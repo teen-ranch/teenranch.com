@@ -1,0 +1,37 @@
+@import 'styles/vars';
+
+.eventContainer {
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    margin-bottom: 3rem;
+
+    display: flex;
+
+    padding: 2rem;
+
+    .eventCalendar {
+
+        border-radius: 4px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        overflow: hidden;
+
+        margin-right: 2rem;
+        text-align: center;
+
+        .eventCalendarMonth {
+            background: $primary-red;
+            padding: .5rem 0;
+            color: $primary-white;
+            width: 60px;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+        }
+
+        .eventCalendarDay {
+            font-size: 2.6rem;
+            padding: .5rem 1rem;
+        }
+    }
+
+}
