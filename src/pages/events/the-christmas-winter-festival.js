@@ -2,13 +2,13 @@ import React from 'react'
 import Container from 'components/Container'
 import Heading from 'components/Heading'
 // import Button from 'components/Button'
-import Program from 'components/Program'
-import { graphql, Link } from 'gatsby'
+// import Program from 'components/Program'
+import { graphql } from 'gatsby'
 
-import SubNav from 'components/SubNav'
-import Verse from 'components/Verse'
+// import SubNav from 'components/SubNav'
+// import Verse from 'components/Verse'
 
-import { PrimaryButton, CTAButton } from 'components/Button'
+// import { PrimaryButton, CTAButton } from 'components/Button'
 
 import Img from 'gatsby-image'
 
@@ -48,6 +48,7 @@ export default function ({ data }) {
 
             events.push(
                 <Event
+                    key={ i }
                     title={ frontmatter.title }
                     startDate={`2020-12-${ '00'.substring(0, 2 - i.toString().length) + i.toString() }`}
                     startTime='19:00:00'
@@ -56,6 +57,7 @@ export default function ({ data }) {
                     price={eventData.price}
                     description={ eventData.description }
                     venue={eventData.venue}
+                    images={[data.image.childImageSharp.fluid.src]}
                 />
             )
 

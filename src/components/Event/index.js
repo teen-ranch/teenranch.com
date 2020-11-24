@@ -2,6 +2,7 @@ import React from 'react'
 import { DateTime } from 'luxon'
 
 import './event.scss'
+import { useSiteMetadata } from '../../hooks/useSiteMetaData'
 
 const EVENT_TYPE = {
     SCHEDULED: 'EventScheduled',
@@ -17,10 +18,15 @@ const EVENT_ATTENDANCE_MODE = {
     MIXED: 'MixedEventAttendanceMode'
 }
 
-export default function ({ title, venue, description, startDate, startTime, endDate, endTime, price, status = 'SCHEDULED', attendanceMode = 'OFFLINE' }){
+export default function ({ title, images = [], venue, description, startDate, startTime, endDate, endTime, price, status = 'SCHEDULED', attendanceMode = 'OFFLINE' }){
+
+    const { siteUrl } = useSiteMetadata()
 
     const startsAt = startDate + (startTime ? 'T' + startTime + '-05:00' : '')
     const endsAt = endDate + (endTime ? 'T' + endTime + '-05:00' : '')
+
+    const image = []
+    images.map(src => image.push(`${ siteUrl }${ src }`))
 
     const data = {
         "@context": "https://schema.org/",
@@ -31,6 +37,7 @@ export default function ({ title, venue, description, startDate, startTime, endD
         description,
         eventStatus: `https://schema.org/${ EVENT_TYPE[status] }`,
         eventAttendanceMode: `https://schema.org/${ EVENT_ATTENDANCE_MODE[attendanceMode] }`,
+        image,
         location: {
             "@type": "Place",
             name: venue.name,
