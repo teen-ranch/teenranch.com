@@ -52,9 +52,9 @@ export default function Footer() {
 
                     <div>
                         <div className='footerTitle'>Events</div>
-                        {/* <ul className='footerNavigation'>
-                            <li><Link to='/events/october-maskquerade/'>October MASKquerade</Link></li>
-                        </ul> */}
+                        <ul className='footerNavigation'>
+                            <li><Link to='/events/the-christmas-winter-festival/'>Christmas Winter Festival</Link></li>
+                        </ul>
 
                         <div className='footerTitle'>Leadership</div>
                         <ul className='footerNavigation'>
