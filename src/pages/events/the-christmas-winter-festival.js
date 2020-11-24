@@ -107,7 +107,7 @@ export default function ({ data }) {
                     
                     <ul>
                         <li>Debit/Credit (tap)</li>
-                        <li>Exact cash (drop in box)</li>
+                        <li>Exact cash (cash drop box)</li>
                     </ul>
 
                     <h2>When</h2>
