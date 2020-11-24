@@ -35,6 +35,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-netlify`,
     {
       resolve: `gatsby-plugin-offline`,
       options: {
@@ -64,6 +65,6 @@ module.exports = {
     },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-force-trailing-slashes`
+    `gatsby-plugin-force-trailing-slashes`,
   ],
 }
