@@ -103,7 +103,7 @@ export default function ({ data }) {
                     <p>
                         $20 (tax included) per vehicle
                     </p>
-                    <h3>Payment accepted at entry</h3>
+                    <h3>Payment accepted at entry only</h3>
                     
                     <ul>
                         <li>Debit/Credit (tap)</li>
