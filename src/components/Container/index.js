@@ -3,13 +3,13 @@ import React from 'react'
 export default function Container({ type = 'body', constrain = true, style, children }) {
 
     return (
-        <div className={`container ${ type ? ` container--${ type }` : ''  }`} style={ style }>
+        <section className={`container ${ type ? ` container--${ type }` : ''  }`} style={ style }>
             <Constrain constrain={ constrain }>
                 {
                     children
                 }
             </Constrain>
-        </div>
+        </section>
     )
 
 }

@@ -110,6 +110,18 @@ img {
   }
 }
 
+.covidTable {
+  display: inline-block;
+  border-collapse: collapse;
+  border-top: 1px solid #eee;
+  th, td {
+    border-bottom: 1px solid #eee;
+    padding: 1rem;
+    text-align: left;
+    color: rgba(0,0,0,0.7);
+  }
+}
+
 @media screen and (min-width: 64em) {
   .mel {
     text-align: left;

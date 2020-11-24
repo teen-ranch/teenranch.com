@@ -71,11 +71,11 @@ export default function Header({ location }) {
                                     </ul>
                                 </li>
                                 <div>
-                                    {/* <li><NavLink to='/events'>Events</NavLink>
+                                    <li><NavLink to='/events'>Events</NavLink>
                                         <ul className='subSubNav'>
-                                            <li><NavLink to='/events/october-maskquerade/'>October MASKquerade</NavLink></li>
+                                            <li><NavLink to='/events/the-christmas-winter-festival/'>Christmas Winter Festival</NavLink></li>
                                         </ul>
-                                    </li> */}
+                                    </li>
                                     <li><NavLink to='/programs/leadership/'>Leadership & Development</NavLink>
                                         <ul className='subSubNav'>
                                             <li><NavLink to='/programs/leadership/adventure-bible-program/'>Adventure Bible Program</NavLink></li>

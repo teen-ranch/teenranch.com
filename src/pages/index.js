@@ -9,10 +9,32 @@ import Program from 'components/Program'
 import Button from 'components/Button'
 
 export default ({ data }) => {
-	
+
 	return (
 	
 		<>
+			<Container>
+				<div 
+					style={{
+						textAlign: 'center'
+					}}
+				>
+					<h3>COVID-19 Announcement</h3>
+
+					<p>Ice Arenas in Peel district are now in lockdown and are closed until December 21, 2020.</p>
+					<p>All ice rentals and program registrations have been paused and will resume when permitted by government mandate.<br/>Credits will be applied for any missed sessions that are not able to be re-scheduled.</p>
+					<p>Please check back for updates.</p>
+
+					<table
+						className='covidTable'
+					>
+						<tr><th>Hockey & skating programs</th><td>PAUSED</td></tr>
+						<tr><th>Horse programs</th><td>ACTIVE</td></tr>
+						<tr><th>Christmas festival</th><td>ACTIVE</td></tr>
+					</table>
+				</div>
+			</Container>
+
 			<Container type='body' style={{ background: '#002146' }}>
 				
 				<div className='mel'>
@@ -56,8 +78,23 @@ export default ({ data }) => {
 			<Container type='body'>
 
 				<Program
+					src={data.nativity.childImageSharp.fluid}
+					name='The Christmas Winter Festival'
+				>
+					<p>
+                        Start a new family tradition this Christmas season at the Christmas Winter Festival. 
+                        This interactive drive-thru event is the perfect evening out with your family. 
+                        Snuggle up and drive by more than thirty (that's right, 30) 3D Christmas hologram displays. 
+                        Sneak a peek at elves creating mischief in Santa's Workshop, watch Olaf throwing snowballs and witness Santa practice his sleigh take offs for Christmas Eve.
+                    </p>
+
+					<Button to='/events/the-christmas-winter-festival/'>Learn more</Button>
+				</Program>
+
+				<Program
 					src={data.file.childImageSharp.fluid}
 					name='Leadership & Development: Adventure Bible Program'
+					swap
 				>
 					<p>This solid, Christ-centered experiential program is designed to ground young adults in God's Word and equip them for a vibrant walk with Jesus while challenging them through adventure and outreach.</p>
 
@@ -73,6 +110,15 @@ export default ({ data }) => {
 export const query = graphql`
 
     query {
+
+		nativity: file(relativePath: { eq: "events/nativity.jpg" }) {
+			childImageSharp {
+				fluid(maxWidth: 1920 quality: 64) {
+					...GatsbyImageSharpFluid_withWebp
+				}
+			}
+		}
+
 
         file(relativePath: { eq: "stock/chang-duong-Sj0iMtq_Z4w-unsplash.jpg" }) {
 			childImageSharp {
