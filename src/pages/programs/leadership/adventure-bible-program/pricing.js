@@ -10,6 +10,8 @@ import { PrimaryButton, CTAButton } from 'components/Button'
 
 import './pricing.scss'
 
+import { DateTime } from 'luxon'
+
 export const frontmatter = {
     title: 'Adventure Bible Program - Pricing',
     basePath: '/programs/leadership/adventure-bible-program/',
@@ -164,7 +166,8 @@ function Session({ title, year, start, end, due = [] }) {
             <div className='sessionTitle'><div className='sessionYear'>{ year }</div>{ title }</div>
 
             <div className='sessionDate'>
-                { new Intl.DateTimeFormat('en-CA', options).format(new Date(start)) } - { new Intl.DateTimeFormat('en-CA', options).format(new Date(end)) }
+                {/* { new Intl.DateTimeFormat('en-CA', options).format(new Date(start)) } - { new Intl.DateTimeFormat('en-CA', options).format(new Date(end)) } */}
+                { DateTime.fromISO(start).toFormat('DDD') } - { DateTime.fromISO(end).toFormat('DDD') }
             </div>
 
             <div className='paymentPlans'>
@@ -174,13 +177,13 @@ function Session({ title, year, start, end, due = [] }) {
                 <h4>Option 1</h4>
                 <ul>
                     <li>$500 deposit</li>
-                    <li>$4,450 due { due[0] }</li>
+                    <li>$4,400 due { due[0] }</li>
                 </ul>
 
                 <h4>Option 2</h4>
                 <ul>
                     <li>$500 deposit</li>
-                    <li>$2,450 due { due[0] }</li>
+                    <li>$2,400 due { due[0] }</li>
                     <li>$2,000 due { due[1] }</li>
                 </ul>
 
