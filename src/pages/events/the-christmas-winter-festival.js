@@ -13,6 +13,7 @@ import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
 import Event from 'components/Event'
+import Card from 'components/Card'
 
 export const frontmatter = {
     title: 'The Christmas Winter Festival',
@@ -58,6 +59,7 @@ export default function ({ data }) {
                     description={ eventData.description }
                     venue={eventData.venue}
                     images={[data.image.childImageSharp.fluid.src]}
+                    status={ i > 25 ? 'CANCELLED' : 'SCHEDULED' }
                 />
             )
 
@@ -79,6 +81,10 @@ export default function ({ data }) {
 			/>
 
             <div style={{ maxWidth: '960px', margin: '0 auto', fontSize: '18px', color: 'rgb(41, 41, 41)', letterSpacing: '0.01em', lineHeight: '26px', padding: '0 2rem' }}>
+
+                <Container>
+                    <Card style={{ background: '#FFD7D7', color: 'red', padding: '2rem' }}>The Christmas Winter Festival is now cancelled December 26 & 27, 2020 due to the Covid-19 provincial lockdown. Thank you for your support and we wish you and your family a very Merry Christmas.</Card>
+                </Container>
 
                 <Container>
                     <h1>The Christmas Winter Festival</h1>

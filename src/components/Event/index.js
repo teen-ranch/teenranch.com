@@ -64,7 +64,7 @@ export default function ({ title, images = [], venue, description, startDate, st
 
     return (
         <>
-            <div className='eventContainer'>
+            <div className={`eventContainer ${ status === 'CANCELLED' ? 'eventContainer--cancelled' : '' }`}>
                 <div
                     // style={{
                     //     display: 'flex',
