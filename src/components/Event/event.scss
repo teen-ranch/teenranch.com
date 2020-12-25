@@ -50,3 +50,12 @@
     }
 
 }
+
+.eventContainer--cancelled {
+
+    .eventTitle, .eventDate, .eventVenue {
+        color: red;
+        text-decoration: line-through;
+    }
+
+}

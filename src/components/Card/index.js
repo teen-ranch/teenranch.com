@@ -2,8 +2,8 @@ import React from 'react'
 
 import './card.scss'
 
-export default function Card({ children }) {
+export default function Card({ style, children }) {
 
-    return <div className='cardContainer'>{ children }</div>
+    return <div className='cardContainer' style={style}>{ children }</div>
 
 }
