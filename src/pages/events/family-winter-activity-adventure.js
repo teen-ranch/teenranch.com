@@ -12,10 +12,10 @@ import ExternalLink from 'components/ExternalLink'
 
 // import { PrimaryButton, CTAButton } from 'components/Button'
 
-import Img from 'gatsby-image'
+// import Img from 'gatsby-image'
 
 import Event from 'components/Event'
-import Card from 'components/Card'
+// import Card from 'components/Card'
 
 import { DateTime } from 'luxon'
 
