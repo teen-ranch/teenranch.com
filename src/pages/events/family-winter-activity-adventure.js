@@ -1,7 +1,7 @@
 import React from 'react'
 import Container from 'components/Container'
 import Heading from 'components/Heading'
-// import Button from 'components/Button'
+import Button from 'components/Button'
 // import Program from 'components/Program'
 import { graphql } from 'gatsby'
 
@@ -113,7 +113,7 @@ export default function ({ data }) {
                     <h1>Winter activity adventure</h1>
 
                     <p>Teen Ranch is pleased to offer winter outdoor adventures for you and your family to enjoy this winter! Our lockdown-friendly activities provide a chance to get your family outdoors, play together, explore the beautiful Teen Ranch landscape and get in that much-needed outdoor fitness, mental health break that’s hard to come by these days. Research shows that even just 120 minutes a week has a marked improvement on mental health, not to mention keeping our bodies active!</p>
-
+                    <Button href="https://register.trmanager.com">Book now</Button>
                     <h3>This family winter adventure includes:</h3>
                     <p>Three snow-play activities, each with an alternative activity if no snow is available. Each activity is 45 minutes long with a 15 min break (washroom available)</p>
                     
@@ -141,8 +141,8 @@ export default function ({ data }) {
 
                     <h2>What does it cost?</h2>
 
-                    $150 +HST per family.<br/><i>Open to families of the same household, up to five persons per family.<br/>Families of 6-10 persons can book two slots.</i>
-
+                    <p>$150 +HST per family.<br/><i>Open to families of the same household, up to five persons per family.<br/>Families of 6-10 persons can book two slots.</i></p>
+                    <Button href="https://register.trmanager.com">Book now</Button>
                     <h3>Available add-ons:</h3>
                     <ul>
                         <li>Trail Ride - $55 +HST per person/one-hour</li>
@@ -213,8 +213,8 @@ export default function ({ data }) {
                     Only Service Animals are permitted at Teen Ranch.  Please bring documents and your pet must wear its vest.   
 
                     <h3>I have more questions...</h3>
-                    Please email our office at <a href="mailto:camp@teenranch.com">camp@teenranch.com</a> and we will get back to you as soon as we can.
-
+                    <p>Please email our office at <a href="mailto:camp@teenranch.com">camp@teenranch.com</a> and we will get back to you as soon as we can.</p>
+                    <Button href="https://register.trmanager.com">Book now</Button>
                 </Container>
 
                 <Container>
