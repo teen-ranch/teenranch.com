@@ -12,10 +12,10 @@ import ExternalLink from 'components/ExternalLink'
 
 // import { PrimaryButton, CTAButton } from 'components/Button'
 
-import Img from 'gatsby-image'
+// import Img from 'gatsby-image'
 
 import Event from 'components/Event'
-import Card from 'components/Card'
+// import Card from 'components/Card'
 
 import { DateTime } from 'luxon'
 
@@ -146,7 +146,7 @@ export default function ({ data }) {
                     <h3>Available add-ons:</h3>
                     <ul>
                         <li>Trail Ride - $55 +HST per person/one-hour</li>
-                        <li>Hayride - $75 +HST per family (two family max, socially distanced)</li>
+                        <li>Hayride - $75 +HST per family (two families max, socially distanced)</li>
                     </ul>
                     
                     <p>
