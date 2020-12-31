@@ -22,8 +22,15 @@ export default function ({ title, images = [], venue, description, startDate, st
 
     const { siteUrl } = useSiteMetadata()
 
-    const startsAt = startDate + (startTime ? 'T' + startTime + '-05:00' : '')
-    const endsAt = endDate + (endTime ? 'T' + endTime + '-05:00' : '')
+    console.log(startTime, endTime)
+
+
+
+    const startsAt = DateTime.fromISO(`${ startDate }${ startTime ? `T${ startTime }` : '' }`, { zone: 'America/Toronto' }).toISO()
+    const endsAt = DateTime.fromISO(`${ endDate }${ endTime ? `T${ endTime }` : '' }`, { zone: 'America/Toronto' }).toISO()
+    // const startsAt = startDate + (startTime ? 'T' + startTime + '-05:00' : '')
+    // const endsAt = endDate + (endTime ? 'T' + endTime + '-05:00' : '')
+    
 
     const image = []
     images.map(src => image.push(`${ siteUrl }${ src }`))
@@ -61,7 +68,7 @@ export default function ({ title, images = [], venue, description, startDate, st
     }
 
     if (DateTime.fromISO(endsAt) < DateTime.local()) return null
-
+console.log(startsAt, DateTime.fromISO(startsAt).toFormat('ccc, LLL d @ t'), DateTime.fromISO(startsAt).zoneName)
     return (
         <>
             <div className={`eventContainer ${ status === 'CANCELLED' ? 'eventContainer--cancelled' : '' }`}>
