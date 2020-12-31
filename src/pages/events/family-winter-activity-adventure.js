@@ -146,7 +146,7 @@ export default function ({ data }) {
                     <h3>Available add-ons:</h3>
                     <ul>
                         <li>Trail Ride - $55 +HST per person/one-hour</li>
-                        <li>Hayride - $75 +HST per family (two family max, socially distanced)</li>
+                        <li>Hayride - $75 +HST per family (two families max, socially distanced)</li>
                     </ul>
                     
                     <p>
