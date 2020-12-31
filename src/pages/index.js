@@ -146,7 +146,7 @@ function CovidContainer() {
 					<table
 						className='covidTable'
 					>
-						<tr><th>Christmas festival</th><td>ACTIVE</td></tr>
+						<tr><th>Winter activity adventure</th><td>ACTIVE</td></tr>
 						<tr><th>Trail rides</th><td>ACTIVE</td></tr>
 						<tr><th>Horse programs</th><td>PAUSED</td></tr>
 						<tr><th>Hockey & skating programs</th><td>PAUSED</td></tr>
