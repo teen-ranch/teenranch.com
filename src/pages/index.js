@@ -17,7 +17,7 @@ export default ({ data }) => {
 			<CovidContainer />
 
 			<Heading
-				src={ data.nativity.childImageSharp.fluid }
+				src={ data.winterActivityAdventure.childImageSharp.fluid }
 				alt='Equitation on the flat'
 				title={<>A premier sports resort<br/>and retreat centre since 1967</>}
 				subtitle={<>Less than an hour from <strong>Toronto</strong> in the heart of <strong>Caledon, Ontario</strong></>}
@@ -93,17 +93,14 @@ export default ({ data }) => {
 			<Container type='body'>
 
 				<Program
-					src={data.nativity.childImageSharp.fluid}
-					name='The Christmas Winter Festival'
+					src={data.winterActivityAdventure.childImageSharp.fluid}
+					name='Winter Activity Adventure'
 				>
 					<p>
-                        Start a new family tradition this Christmas season at the Christmas Winter Festival. 
-                        This interactive drive-thru event is the perfect evening out with your family. 
-                        Snuggle up and drive by more than thirty (that's right, 30) 3D Christmas hologram displays. 
-                        Sneak a peek at elves creating mischief in Santa's Workshop, watch Olaf throwing snowballs and witness Santa practice his sleigh take offs for Christmas Eve.
+					Teen Ranch is pleased to offer winter outdoor adventures for you and your family to enjoy this winter! Our lockdown-friendly activities provide a chance to get your family outdoors, play together, explore the beautiful Teen Ranch landscape and get in that much-needed outdoor fitness, mental health break that’s hard to come by these days. Research shows that even just 120 minutes a week has a marked improvement on mental health, not to mention keeping our bodies active!
                     </p>
 
-					<Button to='/events/the-christmas-winter-festival/'>Learn more</Button>
+					<Button to='/events/family-winter-activity-adventure/'>Learn more</Button>
 				</Program>
 
 				<Program
@@ -167,7 +164,7 @@ export const query = graphql`
 
     query {
 
-		nativity: file(relativePath: { eq: "events/nativity.jpg" }) {
+		winterActivityAdventure: file(relativePath: { eq: "events/winterTobogganing.jpg" }) {
 			childImageSharp {
 				fluid(maxWidth: 1920 quality: 64) {
 					...GatsbyImageSharpFluid_withWebp
