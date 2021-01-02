@@ -119,7 +119,7 @@ export default function ({ data }) {
                     
                     <ul>
                         <li><strong>Pond Skate (ice) / Broom Ball (no ice):</strong> Enjoy Teen Ranch’s skating pond for a truly picturesque outdoor skate (bring your own skates). No snow? No problem! Instead, enjoy a little family friendly broom ball competition (broomball equipment provided).</li>
-                        <li><strong>Tubing (snow) / Scavenger Hunt (no snow):</strong> Teen Ranch snow tubing is a camp favourite…now it’s your turn (snow tubes provided)! o	This scavenger hunt will take you across the property and introduce you to new facts and information as you go. Complete as a family or team up against each other—it’s up to you!</li>
+                        <li><strong>Tubing (snow) / Scavenger Hunt (no snow):</strong> Teen Ranch snow tubing is a camp favourite…now it’s your turn (snow tubes provided)! This scavenger hunt will take you across the property and introduce you to new facts and information as you go. Complete as a family or team up against each other—it’s up to you!</li>
                         <li><strong>Snowshoeing (snow) / Hike (snow / no snow):</strong> Whatever the weather, you choose from beginner, moderate and advanced levels trails. Marked trails and map provided as well as snowshoes for ages 12 and up.</li>
                     </ul>
 
@@ -137,7 +137,7 @@ export default function ({ data }) {
                     </ul>
 
                     <h2>When is it?</h2>
-                    Saturdays, January 2 through March 27, 2021 (9:30 – 12:30 pm OR 1:00 – 4:00 pm)
+                    Saturdays, January 9 through March 27, 2021 (9:30 – 12:30 pm OR 1:00 – 4:00 pm)
 
                     <h2>What does it cost?</h2>
 
