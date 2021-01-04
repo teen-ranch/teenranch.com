@@ -123,7 +123,7 @@ export default function ({ data }) {
                     <ul>
                         <li><strong>Pond Skate (ice) / Broom Ball (no ice):</strong> Enjoy Teen Ranch’s skating pond for a truly picturesque outdoor skate (bring your own skates). No snow? No problem! Instead, enjoy a little family friendly broom ball competition (broomball equipment provided).</li>
                         <li><strong>Tubing (snow) / Scavenger Hunt (no snow):</strong> Teen Ranch snow tubing is a camp favourite…now it’s your turn (snow tubes provided)! This scavenger hunt will take you across the property and introduce you to new facts and information as you go. Complete as a family or team up against each other—it’s up to you!</li>
-                        <li><strong>Snowshoeing (snow) / Hike (snow / no snow):</strong> Whatever the weather, get your legs moving, your heart pumping, and enjoy the gorgeous scenery! Marked trails and map provided as well as snowshoes for ages 12 and up.</li>
+                        <li><strong>Snowshoeing (snow) / Hike (snow / no snow):</strong> Whatever the weather, get your legs moving, your heart pumping, and enjoy the gorgeous scenery! Marked trails and map provided as well as snowshoes for ages 11 and up.</li>
                     </ul>
 
                     <p><strong>And of course every good outdoor day includes a camp fire and free hot chocolate to warm you up!</strong></p>
