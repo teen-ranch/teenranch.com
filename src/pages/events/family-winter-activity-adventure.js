@@ -158,7 +158,7 @@ export default function ({ data }) {
                     <ul>
                         <li><ExternalLink href='https://highlandspringsclinic.org/blog/the-top-ten-benefits-of-spending-time-with-family/'>The top ten benefits of spending time with family.</ExternalLink></li>
                         <li><ExternalLink href='https://www.rei.com/blog/news/this-is-the-optimal-amount-of-time-to-spend-outside-each-week'>This is the optimal amount of time to spend outside each week</ExternalLink></li>
-                        <li><ExternalLink href='https://www.health.harvard.edu/blog/6-reasons-children-need-to-play-outside-2018052213880'>6 reasons childrend need to play outside</ExternalLink></li>
+                        <li><ExternalLink href='https://www.health.harvard.edu/blog/6-reasons-children-need-to-play-outside-2018052213880'>6 reasons children need to play outside</ExternalLink></li>
                     </ul>
 
                     </Container>
