@@ -73,7 +73,7 @@ export default function Header({ location }) {
                                 <div>
                                     <li><NavLink to='/events'>Events</NavLink>
                                         <ul className='subSubNav'>
-                                            <li><NavLink to='/events/the-christmas-winter-festival/'>Christmas Winter Festival</NavLink></li>
+                                            {/* <li><NavLink to='/events/the-christmas-winter-festival/'>Christmas Winter Festival</NavLink></li> */}
                                             <li><NavLink to='/events/family-winter-activity-adventure/'>Winter Activity Adventure</NavLink></li>
                                         </ul>
                                     </li>
