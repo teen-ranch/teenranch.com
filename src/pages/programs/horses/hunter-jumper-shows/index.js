@@ -56,10 +56,10 @@ export default ({ data }) => {
                             </tr>
                         </thead>
                         <tbody>
-                            <tr><td>June 6</td><td>Online Show</td><td>
+                            <tr><td>June 6</td><td>Teen Ranch</td><td>
                                 <Button target="_blank" href="https://forms.zohopublic.com/teenranch1/form/HorseShowJune62021/formperma/nRrU9I5hIyQphoKEm5zZ8pZ9LZdhiCBq3RfVKJ9Qh-o?referrername=teenranch.com">June 6th entry form</Button>    
                             </td></tr>
-                            <tr><td>June 20</td><td>Online Show</td><td>Entries closed</td></tr>
+                            <tr><td>June 20</td><td>Teen Ranch</td><td>Entries closed</td></tr>
                             <tr><td>July 11</td><td>Teen Ranch</td><td>Entries closed</td></tr>
                             <tr><td>July 25</td><td>Teen Ranch</td><td>Entries closed
                             {/* <Button target="_blank" href="https://forms.zohopublic.com/teenranch1/form/HorseShowAugust92020/formperma/fix-ZJmfaJ5XxNKyDQcFagC9YvuJqqsHPuSP1L2srn0?referrername=teenranch.com">August 9th entry form</Button>     */}
