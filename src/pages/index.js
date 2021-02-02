@@ -17,6 +17,49 @@ export default ({ data }) => {
 			<CovidContainer />
 
 			<Heading
+				src={ data.summerCamp.childImageSharp.fluid }
+				alt='Summer camp 2021'
+				title={<>Summer camp is back!</>}
+				subtitle={<>We are working hard to make this your best summer ever!</>}
+				metaTitle='Summer camp is back!'
+				metaDescription={`We are working hard to make this your best summer ever!`}
+			>
+				<div id="mc_embed_signup">
+					<form action="https://teenranch.us2.list-manage.com/subscribe/post?u=93bbc7a16b1a2719f9690a8b0&amp;id=8f481bca1e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						<div id="mc_embed_signup_scroll">
+
+						<h2 style={{ marginTop: '8rem' }}>Want to be notified as soon as registration opens?</h2>
+						
+						<div style={{ position: 'absolute', left: '-5000px'}} aria-hidden="true"><input type="text" name="b_93bbc7a16b1a2719f9690a8b0_41cfb19836" tabindex="-1" value=""/></div>
+						<div
+							style={{
+								display: 'flex',
+								justifyContent: 'center'
+							}}
+						>
+							<input type="email" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your email address" required
+								style={{
+									margin: '1rem 0',
+									borderRadius: '4px 0 0 4px',
+									outline: 'none',
+									appearance: 'none',
+									border: 'none',
+									padding: '1rem'
+								}}
+							/>
+							<div class="clear"><input type="submit" value="Notify me" name="subscribe" id="mc-embedded-subscribe" class="button"
+								style={{
+									borderRadius: '0 4px 4px 0'
+								}}
+							/></div>
+						</div>
+						<div style={{ textAlign: 'center', color: 'rgba(204, 204, 204, 0.95)', fontSize: '1.1rem' }}>We don't like spam either :)</div>
+						</div>
+					</form>
+				</div>
+			</Heading>
+
+			{/* <Heading
 				src={ data.winterActivityAdventure.childImageSharp.fluid }
 				alt='Equitation on the flat'
 				title={<>A premier sports resort<br/>and retreat centre since 1967</>}
@@ -57,7 +100,7 @@ export default ({ data }) => {
 						</div>
 					</form>
 				</div>
-			</Heading>
+			</Heading> */}
 
 			<Container type='body' style={{ background: '#002146' }}>
 				
@@ -146,6 +189,7 @@ function CovidContainer() {
 					<table
 						className='covidTable'
 					>
+						<tr><th>Summer camp</th><td>COMING SOON!</td></tr>
 						<tr><th>Winter activity adventure</th><td>ACTIVE</td></tr>
 						<tr><th>Trail rides</th><td>ACTIVE</td></tr>
 						<tr><th>Horse programs</th><td>PAUSED</td></tr>
@@ -163,6 +207,14 @@ function CovidContainer() {
 export const query = graphql`
 
     query {
+
+		summerCamp: file(relativePath: { eq: "summerDayCamp8.jpg" }) {
+			childImageSharp {
+				fluid(maxWidth: 1920 quality: 64) {
+					...GatsbyImageSharpFluid_withWebp
+				}
+			}
+		}
 
 		winterActivityAdventure: file(relativePath: { eq: "events/winterTobogganing.jpg" }) {
 			childImageSharp {
