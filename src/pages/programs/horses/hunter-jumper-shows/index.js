@@ -110,7 +110,7 @@ export default ({ data }) => {
 
                 </div>
 
-                <Button target="_blank" href="https://teenranch.nyc3.cdn.digitaloceanspaces.com/website/pdf/hjClassDescriptions_2021.pdf">View class descriptions</Button>
+                <Button target="_blank" href="https://teenranch.nyc3.cdn.digitaloceanspaces.com/website/pdf/hjClassDescriptions_2021_V2.pdf">View class descriptions</Button>
 
                 <h4>Year-end celebration</h4>
                 TBD
