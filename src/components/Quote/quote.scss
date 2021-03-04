@@ -33,12 +33,18 @@
     left: 0;
     color: rgba(0,0,0,0.09);
     font-family: serif;
+    height: 100px;
 }
-// .container--quote::after {
-//     content: '"';
-//     position: absolute;
-//     right: 0;
-// }
+.container--quote::after {
+    content: '"';
+    position: absolute;
+    font-size: 20rem;
+    bottom: -1rem;
+    right: 0;
+    color: rgba(0,0,0,0.09);
+    font-family: serif;
+    height: 100px;
+}
 
 @media screen and (min-width: $md) {
     .container--quote {

@@ -13,6 +13,7 @@ import Program from 'components/Program'
 import { Link } from 'react-scroll'
 import { PriceContainer, Price, PriceAddon } from 'components/Price'
 import Quote from '../../../components/Quote'
+import CampSchedule from '../../../components/CampSchedule'
 
 export const frontmatter = {
     title: 'Hockey camp',
@@ -166,6 +167,83 @@ export default function Programs({ data }) {
 
             </Container>
 
+            <Container type='body'>
+                <h1>Camp dates</h1>
+
+                <CampSchedule
+                    dates={[
+                        'July 4-9',
+                        'July 11-16',
+                        'July 18-23',
+                        'July 25-30',
+                        'Aug. 1-6',
+                        'Aug. 8-13',
+                        'Aug. 15-20',
+                        'Aug. 22-27',
+                        <>Aug.&nbsp;29 - Sep.&nbsp;3</>
+                    ]}
+                    programs={[
+                        {
+                            name: 'Hockey camp',
+                            dates: [
+                                '12-16',
+                                '8-14',
+                                '8-14',
+                                '12-16',
+                                '12-16',
+                                '8-14',
+                                '8-14',
+                                '8-14',
+                                '12-16'
+                            ]
+                        },
+                        {
+                            name: 'High-performance hockey camp',
+                            dates: [
+                                '12-16',
+                                '8-14',
+                                '8-14',
+                                '12-16',
+                                '12-16',
+                                '8-14',
+                                '8-14',
+                                '8-14',
+                                '12-16'
+                            ]
+                        },
+                        {
+                            name: 'Girl\'s hockey camp',
+                            dates: [
+                                '',
+                                '',
+                                '8-14',
+                                '',
+                                '12-16',
+                                '',
+                                '',
+                                '8-14',
+                                '',
+                            ]
+                        },
+                        {
+                            name: 'Goalie camp',
+                            dates: [
+                                '',
+                                '',
+                                '',
+                                '12-16',
+                                '',
+                                '8-14',
+                                '',
+                                '',
+                                ''
+                            ]
+                        },
+                    ]}
+                />
+
+            </Container>
+
             <div id='pricing' style={{ position: 'absolute', marginTop: '-200px', }}/>
 
             {/* <Container>
@@ -255,7 +333,7 @@ export default function Programs({ data }) {
                 <h2>Hockey camp add-ons:</h2>
                 <PriceAddon
                     title='Semi-private lessons'
-                    subTitle='4:1 ratio'
+                    subTitle='4:1 instructor ratio'
                     description={
                         <>
                             Get an edge up on the competition with focused and personalized instruction.
@@ -266,7 +344,7 @@ export default function Programs({ data }) {
                 />
                 <PriceAddon
                     title='Private lessons'
-                    subTitle='1:1 ratio'
+                    subTitle='1:1 instructor ratio'
                     description={
                         <>
                             Get an edge up on the competition with focused and personalized instruction.
