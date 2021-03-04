@@ -55,7 +55,7 @@ export default function Programs({ data }) {
                 <h1>Achieve your goals this season</h1>  
 
                 <p>
-                    Teen Ranch has been effectively running one of the most outstanding hockey programs available for more than 30 years! Players and coaches from all over the world have partnered with us to make this one of the best places to reach your goals and develop your skills and skating to their maximum potential. Our outstanding coaches and program of excellence is designed to help you grow both on and off the ice.
+                    Teen Ranch has been effectively running one of the most outstanding hockey programs available since 1971! Players and coaches from all over the world have partnered with us to make this one of the best places to reach your goals and develop your skills and skating to their maximum potential. Our outstanding coaches and program of excellence is designed to help you grow both on and off the ice.
                 </p>         
                 
                 <p>
@@ -75,7 +75,7 @@ export default function Programs({ data }) {
             <Container type='body'>
                 <h1>Who it's for</h1>
                 <p>
-                    Hockey camp is perfect for male and female players and goalies of all ability levels. We offer specialized programs for girls, rep-players and goalies.
+                    Hockey camp is perfect for all players and goalies of all ability levels. We offer specialized programs for girls, rep-players and goalies.
                 </p>
             </Container>
 
@@ -168,7 +168,12 @@ export default function Programs({ data }) {
 
             <div id='pricing' style={{ position: 'absolute', marginTop: '-200px', }}/>
 
+            {/* <Container>
+                <h1>Pricing</h1>
+            </Container> */}
+
             <PriceContainer>
+
                 <Price 
                     title='Hockey camp' 
                     subTitle='Skills & skating development with a focus on enjoying the game' 
@@ -208,7 +213,7 @@ export default function Programs({ data }) {
                 <Price 
                     title={<>High-performance<br/>hockey camp</>} 
                     subTitle='For high-performance players taking their game to the next level' 
-                    who='Rep-level players welcome'
+                    who='Rep-level players welcome (co-ed)'
                     price={1750} 
                     term='week' 
                     primary 
@@ -224,7 +229,7 @@ export default function Programs({ data }) {
                 >
                     <CTAButton href="https://register.trmanager.com">Register now</CTAButton>
                 </Price>
-                <Price 
+                <Price
                     title='Goalie camp' 
                     subTitle='For goalies taking their game to the next level' 
                     who='Goalies welcome (co-ed)'
@@ -250,13 +255,27 @@ export default function Programs({ data }) {
                 <h2>Hockey camp add-ons:</h2>
                 <PriceAddon
                     title='Semi-private lessons'
-                    subTitle='4 player maximum'
+                    subTitle='4:1 ratio'
                     description={
                         <>
                             Get an edge up on the competition with focused and personalized instruction.
                         </>
                     }
                     price={100}
+                    term='hour'
+                />
+                <PriceAddon
+                    title='Private lessons'
+                    subTitle='1:1 ratio'
+                    description={
+                        <>
+                            Get an edge up on the competition with focused and personalized instruction.
+                            <p>
+                                <i>As ice-availability permits</i>
+                            </p>
+                        </>
+                    }
+                    price={300}
                     term='hour'
                 />
             </Container>
