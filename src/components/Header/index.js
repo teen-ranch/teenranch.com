@@ -32,6 +32,12 @@ export default function Header({ location }) {
                         <li><NavLink to="/programs">Programs</NavLink>
                             <ul className='subNav'>
                                 <li><NavLink to='/programs/hockey-and-skating/'>Hockey & skating</NavLink>
+                                    <div className='subNavDivider'>Summer camp</div>
+                                    <ul className='subSubNav'>
+                                        <li><NavLink to='/programs/summer-camp/hockey-camp/'>Hockey camp</NavLink></li>
+                                        <li><NavLink to='/programs/summer-camp/girls-hockey-camp/'>Girl's hockey camp</NavLink></li>
+                                        <li><NavLink to='/programs/summer-camp/goalie-camp/'>Goalie camp</NavLink></li>
+                                    </ul>
                                     <div className='subNavDivider'>Skating</div>
                                     <ul className='subSubNav'>
                                         <li><NavLink to='/programs/hockey-and-skating/learn-to-skate/'>Learn to skate</NavLink></li>
@@ -52,7 +58,7 @@ export default function Header({ location }) {
                                     <ul className='subSubNav'>
                                         <li><NavLink to='/programs/hockey-and-skating/pond-hockey/'>Pond hockey</NavLink></li>
                                         <li><NavLink to='/programs/hockey-and-skating/ice-rental/'>Ice rental</NavLink></li>
-                                        <li><NavLink to='/programs/hockey-and-skating/public-skating//'>Public skating</NavLink></li>
+                                        <li><NavLink to='/programs/hockey-and-skating/public-skating/'>Public skating</NavLink></li>
                                     </ul>
                                 </li>
                                 <li><NavLink to='/programs/horses/'>Horses</NavLink>

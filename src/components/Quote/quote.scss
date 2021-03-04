@@ -1,0 +1,48 @@
+@import 'styles/vars';
+
+.container--quote {
+    font-size: 1.8rem;
+    color: rgba(0,0,0,0.7);
+    position: relative;
+    margin: 6rem 2rem 0 2rem;
+    background: rgba(0,0,0,0.1);
+    padding: 4rem;
+    border-radius: 1rem;
+    text-align: justify;
+    blockquote {
+        margin: 0;
+        padding: 0;
+    }
+
+    .quote__cite {
+        text-align: center;
+        margin-top: 4rem;
+        font-size: 2rem;
+        color: rgba(0,0,0,0.5);
+    }
+    .quote__cite::before {
+        content: "-";
+        margin-right: 1rem;
+    }
+}
+.container--quote::before {
+    content: '"';
+    position: absolute;
+    font-size: 20rem;
+    top: -7rem;
+    left: 0;
+    color: rgba(0,0,0,0.09);
+    font-family: serif;
+}
+// .container--quote::after {
+//     content: '"';
+//     position: absolute;
+//     right: 0;
+// }
+
+@media screen and (min-width: $md) {
+    .container--quote {
+        font-size: 3rem;
+        margin: 6rem;
+    }
+}

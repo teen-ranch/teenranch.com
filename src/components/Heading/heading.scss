@@ -29,6 +29,34 @@
             width: 100%;
             max-width: 1440px;
             margin: 0 auto;
+
+        }
+        .seeMoreContainer {
+            position: absolute;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 4rem;
+            text-align: center;
+        }
+        .seeMore {
+            outline: none;
+            appearance: none;
+            border: none;
+            background: none;
+            font-size: 2rem;
+            color: $primary-white;
+            cursor: pointer;
+            i {
+                display: block;
+                font-size: 96px;
+                color: rgba(255,255,255,0.6);
+            }
+        }
+        .seeMore:hover {
+            i {
+                color: $primary-light;
+            }
         }
 
     }
