@@ -45,7 +45,7 @@ export default function Programs({ data }) {
 
             <SubNav>
                 <Link to='top' activeClass='active' spy={true}>Overview</Link>
-                {/* <NavLink to={ frontmatter.path + 'location/' }>Location</NavLink> */}
+                <Link to='dates' activeClass='active' spy={true}>Dates</Link>
                 <Link to='pricing' activeClass='active' spy={true}>Pricing</Link>
             </SubNav>
 
@@ -167,6 +167,8 @@ export default function Programs({ data }) {
 
             </Container>
 
+            <div id='dates' style={{ position: 'absolute', marginTop: '-120px', }}/>
+
             <Container type='body'>
                 <h1>Camp dates</h1>
 
@@ -244,7 +246,7 @@ export default function Programs({ data }) {
 
             </Container>
 
-            <div id='pricing' style={{ position: 'absolute', marginTop: '-200px', }}/>
+            <div id='pricing' style={{ position: 'absolute', marginTop: '-180px', }}/>
 
             {/* <Container>
                 <h1>Pricing</h1>

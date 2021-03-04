@@ -31,13 +31,21 @@ export default function Header({ location }) {
                         <li><a target="_blank" rel="noopener" href='https://shop.teenranch.com'>Shop</a></li>
                         <li><NavLink to="/programs">Programs</NavLink>
                             <ul className='subNav'>
-                                <li><NavLink to='/programs/hockey-and-skating/'>Hockey & skating</NavLink>
-                                    <div className='subNavDivider'>Summer camp</div>
+                                <li><NavLink to='/programs/summer-camp/'>Summer camp</NavLink>
                                     <ul className='subSubNav'>
                                         <li><NavLink to='/programs/summer-camp/hockey-camp/'>Hockey camp</NavLink></li>
-                                        <li><NavLink to='/programs/summer-camp/girls-hockey-camp/'>Girl's hockey camp</NavLink></li>
-                                        <li><NavLink to='/programs/summer-camp/goalie-camp/'>Goalie camp</NavLink></li>
+                                        <li><NavLink to='/programs/summer-camp/hockey-camp/'>Figure skating camp</NavLink></li>
+                                        <li><NavLink to='/programs/summer-camp/horse-camp/'>Horse camp</NavLink></li>
+                                        <li><NavLink to='/programs/summer-camp/horse-camp/'>Adventure camp</NavLink></li>
+                                        <li><NavLink to='/programs/summer-camp/hockey-camp/'>BMX dirt camp</NavLink></li>
+                                        <li><NavLink to='/programs/summer-camp/hockey-camp/'>WHAM camp</NavLink></li>
                                     </ul>
+                                </li>
+                                <li><NavLink to='/programs/hockey-and-skating/'>Hockey & skating</NavLink>
+                                    {/* <div className='subNavDivider'>Summer camp</div> */}
+                                    {/* <ul className='subSubNav'>
+                                        <li><NavLink to='/programs/summer-camp/hockey-camp/'>Summer hockey camp</NavLink></li>
+                                    </ul> */}
                                     <div className='subNavDivider'>Skating</div>
                                     <ul className='subSubNav'>
                                         <li><NavLink to='/programs/hockey-and-skating/learn-to-skate/'>Learn to skate</NavLink></li>
