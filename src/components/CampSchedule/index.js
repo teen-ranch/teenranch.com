@@ -32,6 +32,7 @@ export default function CampSchedule({ dates, programs }) {
                      programs.map((program, i) => {
                         return (
                             <div className='schedule__row'
+                                key={i}
                                 style={{
                                     display: 'grid',
                                     gridTemplateColumns: `repeat(${ dates.length }, 1fr)`
