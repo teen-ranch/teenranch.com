@@ -22,6 +22,34 @@
 
 }
 
+.programContainerSmall {
+    position: relative;
+    box-shadow:
+        0 12px 24px rgba(0,0,0,0.1),
+        0 0 6px rgba(0,0,0,0.2)
+    ;
+    border-radius: 4px;
+    overflow: hidden;
+    .programBodySmall {
+        padding: 2rem;
+        text-align: center;
+    }
+    .programNameSmall {
+        font-size: 2rem;
+        color: $primary-dark;
+        margin-bottom: 1.5rem;
+    }
+
+    .programWhoSmall {
+        text-transform: uppercase;
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        color: rgba(0,0,0,0.5);
+        letter-spacing: 0.02em;
+        font-weight: bold;
+    }
+}
+
 @media screen and (min-width:64em) {
 
     .programContainer {

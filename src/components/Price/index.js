@@ -28,7 +28,7 @@ export function Price({ title, subTitle, who, price, term, includes, primary = f
 export function PriceContainer({ children }) {
     return (
         <div className='price__containerGrid'>
-            <Grid md='2' lg='3' xl='4'>
+            <Grid md='2' xl='4' gapSize='3rem'>
                 { children }
             </Grid>
         </div>

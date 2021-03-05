@@ -6,7 +6,7 @@ import { graphql } from 'gatsby'
 
 import SubNav from 'components/SubNav'
 import { PrimaryButton, CTAButton } from 'components/Button'
-import Program from 'components/Program'
+import Program, { ProgramContainer } from 'components/Program'
 
 // import Grid from 'components/Grid'
 // import Coach from 'components/Coach'
@@ -14,6 +14,9 @@ import { Link } from 'react-scroll'
 import { PriceContainer, Price, PriceAddon } from 'components/Price'
 import Quote from '../../../components/Quote'
 import CampSchedule from '../../../components/CampSchedule'
+import Grid from 'components/Grid'
+import Sponsor from 'components/Sponsor'
+import Img from 'gatsby-image'
 
 export const frontmatter = {
     title: 'Hockey camp',
@@ -27,7 +30,7 @@ const pageData = {
 
 export default function Programs({ data }) {
     
-    const { brent, eddie, file, iceCorral } = data
+    const { brent, eddie, file, iceCorral, hockeyNowWinner, hockeyCamp, girlsHockeyCamp, highPerformanceHockey, goalieCamp, activities } = data
 
 	return (
         <>
@@ -56,17 +59,33 @@ export default function Programs({ data }) {
                 <h1>Achieve your goals this season</h1>  
 
                 <p>
-                    Teen Ranch has been effectively running one of the most outstanding hockey programs available since 1971! Players and coaches from all over the world have partnered with us to make this one of the best places to reach your goals and develop your skills and skating to their maximum potential. Our outstanding coaches and program of excellence is designed to help you grow both on and off the ice.
+                    Teen Ranch has run one of the most exceptional skills & skating development hockey programs since 1971! Countless players and coaches from all over the world, outstanding professional instructors, and our on-site rink with an olympic-size ice surface are integral to making this the best place to help you reach your goals both on and off the ice.
                 </p>         
                 
                 <p>
-                    Teen Ranch alumni hockey players have graduated to NHL, semi-pro & European leagues as well as OHL and college teams. NHL players who have been guest instructors at Teen Ranch include Mike Gartner, Paul Henderson, Ron Ellis, Laurie Boschman, Darryl Sittler, and John Paddock.
+                    We focus on developing the whole athlete. Teen Ranch is a place where hockey players develop not only physically and mentally but develop truly life changing friendships and mentorships that last a lifetime.
                 </p>
 
+            </Container>
+
+            <Container type='body'>
+                <h1>Who it's for</h1>
                 <p>
-                    In addition to learning life-long skills, hockey campers will enjoy horseback riding, jousting, swimming, basketball, rock climbing, campfires, and enjoying the friendship of other campers. Campers will have the chance to examine life's values as they relate to the Bible. 
+                    Hockey camp is perfect for players and goalies of all ability levels. We offer specialized programs for girls, rep-players and goalies.
                 </p>
 
+                <ProgramContainer>
+                    <Program small name='Hockey camp' who='Players & goalies (co-ed)' src={ hockeyCamp.childImageSharp.fluid }>Skills & skating development for players and goalies of all ability levels, with a focus on enjoying the game.</Program>
+                    <Program small name={`Girl's hockey camp`} who='Players & goalies (female)' src={ girlsHockeyCamp.childImageSharp.fluid }>A no-pressure skills & skating development program with the same high-quality instruction just for girls.</Program>
+                    <Program small name='High-performance hockey camp' who='Players & goalies (co-ed)' src={ highPerformanceHockey.childImageSharp.fluid }>For high-performance players focused on advanced skills in skating, puck handling, shooting, and passing.</Program>
+                    <Program small name='Goalie camp' who='Goalies (co-ed)' src={ goalieCamp.childImageSharp.fluid }>Goalie specific training, with a focus on angles, technique, rebound-control, proper form, butterfly and much more.</Program>
+                </ProgramContainer>
+
+            </Container>
+
+            <Container type='body'>
+
+                <div style={{ textAlign: 'center' }}><Img fixed={ hockeyNowWinner.childImageSharp.fixed } alt='Best hockey school in Ontario award.' /></div>
                 <Quote cite="J R U">
                     Best camp for kids in southern Ontario. <strong>Won best hockey school in Ontario.</strong> Beautiful grounds. Beautiful staff that really care about kids and their well being. Hockey, horses, BMX, skating, adventure, soccer, you name it they probably have it. Beautiful meals served three times a day! This place is fantastic. An oasis.
                 </Quote>
@@ -74,21 +93,14 @@ export default function Programs({ data }) {
             </Container>
 
             <Container type='body'>
-                <h1>Who it's for</h1>
-                <p>
-                    Hockey camp is perfect for all players and goalies of all ability levels. We offer specialized programs for girls, rep-players and goalies.
-                </p>
-            </Container>
 
-            <Container type='body'>
-
-                <h1>Functional fitness program</h1>
+                <h1>Functional fitness program (high-performance)</h1>
 
                 <p>
                     High-performance athletes have exclusive access to our functional fitness program designed specifically for hockey players. This program is designed to develop strength, explosive power, hand-eye coordination, speed & quickness, and endurance.
                 </p>
                 <p>
-                    Off-ice circuit training and high tempo plyometrics, aerobic, anaerobic workouts, core strengthening and body weight strength training.
+                    Off-ice circuit training and high tempo plyometrics, aerobic, anaerobic workouts, core strengthening, and bodyweight strength training. 
                 </p>
 
                 {/* <PrimaryButton to='/programs/functional-fitness-program/'>Learn more</PrimaryButton> */}
@@ -97,7 +109,7 @@ export default function Programs({ data }) {
 
             <Container type='body'>
 
-                <h1>Our coaches</h1>
+                <h1>Our coaching staff</h1>
 
                 {/* <Grid md='2'> */}
 
@@ -105,7 +117,7 @@ export default function Programs({ data }) {
                         <h2>Brent Boschman</h2>
                         <h3>Head coach</h3>
                         <p>
-                            Brent is a Liberty University graduate and ALl-American, the son of former Ottawa Senators Captain Laurie Boschman, is a highly regarded coach, instructor, and player agent, holding a degree in Sport Management and is the Liberty Flames third all-time leading scorer. 
+                            Brent is a Liberty University graduate and All-American, the son of former Ottawa Senators Captain Laurie Boschman, is a highly regarded coach, instructor, and player agent, holding a degree in Sport Management and is the Liberty Flames third all-time leading scorer. 
                         </p>
                     </Program>
 
@@ -156,14 +168,40 @@ export default function Programs({ data }) {
                 <Program src={ iceCorral.childImageSharp.fluid }>
                     <h2>The Ice Corral</h2>
                     <p>
-                        Completed in 1995, the Teen Ranch Ice Corral has an olympic-size ice pad with seating for up to 1,000 spectators.
+                        Completed in 1995, the Teen Ranch Ice Corral has seating for up to 1,000 spectators, an <strong>olympic-size ice pad</strong>, and a <strong>sand base</strong> that makes an exceptionally good ice surface.
                     </p>
                     <p>
-                        We have had the privilege of hosting the Toronto Maple Leafs, Ottawa Senators, Florida Panthers, Team Canada, Team Finland and many other pro and semi-pro teams.
+                        We have had the privilege of hosting many pro and semi-pro teams including the Toronto Maple Leafs, Montreal Canadians, Ottawa Senators, Florida Panthers, Olympic teams from Canada, Finland, Russia, Australia, Germany & more, St. Michael's Majors (OHL), and Mississauga Ice Dogs (AAA).
                     </p>
                 </Program>
                 
                 <PrimaryButton  to="/facilities/">See more of our facilities</PrimaryButton>
+
+            </Container>
+
+            <Container type='body'>
+
+                <h1>Afternoon activities</h1>
+
+                <p>
+                    Each afternoon, campers get to take their pick from some amazing camp activities on 150 beautiful acres including: rock climbing, bouldering, water slide, swimming, water jousting, archery, tennis, basketball, volleyball, and more.
+                </p>
+
+                <Grid
+                    sm={2}
+                    md={2}
+                    lg={3}
+                    xl={5}
+                    gap={ false }
+                >
+                    {
+                        activities && activities.edges && activities.edges.map((edge, i) => {
+
+                            return <div key={ i } className='facility'><Img fluid={ edge.node.childImageSharp.fluid } alt='Activities' /></div>
+
+                        })
+                    }
+                </Grid>
 
             </Container>
 
@@ -252,12 +290,14 @@ export default function Programs({ data }) {
                 <h1>Pricing</h1>
             </Container> */}
 
+            <Container type='body'>
+                <h1>Pricing</h1>
             <PriceContainer>
 
                 <Price 
                     title='Hockey camp' 
-                    subTitle='Skills & skating development with a focus on enjoying the game' 
-                    who='Players and goalies welcome (co-ed)'
+                    subTitle='Skills & skating development for players and goalies of all ability levels, with a focus on enjoying the game.' 
+                    who='Players and goalies (co-ed)'
                     price={1250} 
                     term='week' 
                     includes={[
@@ -274,8 +314,8 @@ export default function Programs({ data }) {
                 </Price>
                 <Price 
                     title="Girl's hockey camp"
-                    subTitle='Skills & skating development with a focus on enjoying the game'
-                    who='Players and goalies welcome (female)'
+                    subTitle='A no-pressure skills & skating development program with the same high-quality instruction just for girls.'
+                    who='Players and goalies (female)'
                     price={1250} 
                     term='week' 
                     includes={[
@@ -292,8 +332,8 @@ export default function Programs({ data }) {
                 </Price>
                 <Price 
                     title={<>High-performance<br/>hockey camp</>} 
-                    subTitle='For high-performance players taking their game to the next level' 
-                    who='Rep-level players welcome (co-ed)'
+                    subTitle='For high-performance players focused on advanced skills in skating, puck handling, shooting, and passing.' 
+                    who='Rep-level players (co-ed)'
                     price={1750} 
                     term='week' 
                     primary 
@@ -311,8 +351,8 @@ export default function Programs({ data }) {
                 </Price>
                 <Price
                     title='Goalie camp' 
-                    subTitle='For goalies taking their game to the next level' 
-                    who='Goalies welcome (co-ed)'
+                    subTitle='Goalie specific training, with a focus on angles, technique, rebound-control, proper form, butterfly and much more.' 
+                    who='Goalies (co-ed)'
                     price={1750} 
                     term='week'
                     includes={[
@@ -330,6 +370,8 @@ export default function Programs({ data }) {
                     <CTAButton href="https://register.trmanager.com">Register now</CTAButton>
                 </Price>
             </PriceContainer>
+
+            </Container>
 
             <Container type='body'>
                 <h2>Hockey camp add-ons:</h2>
@@ -381,6 +423,46 @@ export const query = graphql`
 			}
         }
 
+        hockeyNowWinner: file(relativePath: { eq: "programs/hockey/hockeyNow_bestHockeySchoolInOntarioWinner.png" }) {
+            childImageSharp {
+                fixed(height: 180 quality: 64) {
+                    ...GatsbyImageSharpFixed_withWebp
+                }
+            }
+        }
+
+        hockeyCamp: file(relativePath: { eq: "programs/hockey/IMG_5099.JPG" }) {
+            childImageSharp {
+				fluid(maxWidth: 600 maxHeight: 334 quality: 64) {
+					...GatsbyImageSharpFluid_withWebp
+				}
+			}
+        }
+
+        girlsHockeyCamp: file(relativePath: { eq: "programs/hockey/tr girls pic.jpg" }) {
+            childImageSharp {
+				fluid(maxWidth: 600 maxHeight: 334 quality: 64) {
+					...GatsbyImageSharpFluid_withWebp
+				}
+			}
+        }
+
+        highPerformanceHockey: file(relativePath: { eq: "facilities/iceCorral/hockey14.jpg" }) {
+            childImageSharp {
+				fluid(maxWidth: 600 quality: 64) {
+					...GatsbyImageSharpFluid_withWebp
+				}
+			}
+        }
+
+        goalieCamp: file(relativePath: { eq: "programs/hockey/goalie.jpg" }) {
+            childImageSharp {
+				fluid(maxWidth: 600 quality: 64) {
+					...GatsbyImageSharpFluid_withWebp
+				}
+			}
+        }
+
         brent: file(relativePath: { eq: "coaches/brent-boschman.jpg" }) {
             childImageSharp {
 				fluid(maxWidth: 1920 quality: 64) {
@@ -404,5 +486,19 @@ export const query = graphql`
 				}
 			}
         }
+
+        activities: allFile(filter: { relativeDirectory: { eq: "activities" }}) {
+            edges {
+            node {
+                name
+                childImageSharp {
+                    fluid {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
+            }
+        }
+
     }
 `
