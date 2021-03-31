@@ -31,7 +31,22 @@ export default function Header({ location }) {
                         <li><a target="_blank" rel="noopener" href='https://shop.teenranch.com'>Shop</a></li>
                         <li><NavLink to="/programs">Programs</NavLink>
                             <ul className='subNav'>
+                                <li><NavLink to='/programs/summer-camp/'>Summer camp</NavLink>
+                                    <ul className='subSubNav'>
+                                        <li><NavLink to='/programs/summer-camp/hockey-camp/'>Hockey camp</NavLink></li>
+                                        {/* <li><NavLink to='/programs/summer-camp/hockey-camp/'>Figure skating camp</NavLink></li>
+                                        <li><NavLink to='/programs/summer-camp/horse-camp/'>Horse camp</NavLink></li>
+                                        <li><NavLink to='/programs/summer-camp/horse-camp/'>Adventure camp</NavLink></li>
+                                        <li><NavLink to='/programs/summer-camp/hockey-camp/'>BMX dirt camp</NavLink></li>
+                                        <li><NavLink to='/programs/summer-camp/hockey-camp/'>WHAM camp</NavLink></li> */}
+                                        <li>More summer camps coming soon...</li>
+                                    </ul>
+                                </li>
                                 <li><NavLink to='/programs/hockey-and-skating/'>Hockey & skating</NavLink>
+                                    {/* <div className='subNavDivider'>Summer camp</div> */}
+                                    {/* <ul className='subSubNav'>
+                                        <li><NavLink to='/programs/summer-camp/hockey-camp/'>Summer hockey camp</NavLink></li>
+                                    </ul> */}
                                     <div className='subNavDivider'>Skating</div>
                                     <ul className='subSubNav'>
                                         <li><NavLink to='/programs/hockey-and-skating/learn-to-skate/'>Learn to skate</NavLink></li>
@@ -52,7 +67,7 @@ export default function Header({ location }) {
                                     <ul className='subSubNav'>
                                         <li><NavLink to='/programs/hockey-and-skating/pond-hockey/'>Pond hockey</NavLink></li>
                                         <li><NavLink to='/programs/hockey-and-skating/ice-rental/'>Ice rental</NavLink></li>
-                                        <li><NavLink to='/programs/hockey-and-skating/public-skating//'>Public skating</NavLink></li>
+                                        <li><NavLink to='/programs/hockey-and-skating/public-skating/'>Public skating</NavLink></li>
                                     </ul>
                                 </li>
                                 <li><NavLink to='/programs/horses/'>Horses</NavLink>
@@ -74,6 +89,7 @@ export default function Header({ location }) {
                                     <li><NavLink to='/events'>Events</NavLink>
                                         <ul className='subSubNav'>
                                             {/* <li><NavLink to='/events/the-christmas-winter-festival/'>Christmas Winter Festival</NavLink></li> */}
+                                            <li><NavLink to='/events/march-april-break-day-camp/'><s>March</s> April Break Day Camp</NavLink></li>
                                             <li><NavLink to='/events/family-winter-activity-adventure/'>Winter Activity Adventure</NavLink></li>
                                         </ul>
                                     </li>

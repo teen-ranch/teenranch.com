@@ -2,12 +2,13 @@
 header {
     position: sticky;
     top:0;
-    z-index: 1;
+    z-index: 2;
 }
 .container--header {
     border-bottom: 1px solid #fafafa;
     height: 100px;
     background: #fff;
+    z-index: 1;
    
     // background: $primary-dark;
 

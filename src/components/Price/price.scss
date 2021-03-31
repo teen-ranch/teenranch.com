@@ -1,0 +1,100 @@
+@import 'styles/vars';
+
+.price__containerGrid {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .price__container {
+        // max-width: 480px;
+        // min-width: 320px;
+        box-shadow: 
+            0 1px 1px 0 rgba(60,64,67,.08),
+            0 4px 12px 1px rgba(60,64,67,.26)
+        ;
+        border-radius: 10px;
+        // margin: 2rem;
+        padding: 4rem;
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .price__mostPopular {
+        position: absolute;
+        right: -1.5rem;
+        top: 1rem;
+        background: $primary-red;
+        transform: rotate(25deg);
+        text-transform: uppercase;
+        color: $primary-white;
+        font-size: 1.2rem;
+        padding: .5rem 2rem .5rem 5rem;
+    }
+
+    .price__title {
+        text-align: center;
+        margin: 0 0 3rem 0;
+        text-transform: uppercase;
+        min-height: 68px;
+    }
+    .price__subTitle {
+        text-align: center;
+        font-weight: normal;
+        font-size: 1.4rem;
+    }
+
+    .price__who {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        margin-bottom: 3rem;
+    }
+
+    .price {
+        text-align: center;
+        font-size: 4rem;
+        background: rgba(0,0,0,0.05);
+        margin: 4rem -4rem;
+        padding: 3rem 0;
+        color: $primary-dark;
+        span {
+            font-size: 2rem;
+        }
+    }
+    .price__container--primary {
+        border: 2px solid $primary-red;
+    }
+}
+
+.price__addonContainer {
+    box-shadow: 
+        0 1px 1px 0 rgba(60,64,67,.08),
+        0 4px 12px 1px rgba(60,64,67,.26)
+    ;
+    border-radius: 10px;
+    padding: 4rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+
+    h1 {
+        margin: 0;
+    }
+
+    .subTitle {
+        font-size: 1.8rem;
+        font-weight: normal;
+    }
+
+    p {
+        margin: 1rem 0 0 0;
+    }
+
+    .price__addonPrice {
+        text-align: right;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+}

@@ -7,6 +7,7 @@ import { Helmet } from 'react-helmet'
 import { withOrientationChange } from 'react-device-detect'
 
 import GatsbyImg from 'gatsby-image'
+import { Link } from 'react-scroll'
 
 import './heading.scss'
 
@@ -45,9 +46,13 @@ function Heading({ title, src, alt, subtitle, metaTitle, metaDescription, keywor
                         <h1>{ title }</h1>
                         { subtitle && <h2>{ subtitle }</h2> }
                         { children }
+                        <div className='seeMoreContainer'>
+                            <Link className='seeMore' to='body-start'><i className='material-icons'>keyboard_arrow_down</i></Link>
+                        </div>
                     </div>
                 </div>
             </Container>
+            <div id="body-start" style={{ position: 'relative', top: '-100px' }} />
         </>
     )
 
@@ -69,16 +74,20 @@ function Heading({ title, src, alt, subtitle, metaTitle, metaDescription, keywor
 
             <Container type='heading' constrain={false}>
                 <div className='imageContainer'>
-                    { src && <GatsbyImg fluid={ src } alt={ pageTitle } /> }
+                    { src && <GatsbyImg fluid={ src } alt={ alt || pageTitle } /> }
                 </div>
                 <div className='overlayContainer'>
                     <div className='overlay'>
                         <h1>{ title }</h1>
                         { subtitle && <h2>{ subtitle }</h2> }
                         { children }
+                        <div className='seeMoreContainer'>
+                            <Link className='seeMore' to='body-start'><i className='material-icons'>keyboard_arrow_down</i></Link>
+                        </div>
                     </div>
                 </div>
             </Container>
+            <div id="body-start" style={{ position: 'relative', top: '-100px' }} />
         </>
     )
 }
