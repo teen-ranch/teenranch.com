@@ -30,7 +30,7 @@ export default ({ data }) => {
 
 						<h2 style={{ marginTop: '8rem' }}>Want to be notified as soon as registration opens?</h2>
 						
-						<div style={{ position: 'absolute', left: '-5000px'}} aria-hidden="true"><input type="text" name="b_93bbc7a16b1a2719f9690a8b0_41cfb19836" tabIndex="-1" value=""/></div>
+						<div style={{ position: 'absolute', left: '-5000px'}} aria-hidden="true"><input type="text" name="b_93bbc7a16b1a2719f9690a8b0_41cfb19836" tabIndex="-1" defaultValue=""/></div>
 						<div
 							style={{
 								display: 'flex',
@@ -136,14 +136,15 @@ export default ({ data }) => {
 			<Container type='body'>
 
 				<Program
-					src={data.winterActivityAdventure.childImageSharp.fluid}
-					name='Winter Activity Adventure'
+					src={data.aprilBreakDayCamp.childImageSharp.fluid}
+					name={<><s>March</s> April Break Day Camp</>}
+					alt='April Break Day Camp'
 				>
 					<p>
-					Teen Ranch is pleased to offer winter outdoor adventures for you and your family to enjoy this winter! Our lockdown-friendly activities provide a chance to get your family outdoors, play together, explore the beautiful Teen Ranch landscape and get in that much-needed outdoor fitness, mental health break that’s hard to come by these days. Research shows that even just 120 minutes a week has a marked improvement on mental health, not to mention keeping our bodies active!
+					Treat your kids to a getaway this spring break! Sign them up for a week of day camp and rest assured that they will enjoy all kinds of fun and adventure with other kids in a COVID-friendly format which meets or exceeds Ministry of Health guidelines.
                     </p>
 
-					<Button to='/events/family-winter-activity-adventure/'>Learn more</Button>
+					<Button to='/events/march-april-break-day-camp/'>Learn more</Button>
 				</Program>
 
 				<Program
@@ -216,7 +217,7 @@ export const query = graphql`
 			}
 		}
 
-		winterActivityAdventure: file(relativePath: { eq: "events/winterTobogganing.jpg" }) {
+		aprilBreakDayCamp: file(relativePath: { eq: "activities/kids1.jpg" }) {
 			childImageSharp {
 				fluid(maxWidth: 1920 quality: 64) {
 					...GatsbyImageSharpFluid_withWebp
