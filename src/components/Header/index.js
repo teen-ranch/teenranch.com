@@ -34,11 +34,12 @@ export default function Header({ location }) {
                                 <li><NavLink to='/programs/summer-camp/'>Summer camp</NavLink>
                                     <ul className='subSubNav'>
                                         <li><NavLink to='/programs/summer-camp/hockey-camp/'>Hockey camp</NavLink></li>
-                                        <li><NavLink to='/programs/summer-camp/hockey-camp/'>Figure skating camp</NavLink></li>
+                                        {/* <li><NavLink to='/programs/summer-camp/hockey-camp/'>Figure skating camp</NavLink></li>
                                         <li><NavLink to='/programs/summer-camp/horse-camp/'>Horse camp</NavLink></li>
                                         <li><NavLink to='/programs/summer-camp/horse-camp/'>Adventure camp</NavLink></li>
                                         <li><NavLink to='/programs/summer-camp/hockey-camp/'>BMX dirt camp</NavLink></li>
-                                        <li><NavLink to='/programs/summer-camp/hockey-camp/'>WHAM camp</NavLink></li>
+                                        <li><NavLink to='/programs/summer-camp/hockey-camp/'>WHAM camp</NavLink></li> */}
+                                        <li>More summer camps coming soon...</li>
                                     </ul>
                                 </li>
                                 <li><NavLink to='/programs/hockey-and-skating/'>Hockey & skating</NavLink>
@@ -88,6 +89,7 @@ export default function Header({ location }) {
                                     <li><NavLink to='/events'>Events</NavLink>
                                         <ul className='subSubNav'>
                                             {/* <li><NavLink to='/events/the-christmas-winter-festival/'>Christmas Winter Festival</NavLink></li> */}
+                                            <li><NavLink to='/events/march-april-break-day-camp/'><s>March</s> April Break Day Camp</NavLink></li>
                                             <li><NavLink to='/events/family-winter-activity-adventure/'>Winter Activity Adventure</NavLink></li>
                                         </ul>
                                     </li>

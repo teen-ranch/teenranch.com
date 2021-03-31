@@ -25,19 +25,19 @@ export default ({ data }) => {
 				metaDescription={`We are working hard to make this your best summer ever!`}
 			>
 				<div id="mc_embed_signup">
-					<form action="https://teenranch.us2.list-manage.com/subscribe/post?u=93bbc7a16b1a2719f9690a8b0&amp;id=8f481bca1e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<form action="https://teenranch.us2.list-manage.com/subscribe/post?u=93bbc7a16b1a2719f9690a8b0&amp;id=8f481bca1e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" novalidate>
 						<div id="mc_embed_signup_scroll">
 
 						<h2 style={{ marginTop: '8rem' }}>Want to be notified as soon as registration opens?</h2>
 						
-						<div style={{ position: 'absolute', left: '-5000px'}} aria-hidden="true"><input type="text" name="b_93bbc7a16b1a2719f9690a8b0_41cfb19836" tabindex="-1" value=""/></div>
+						<div style={{ position: 'absolute', left: '-5000px'}} aria-hidden="true"><input type="text" name="b_93bbc7a16b1a2719f9690a8b0_41cfb19836" tabIndex="-1" value=""/></div>
 						<div
 							style={{
 								display: 'flex',
 								justifyContent: 'center'
 							}}
 						>
-							<input type="email" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your email address" required
+							<input type="email" name="EMAIL" className="email" id="mce-EMAIL" placeholder="Your email address" required
 								style={{
 									margin: '1rem 0',
 									borderRadius: '4px 0 0 4px',
@@ -47,7 +47,7 @@ export default ({ data }) => {
 									padding: '1rem'
 								}}
 							/>
-							<div class="clear"><input type="submit" value="Notify me" name="subscribe" id="mc-embedded-subscribe" class="button"
+							<div className="clear"><input type="submit" defaultValue="Notify me" name="subscribe" id="mc-embedded-subscribe" className="button"
 								style={{
 									borderRadius: '0 4px 4px 0'
 								}}
@@ -68,19 +68,19 @@ export default ({ data }) => {
 				metaDescription='Less than an hour from Toronto in the heart of Caledon, Ontario'
 			>
 				<div id="mc_embed_signup">
-					<form action="https://teenranch.us2.list-manage.com/subscribe/post?u=93bbc7a16b1a2719f9690a8b0&amp;id=41cfb19836" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<form action="https://teenranch.us2.list-manage.com/subscribe/post?u=93bbc7a16b1a2719f9690a8b0&amp;id=41cfb19836" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" novalidate>
 						<div id="mc_embed_signup_scroll">
 
 						<h2 style={{ marginTop: '8rem' }}>Get inspiring articles and Teen Ranch news delivered straight to your inbox.</h2>
 						
-						<div style={{ position: 'absolute', left: '-5000px'}} aria-hidden="true"><input type="text" name="b_93bbc7a16b1a2719f9690a8b0_41cfb19836" tabindex="-1" value=""/></div>
+						<div style={{ position: 'absolute', left: '-5000px'}} aria-hidden="true"><input type="text" name="b_93bbc7a16b1a2719f9690a8b0_41cfb19836" tabIndex="-1" value=""/></div>
 						<div
 							style={{
 								display: 'flex',
 								justifyContent: 'center'
 							}}
 						>
-							<input type="email" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your email address" required
+							<input type="email" name="EMAIL" className="email" id="mce-EMAIL" placeholder="Your email address" required
 								style={{
 									margin: '1rem 0',
 									borderRadius: '4px 0 0 4px',
@@ -90,7 +90,7 @@ export default ({ data }) => {
 									padding: '1rem'
 								}}
 							/>
-							<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"
+							<div className="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button"
 								style={{
 									borderRadius: '0 4px 4px 0'
 								}}
