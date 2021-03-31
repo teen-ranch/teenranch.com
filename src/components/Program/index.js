@@ -6,7 +6,7 @@ import Grid from 'components/Grid'
 
 import './program.scss'
 
-export default function Program({ src, name, who, children, swap, imageOptions, small = false }) {
+export default function Program({ src, name, alt, who, children, swap, imageOptions, small = false }) {
 
     if (small) return (
         <div className='programContainerSmall'>
@@ -25,9 +25,9 @@ export default function Program({ src, name, who, children, swap, imageOptions, 
         <div className={`programContainer ${ swap ? 'programContainer--swap' : '' }`}>
             <div className='programImage'>
                 { typeof src === 'string' ? (
-                    <Img src={src} alt={name} options={ imageOptions } />
+                    <Img src={src} alt={alt || name} options={ imageOptions } />
                 ) : (
-                    <GatsbyImg fluid={ src } alt={name} />
+                    <GatsbyImg fluid={ src } alt={alt || name} />
                 ) }
             </div>
             <div className='programBody'>
