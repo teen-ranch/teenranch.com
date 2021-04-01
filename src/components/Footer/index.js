@@ -54,7 +54,7 @@ export default function Footer() {
                         <div className='footerTitle'>Events</div>
                         <ul className='footerNavigation'>
                             {/* <li><Link to='/events/the-christmas-winter-festival/'>Christmas Winter Festival</Link></li> */}
-                            <li><Link to='/events/march-april-break-day-camp/'><s>March</s> April Break Day Camp</Link></li>
+                            {/* <li><Link to='/events/march-april-break-day-camp/'><s>March</s> April Break Day Camp</Link></li> */}
                             <li><Link to='/events/family-winter-activity-adventure/'>Winter Activity Adventure</Link></li>
                         </ul>
 

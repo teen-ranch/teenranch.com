@@ -90,6 +90,8 @@ export default function ({ data }) {
 
             <div style={{ maxWidth: '960px', margin: '0 auto', fontSize: '18px', color: 'rgb(41, 41, 41)', letterSpacing: '0.01em', lineHeight: '26px', padding: '0 2rem' }}>
 
+                <div style={{ color: 'red', fontSize: '2rem' }}>CANCELLED DUE TO COVID-19</div>
+
                 <Container>
                     <h1><s>March</s> April Break Day Camp</h1>
 
