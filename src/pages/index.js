@@ -189,7 +189,6 @@ function CovidContainer() {
 					<table
 						className='covidTable'
 					>
-						<tr><th><s>March</s> April Break Day Camp</th><td>ACTIVE</td></tr>
 						<tr><th>Summer camp</th><td>COMING SOON!</td></tr>
 						<tr><th>Trail rides</th><td>ACTIVE</td></tr>
 						<tr><th>Horse programs</th><td>PAUSED</td></tr>
