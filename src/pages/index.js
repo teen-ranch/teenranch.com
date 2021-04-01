@@ -25,7 +25,7 @@ export default ({ data }) => {
 				metaDescription={`We are working hard to make this your best summer ever!`}
 			>
 				<div id="mc_embed_signup">
-					<form action="https://teenranch.us2.list-manage.com/subscribe/post?u=93bbc7a16b1a2719f9690a8b0&amp;id=8f481bca1e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" novalidate>
+					<form action="https://teenranch.us2.list-manage.com/subscribe/post?u=93bbc7a16b1a2719f9690a8b0&amp;id=8f481bca1e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
 						<div id="mc_embed_signup_scroll">
 
 						<h2 style={{ marginTop: '8rem' }}>Want to be notified as soon as registration opens?</h2>
@@ -68,7 +68,7 @@ export default ({ data }) => {
 				metaDescription='Less than an hour from Toronto in the heart of Caledon, Ontario'
 			>
 				<div id="mc_embed_signup">
-					<form action="https://teenranch.us2.list-manage.com/subscribe/post?u=93bbc7a16b1a2719f9690a8b0&amp;id=41cfb19836" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" novalidate>
+					<form action="https://teenranch.us2.list-manage.com/subscribe/post?u=93bbc7a16b1a2719f9690a8b0&amp;id=41cfb19836" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
 						<div id="mc_embed_signup_scroll">
 
 						<h2 style={{ marginTop: '8rem' }}>Get inspiring articles and Teen Ranch news delivered straight to your inbox.</h2>
@@ -190,8 +190,8 @@ function CovidContainer() {
 					<table
 						className='covidTable'
 					>
+						<tr><th><s>March</s> April Break Day Camp</th><td>ACTIVE</td></tr>
 						<tr><th>Summer camp</th><td>COMING SOON!</td></tr>
-						<tr><th>Winter activity adventure</th><td>ACTIVE</td></tr>
 						<tr><th>Trail rides</th><td>ACTIVE</td></tr>
 						<tr><th>Horse programs</th><td>PAUSED</td></tr>
 						<tr><th>Hockey & skating programs</th><td>PAUSED</td></tr>
