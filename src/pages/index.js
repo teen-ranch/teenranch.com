@@ -186,7 +186,6 @@ function CovidContainer() {
 					<p>Ice Arenas in Peel district are now in lockdown and are closed until further notice.</p>
 					<p>All ice rentals and program registrations have been paused and will resume when permitted by government mandate.<br/>Credits will be applied for any missed sessions that are not able to be re-scheduled.</p>
 					<p>Please check back for updates.</p>
-
 					<table
 						className='covidTable'
 					>
