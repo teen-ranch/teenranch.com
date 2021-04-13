@@ -27,8 +27,8 @@ export default () => {
                         <li>One-hour in length</li>
                         <li>Max. participant weight of 250lbs</li>
                         <li>Pre-booking and pre-payment required*</li>
-                        <li>Private lesson - Ages 5+: $75.00 per person (Includes HST)</li>
-                        <li>Semi-private lesson - Ages 7+: $60.00 per person (Includes HST)</li>
+                        <li>Private lesson - Ages 5+: $75.00 +HST per person</li>
+                        <li>Semi-private lesson - Ages 7+: $60.00 +HST per person</li>
                     </ul>
 
                     <Button href="mailto:rachel.stevens@teenranch.com?subject=Riding lessons">Book a riding lesson</Button>

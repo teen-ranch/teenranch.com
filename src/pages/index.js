@@ -136,15 +136,15 @@ export default ({ data }) => {
 			<Container type='body'>
 
 				<Program
-					src={data.aprilBreakDayCamp.childImageSharp.fluid}
-					name={<><s>March</s> April Break Day Camp</>}
+					src={data.hjShows.childImageSharp.fluid}
+					name={<>Hunter/Jumper Show Series</>}
 					alt='April Break Day Camp'
 				>
 					<p>
-					Treat your kids to a getaway this spring break! Sign them up for a week of day camp and rest assured that they will enjoy all kinds of fun and adventure with other kids in a COVID-friendly format which meets or exceeds Ministry of Health guidelines.
+						This is our 36th consecutive season offering these amazing shows to our extended equine community
                     </p>
 
-					<Button to='/events/march-april-break-day-camp/'>Learn more</Button>
+					<Button to='/programs/horses/hunter-jumper-shows/'>Learn more</Button>
 				</Program>
 
 				<Program
@@ -191,7 +191,7 @@ function CovidContainer() {
 					>
 						<tr><th>Summer camp</th><td>COMING SOON!</td></tr>
 						<tr><th>Trail rides</th><td>ACTIVE</td></tr>
-						<tr><th>Horse programs</th><td>PAUSED</td></tr>
+						<tr><th>Horse programs</th><td>ACTIVE</td></tr>
 						<tr><th>Hockey & skating programs</th><td>PAUSED</td></tr>
 					</table>
 
@@ -215,13 +215,13 @@ export const query = graphql`
 			}
 		}
 
-		aprilBreakDayCamp: file(relativePath: { eq: "activities/kids1.jpg" }) {
-			childImageSharp {
+		hjShows: file(relativePath: { eq: "hunter-jumper/Jumper grey J_R.jpg" }) {
+            childImageSharp {
 				fluid(maxWidth: 1920 quality: 64) {
 					...GatsbyImageSharpFluid_withWebp
 				}
 			}
-		}
+        }
 
 
         file(relativePath: { eq: "stock/chang-duong-Sj0iMtq_Z4w-unsplash.jpg" }) {

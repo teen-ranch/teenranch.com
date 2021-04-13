@@ -26,7 +26,7 @@ export default () => {
                         <li>Walk/trot (if comfortable)</li>
                         <li>Max. participant weight of 250lbs</li>
                         <li>Pre-booking and pre-payment required*</li>
-                        <li>$55.00 per person (Includes HST)</li>
+                        <li>$55.00 +HST per person</li>
                     </ul>
 
                     <Button href="mailto:rachel.stevens@teenranch.com?subject=Trail ride booking inquiry">Book a trail ride</Button>
