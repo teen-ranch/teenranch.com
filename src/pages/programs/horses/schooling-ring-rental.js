@@ -22,7 +22,7 @@ export default () => {
                     <ul>
                         <li>Hunter or jumper course</li>
                         <li>Pre-booking and pre-payment required*</li>
-                        <li>$25.00 per horse per hour of ring time (Includes HST)</li>
+                        <li>$25.00 +HST per horse per hour of ring time</li>
                     </ul>
 
                     <Button href="mailto:janet.stevens@teenranch.com?subject=Schooling ring rental">Rent a schooling ring</Button>

@@ -25,7 +25,7 @@ export default () => {
                         <li>Walk/trot (if comfortable)</li>
                         <li>Max. participant weight of 250lbs</li>
                         <li>Pre-booking and pre-payment required*</li>
-                        <li>$55.00 per person (Includes HST)</li>
+                        <li>$55.00 +HST per person</li>
                     </ul>
 
                     <Button href="mailto:rachel.stevens@teenranch.com?subject=Trail ride booking inquiry">Book a trail ride</Button>
@@ -42,8 +42,8 @@ export default () => {
                         <li>One-hour in length</li>
                         <li>Max. participant weight of 250lbs</li>
                         <li>Pre-booking and pre-payment required*</li>
-                        <li>Private lesson - Ages 5+: $75.00 per person (Includes HST)</li>
-                        <li>Semi-private lesson - Ages 7+: $60.00 per person (Includes HST)</li>
+                        <li>Private lesson - Ages 5+: $75.00 +HST per person</li>
+                        <li>Semi-private lesson - Ages 7+: $60.00 per person</li>
                     </ul>
 
                     <Button href="mailto:rachel.stevens@teenranch.com?subject=Riding lessons">Book a riding lesson</Button>
@@ -51,15 +51,14 @@ export default () => {
                 </Program>
 
                 <Program src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/hunterJumper16.jpg' name='Hunter/Jumper shows'>
-                    <h4>2020 show dates</h4>
+                    <h4>2021 show dates</h4>
                     <ul>
-                        <li>June 30 - ONLINE (Finished)</li>
-                        <li>July 19 - ONLINE (Online entry open)</li>
-                        <li>July 26 - TBD</li>
-                        <li>August 9 - TBD</li>
-                        <li>August 23 - TBD</li>
-                        <li>September 13 - TBD</li>
-                        <li>September 27 - TBD</li>
+                        <li>June 6</li>
+                        <li>June 20</li>
+                        <li>July 11</li>
+                        <li>July 25</li>
+                        <li>August 15</li>
+                        <li>August 29</li>
                     </ul>
 
                     <Button to='/programs/horses/hunter-jumper-shows/'>Learn more</Button>
@@ -71,7 +70,7 @@ export default () => {
                     <ul>
                         <li>Hunter or jumper course</li>
                         <li>Pre-booking and pre-payment required*</li>
-                        <li>$25.00 per horse per hour of ring time (Includes HST)</li>
+                        <li>$25.00 +HST per horse per hour of ring time</li>
                     </ul>
 
                     <Button href="mailto:janet.stevens@teenranch.com?subject=Schooling ring rental">Rent a schooling ring</Button>
