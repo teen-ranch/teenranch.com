@@ -73,7 +73,7 @@ export default () => {
                         <li>$25.00 +HST per horse per hour of ring time</li>
                     </ul>
 
-                    <Button href="mailto:janet.stevens@teenranch.com?subject=Schooling ring rental">Rent a schooling ring</Button>
+                    <Button href="mailto:corrie.ensom@teenranch.com?subject=Schooling ring rental">Rent a schooling ring</Button>
 
                 </Program>
 
