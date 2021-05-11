@@ -17,6 +17,9 @@ module.exports = {
       options: {
         name: `pages`,
         path: `${__dirname}/src/pages/`,
+        ignore: [
+          '**/programs/summer-camp/**'
+        ]
       },
     },
     `gatsby-transformer-javascript-frontmatter`,
