@@ -39,12 +39,12 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-netlify`,
-    {
-      resolve: `gatsby-plugin-offline`,
-      options: {
-        navigateFallbackWhitelist: [/\/$/]
-      }
-    },
+    // {
+    //   resolve: `gatsby-plugin-offline`,
+    //   options: {
+    //     navigateFallbackWhitelist: [/\/$/]
+    //   }
+    // },
     'gatsby-plugin-resolve-src',
     {
       resolve: `gatsby-plugin-canonical-urls`,
