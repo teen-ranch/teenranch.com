@@ -10,7 +10,7 @@ import Img from 'gatsby-image'
 
 import './facilities.scss'
 
-export default ({ data }) => {
+export default function Default({ data }) {
 
     const {
         aerial,

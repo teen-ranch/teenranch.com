@@ -9,7 +9,7 @@ import './mel-stevens.scss'
 import Video from 'components/Video'
 import ExternalLink from 'components/ExternalLink'
 
-export default () => {
+export default function Default() {
 
 	return (
         <>

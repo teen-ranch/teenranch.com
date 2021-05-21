@@ -8,7 +8,7 @@ import { graphql } from 'gatsby'
 import Program from 'components/Program'
 import Button from 'components/Button'
 
-export default ({ data }) => {
+export default function Index({ data }) {
 
 	return (
 	
@@ -183,7 +183,11 @@ function CovidContainer() {
 				>
 					<h3>COVID-19 Announcement</h3>
 
-					<p>Ice Arenas in Peel district are now in lockdown and are closed until further notice.</p>
+					<h4>The Ontario government will tentatively allow overnight summer camp starting July 5.</h4>
+					Would you be most comfortable sending your children to overnight summer camp or an enhanced day camp? <a target="_blank" rel="noreferrer" href="https://www.facebook.com/teenranch">Vote now on our facebook page!</a>
+
+
+					{/* <p>Ice Arenas in Peel district are now in lockdown and are closed until further notice.</p>
 					<p>All ice rentals and program registrations have been paused and will resume when permitted by government mandate.<br/>Credits will be applied for any missed sessions that are not able to be re-scheduled.</p>
 					<p>Please check back for updates.</p>
 					<table
@@ -195,7 +199,8 @@ function CovidContainer() {
 						<tr><th>Hockey & skating programs</th><td>PAUSED</td></tr>
 					</table>
 
-					<div><Button onClick={() => setIsOpen(false)}>Got it!</Button></div>
+					<div><Button onClick={() => setIsOpen(false)}>Got it!</Button></div> */}
+					
 				</div>
 			</Container>
 		</div>

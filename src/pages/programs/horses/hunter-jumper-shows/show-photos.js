@@ -22,7 +22,7 @@ const URLS = {
     'Teresa Finnerty Photography': 'https://www.facebook.com/teresamaefinnertyfoto'
 }
 
-export default ({ data }) => {
+export default function Default({ data }) {
 
     const { images } = data
 

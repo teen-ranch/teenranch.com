@@ -9,7 +9,7 @@ export const frontmatter = {
     path: '/programs/hockey-and-skating/'
 }
 
-export default () => {
+export default function Default() {
 
 	return (
         <>
