@@ -21,3 +21,5 @@ export const wrapPageElement = ({ element, props }) => (
         { element }
     </>
 )
+
+export const onServiceWorkerUpdateReady = () => window.location.reload();
