@@ -10,7 +10,7 @@ import './mel-stevens.scss'
 // import ExternalLink from 'components/ExternalLink'
 import { graphql } from 'gatsby'
 
-export default ({ data }) => {
+export default function Default({ data }) {
 
 	return (
         <>

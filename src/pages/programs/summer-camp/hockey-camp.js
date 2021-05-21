@@ -15,7 +15,7 @@ import { PriceContainer, Price, PriceAddon } from 'components/Price'
 import Quote from '../../../components/Quote'
 import CampSchedule from '../../../components/CampSchedule'
 import Grid from 'components/Grid'
-import Sponsor from 'components/Sponsor'
+// import Sponsor from 'components/Sponsor'
 import Img from 'gatsby-image'
 
 export const frontmatter = {

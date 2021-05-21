@@ -4,7 +4,7 @@ import Heading from 'components/Heading'
 import Button from 'components/Button'
 import Program from 'components/Program'
 
-export default () => {
+export default function Default() {
 
 	return (
         <>

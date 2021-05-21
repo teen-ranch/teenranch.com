@@ -2,7 +2,7 @@ import React from 'react'
 import Container from 'components/Container'
 import Heading from 'components/Heading'
 
-export default () => {
+export default function Default() {
 
 	return (
         <>

@@ -3,7 +3,7 @@ import Container from 'components/Container'
 import Heading from 'components/Heading'
 import Button from 'components/Button'
 
-export default () => {
+export default function Default() {
 
 	return (
         <>

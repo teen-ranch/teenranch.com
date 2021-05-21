@@ -5,7 +5,7 @@ import Heading from 'components/Heading'
 import './give.scss'
 import ExternalLink from 'components/ExternalLink'
 
-export default () => {
+export default function Default() {
 
 	return (
         <>

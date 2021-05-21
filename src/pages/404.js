@@ -5,7 +5,7 @@ import { Link } from '@reach/router'
 
 import './404.scss'
 
-export default function (){
+export default function Default(){
 	
 	return (
 		<>

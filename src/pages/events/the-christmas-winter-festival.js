@@ -40,7 +40,7 @@ const eventData = {
     }
 }
 
-export default function ({ data }) {
+export default function Default({ data }) {
 
     const events = []
     for (let i = 1; i <= 27; i++) {

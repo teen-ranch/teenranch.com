@@ -5,7 +5,7 @@ import Button from 'components/Button'
 import Program from 'components/Program'
 import ExternalLink from 'components/ExternalLink'
 
-export default () => {
+export default function Default() {
 
 	return (
         <>

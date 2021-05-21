@@ -11,7 +11,7 @@ import { graphql } from 'gatsby'
 
 import '../horses.scss'
 
-export default ({ data }) => {
+export default function Default({ data }) {
     
     const { banner, image1, image2, } = data
 
