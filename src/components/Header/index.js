@@ -31,15 +31,21 @@ export default function Header({ location }) {
                         {/* <li><a target="_blank" rel="noopener" href='https://shop.teenranch.com'>Shop</a></li> */}
                         <li><NavLink to="/programs">Programs</NavLink>
                             <ul className='subNav'>
-                                <li><NavLink to='/programs/summer-camp/'>Summer camp</NavLink>
+                                <li><NavLink to='/summer-camp/'>Summer camp</NavLink>
                                     <ul className='subSubNav'>
-                                        {/* <li><NavLink to='/programs/summer-camp/hockey-camp/'>Hockey camp</NavLink></li> */}
+                                        <div className='subNavDivider'>Ultimate day camp</div>
+                                        <li><NavLink to='/summer-camp/ultimate-day-camp/'>Overview: Ultimate day camp</NavLink></li>
+                                        <li><NavLink to='/summer-camp/ultimate-day-camp/hockey-camps/'>Hockey camps</NavLink></li>
+                                        <li><NavLink to='/summer-camp/ultimate-day-camp/horse-camps/'>Horse camps</NavLink></li>
+                                        <li><NavLink to='/summer-camp/ultimate-day-camp/bmx-dirt-camp/'>BMX dirt camp</NavLink></li>
+                                        <li><NavLink to='/summer-camp/ultimate-day-camp/wham-camp/'>WHAM camp</NavLink></li>
+                                        <div className='subNavDivider'>Junior day camp</div>
+                                        <li><NavLink to='/summer-camp/junior-day-camp/'>Junior day camp</NavLink></li>
                                         {/* <li><NavLink to='/programs/summer-camp/hockey-camp/'>Figure skating camp</NavLink></li>
                                         <li><NavLink to='/programs/summer-camp/horse-camp/'>Horse camp</NavLink></li>
                                         <li><NavLink to='/programs/summer-camp/horse-camp/'>Adventure camp</NavLink></li>
                                         <li><NavLink to='/programs/summer-camp/hockey-camp/'>BMX dirt camp</NavLink></li>
                                         <li><NavLink to='/programs/summer-camp/hockey-camp/'>WHAM camp</NavLink></li> */}
-                                        <li>More summer camps coming soon...</li>
                                     </ul>
                                 </li>
                                 <li><NavLink to='/programs/hockey-and-skating/'>Hockey & skating</NavLink>

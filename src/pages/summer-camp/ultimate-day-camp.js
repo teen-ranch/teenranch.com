@@ -78,10 +78,10 @@ export default function Programs({ data }) {
                 </p>
 
                 <ProgramContainer>
-                    <Program small name='Hockey camps' who='Players & goalies' src={ hockey.childImageSharp.fluid }>Skills & skating development for players and goalies from house-league to rep. Standard, high-performance, girl's hockey, and goalie camps.<br/><PrimaryButton to="/summer-camp/ultimate-day-camp/hockey-camps/">Learn more</PrimaryButton></Program>
-                    <Program small name='Horse camps' who='English & western riders' src={ horse.childImageSharp.fluid }>Horseback riding camps for begginer to advanced riders. Take your pick from western, english, rodeo, or intensive (hunter/jumper focused) camps.<br/><PrimaryButton to="/summer-camp/ultimate-day-camp/horse-camps/">Learn more</PrimaryButton></Program>
-                    <Program small name='BMX dirt camp' who='Beginner to advanced riders' src={ bmx.childImageSharp.fluid }>Tabletops, rollers, step-ups, step-downs, whoops, berms, hip jumps and even a pump track for riders of all levels.<br/><PrimaryButton to="/summer-camp/ulitmate-day-camp/bmx-dirt-camp/">Learn more</PrimaryButton></Program>
-                    <Program small name='WHAM camp' who='Kids who want to try everything' src={ wham.childImageSharp.fluid }>Epic activities like horseback riding, rock climbing, woodland survival, volleyball, archery, waterslide, jousting pond and so much more!<br/><PrimaryButton to="/summer-camp/ultimate-day-camp/wham-camp/">Learn more</PrimaryButton></Program>
+                    <Program small name='Hockey camps' who='Players & goalies (age 8+)' src={ hockey.childImageSharp.fluid }>Skills & skating development for players and goalies from house-league to rep. Standard, high-performance, girl's hockey, and goalie camps.<br/><PrimaryButton to="/summer-camp/ultimate-day-camp/hockey-camps/">Learn more</PrimaryButton></Program>
+                    <Program small name='Horse camps' who='English & western riders (age 8+)' src={ horse.childImageSharp.fluid }>Horseback riding camps for begginer to advanced riders. Take your pick from western, english, rodeo, or intensive (hunter/jumper focused) camps.<br/><PrimaryButton to="/summer-camp/ultimate-day-camp/horse-camps/">Learn more</PrimaryButton></Program>
+                    <Program small name='BMX dirt camp' who='Beginner to advanced riders (age 8+)' src={ bmx.childImageSharp.fluid }>Tabletops, rollers, step-ups, step-downs, whoops, berms, hip jumps and even a pump track for riders of all levels.<br/><PrimaryButton to="/summer-camp/ulitmate-day-camp/bmx-dirt-camp/">Learn more</PrimaryButton></Program>
+                    <Program small name='WHAM camp' who='Kids who want to try everything (age 8+)' src={ wham.childImageSharp.fluid }>Epic activities like horseback riding, rock climbing, woodland survival, volleyball, archery, waterslide, jousting pond and so much more!<br/><PrimaryButton to="/summer-camp/ultimate-day-camp/wham-camp/">Learn more</PrimaryButton></Program>
                 </ProgramContainer>
 
             </Container>
@@ -126,8 +126,6 @@ export default function Programs({ data }) {
             <Container type='body'>
 
                 <h1>Camp dates</h1>
-
-                <div id='ultimate' style={{ position: 'absolute', marginTop: '-180px', }}/>
                 <CampSchedule
                     dates={[
                         'July 5-9',
@@ -241,7 +239,7 @@ export default function Programs({ data }) {
                             ]
                         },
                         {
-                            name: 'Intensive riding camp',
+                            name: 'Intensive equestrian camp',
                             dates: [
                                 '12-16',
                                 '',
@@ -257,15 +255,15 @@ export default function Programs({ data }) {
                         {
                             name: 'BMX dirt camp',
                             dates: [
+                                '',
+                                '',
+                                '',
+                                '',
                                 '8-16',
-                                '8-16',
-                                '8-16',
-                                '8-16',
-                                '8-16',
-                                '8-16',
-                                '8-16',
-                                '8-16',
-                                '8-16',
+                                '',
+                                '',
+                                '',
+                                '',
                             ]
                         },
                         {
@@ -275,10 +273,10 @@ export default function Programs({ data }) {
                                 '8-16',
                                 '8-16',
                                 '8-16',
+                                '',
                                 '8-16',
                                 '8-16',
-                                '8-16',
-                                '8-16',
+                                '',
                                 '8-16',
                             ]
                         },

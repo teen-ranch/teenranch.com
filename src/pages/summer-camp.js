@@ -250,7 +250,7 @@ export default function Programs({ data }) {
                             ]
                         },
                         {
-                            name: 'Intensive riding camp',
+                            name: 'Intensive equestrian camp',
                             dates: [
                                 '12-16',
                                 '',
@@ -266,15 +266,15 @@ export default function Programs({ data }) {
                         {
                             name: 'BMX dirt camp',
                             dates: [
+                                '',
+                                '',
+                                '',
+                                '',
                                 '8-16',
-                                '8-16',
-                                '8-16',
-                                '8-16',
-                                '8-16',
-                                '8-16',
-                                '8-16',
-                                '8-16',
-                                '8-16',
+                                '',
+                                '',
+                                '',
+                                '',
                             ]
                         },
                         {
@@ -284,10 +284,10 @@ export default function Programs({ data }) {
                                 '8-16',
                                 '8-16',
                                 '8-16',
+                                '',
                                 '8-16',
                                 '8-16',
-                                '8-16',
-                                '8-16',
+                                '',
                                 '8-16',
                             ]
                         },

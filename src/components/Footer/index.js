@@ -18,6 +18,20 @@ export default function Footer() {
                 <div className='footer__grid'>
 
                     <div>
+                        <div className='footerTitle'>Summer camp</div>
+                        <ul className='footerNavigation'>
+                            <div className='subNavDivider'>Ultimate day camp</div>
+                                <li><Link to='/summer-camp/ultimate-day-camp/'>Ultimate day camp overview</Link></li>
+                                <li><Link to='/summer-camp/ultimate-day-camp/hockey-camps/'>Hockey camps</Link></li>
+                                <li><Link to='/summer-camp/ultimate-day-camp/horse-camps/'>Horse camps</Link></li>
+                                <li><Link to='/summer-camp/ultimate-day-camp/bmx-dirt-camp/'>BMX dirt camp</Link></li>
+                                <li><Link to='/summer-camp/ultimate-day-camp/wham-camp/'>WHAM camp</Link></li>
+                                <div className='subNavDivider'>Junior day camp</div>
+                                <li><Link to='/summer-camp/junior-day-camp/'>Junior day camp</Link></li>
+                            </ul>
+                    </div>
+
+                    <div>
                         <div className='footerTitle'>Hockey & skating</div>
                         <ul className='footerNavigation'>
                             <div className='subNavDivider'>Skating</div>
@@ -62,9 +76,6 @@ export default function Footer() {
                         <ul className='footerNavigation'>
                             <li><Link to='/programs/leadership/adventure-bible-program/'>Adventure Bible Program</Link></li>
                         </ul>
-                    </div>
-
-                    <div>
                         <div className='footerTitle'>Teen Ranch Canada</div>
                         <ul className='footerNavigation'>
                             {/* <li><Link to='/about-teen-ranch/'>About Teen Ranch</Link></li> */}
