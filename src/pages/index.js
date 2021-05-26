@@ -6,7 +6,7 @@ import { Img } from 'components/Tueri'
 import { Link } from '@reach/router'
 import { graphql } from 'gatsby'
 import Program from 'components/Program'
-import Button from 'components/Button'
+import Button, { CTAButton } from 'components/Button'
 
 export default function Index({ data }) {
 
@@ -24,7 +24,8 @@ export default function Index({ data }) {
 				metaTitle='Summer camp is back!'
 				metaDescription={`We are working hard to make this your best summer ever!`}
 			>
-				<div id="mc_embed_signup">
+				<CTAButton to='/summer-camp/'>Registration is now open</CTAButton>
+				{/* <div id="mc_embed_signup">
 					<form action="https://teenranch.us2.list-manage.com/subscribe/post?u=93bbc7a16b1a2719f9690a8b0&amp;id=8f481bca1e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
 						<div id="mc_embed_signup_scroll">
 
@@ -56,7 +57,7 @@ export default function Index({ data }) {
 						<div style={{ textAlign: 'center', color: 'rgba(204, 204, 204, 0.95)', fontSize: '1.1rem' }}>We don't like spam either :)</div>
 						</div>
 					</form>
-				</div>
+				</div> */}
 			</Heading>
 
 			{/* <Heading
@@ -136,9 +137,25 @@ export default function Index({ data }) {
 			<Container type='body'>
 
 				<Program
+					src={data.summerCamp.childImageSharp.fluid}
+					name='Summer day camp!'
+					alt='Summer camp'
+				>
+					<p>
+						Summer camp is back!
+                    </p>
+					<p>
+						Sign up now for our ultimate or junior day camps.
+					</p>
+
+					<Button to='/summer-camp/'>Learn more</Button>
+				</Program>
+
+				<Program
 					src={data.hjShows.childImageSharp.fluid}
 					name={<>Hunter/Jumper Show Series</>}
-					alt='April Break Day Camp'
+					alt='Hunter/jumper shows'
+					swap
 				>
 					<p>
 						This is our 36th consecutive season offering these amazing shows to our extended equine community
@@ -150,7 +167,6 @@ export default function Index({ data }) {
 				<Program
 					src={data.file.childImageSharp.fluid}
 					name='Leadership & Development: Adventure Bible Program'
-					swap
 				>
 					<p>This solid, Christ-centered experiential program is designed to ground young adults in God's Word and equip them for a vibrant walk with Jesus while challenging them through adventure and outreach.</p>
 

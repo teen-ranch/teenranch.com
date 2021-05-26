@@ -59,14 +59,14 @@ export default function Programs({ data }) {
                 <h1>Ultimate day camp for ultimate kids</h1>  
 
                 <p>
-                    Come to ultimate day camp and experience all the fun and adventure of summer camp! Enjoy the great outdoors, get active and build friendships that last a lifetime.
+                Come to ultimate day camp and experience all the fun and adventure of summer camp packed into five awesome days! Enjoy the great outdoors, get active and build friendships that last a lifetime.
                 </p>         
                 
                 <p>
-                    Our ultimate day camp programs are designed to give you the best possible camp experience including daily campfires featuring engaging, real-life topics shared from a biblical perspective. Make friends, join camp-wide games, and experience all the the greatest Teen Ranch activities packed into five awesome days!
+                In the morning, hone your skills in your sport of choice. Afternoons are your chance to enjoy a variety of activities and daily campfires with engaging, real-life topics shared from a biblical perspective.
                 </p>
                 <p>
-                    Our well-trained staff are commited to the safety and weel-being of each camper and aim to come alongside you to challenge and inspire!
+                    Our well-trained staff are committed to the safety and well-being of each camper and aim to come alongside you to challenge and inspire!
                 </p>
 
             </Container>
@@ -79,7 +79,7 @@ export default function Programs({ data }) {
 
                 <ProgramContainer>
                     <Program small name='Hockey camps' who='Players & goalies (age 8+)' src={ hockey.childImageSharp.fluid }>Skills & skating development for players and goalies from house-league to rep. Standard, high-performance, girl's hockey, and goalie camps.<br/><PrimaryButton to="/summer-camp/ultimate-day-camp/hockey-camps/">Learn more</PrimaryButton></Program>
-                    <Program small name='Horse camps' who='English & western riders (age 8+)' src={ horse.childImageSharp.fluid }>Horseback riding camps for begginer to advanced riders. Take your pick from western, english, rodeo, or intensive (hunter/jumper focused) camps.<br/><PrimaryButton to="/summer-camp/ultimate-day-camp/horse-camps/">Learn more</PrimaryButton></Program>
+                    <Program small name='Horse camps' who='English & western riders (age 8+)' src={ horse.childImageSharp.fluid }>Horseback riding camps for beginner to advanced riders. Take your pick from western, english, rodeo, or intensive (hunter/jumper focused) camps.<br/><PrimaryButton to="/summer-camp/ultimate-day-camp/horse-camps/">Learn more</PrimaryButton></Program>
                     <Program small name='BMX dirt camp' who='Beginner to advanced riders (age 8+)' src={ bmx.childImageSharp.fluid }>Tabletops, rollers, step-ups, step-downs, whoops, berms, hip jumps and even a pump track for riders of all levels.<br/><PrimaryButton to="/summer-camp/ulitmate-day-camp/bmx-dirt-camp/">Learn more</PrimaryButton></Program>
                     <Program small name='WHAM camp' who='Kids who want to try everything (age 8+)' src={ wham.childImageSharp.fluid }>Epic activities like horseback riding, rock climbing, woodland survival, volleyball, archery, waterslide, jousting pond and so much more!<br/><PrimaryButton to="/summer-camp/ultimate-day-camp/wham-camp/">Learn more</PrimaryButton></Program>
                 </ProgramContainer>
@@ -320,7 +320,7 @@ export default function Programs({ data }) {
                     </Price>
                     <Price 
                         title="Horse camps"
-                        subTitle='Horseback riding camps for begginer to advanced riders. Take your pick from western, english, rodeo, or intensive (hunter/jumper focused) camps.'
+                        subTitle='Horseback riding camps for beginner to advanced riders. Take your pick from western, english, rodeo, or intensive (hunter/jumper focused) camps.'
                         who='English & western riders'
                         price={850}
                         startingAt
