@@ -49,8 +49,8 @@ export default function Programs({ data }) {
             <SubNav>
                 <Link to='top' activeClass='active' spy={true}>Overview</Link>
                 <Link to='who' activeClass='active' spy={true}>Who it's for</Link>
-                <Link to='ultimate' activeClass='active' spy={true}>Ultimate day camp</Link>
-                <Link to='junior' activeClass='active' spy={true}>Junior day camp</Link>
+                <Link to='dates' activeClass='active' spy={true}>Camp dates</Link>
+                <Link to='pricing' activeClass='active' spy={true}>Pricing</Link>
             </SubNav>
 
             <div id='top' style={{ position: 'absolute', marginTop: '-120px', }}/>
@@ -98,7 +98,7 @@ export default function Programs({ data }) {
                         src={ file.childImageSharp.fluid }
                     >
                         Games, crafts, swimming, pony rides, story time and more! A week full of friendship and fun!
-                        <br/><PrimaryButton to='/summer-camp/junior-day-camp'>Learn more</PrimaryButton>
+                        <br/><PrimaryButton to='/summer-camp/junior-day-camp/'>Learn more</PrimaryButton>
                     </Program>
                     <Program 
                         small 
@@ -107,7 +107,7 @@ export default function Programs({ data }) {
                         src={ highPerformanceHockey.childImageSharp.fluid }
                     >
                         The full camp experience with your sport of choice, including daily campfires featuring engaging, real-life topics shared from a biblical perspective.
-                        <br/><PrimaryButton to='/summer-camp/ultimate-day-camp'>Learn more</PrimaryButton>
+                        <br/><PrimaryButton to='/summer-camp/ultimate-day-camp/'>Learn more</PrimaryButton>
                     </Program>
                     <Program 
                         small 
@@ -135,7 +135,7 @@ export default function Programs({ data }) {
 
                 <h1>Camp dates</h1>
 
-                <div id='ultimate' style={{ position: 'absolute', marginTop: '-180px', }}/>
+                <div id='dates' style={{ position: 'absolute', marginTop: '-180px', }}/>
                 <h2>Ultimate Day Camp</h2>
                 <CampSchedule
                     dates={[
@@ -297,7 +297,6 @@ export default function Programs({ data }) {
 
                 <CTAButton to="/summer-camp/ultimate-day-camp/">Learn more about ultimate day camp</CTAButton>
 
-                <div id='junior' style={{ position: 'absolute', marginTop: '-180px', }}/>
                 <h2>Junior Day Camp</h2>
                 <CampSchedule
                     dates={[
@@ -334,6 +333,7 @@ export default function Programs({ data }) {
             </Container>
 
             <Container type='body'>
+                <div id='dates' style={{ position: 'absolute', marginTop: '-180px', }}/>
                 <h1>Pricing</h1>
                 <PriceContainer>
 
@@ -343,7 +343,6 @@ export default function Programs({ data }) {
                         who='Kids age 5-7'
                         price={495} 
                         term='week'
-                        startingAt
                         includes={[
                             'Games',
                             'Crafts',
