@@ -233,7 +233,7 @@ export default function Programs({ data }) {
                                 '',
                                 '',
                                 '',
-                                '8-18',
+                                '11-18',
                                 '',
                                 '',
                                 '',
@@ -243,7 +243,7 @@ export default function Programs({ data }) {
                         {
                             name: 'Intensive riding camp',
                             dates: [
-                                '8-16',
+                                '12-16',
                                 '',
                                 '',
                                 '',

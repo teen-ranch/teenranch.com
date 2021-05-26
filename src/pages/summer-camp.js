@@ -70,7 +70,7 @@ export default function Programs({ data }) {
 
                 <ul>
                     <li><strong>Junior Day Camp:</strong> For kids age 5-7</li>
-                    <li><strong>Ultimate Day Camp:</strong> For kids age 8+</li>
+                    <li><strong>Ultimate Day Camp:</strong> For kids and teens age 8+</li>
                     <li><strong>Ultimate Camp (overnight option):</strong> We would love to run overnight camp if we are able, please get in touch if you would like to volunteer on staff!</li>
                 </ul>
 
@@ -242,7 +242,7 @@ export default function Programs({ data }) {
                                 '',
                                 '',
                                 '',
-                                '8-18',
+                                '11-18',
                                 '',
                                 '',
                                 '',
@@ -252,7 +252,7 @@ export default function Programs({ data }) {
                         {
                             name: 'Intensive riding camp',
                             dates: [
-                                '8-16',
+                                '12-16',
                                 '',
                                 '',
                                 '',
@@ -338,8 +338,8 @@ export default function Programs({ data }) {
                 <PriceContainer>
 
                     <Price 
-                        title='Junior day camp' 
-                        subTitle={`Skills & skating development for players and goalies from house-league to rep. Standard, high-performance, girl's hockey, and goalie camps.`} 
+                        title={<>Junior<br/>day camp</>}
+                        subTitle={`Games, crafts, swimming, pony rides, story time and more! A week full of friendship and fun!`} 
                         who='Kids age 5-7'
                         price={495} 
                         term='week'
@@ -352,12 +352,12 @@ export default function Programs({ data }) {
                             'Story time',
                         ]}
                     >
-                        <center><SecondaryButton to="/summer-camp/ultimate-day-camp/hockey-camps/">Learn more</SecondaryButton></center>
+                        <center><SecondaryButton to="/summer-camp/junior-day-camp/">Learn more</SecondaryButton></center>
                         <CTAButton href="https://register.trmanager.com">Register now</CTAButton>
                     </Price>
                     <Price 
-                        title="Ultimate day camp"
-                        subTitle='Horseback riding camps for begginer to advanced riders. Take your pick from western, english, rodeo, or intensive (hunter/jumper focused) camps.'
+                        title={<>Ultimate<br/>day camp</>}
+                        subTitle='The full camp experience with your sport of choice, including daily campfires featuring engaging, real-life topics shared from a biblical perspective.'
                         who='Kids and teens 8+'
                         price={850}
                         startingAt
@@ -369,7 +369,7 @@ export default function Programs({ data }) {
                             'Real-life',
                         ]}
                     >
-                        <center><SecondaryButton to="/summer-camp/ultimate-day-camp/horse-camps/">Learn more</SecondaryButton></center>
+                        <center><SecondaryButton to="/summer-camp/ultimate-day-camp/">Learn more</SecondaryButton></center>
                         <CTAButton href="https://register.trmanager.com">Register now</CTAButton>
                     </Price>
                 </PriceContainer>
