@@ -77,14 +77,14 @@ export default function Programs({ data }) {
                 <h1>Ultimate day camp for ultimate kids</h1>  
 
                 <p>
-                    Come to ultimate day camp and experience all the fun and adventure of summer camp! Enjoy the great outdoors, get active and build friendships that last a lifetime.
+                Come to ultimate day camp and experience all the fun and adventure of summer camp packed into five awesome days! Enjoy the great outdoors, get active and build friendships that last a lifetime.
                 </p>         
                 
                 <p>
-                    Our ultimate day camp programs are designed to give you the best possible camp experience including daily campfires featuring engaging, real-life topics shared from a biblical perspective. Make friends, join camp-wide games, and experience all the the greatest Teen Ranch activities packed into five awesome days!
+                In the morning, hone your skills in your sport of choice. Afternoons are your chance to enjoy a variety of activities and daily campfires with engaging, real-life topics shared from a biblical perspective.
                 </p>
                 <p>
-                    Our well-trained staff are commited to the safety and weel-being of each camper and aim to come alongside you to challenge and inspire!
+                    Our well-trained staff are committed to the safety and well-being of each camper and aim to come alongside you to challenge and inspire!
                 </p>
 
             </Container>
