@@ -3,13 +3,13 @@ import Container from 'components/Container'
 
 import './footer.scss'
 
-import { useStaticQuery, graphql, Link } from 'gatsby'
+import { Link } from 'gatsby'
 
 export default function Footer() {
 
-    const data = useStaticQuery(query)
+    // const data = useStaticQuery(query)
 
-    console.log(data)
+    // console.log(data)
     
     return (
         <footer>
@@ -82,18 +82,18 @@ export default function Footer() {
     )
 }
 
-const query = graphql`
-    query JavascriptFrontmatterQuery {
-        frontmatter: allJavascriptFrontmatter {
-            edges {
-                node {
-                    id
-                    frontmatter {
-                        # title
-                        path
-                    }
-                }
-            }
-        }
-    }
-`
+// const query = graphql`
+//     query JavascriptFrontmatterQuery {
+//         frontmatter: allJavascriptFrontmatter {
+//             edges {
+//                 node {
+//                     id
+//                     frontmatter {
+//                         # title
+//                         path
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// `

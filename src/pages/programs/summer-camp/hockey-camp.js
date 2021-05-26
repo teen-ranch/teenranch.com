@@ -18,7 +18,7 @@ import Grid from 'components/Grid'
 // import Sponsor from 'components/Sponsor'
 import Img from 'gatsby-image'
 
-export const frontmatter = {
+const frontmatter = {
     title: 'Hockey camp',
     path: '/programs/summer-camp/hockey-camp/'
 }

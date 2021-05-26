@@ -49,6 +49,10 @@ export function PrimaryButton({ ...rest }) {
     return <Button className='primary' {...rest} />
 }
 
+export function SecondaryButton({ ...rest }) {
+    return <Button className='secondary' { ...rest } />
+}
+
 export function CTAButton({ ...rest }) {
     return <div className='buttonContainer'><Button className='cta' { ...rest }/></div>
 }

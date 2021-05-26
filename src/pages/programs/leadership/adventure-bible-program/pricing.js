@@ -12,7 +12,7 @@ import './pricing.scss'
 
 import { DateTime } from 'luxon'
 
-export const frontmatter = {
+const frontmatter = {
     title: 'Adventure Bible Program - Pricing',
     basePath: '/programs/leadership/adventure-bible-program/',
     path: '/programs/leadership/adventure-bible-program/pricing/'

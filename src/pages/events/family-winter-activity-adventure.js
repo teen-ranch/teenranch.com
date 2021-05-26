@@ -19,7 +19,7 @@ import Event from 'components/Event'
 
 import { DateTime } from 'luxon'
 
-export const frontmatter = {
+const frontmatter = {
     title: 'Winter Activity Adventure',
     path: '/events/family-winter-activity-adventure/'
 }

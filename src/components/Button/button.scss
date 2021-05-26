@@ -31,3 +31,11 @@
     margin: 0 auto;
 
 }
+
+.button.secondary {
+    background: rgba(0,0,0,0.2);
+    color: $primary-dark;
+}
+.button.secondary:hover {
+    background: rgba(0,0,0,0.3);
+}

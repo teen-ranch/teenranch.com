@@ -15,7 +15,7 @@ import Img from 'gatsby-image'
 import Event from 'components/Event'
 import Card from 'components/Card'
 
-export const frontmatter = {
+const frontmatter = {
     title: 'The Christmas Winter Festival',
     path: '/events/the-christmas-winter-festival/'
 }
