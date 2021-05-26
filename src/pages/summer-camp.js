@@ -345,13 +345,11 @@ export default function Programs({ data }) {
                         term='week'
                         startingAt
                         includes={[
-                            'On-site, olympic-size ice rink',
-                            'Minimum 10 hours on-ice per week',
-                            'Skills development',
-                            'Skating development',
-                            'Off-ice program',
-                            'Afternoon scrimmages',
-                            'All camp activities',
+                            'Games',
+                            'Crafts',
+                            'Swimming',
+                            'Pony rides',
+                            'Story time',
                         ]}
                     >
                         <center><SecondaryButton to="/summer-camp/ultimate-day-camp/hockey-camps/">Learn more</SecondaryButton></center>
@@ -365,12 +363,10 @@ export default function Programs({ data }) {
                         startingAt
                         term='week' 
                         includes={[
-                            'Ability based lessons',
-                            'Western and english specific disciplines',
-                            'Safe, well-schooled horses',
-                            'Instructors trained to CHA standards',
-                            'First-aid certified full-time staff',
-                            'All camp activities',
+                            'Full camp experience',
+                            'Your sport of choice',
+                            'Daily campfire',
+                            'Real-life',
                         ]}
                     >
                         <center><SecondaryButton to="/summer-camp/ultimate-day-camp/horse-camps/">Learn more</SecondaryButton></center>
@@ -378,6 +374,21 @@ export default function Programs({ data }) {
                     </Price>
                 </PriceContainer>
 
+            </Container>
+
+            <Container type='body'>
+                <h2>Day camp add-ons:</h2>
+                <PriceAddon
+                    title='Extended care'
+                    subTitle='6:00pm late pick-up'
+                    description={
+                        <>
+                            Please contact us for additional options if 6:00pm late pick-up doesn't work for your family.
+                        </>
+                    }
+                    price={75}
+                    term='week'
+                />
             </Container>
 
         </>

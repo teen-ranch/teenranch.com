@@ -384,7 +384,7 @@ export default function Programs({ data }) {
             </Container>
 
             <Container type='body'>
-                <h2>Ultimate day camp add-ons:</h2>
+                <h2>Day camp add-ons:</h2>
                 <PriceAddon
                     title='Extended care'
                     subTitle='6:00pm late pick-up'
