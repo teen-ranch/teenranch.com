@@ -8,7 +8,7 @@ export default function Quote({ children, cite }) {
 
     return (
         <Container type='quote' constrain={false}>
-            <blockquote>{ children }</blockquote>
+            <center><blockquote>{ children }</blockquote></center>
             <div className='quote__cite'>{ cite }</div>
         </Container>
     )

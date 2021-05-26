@@ -4,7 +4,7 @@ import Heading from 'components/Heading'
 import Button from 'components/Button'
 import Program from 'components/Program'
 
-export const frontmatter = {
+const frontmatter = {
     title: 'Hockey & skating',
     path: '/programs/hockey-and-skating/'
 }

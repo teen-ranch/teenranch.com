@@ -5,13 +5,13 @@ import Grid from 'components/Grid'
 
 import './price.scss'
 
-export function Price({ title, subTitle, who, price, term, includes, primary = false, children }) {
+export function Price({ title, subTitle, who, price, term, includes, primary = false, startingAt, children }) {
     return (
         <section className={`price__container ${ primary ? 'price__container--primary' : '' }`}>
             {/* { primary && <div className='price__mostPopular'>Most popular</div> } */}
             <h1 className='price__title'>{ title }</h1>
             <h2 className='price__subTitle'>{ subTitle }</h2>
-            <div className='price'>${ new Intl.NumberFormat('en-US').format(price) } <span>/{ term }</span></div>
+            <div className='price'>{ startingAt && <div className='startingAt'>Starting at</div> }${ new Intl.NumberFormat('en-US').format(price) } <span className='term'>/{ term }</span></div>
             <div className='price__who'>{ who }</div>
             {
                 includes && (

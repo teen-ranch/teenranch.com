@@ -14,7 +14,7 @@ import Img from 'gatsby-image'
 
 import './adventure-bible-program/pricing.scss'
 
-export const frontmatter = {
+const frontmatter = {
     title: 'Adventure Bible Program',
     path: '/programs/leadership/adventure-bible-program/'
 }
