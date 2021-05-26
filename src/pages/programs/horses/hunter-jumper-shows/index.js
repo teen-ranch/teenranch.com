@@ -57,7 +57,8 @@ export default function Default({ data }) {
                         </thead>
                         <tbody>
                             <tr><td>June 6</td><td>Teen Ranch</td><td>
-                                <Button target="_blank" href="https://forms.zohopublic.com/teenranch1/form/HorseShowJune62021/formperma/nRrU9I5hIyQphoKEm5zZ8pZ9LZdhiCBq3RfVKJ9Qh-o?referrername=teenranch.com">June 6th entry form</Button>    
+                                {/* <Button target="_blank" href="https://forms.zohopublic.com/teenranch1/form/HorseShowJune62021/formperma/nRrU9I5hIyQphoKEm5zZ8pZ9LZdhiCBq3RfVKJ9Qh-o?referrername=teenranch.com">June 6th entry form</Button>     */}
+                                Rescheduled to September 12th, 2021
                             </td></tr>
                             <tr><td>June 20</td><td>Teen Ranch</td><td>Entries closed</td></tr>
                             <tr><td>July 11</td><td>Teen Ranch</td><td>Entries closed</td></tr>
@@ -66,6 +67,7 @@ export default function Default({ data }) {
                             </td></tr>
                             <tr><td>August 15</td><td>Teen Ranch</td><td>Entries closed</td></tr>
                             <tr><td>August 29</td><td>Teen Ranch</td><td>Entries closed</td></tr>
+                            <tr><td>September 12</td><td>Teen Ranch</td><td>Entries closed</td></tr>
                         </tbody>
                     </table>
                 </div>
