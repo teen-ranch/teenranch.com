@@ -65,7 +65,7 @@ export default function Programs({ data }) {
                     We are working hard to provide a joyous and unforgettable summer camp experience for your kids.
                 </p>
                 <p>
-                    At this time, very few details are available from the government on what is allowed to run this summer, we plan to begin by running Day Camp and Ultimate Day Camp, and possibliy adding an overnight option as we are able.
+                    We are pleased to offer Day Camp and Ultimate Day Camp following Ministry of Health guidelines.
                 </p>
 
                 <ul>

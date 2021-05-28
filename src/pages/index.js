@@ -19,7 +19,7 @@ export default function Index({ data }) {
 			<Heading
 				src={ data.summerCamp.childImageSharp.fluid }
 				alt='Summer camp 2021'
-				title={<>Summer camp is back!</>}
+				title={<>Summer camps are back!</>}
 				subtitle={<>We are working hard to make this your best summer ever!</>}
 				metaTitle='Summer camp is back!'
 				metaDescription={`We are working hard to make this your best summer ever!`}
@@ -142,7 +142,7 @@ export default function Index({ data }) {
 					alt='Summer camp'
 				>
 					<p>
-						Summer camp is back!
+						Summer camps are back!
                     </p>
 					<p>
 						Sign up now for our ultimate or junior day camps.
@@ -197,10 +197,18 @@ function CovidContainer() {
 						textAlign: 'center'
 					}}
 				>
-					<h3>COVID-19 Announcement</h3>
+					<h3>Summer Camp 2021</h3>
 
-					<h4>The Ontario government will tentatively allow overnight summer camp starting July 5.</h4>
-					Would you be most comfortable sending your children to overnight summer camp or an enhanced day camp? <a target="_blank" rel="noreferrer" href="https://www.facebook.com/teenranch">Vote now on our facebook page!</a>
+					<p>
+						"The Ontario Ministry recognizes the importance of camps in general to the development, physical, and mental well-being as well as long-term resiliency of Ontario’s children and youth."<br/><em>- Ontario Ministry of Health</em>
+					</p>
+
+					<table className='covidTable'>
+						<tr><th>Summer day camp</th><td>OPEN!</td></tr>
+						<tr><th>Ultimate day camp</th><td>OPEN!</td></tr>
+						<tr><th>Overnight camp</th><td>Not currently open, please check back later</td></tr>
+						<tr><th>Family camp weekends</th><td>Coming soon!</td></tr>
+					</table>
 
 
 					{/* <p>Ice Arenas in Peel district are now in lockdown and are closed until further notice.</p>
@@ -214,8 +222,9 @@ function CovidContainer() {
 						<tr><th>Horse programs</th><td>ACTIVE</td></tr>
 						<tr><th>Hockey & skating programs</th><td>PAUSED</td></tr>
 					</table>
+ 					*/}
 
-					<div><Button onClick={() => setIsOpen(false)}>Got it!</Button></div> */}
+					<div><Button onClick={() => setIsOpen(false)}>Got it!</Button></div>
 					
 				</div>
 			</Container>
