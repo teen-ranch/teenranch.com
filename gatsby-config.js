@@ -39,6 +39,7 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-netlify`,
+    'gatsby-plugin-remove-serviceworker',
     // {
     //   resolve: `gatsby-plugin-offline`,
     //   options: {
