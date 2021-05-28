@@ -59,8 +59,18 @@ export default function Programs({ data }) {
                 <h1>Junior day camp for little kids</h1>  
 
                 <p>
-                Jump into adventure with our junior day camp program! Designed to introduce little ones to the exciting world of camp, kids and their leaders travel together around camp to try some of the unique activities that Teen Ranch has to offer. Throughout the week they make new friends and grow while engaging in games, crafts, swimming, pony rides, story time, ice skating and more! Join us this summer for a week full of friendship and fun!
-                </p>     
+                    Jump into adventure with our junior day camp program! Designed to introduce little ones to the exciting world of camp, kids and their leaders travel together around camp to try some of the unique activities that Teen Ranch has to offer. Throughout the week they make new friends and grow while engaging in games, crafts, swimming, pony rides, campfire story time, and more! Join us this summer for a week full of friendship and fun!
+                </p>   
+
+                <h3>Weekly overview</h3>
+                <p>
+                    Summer day camps will run Monday-Friday.
+                </p>
+                <ul>
+                    <li><strong>Drop-off:</strong> 8:30am - 8:50am</li>
+                    <li><strong>Pick-up:</strong> 4:45pm - 5:00pm</li>
+                    <li><strong>Extended care:</strong> 6:00pm late pick-up option available.</li>
+                </ul>  
 
             </Container>
 
@@ -164,10 +174,13 @@ export default function Programs({ data }) {
                         price={495} 
                         term='week'
                         includes={[
+                            'Lunch & two snacks',
                             'Games',
+                            'Forest time',
                             'Crafts',
                             'Swimming',
                             'Pony rides',
+                            'Bouldering',
                             'Story time',
                         ]}
                     >

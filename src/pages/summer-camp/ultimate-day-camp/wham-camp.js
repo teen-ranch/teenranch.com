@@ -81,6 +81,16 @@ export default function Programs({ data }) {
                     Our well-trained staff are committed to the safety and well-being of each camper and aim to come alongside you to challenge and inspire!
                 </p>
 
+                <h3>Weekly overview</h3>
+                <p>
+                    Summer day camps will run Monday-Friday.
+                </p>
+                <ul>
+                    <li><strong>Drop-off:</strong> 8:30am - 8:50am</li>
+                    <li><strong>Pick-up:</strong> 4:45pm - 5:00pm</li>
+                    <li><strong>Extended care:</strong> 6:00pm late pick-up option available.</li>
+                </ul>
+
             </Container>
 
             <Container type='body'>
@@ -210,6 +220,7 @@ export default function Programs({ data }) {
                             'Archery',
                             'Waterslide, jousting pond, canoeing, kayaking',
                             'Swimming',
+                            'Lunch & two snacks',
                             'All camp activities'
                         ]}
                     >

@@ -83,6 +83,16 @@ export default function Programs({ data }) {
                     Our well-trained staff are committed to the safety and well-being of each camper and aim to come alongside you to challenge and inspire!
                 </p>
 
+                <h3>Weekly overview</h3>
+                <p>
+                    Summer day camps will run Monday-Friday.
+                </p>
+                <ul>
+                    <li><strong>Drop-off:</strong> 8:30am - 8:50am</li>
+                    <li><strong>Pick-up:</strong> 4:45pm - 5:00pm</li>
+                    <li><strong>Extended care:</strong> 6:00pm late pick-up option available.</li>
+                </ul>
+
             </Container>
 
             <Container type='body'>
@@ -92,10 +102,10 @@ export default function Programs({ data }) {
                 </p>
 
                 <ProgramContainer>
-                    <Program small name='Hockey camp' who='Players & goalies (co-ed)' src={ hockeyCamp.childImageSharp.fluid }>Skills & skating development for players and goalies of all ability levels, with a focus on enjoying the game.</Program>
-                    <Program small name={`Girl's hockey camp`} who='Players & goalies (female)' src={ girlsHockeyCamp.childImageSharp.fluid }>A no-pressure skills & skating development program with the same high-quality instruction just for girls.</Program>
-                    <Program small name='High-performance hockey camp' who='Players & goalies (co-ed)' src={ highPerformanceHockey.childImageSharp.fluid }>For high-performance players focused on advanced skills in skating, puck handling, shooting, and passing.</Program>
-                    <Program small name='Goalie camp' who='Goalies (co-ed)' src={ goalieCamp.childImageSharp.fluid }>Goalie specific training, with a focus on angles, technique, rebound-control, proper form, butterfly and much more.</Program>
+                    <Program small name='Hockey day camp' who='Players & goalies (co-ed)' src={ hockeyCamp.childImageSharp.fluid }>Skills & skating development for players and goalies of all ability levels, with a focus on enjoying the game.</Program>
+                    <Program small name={`Girl's hockey day camp`} who='Players & goalies (female)' src={ girlsHockeyCamp.childImageSharp.fluid }>A no-pressure skills & skating development program with the same high-quality instruction just for girls.</Program>
+                    <Program small name='High-performance hockey day camp' who='Players & goalies (co-ed)' src={ highPerformanceHockey.childImageSharp.fluid }>For high-performance players focused on advanced skills in skating, puck handling, shooting, and passing.</Program>
+                    <Program small name='Goalie day camp' who='Goalies (co-ed)' src={ goalieCamp.childImageSharp.fluid }>Goalie specific training, with a focus on angles, technique, rebound-control, proper form, butterfly and much more.</Program>
                 </ProgramContainer>
 
             </Container>
@@ -111,7 +121,7 @@ export default function Programs({ data }) {
 
             <Container type='body'>
 
-                <h1>Functional fitness program (high-performance)</h1>
+                <h1>Functional fitness program (high-performance & goalie)</h1>
 
                 <p>
                     High-performance athletes have exclusive access to our functional fitness program designed specifically for hockey players. This program is designed to develop strength, explosive power, hand-eye coordination, speed & quickness, and endurance.
@@ -146,7 +156,7 @@ export default function Programs({ data }) {
                         </p>
                     </Program>
 
-                    <h2>Guest instructors</h2>
+                    <h2>Previous guest instructors</h2>
                     <ul>
                         <li>Laurie Boschman - ex. 14 year NHL veteran and Captain</li>
                         <li>Brock Matheson - ex. AHL/ECHL/Europe Pro player</li>
@@ -319,43 +329,45 @@ export default function Programs({ data }) {
             <PriceContainer>
 
                 <Price 
-                    title='Hockey camp' 
+                    title='Hockey day camp' 
                     subTitle='Skills & skating development for players and goalies of all ability levels, with a focus on enjoying the game.' 
                     who='Players and goalies (co-ed)'
                     price={850} 
                     term='week' 
                     includes={[
                         'On-site, olympic-size ice rink',
-                        'Minimum 10 hours on-ice per week',
+                        'Minimum 7.5 hours on-ice per week',
                         'Skills development',
                         'Skating development',
                         'Fun-based off-ice program',
                         'Afternoon scrimmages',
+                        'Lunch & two snacks',
                         'All camp activities',
                     ]}
                 >
                     <CTAButton href="https://register.trmanager.com">Register now</CTAButton>
                 </Price>
                 <Price 
-                    title="Girl's hockey camp"
+                    title="Girl's hockey day camp"
                     subTitle='A no-pressure skills & skating development program with the same high-quality instruction just for girls.'
                     who='Players and goalies (female)'
                     price={850} 
                     term='week' 
                     includes={[
                         'On-site, olympic-size ice rink',
-                        'Minimum 10 hours on-ice per week',
+                        'Minimum 7.5 hours on-ice per week',
                         'Skills development',
                         'Skating development',
                         'Fun-based off-ice program',
                         'Afternoon scrimmages',
+                        'Lunch & two snacks',
                         'All camp activities',
                     ]}
                 >
                     <CTAButton href="https://register.trmanager.com">Register now</CTAButton>
                 </Price>
                 <Price 
-                    title={<>High-performance<br/>hockey camp</>} 
+                    title={<>High-performance<br/>hockey day camp</>} 
                     subTitle='For high-performance players focused on advanced skills in skating, puck handling, shooting, and passing.' 
                     who='Rep-level players (co-ed)'
                     price={1050} 
@@ -374,7 +386,7 @@ export default function Programs({ data }) {
                     <CTAButton href="https://register.trmanager.com">Register now</CTAButton>
                 </Price>
                 <Price
-                    title='Goalie camp' 
+                    title='Goalie day camp' 
                     subTitle='Goalie specific training, with a focus on angles, technique, rebound-control, proper form, butterfly and much more.' 
                     who='Goalies (co-ed)'
                     price={1050} 
