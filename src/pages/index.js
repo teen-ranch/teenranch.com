@@ -207,7 +207,7 @@ function CovidContainer() {
 						<tr><th>Summer day camp</th><td>OPEN!</td></tr>
 						<tr><th>Ultimate day camp</th><td>OPEN!</td></tr>
 						<tr><th>Overnight camp</th><td>Not currently open, please check back later</td></tr>
-						<tr><th>Family camp weekends</th><td>Coming soon!</td></tr>
+						<tr><th>Family camp (weekends)</th><td>Coming soon!</td></tr>
 					</table>
 
 
