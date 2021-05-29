@@ -124,21 +124,6 @@ export default function Programs({ data }) {
 
             <Container type='body'>
 
-                <h1>Functional fitness program (high-performance)</h1>
-
-                <p>
-                    High-performance athletes have exclusive access to our functional fitness program designed specifically for hockey players. This program is designed to develop strength, explosive power, hand-eye coordination, speed & quickness, and endurance.
-                </p>
-                <p>
-                    Off-ice circuit training and high tempo plyometrics, aerobic, anaerobic workouts, core strengthening, and bodyweight strength training. 
-                </p>
-
-                {/* <PrimaryButton to='/programs/functional-fitness-program/'>Learn more</PrimaryButton> */}
-
-            </Container>
-
-            <Container type='body'>
-
                 <h1>Afternoon activities</h1>
 
                 <p>

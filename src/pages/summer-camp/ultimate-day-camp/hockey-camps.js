@@ -375,12 +375,14 @@ export default function Programs({ data }) {
                     primary 
                     includes={[
                         <>Everything in <strong>hockey camp</strong>, plus:</>,
+                        'Minimum 12.5 hours ice time',
                         'High-intensity skills development',
                         'Power skating',
                         'Game-situation skills',
                         'Video analysis coaching',
                         'Functional fitness program',
                         'Nutritional counselling',
+                        'Afternoon scrimmages'
                     ]}
                 >
                     <CTAButton href="https://register.trmanager.com">Register now</CTAButton>
@@ -394,6 +396,7 @@ export default function Programs({ data }) {
                     includes={[
                         <>Everything in <strong>hockey camp</strong>, plus:</>,
                         'High-intensity skills development',
+                        'Minimum 12.5 hours ice time',
                         'Form & stance',
                         'Butterfly',
                         'Angles',
@@ -401,6 +404,7 @@ export default function Programs({ data }) {
                         'Video analysis coaching',
                         'Functional fitness program',
                         'Nutritional counselling',
+                        'Afternoon scrimmages'
                     ]}
                 >
                     <CTAButton href="https://register.trmanager.com">Register now</CTAButton>
