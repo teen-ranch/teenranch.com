@@ -148,13 +148,13 @@ export default function Programs({ data }) {
                         </p>
                     </Program>
 
-                    <Program src={ eddie.childImageSharp.fluid } swap>
+                    {/* <Program src={ eddie.childImageSharp.fluid } swap>
                         <h2>Eddie Davey</h2>
                         <h3>Goalie coach</h3>
                         <p>
                         Eddie Davey played four years of Jr. A hockey in Ontario, winning the MVP of the NOJHL league while setting a league Wins record and leading his team to the Dudley Hewitt Cup his final season. He went on to attend Westfield State University at the NCAA Div. 3 levels where he played for four years and graduated with honors from the criminal justice program with a minor in psychology. Eddie currently resides in Orangeville where he runs the Monarch Goaltending Development school and plays semi-professional for the Shelburne Muskies. 
                         </p>
-                    </Program>
+                    </Program> */}
 
                     <h2>Previous guest instructors</h2>
                     <ul>
@@ -522,13 +522,13 @@ export const query = graphql`
 			}
         }
 
-        eddie: file(relativePath: { eq: "coaches/eddie-davey.jpg" }) {
-            childImageSharp {
-				fluid(maxWidth: 1920 quality: 64) {
-					...GatsbyImageSharpFluid_withWebp
-				}
-			}
-        }
+        # eddie: file(relativePath: { eq: "coaches/eddie-davey.jpg" }) {
+        #     childImageSharp {
+		# 		fluid(maxWidth: 1920 quality: 64) {
+		# 			...GatsbyImageSharpFluid_withWebp
+		# 		}
+		# 	}
+        # }
 
         iceCorral: file(relativePath: { eq: "facilities/iceCorral/iceCorral1.jpg" }) {
             childImageSharp {
