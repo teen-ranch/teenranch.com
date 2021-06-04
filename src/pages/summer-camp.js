@@ -30,7 +30,7 @@ const pageData = {
 
 export default function Programs({ data }) {
     
-    const { file, hockeyNowWinner, highPerformanceHockey, overnight } = data
+    const { file, hockeyNowWinner, platinum, highPerformanceHockey, overnight } = data
 
 	return (
         <>
@@ -332,6 +332,8 @@ export default function Programs({ data }) {
 
             </Container>
 
+            <Container type='body'><div style={{ textAlign: 'center' }}><Img fixed={ platinum.childImageSharp.fixed } alt='Best kids camps, best summer camps, best skating club/lessons winner.' /><p><a href="https://www.orangeville.com/readerschoice/business/teen-ranch-canada-caledon-teen-ranch" target="_blank" rel="noopener noreferrer">Best Kids Camps, Summer Camps & Skating Club/Lessons</a></p></div></Container>
+
             <Container type='body'>
                 <div id='pricing' style={{ position: 'absolute', marginTop: '-180px', }}/>
                 <h1>Pricing</h1>
@@ -418,6 +420,14 @@ export const query = graphql`
         }
 
         hockeyNowWinner: file(relativePath: { eq: "programs/hockey/hockeyNow_bestHockeySchoolInOntarioWinner.png" }) {
+            childImageSharp {
+                fixed(height: 180 quality: 64) {
+                    ...GatsbyImageSharpFixed_withWebp
+                }
+            }
+        }
+
+        platinum: file(relativePath: { eq: "awards/readers-choice-platinum.jpg" }) {
             childImageSharp {
                 fixed(height: 180 quality: 64) {
                     ...GatsbyImageSharpFixed_withWebp
