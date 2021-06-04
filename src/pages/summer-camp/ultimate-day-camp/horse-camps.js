@@ -108,7 +108,7 @@ export default function Programs({ data }) {
                 <ProgramContainer>
                     <Program small name='Western riding camp' who='Beginner to advanced (age 8+)' src={ western.childImageSharp.fluid }>An excellent place to start for first-time riders or western riding enthusiasts.</Program>
                     <Program small name='English riding camp' who='Beginner to advanced (age 8+)' src={ english.childImageSharp.fluid }>For kids of all riding levels to learn or develop new skills.</Program>
-                    <Program small name='Intensive equestrian camp' who='Advanced hunter/jumper (age 12+)' src={ intensive.childImageSharp.fluid }>For english riders looking to improve their success in the show ring.</Program>
+                    <Program small name='Intensive equestrian camp' who='Advanced hunter/jumper (age 12+)' src={ intensive.childImageSharp.fluid }>For english riders looking to improve their success in the show ring.<p style={{ fontSize: '1.2rem' }}>Application video must be approved to qualify for this program.</p></Program>
                     <Program small name='Rodeo' who='Intermediate to advanced (age 11+)' src={ rodeo.childImageSharp.fluid }>For western riders who want a taste of rodeo competition.</Program>
                 </ProgramContainer>
 
@@ -298,6 +298,7 @@ export default function Programs({ data }) {
                         'All camp activities'
                     ]}
                 >
+                    <span style={{ fontSize: '1.2rem' }}><center>Application video must be approved to qualify for this program.</center></span>
                     <CTAButton href="https://register.trmanager.com">Register now</CTAButton>
                 </Price>
                 <Price

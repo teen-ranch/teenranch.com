@@ -2,6 +2,7 @@ import React from 'react'
 import Container from 'components/Container'
 import Heading from 'components/Heading'
 import Button from 'components/Button'
+import Quote from 'components/Quote'
 
 export default function Default() {
 
@@ -17,9 +18,17 @@ export default function Default() {
 			/>
             <Container type='body'>
 
-                <p>We are not currently hiring. We have limited volunteer opportunities potentially available on a day-to-day basis.</p>
+                <p>Thank you for your interest in applying for a staff position at Teen Ranch. We'd love to hear from you. Please click below to get in touch.</p>
 
-                <Button href='mailto:staff@teenranch.com?subject=Potential volunteer opportunity'>Click here to get in touch</Button>
+                <Button target="_blank" href="https://zfrmz.com/WG1tZ0FvfMkgD27ur3Xr">Volunteer/Staff Information</Button>
+
+                <p>May God bless and direct your steps,</p>
+
+                <p>- The Teen Ranch Staff</p>
+
+                <Quote cite="Proverbs 3:5, 6">
+                 Trust in the Lord with all your heart; do not depend on your own understanding. Seek His will in all you do, and He will show you which path to take.
+                </Quote>
                 
                 {/* <p>Hello!</p>
 
