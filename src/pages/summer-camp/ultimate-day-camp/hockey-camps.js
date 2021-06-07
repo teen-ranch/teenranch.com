@@ -340,7 +340,6 @@ export default function Programs({ data }) {
                         'Skills development',
                         'Skating development',
                         'Fun-based off-ice program',
-                        'Afternoon scrimmages',
                         'Lunch & two snacks',
                         'All camp activities',
                     ]}
@@ -359,7 +358,6 @@ export default function Programs({ data }) {
                         'Skills development',
                         'Skating development',
                         'Fun-based off-ice program',
-                        'Afternoon scrimmages',
                         'Lunch & two snacks',
                         'All camp activities',
                     ]}
