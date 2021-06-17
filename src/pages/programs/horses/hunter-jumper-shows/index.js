@@ -4,16 +4,16 @@ import Heading from 'components/Heading'
 import Button from 'components/Button'
 import Program from 'components/Program'
 import { graphql } from 'gatsby'
-// import Img from 'gatsby-image'
+import Img from 'gatsby-image'
 
-// import Grid from 'components/Grid'
-// import Sponsor from 'components/Sponsor'
+import Grid from 'components/Grid'
+import Sponsor from 'components/Sponsor'
 
 import '../horses.scss'
 
 export default function Default({ data }) {
     
-    const { banner, image1, image2, } = data
+    const { banner, image1, image2, ringSponsors, divisionSponsors, prizeSponsors} = data
 
 	return (
         <>
@@ -45,7 +45,8 @@ export default function Default({ data }) {
 
                     <h3>Links</h3>
                     {/* <Button target="_blank" href="https://show.teenranch.com">View 2020 season standings</Button>  */}
-                    <Button to='/programs/horses/hunter-jumper-shows/show-photos/'>View 2020 show photos</Button>
+                    <Button to='/programs/horses/hunter-jumper-shows/show-photos/'>View 2020 show photos</Button><br/>
+                    <Button target="_blank" href='/hunterJumper/hunterJumperShowProgram_2021.pdf'>2021 Show Program</Button>
                 </Program>
 
                 <div className="staffTable">
@@ -184,19 +185,50 @@ export default function Default({ data }) {
 
                 <Button target="_blank" href="https://forms.zohopublic.com/teenranch1/form/HorseShowSponsorshipPackage/formperma/F0i3DDm5ylIGPkS4c7JDnMr8oB1UxmOqi-DVzhjNkuM">I want to sponsor</Button>
 
-                {/* <Grid
-                    lg={3}
-                    xl={5}
+                <h3>Ring sponsors</h3>
+                <Grid
+                    lg={1}
+                    xl={2}
                     gap={ false }
                 >
                     {
-                        images && images.edges && images.edges.map((edge, i) => {
+                        ringSponsors && ringSponsors.edges && ringSponsors.edges.map((edge, i) => {
 
                             return <Sponsor key={i}><Img fluid={ edge.node.childImageSharp.fluid } alt={ edge.node.name } /></Sponsor>
 
                         })
                     }
-                </Grid> */}
+                </Grid>
+
+                <h3>Division sponsors</h3>
+                <Grid
+                    lg={2}
+                    xl={4}
+                    gap={ false }
+                >
+                    {
+                        divisionSponsors && divisionSponsors.edges && divisionSponsors.edges.map((edge, i) => {
+
+                            return <Sponsor key={i}><Img fluid={ edge.node.childImageSharp.fluid } alt={ edge.node.name } /></Sponsor>
+
+                        })
+                    }
+                </Grid>
+
+                <h3>Prize sponsors</h3>
+                <Grid
+                    lg={3}
+                    xl={5}
+                    gap={ false }
+                >
+                    {
+                        prizeSponsors && prizeSponsors.edges && prizeSponsors.edges.map((edge, i) => {
+
+                            return <Sponsor key={i}><Img fluid={ edge.node.childImageSharp.fluid } alt={ edge.node.name } /></Sponsor>
+
+                        })
+                    }
+                </Grid>
 
             </Container>
         </>
@@ -230,7 +262,33 @@ export const query = graphql`
 			}
         }
 
-        images: allFile(filter: { relativeDirectory: { eq: "hunter-jumper/sponsors" }}) {
+        ringSponsors: allFile(filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2021/ringSponsors" }}) {
+            edges {
+            node {
+                name
+                childImageSharp {
+                    fluid {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
+            }
+        }
+
+        divisionSponsors: allFile(filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2021/divisionSponsors" }}) {
+            edges {
+            node {
+                name
+                childImageSharp {
+                    fluid {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
+            }
+        }
+
+        prizeSponsors: allFile(filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2021/prizeSponsors" }}) {
             edges {
             node {
                 name
