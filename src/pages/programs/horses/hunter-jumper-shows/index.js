@@ -46,7 +46,7 @@ export default function Default({ data }) {
                     <h3>Links</h3>
                     {/* <Button target="_blank" href="https://show.teenranch.com">View 2020 season standings</Button>  */}
                     <Button to='/programs/horses/hunter-jumper-shows/show-photos/'>View 2020 show photos</Button><br/>
-                    <Button target="_blank" href='/hunterJumper/hunterJumperShowProgram_2021.pdf'>2021 Show Program</Button>
+                    <Button target="_blank" href='https://teenranch.nyc3.cdn.digitaloceanspaces.com/website/pdf/hunterJumperShowProgram_2021.pdf'>2021 Show Program</Button>
                 </Program>
 
                 <div className="staffTable">
