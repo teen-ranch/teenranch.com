@@ -92,13 +92,22 @@ export default function Header({ location }) {
                                     </ul>
                                 </li>
                                 <div>
-                                    <li><NavLink to='/events'>Events</NavLink>
-                                        <ul className='subSubNav'>
+                                    <li>
+                                        {/* <NavLink to='/families'>Families</NavLink> */}
+                                        {/* Families */}
+                                        {/* <ul className='subSubNav'> */}
+                                            {/* <li> */}
+                                                <NavLink to='/families/family-getaway-weekends'>Family getaway weekends</NavLink>
+                                            {/* </li> */}
+                                        {/* </ul> */}
+                                    </li>
+                                    {/* <li><NavLink to='/events'>Events</NavLink>
+                                        <ul className='subSubNav'> */}
                                             {/* <li><NavLink to='/events/the-christmas-winter-festival/'>Christmas Winter Festival</NavLink></li> */}
                                             {/* <li><NavLink to='/events/march-april-break-day-camp/'><s>March</s> April Break Day Camp</NavLink></li> */}
                                             {/* <li><NavLink to='/events/family-winter-activity-adventure/'>Winter Activity Adventure</NavLink></li> */}
-                                        </ul>
-                                    </li>
+                                        {/* </ul>
+                                    </li> */}
                                     <li><NavLink to='/programs/leadership/'>Leadership & Development</NavLink>
                                         <ul className='subSubNav'>
                                             <li><NavLink to='/programs/leadership/adventure-bible-program/'>Adventure Bible Program</NavLink></li>

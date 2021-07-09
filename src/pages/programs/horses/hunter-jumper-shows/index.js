@@ -62,7 +62,8 @@ export default function Default({ data }) {
                                 Rescheduled to September 12th, 2021
                             </td></tr>
                             <tr><td>June 20</td><td>Teen Ranch</td><td>
-                                <Button target="_blank" href="https://forms.zohopublic.com/teenranch1/form/HorseShowJune202021/formperma/UCncvQ2Mok0K75neDv4i3iS1G1XMqrLJxkDNatxGfUo?referrername=teenranch.com">June 20th entry form</Button>
+                                {/* <Button target="_blank" href="https://forms.zohopublic.com/teenranch1/form/HorseShowJune202021/formperma/UCncvQ2Mok0K75neDv4i3iS1G1XMqrLJxkDNatxGfUo?referrername=teenranch.com">June 20th entry form</Button> */}
+                                Entries closed
                             </td></tr>
                             <tr><td>July 11</td><td>Teen Ranch</td><td>
                                 <Button target="_blank" href="https://forms.zohopublic.com/teenranch1/form/HorseShowJuly112021/formperma/YYwVhN71DjY5WUHbUbCT-S9asqYYoJPnhk5HibQGK6k?referrername=teenranch.com">July 11th entry form</Button>    

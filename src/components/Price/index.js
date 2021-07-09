@@ -49,7 +49,7 @@ export function PriceAddon({ title, subTitle, description, price, term }) {
                 </h1>
                 <p>{ description }</p>
             </div>
-            <div className='price__addonPrice'>${ new Intl.NumberFormat('en-US').format(price) } <span>/{ term }</span></div>
+            <div className='price__addonPrice'>${ new Intl.NumberFormat('en-US').format(price) } +HST <span>/{ term }</span></div>
         </section>
     )
 }
