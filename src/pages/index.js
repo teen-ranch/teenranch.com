@@ -151,11 +151,16 @@ export default function Index({ data }) {
 					<Button to='/summer-camp/'>Learn more</Button>
 				</Program>
 
+				<Program src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/DSC_0513.JPG' name='Pre-Season Skills and Skating' swap>
+                    <p>A six week program focused on the development of forward and backward skating, crossovers, tight-turns, individual shooting, stick handling, creativity, passing, as well as game situation type skills. For boys and girls ages 7-13.</p>
+
+                    <Button to="/programs/hockey-and-skating/pre-season-skills-and-skating/">Learn more</Button>
+                </Program>
+
 				<Program
 					src={data.hjShows.childImageSharp.fluid}
 					name={<>Hunter/Jumper Show Series</>}
 					alt='Hunter/jumper shows'
-					swap
 				>
 					<p>
 						This is our 36th consecutive season offering these amazing shows to our extended equine community
@@ -167,6 +172,7 @@ export default function Index({ data }) {
 				<Program
 					src={data.file.childImageSharp.fluid}
 					name='Leadership & Development: Adventure Bible Program'
+					swap
 				>
 					<p>This solid, Christ-centered experiential program is designed to ground young adults in God's Word and equip them for a vibrant walk with Jesus while challenging them through adventure and outreach.</p>
 

@@ -153,12 +153,12 @@ export default function Programs({ data }) {
                             name: 'Hockey camp',
                             dates: [
                                 '8-16',
+                                '',
                                 '8-16',
                                 '8-16',
                                 '8-16',
                                 '8-16',
-                                '8-16',
-                                '8-16',
+                                '',
                                 '8-16',
                                 '8-16',
                             ]
@@ -197,10 +197,10 @@ export default function Programs({ data }) {
                                 '',
                                 '',
                                 '',
+                                '',
+                                '',
+                                '',
                                 '8-16',
-                                '',
-                                '',
-                                '',
                                 '',
                                 '',
                             ]
