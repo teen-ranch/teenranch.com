@@ -45,7 +45,7 @@ export default function Default({ data }) {
 
                     <h3>Links</h3>
                     <Button target="_blank" href="https://show.teenranch.com">View 2021 season standings</Button><br/>
-                    <Button to='/programs/horses/hunter-jumper-shows/show-photos/'>View 2020 show photos</Button><br/>
+                    <Button to='/programs/horses/hunter-jumper-shows/show-photos/'>View 2021 show photos</Button><br/>
                     <Button target="_blank" href='https://teenranch.nyc3.cdn.digitaloceanspaces.com/website/pdf/hunterJumperShowProgram_2021.pdf'>2021 Show Program</Button>
                 </Program>
 
