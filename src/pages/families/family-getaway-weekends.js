@@ -6,6 +6,7 @@ import Button from 'components/Button'
 import { graphql } from 'gatsby'
 
 import { PriceAddon } from 'components/Price'
+import Grid from 'components/Grid'
 
 // import SubNav from 'components/SubNav'
 // import Verse from 'components/Verse'
@@ -18,6 +19,7 @@ import Event from 'components/Event'
 // import Card from 'components/Card'
 
 import { DateTime } from 'luxon'
+import Img from 'gatsby-image'
 
 const frontmatter = {
     title: 'Family getaway weekends',
@@ -45,6 +47,8 @@ const eventData = {
 }
 
 export default function Default({ data }) {
+
+    const { activities } = data
 
     const events = [
         <Event
@@ -90,7 +94,7 @@ export default function Default({ data }) {
                 keywords={ pageData.keywords }
 			/>
 
-            <div style={{ maxWidth: '960px', margin: '0 auto', fontSize: '18px', color: 'rgb(41, 41, 41)', letterSpacing: '0.01em', lineHeight: '26px', padding: '0 2rem' }}>
+            {/* <div style={{ maxWidth: '960px', margin: '0 auto', fontSize: '18px', color: 'rgb(41, 41, 41)', letterSpacing: '0.01em', lineHeight: '26px', padding: '0 2rem' }}> */}
 
                 <Container>
                     <h1>{ frontmatter.title }</h1>
@@ -131,6 +135,26 @@ export default function Default({ data }) {
                     <p>Individual family campfire locations and necessary provisions provided. Smores Kit available upon request.</p>
 
                     <p>Weekend Itinerary will be confirmed with each family based on family preferences and current provincial regulations, and at the discretion of Teen Ranch.</p>
+
+                </Container>
+
+                <Container type='body'>
+
+                    <Grid
+                        sm={2}
+                        md={2}
+                        lg={3}
+                        xl={5}
+                        gap={ false }
+                    >
+                        {
+                            activities && activities.edges && activities.edges.map((edge, i) => {
+
+                                return <div key={ i } className='facility'><Img fluid={ edge.node.childImageSharp.fluid } alt='Activities' /></div>
+
+                            })
+                        }
+                    </Grid>
 
                 </Container>
 
@@ -215,7 +239,7 @@ export default function Default({ data }) {
                     { events }
                 </Container>
 
-            </div>
+            {/* </div> */}
 
            
         </>
@@ -224,12 +248,24 @@ export default function Default({ data }) {
 
 export const query = graphql`
     query {
-        file(relativePath: { eq: "events/winterTobogganing.jpg" }) {
+        file(relativePath: { eq: "weekendGetaway/smores.jpg" }) {
             childImageSharp {
 				fluid(maxWidth: 1920 quality: 64) {
 					...GatsbyImageSharpFluid_withWebp
 				}
 			}
+        }
+        activities: allFile(filter: { relativeDirectory: { eq: "weekendGetaway/activities" }}) {
+            edges {
+            node {
+                name
+                childImageSharp {
+                    fluid {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
+            }
         }
     }
 `
