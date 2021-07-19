@@ -33,15 +33,11 @@ export default function Default({ data }) {
                     <h2>Forms required for entry:</h2>
                     <ol>
                         <li>Entry form (see below)</li>
-                        <li>Cohort list</li>
-                        <li>Signed COVID-19 screening questionaire (bring with you to hand in upon arrival)</li>
+                        <li>Online covid screening form completed</li>
                     </ol>
 
-                    <p>All persons coming on site must arrive with their signed COVID-19 screening questionnaire form in hand.</p>
-                    <p>Maximum of 10 named persons per trailer.</p>
-
-                    <Button target="_blank" href="https://forms.zohopublic.com/teenranch1/form/HorseShowTrailerattendanceform/formperma/DEwzNZW9ELI1kqyesFU_NnAgWbLfs0_war7M-wQRXEU">Cohort list</Button><br/>
-                    <Button target="_blank" href="https://teenranch.nyc3.cdn.digitaloceanspaces.com/website/pdf/hunterJumperCovidScreeningQuestionnaire.pdf">COVID-19 screening questionnaire</Button>
+                    <p>With covid protocols loosening up, we have now simplified the screening process!  No Cohort Lists or temp checks required...just fill out the covid screening form below and email in before Wednesday @ 11:59pm.  Thanks!</p>
+                    <Button target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSc4dEIQ-wOrqet3p_YUJBGa4G5d3XvZIYL_Czq-vmqARX8spg/viewform">COVID-19 screening form</Button>
 
                     <h3>Links</h3>
                     <Button target="_blank" href="https://show.teenranch.com">View 2021 season standings</Button><br/>
@@ -66,7 +62,8 @@ export default function Default({ data }) {
                                 Entries closed
                             </td></tr>
                             <tr><td>July 11</td><td>Teen Ranch</td><td>
-                                <Button target="_blank" href="https://forms.zohopublic.com/teenranch1/form/HorseShowJuly112021/formperma/YYwVhN71DjY5WUHbUbCT-S9asqYYoJPnhk5HibQGK6k?referrername=teenranch.com">July 11th entry form</Button>    
+                                {/* <Button target="_blank" href="https://forms.zohopublic.com/teenranch1/form/HorseShowJuly112021/formperma/YYwVhN71DjY5WUHbUbCT-S9asqYYoJPnhk5HibQGK6k?referrername=teenranch.com">July 11th entry form</Button>     */}
+                                Entries closed
                             </td></tr>
                             <tr><td>July 25</td><td>Teen Ranch</td><td>
                                 <Button target="_blank" href="https://forms.zohopublic.com/teenranch1/form/HorseShowJuly252021/formperma/tWoYEE8ZzuPz_RH8n-GIubpmJp1cc2Vkn-Qhl7Zo5gk?referrername=teenranch.com">July 25th entry form</Button>
