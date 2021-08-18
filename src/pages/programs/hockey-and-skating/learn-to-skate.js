@@ -25,19 +25,12 @@ export default function Default() {
 
                     <p>
                         <strong>
-                        COVID MESSAGE: Please note that we will be practicing safe social distancing on the ice. Our
-                        COVID safety practices message will be sent to skaters & parents before the first class.
+                        COVID MESSAGE: Our COVID safety practices message will be sent to skaters & parents before the first class.
                         </strong>
                     </p>
 
                     <p>
-                        <strong>
-                            IMPORTANT: Due to COVID we can only accept students that DO NOT require hands-on assistance at this time.
-                        </strong>
-                    </p>
-
-                    <p>
-                    Learn the basics of skating for all ice sports in this fun and fast-paced Teen Ranch Program. Our Learn-to-Skate Programs provide a solid start for participants of all ages and abilities. From the first steps on the ice to forwards, backwards, stops and turns, skaters will improve their balance, control and agility with small group instruction by our fully certified and experienced staff coaches. Progress reports, awards and incentives are included in the program.
+                        Learn the basics of skating for all ice sports in this fun and fast-paced Teen Ranch Program. Our Learn-to-Skate Programs provide a solid start for participants of all ages and abilities. From the first steps on the ice to forwards, backwards, stops and turns, skaters will improve their balance, control and agility with small group instruction by our fully certified and experienced staff coaches. Progress reports, awards and incentives are included in the program.
                     </p>
 
                     <p>
@@ -67,13 +60,13 @@ export default function Default() {
                     This is the program for skaters that have basic skating skills and want to continue learning for fun and fitness.
                 </p>
 
-                <h3>2020/2021 Semesters</h3>
+                <h3>2021/2022 Semesters</h3>
 
                 <div className="staffTable">
                     <table>
                         <thead>
                             <tr>
-                                <th aria-label='Empty cell'></th><th>Fall: Sep. 14 - Nov. 13</th><th>Holiday: Nov. 16 - Jan. 29</th><th>Winter: Feb. 1 - Mar. 29</th>
+                                <th aria-label='Empty cell'></th><th>Fall: Sep. 13 - Nov. 19</th><th>Holiday: Nov. 22 - Feb. 4</th><th>Winter: Feb. 6 - Apr. 8</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -83,16 +76,16 @@ export default function Default() {
                                     On-ice: 6:00pm - 6:50pm
                                 </td>
                                 <td>
-                                    <strong>$250 +HST</strong> (8 sessions)<br/>
-                                    No session Oct. 12
+                                    <strong>$280 +HST</strong> (9 sessions)<br/>
+                                    No session Oct. 11
                                 </td>
                                 <td>
                                     <strong>$280 +HST</strong> (9 sessions)<br/>
-                                    No session Dec. 21 or Dec. 28
+                                    No session Dec. 20 or Dec. 27
                                 </td>
                                 <td>
                                     <strong>$250 +HST</strong> (8 sessions)<br/>
-                                    No session Feb. 15
+                                    No session Feb. 21
                                 </td>
                             </tr>
                             <tr>
@@ -101,14 +94,14 @@ export default function Default() {
                                     On-ice: 6:00pm - 6:50pm
                                 </td>
                                 <td>
-                                    <strong>$280 +HST</strong> (9 sessions)
+                                    <strong>$310 +HST</strong> (10 sessions)
                                 </td>
                                 <td>
                                     <strong>$280 +HST</strong> (9 sessions)<br/>
-                                    No session Dec. 25 or Jan. 1
+                                    No session Dec. 24 or Dec. 31
                                 </td>
                                 <td>
-                                    <strong>$250 +HST</strong> (8 sessions)
+                                    <strong>$280 +HST</strong> (9 sessions)
                                 </td>
                             </tr>
                             

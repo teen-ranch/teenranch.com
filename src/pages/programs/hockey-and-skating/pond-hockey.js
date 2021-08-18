@@ -29,14 +29,13 @@ export default function Default() {
 
                     <h3>When</h3>
                     <p>
-                        Saturdays: October 17, 2020 - February 27, 2021
+                        Saturdays: October 16, 2021 - February 12, 2022
                         <br/><br/>
                         <strong>No sessions on:</strong>
                         <ul>
-                            <li>December 26, 2020</li>
-                            <li>January 2, 2021</li>
-                            <li>January 30, 2021</li>
-                            <li>February 13, 2021</li>
+                            <li>December 25, 2021</li>
+                            <li>January 1, 2022</li>
+                            <li>January 29, 2022</li>
                         </ul>
                     </p>
 

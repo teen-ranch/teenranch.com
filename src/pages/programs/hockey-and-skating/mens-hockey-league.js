@@ -26,14 +26,13 @@ export default function Default() {
                     </p>
 
                     <h3>Fall hockey league</h3>
+                    <p>
+                        Thursday nights. 6:30pm - 10:30pm game times (10 teams)
+                    </p>
                     <ul>
-                        <li><strong>When:</strong> Starts Thursday September 24th, 2020</li>
+                        <li><strong>When:</strong> Starts Thursday September 23rd, 2021.</li>
                         <li><strong>Cost:</strong> $480 +HST</li>
                     </ul>
-
-                    <p>
-                        <i><strong>If you have unused credit on your account, please call <a href="tel:5199414501">(519) 941-4501</a> to register.</strong></i>
-                    </p>
                     
                     <Button href="https://register.trmanager.com">Book now</Button>
                 </Program>

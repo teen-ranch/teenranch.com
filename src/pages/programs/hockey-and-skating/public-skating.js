@@ -19,15 +19,6 @@ export default function Default() {
 			/>
             <Container type='body'>
 
-                <div style={{ textAlign: 'center', color: 'red', fontWeight: 'bold' }}>
-                    <p style={{ textTransform: 'uppercase' }}>
-                        Public skating is cancelled.
-                    </p>
-                    <p>
-                        Due to ongoing COVID-19 restrictions, public skating has been cancelled. We hope to be able to offer this program again soon!
-                    </p>
-                </div>
-
                 <Program src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/familyDay.jpg' name='Public skating'>
 
                     <p>
@@ -40,7 +31,7 @@ export default function Default() {
                     <h3>When</h3>
 
                     <p>
-                        Saturdays: September 26, 2020 - April 3, 2021<br/>
+                        Saturdays: September 25, 2021 - April 2, 2022 (6:30pm - 8:00pm)<br/>
                     </p>
 
                     <h3>Cost</h3>

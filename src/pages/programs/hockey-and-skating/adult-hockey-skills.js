@@ -31,12 +31,12 @@ export default function Default() {
                     <h3>When</h3>
 
                     <p>
-                        Saturday mornings: September 26, 2020 - December 19, 2020<br/>
-                        (No session October 10, 2020)
+                        Saturday mornings: September 25, 2021 - December 18, 2021 (12 sessions)<br/>
+                        (No session October 9, 2021)
                     </p>
 
                     <h3>Cost</h3>
-                    <p>$320 +HST/player</p>
+                    <p>$325 +HST/player</p>
 
                     <Button href="https://register.trmanager.com">Book now</Button>
                 </Program>
