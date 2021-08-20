@@ -83,6 +83,7 @@ export default function Footer() {
                         </ul>
                         <div className='footerTitle'>Teen Ranch Canada</div>
                         <ul className='footerNavigation'>
+                            <li><Link to='https://shop.teenranch.com'>Shop Teen Ranch Apparel</Link></li>
                             {/* <li><Link to='/about-teen-ranch/'>About Teen Ranch</Link></li> */}
                             <li><Link to='/teen-ranch-statement-of-faith/'>Our statement of faith</Link></li>
                             <li><Link to='/facilities/'>Our facilities</Link></li>
