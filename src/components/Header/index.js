@@ -28,7 +28,7 @@ export default function Header({ location }) {
                     <ul>
                         <li><NavLink to="/">Home</NavLink></li>
                         {/* eslint-disable-next-line */}
-                        {/* <li><a target="_blank" rel="noopener" href='https://shop.teenranch.com'>Shop</a></li> */}
+                        <li><a target="_blank" rel="noopener" href='https://shop.teenranch.com'>Shop</a></li>
                         <li><NavLink to="/programs">Programs</NavLink>
                             <ul className='subNav'>
                                 <li><NavLink to='/summer-camp/'>Summer camp</NavLink>
