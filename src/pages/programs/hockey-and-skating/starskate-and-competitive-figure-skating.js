@@ -23,8 +23,7 @@ export default function Default() {
 
                     <p>
                         <strong>
-                        COVID MESSAGE: Please note that we will be practicing safe social distancing on the ice. Our
-                        COVID safety practices message will be sent to skaters & parents before the first class.
+                            COVID MESSAGE: Our COVID safety practices message will be sent to skaters & parents before the first class.
                         </strong>
                     </p>
 
@@ -34,35 +33,35 @@ export default function Default() {
 
                     <p>
                         <i>
-                        The fee schedule includes ice time only. Please contact Head Coach, Patty Lambertus at <a href='mailto:icex@rogers.com'>icex@rogers.com</a> to arrange a personal training program to achieve your skating goals and budget. Private, semi-private and group lessons will be incorporated into your program by our fully certified Skate Canada Professional Coaching Team. Lessons will be invoiced separately by the Head Coach.
+                            The fee schedule includes ice time only. Please contact Head Coach, Patty Lambertus at <a href='mailto:icex@rogers.com'>icex@rogers.com</a> to arrange a personal training program to achieve your skating goals and budget. Private, semi-private and group lessons will be incorporated into your program by our fully certified Skate Canada Professional Coaching Team. Lessons will be invoiced separately by the Head Coach.
                         </i>
                     </p>
                     <Button href="https://register.trmanager.com">Book now</Button>
                 </Program>
 
-                <h3>2020/2021 Semesters</h3>
+                <h3>2021/2022 Semesters</h3>
 
                 <div className="staffTable">
                     <table>
                         <thead>
                             <tr>
-                                <th aria-label='Empty cell'></th><th>Fall: Sep. 13 - Nov. 13</th><th>Holiday: Nov. 15 - Jan. 29</th><th>Winter: Jan. 31 - Apr. 2</th>
+                                <th aria-label='Empty cell'></th><th>Fall: Sep. 13 - Nov. 19</th><th>Holiday: Nov. 21 - Feb. 4</th><th>Winter: Feb. 6 - Apr. 8</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>
                                     <strong>Sundays</strong><br/>
-                                    On-ice: 11:00am - 12:50pm<br/>
-                                    Off-ice: 1:15 - 2:00pm<br/>
+                                    On-ice: 10:00am - 11:50am<br/>
+                                    Off-ice: 12:15 - 1:00pm<br/>
                                 </td>
                                 <td>
                                     <strong>$250 +HST</strong> (8 sessions)<br/>
-                                    No session Oct. 11
+                                    No session Oct. 10
                                 </td>
                                 <td>
                                     <strong>$280 +HST</strong> (9 sessions)<br/>
-                                    No session Dec. 20 or Dec. 27
+                                    No session Dec. 19 or Dec. 26
                                 </td>
                                 <td>
                                     <strong>$280 +HST</strong> (9 sessions)
@@ -74,16 +73,16 @@ export default function Default() {
                                     On-ice: 4:30pm - 6:00pm
                                 </td>
                                 <td>
-                                    <strong>$200 +HST</strong> (8 sessions)<br/>
-                                    No session Oct. 12
-                                </td>
-                                <td>
                                     <strong>$225 +HST</strong> (9 sessions)<br/>
-                                    No session Dec. 21 or Dec. 28
+                                    No session Oct. 11
                                 </td>
                                 <td>
                                     <strong>$200 +HST</strong> (8 sessions)<br/>
-                                    No session Feb. 15
+                                    No session Dec. 20 or Dec. 27
+                                </td>
+                                <td>
+                                    <strong>$200 +HST</strong> (8 sessions)<br/>
+                                    No session Feb. 21
                                 </td>
                             </tr>
                             <tr>
@@ -92,11 +91,11 @@ export default function Default() {
                                     On-ice: 4:30pm - 6:00pm
                                 </td>
                                 <td>
-                                    <strong>$225 +HST</strong> (9 sessions)
+                                    <strong>$250 +HST</strong> (10 sessions)
                                 </td>
                                 <td>
                                     <strong>$225 +HST</strong> (9 sessions)<br/>
-                                    No session Dec. 24 or Dec. 31
+                                    No session Dec. 23 or Dec. 30
                                 </td>
                                 <td>
                                     <strong>$225 +HST</strong> (9 sessions)
@@ -108,14 +107,14 @@ export default function Default() {
                                     On-ice: 4:30pm - 6:00pm
                                 </td>
                                 <td>
-                                    <strong>$225 +HST</strong> (9 sessions)
+                                    <strong>$250 +HST</strong> (10 sessions)
                                 </td>
                                 <td>
                                     <strong>$225 +HST</strong> (9 sessions)<br/>
-                                    No session Dec. 25 or Jan. 1
+                                    No session Dec. 24 or Dec. 31
                                 </td>
                                 <td>
-                                    <strong>$200 +HST</strong> (8 sessions)
+                                    <strong>$225 +HST</strong> (9 sessions)
                                 </td>
                             </tr>
                         </tbody>
@@ -146,14 +145,36 @@ export default function Default() {
                     <li>Annual DPSC club membership: $50 +HST (covers Skate Canada registration and insurance)</li>
                 </ul>
 
-                <h3>Extra Practice Ice Packages</h3>
+                <h3>Terms</h3>
+
+                <ul>
+                    <li>DPSC Club membership fee $50 is paid once per year. This fee covers Skate Canada registration and insurance. If home club is not DPSC, then the membership fee is $10.</li>
+                    <li>HST will be added to all fees.</li>
+                    <li>No mandatory fundraising.</li>
+                </ul>
+
+                <h3>Registration Discounts</h3>
+
+                <ul>
+                    <li>5% discount for 2 semesters or 2 family members in the figure skating program</li>
+                    <li>10% discount for 3 semesters or 3 or more family members in the figure skating program</li>
+                    <li>Figure Skaters that serve as Learn-to-Skate Program Assistants AND register for at least 2
+                    sessions per week will receive an additional practice day at no additional cost.The lowest price
+                    session is free.</li>
+                </ul>
+
+                <p>
+                    <i>Please contact the office to have a discount applied to your account.</i>
+                </p>
+
+                {/* <h3>Extra Practice Ice Packages</h3>
 
                 <p>
                     The following dates are available for extra practice time.<br/>
                     Ice fee is $30 +HST per session or $100 +HST per package (Holiday & Spring).
-                </p>
+                </p> */}
 
-                <h4>Holiday Practice Ice</h4>
+                {/* <h4>Holiday Practice Ice</h4>
                 <div className="staffTable">
                     <table>
                         <thead>
@@ -225,7 +246,7 @@ export default function Default() {
                             </tr>
                         </tbody>
                     </table>
-                </div>
+                </div> */}
 
             </Container>
         </>

@@ -14,7 +14,7 @@ export default function Index({ data }) {
 	
 		<>
 
-			<CovidContainer />
+			{/* <CovidContainer /> */}
 
 			<Heading
 				src={ data.summerCamp.childImageSharp.fluid }
