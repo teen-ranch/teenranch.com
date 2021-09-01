@@ -74,7 +74,8 @@ export default function Default({ data }) {
                                 Entries closed
                             </td></tr>
                             <tr><td>August 29</td><td>Teen Ranch</td><td>
-                                <Button target="_blank" href="https://forms.zohopublic.com/teenranch1/form/HorseShowAugust292021/formperma/tSrE90jl2okae4IdxcBDClDvINE7V-AGzUY_20zeoGM?referrername=teenranch.com">August 29th entry form</Button>
+                                {/* <Button target="_blank" href="https://forms.zohopublic.com/teenranch1/form/HorseShowAugust292021/formperma/tSrE90jl2okae4IdxcBDClDvINE7V-AGzUY_20zeoGM?referrername=teenranch.com">August 29th entry form</Button> */}
+                                Entries closed
                             </td></tr>
                             <tr><td>September 12</td><td>Teen Ranch</td><td>
                                 <Button target="_blank" href="https://forms.zohopublic.com/teenranch1/form/HorseShowSeptember122021/formperma/Nkd8ZIEK10jc15Va1lTtdLHOHVuQCVIwZ0xKG1Wss9c?referrername=teenranch.com">September 12th entry form</Button>    
