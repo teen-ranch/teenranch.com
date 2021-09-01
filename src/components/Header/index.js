@@ -93,13 +93,14 @@ export default function Header({ location }) {
                                 </li>
                                 <div>
                                     <li>
-                                        {/* <NavLink to='/families'>Families</NavLink> */}
-                                        {/* Families */}
-                                        {/* <ul className='subSubNav'> */}
-                                            {/* <li> */}
+                                        <NavLink to='/families'>Families</NavLink>
+                                        {/* <span className='linkTitle'>Families</span> */}
+                                        <ul className='subSubNav'>
+                                            <li>
+                                                <NavLink to='/families/mother-daughter-equine-escape'>Mother daughter equine escape</NavLink>
                                                 <NavLink to='/families/family-getaway-weekends'>Family getaway weekends</NavLink>
-                                            {/* </li> */}
-                                        {/* </ul> */}
+                                            </li>
+                                        </ul>
                                     </li>
                                     {/* <li><NavLink to='/events'>Events</NavLink>
                                         <ul className='subSubNav'> */}

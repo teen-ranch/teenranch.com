@@ -74,6 +74,7 @@ export default function Footer() {
 
                         <div className='footerTitle'>Families</div>
                         <ul className='footerNavigation'>
+                            <li><Link to='/families/mother-daughter-equine-escape'>Mother daughter equine escape</Link></li>
                             <li><Link to='/families/family-getaway-weekends'>Family getaway weekends</Link></li>
                         </ul>
 
