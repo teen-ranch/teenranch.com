@@ -136,7 +136,7 @@ export default function Default({ data }) {
                     <li>Back number must be worn and visible at all times while on horseback.</li>
                     <li>Covid Protocols in place.  See Covid Policy on website for details.</li>
                     <li>Please read class descriptions to see rules on cross-entering.</li>
-                    <li><strong>Entries</strong> and <strong>Trailer Attendance Forms</strong> MUST be submitted on the Monday before each show.</li>
+                    <li><strong>Entries</strong> and <strong>Covid Screening Form</strong> MUST be submitted on the Monday before each show.</li>
                     <li><strong>Hunter Classes</strong> - Flash nose bands and running or german martingales are not permitted. Leg protection may be worn on horse in warm-up and inclement weather only when approved by judge.</li>
                     <li><strong>Champion/Reserve Champions</strong> at each show are calculated as follows: 7,5,4,3,2,1.  Champion Tie-Breakers – In the Leadline, Short Stirrup, Beginner & Rookie Division, most points in Equitation wins.  In other divisions, most points over fences wins.  After that or in hack divisions, judge may flip a coin or do conformation line up for the winner.</li>
                     <li><strong>Year-End Awards</strong> – Must show in at least 3 shows in the division to qualify. Points are awarded to horses in hunter/jumper divisions, the rider in equitation/lead line divisions and horse/rider combinations for the beginner, rookie, and short stirrup divisions. Points are calculated as follows: 7xentries, 5xentries, 4xentries, 3xentries, 2xentries, 1xentries.</li>
@@ -152,23 +152,23 @@ export default function Default({ data }) {
                     <h4>COVID-19 policy</h4>
 
                     <ol>
-                        <li>NO GENERAL PUBLIC ADMISSION.  There will be an Access List referenced upon arrival. Access to the show grounds will be limited to the following: Competitors, Grooms, Trainers/Coaches, One Parent/Adult for competitors. Trainers/Coaches must provide a full COHORT LIST on the Monday before each show.</li>
-                        <li>Any person entering the show grounds will have their temperature checked upon arrival. Anyone with a temperature above 100.3F/37.9C  or who exhibits COVID-19 symptoms will not be permitted to enter the show grounds. </li>
+                        <li>All guests must complete the online covid screening by Wednesday before each show.</li>
+                        {/* -<li>Any person entering the show grounds will have their temperature checked upon arrival. Anyone with a temperature above 100.3F/37.9C  or who exhibits COVID-19 symptoms will not be permitted to enter the show grounds. </li> */}
                         <li>Masks must be worn outside when you cannot be 2 meters (6’) from others.  All competitors and authorized support personnel must bring their own mask.  </li>
-                        <li>Each person entering the property must hand in a signed Teen Ranch Covid 19 Screening Questionnaire upon arrival.  </li>
+                        {/* -<li>Each person entering the property must hand in a signed Teen Ranch Covid 19 Screening Questionnaire upon arrival.  </li> */}
                         <li>If you are not on the Access List and/or have not submitted the waivers, you will not be permitted to enter the show grounds. </li>
-                        <li>Restrooms will be disinfected multiple times during the competition.  Hand Sanitizer will be available at restrooms and at warm up areas.  Do not adjust/touch jumps without disinfecting first.</li>
+                        {/* -<li>Restrooms will be disinfected multiple times during the competition.  Hand Sanitizer will be available at restrooms and at warm up areas.  Do not adjust/touch jumps without disinfecting first.</li> */}
                         {/* <li>Ribbons will be awarded.  There will be a self-serve ribbon table at the ingate – please social distance.</li> */}
                         <li>Online entries available through the website only.  NO POST ENTRIES.  Entry and payment deadline is the Monday before each show.  Entries will be limited if necessary.</li>
                         <li>Back numbers will be handed out to trainers at the entrance of the showgrounds.</li>
                         <li>ADDS/SCRATCHES – Competitors will be allowed to scratch or add, minus a office fee ($25+tax) before the start of the division that they have signed up for.</li>
-                        <li>Entries will be posted on the Teen Ranch Hunter/Jumper Shows Facebook page on Friday.  Please arrive close to your competition time & depart as soon as possible.</li>
+                        <li>Entries will be posted on the Teen Ranch Hunter/Jumper Shows Facebook page on Friday.</li>
                         <li>Anyone who does not abide by the safety protocols will be removed from the show grounds.</li>
-                        <li>A max of 10 people can come with each trailer. For some of the bigger farms, you must set up cohorts of 10 people including a coach and they may not mix with your other cohorts. Guests are asked to leave as soon as possible after they are done showing.</li>
-                        <li>Only a max of 10 competitors will be allowed in each ring at a time for flat classes.</li>
+                        {/* -<li>A max of 10 people can come with each trailer. For some of the bigger farms, you must set up cohorts of 10 people including a coach and they may not mix with your other cohorts. Guests are asked to leave as soon as possible after they are done showing.</li> */}
+                        {/* -<li>Only a max of 10 competitors will be allowed in each ring at a time for flat classes.</li> */}
                         <li>Max of one assistant/guardian per competitor allowed at gate. </li>
-                        <li>When entering and exiting the ring, please follow arrows and use appropriate gate to keep social distancing.  </li>
-                        <li>Warm-ups done immediately before their competition round. One rider in the ring at a time. 5 riders allowed in the warm up area at a time.  When not warming up or showing, all guests to remain at their trailer (with the exception of going to the food truck).</li>
+                        {/* -<li>When entering and exiting the ring, please follow arrows and use appropriate gate to keep social distancing.  </li> */}
+                        <li>Warm-ups done immediately before their competition round. One rider in the ring at a time. 5 riders allowed in the warm up area at a time.</li>
                         <li>Food truck will be in attendance…social distancing must be respected here.</li>
                     </ol>
 
