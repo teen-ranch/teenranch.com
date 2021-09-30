@@ -31,7 +31,7 @@ export default function Default() {
                     <h3>When</h3>
 
                     <p>
-                        Saturdays: September 25, 2021 - April 2, 2022 (6:30pm - 8:00pm)<br/>
+                        Saturdays: October 16, 2021 - April 2, 2022 (6:30pm - 8:00pm)<br/>
                     </p>
 
                     <h3>Cost</h3>
