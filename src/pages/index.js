@@ -17,14 +17,14 @@ export default function Index({ data }) {
 			{/* <CovidContainer /> */}
 
 			<Heading
-				src={ data.summerCamp.childImageSharp.fluid }
-				alt='Summer camp 2021'
-				title={<>Summer camps are back!</>}
-				subtitle={<>We are working hard to make this your best summer ever!</>}
-				metaTitle='Summer camp is back!'
-				metaDescription={`We are working hard to make this your best summer ever!`}
+				src={ data.fallGallop.childImageSharp.fluid }
+				alt='Teen Ranch Fall Gallop - A Cross Country Run'
+				title={'Teen Ranch Fall Gallop - A Cross Country Run'}
+				subtitle={'Come as an individual, family, or cross country team to make the most of this fall season while challenging your limits!'}
+				metaTitle='Teen Ranch Fall Gallop - A Cross Country Run'
+				metaDescription={`Come as an individual, family, or cross country team to make the most of this fall season while challenging your limits!`}
 			>
-				<CTAButton to='/summer-camp/'>Registration is now open</CTAButton>
+				<CTAButton to='/events/teen-ranch-fall-gallop-a-cross-country-run/'>Get the details</CTAButton>
 				{/* <div id="mc_embed_signup">
 					<form action="https://teenranch.us2.list-manage.com/subscribe/post?u=93bbc7a16b1a2719f9690a8b0&amp;id=8f481bca1e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
 						<div id="mc_embed_signup_scroll">
@@ -137,18 +137,15 @@ export default function Index({ data }) {
 			<Container type='body'>
 
 				<Program
-					src={data.summerCamp.childImageSharp.fluid}
-					name='Summer day camp!'
-					alt='Summer camp'
+					src={data.fallGallop.childImageSharp.fluid}
+					name='Teen Ranch Fall Gallop - A Cross Country Run'
+					alt='Cross Country'
 				>
 					<p>
-						Summer camps are back!
-                    </p>
-					<p>
-						Sign up now for our ultimate or junior day camps.
+					Come as an individual, family, or cross country team to make the most of this fall season while challenging your limits!
 					</p>
 
-					<Button to='/summer-camp/'>Learn more</Button>
+					<Button to='/events/teen-ranch-fall-gallop-a-cross-country-run/'>Learn more</Button>
 				</Program>
 
 				<Program src={ data.families.childImageSharp.fluid } name='Family getaway weekends' swap>
@@ -249,7 +246,7 @@ export const query = graphql`
 
     query {
 
-		summerCamp: file(relativePath: { eq: "summerDayCamp8.jpg" }) {
+		fallGallop: file(relativePath: { eq: "events/fallGallop/running1.jpg" }) {
 			childImageSharp {
 				fluid(maxWidth: 1920 quality: 64) {
 					...GatsbyImageSharpFluid_withWebp
