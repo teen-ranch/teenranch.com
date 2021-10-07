@@ -65,12 +65,13 @@ export default function Footer() {
                     </div>
 
                     <div>
-                        {/* <div className='footerTitle'>Events</div> */}
-                        {/* <ul className='footerNavigation'> */}
+                        <div className='footerTitle'>Events</div>
+                        <ul className='footerNavigation'>
+                        <li><Link to='/events/teen-ranch-fall-gallop-a-cross-country-run/'>Teen Ranch Fall Gallop - A Cross Country Run</Link></li>
                             {/* <li><Link to='/events/the-christmas-winter-festival/'>Christmas Winter Festival</Link></li> */}
                             {/* <li><Link to='/events/march-april-break-day-camp/'><s>March</s> April Break Day Camp</Link></li> */}
                             {/* <li><Link to='/events/family-winter-activity-adventure/'>Winter Activity Adventure</Link></li> */}
-                        {/* </ul> */}
+                        </ul>
 
                         <div className='footerTitle'>Families</div>
                         <ul className='footerNavigation'>

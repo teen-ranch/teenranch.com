@@ -68,7 +68,6 @@ export default function ({ title, images = [], venue, description, startDate, st
     }
 
     if (DateTime.fromISO(endsAt) < DateTime.local()) return null
-console.log(startsAt, DateTime.fromISO(startsAt).toFormat('ccc, LLL d @ t'), DateTime.fromISO(startsAt).zoneName)
     return (
         <>
             <div className={`eventContainer ${ status === 'CANCELLED' ? 'eventContainer--cancelled' : '' }`}>
@@ -99,6 +98,9 @@ console.log(startsAt, DateTime.fromISO(startsAt).toFormat('ccc, LLL d @ t'), Dat
                     <div className='eventTitle'>
                         { title }
                     </div>
+                    {
+                        description && <div className='eventDescription'>{ description }</div>
+                    }
                     <div className='eventVenue'>
                         <strong>{ venue.name }:</strong> { venue.address.address } { venue.address.city }, { venue.address.province } { venue.address.postalCode }
                     </div>
