@@ -153,7 +153,7 @@ export default function Default({ data }) {
                     </p>
 
                     <h2>When is it?</h2>
-                    Saturday, October 23, 2021
+                    Saturday, October 23, 2021<br/><br/><strong style={{ color: 'red' }}>Gates open from 9:00-10:00 am for registration for all races.</strong> (Little ponies arrive in time for a 10:00am run).
 
                     <h2>Who is it for?</h2>
                     Open to all Ages
@@ -166,7 +166,7 @@ export default function Default({ data }) {
 
                     <Price 
                         title='Little Ponies' 
-                        subTitle='Frog Pond Loop' 
+                        subTitle={<>Frog Pond Loop<br/><strong>10:00am</strong></>}
                         who='Age 6 and under'
                         price={0}
                         includes={[
@@ -179,7 +179,7 @@ export default function Default({ data }) {
                     </Price>
                     <Price 
                         title="Wranglers"
-                        subTitle='Driveway Loop (700 meters)'
+                        subTitle={<>Driveway Loop (700 meters)<br/><strong>10:15am</strong></>}
                         who='Age 7-10'
                         price={15} 
                         term='person' 
@@ -192,8 +192,8 @@ export default function Default({ data }) {
                         <CTAButton href="mailto:camp@teenranch.com?subject=Teen%20Ranch%20Fall%20Gallop">Pre-register now</CTAButton>
                     </Price>
                     <Price 
-                        title='Broncos' 
-                        subTitle='Trail Loop (2.5 kilometers)' 
+                        title='Broncos'
+                        subTitle={<>Trail Loop (2.5 kilometers)<br/><strong>10:45am</strong></>} 
                         who='Age 11-13'
                         price={15}
                         term='person'
@@ -206,8 +206,8 @@ export default function Default({ data }) {
                         <CTAButton href="mailto:camp@teenranch.com?subject=Teen%20Ranch%20Fall%20Gallop">Pre-register now</CTAButton>
                     </Price>
                     <Price
-                        title='Big Rodeo' 
-                        subTitle='Double Trail Loop (5 kilometers)' 
+                        title='Big Rodeo'
+                        subTitle={<>Double Trail Loop (5 kilometers)<br/><strong>11:15am</strong></>}
                         who='Age 14 and up'
                         price={20}
                         term='person'
