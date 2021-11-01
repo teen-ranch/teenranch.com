@@ -17,14 +17,14 @@ export default function Index({ data }) {
 			{/* <CovidContainer /> */}
 
 			<Heading
-				src={ data.fallGallop.childImageSharp.fluid }
-				alt='Teen Ranch Fall Gallop - A Cross Country Run'
-				title={'Teen Ranch Fall Gallop - A Cross Country Run'}
-				subtitle={'Come as an individual, family, or cross country team to make the most of this fall season while challenging your limits!'}
-				metaTitle='Teen Ranch Fall Gallop - A Cross Country Run'
-				metaDescription={`Come as an individual, family, or cross country team to make the most of this fall season while challenging your limits!`}
+				src={ data.christmasPhotoSessions.childImageSharp.fluid }
+				alt='Christmas Photo Sessions'
+				title={'Teen Ranch Christmas Photo Sessions'}
+				subtitle={'Help support the Ranch and get some beautiful Christmas photos!'}
+				metaTitle='Teen Ranch Christmas Photo Sessions'
+				metaDescription={`Help support the Ranch and get some beautiful Christmas photos!`}
 			>
-				<CTAButton to='/events/teen-ranch-fall-gallop-a-cross-country-run/'>Get the details</CTAButton>
+				<CTAButton to='/events/christmas-photo-sessions/'>Get the details</CTAButton>
 				{/* <div id="mc_embed_signup">
 					<form action="https://teenranch.us2.list-manage.com/subscribe/post?u=93bbc7a16b1a2719f9690a8b0&amp;id=8f481bca1e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
 						<div id="mc_embed_signup_scroll">
@@ -137,15 +137,15 @@ export default function Index({ data }) {
 			<Container type='body'>
 
 				<Program
-					src={data.fallGallop.childImageSharp.fluid}
-					name='Teen Ranch Fall Gallop - A Cross Country Run'
-					alt='Cross Country'
+					src={data.christmasPhotoSessions.childImageSharp.fluid}
+					name='Teen Ranch Christmas Photo Sessions'
+					alt='Christmas Photo Sessions'
 				>
 					<p>
-					Come as an individual, family, or cross country team to make the most of this fall season while challenging your limits!
+					Help support the Ranch and get some beautiful Christmas photos!
 					</p>
 
-					<Button to='/events/teen-ranch-fall-gallop-a-cross-country-run/'>Learn more</Button>
+					<Button to='/events/christmas-photo-sessions/'>Learn more</Button>
 				</Program>
 
 				<Program src={ data.families.childImageSharp.fluid } name='Family getaway weekends' swap>
@@ -246,7 +246,7 @@ export const query = graphql`
 
     query {
 
-		fallGallop: file(relativePath: { eq: "events/fallGallop/running1.jpg" }) {
+		christmasPhotoSessions: file(relativePath: { eq: "events/christmasPhotoSessions/DE7.jpg" }) {
 			childImageSharp {
 				fluid(maxWidth: 1920 quality: 64) {
 					...GatsbyImageSharpFluid_withWebp

@@ -54,13 +54,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-plausible`,
-      options: {
-        domain: `teenranch.com`,
-        customDomain: 'stats.teenranch.com'
-      },
-    },
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,

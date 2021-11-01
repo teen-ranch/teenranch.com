@@ -25,10 +25,10 @@ export function Price({ title, subTitle, who, price, term, includes, primary = f
     )
 }
 
-export function PriceContainer({ children }) {
+export function PriceContainer({ children, sm = '1', md = '2', lg = '2', xl = '4' }) {
     return (
         <div className='price__containerGrid'>
-            <Grid md='2' xl='4' gapSize='3rem'>
+            <Grid sm={ sm } md={ md } lg={ lg } xl={ xl } gapSize='3rem'>
                 { children }
             </Grid>
         </div>
