@@ -65,6 +65,11 @@ export default function Footer() {
                     </div>
 
                     <div>
+                        <div className='footerTitle'>Day camp</div>
+                        <ul className='footerNavigation'> 
+                            <li><Link to='/day-camp/pd-pa-day-camp/'>PD/PA day camp</Link></li>
+                            <li><Link to='/day-camp/christmas-day-camp/'>Christmas day camp</Link></li>
+                        </ul>
                         <div className='footerTitle'>Events</div>
                         <ul className='footerNavigation'>
                         {/* <li><Link to='/events/teen-ranch-fall-gallop-a-cross-country-run/'>Teen Ranch Fall Gallop - A Cross Country Run</Link></li> */}
