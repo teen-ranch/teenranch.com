@@ -70,6 +70,8 @@ export default function Programs({ data }) {
                     <li>June 3, 2022</li>
                 </ul>
 
+                <p>Drop off between 8:30-8:50 am and pick up between 4:30- 5:00 pm</p>
+
             </Container>
 
             <div id='pricing' style={{ position: 'absolute', marginTop: '-180px', }}/>

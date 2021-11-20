@@ -28,7 +28,7 @@ const pageData = {
 
 export default function Programs({ data }) {
     
-    const { file, whamAll, activities } = data
+    const { file } = data
 
 	return (
         <>
@@ -67,6 +67,8 @@ export default function Programs({ data }) {
                 <ul>
                     <li>December 20-23, 2021</li>
                 </ul>
+
+                <p>Drop off between 8:30-8:50 am and pick up between 4:30- 5:00 pm</p>
 
             </Container>
 
