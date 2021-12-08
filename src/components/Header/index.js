@@ -81,11 +81,11 @@ export default function Header({ location }) {
                                     <ul className='subSubNav'>
                                         <li><NavLink to='/programs/horses/hunter-jumper-shows/'>Hunter / Jumper shows</NavLink></li>
                                     </ul>
-                                    <div className='subNavDivider'>Schooling</div>
+                                    {/* <div className='subNavDivider'>Schooling</div>
                                     <ul className='subSubNav'>
                                         <li><NavLink to='/programs/horses/riding-lessons/'>Riding lessons</NavLink></li>
                                         <li><NavLink to='/programs/horses/schooling-ring-rental/'>Schooling ring rental</NavLink></li>
-                                    </ul>
+                                    </ul> */}
                                     <div className='subNavDivider'>Recreation</div>
                                     <ul className='subSubNav'>
                                         <li><NavLink to='/programs/horses/trail-rides/'>Trail rides</NavLink></li>
@@ -109,20 +109,20 @@ export default function Header({ location }) {
                                             </li>
                                         </ul>
                                     </li>
-                                    <li><NavLink to='/events'>Events</NavLink>
-                                        <ul className='subSubNav'>
+                                    {/* <li><NavLink to='/events'>Events</NavLink> */}
+                                        {/* <ul className='subSubNav'> */}
                                             {/* <li><NavLink to='/events/teen-ranch-fall-gallop-a-cross-country-run/'>Teen Ranch Fall Gallop - A Cross Country Run</NavLink></li> */}
-                                            <li><NavLink to='/events/christmas-photo-sessions/'>Christmas Photo Sessions</NavLink></li>
+                                            {/* <li><NavLink to='/events/christmas-photo-sessions/'>Christmas Photo Sessions</NavLink></li> */}
                                             {/* <li><NavLink to='/events/the-christmas-winter-festival/'>Christmas Winter Festival</NavLink></li> */}
                                             {/* <li><NavLink to='/events/march-april-break-day-camp/'><s>March</s> April Break Day Camp</NavLink></li> */}
                                             {/* <li><NavLink to='/events/family-winter-activity-adventure/'>Winter Activity Adventure</NavLink></li> */}
-                                        </ul>
-                                    </li>
-                                    <li><NavLink to='/programs/leadership/'>Leadership & Development</NavLink>
+                                        {/* </ul> */}
+                                    {/* </li> */}
+                                    {/* <li><NavLink to='/programs/leadership/'>Leadership & Development</NavLink>
                                         <ul className='subSubNav'>
                                             <li><NavLink to='/programs/leadership/adventure-bible-program/'>Adventure Bible Program</NavLink></li>
                                         </ul>
-                                    </li>
+                                    </li> */}
                                 </div>
                             </ul>
                         </li>

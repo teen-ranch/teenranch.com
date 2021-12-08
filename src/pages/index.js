@@ -17,14 +17,14 @@ export default function Index({ data }) {
 			{/* <CovidContainer /> */}
 
 			<Heading
-				src={ data.christmasPhotoSessions.childImageSharp.fluid }
-				alt='Christmas Photo Sessions'
-				title={'Teen Ranch Christmas Photo Sessions'}
-				subtitle={'Help support the Ranch and get some beautiful Christmas photos!'}
-				metaTitle='Teen Ranch Christmas Photo Sessions'
-				metaDescription={`Help support the Ranch and get some beautiful Christmas photos!`}
+				src={ data.christmasDayCamp.childImageSharp.fluid }
+				alt='Christmas day camp'
+				title={'Christmas day camp'}
+				subtitle={`The excitement of the season is multiplied with Teen Ranch's Christmas Winter Break Day Camps!`}
+				metaTitle='Christmas day camp'
+				metaDescription={`The excitement of the season is multiplied with Teen Ranch's Christmas Winter Break Day Camps!`}
 			>
-				<CTAButton to='/events/christmas-photo-sessions/'>Get the details</CTAButton>
+				<CTAButton to='/day-camp/christmas-day-camp/'>Get the details</CTAButton>
 				{/* <div id="mc_embed_signup">
 					<form action="https://teenranch.us2.list-manage.com/subscribe/post?u=93bbc7a16b1a2719f9690a8b0&amp;id=8f481bca1e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
 						<div id="mc_embed_signup_scroll">
@@ -136,31 +136,34 @@ export default function Index({ data }) {
 
 			<Container type='body'>
 
+				
+
 				<Program
-					src={data.christmasPhotoSessions.childImageSharp.fluid}
-					name='Teen Ranch Christmas Photo Sessions'
-					alt='Christmas Photo Sessions'
+					src={ data.christmasDayCamp.childImageSharp.fluid }
+					name='Christmas day camp'
+					alt='Christmas day camp'
 				>
 					<p>
-					Help support the Ranch and get some beautiful Christmas photos!
+						The excitement of the season is multiplied with Teen Ranch's Christmas Winter Break Day Camps! Back this year by popular demand our day camps offer outdoor fun and activity as well as indoor festivities to celebrate the winter season and the magic of Christmas! Treat your kids to a memorable day or bundle package all four days at a daily savings!
 					</p>
 
-					<Button to='/events/christmas-photo-sessions/'>Learn more</Button>
+					<Button to='/day-camp/christmas-day-camp/'>Learn more</Button>
 				</Program>
 
-				<Program src={ data.families.childImageSharp.fluid } name='Family getaway weekends' swap>
-                    <p>Teen Ranch is excited to offer two Family Getaway Weekends this summer! Enjoy fresh air in the scenic countryside while creating lasting memories and family fun as you explore and play together.</p>
-
-                    <Button to="/families/family-getaway-weekends">Learn more</Button>
-                </Program>
-
-				<Program src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/DSC_0513.JPG' name='Pre-Season Skills and Skating'>
-                    <p>A six week program focused on the development of forward and backward skating, crossovers, tight-turns, individual shooting, stick handling, creativity, passing, as well as game situation type skills. For boys and girls ages 7-13.</p>
-
-                    <Button to="/programs/hockey-and-skating/pre-season-skills-and-skating">Learn more</Button>
-                </Program>
-
 				<Program
+					src={ data.christmasDayCamp.childImageSharp.fluid }
+					name='PD/PA day camp'
+					alt='Day camp'
+					swap
+				>
+					<p>
+					Parents, we've got you covered!! Give your kids adventure and fun on their days off with our PD Day Camps! Designed for ample time outdoors to explore, play group games, and enjoy the season's best activities, these days will be sure to get your kids moving and having a blast. For the hockey enthusiast, we offer a hockey option on two of our PD Day Camps.
+					</p>
+
+					<Button to='/day-camp/pd-pa-day-camp/'>Learn more</Button>
+				</Program>
+
+				{/* <Program
 					src={data.hjShows.childImageSharp.fluid}
 					name={<>Hunter/Jumper Show Series</>}
 					alt='Hunter/jumper shows'
@@ -171,8 +174,8 @@ export default function Index({ data }) {
                     </p>
 
 					<Button to='/programs/horses/hunter-jumper-shows'>Learn more</Button>
-				</Program>
-
+				</Program> */}
+{/* 
 				<Program
 					src={data.file.childImageSharp.fluid}
 					name='Leadership & Development: Adventure Bible Program'
@@ -180,7 +183,7 @@ export default function Index({ data }) {
 					<p>This solid, Christ-centered experiential program is designed to ground young adults in God's Word and equip them for a vibrant walk with Jesus while challenging them through adventure and outreach.</p>
 
 					<Button to='/programs/leadership/adventure-bible-program'>Learn more</Button>
-				</Program>
+				</Program> */}
 
 			</Container>
 
@@ -246,7 +249,7 @@ export const query = graphql`
 
     query {
 
-		christmasPhotoSessions: file(relativePath: { eq: "events/christmasPhotoSessions/DE7.jpg" }) {
+		christmasDayCamp: file(relativePath: { eq: "events/winterTobogganing.jpg" }) {
 			childImageSharp {
 				fluid(maxWidth: 1920 quality: 64) {
 					...GatsbyImageSharpFluid_withWebp
