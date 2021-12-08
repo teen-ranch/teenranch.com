@@ -32,11 +32,14 @@ export default function Default() {
 
                     <p>
                         Saturdays: October 16, 2021 - April 2, 2022 (6:30pm - 8:00pm)<br/>
+                        <strong>Public skating is NOT available Saturday, December 25th or January 1st.</strong>
                     </p>
 
                     <h3>Cost</h3>
                     <p>$5 +HST/person</p>
                     <p>$18 +HST/family</p>
+
+                    <p>Snackbar is open for hot drinks and light snacks!</p>
 
                     <p>
                         <i>Bring your own skates</i>
