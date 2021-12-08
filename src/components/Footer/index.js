@@ -70,14 +70,14 @@ export default function Footer() {
                             <li><Link to='/day-camp/pd-pa-day-camp/'>PD/PA day camp</Link></li>
                             <li><Link to='/day-camp/christmas-day-camp/'>Christmas day camp</Link></li>
                         </ul>
-                        <div className='footerTitle'>Events</div>
-                        <ul className='footerNavigation'>
+                        {/* <div className='footerTitle'>Events</div> */}
+                        {/* <ul className='footerNavigation'> */}
                         {/* <li><Link to='/events/teen-ranch-fall-gallop-a-cross-country-run/'>Teen Ranch Fall Gallop - A Cross Country Run</Link></li> */}
-                        <li><Link to='/events/christmas-photo-sessions/'>Christmas Photo Sessions</Link></li>
+                        {/* <li><Link to='/events/christmas-photo-sessions/'>Christmas Photo Sessions</Link></li> */}
                             {/* <li><Link to='/events/the-christmas-winter-festival/'>Christmas Winter Festival</Link></li> */}
                             {/* <li><Link to='/events/march-april-break-day-camp/'><s>March</s> April Break Day Camp</Link></li> */}
                             {/* <li><Link to='/events/family-winter-activity-adventure/'>Winter Activity Adventure</Link></li> */}
-                        </ul>
+                        {/* </ul> */}
 
                         <div className='footerTitle'>Families</div>
                         <ul className='footerNavigation'>
@@ -85,13 +85,13 @@ export default function Footer() {
                             <li><Link to='/families/family-getaway-weekends'>Family getaway weekends</Link></li>
                         </ul>
 
-                        <div className='footerTitle'>Leadership</div>
+                        {/* <div className='footerTitle'>Leadership</div>
                         <ul className='footerNavigation'>
                             <li><Link to='/programs/leadership/adventure-bible-program/'>Adventure Bible Program</Link></li>
-                        </ul>
+                        </ul> */}
                         <div className='footerTitle'>Teen Ranch Canada</div>
                         <ul className='footerNavigation'>
-                            <li><Link to='https://shop.teenranch.com'>Shop Teen Ranch Apparel</Link></li>
+                            {/* <li><Link to='https://shop.teenranch.com'>Shop Teen Ranch Apparel</Link></li> */}
                             {/* <li><Link to='/about-teen-ranch/'>About Teen Ranch</Link></li> */}
                             <li><Link to='/teen-ranch-statement-of-faith/'>Our statement of faith</Link></li>
                             <li><Link to='/facilities/'>Our facilities</Link></li>

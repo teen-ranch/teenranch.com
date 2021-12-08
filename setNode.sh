@@ -1,0 +1,1 @@
+bash $HOME/.nvm/nvm.sh use
