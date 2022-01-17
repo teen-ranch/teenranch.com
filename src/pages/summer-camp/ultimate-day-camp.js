@@ -230,8 +230,22 @@ export default function Programs({ data }) {
               dates: ["", "8-14", "OC", "OC", "", "OC", "OC", "8-14", "8-14"],
             },
             {
-              name: "Elite AA/AAA camp",
-              dates: ["", "", "OC", "OC", "", "OC", "OC", "8-14", ""],
+              name: "Elite hockey camp",
+              dates: [
+                "",
+                "",
+                "OC",
+                "OC",
+                "",
+                "OC",
+                "OC",
+                <>
+                  8-14
+                  <br />
+                  AA/AAA
+                </>,
+                "",
+              ],
             },
             {
               name: "Girl's hockey camp",

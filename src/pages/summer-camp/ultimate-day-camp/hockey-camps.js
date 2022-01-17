@@ -154,8 +154,8 @@ export default function Programs({ data }) {
           </Program>
           <Program
             small
-            name="Elite AA/AAA hockey day camp"
-            who="Players & goalies (co-ed)"
+            name="Elite hockey day camp"
+            who="AA/AAA Players & goalies (co-ed)"
             src={highPerformanceHockey.childImageSharp.fluid}
           >
             For high-performance players focused on advanced skills in skating,
@@ -340,8 +340,22 @@ export default function Programs({ data }) {
               dates: ["", "8-14", "OC", "OC", "", "OC", "OC", "8-14", "8-14"],
             },
             {
-              name: "Elite AA/AAA camp",
-              dates: ["", "", "OC", "OC", "", "OC", "OC", "8-14", ""],
+              name: "Elite hockey camp",
+              dates: [
+                "",
+                "",
+                "OC",
+                "OC",
+                "",
+                "OC",
+                "OC",
+                <>
+                  8-14
+                  <br />
+                  AA/AAA
+                </>,
+                "",
+              ],
             },
             {
               name: "Girl's hockey camp",

@@ -154,7 +154,7 @@ export default function Programs({ data }) {
           </Program>
           <Program
             small
-            name="Elite AA/AAA camp"
+            name="Elite hockey camp"
             who="Players & goalies (co-ed)"
             src={highPerformanceHockey.childImageSharp.fluid}
           >
@@ -191,7 +191,7 @@ export default function Programs({ data }) {
       </Container>
 
       <Container type="body">
-        <h1>Functional fitness program (Elite AA/AA & goalie)</h1>
+        <h1>Functional fitness program (Elite hockey & goalie camps)</h1>
 
         <p>
           High-performance athletes have exclusive access to our functional
@@ -341,18 +341,36 @@ export default function Programs({ data }) {
                 "11-14",
                 "",
                 "",
-                <>
-                  8-14
-                  <br />&<br />
-                  13-16
-                </>,
+                "8-14",
                 "UDC",
                 "UDC",
               ],
             },
             {
-              name: "Elite AA/AAA camp",
-              dates: ["UDC", "UDC", "8-11", "", "", "10-14", "", "UDC", "UDC"],
+              name: "Elite hockey camp",
+              dates: [
+                "UDC",
+                "UDC",
+                <>
+                  8-11
+                  <br />
+                  AA/AAA
+                </>,
+                "",
+                "",
+                <>
+                  10-14
+                  <br />
+                  AA/AAA
+                </>,
+                <>
+                  13-16
+                  <br />
+                  All levels
+                </>,
+                "UDC",
+                "UDC",
+              ],
             },
             {
               name: "Girl's hockey camp",
@@ -420,13 +438,7 @@ export default function Programs({ data }) {
             </CTAButton>
           </Price>
           <Price
-            title={
-              <>
-                Elite AA/AA
-                <br />
-                hockey camp
-              </>
-            }
+            title={<>Elite hockey camp</>}
             subTitle="For high-performance players focused on advanced skills in skating, puck handling, shooting, and passing."
             who="Rep-level players (co-ed)"
             price={1550}

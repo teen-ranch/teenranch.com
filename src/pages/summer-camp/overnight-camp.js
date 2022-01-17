@@ -116,8 +116,8 @@ export default function Programs({ data }) {
             src={hockey.childImageSharp.fluid}
           >
             Skills & skating development for players and goalies from
-            house-league to rep. Standard, Elite AA/AAA, girl's hockey, and
-            goalie camps.
+            house-league to rep. regular hockey, elite hockey, girl's hockey,
+            and goalie camps.
             <br />
             <PrimaryButton to="/summer-camp/overnight-camp/hockey-camps/">
               Learn more
@@ -236,18 +236,36 @@ export default function Programs({ data }) {
                 "11-14",
                 "",
                 "",
-                <>
-                  8-14
-                  <br />&<br />
-                  13-16
-                </>,
+                "8-14",
                 "UDC",
                 "UDC",
               ],
             },
             {
-              name: "Elite AA/AAA camp",
-              dates: ["UDC", "UDC", "8-11", "", "", "10-14", "", "UDC", "UDC"],
+              name: "Elite hockey camp",
+              dates: [
+                "UDC",
+                "UDC",
+                <>
+                  8-11
+                  <br />
+                  AA/AAA
+                </>,
+                "",
+                "",
+                <>
+                  10-14
+                  <br />
+                  AA/AAA
+                </>,
+                <>
+                  13-16
+                  <br />
+                  All levels
+                </>,
+                "UDC",
+                "UDC",
+              ],
             },
             {
               name: "Girl's hockey camp",

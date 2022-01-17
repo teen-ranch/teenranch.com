@@ -212,18 +212,36 @@ export default function Programs({ data }) {
                 "11-14",
                 "",
                 "",
-                <>
-                  8-14
-                  <br />&<br />
-                  13-16
-                </>,
+                "8-14",
                 "UDC",
                 "UDC",
               ],
             },
             {
-              name: "Elite AA/AAA camp",
-              dates: ["UDC", "UDC", "8-11", "", "", "10-14", "", "UDC", "UDC"],
+              name: "Elite hockey camp",
+              dates: [
+                "UDC",
+                "UDC",
+                <>
+                  8-11
+                  <br />
+                  AA/AAA
+                </>,
+                "",
+                "",
+                <>
+                  10-14
+                  <br />
+                  AA/AAA
+                </>,
+                <>
+                  13-16
+                  <br />
+                  All levels
+                </>,
+                "UDC",
+                "UDC",
+              ],
             },
             {
               name: "Girl's hockey camp",
@@ -315,8 +333,22 @@ export default function Programs({ data }) {
               dates: ["", "8-14", "OC", "OC", "", "OC", "OC", "8-14", "8-14"],
             },
             {
-              name: "Elite AA/AAA camp",
-              dates: ["", "", "OC", "OC", "", "OC", "OC", "8-14", ""],
+              name: "Elite hockey camp",
+              dates: [
+                "",
+                "",
+                "OC",
+                "OC",
+                "",
+                "OC",
+                "OC",
+                <>
+                  8-14
+                  <br />
+                  AA/AAA
+                </>,
+                "",
+              ],
             },
             {
               name: "Girl's hockey camp",
