@@ -18,6 +18,7 @@ import Grid from "components/Grid"
 // import Sponsor from 'components/Sponsor'
 import Img from "gatsby-image"
 import JumpStart from "../../components/JumpStart"
+import { OvernightCampTerms } from "components/Terms"
 
 const frontmatter = {
   title: "Overnight camp",
@@ -275,7 +276,10 @@ export default function Programs({ data }) {
               name: "Goalie camp",
               dates: ["UDC", "UDC", "", "", "", "8-14", "", "UDC", "UDC"],
             },
-
+            {
+              name: "Summer drop-in ice time",
+              dates: ["UDC", "UDC", "", "", "", "", "", "UDC", "8-14"],
+            },
             {
               name: "Western riding camp",
               dates: [
@@ -346,24 +350,7 @@ export default function Programs({ data }) {
           style={{ position: "absolute", marginTop: "-180px" }}
         />
         <h1>Pricing</h1>
-        <h3>Terms:</h3>
-        <p>
-          In order to keep payments as low-risk as possible for you, we are only
-          requiring a $100 non-refundable deposit per overnight camp
-          registration. The balance will be due 14 days prior to arrival at camp
-          and is non-refundable. In the case of absence for any reason during
-          the camp week, including homesickness or disciplinary departure, no
-          refund will be issued except upon a signed physician’s order. In this
-          event, a prorated camp refund will be issued, less the $100
-          non-refundable deposit.
-        </p>
-        <ul>
-          <li>$100 non-refundable deposit per overnight camp registration</li>
-          <li>
-            The balance is due 14 days prior to arrival at camp and is
-            non-refundable.
-          </li>
-        </ul>
+        <OvernightCampTerms />
         <JumpStart />
         <PriceContainer>
           <Price
@@ -482,7 +469,23 @@ export default function Programs({ data }) {
             </CTAButton>
           </Price>
         </PriceContainer>
-        <JumpStart />
+      </Container>
+
+      <Container type="body">
+        <h2>Additional summer programs:</h2>
+        <PriceAddon
+          title="Summer drop-in ice time"
+          subTitle="One-week only!"
+          description={
+            <>
+              Join in with our regular hockey program for 1.5 hours of ice time
+              each morning, Monday - Friday.
+            </>
+          }
+          price={200}
+          term="week"
+          to="https://register.trmanager.com"
+        />
       </Container>
     </>
   )

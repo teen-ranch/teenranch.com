@@ -11,9 +11,11 @@ export default function JumpStart() {
       <div
         style={{
           background: "rgba(0,0,0,0.05)",
-          padding: "2rem",
+          padding: "2rem 4rem",
           borderRadius: "1rem",
           textAlign: "center",
+          fontStyle: "italic",
+          color: "rgba(0,0,0,0.9)",
         }}
       >
         <p>
@@ -21,13 +23,13 @@ export default function JumpStart() {
           contact us for more information on community subsidies as well as
           available scholarships.
         </p>
-        <a
+        {/* <a
           target="_blank"
           rel="noopener noreferrer"
           href="https://jumpstart.canadiantire.ca/pages/individual-child-grants"
         >
           Canadian Tire - Jumpstart Child Grants
-        </a>
+        </a> */}
       </div>
     </div>
   )

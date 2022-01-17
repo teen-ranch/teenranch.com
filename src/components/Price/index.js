@@ -4,6 +4,7 @@ import Grid from "components/Grid"
 // import Container from 'components/Container'
 
 import "./price.scss"
+import Button, { CTAButton } from "components/Button"
 
 export function Price({
   title,
@@ -65,7 +66,7 @@ export function PriceContainer({
   )
 }
 
-export function PriceAddon({ title, subTitle, description, price, term }) {
+export function PriceAddon({ title, subTitle, description, price, term, to }) {
   return (
     <section className="price__addonContainer">
       <div className="price__addonBody">
@@ -78,6 +79,13 @@ export function PriceAddon({ title, subTitle, description, price, term }) {
       <div className="price__addonPrice">
         ${new Intl.NumberFormat("en-US").format(price)} +HST{" "}
         <span>/{term}</span>
+        {to && (
+          <div>
+            <Button href={to} target="_blank">
+              Register now
+            </Button>
+          </div>
+        )}
       </div>
     </section>
   )

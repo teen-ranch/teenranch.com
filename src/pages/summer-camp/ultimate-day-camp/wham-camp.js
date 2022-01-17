@@ -19,6 +19,7 @@ import Grid from "components/Grid"
 import Img from "gatsby-image"
 import { UltimateDayCampTerms } from "components/Terms"
 import { Link as ReachLink } from "@reach/router"
+import JumpStart from "components/JumpStart"
 
 const frontmatter = {
   title: "WHAM camp",
@@ -220,6 +221,7 @@ export default function Programs({ data }) {
       <Container type="body">
         <h1>Pricing</h1>
         <UltimateDayCampTerms />
+        <JumpStart />
         <PriceContainer>
           <Price
             title="WHAM camp"

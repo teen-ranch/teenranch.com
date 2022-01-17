@@ -17,6 +17,7 @@ import CampSchedule from "../components/CampSchedule"
 import { SummerCampTerms } from "components/Terms"
 // import Sponsor from 'components/Sponsor'
 import Img from "gatsby-image"
+import JumpStart from "components/JumpStart"
 
 const frontmatter = {
   title: "Summer camp",
@@ -251,7 +252,10 @@ export default function Programs({ data }) {
               name: "Goalie camp",
               dates: ["UDC", "UDC", "", "", "", "8-14", "", "UDC", "UDC"],
             },
-
+            {
+              name: "Summer drop-in ice time",
+              dates: ["UDC", "UDC", "", "", "", "", "", "UDC", "8-14"],
+            },
             {
               name: "Western riding camp",
               dates: [
@@ -354,7 +358,10 @@ export default function Programs({ data }) {
               name: "Girl's hockey camp",
               dates: ["", "8-14", "OC", "OC", "", "OC", "OC", "", ""],
             },
-
+            {
+              name: "Summer drop-in ice time",
+              dates: ["", "", "OC", "OC", "", "OC", "OC", "", "8-14"],
+            },
             {
               name: "Western riding camp",
               dates: [
@@ -465,6 +472,7 @@ export default function Programs({ data }) {
         />
         <h1>Pricing</h1>
         <SummerCampTerms />
+        <JumpStart />
         <PriceContainer>
           <Price
             title={
@@ -561,6 +569,23 @@ export default function Programs({ data }) {
             </CTAButton>
           </Price>
         </PriceContainer>
+      </Container>
+
+      <Container type="body">
+        <h2>Additional summer programs:</h2>
+        <PriceAddon
+          title="Summer drop-in ice time"
+          subTitle="One-week only!"
+          description={
+            <>
+              Join in with our regular hockey program for 1.5 hours of ice time
+              each morning, Monday - Friday.
+            </>
+          }
+          price={200}
+          term="week"
+          to="https://register.trmanager.com"
+        />
       </Container>
 
       <Container type="body">

@@ -18,6 +18,7 @@ import Grid from "components/Grid"
 // import Sponsor from 'components/Sponsor'
 import Img from "gatsby-image"
 import { OvernightCampTerms } from "../../../components/Terms"
+import JumpStart from "components/JumpStart"
 
 const frontmatter = {
   title: "Hockey camps",
@@ -380,6 +381,10 @@ export default function Programs({ data }) {
               name: "Goalie camp",
               dates: ["UDC", "UDC", "", "", "", "8-14", "", "UDC", "UDC"],
             },
+            {
+              name: "Summer drop-in ice time",
+              dates: ["UDC", "UDC", "", "", "", "", "", "UDC", "8-14"],
+            },
           ]}
         />
       </Container>
@@ -393,6 +398,7 @@ export default function Programs({ data }) {
       <Container type="body">
         <h1>Pricing</h1>
         <OvernightCampTerms />
+        <JumpStart />
         <PriceContainer>
           <Price
             title="Hockey camp"
@@ -487,6 +493,23 @@ export default function Programs({ data }) {
             </CTAButton>
           </Price>
         </PriceContainer>
+      </Container>
+
+      <Container type="body">
+        <h2>Additional summer programs:</h2>
+        <PriceAddon
+          title="Summer drop-in ice time"
+          subTitle="One-week only!"
+          description={
+            <>
+              Join in with our regular hockey program for 1.5 hours of ice time
+              each morning, Monday - Friday.
+            </>
+          }
+          price={200}
+          term="week"
+          to="https://register.trmanager.com"
+        />
       </Container>
 
       <Container type="body">

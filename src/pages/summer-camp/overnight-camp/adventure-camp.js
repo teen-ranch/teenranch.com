@@ -18,6 +18,7 @@ import Grid from "components/Grid"
 // import Sponsor from 'components/Sponsor'
 import Img from "gatsby-image"
 import { OvernightCampTerms } from "components/Terms"
+import JumpStart from "components/JumpStart"
 
 const frontmatter = {
   title: "Adventure camp",
@@ -201,6 +202,7 @@ export default function Programs({ data }) {
       <Container type="body">
         <h1>Pricing</h1>
         <OvernightCampTerms />
+        <JumpStart />
         <PriceContainer>
           <Price
             title="Adventure camp"

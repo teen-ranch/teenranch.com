@@ -19,6 +19,7 @@ import Grid from "components/Grid"
 import Img from "gatsby-image"
 import { UltimateDayCampTerms } from "components/Terms"
 import { Link as ReachLink } from "@reach/router"
+import JumpStart from "components/JumpStart"
 
 const frontmatter = {
   title: "Ultimate day camp",
@@ -251,7 +252,10 @@ export default function Programs({ data }) {
               name: "Girl's hockey camp",
               dates: ["", "8-14", "OC", "OC", "", "OC", "OC", "", ""],
             },
-
+            {
+              name: "Summer drop-in ice time",
+              dates: ["", "", "OC", "OC", "", "OC", "OC", "", "8-14"],
+            },
             {
               name: "Western riding camp",
               dates: [
@@ -319,6 +323,7 @@ export default function Programs({ data }) {
         />
         <h1>Pricing</h1>
         <UltimateDayCampTerms />
+        <JumpStart />
         <PriceContainer>
           <Price
             title="Hockey camps"
@@ -427,7 +432,24 @@ export default function Programs({ data }) {
       </Container>
 
       <Container type="body">
-        <h2>Day camp add-ons:</h2>
+        <h2>Additional summer programs:</h2>
+        <PriceAddon
+          title="Summer drop-in ice time"
+          subTitle="One-week only!"
+          description={
+            <>
+              Join in with our regular hockey program for 1.5 hours of ice time
+              each morning, Monday - Friday.
+            </>
+          }
+          price={200}
+          term="week"
+          to="https://register.trmanager.com"
+        />
+      </Container>
+
+      <Container type="body">
+        <h2>Ultimate day camp add-ons:</h2>
         <PriceAddon
           title="Extended care"
           subTitle="6:00pm late pick-up"
