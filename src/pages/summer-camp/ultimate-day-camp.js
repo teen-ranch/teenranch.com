@@ -20,6 +20,7 @@ import Img from "gatsby-image"
 import { UltimateDayCampTerms } from "components/Terms"
 import { Link as ReachLink } from "@reach/router"
 import JumpStart from "components/JumpStart"
+import UltimateDayCampIntro from "components/UltimateDayCampIntro"
 
 const frontmatter = {
   title: "Ultimate day camp",
@@ -62,45 +63,7 @@ export default function Programs({ data }) {
       <div id="top" style={{ position: "absolute", marginTop: "-120px" }} />
 
       <Container type="body">
-        <h1>Ultimate day camp for ultimate kids</h1>
-
-        <p>
-          <strong>
-            For 2022 only: Ultimate day camp price freeze in effect!
-          </strong>
-        </p>
-        <p>
-          Sign your child up for ultimate day camp and they will experience all
-          the fun and adventure of summer camp packed into five awesome days!
-          They’ll enjoy the great outdoors, get active and build friendships
-          that last a lifetime.
-        </p>
-
-        <p>
-          In the morning, campers hone their skills in their sport of choice.
-          Afternoons are their chance to enjoy a variety of activities and daily
-          campfires with engaging, real-life topics shared from a biblical
-          perspective.
-        </p>
-        <p>
-          Our well-trained staff are committed to the safety and well-being of
-          each camper and aim to come alongside you to challenge and inspire!
-        </p>
-
-        <h3>Weekly overview</h3>
-        <p>Summer day camps will run Monday-Friday.</p>
-        <ul>
-          <li>
-            <strong>Drop-off:</strong> 8:30am - 8:50am
-          </li>
-          <li>
-            <strong>Pick-up:</strong> 4:45pm - 5:00pm
-          </li>
-          <li>
-            <strong>Extended care:</strong> 6:00pm late pick-up option
-            available. Call to confirm.
-          </li>
-        </ul>
+        <UltimateDayCampIntro />
       </Container>
 
       <Container type="body">
@@ -334,11 +297,13 @@ export default function Programs({ data }) {
             startingAt
             includes={[
               "On-site, olympic-size ice rink",
-              "Minimum 10 hours on-ice per week",
+              "Starting at 7.5 hours on-ice per week",
               "Skills development",
               "Skating development",
               "Off-ice program",
               "Afternoon scrimmages",
+              "Lunch & morning snack",
+              "Snackbar open in the afternoons",
               "All camp activities",
             ]}
           >
@@ -364,6 +329,8 @@ export default function Programs({ data }) {
               "Safe, well-schooled horses",
               "Instructors trained to CHA standards",
               "First-aid certified full-time staff",
+              "Lunch & morning snack",
+              "Snackbar open in the afternoons",
               "All camp activities",
             ]}
           >
@@ -416,6 +383,8 @@ export default function Programs({ data }) {
               "Volleyball, basketball & soccer",
               "Archery",
               "Waterslide, jousting pond, canoes, kayaks",
+              "Lunch & morning snack",
+              "Snackbar open in the afternoons",
               "All camp activities",
             ]}
           >

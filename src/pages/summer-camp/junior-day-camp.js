@@ -69,8 +69,9 @@ export default function Programs({ data }) {
           leaders travel together around camp to try some of the unique
           activities that Teen Ranch has to offer. Throughout the week they make
           new friends and grow while engaging in games, crafts, swimming, pony
-          rides, campfire story time, and more! Join us this summer for a week
-          full of friendship and fun!
+          rides, campfire story time with an emphasis of God's beautiful
+          creation and love for all people, and more! Join us this summer for a
+          week full of friendship and fun!
         </p>
 
         <h3>Weekly overview</h3>
@@ -193,7 +194,6 @@ export default function Programs({ data }) {
             price={495}
             term="week"
             includes={[
-              "Lunch & two snacks",
               "Games",
               "Forest time",
               "Crafts",
@@ -201,6 +201,8 @@ export default function Programs({ data }) {
               "Pony rides",
               "Bouldering",
               "Story time",
+              "Lunch & morning snack",
+              "Snackbar open in the afternoons",
             ]}
           >
             <CTAButton href="https://register.trmanager.com">
