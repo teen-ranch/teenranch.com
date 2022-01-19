@@ -46,6 +46,39 @@ export default function Header({ location }) {
                   <li>
                     <NavLink to="/summer-camp/">Summer camp</NavLink>
                     <ul className="subSubNav">
+                      <div className="subNavDivider">Overnight camp</div>
+                      <li>
+                        <NavLink to="/summer-camp/overnight-camp/">
+                          Overview: Overnight camp
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/summer-camp/overnight-camp/hockey-camps/">
+                          Hockey camps
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/summer-camp/overnight-camp/horse-camps/">
+                          Horse camps
+                        </NavLink>
+                      </li>
+                      {/* <li>
+                        <NavLink to="/summer-camp/ultimate-day-camp/bmx-dirt-camp/">
+                          BMX dirt camp
+                        </NavLink>
+                      </li> */}
+                      <li>
+                        <NavLink to="/summer-camp/overnight-camp/wham-camp/">
+                          WHAM camp
+                        </NavLink>
+                      </li>
+
+                      <li>
+                        <NavLink to="/summer-camp/overnight-camp/adventure-camp/">
+                          Adventure camp
+                        </NavLink>
+                      </li>
+
                       <div className="subNavDivider">Ultimate day camp</div>
                       <li>
                         <NavLink to="/summer-camp/ultimate-day-camp/">
@@ -62,11 +95,11 @@ export default function Header({ location }) {
                           Horse camps
                         </NavLink>
                       </li>
-                      <li>
+                      {/* <li>
                         <NavLink to="/summer-camp/ultimate-day-camp/bmx-dirt-camp/">
                           BMX dirt camp
                         </NavLink>
-                      </li>
+                      </li> */}
                       <li>
                         <NavLink to="/summer-camp/ultimate-day-camp/wham-camp/">
                           WHAM camp

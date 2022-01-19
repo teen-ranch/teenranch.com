@@ -16,12 +16,12 @@ export default function Index({ data }) {
         src={data.summerCamp.childImageSharp.fluid}
         alt="Summer camp"
         title={"Summer Camp 2022 is ON!!!"}
-        subtitle={`Overnight & Ultimate Day Camps - Registration opens January 19, 2022`}
+        subtitle={`Overnight Camps, Ultimate Day Camps, and Junior Day Camps - Registration open now!`}
         metaTitle="Summer Camp 2022 is ON!!!"
         metaDescription={`Overnight & Ultimate Day Camps`}
       >
-        {/* <CTAButton to='/day-camp/christmas-day-camp/'>Get the details</CTAButton> */}
-        <div id="mc_embed_signup">
+        <CTAButton to="/summer-camp/">Get the details</CTAButton>
+        {/* <div id="mc_embed_signup">
           <form
             action="https://teenranch.us2.list-manage.com/subscribe/post?u=93bbc7a16b1a2719f9690a8b0&amp;id=fcb1d89647"
             method="post"
@@ -104,7 +104,7 @@ export default function Index({ data }) {
               For ages 8 - 16, choose Overnight or Ultimate Day Camp programs
               available on select weeks, including:
             </p>
-            Hockey, Girl's Hockey, Goalie, Elite AA/AAA
+            Hockey, Girl's Hockey, Goalie, Elite hockey
             <br />
             English, Western, Rodeo, & Intensive Equestrian
             <br />
@@ -115,7 +115,7 @@ export default function Index({ data }) {
               19, 2022
             </p>
           </div>
-        </div>
+        </div> */}
       </Heading>
 
       {/* <Heading
@@ -226,6 +226,55 @@ export default function Index({ data }) {
           <Button to="/day-camp/pd-pa-day-camp/">Learn more</Button>
         </Program>
 
+        <Program
+          src={data.overnightCamp.childImageSharp.fluid}
+          name="Overnight summer camp"
+          alt="Overnight summer camp"
+        >
+          <p>
+            Our popular overnight camps are back this year and better than ever!
+            Campers experience all the fun and adventure of summer camp packed
+            into five awesome nights as they enjoy the great outdoors, get
+            active and build friendships that can last a lifetime.
+          </p>
+
+          <Button to="/summer-camp/overnight-camp/">Learn more</Button>
+        </Program>
+
+        <Program
+          src={data.ultimateDayCamp.childImageSharp.fluid}
+          name="Ultimate day camp"
+          alt="Ultimate day camp"
+          swap
+        >
+          <p>
+            Sign your child up for ultimate day camp and they will experience
+            all the fun and adventure of summer camp packed into five awesome
+            days! They’ll enjoy the great outdoors, get active and build
+            friendships that last a lifetime.
+          </p>
+
+          <Button to="/summer-camp/ultimate-day-camp/">Learn more</Button>
+        </Program>
+
+        <Program
+          src={data.juniorDayCamp.childImageSharp.fluid}
+          name="Junior day camp"
+          alt="Junior day camp"
+        >
+          <p>
+            Jump into adventure with our junior day camp program! Designed to
+            introduce little ones to the exciting world of camp, kids and their
+            leaders travel together around camp to try some of the unique
+            activities that Teen Ranch has to offer. Throughout the week they
+            make new friends and grow while engaging in games, crafts, swimming,
+            pony rides, campfire story time, and more! Join us this summer for a
+            week full of friendship and fun!
+          </p>
+
+          <Button to="/summer-camp/ultimate-day-camp/">Learn more</Button>
+        </Program>
+
         {/* <Program
 					src={data.hjShows.childImageSharp.fluid}
 					name={<>Hunter/Jumper Show Series</>}
@@ -272,15 +321,25 @@ export const query = graphql`
       }
     }
 
-    hjShows: file(relativePath: { eq: "hunter-jumper/Jumper grey J_R.jpg" }) {
+    overnightCamp: file(relativePath: { eq: "activities/waterslide1.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1920, quality: 64) {
+        fluid(maxWidth: 600, maxHeight: 334, quality: 64) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
 
-    families: file(relativePath: { eq: "weekendGetaway/smores.jpg" }) {
+    ultimateDayCamp: file(
+      relativePath: { eq: "facilities/iceCorral/hockey14.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 600, quality: 64) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+
+    juniorDayCamp: file(relativePath: { eq: "summerDayCamp8.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1920, quality: 64) {
           ...GatsbyImageSharpFluid_withWebp

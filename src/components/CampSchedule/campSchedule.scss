@@ -1,61 +1,69 @@
-@import 'styles/vars';
+@import "styles/vars";
 
 .schedule__container {
-    margin-right: 1px;
-    display: grid;
-    grid-template-columns: 160px auto;
-    .schedule__spacer, .schedule__date, .schedule__program, .schedule__programDate {
-        border: 1px solid #eee;
-        margin-right: -1px;
-        margin-bottom: -1px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 60px;
-        padding: 1rem;
-        box-sizing: border-box;
-        min-width: 70px;
-    }
+  margin-right: 1px;
+  display: grid;
+  grid-template-columns: 160px auto;
+  .schedule__spacer,
+  .schedule__date,
+  .schedule__program,
+  .schedule__programDate {
+    border: 1px solid #eee;
+    margin-right: -1px;
+    margin-bottom: -1px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    padding: 1rem;
+    box-sizing: border-box;
+    min-width: 70px;
+  }
 
-    .schedule__programDate--blank {
-        background: #ddd;
-    }
+  .schedule__programDate--blank {
+    background: #ddd;
+  }
 
-    .schedule__program {
-        background: $primary-dark;
-        color: $primary-white;
-        border-color: lighten($primary-dark, 10);
-    }
+  .schedule__programDate--otherCamp {
+    background: #ddd;
+    color: rgba(0, 0, 0, 0.5);
+  }
 
-    .schedule__date {
-        background: lighten($primary-dark,70);
-        border-color: lighten($primary-dark, 75);
-        // line-height: 12px;
-    }
+  .schedule__program {
+    background: $primary-dark;
+    color: $primary-white;
+    border-color: lighten($primary-dark, 10);
+  }
 
-    .schedule__spacer {
-        text-transform: uppercase;
-        font-size: 1.2rem;
-    }
+  .schedule__date {
+    background: lighten($primary-dark, 70);
+    border-color: lighten($primary-dark, 75);
+    // line-height: 12px;
+  }
 
-    // .schedule__row, .schedule__spacer, .schedule__program {
-    //     height: 60px;
-    // }
+  .schedule__spacer {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  }
+
+  // .schedule__row, .schedule__spacer, .schedule__program {
+  //     height: 60px;
+  // }
 }
 
 @media screen and (max-width: $lg) {
-    .schedule__dates {
-        max-width: 100%;
-        overflow-x: auto;
-        .schedule__row {
-            width: 100%;
-        }
+  .schedule__dates {
+    max-width: 100%;
+    overflow-x: auto;
+    .schedule__row {
+      width: 100%;
     }
+  }
 }
 
 @media screen and (min-width: $md) {
-    .schedule__container {
-        grid-template-columns: 200px auto;
-    }
+  .schedule__container {
+    grid-template-columns: 200px auto;
+  }
 }
