@@ -232,7 +232,10 @@ export default function Programs({ data }) {
                 "8-14",
                 "",
                 "8-14",
-                "8-14",
+                <>
+                  8-12
+                  <br />& 13-16
+                </>,
                 "UDC",
                 "UDC",
               ],
@@ -246,7 +249,7 @@ export default function Programs({ data }) {
                 "8-14",
                 "",
                 "8-14",
-                "8-14",
+                <>8-12 & 13-16</>,
                 "UDC",
                 "UDC",
               ],
