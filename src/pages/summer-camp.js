@@ -64,7 +64,7 @@ export default function Programs({ data }) {
       <div id="top" style={{ position: "absolute", marginTop: "-120px" }} />
 
       <Container type="body">
-        <h1>Summer Camp 2021 at Teen Ranch</h1>
+        <h1>Summer Camp 2022 at Teen Ranch</h1>
 
         <h2>Here's what you can expect this summer:</h2>
 
