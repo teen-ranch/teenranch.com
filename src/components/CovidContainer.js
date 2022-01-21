@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import Container from "components/Container"
 import Button from "components/Button"
 
-const updatedAt = "2022-01-04"
+const updatedAt = "2022-01-21"
 
 export function CovidContainer() {
   const [isOpen, setIsOpen] = useState(false)
@@ -50,9 +50,9 @@ export function CovidContainer() {
             program dates wherever possible.
           </p>
           <p>
-            We hope to reopen January 27, 2022, but will await further
-            directives. Please stay tuned. We will contact booked registrations
-            when programs can reopen.
+            We hope to reopen Monday, <strong>January 31, 2022</strong>. We will
+            review our programs and bookings and contact registrants a week
+            prior regarding programs reopening.
           </p>
           {/* <h3>Summer Camp 2021</h3>
   
