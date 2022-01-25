@@ -9,7 +9,7 @@ const path = require(`path`)
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    siteUrl: 'https://teenranch.com'
+    siteUrl: "https://teenranch.com",
   },
   plugins: [
     {
@@ -17,9 +17,7 @@ module.exports = {
       options: {
         name: `pages`,
         path: `${__dirname}/src/pages/`,
-        ignore: [
-          '**/programs/summer-camp/**'
-        ]
+        ignore: ["**/programs/summer-camp/**"],
       },
     },
     `gatsby-transformer-javascript-frontmatter`,
@@ -32,21 +30,21 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#002146`,
         display: `standalone`,
-        icon: 'favicon.png'
+        icon: "favicon.png",
       },
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-netlify`,
-    'gatsby-plugin-remove-serviceworker',
+    "gatsby-plugin-remove-serviceworker",
     // {
     //   resolve: `gatsby-plugin-offline`,
     //   options: {
     //     navigateFallbackWhitelist: [/\/$/]
     //   }
     // },
-    'gatsby-plugin-resolve-src',
+    "gatsby-plugin-resolve-src",
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
@@ -63,5 +61,11 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-force-trailing-slashes`,
+    {
+      resolve: `gatsby-plugin-plausible`,
+      options: {
+        domain: "teenranch.com",
+      },
+    },
   ],
 }
