@@ -1,53 +1,54 @@
-import React from 'react'
-import Container from 'components/Container'
-import Heading from 'components/Heading'
+import React from "react"
+import Container from "components/Container"
+import Heading from "components/Heading"
 // import Button from 'components/Button'
-import Program from 'components/Program'
+import Program from "components/Program"
 
 export default function Default() {
+  return (
+    <>
+      <Heading
+        src="https://teenranch.nyc3.digitaloceanspaces.com/website/assets/familyDay.jpg"
+        alt="Family skating on the ice"
+        title="Public skating"
+        subtitle="An evening out with your friends or family"
+        keywords="public skating, going skating with friends"
+        metaTitle="Public skating"
+        metaDescription="Public skating is back! It’s a great way to spend time with friends and family while keeping fit! Bring your family, friends...and your own skates!"
+      />
+      <Container type="body">
+        <Program
+          src="https://teenranch.nyc3.digitaloceanspaces.com/website/assets/familyDay.jpg"
+          name="Public skating"
+        >
+          <p>
+            Public skating is back! It’s a great way to spend time with friends
+            and family while keeping fit!
+          </p>
+          <p>Bring your family, friends...and your own skates!</p>
 
-	return (
-        <>
-            <Heading
-                src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/familyDay.jpg'
-                alt='Family skating on the ice'
-				title='Public skating'
-                subtitle='An evening out with your friends or family'
-                keywords='public skating, going skating with friends'
-                metaTitle='Public skating'
-                metaDescription='Public skating is back! It’s a great way to spend time with friends and family while keeping fit! Bring your family, friends...and your own skates!'
-			/>
-            <Container type='body'>
+          <h3>When</h3>
 
-                <Program src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/familyDay.jpg' name='Public skating'>
+          <p>
+            Saturdays: October 16, 2021 - April 2, 2022 (6:30pm - 8:00pm)
+            <br />
+            <strong>
+              Public skating is NOT available Saturday, December 25th, January
+              1st, or February 12th
+            </strong>
+          </p>
 
-                    <p>
-                        Public skating is back! It’s a great way to spend time with friends and family while keeping fit!
-                    </p>
-                    <p>
-                        Bring your family, friends...and your own skates!
-                    </p>
+          <h3>Cost</h3>
+          <p>$5 +HST/person</p>
+          <p>$18 +HST/family</p>
 
-                    <h3>When</h3>
+          <p>Snackbar is open for hot drinks and light snacks!</p>
 
-                    <p>
-                        Saturdays: October 16, 2021 - April 2, 2022 (6:30pm - 8:00pm)<br/>
-                        <strong>Public skating is NOT available Saturday, December 25th or January 1st.</strong>
-                    </p>
-
-                    <h3>Cost</h3>
-                    <p>$5 +HST/person</p>
-                    <p>$18 +HST/family</p>
-
-                    <p>Snackbar is open for hot drinks and light snacks!</p>
-
-                    <p>
-                        <i>Bring your own skates</i>
-                    </p>
-
-                </Program>
-
-            </Container>
-        </>
-    )
+          <p>
+            <i>Bring your own skates</i>
+          </p>
+        </Program>
+      </Container>
+    </>
+  )
 }

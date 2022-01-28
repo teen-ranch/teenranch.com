@@ -1,80 +1,92 @@
-import React from 'react'
-import Container from 'components/Container'
-import Heading from 'components/Heading'
-import Button from 'components/Button'
-import Program from 'components/Program'
+import React from "react"
+import Container from "components/Container"
+import Heading from "components/Heading"
+import Button from "components/Button"
+import Program from "components/Program"
 
 export default function Default() {
+  return (
+    <>
+      <Heading
+        src="https://teenranch.nyc3.digitaloceanspaces.com/website/assets/DSC_0513.JPG"
+        alt="Smiling kids playing hockey"
+        title="Pond hockey"
+        subtitle="A year-long development program for boys and girls ages 5-17"
+        metaTitle="Pond hockey"
+        metaDescription="Pond hockey is a year-long development program for boys and girls ages 5-17 years old. There are three levels: Learn to Play, Junior and Senior to accommodate all levels of development."
+      />
+      <Container type="body">
+        <Program
+          src="https://teenranch.nyc3.digitaloceanspaces.com/website/assets/DSC_0513.JPG"
+          name="Pond hockey"
+        >
+          <p>
+            Pond Hockey is a year-long development program for boys and girls
+            ages 5-17 years old. There are three levels: Learn to Play, Junior
+            and Senior to accommodate all levels of development. This is not a
+            graduated program, Teen Ranch staff will assess your child and place
+            them in an appropriate level. Don't worry! If your skill level
+            progresses quickly, the coaching staff may move you to the next
+            level. If the level that you are in is too difficult they can
+            accommodate your learning needs in a lower level.
+          </p>
+          <p>
+            <i>
+              <strong>
+                Full equipment is required. 4 on 4 games with limited players
+                per team.
+              </strong>
+            </i>
+          </p>
 
-	return (
-        <>
-            <Heading
-                src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/DSC_0513.JPG'
-                alt='Smiling kids playing hockey'
-				title='Pond hockey'
-                subtitle='A year-long development program for boys and girls ages 5-17'
-                metaTitle='Pond hockey'
-                metaDescription='Pond hockey is a year-long development program for boys and girls ages 5-17 years old. There are three levels: Learn to Play, Junior and Senior to accommodate all levels of development.'
-			/>
-            <Container type='body'>
+          <h3>When</h3>
+          <p>
+            Saturdays: October 16, 2021 - March 5, 2022
+            <br />
+            <br />
+            <strong>No sessions on:</strong>
+            <ul>
+              <li>December 25, 2021</li>
+              <li>January 1, 2022</li>
+              <li>January 29, 2022</li>
+            </ul>
+          </p>
 
-                <Program src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/DSC_0513.JPG' name='Pond hockey'>
+          <div className="staffTable">
+            <table>
+              <thead>
+                <tr>
+                  <th>Division</th>
+                  <th>Ages</th>
+                  <th>Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Learn to play</td>
+                  <td>5-8</td>
+                  <td>12:00pm - 1:00pm</td>
+                </tr>
+                <tr>
+                  <td>Junior</td>
+                  <td>8-11</td>
+                  <td>11:00am - 12:00pm</td>
+                </tr>
+                <tr>
+                  <td>Senior</td>
+                  <td>12-17</td>
+                  <td>10:00am - 11:00am</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-                    <p>
-                        Pond Hockey is a year-long development program for boys and girls ages 5-17 years old. There are three levels: Learn to Play, Junior and Senior to accommodate all levels of development. This is not a graduated program, Teen Ranch staff will assess your child and place them in an appropriate level. Don't worry! If your skill level progresses quickly, the coaching staff may move you to the next level. If the level that you are in is too difficult they can accommodate your learning needs in a lower level.
-                    </p>
-                    <p>
-                        <i><strong>Full equipment is required. 4 on 4 games with limited players per team.</strong></i>
-                    </p>
+          <h3>Cost</h3>
+          <p>$355 +HST/player</p>
 
-                    <h3>When</h3>
-                    <p>
-                        Saturdays: October 16, 2021 - February 12, 2022
-                        <br/><br/>
-                        <strong>No sessions on:</strong>
-                        <ul>
-                            <li>December 25, 2021</li>
-                            <li>January 1, 2022</li>
-                            <li>January 29, 2022</li>
-                        </ul>
-                    </p>
-
-                    <div className="staffTable">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Division</th>
-                                    <th>Ages</th>
-                                    <th>Time</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Learn to play</td>
-                                    <td>5-8</td>
-                                    <td>12:00pm - 1:00pm</td>
-                                </tr>
-                                <tr>
-                                    <td>Junior</td>
-                                    <td>8-11</td>
-                                    <td>11:00am - 12:00pm</td>
-                                </tr>
-                                <tr>
-                                    <td>Senior</td>
-                                    <td>12-17</td>
-                                    <td>10:00am - 11:00am</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <h3>Cost</h3>
-                    <p>$355 +HST/player</p>
-
-                    <Button href="https://register.trmanager.com">Book now</Button>
-                </Program>
-
-            </Container>
-        </>
-    )
+          <Button href="https://register.trmanager.com">Book now</Button>
+        </Program>
+      </Container>
+    </>
+  )
 }
