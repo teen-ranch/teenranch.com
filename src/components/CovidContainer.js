@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react"
 import Container from "components/Container"
 import Button from "components/Button"
+import { Link } from "gatsby"
 
-const updatedAt = "2022-01-21"
+const updatedAt = "2022-01-28"
 
 export function CovidContainer() {
   const [isOpen, setIsOpen] = useState(false)
@@ -31,6 +32,42 @@ export function CovidContainer() {
         >
           <h3>Covid-19 update</h3>
           <p>
+            The arena is open as of Monday, <strong>January 31, 2022</strong>!
+          </p>
+          <p>Please check your program for updated dates and information:</p>
+          <ul style={{ display: "inline-block", textAlign: "left" }}>
+            <li>
+              <Link to="/programs/hockey-and-skating/learn-to-skate/">
+                Learn to skate
+              </Link>
+            </li>
+            <li>
+              <Link to="/programs/hockey-and-skating/starskate-and-competitive-figure-skating/">
+                StarSkate
+              </Link>
+            </li>
+            <li>
+              <Link to="/programs/hockey-and-skating/public-skating/">
+                Public skating
+              </Link>
+            </li>
+            <li>
+              <Link to="/programs/hockey-and-skating/skills-development/">
+                Skills development
+              </Link>
+            </li>
+            <li>
+              <Link to="/programs/hockey-and-skating/skating-development/">
+                Skating development
+              </Link>
+            </li>
+            <li>
+              <Link to="/programs/hockey-and-skating/pond-hockey/">
+                Pond hockey
+              </Link>
+            </li>
+          </ul>
+          {/* <p>
             In light of the current Covid-19 announcements here in Ontario,{" "}
             <a
               rel="noopener noreferrer"
@@ -53,7 +90,7 @@ export function CovidContainer() {
             We hope to reopen Monday, <strong>January 31, 2022</strong>. We will
             review our programs and bookings and contact registrants a week
             prior regarding programs reopening.
-          </p>
+          </p> */}
           {/* <h3>Summer Camp 2021</h3>
   
             <p>
