@@ -1,47 +1,52 @@
-import React from 'react'
-import Container from 'components/Container'
-import Heading from 'components/Heading'
-import Button from 'components/Button'
-import Program from 'components/Program'
+import React from "react"
+import Container from "components/Container"
+import Heading from "components/Heading"
+import Button from "components/Button"
+import Program from "components/Program"
 
 export default function Default() {
+  return (
+    <>
+      <Heading
+        src="https://teenranch.nyc3.digitaloceanspaces.com/website/assets/hockey15.jpg"
+        alt="Smiling kids playing hockey"
+        title="Adult hockey skills"
+        subtitle="Learn the game or enhance your skating and skills abilities"
+        keywords="stick handling, passing skills, game-situation skills, skating development, learn to play hockey for adults"
+        metaTitle="Adult hockey skills"
+        metaDescription="Looking to learn the game or enhance your skating and skills ability? This is the program for you! Join us Saturday mornings for a co-ed skate ages 18 & up working together on the basic fundamentals of hockey."
+      />
+      <Container type="body">
+        <Program
+          src="https://teenranch.nyc3.digitaloceanspaces.com/website/assets/hockey15.jpg"
+          name="Adult hockey skills"
+        >
+          <p>
+            Looking to learn the game or enhance your skating and skills
+            ability? This is the program for you! Join us Saturday mornings for
+            a co-ed skate ages 18 & up working together on the basic
+            fundamentals of hockey.
+          </p>
+          <p>
+            <i>
+              <strong>Full equipment is required.</strong>
+            </i>
+          </p>
 
-	return (
-        <>
-            <Heading
-                src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/hockey15.jpg'
-                alt='Smiling kids playing hockey'
-				title='Adult hockey skills'
-                subtitle='Learn the game or enhance your skating and skills abilities'
-                keywords='stick handling, passing skills, game-situation skills, skating development, learn to play hockey for adults'
-                metaTitle='Adult hockey skills'
-                metaDescription='Looking to learn the game or enhance your skating and skills ability? This is the program for you! Join us Saturday mornings for a co-ed skate ages 18 & up working together on the basic fundamentals of hockey.'
-			/>
-            <Container type='body'>
+          <h3>When</h3>
 
-                <Program src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/hockey15.jpg' name='Adult hockey skills'>
+          <p>
+            Saturday mornings: March 12, 2022 - June 4, 2022 (10 sessions)
+            <br />
+            (No sessions March 19th, April 16th or May 21st)
+          </p>
 
-                    <p>
-                    Looking to learn the game or enhance your skating and skills ability? This is the program for you! Join us Saturday mornings for a co-ed skate ages 18 & up working together on the basic fundamentals of hockey.
-                    </p>
-                    <p>
-                        <i><strong>Full equipment is required.</strong></i>
-                    </p>
+          <h3>Cost</h3>
+          <p>$275 +HST/player</p>
 
-                    <h3>When</h3>
-
-                    <p>
-                        Saturday mornings: September 25, 2021 - December 18, 2021 (12 sessions)<br/>
-                        (No session October 9, 2021)
-                    </p>
-
-                    <h3>Cost</h3>
-                    <p>$325 +HST/player</p>
-
-                    <Button href="https://register.trmanager.com">Book now</Button>
-                </Program>
-
-            </Container>
-        </>
-    )
+          <Button href="https://register.trmanager.com">Book now</Button>
+        </Program>
+      </Container>
+    </>
+  )
 }
