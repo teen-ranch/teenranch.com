@@ -92,7 +92,7 @@ export default function Default() {
               <tr>
                 <th aria-label="Empty cell"></th>
                 <th>Fall: Sep. 13 - Nov. 19</th>
-                <th>Holiday: Nov. 22 - Mar. 7</th>
+                <th>Holiday: Nov. 22 - Mar. 4</th>
                 <th>Winter: Mar. 11 - May. 13</th>
               </tr>
             </thead>
@@ -109,7 +109,7 @@ export default function Default() {
                   No session Oct. 11
                 </td>
                 <td>
-                  <strong>$250 +HST</strong> (9 sessions)
+                  <strong>$250 +HST</strong> (8 sessions)
                   <br />
                   No session Dec. 20, Dec. 27, or Feb. 21
                 </td>
