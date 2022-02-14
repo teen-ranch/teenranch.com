@@ -92,7 +92,7 @@ export default function Default({ data }) {
           <li>Campfire: warm up with hot chocolate & marshmallow roast</li>
         </ul>
         <span style={{ fontStyle: "italic" }}>
-          Snow activities and outdoor skating weeather permitting
+          Snow activities and outdoor skating weather permitting
         </span>
       </Container>
       <Container>
