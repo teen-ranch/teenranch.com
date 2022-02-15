@@ -48,10 +48,10 @@ const eventData = {
 }
 
 export default function Default({ data }) {
-  const stripePaymentLink =
-    process.env.CF_PAGES_BRANCH === "main"
-      ? "https://buy.stripe.com/9AQ5nO6lqa1i98scMN"
-      : "https://buy.stripe.com/test_eVabKh7DidOO8dW7st"
+  const stripePaymentLink = "https://buy.stripe.com/9AQ5nO6lqa1i98scMN"
+  // process.env.CF_PAGES_BRANCH === "main"
+  //   ? "https://buy.stripe.com/9AQ5nO6lqa1i98scMN"
+  //   : "https://buy.stripe.com/test_eVabKh7DidOO8dW7st"
 
   return (
     <>
