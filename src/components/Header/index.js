@@ -227,6 +227,11 @@ export default function Header({ location }) {
                             Christmas day camp
                           </NavLink>
                         </li>
+                        <li>
+                          <NavLink to="/day-camp/march-break-day-camp/">
+                            March break day camp
+                          </NavLink>
+                        </li>
                       </ul>
                     </li>
                     <li>
@@ -237,9 +242,9 @@ export default function Header({ location }) {
                           <NavLink to="/families/mother-daughter-equine-escape/">
                             Mother daughter equine escape
                           </NavLink>
-                          <NavLink to="/families/family-getaway-weekends/">
+                          {/* <NavLink to="/families/family-getaway-weekends/">
                             Family getaway weekends
-                          </NavLink>
+                          </NavLink> */}
                         </li>
                       </ul>
                     </li>
