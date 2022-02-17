@@ -226,8 +226,24 @@ export default function Index({ data }) {
 
         <Program
           src={data.christmasDayCamp.childImageSharp.fluid}
+          name="March Break day camp"
+          alt="Day camp"
+        >
+          <p>
+            Treat your kids to an exciting getaway close to home. Register them
+            for a full week or individual days. Rest assured that they will be
+            well taken care of, enjoy all kinds of outdoor active fun, and
+            likely meet a new friend or two!
+          </p>
+
+          <Button to="/day-camp/march-break-day-camp/">Learn more</Button>
+        </Program>
+
+        <Program
+          src={data.christmasDayCamp.childImageSharp.fluid}
           name="PD/PA day camp"
           alt="Day camp"
+          swap
         >
           <p>
             Parents, we've got you covered!! Give your kids adventure and fun on
@@ -245,7 +261,6 @@ export default function Index({ data }) {
           src={data.overnightCamp.childImageSharp.fluid}
           name="Overnight summer camp"
           alt="Overnight summer camp"
-          swap
         >
           <p>
             Our popular overnight camps are back this year and better than ever!
@@ -261,6 +276,7 @@ export default function Index({ data }) {
           src={data.ultimateDayCamp.childImageSharp.fluid}
           name="Ultimate day camp"
           alt="Ultimate day camp"
+          swap
         >
           <p>
             Sign your child up for ultimate day camp and they will experience
@@ -276,7 +292,6 @@ export default function Index({ data }) {
           src={data.juniorDayCamp.childImageSharp.fluid}
           name="Junior day camp"
           alt="Junior day camp"
-          swap
         >
           <p>
             Jump into adventure with our junior day camp program! Designed to
