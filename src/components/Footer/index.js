@@ -169,6 +169,11 @@ export default function Footer() {
                   Christmas day camp
                 </Link>
               </li>
+              <li>
+                <Link to="/day-camp/march-break-day-camp/">
+                  March break day camp
+                </Link>
+              </li>
             </ul>
             <div className="footerTitle">Events</div>
             <ul className="footerNavigation">
@@ -189,11 +194,11 @@ export default function Footer() {
                   Mother daughter equine escape
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/families/family-getaway-weekends">
                   Family getaway weekends
                 </Link>
-              </li>
+              </li> */}
             </ul>
 
             {/* <div className='footerTitle'>Leadership</div>
