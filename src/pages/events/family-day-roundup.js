@@ -67,6 +67,10 @@ export default function Default({ data }) {
 
       <Container>
         <h1>{frontmatter.title}</h1>
+        <div style={{ color: "red", fontSize: "2em" }}>
+          Family day is full, we are no longer accepting registrations. Thank
+          you!
+        </div>
         <p>
           Less than an hour from Toronto and located in the beautiful Caledon
           Hills, Teen Ranch is thrilled to offer you winter outdoor activities
@@ -102,7 +106,7 @@ export default function Default({ data }) {
           <li>Additional family members: $15/person</li>
           <li>Children age two and under are free</li>
         </ul>
-        <PrimaryButton href={stripePaymentLink}>Pre-register now</PrimaryButton>
+        {/* <PrimaryButton href={stripePaymentLink}>Pre-register now</PrimaryButton> */}
       </Container>
 
       <Container>
