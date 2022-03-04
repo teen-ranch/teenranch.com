@@ -1,38 +1,41 @@
-@import 'styles/vars';
+@import "styles/vars";
 
 .container--subNav {
-    background: $primary-dark;
-    position: sticky;
-    top: 60px;
-    z-index: 1;
+  background: $primary-dark;
+  position: sticky;
+  top: 60px;
+  z-index: 1;
+  overflow-x: auto;
+
+  .constrain {
+    display: flex;
+    // justify-content: center;
+  }
+
+  a {
+    padding: 2rem 2rem;
+    display: block;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  a.active,
+  a:hover {
+    color: lighten($primary-light, 20);
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .container--subNav {
+    top: 101px;
 
     .constrain {
-        display: flex;
-        justify-content: center;
+      justify-content: center;
     }
 
     a {
-        padding: 2rem 2rem;
-        display: block;
-        color: rgba(255,255,255,0.6);
-        cursor: pointer;
+      padding: 2rem 3rem;
     }
-
-    a.active, a:hover {
-        color: lighten($primary-light,20);
-    }
-
-}
-
-@media screen and (min-width:64em) {
-
-    .container--subNav {
-        top: 101px;
-
-        a {
-            padding: 2rem 3rem;
-        }
-
-    }
-
+  }
 }
