@@ -108,6 +108,11 @@ export default function Footer() {
               </li>
               <div className="subNavDivider">Leagues</div>
               <li>
+                <Link to="/programs/hockey-and-skating/spring-hockey-league/">
+                  Spring hockey league
+                </Link>
+              </li>
+              <li>
                 <Link to="/programs/hockey-and-skating/mens-hockey-league/">
                   Men's hockey league
                 </Link>

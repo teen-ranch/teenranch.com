@@ -209,19 +209,18 @@ export default function Index({ data }) {
 				</Program> */}
 
         <Program
-          src={data.christmasDayCamp.childImageSharp.fluid}
-          name="Family day roundup"
-          alt="Family day roundup"
+          src="https://teenranch.nyc3.digitaloceanspaces.com/website/assets/hockey14.jpg"
+          name="Spring hockey league"
           swap
         >
           <p>
-            Less than an hour from Toronto and located in the beautiful Caledon
-            Hills, Teen Ranch is thrilled to offer you winter outdoor activities
-            to help celebrate your family, Enjoy playing, laughing, and making
-            lasting memories together.
+            Join us for a fun, 9-week recreational program. Sessions will
+            consist of ten minutes of skill development followed by a 35-minute
+            game. (Two teams per age group with limited spots per team.)
           </p>
-
-          <Button to="/events/family-day-roundup/">Learn more</Button>
+          <Button to="/programs/hockey-and-skating/spring-hockey-league/">
+            Learn more
+          </Button>
         </Program>
 
         <Program
