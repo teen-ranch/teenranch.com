@@ -211,7 +211,7 @@ export default function Index({ data }) {
         <Program
           src={data.motherDaughter.childImageSharp.fluid}
           name="Mother-daughter equine escape"
-          swap
+          // swap
         >
           <p>
             Do you have a daughter who loves horses? The Mother-Daughter Equine
@@ -223,7 +223,7 @@ export default function Index({ data }) {
           </Button>
         </Program>
 
-        <Program
+        {/* <Program
           src={data.fatherSon.childImageSharp.fluid}
           name="Father-son hockey weekend"
         >
@@ -233,7 +233,7 @@ export default function Index({ data }) {
             love of this great Canadian sport.
           </p>
           <Button to="/families/father-son-hockey-weekend/">Learn more</Button>
-        </Program>
+        </Program> */}
 
         <Program
           src="https://teenranch.nyc3.digitaloceanspaces.com/website/assets/hockey14.jpg"
