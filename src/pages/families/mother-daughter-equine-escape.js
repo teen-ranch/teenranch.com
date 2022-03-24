@@ -116,16 +116,23 @@ export default function Default({ data }) {
 
         <ul>
           <li>
-            <strong>Olympic Style/Chalet Room:</strong> $325 +HST /person (Bring
+            <strong>Olympic Style/Chalet Room:</strong> $395 +HST /person (Bring
             your own bedding & towels)
+            <em>
+              {" "}
+              - Private accommodation for each mother/daughter or
+              mother/daughter family group.
+            </em>
           </li>
           <li>
-            <strong>Western-style Hotel Room:</strong> $375 +HST /person (Linens
+            <strong>Western-style Hotel Room:</strong> $460 +HST /person (Linens
             & towels provided)
+            <em> - Private accommodation for each mother/daughter</em>
           </li>
           <li>
-            <strong>Coach House/Family Suite:</strong> $425 +HST /person (Linens
+            <strong>Coach House/Family Suite:</strong> $495 +HST /person (Linens
             & towels provided)
+            <em> - Private accommodation for each mother/daughter</em>
           </li>
         </ul>
 
