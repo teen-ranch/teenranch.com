@@ -209,6 +209,33 @@ export default function Index({ data }) {
 				</Program> */}
 
         <Program
+          src={data.motherDaughter.childImageSharp.fluid}
+          name="Mother-daughter equine escape"
+          swap
+        >
+          <p>
+            Do you have a daughter who loves horses? The Mother-Daughter Equine
+            Escape is a unique opportunity to get away and invest time in one
+            another over a common love of horses and adventure.
+          </p>
+          <Button to="/families/mother-daughter-equine-escape/">
+            Learn more
+          </Button>
+        </Program>
+
+        <Program
+          src={data.fatherSon.childImageSharp.fluid}
+          name="Father-son hockey weekend"
+        >
+          <p>
+            Do you and your family love hockey? This is an incredibly unique
+            opportunity to get away and invest time in one another over a common
+            love of this great Canadian sport.
+          </p>
+          <Button to="/families/father-son-hockey-weekend/">Learn more</Button>
+        </Program>
+
+        <Program
           src="https://teenranch.nyc3.digitaloceanspaces.com/website/assets/hockey14.jpg"
           name="Spring hockey league"
           swap
@@ -333,6 +360,26 @@ export default function Index({ data }) {
 
 export const query = graphql`
   query {
+    fatherSon: file(relativePath: { eq: "facilities/iceCorral/hockey9.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1920, quality: 64) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+
+    motherDaughter: file(
+      relativePath: {
+        eq: "motherDaughter/d556c391-315b-9e0d-d741-4a0bd91f7e9b.jpg"
+      }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 1920, quality: 64) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+
     summerCamp: file(relativePath: { eq: "summerDayCamp8.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1920, quality: 64) {
