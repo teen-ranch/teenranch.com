@@ -42,8 +42,6 @@ export default function Default() {
           <p>$5 +HST/person</p>
           <p>$18 +HST/family</p>
 
-          <p>Snackbar is open for hot drinks and light snacks!</p>
-
           <p>
             <i>Bring your own skates</i>
           </p>
