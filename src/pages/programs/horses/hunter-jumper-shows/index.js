@@ -125,10 +125,20 @@ export default function Default({ data }) {
             </table>
           </div>
           <h3>Stalls</h3>
-          Stalls will be available at each show for the 2022 season. Priority
-          goes to those showing all 6 shows. Email{" "}
-          <a href="mailto:events@teenranch.com">events@teenranch.com</a> if you
-          are interested.
+          <p>
+            Stalls will be available at each show for the 2022 season. Priority
+            goes to those showing all 6 shows.
+          </p>
+          <p>
+            If anyone is interested in renting stalls for the season, they are
+            $575 +HST per stall. We don't make anything on these, so cleaning
+            them after each show will be your responsibility. If available,
+            stall rental per show will be $100 +HST.
+          </p>
+          <p>
+            Email <a href="mailto:events@teenranch.com">events@teenranch.com</a>{" "}
+            if you are interested.
+          </p>
         </Program>
         <h2>Links</h2>
         <Card style={{ padding: "2rem" }}>
@@ -264,7 +274,7 @@ export default function Default({ data }) {
         </div>
         <Button
           target="_blank"
-          href="https://teenranch.nyc3.cdn.digitaloceanspaces.com/website/pdf/hjClassDescriptions_2021_V2.pdf"
+          href="https://teenranch.nyc3.cdn.digitaloceanspaces.com/website/pdf/hjClassDescriptions_2022_V1.pdf"
         >
           View class descriptions
         </Button>
