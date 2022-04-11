@@ -170,6 +170,11 @@ export default function Header({ location }) {
                         </NavLink>
                       </li>
                       <li>
+                        <NavLink to="/programs/hockey-and-skating/3-on-3-hockey-league/">
+                          3 on 3 hockey league
+                        </NavLink>
+                      </li>
+                      <li>
                         <NavLink to="/programs/hockey-and-skating/mens-hockey-league/">
                           Men's hockey league
                         </NavLink>
