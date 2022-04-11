@@ -280,6 +280,13 @@ export default function Default({ data }) {
         </Button>
       </Container>
       <Container type="body">
+        <h2>Fees</h2>
+        <ul>
+          <li>Per Division fee: $90 +HST</li>
+          <li>Back number fee: $10 +HST</li>
+        </ul>
+      </Container>
+      <Container type="body">
         <div
           id="year-end"
           style={{ position: "absolute", marginTop: "-180px" }}
