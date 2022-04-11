@@ -36,7 +36,7 @@ export default function Default() {
 
           <Button href="https://register.trmanager.com">Book now</Button>
 
-          <h3>Spring hockey league</h3>
+          <h3>Summer hockey league</h3>
           <p>Thursday nights. 6:30pm - 10:30pm game times (4-6 teams)</p>
           <ul>
             <li>

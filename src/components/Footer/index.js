@@ -113,6 +113,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link to="/programs/hockey-and-skating/3-on-3-hockey-league/">
+                  3 on 3 hockey league
+                </Link>
+              </li>
+              <li>
                 <Link to="/programs/hockey-and-skating/mens-hockey-league/">
                   Men's hockey league
                 </Link>
