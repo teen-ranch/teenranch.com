@@ -11,7 +11,7 @@ export default function Default() {
         src="https://teenranch.nyc3.digitaloceanspaces.com/website/assets/hockey15.jpg"
         alt="Men's hockey league"
         title="Men's hockey league"
-        subtitle="Spring and Fall hockey leagues for men age 35+"
+        subtitle="Summer and Fall hockey leagues for men age 30+"
         keywords="hockey season preparation, stick handling, power skating"
         metaTitle="Pre-season skills & skating"
         metaDescription="Develop your stick handling and skating and get ready for next season!"
