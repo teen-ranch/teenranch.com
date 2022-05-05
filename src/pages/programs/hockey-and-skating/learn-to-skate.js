@@ -94,6 +94,7 @@ export default function Default() {
                 <th>Fall: Sep. 13 - Nov. 19</th>
                 <th>Holiday: Nov. 22 - Mar. 4</th>
                 <th>Winter: Mar. 11 - May. 13</th>
+                <th>Spring: May 20 - June 24 </th>
               </tr>
             </thead>
             <tbody>
@@ -118,6 +119,7 @@ export default function Default() {
                   <br />
                   No session Apr. 18
                 </td>
+                <td></td>
               </tr>
               <tr>
                 <td>
@@ -137,6 +139,9 @@ export default function Default() {
                   <strong>$280 +HST</strong> (9 sessions)
                   <br />
                   No session Apr. 15
+                </td>
+                <td>
+                  <strong>$186 +HST</strong> (6 sessions)
                 </td>
               </tr>
             </tbody>

@@ -58,6 +58,7 @@ export default function Default() {
                 <th>Fall: Sep. 13 - Nov. 19</th>
                 <th>Holiday: Nov. 21 - Mar. 4</th>
                 <th>Winter: Mar. 6 - May. 15</th>
+                {/* <th>Spring: May 16 - June 24 </th> */}
               </tr>
             </thead>
             <tbody>
@@ -67,7 +68,7 @@ export default function Default() {
                   <br />
                   On-ice: 10:00am - 11:50am
                   <br />
-                  Off-ice: 12:15 - 1:00pm
+                  Off-ice: 12:15pm - 1:00pm
                   <br />
                 </td>
                 <td>
@@ -83,8 +84,11 @@ export default function Default() {
                 <td>
                   <strong>$280 +HST</strong> (9 sessions)
                   <br />
-                  No session Apr. 17, or May 18
+                  No session Apr. 17, or May 18, Final session May 15
                 </td>
+                {/* <td>
+                  <strong>$124 +HST</strong> (4 sessions) May 29, June 5, 12, 19
+                </td> */}
               </tr>
               <tr>
                 <td>
@@ -105,14 +109,15 @@ export default function Default() {
                 <td>
                   <strong>$200 +HST</strong> (8 sessions)
                   <br />
-                  No session Apr. 18, Final session May 2
+                  No session Apr. 18, Final session May 9
                 </td>
+                {/* <td></td> */}
               </tr>
               <tr>
                 <td>
                   <strong>Thursdays</strong>
                   <br />
-                  On-ice: 4:30pm - 6:00pm
+                  On-ice: 4:30pm - 5:50pm
                 </td>
                 <td>
                   <strong>$250 +HST</strong> (10 sessions)
@@ -127,12 +132,16 @@ export default function Default() {
                   <br />
                   Final session May 5
                 </td>
+                {/* <td>
+                  <strong>$150 +HST</strong> (6 sessions) May 19, 26, June 2, 9,
+                  16, 23
+                </td> */}
               </tr>
               <tr>
                 <td>
                   <strong>Fridays</strong>
                   <br />
-                  On-ice: 4:30pm - 6:00pm
+                  On-ice: 4:30pm - 5:50pm
                 </td>
                 <td>
                   <strong>$250 +HST</strong> (10 sessions)
@@ -145,15 +154,174 @@ export default function Default() {
                 <td>
                   <strong>$225 +HST</strong> (9 sessions)
                   <br />
+                  No session Apr. 15, Final session May 13
+                </td>
+                {/* <td>
+                  <strong>$150 +HST</strong> (6 sessions) May 20, 27, June 3,
+                  10, 17, 24
+                </td> */}
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <br />
+        <br />
+        <br />
+        <h3>2022 Spring Semester</h3>
+
+        <div className="staffTable">
+          <table>
+            <thead>
+              <tr>
+                <th aria-label="Empty cell"></th>
+                {/* <th>Fall: Sep. 13 - Nov. 19</th>
+                <th>Holiday: Nov. 21 - Mar. 4</th>
+                <th>Winter: Mar. 6 - May. 15</th> */}
+                <th>Spring: May 18 - June 24 </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <strong>Sundays</strong>
+                  <br />
+                  On-ice: 11:00am - 12:50pm
+                  <br />
+                  Off-ice: 1:00pm - 2:00pm
+                  <br />
+                </td>
+                {/* <td>
+                  <strong>$250 +HST</strong> (8 sessions)
+                  <br />
+                  No session Oct. 10
+                </td>
+                <td>
+                  <strong>$280 +HST</strong> (9 sessions)
+                  <br />
+                  No session Dec. 19 or Dec. 26
+                </td>
+                <td>
+                  <strong>$280 +HST</strong> (9 sessions)
+                  <br />
+                  No session Apr. 17, or May 18
+                </td> */}
+                <td>
+                  <strong>$124 +HST</strong> (4 sessions) May 29, June 5, 12, 19
+                </td>
+              </tr>
+              {/* <tr>
+                <td>
+                  <strong>Mondays</strong>
+                  <br />
+                  On-ice: 4:30pm - 6:00pm
+                </td>
+                <td>
+                  <strong>$225 +HST</strong> (9 sessions)
+                  <br />
+                  No session Oct. 11
+                </td>
+                <td>
+                  <strong>$200 +HST</strong> (8 sessions)
+                  <br />
+                  No session Dec. 20, Dec. 27, or Feb. 21
+                </td>
+                <td>
+                  <strong>$200 +HST</strong> (8 sessions)
+                  <br />
+                  No session Apr. 18, Final session May 2
+                </td>
+                <td></td>
+              </tr> */}
+              <tr>
+                <td>
+                  <strong>Wednesdays</strong>
+                  <br />
+                  On-ice: 4:30pm - 5:50pm
+                </td>
+                {/* <td>
+                  <strong>$225 +HST</strong> (9 sessions)
+                  <br />
+                  No session Oct. 11
+                </td>
+                <td>
+                  <strong>$200 +HST</strong> (8 sessions)
+                  <br />
+                  No session Dec. 20, Dec. 27, or Feb. 21
+                </td>
+                <td>
+                  <strong>$200 +HST</strong> (8 sessions)
+                  <br />
+                  No session Apr. 18, Final session May 2
+                </td> */}
+                <td>
+                  <strong>$150 +HST</strong> (6 sessions) May 18, 25, June 1, 8,
+                  15, 22
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Thursdays</strong>
+                  <br />
+                  On-ice: 4:30pm - 5:50pm
+                </td>
+                {/* <td>
+                  <strong>$250 +HST</strong> (10 sessions)
+                </td>
+                <td>
+                  <strong>$225 +HST</strong> (9 sessions)
+                  <br />
+                  No session Dec. 23 or Dec. 30
+                </td>
+                <td>
+                  <strong>$225 +HST</strong> (9 sessions)
+                  <br />
+                  Final session May 5
+                </td> */}
+                <td>
+                  <strong>$150 +HST</strong> (6 sessions) May 19, 26, June 2, 9,
+                  16, 23
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Fridays</strong>
+                  <br />
+                  On-ice: 4:30pm - 5:50pm
+                </td>
+                {/* <td>
+                  <strong>$250 +HST</strong> (10 sessions)
+                </td>
+                <td>
+                  <strong>$225 +HST</strong> (9 sessions)
+                  <br />
+                  No session Dec. 24 or Dec. 31
+                </td>
+                <td>
+                  <strong>$225 +HST</strong> (9 sessions)
+                  <br />
                   No session Apr. 15
+                </td> */}
+                <td>
+                  <strong>$150 +HST</strong> (6 sessions) May 20, 27, June 3,
+                  10, 17, 24
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <h3>FutureSTARS Enrichment Program</h3>
+        <h3>
+          FutureSTARS Enrichment Program{" "}
+          <span style={{ fontWeight: "normal" }}>
+            (participants must skate at least 3 days per week and take dry-land
+            training classes)
+          </span>
+        </h3>
         <h4>Cost: $1,500 +HST</h4>
+        <p>
+          <strong>*No skate on Sunday May 22 - Victoria Day Weekend</strong>
+        </p>
         <p>
           DPSC partnered with Teen Ranch supports the pursuit of excellence in
           sport & life skills necessary to become an accomplished figure skater!
