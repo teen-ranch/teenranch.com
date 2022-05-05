@@ -55,11 +55,11 @@ export default function Default({ data }) {
     <Event
       key={1}
       title={frontmatter.title}
-      startDate={DateTime.fromISO("2022-06-17", {
+      startDate={DateTime.fromISO("2022-06-10", {
         zone: "America/Toronto",
       }).toISODate()}
       startTime="19:00:00"
-      endDate={DateTime.fromISO("2022-06-19", {
+      endDate={DateTime.fromISO("2022-06-12", {
         zone: "America/Toronto",
       }).toISODate()}
       endTime="14:00:00"
@@ -89,30 +89,46 @@ export default function Default({ data }) {
         <h1>{frontmatter.title}</h1>
 
         <p>
-          Do you and your family love hockey? This is an incredibly unique
-          opportunity to get away and invest time in one another over a common
-          love of this great Canadian sport.
+          The Father Son Hockey Weekend is a unique opportunity to invest time
+          in one another over your common love of hockey and create wonderful
+          memories that will last a lifetime.
         </p>
         <p>
-          Beginning Friday afternoon, enjoy a wonderful weekend away together in
-          beautiful accommodations with incredible meals, inspiring speakers,
-          on-ice skills development, and scrimmage sessions on an Olympic-size
-          ice pad with awesome instructors, scenic trail rides through the
-          beautiful Caledon Hills and other bonding activities! Beginning Friday
-          afternoon, enjoy a wonderful weekend away together in beautiful
-          accommodations with incredible meals, inspiring speakers, on-ice
-          skills development, and scrimmage sessions on an Olympic-size ice pad
-          with awesome instructors, scenic trail rides through the beautiful
-          Caledon Hills and other bonding activities!
+          Beginning at 4:00 pm on Friday, fathers and sons will enjoy an amazing
+          weekend together.
         </p>
 
         <Button href="https://register.trmanager.com">Book now</Button>
 
         <h3>When is it?</h3>
-        <p>June 17-19, 2022</p>
+        <p>June 10-12, 2022</p>
+
+        <h4>What you'll enjoy:</h4>
+
+        <ul>
+          <li>an onsite Olympic-size ice pad</li>
+          <li>on-ice hockey drills and scrimmages</li>
+          <li>scenic trail ride on horseback</li>
+          <li>climbing wall</li>
+          <li>swimming/Waterslide/Fishing</li>
+          <li>archery/Marksmanship</li>
+          <li>campfire and marshmallow roast</li>
+          <li>an inspiring devotional message</li>
+          <li>beautiful accommodation</li>
+          <li>Incredible food</li>
+          <li>a hockey jersey and ball cap for each father and son </li>
+          <li>and more!</li>
+        </ul>
 
         <h3>This weekend getaway package includes:</h3>
         <p>Breakfasts, Lunches and Supper.</p>
+
+        <p>
+          <strong>
+            Register early to choose an accommodation option that best suits you
+            and your son(s).
+          </strong>
+        </p>
 
         <p>
           Choice of three different accommodation options. Call to discuss the
@@ -121,7 +137,7 @@ export default function Default({ data }) {
 
         <ul>
           <li>
-            <strong>Olympic Style/Chalet Room:</strong> $455 +HST /person (Bring
+            <strong>Olympic Style/Chalet Room:</strong> $480 +HST /person (Bring
             your own bedding & towels)
             <em>
               Private accommodation for each father/son or father/son family
@@ -129,31 +145,15 @@ export default function Default({ data }) {
             </em>
           </li>
           <li>
-            <strong>Western-style Hotel Room:</strong> $520 +HST /person (Linens
+            <strong>Western-style Hotel Room:</strong> $545 +HST /person (Linens
             & towels provided)
             <em>Private accommodation for each father/son</em>
           </li>
           <li>
-            <strong>Coach House/Family Suite:</strong> $555 +HST /person (Linens
+            <strong>Coach House/Family Suite:</strong> $580 +HST /person (Linens
             & towels provided)
             <em>Private accommodation for each father/son</em>
           </li>
-        </ul>
-
-        <h4>What you'll enjoy:</h4>
-
-        <ul>
-          <li>On-ice skill development sessions</li>
-          <li>On-ice hockey scrimmages</li>
-          <li>Scenic Trail Ride</li>
-          <li>Climbing Wall</li>
-          <li>Swimming/Waterslide/Fishing</li>
-          <li>Archery/Marksmanship</li>
-          <li>Campfire - songs and engaging speaker</li>
-          <li>Beautiful Accommodations</li>
-          <li>Incredible Food</li>
-          <li>An exclusive clothing item for each father and son</li>
-          <li>And so much more...</li>
         </ul>
       </Container>
 
