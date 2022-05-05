@@ -318,7 +318,7 @@ export default function Default() {
             training classes)
           </span>
         </h3>
-        <h4>Cost: $1,500 +HST</h4>
+        <h4>Cost: $400 +HST</h4>
         <p>
           <strong>*No skate on Sunday May 22 - Victoria Day Weekend</strong>
         </p>
