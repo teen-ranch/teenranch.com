@@ -204,11 +204,11 @@ export default function Footer() {
                   Mother daughter equine escape
                 </Link>
               </li>
-              {/* <li>
+              <li>
                 <Link to="/families/father-son-hockey-weekend/">
                   Father-son hockey weekend
                 </Link>
-              </li> */}
+              </li>
               {/* <li>
                 <Link to="/families/family-getaway-weekends">
                   Family getaway weekends

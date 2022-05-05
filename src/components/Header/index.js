@@ -256,11 +256,11 @@ export default function Header({ location }) {
                             Family getaway weekends
                           </NavLink> */}
                         </li>
-                        {/* <li>
+                        <li>
                           <NavLink to="/families/father-son-hockey-weekend/">
                             Father-son hockey weekend
                           </NavLink>
-                        </li> */}
+                        </li>
                       </ul>
                     </li>
                     <li>
