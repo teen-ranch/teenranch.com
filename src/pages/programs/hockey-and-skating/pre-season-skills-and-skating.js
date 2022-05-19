@@ -39,37 +39,37 @@ export default function Default() {
               </thead>
               <tbody>
                 <tr>
-                  <td>Wednesday July 27, 2022</td>
+                  <td>Tuesday July 26, 2022</td>
                   <td>
                     6:00pm - 6:50pm (Age 6-8), 7:00pm - 7:50pm (Age 9-12+)
                   </td>
                 </tr>
                 <tr>
-                  <td>Wednesday August 3, 2022</td>
+                  <td>Tuesday August 2, 2022</td>
                   <td>
                     6:00pm - 6:50pm (Age 6-8), 7:00pm - 7:50pm (Age 9-12+)
                   </td>
                 </tr>
                 <tr>
-                  <td>Wednesday August 10, 2022</td>
+                  <td>Tuesday August 9, 2022</td>
                   <td>
                     6:00pm - 6:50pm (Age 6-8), 7:00pm - 7:50pm (Age 9-12+)
                   </td>
                 </tr>
                 <tr>
-                  <td>Wednesday August 17, 2022</td>
+                  <td>Tuesday August 16, 2022</td>
                   <td>
                     6:00pm - 6:50pm (Age 6-8), 7:00pm - 7:50pm (Age 9-12+)
                   </td>
                 </tr>
                 <tr>
-                  <td>Wednesday August 24, 2022</td>
+                  <td>Tuesday August 23, 2022</td>
                   <td>
                     6:00pm - 6:50pm (Age 6-8), 7:00pm - 7:50pm (Age 9-12+)
                   </td>
                 </tr>
                 <tr>
-                  <td>Wednesday August 31, 2022</td>
+                  <td>Tuesday August 30, 2022</td>
                   <td>
                     6:00pm - 6:50pm (Age 6-8), 7:00pm - 7:50pm (Age 9-12+)
                   </td>
