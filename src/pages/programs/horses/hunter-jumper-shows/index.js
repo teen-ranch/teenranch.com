@@ -25,6 +25,7 @@ export default function Default({ data }) {
     banquetSponsors,
     inkindSponsors,
     prizeSponsors,
+    photographers,
   } = data
 
   return (
@@ -54,6 +55,9 @@ export default function Default({ data }) {
         </Link>
         <Link to="sponsors" activeClass="active" spy={true}>
           Sponsors
+        </Link>
+        <Link to="photographers" activeClass="active" spy={true}>
+          Photographers
         </Link>
       </SubNav>
 
@@ -677,6 +681,26 @@ export default function Default({ data }) {
             })}
         </Grid> */}
       </Container>
+      <Container type="body">
+        <div
+          id="photographers"
+          style={{ position: "absolute", marginTop: "-180px" }}
+        />
+        <h2>Photographers</h2>
+
+        <Grid lg={2} xl={4} gap={false}>
+          {photographers?.edges?.map((edge, i) => {
+            return (
+              <Sponsor key={i}>
+                <Img
+                  fluid={edge.node.childImageSharp.fluid}
+                  alt={edge.node.name}
+                />
+              </Sponsor>
+            )
+          })}
+        </Grid>
+      </Container>
     </>
   )
 }
@@ -764,6 +788,21 @@ export const query = graphql`
 
     inkindSponsors: allFile(
       filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2022/inkind" } }
+    ) {
+      edges {
+        node {
+          name
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+
+    photographers: allFile(
+      filter: { relativeDirectory: { eq: "hunter-jumper/photographers2022" } }
     ) {
       edges {
         node {
