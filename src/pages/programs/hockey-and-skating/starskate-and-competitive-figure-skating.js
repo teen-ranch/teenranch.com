@@ -48,7 +48,7 @@ export default function Default() {
           <Button href="https://register.trmanager.com">Book now</Button>
         </Program>
 
-        <h3>2021/2022 Semesters</h3>
+        {/* <h3>2021/2022 Semesters</h3>
 
         <div className="staffTable">
           <table>
@@ -57,9 +57,9 @@ export default function Default() {
                 <th aria-label="Empty cell"></th>
                 <th>Fall: Sep. 13 - Nov. 19</th>
                 <th>Holiday: Nov. 21 - Mar. 4</th>
-                <th>Winter: Mar. 6 - May. 15</th>
-                {/* <th>Spring: May 16 - June 24 </th> */}
-              </tr>
+                <th>Winter: Mar. 6 - May. 15</th> */}
+        {/* <th>Spring: May 16 - June 24 </th> */}
+        {/* </tr>
             </thead>
             <tbody>
               <tr>
@@ -85,11 +85,11 @@ export default function Default() {
                   <strong>$280 +HST</strong> (9 sessions)
                   <br />
                   No session Apr. 17, or May 18, Final session May 15
-                </td>
-                {/* <td>
+                </td> */}
+        {/* <td>
                   <strong>$124 +HST</strong> (4 sessions) May 29, June 5, 12, 19
                 </td> */}
-              </tr>
+        {/* </tr>
               <tr>
                 <td>
                   <strong>Mondays</strong>
@@ -110,9 +110,9 @@ export default function Default() {
                   <strong>$200 +HST</strong> (8 sessions)
                   <br />
                   No session Apr. 18, Final session May 9
-                </td>
-                {/* <td></td> */}
-              </tr>
+                </td> */}
+        {/* <td></td> */}
+        {/* </tr>
               <tr>
                 <td>
                   <strong>Thursdays</strong>
@@ -131,12 +131,12 @@ export default function Default() {
                   <strong>$225 +HST</strong> (9 sessions)
                   <br />
                   Final session May 5
-                </td>
-                {/* <td>
+                </td> */}
+        {/* <td>
                   <strong>$150 +HST</strong> (6 sessions) May 19, 26, June 2, 9,
                   16, 23
                 </td> */}
-              </tr>
+        {/* </tr>
               <tr>
                 <td>
                   <strong>Fridays</strong>
@@ -155,15 +155,15 @@ export default function Default() {
                   <strong>$225 +HST</strong> (9 sessions)
                   <br />
                   No session Apr. 15, Final session May 13
-                </td>
-                {/* <td>
+                </td> */}
+        {/* <td>
                   <strong>$150 +HST</strong> (6 sessions) May 20, 27, June 3,
                   10, 17, 24
                 </td> */}
-              </tr>
+        {/* </tr>
             </tbody>
           </table>
-        </div>
+        </div> */}
 
         <br />
         <br />
