@@ -209,11 +209,15 @@ export default function Header({ location }) {
                         </NavLink>
                       </li>
                     </ul>
-                    {/* <div className='subNavDivider'>Schooling</div>
-                                    <ul className='subSubNav'>
-                                        <li><NavLink to='/programs/horses/riding-lessons/'>Riding lessons</NavLink></li>
-                                        <li><NavLink to='/programs/horses/schooling-ring-rental/'>Schooling ring rental</NavLink></li>
-                                    </ul> */}
+                    <div className="subNavDivider">Schooling</div>
+                    <ul className="subSubNav">
+                      {/* <li><NavLink to='/programs/horses/riding-lessons/'>Riding lessons</NavLink></li> */}
+                      <li>
+                        <NavLink to="/programs/horses/schooling-ring-rental/">
+                          Schooling ring rental
+                        </NavLink>
+                      </li>
+                    </ul>
                     <div className="subNavDivider">Recreation</div>
                     <ul className="subSubNav">
                       <li>
