@@ -91,14 +91,14 @@ export default function Default() {
             <thead>
               <tr>
                 <th aria-label="Empty cell"></th>
-                <th>Fall: Sep. 13 - Nov. 19</th>
+                {/* <th>Fall: Sep. 13 - Nov. 19</th>
                 <th>Holiday: Nov. 22 - Mar. 4</th>
-                <th>Winter: Mar. 11 - May. 13</th>
+                <th>Winter: Mar. 11 - May. 13</th> */}
                 <th>Spring: May 20 - June 24 </th>
               </tr>
             </thead>
             <tbody>
-              <tr>
+              {/* <tr>
                 <td>
                   <strong>Mondays</strong>
                   <br />
@@ -120,14 +120,14 @@ export default function Default() {
                   No session Apr. 18
                 </td>
                 <td></td>
-              </tr>
+              </tr> */}
               <tr>
                 <td>
                   <strong>Fridays</strong>
                   <br />
                   On-ice: 6:00pm - 6:50pm
                 </td>
-                <td>
+                {/* <td>
                   <strong>$310 +HST</strong> (10 sessions)
                 </td>
                 <td>
@@ -139,7 +139,7 @@ export default function Default() {
                   <strong>$280 +HST</strong> (9 sessions)
                   <br />
                   No session Apr. 15
-                </td>
+                </td> */}
                 <td>
                   <strong>$186 +HST</strong> (6 sessions)
                 </td>
