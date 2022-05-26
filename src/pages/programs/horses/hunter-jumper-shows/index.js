@@ -20,8 +20,10 @@ export default function Default({ data }) {
     main,
     image1,
     image2,
+    eliteSponsors,
     ringSponsors,
-    divisionSponsors,
+    banquetSponsors,
+    inkindSponsors,
     prizeSponsors,
   } = data
 
@@ -78,7 +80,13 @@ export default function Default({ data }) {
                   <td>May 30, 2022</td>
                   <td>
                     {/* <Button target="_blank" href="https://forms.zohopublic.com/teenranch1/form/HorseShowJune62021/formperma/nRrU9I5hIyQphoKEm5zZ8pZ9LZdhiCBq3RfVKJ9Qh-o?referrername=teenranch.com">June 6th entry form</Button>     */}
-                    Opening soon
+
+                    <Button
+                      target="_blank"
+                      href="https://forms.zohopublic.com/teenranch1/form/HorseShowJune52022/formperma/ryr6HpYngAd_WuiqQ6d8b4Tk4GdKNEKsTAFJl26UGUw?referrername=teenranch.com"
+                    >
+                      June 5th entry form
+                    </Button>
                   </td>
                 </tr>
                 <tr>
@@ -86,39 +94,60 @@ export default function Default({ data }) {
                   <td>June 20, 2022</td>
                   <td>
                     {/* <Button target="_blank" href="https://forms.zohopublic.com/teenranch1/form/HorseShowJune202021/formperma/UCncvQ2Mok0K75neDv4i3iS1G1XMqrLJxkDNatxGfUo?referrername=teenranch.com">June 20th entry form</Button> */}
-                    Opening soon
+                    <Button
+                      target="_blank"
+                      href="https://forms.zohopublic.com/teenranch1/form/HorseShowJune262022/formperma/_o5E_4MQPaEtARDMe2Swc4ep3xHo_eMJ0VacNXSWiKQ?referrername=teenranch.com"
+                    >
+                      June 26th entry form
+                    </Button>
                   </td>
                 </tr>
                 <tr>
                   <td>July 10, 2022</td>
                   <td>July 4, 2022</td>
                   <td>
-                    {/* <Button target="_blank" href="https://forms.zohopublic.com/teenranch1/form/HorseShowJuly112021/formperma/YYwVhN71DjY5WUHbUbCT-S9asqYYoJPnhk5HibQGK6k?referrername=teenranch.com">July 11th entry form</Button>     */}
-                    Opening soon
+                    <Button
+                      target="_blank"
+                      href="https://forms.zohopublic.com/teenranch1/form/HorseShowJuly102022/formperma/JqvcxNiAFSBAzq8Iprj4bgRzMCna3xODEMyEcVHnbm8?referrername=teenranch.com"
+                    >
+                      July 10th entry form
+                    </Button>
                   </td>
                 </tr>
                 <tr>
                   <td>July 24, 2022</td>
                   <td>July 18, 2022</td>
                   <td>
-                    {/* <Button target="_blank" href="https://forms.zohopublic.com/teenranch1/form/HorseShowJuly252021/formperma/tWoYEE8ZzuPz_RH8n-GIubpmJp1cc2Vkn-Qhl7Zo5gk?referrername=teenranch.com">July 25th entry form</Button> */}
-                    Opening soon
+                    <Button
+                      target="_blank"
+                      href="https://forms.zohopublic.com/teenranch1/form/HorseShowJuly242022/formperma/SzVcZyYCfNyd_Vyk81MqJku0UVGl0NsJEpvlap5jIJM?referrername=teenranch.com"
+                    >
+                      July 24th entry form
+                    </Button>
                   </td>
                 </tr>
                 <tr>
                   <td>August 7, 2022</td>
                   <td>August 1, 2022</td>
                   <td>
-                    {/* <Button target="_blank" href="https://forms.zohopublic.com/teenranch1/form/HorseShowAugust152021/formperma/HKHOXRDk9cN7otiADRTvLTSNxHsiJDGSwAXgMMY5_pQ?referrername=teenranch.com">August 15th entry form</Button> */}
-                    Opening soon
+                    <Button
+                      target="_blank"
+                      href="https://forms.zohopublic.com/teenranch1/form/HorseShowAugust72022/formperma/EM5BMnmvGclT71rjp76HZ7bgx0wJ8zCiLPMVFzSKL_o?referrername=teenranch.com"
+                    >
+                      August 7th entry form
+                    </Button>
                   </td>
                 </tr>
                 <tr>
                   <td>August 21, 2022</td>
                   <td>August 15, 2022</td>
                   <td>
-                    {/* <Button target="_blank" href="https://forms.zohopublic.com/teenranch1/form/HorseShowAugust292021/formperma/tSrE90jl2okae4IdxcBDClDvINE7V-AGzUY_20zeoGM?referrername=teenranch.com">August 29th entry form</Button> */}
-                    Opening soon
+                    <Button
+                      target="_blank"
+                      href="https://forms.zohopublic.com/teenranch1/form/HorseShowAugust212022/formperma/xInGPFl-L-ZvuVXUjbWiUAXkmUPnV1cNW67bcKqkDI4?referrername=teenranch.com"
+                    >
+                      August 21th entry form
+                    </Button>
                   </td>
                 </tr>
               </tbody>
@@ -143,12 +172,12 @@ export default function Default({ data }) {
         <h2>Links</h2>
         <Card style={{ padding: "2rem" }}>
           <div className="showButtons">
-            <Button
+            {/* <Button
               target="_blank"
               href="https://docs.google.com/forms/d/e/1FAIpQLSc4dEIQ-wOrqet3p_YUJBGa4G5d3XvZIYL_Czq-vmqARX8spg/viewform"
             >
               COVID-19 screening form
-            </Button>
+            </Button> */}
             <Button target="_blank" href="https://show.teenranch.com">
               View 2021 season standings
             </Button>
@@ -400,9 +429,8 @@ export default function Default({ data }) {
                 Please read class descriptions to see rules on cross-entering.
               </li>
               <li>
-                <strong>Entries</strong> and{" "}
-                <strong>Covid Screening Form</strong> MUST be submitted on the
-                Monday before each show.
+                <strong>Entries</strong> MUST be submitted on the Monday before
+                each show.
               </li>
               <li>
                 <strong>Hunter Classes</strong> - Flash nose bands and running
@@ -448,64 +476,7 @@ export default function Default({ data }) {
           </Card>
           <Card style={{ padding: "2rem" }}>
             <h4>COVID-19 policy</h4>
-
-            <ol>
-              <li>
-                All guests must complete the online covid screening by Wednesday
-                before each show.
-              </li>
-              {/* -<li>Any person entering the show grounds will have their temperature checked upon arrival. Anyone with a temperature above 100.3F/37.9C  or who exhibits COVID-19 symptoms will not be permitted to enter the show grounds. </li> */}
-              <li>
-                Masks must be worn outside when you cannot be 2 meters (6’) from
-                others. All competitors and authorized support personnel must
-                bring their own mask.{" "}
-              </li>
-              {/* -<li>Each person entering the property must hand in a signed Teen Ranch Covid 19 Screening Questionnaire upon arrival.  </li> */}
-              {/* <li>
-    If you are not on the Access List and/or have not submitted the
-    waivers, you will not be permitted to enter the show grounds.{" "}
-  </li> */}
-              {/* -<li>Restrooms will be disinfected multiple times during the competition.  Hand Sanitizer will be available at restrooms and at warm up areas.  Do not adjust/touch jumps without disinfecting first.</li> */}
-              {/* <li>Ribbons will be awarded.  There will be a self-serve ribbon table at the ingate – please social distance.</li> */}
-              <li>
-                Online entries available through the website only. NO POST
-                ENTRIES. Entry and payment deadline is the Monday before each
-                show. Entries will be limited if necessary.
-              </li>
-              <li>
-                Back numbers will be handed out to trainers at the entrance of
-                the showgrounds.
-              </li>
-              <li>
-                ADDS/SCRATCHES – Competitors will be allowed to scratch or add,
-                minus a office fee ($25+tax) before the start of the division
-                that they have signed up for.
-              </li>
-              <li>
-                Entries will be posted on the Teen Ranch Hunter/Jumper Shows
-                Facebook page on Friday.
-              </li>
-              <li>
-                Anyone who does not abide by the safety protocols will be
-                removed from the show grounds.
-              </li>
-              {/* -<li>A max of 10 people can come with each trailer. For some of the bigger farms, you must set up cohorts of 10 people including a coach and they may not mix with your other cohorts. Guests are asked to leave as soon as possible after they are done showing.</li> */}
-              {/* -<li>Only a max of 10 competitors will be allowed in each ring at a time for flat classes.</li> */}
-              <li>
-                Max of one assistant/guardian per competitor allowed at gate.{" "}
-              </li>
-              {/* -<li>When entering and exiting the ring, please follow arrows and use appropriate gate to keep social distancing.  </li> */}
-              <li>
-                Warm-ups done immediately before their competition round. One
-                rider in the ring at a time. 5 riders allowed in the warm up
-                area at a time.
-              </li>
-              <li>
-                Food truck will be in attendance…social distancing must be
-                respected here.
-              </li>
-            </ol>
-
+            Please self screen. If you have any symptoms, please stay home.
             <p>We are looking forward to a safe and fun competition!</p>
           </Card>
         </Grid>
@@ -518,7 +489,7 @@ export default function Default({ data }) {
         />
         <h2>Sponsors</h2>
 
-        <Card style={{ padding: "2rem" }}>
+        {/* <Card style={{ padding: "2rem" }}>
           <p>
             Teen Ranch has been hosting a series of horse shows for the extended
             community for 37 years now! Amidst the pandemic, this has been one
@@ -602,23 +573,77 @@ export default function Default({ data }) {
           href="https://teenranch.nyc3.cdn.digitaloceanspaces.com/website/pdf/Request_pkg_2022.pdf"
         >
           I want to sponsor
-        </Button>
+        </Button> */}
 
-        {/* <h3>Ring sponsors</h3>
-        <Grid lg={1} xl={2} gap={false}>
-          {ringSponsors &&
-            ringSponsors.edges &&
-            ringSponsors.edges.map((edge, i) => {
-              return (
-                <Sponsor key={i}>
-                  <Img
-                    fluid={edge.node.childImageSharp.fluid}
-                    alt={edge.node.name}
-                  />
-                </Sponsor>
-              )
-            })}
-        </Grid> */}
+        <h3>Elite sponsors</h3>
+        <Grid lg={2} xl={4} gap={false}>
+          {eliteSponsors?.edges?.map((edge, i) => {
+            return (
+              <Sponsor key={i}>
+                <Img
+                  fluid={edge.node.childImageSharp.fluid}
+                  alt={edge.node.name}
+                />
+              </Sponsor>
+            )
+          })}
+        </Grid>
+
+        <h3>Ring sponsors</h3>
+        <Grid lg={2} xl={4} gap={false}>
+          {ringSponsors?.edges?.map((edge, i) => {
+            return (
+              <Sponsor key={i}>
+                <Img
+                  fluid={edge.node.childImageSharp.fluid}
+                  alt={edge.node.name}
+                />
+              </Sponsor>
+            )
+          })}
+        </Grid>
+
+        <h3>Banquet sponsors</h3>
+        <Grid lg={4} xl={6} gap={false}>
+          {banquetSponsors?.edges?.map((edge, i) => {
+            return (
+              <Sponsor key={i}>
+                <Img
+                  fluid={edge.node.childImageSharp.fluid}
+                  alt={edge.node.name}
+                />
+              </Sponsor>
+            )
+          })}
+        </Grid>
+
+        <h3>In-kind sponsors</h3>
+        <Grid lg={5} xl={7} gap={false}>
+          {inkindSponsors?.edges?.map((edge, i) => {
+            return (
+              <Sponsor key={i}>
+                <Img
+                  fluid={edge.node.childImageSharp.fluid}
+                  alt={edge.node.name}
+                />
+              </Sponsor>
+            )
+          })}
+        </Grid>
+
+        <h3>Prize sponsors</h3>
+        <Grid lg={5} xl={7} gap={false}>
+          {prizeSponsors?.edges?.map((edge, i) => {
+            return (
+              <Sponsor key={i}>
+                <Img
+                  fluid={edge.node.childImageSharp.fluid}
+                  alt={edge.node.name}
+                />
+              </Sponsor>
+            )
+          })}
+        </Grid>
 
         {/* <h3>Division sponsors</h3>
         <Grid lg={2} xl={4} gap={false}>
@@ -690,9 +715,24 @@ export const query = graphql`
       }
     }
 
-    ringSponsors: allFile(
+    eliteSponsors: allFile(
+      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2022/elite" } }
+    ) {
+      edges {
+        node {
+          name
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+
+    banquetSponsors: allFile(
       filter: {
-        relativeDirectory: { eq: "hunter-jumper/sponsors2021/ringSponsors" }
+        relativeDirectory: { eq: "hunter-jumper/sponsors2022/banquet" }
       }
     ) {
       edges {
@@ -707,10 +747,23 @@ export const query = graphql`
       }
     }
 
-    divisionSponsors: allFile(
-      filter: {
-        relativeDirectory: { eq: "hunter-jumper/sponsors2021/divisionSponsors" }
+    ringSponsors: allFile(
+      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2022/ring" } }
+    ) {
+      edges {
+        node {
+          name
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
+    }
+
+    inkindSponsors: allFile(
+      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2022/inkind" } }
     ) {
       edges {
         node {
@@ -725,9 +778,7 @@ export const query = graphql`
     }
 
     prizeSponsors: allFile(
-      filter: {
-        relativeDirectory: { eq: "hunter-jumper/sponsors2021/prizeSponsors" }
-      }
+      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2022/prize" } }
     ) {
       edges {
         node {

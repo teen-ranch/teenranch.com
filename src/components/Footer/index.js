@@ -151,11 +151,11 @@ export default function Footer() {
                 </Link>
               </li>
               <div className="subNavDivider">Schooling</div>
-              <li>
+              {/* <li>
                 <Link to="/programs/horses/riding-lessons/">
                   Riding lessons
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link to="/programs/horses/schooling-ring-rental/">
                   Schooling ring rental
