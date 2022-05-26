@@ -157,7 +157,7 @@ export default function Default({ data }) {
               </tbody>
             </table>
           </div>
-          <h3>Stalls</h3>
+          {/* <h3>Stalls</h3>
           <p>
             Stalls will be available at each show for the 2022 season. Priority
             goes to those showing all 6 shows.
@@ -171,7 +171,7 @@ export default function Default({ data }) {
           <p>
             Email <a href="mailto:events@teenranch.com">events@teenranch.com</a>{" "}
             if you are interested.
-          </p>
+          </p> */}
         </Program>
         <h2>Links</h2>
         <Card style={{ padding: "2rem" }}>
