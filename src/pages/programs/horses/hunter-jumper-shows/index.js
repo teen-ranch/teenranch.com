@@ -183,17 +183,17 @@ export default function Default({ data }) {
               COVID-19 screening form
             </Button> */}
             <Button target="_blank" href="https://show.teenranch.com">
-              View 2021 season standings
+              View 2022 season standings
             </Button>
             <Button to="/programs/horses/hunter-jumper-shows/show-photos/">
               View 2021 show photos
             </Button>
-            <Button
+            {/* <Button
               target="_blank"
               href="https://teenranch.nyc3.cdn.digitaloceanspaces.com/website/pdf/hunterJumperShowProgram_2021.pdf"
             >
               2021 Show Program
-            </Button>
+            </Button> */}
           </div>
         </Card>
       </Container>
