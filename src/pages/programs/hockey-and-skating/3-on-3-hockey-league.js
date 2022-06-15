@@ -34,7 +34,7 @@ export default function Default() {
               <strong>U-11 (Age 9-10)</strong>: 6:30pm - 7:30pm
             </li>
             <li>
-              <strong>U-13/U-15 (Age 11-14)</strong>: 6:30pm - 7:30pm
+              <strong>U-13/U-15 (Age 11-14)</strong>: 7:30pm - 8:30pm
             </li>
           </ul>
           <h3>Cost</h3>
