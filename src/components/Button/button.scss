@@ -1,41 +1,52 @@
-@import 'styles/vars';
+@import "styles/vars";
 
 .button {
-    outline: none;
-    appearance: none;
-    border: none;
-    background: $primary-light;
-    padding: 1.2rem 2rem;
-    border-radius: $border-radius;
-    color: $primary-white;
-    letter-spacing: 0.02em;
-    margin: 1rem 0;
-    display: inline-block;
-    cursor: pointer;
+  outline: none;
+  appearance: none;
+  border: none;
+  background: $primary-light;
+  padding: 1.2rem 2rem;
+  border-radius: $border-radius;
+  color: $primary-white;
+  letter-spacing: 0.02em;
+  margin: 1rem 0;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .button:hover {
-    background: darken($primary-light, 10);
-    color: $primary-white;
+  background: darken($primary-light, 10);
+  color: $primary-white;
 }
 
 .buttonContainer {
-    text-align: center;
-    padding: 4rem 0;
+  text-align: center;
+  padding: 4rem 0;
 }
 
 .button.cta {
-
-    font-size: 2rem;
-    padding: 2rem 6rem;
-    margin: 0 auto;
-
+  font-size: 2rem;
+  padding: 2rem 6rem;
+  margin: 0 auto;
 }
 
 .button.secondary {
-    background: rgba(0,0,0,0.2);
-    color: $primary-dark;
+  background: rgba(0, 0, 0, 0.2);
+  color: $primary-dark;
 }
 .button.secondary:hover {
-    background: rgba(0,0,0,0.3);
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.button.pdf {
+  background: rgb(235, 16, 0);
+  div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+.button.pdf:hover {
+  background: darken(rgb(235, 16, 0), 10);
 }

@@ -5,7 +5,7 @@ import Heading from "components/Heading"
 import { graphql } from "gatsby"
 
 import SubNav from "components/SubNav"
-import { CTAButton } from "components/Button"
+import { CTAButton, PdfButton } from "components/Button"
 import Program, { ProgramContainer } from "components/Program"
 
 // import Grid from 'components/Grid'
@@ -107,6 +107,23 @@ export default function Programs({ data }) {
             <strong>Pick-up: Friday, 7:00pm</strong>
           </li>
         </ul>
+      </Container>
+
+      <Container type="body">
+        <h2>Info pack</h2>
+        <div>
+          <PdfButton
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://teenranch.nyc3.cdn.digitaloceanspaces.com/website/pdf/overnightCampInformation_2022.pdf"
+          >
+            Overnight camp info pack
+          </PdfButton>
+        </div>
+        <p>
+          Families will be notified by email two weeks before the camp start
+          date for payment reminders and camp information.
+        </p>
       </Container>
 
       <Container type="body">
