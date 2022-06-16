@@ -5,7 +5,12 @@ import Heading from "components/Heading"
 import { graphql } from "gatsby"
 
 import SubNav from "components/SubNav"
-import { PrimaryButton, SecondaryButton, CTAButton } from "components/Button"
+import {
+  PrimaryButton,
+  SecondaryButton,
+  CTAButton,
+  PdfButton,
+} from "components/Button"
 import Program, { ProgramContainer } from "components/Program"
 
 // import Grid from 'components/Grid'
@@ -120,6 +125,28 @@ export default function Programs({ data }) {
       </Container>
 
       <Container type="body">
+        <h2>Info pack(s)</h2>
+        <div>
+          <PdfButton
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://teenranch.nyc3.cdn.digitaloceanspaces.com/website/pdf/overnightCampInformation_2022.pdf"
+          >
+            Overnight camp info pack
+          </PdfButton>
+        </div>
+        <div>
+          <PdfButton href="https://teenranch.nyc3.cdn.digitaloceanspaces.com/website/pdf/udcJdcCampInformation_2022.pdf">
+            Ultimate day camp / junior day camp info pack
+          </PdfButton>
+        </div>
+        <p>
+          Families will be notified by email two weeks before the camp start
+          date for payment reminders and camp information.
+        </p>
+      </Container>
+
+      <Container type="body">
         <div id="who" style={{ position: "absolute", marginTop: "-180px" }} />
         <h1>Who it's for</h1>
 
@@ -187,6 +214,8 @@ export default function Programs({ data }) {
 
       <Container type="body">
         <h1>Camp dates</h1>
+
+        <h2>Overnight camp</h2>
 
         <div id="dates" style={{ position: "absolute", marginTop: "-180px" }} />
 
