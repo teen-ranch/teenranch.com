@@ -300,6 +300,7 @@ export default function Default({ data }) {
                   together.
                 </em>
               </li>
+              <li>Jumper Division - .6m</li>
             </ul>
             Will begin at the completion of the Rookie Division. (if shod, it’s
             advised to use corks)
