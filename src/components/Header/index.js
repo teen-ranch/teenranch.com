@@ -152,6 +152,11 @@ export default function Header({ location }) {
                         </NavLink>
                       </li>
                       <li>
+                        <NavLink to="/programs/hockey-and-skating/goalie-clinic/">
+                          Goalie clinic
+                        </NavLink>
+                      </li>
+                      <li>
                         <NavLink to="/programs/hockey-and-skating/skills-development/">
                           Skills development
                         </NavLink>

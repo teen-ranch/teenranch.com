@@ -97,6 +97,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link to="/programs/hockey-and-skating/goalie-clinic/">
+                  Goalie clinic
+                </Link>
+              </li>
+              <li>
                 <Link to="/programs/hockey-and-skating/skills-development/">
                   Skills development
                 </Link>
