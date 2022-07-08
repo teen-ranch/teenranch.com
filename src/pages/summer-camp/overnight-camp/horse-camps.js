@@ -171,9 +171,10 @@ export default function Programs({ data }) {
           >
             For english riders looking to improve their success in the show
             ring.
-            <p style={{ fontSize: "1.2rem" }}>
+            {/* <p style={{ fontSize: "1.2rem" }}>
               Application video must be approved to qualify for this program.
-            </p>
+            </p> */}
+            <p style={{ color: "red" }}>Applications closed for 2022</p>
           </Program>
           <Program
             small
@@ -341,7 +342,13 @@ export default function Programs({ data }) {
           </Price>
           <Price
             title="Intensive equestrian camp"
-            subTitle="For english riders looking to improve their success in the show ring."
+            subTitle={
+              <>
+                For english riders looking to improve their success in the show
+                ring.
+                <p style={{ color: "red" }}>Applications closed for 2022</p>
+              </>
+            }
             who="Advanced hunter/jumper"
             price={1750}
             term="week"
