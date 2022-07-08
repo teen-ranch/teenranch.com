@@ -316,7 +316,9 @@ export default function Default({ data }) {
       <Container type="body">
         <h2>Fees</h2>
         <ul>
-          <li>Per Division fee: $90 +HST</li>
+          <li>
+            Per Division fee: $90 +HST (division fee includes a warm-up round)
+          </li>
           <li>Back number fee: $10 +HST</li>
         </ul>
       </Container>
