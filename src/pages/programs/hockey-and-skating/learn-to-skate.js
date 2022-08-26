@@ -84,7 +84,7 @@ export default function Default() {
           want to continue learning for fun and fitness.
         </p>
 
-        <h3>2021/2022 Semesters</h3>
+        <h3>2022/2023 Semesters</h3>
 
         <div className="staffTable">
           <table>
