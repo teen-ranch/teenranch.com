@@ -24,12 +24,12 @@ export default function Default() {
           imageOptions={{ rotate: 90, h: 420 }}
           name="Learn to skate"
         >
-          <p>
+          {/* <p>
             <strong>
               COVID MESSAGE: Our COVID safety practices message will be sent to
               skaters & parents before the first class.
             </strong>
-          </p>
+          </p> */}
 
           <p>
             Learn the basics of skating for all ice sports in this fun and
@@ -91,58 +91,59 @@ export default function Default() {
             <thead>
               <tr>
                 <th aria-label="Empty cell"></th>
-                {/* <th>Fall: Sep. 13 - Nov. 19</th>
-                <th>Holiday: Nov. 22 - Mar. 4</th>
-                <th>Winter: Mar. 11 - May. 13</th> */}
-                <th>Spring: May 20 - June 24 </th>
+                <th>Fall: Sep. 12 - Nov. 18</th>
+                <th>Holiday: Nov. 21 - Feb. 3</th>
+                <th>Winter: Feb. 6 - Apr. 21</th>
+                {/* <th>Spring: May 20 - June 24 </th> */}
               </tr>
             </thead>
             <tbody>
-              {/* <tr>
+              <tr>
                 <td>
                   <strong>Mondays</strong>
                   <br />
                   On-ice: 6:00pm - 6:50pm
                 </td>
                 <td>
+                  <strong>$250 +HST</strong> (8 sessions)
+                  <br />
+                  No session Oct. 10 or Oct. 31
+                </td>
+                <td>
                   <strong>$280 +HST</strong> (9 sessions)
                   <br />
-                  No session Oct. 11
+                  No session Dec. 26 or Jan. 2
                 </td>
                 <td>
-                  <strong>$250 +HST</strong> (8 sessions)
+                  <strong>$280 +HST</strong> (9 sessions)
                   <br />
-                  No session Dec. 20, Dec. 27, or Feb. 21
+                  No session Feb. 20 or Apr. 10
                 </td>
-                <td>
-                  <strong>$250 +HST</strong> (8 sessions)
-                  <br />
-                  No session Apr. 18
-                </td>
-                <td></td>
-              </tr> */}
+              </tr>
               <tr>
                 <td>
                   <strong>Fridays</strong>
                   <br />
                   On-ice: 6:00pm - 6:50pm
                 </td>
-                {/* <td>
+                <td>
+                  <strong>$280 +HST</strong> (9 sessions)
+                  <br />
+                  No session Oct. 21
+                </td>
+                <td>
+                  <strong>$250 +HST</strong> (8 sessions)
+                  <br />
+                  No session Dec. 23, Dec. 30 or Jan. 6
+                </td>
+                <td>
                   <strong>$310 +HST</strong> (10 sessions)
-                </td>
-                <td>
-                  <strong>$280 +HST</strong> (9 sessions)
                   <br />
-                  No session Dec. 24 or Dec. 31
+                  No session Apr. 7
                 </td>
-                <td>
-                  <strong>$280 +HST</strong> (9 sessions)
-                  <br />
-                  No session Apr. 15
-                </td> */}
-                <td>
+                {/* <td>
                   <strong>$186 +HST</strong> (6 sessions)
-                </td>
+                </td> */}
               </tr>
             </tbody>
           </table>
