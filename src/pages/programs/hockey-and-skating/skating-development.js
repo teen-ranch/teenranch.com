@@ -24,7 +24,7 @@ export default function Default() {
           <p>
             Join us for a 5 session program focused on the development of
             forward and backward skating, crossovers, tight-turns, etc. For boys
-            and girls ages 6-12.
+            and girls ages 6-13.
           </p>
           <p>
             <i>
