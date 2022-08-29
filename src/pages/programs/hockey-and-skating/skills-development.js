@@ -24,7 +24,7 @@ export default function Default() {
           <p>
             Join us for a 5 session program focused on the development of
             individual shooting, stick handling, creativity and passing skills,
-            as well as game situation type skills. For boys and girls ages 6-12.
+            as well as game situation type skills. For boys and girls ages 6-13.
           </p>
           <p>
             <i>
