@@ -36,8 +36,8 @@ export default function Default() {
           <h3>When</h3>
 
           <p>
-            Saturday mornings: September 24, 2022 - December 17, 2022 (12
-            sessions)
+            Saturday mornings: (9:00am - 10:00am) September 24, 2022 - December
+            17, 2022 (12 sessions)
             <br />
             (No session October 8th)
           </p>
