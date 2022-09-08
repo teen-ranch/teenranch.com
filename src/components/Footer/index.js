@@ -123,16 +123,16 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link to="/programs/hockey-and-skating/pond-hockey/">
+                  Pond hockey & Shamrocks Local League
+                </Link>
+              </li>
+              <li>
                 <Link to="/programs/hockey-and-skating/mens-hockey-league/">
                   Men's hockey league
                 </Link>
               </li>
               <div className="subNavDivider">Recreation</div>
-              <li>
-                <Link to="/programs/hockey-and-skating/pond-hockey/">
-                  Pond hockey & Shamrocks Local League
-                </Link>
-              </li>
               <li>
                 <Link to="/programs/hockey-and-skating/ice-rental/">
                   Ice rental
