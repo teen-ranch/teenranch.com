@@ -130,7 +130,7 @@ export default function Footer() {
               <div className="subNavDivider">Recreation</div>
               <li>
                 <Link to="/programs/hockey-and-skating/pond-hockey/">
-                  Pond hockey
+                  Pond hockey & Shamrocks Local League
                 </Link>
               </li>
               <li>
