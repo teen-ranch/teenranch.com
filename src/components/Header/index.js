@@ -189,7 +189,7 @@ export default function Header({ location }) {
                     <ul className="subSubNav">
                       <li>
                         <NavLink to="/programs/hockey-and-skating/pond-hockey/">
-                          Pond hockey
+                          Pond hockey & Shamrocks Local League
                         </NavLink>
                       </li>
                       <li>
