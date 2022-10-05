@@ -30,17 +30,17 @@ export default function Default() {
           <h3>When</h3>
 
           <p>
-            Saturdays: October 16, 2021 - April 2, 2022 (6:30pm - 8:00pm)
+            Saturdays: October 22, 2022 - April 1, 2023 (6:30pm - 8:00pm)
             <br />
             <strong>
-              Public skating is NOT available Saturday, December 25th, January
-              1st, or February 12th
+              Public skating is NOT available Saturday, December 24th, or
+              December 31
             </strong>
           </p>
 
           <h3>Cost</h3>
           <p>$5 +HST/person</p>
-          <p>$18 +HST/family</p>
+          <p>$20 +HST/family maximum</p>
 
           <p>
             <i>Bring your own skates</i>
