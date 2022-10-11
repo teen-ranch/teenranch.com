@@ -13,17 +13,17 @@ export default function Index({ data }) {
   return (
     <>
       <Heading
-        src={data.summerCamp.childImageSharp.fluid}
+        src={data.hockey.childImageSharp.fluid}
         alt="Summer camp"
-        title={"Summer Camp 2022 is ON!!!"}
-        subtitle={`Overnight Camps, Ultimate Day Camps, and Junior Day Camps - Registration open now!`}
+        title={"Check out our current year-round programs!"}
+        subtitle={`Hockey & skating programs, weekend retreats, day camps and more!`}
         metaTitle="Summer Camp 2022 is ON!!!"
         metaDescription={`Overnight & Ultimate Day Camps`}
       >
-        <CTAButton to="/summer-camp/">Get the details</CTAButton>
-        {/* <div id="mc_embed_signup">
+        {/* <CTAButton to="/summer-camp/">Get the details</CTAButton> */}
+        <div id="mc_embed_signup">
           <form
-            action="https://teenranch.us2.list-manage.com/subscribe/post?u=93bbc7a16b1a2719f9690a8b0&amp;id=fcb1d89647"
+            action="https://teenranch.us2.list-manage.com/subscribe/post?u=93bbc7a16b1a2719f9690a8b0&amp;id=41cfb19836"
             method="post"
             id="mc-embedded-subscribe-form"
             name="mc-embedded-subscribe-form"
@@ -33,7 +33,7 @@ export default function Index({ data }) {
           >
             <div id="mc_embed_signup_scroll">
               <h2 style={{ marginTop: "8rem" }}>
-                Want to be notified as soon as registration opens?
+                Want to be notified when a new dates are announced?
               </h2>
 
               <div
@@ -93,7 +93,7 @@ export default function Index({ data }) {
               </div>
             </div>
           </form>
-          <div
+          {/* <div
             style={{
               textAlign: "center",
               color: "white",
@@ -114,8 +114,8 @@ export default function Index({ data }) {
               Details and Registration will be available on our website January
               19, 2022
             </p>
-          </div>
-        </div> */}
+          </div> */}
+        </div>
       </Heading>
 
       {/* <Heading
@@ -208,21 +208,6 @@ export default function Index({ data }) {
 					<Button to='/day-camp/christmas-day-camp/'>Learn more</Button>
 				</Program> */}
 
-        <Program
-          src={data.motherDaughter.childImageSharp.fluid}
-          name="Mother-daughter equine escape"
-          // swap
-        >
-          <p>
-            Do you have a daughter who loves horses? The Mother-Daughter Equine
-            Escape is a unique opportunity to get away and invest time in one
-            another over a common love of horses and adventure.
-          </p>
-          <Button to="/families/mother-daughter-equine-escape/">
-            Learn more
-          </Button>
-        </Program>
-
         {/* <Program
           src={data.fatherSon.childImageSharp.fluid}
           name="Father-son hockey weekend"
@@ -234,36 +219,6 @@ export default function Index({ data }) {
           </p>
           <Button to="/families/father-son-hockey-weekend/">Learn more</Button>
         </Program> */}
-
-        <Program
-          src="https://teenranch.nyc3.digitaloceanspaces.com/website/assets/hockey14.jpg"
-          name="Spring hockey league"
-          swap
-        >
-          <p>
-            Join us for a fun, 9-week recreational program. Sessions will
-            consist of ten minutes of skill development followed by a 35-minute
-            game. (Two teams per age group with limited spots per team.)
-          </p>
-          <Button to="/programs/hockey-and-skating/spring-hockey-league/">
-            Learn more
-          </Button>
-        </Program>
-
-        <Program
-          src={data.christmasDayCamp.childImageSharp.fluid}
-          name="March Break day camp"
-          alt="Day camp"
-        >
-          <p>
-            Treat your kids to an exciting getaway close to home. Register them
-            for a full week or individual days. Rest assured that they will be
-            well taken care of, enjoy all kinds of outdoor active fun, and
-            likely meet a new friend or two!
-          </p>
-
-          <Button to="/day-camp/march-break-day-camp/">Learn more</Button>
-        </Program>
 
         <Program
           src={data.christmasDayCamp.childImageSharp.fluid}
@@ -284,6 +239,68 @@ export default function Index({ data }) {
         </Program>
 
         <Program
+          src={data.skillsskating.childImageSharp.fluid}
+          name="Skills development"
+          alt="Skills development"
+        >
+          <p>
+            Join us for a 5 session program focused on the development of
+            individual shooting, stick handling, creativity and passing skills,
+            as well as game situation type skills. For boys and girls ages 6-13.
+          </p>
+
+          <Button to="/programs/hockey-and-skating/skills-development/">
+            Learn more
+          </Button>
+
+          <h3>Skating Development</h3>
+          <p>
+            Join us for a 5 session program focused on the development of
+            individual shooting, stick handling, creativity and passing skills,
+            as well as game situation type skills. For boys and girls ages 6-13.
+          </p>
+
+          <Button to="/programs/hockey-and-skating/skating-development/">
+            Learn more
+          </Button>
+        </Program>
+
+        <Program
+          src={data.pondHockey.childImageSharp.fluid}
+          name="Pond Hockey"
+          alt="Pond hockey"
+          swap
+        >
+          <p>A year-long development program for boys and girls ages 5-16+</p>
+
+          <Button to="/programs/hockey-and-skating/pond-hockey/">
+            Learn more
+          </Button>
+        </Program>
+
+        <Program
+          src={data.figureSkating.childImageSharp.fluid}
+          name="STARSKATE & Competitive Figure Skating"
+          alt="Skating development"
+        >
+          <p>
+            Skate Canada STARSkate and Competitive figure skating programs
+            offered in a challenging and supportive team environment.
+          </p>
+
+          <Button to="/programs/hockey-and-skating/starskate-and-competitive-figure-skating/">
+            Learn more
+          </Button>
+
+          <h3>Learn to Skate</h3>
+          <p>A beginner skating program for all ice sports.</p>
+
+          <Button to="/programs/hockey-and-skating/learn-to-skate/">
+            Learn more
+          </Button>
+        </Program>
+
+        {/* <Program
           src={data.overnightCamp.childImageSharp.fluid}
           name="Overnight summer camp"
           alt="Overnight summer camp"
@@ -330,7 +347,7 @@ export default function Index({ data }) {
           </p>
 
           <Button to="/summer-camp/ultimate-day-camp/">Learn more</Button>
-        </Program>
+        </Program> */}
 
         {/* <Program
 					src={data.hjShows.childImageSharp.fluid}
@@ -360,7 +377,7 @@ export default function Index({ data }) {
 
 export const query = graphql`
   query {
-    fatherSon: file(relativePath: { eq: "facilities/iceCorral/hockey9.jpg" }) {
+    hockey: file(relativePath: { eq: "programs/hockey/Michael.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1920, quality: 64) {
           ...GatsbyImageSharpFluid_withWebp
@@ -368,19 +385,17 @@ export const query = graphql`
       }
     }
 
-    motherDaughter: file(
-      relativePath: {
-        eq: "motherDaughter/d556c391-315b-9e0d-d741-4a0bd91f7e9b.jpg"
+    skillsskating: file(relativePath: { eq: "programs/hockey/IMG_5099.JPG" }) {
+      childImageSharp {
+        fluid(maxWidth: 1920, quality: 64) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
       }
+    }
+
+    pondHockey: file(
+      relativePath: { eq: "programs/hockey/tr hockey group.jpg" }
     ) {
-      childImageSharp {
-        fluid(maxWidth: 1920, quality: 64) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-
-    summerCamp: file(relativePath: { eq: "summerDayCamp8.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1920, quality: 64) {
           ...GatsbyImageSharpFluid_withWebp
@@ -398,27 +413,11 @@ export const query = graphql`
       }
     }
 
-    overnightCamp: file(relativePath: { eq: "activities/waterslide1.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 600, maxHeight: 334, quality: 64) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-
-    ultimateDayCamp: file(
-      relativePath: { eq: "facilities/iceCorral/hockey14.jpg" }
+    figureSkating: file(
+      relativePath: { eq: "programs/figureSkating/figureskating.jpg" }
     ) {
       childImageSharp {
-        fluid(maxWidth: 600, quality: 64) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-
-    juniorDayCamp: file(relativePath: { eq: "summerDayCamp8.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1920, quality: 64) {
+        fluid(maxWidth: 600, maxHeight: 334, quality: 64) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }

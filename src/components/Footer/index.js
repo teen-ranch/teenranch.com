@@ -124,7 +124,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link to="/programs/hockey-and-skating/pond-hockey/">
-                  Pond hockey & Shamrocks Local League
+                  Pond hockey
                 </Link>
               </li>
               <li>

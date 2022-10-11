@@ -12,79 +12,79 @@ export default function Default() {
       <Heading
         src="https://teenranch.nyc3.digitaloceanspaces.com/website/assets/DSC_0513.JPG"
         alt="Smiling kids playing hockey"
-        title="Pond Hockey & Shamrocks Local League"
+        title="Pond Hockey"
         subtitle="A year-long development program for boys and girls ages 5-16+"
         metaTitle="Pond hockey"
         metaDescription="Pond hockey is a year-long development program for boys and girls ages 5-16+ years old. There are three levels: Learn to Play, Junior and Senior to accommodate all levels of development."
       />
       <Container type="body">
-        <Grid md={2} gapSize="8rem">
-          <div>
-            <h2>Pond hockey</h2>
-            <p>
-              Pond Hockey is a year-long development program for boys and girls
-              ages 5-16+ years old. There are three levels: Learn to Play,
-              Junior and Senior to accommodate all levels of development. This
-              is not a graduated program, Teen Ranch staff will assess your
-              child and place them in an appropriate level. Don't worry! If your
-              skill level progresses quickly, the coaching staff may move you to
-              the next level. If the level that you are in is too difficult they
-              can accommodate your learning needs in a lower level.
-            </p>
-            <p>
-              Junior age players will join Shamrocks Local League players for
-              Saturday scrimmages.
-            </p>
-            <p>
-              <i>
-                <strong>Full equipment is required.</strong>
-              </i>
-            </p>
+        {/* <Grid md={2} gapSize="8rem"> */}
+        <div>
+          <h2>Pond hockey</h2>
+          <p>
+            Pond Hockey is a year-long development program for boys and girls
+            ages 5-16+ years old. There are three levels: Learn to Play, Junior
+            and Senior to accommodate all levels of development. This is not a
+            graduated program, Teen Ranch staff will assess your child and place
+            them in an appropriate level. Don't worry! If your skill level
+            progresses quickly, the coaching staff may move you to the next
+            level. If the level that you are in is too difficult they can
+            accommodate your learning needs in a lower level.
+          </p>
+          {/* <p>
+            Junior age players will join Shamrocks Local League players for
+            Saturday scrimmages.
+          </p> */}
+          <p>
+            <i>
+              <strong>Full equipment is required.</strong>
+            </i>
+          </p>
 
-            <h3>When</h3>
-            <p>
-              Saturdays: October 15, 2022 - March 4, 2023 (18 sessions)
-              <br />
-              <br />
-              <strong>No sessions on:</strong>
-              <ul>
-                <li>December 24, 2022</li>
-                <li>December 31, 2022</li>
-                <li>February 18, 2023</li>
-              </ul>
-            </p>
+          <h3>When</h3>
+          <p>
+            Saturdays: October 15, 2022 - March 4, 2023 (18 sessions)
+            <br />
+            <br />
+            <strong>No sessions on:</strong>
+            <ul>
+              <li>December 24, 2022</li>
+              <li>December 31, 2022</li>
+              <li>February 18, 2023</li>
+            </ul>
+          </p>
 
-            <div className="staffTable">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Division</th>
-                    <th>Ages</th>
-                    <th>Time</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Learn to play</td>
-                    <td>5-8</td>
-                    <td>8:00am - 9:00am</td>
-                  </tr>
-                  <tr>
-                    <td>Junior & Shamrocks Local League</td>
-                    <td>7-10</td>
-                    <td>11:00am, 12:00pm, 1:00pm, or 2:00pm</td>
-                  </tr>
-                  <tr>
-                    <td>Senior</td>
-                    <td>11+</td>
-                    <td>10:00am - 11:00am</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+          <div className="staffTable">
+            <table>
+              <thead>
+                <tr>
+                  <th>Division</th>
+                  <th>Ages</th>
+                  <th>Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Learn to play</td>
+                  <td>5-8</td>
+                  <td>8:00am - 9:00am</td>
+                </tr>
+                <tr>
+                  <td>Junior</td>
+                  <td>7-10</td>
+                  <td>11:00am, 12:00pm, 1:00pm, or 2:00pm</td>
+                </tr>
+                <tr>
+                  <td>Senior</td>
+                  <td>11+</td>
+                  <td>10:00am - 11:00am</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
+        </div>
 
-          <div>
+        {/* <div>
             <h2>Shamrocks Local League</h2>
             <p>
               The Erin Shamrocks in partnership with @teenranchcanada are proud
@@ -157,8 +157,8 @@ export default function Default() {
                 </tbody>
               </table>
             </div>
-          </div>
-        </Grid>
+          </div> */}
+        {/* </Grid> */}
       </Container>
 
       <Container type="body">
@@ -181,7 +181,7 @@ export default function Default() {
               Register now
             </CTAButton>
           </Price>
-          <Price
+          {/* <Price
             title={<>Shamrocks local league</>}
             subTitle={`A high-performance development program.`}
             who="Junior (ages 7-10)"
@@ -197,7 +197,7 @@ export default function Default() {
             <CTAButton href="https://register.trmanager.com">
               Register now
             </CTAButton>
-          </Price>
+          </Price> */}
         </PriceContainer>
       </Container>
     </>
