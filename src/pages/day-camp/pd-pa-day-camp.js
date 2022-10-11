@@ -68,8 +68,8 @@ export default function Programs({ data }) {
         <h1>Available dates</h1>
 
         <ul>
-          <li>November 26, 2021</li>
-          <li>January 28, 2022</li>
+          <li>October 24, 2022</li>
+          <li>November 25, 2022 (Hockey option available)</li>
           {/* <li>June 3, 2022</li> */}
         </ul>
 
@@ -96,7 +96,7 @@ export default function Programs({ data }) {
             }
             subTitle={``}
             who="Kids ages 5-12"
-            price={75}
+            price={79}
             term="day"
             includes={[
               "Outdoor discovery, games, activity and fun!",
@@ -122,7 +122,7 @@ export default function Programs({ data }) {
             }
             subTitle={``}
             who="Kids ages 5-12"
-            price={95}
+            price={99}
             term="day"
             includes={[
               "Hockey skills, skating and fun!",
@@ -143,7 +143,7 @@ export default function Programs({ data }) {
 
       <Container>
         <p>* Weather permitting</p>
-        <p>** Ice skating not available on January 28, 2022</p>
+        <p>** Ice skating not available on October 24, 2022</p>
       </Container>
     </>
   )
