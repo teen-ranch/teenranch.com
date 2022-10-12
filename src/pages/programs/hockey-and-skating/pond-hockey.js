@@ -43,7 +43,7 @@ export default function Default() {
 
           <h3>When</h3>
           <p>
-            Saturdays: October 15, 2022 - March 4, 2023 (18 sessions)
+            Saturdays: October 22, 2022 - March 11, 2023 (18 sessions)
             <br />
             <br />
             <strong>No sessions on:</strong>
