@@ -67,17 +67,17 @@ export default function Default() {
                 <tr>
                   <td>Learn to play</td>
                   <td>5-8</td>
-                  <td>8:00am - 9:00am</td>
+                  <td>10:00am - 11:00am</td>
                 </tr>
                 <tr>
                   <td>Junior</td>
                   <td>7-10</td>
-                  <td>11:00am, 12:00pm, 1:00pm, or 2:00pm</td>
+                  <td>11:00am - 12:00am</td>
                 </tr>
                 <tr>
                   <td>Senior</td>
                   <td>11+</td>
-                  <td>10:00am - 11:00am</td>
+                  <td>11:00am - 12:00am</td>
                 </tr>
               </tbody>
             </table>
