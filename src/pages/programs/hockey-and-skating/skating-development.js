@@ -22,7 +22,7 @@ export default function Default() {
           name="Skating development"
         >
           <p>
-            Join us for a 5 session program focused on the development of
+            Join us for a 6 session program focused on the development of
             forward and backward skating, crossovers, tight-turns, etc. For boys
             and girls ages 6-13.
           </p>
@@ -41,6 +41,7 @@ export default function Default() {
             <table>
               <thead>
                 <tr>
+                  <th>Session</th>
                   <th>Tuesday evenings</th>
                   <th>Ages 6-8</th>
                   <th>Ages 9-13</th>
@@ -48,7 +49,14 @@ export default function Default() {
               </thead>
               <tbody>
                 <tr>
-                  <td>September 6, 2022 - October 4, 2022</td>
+                  <td>#2</td>
+                  <td>November 8, 2022 - December 13, 2022</td>
+                  <td>6:00pm - 6:50pm</td>
+                  <td>7:00pm - 7:50pm</td>
+                </tr>
+                <tr>
+                  <td>#3</td>
+                  <td>January 10, 2023 - February 7, 2023</td>
                   <td>6:00pm - 6:50pm</td>
                   <td>7:00pm - 7:50pm</td>
                 </tr>
@@ -67,7 +75,7 @@ export default function Default() {
           </div>
 
           <h3>Cost</h3>
-          <p>$210 +HST/player</p>
+          <p>$250 +HST/player</p>
 
           <Button href="https://register.trmanager.com">Book now</Button>
         </Program>
