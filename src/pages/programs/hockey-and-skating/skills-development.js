@@ -22,7 +22,7 @@ export default function Default() {
           name="Skills development"
         >
           <p>
-            Join us for a 5 session program focused on the development of
+            Join us for a 6 session program focused on the development of
             individual shooting, stick handling, creativity and passing skills,
             as well as game situation type skills. For boys and girls ages 6-13.
           </p>
@@ -38,6 +38,7 @@ export default function Default() {
             <table>
               <thead>
                 <tr>
+                  <th>Session</th>
                   <th>Wednesday evenings</th>
                   <th>Ages 6-8</th>
                   <th>Ages 9-13</th>
@@ -45,7 +46,14 @@ export default function Default() {
               </thead>
               <tbody>
                 <tr>
-                  <td>September 7, 2022 - October 5, 2022</td>
+                  <td>#2</td>
+                  <td>November 9, 2022 - December 14, 2022</td>
+                  <td>6:00pm - 6:50pm</td>
+                  <td>7:00pm - 7:50pm</td>
+                </tr>
+                <tr>
+                  <td>#3</td>
+                  <td>January 11, 2023 - February 8, 2023</td>
                   <td>6:00pm - 6:50pm</td>
                   <td>7:00pm - 7:50pm</td>
                 </tr>
@@ -64,7 +72,7 @@ export default function Default() {
           </div>
 
           <h3>Cost</h3>
-          <p>$210 +HST/player</p>
+          <p>$250 +HST/player</p>
 
           <Button href="https://register.trmanager.com">Book now</Button>
         </Program>
