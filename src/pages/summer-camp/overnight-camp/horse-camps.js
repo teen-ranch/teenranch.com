@@ -264,10 +264,21 @@ export default function Programs({ data }) {
         <JumpStart />
         <PriceContainer>
           <Price
-            title="Western riding camp"
-            subTitle="An excellent place to start for first-time riders or western riding enthusiasts."
+            title={
+              <>
+                Western riding camp
+                <br />
+                <br />
+              </>
+            }
+            subTitle={
+              <>
+                An excellent place to start for first-time riders or western
+                riding enthusiasts.
+              </>
+            }
             who="Beginner to advanced"
-            price={1250}
+            price={1295}
             term="week"
             includes={[
               "Basic position & control",
@@ -286,10 +297,18 @@ export default function Programs({ data }) {
             </CTAButton>
           </Price>
           <Price
-            title="English riding camp"
-            subTitle="For kids of all riding levels to learn or develop new skills."
+            title={
+              <>
+                English riding camp
+                <br />
+                <br />
+              </>
+            }
+            subTitle={
+              <>For kids of all riding levels to learn or develop new skills.</>
+            }
             who="Beginner to advanced"
-            price={1250}
+            price={1295}
             term="week"
             includes={[
               "Basic position & control",
@@ -312,11 +331,11 @@ export default function Programs({ data }) {
               <>
                 For english riders looking to improve their success in the show
                 ring.
-                <p style={{ color: "red" }}>Applications closed for 2022</p>
+                {/* <p style={{ color: "red" }}>Applications closed for 2022</p> */}
               </>
             }
             who="Advanced hunter/jumper"
-            price={1750}
+            price={1825}
             term="week"
             primary
             includes={[
@@ -335,15 +354,27 @@ export default function Programs({ data }) {
                 Application video must be approved to qualify for this program.
               </center>
             </span>
-            <CTAButton href="https://register.trmanager.com">
-              Register now
+            <CTAButton
+              target="_blank"
+              href="mailto:camp@teenranch.com?subject=Intensive camp application request"
+            >
+              Apply now
             </CTAButton>
           </Price>
           <Price
-            title="Rodeo camp"
-            subTitle="For western riders who want a taste of rodeo competition."
+            title={
+              <>
+                Rodeo camp
+                <br />
+                <br />
+                <br />
+              </>
+            }
+            subTitle={
+              <>For western riders who want a taste of rodeo competition.</>
+            }
             who="Intermediate to advanced"
-            price={1400}
+            price={1475}
             term="week"
             includes={[
               "Roping",

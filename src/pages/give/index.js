@@ -17,8 +17,10 @@ export default function Default() {
         keywords="teen ranch canada, teen ranch caledon ontario canada, give to teen ranch, donate to teen ranch, support teen ranch, teen ranch finances"
       />
       <Container type="body">
-        Thank you for considering giving financially. We deeply appreciate your
-        generosity.
+        <div style={{ textAlign: "center", fontSize: "2.5rem" }}>
+          Thank you for considering a one-time or regular financial gift. We
+          deeply appreciate your generosity.
+        </div>
         <div className="donationOptionsContainer">
           <div className="donationOption">
             <h3>Option 1</h3>

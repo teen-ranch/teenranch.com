@@ -13,7 +13,7 @@ export default function Default() {
         src="https://teenranch.nyc3.digitaloceanspaces.com/website/assets/DSC_0513.JPG"
         alt="Smiling kids playing hockey"
         title="Pond Hockey"
-        subtitle="A year-long development program for boys and girls ages 5-16+"
+        subtitle="A year-long development program for boys and girls ages 5+"
         metaTitle="Pond hockey"
         metaDescription="Pond hockey is a year-long development program for boys and girls ages 5-16+ years old. There are three levels: Learn to Play, Junior and Senior to accommodate all levels of development."
       />
@@ -23,13 +23,14 @@ export default function Default() {
           <h2>Pond hockey</h2>
           <p>
             Pond Hockey is a year-long development program for boys and girls
-            ages 5-16+ years old. There are three levels: Learn to Play, Junior
-            and Senior to accommodate all levels of development. This is not a
-            graduated program, Teen Ranch staff will assess your child and place
-            them in an appropriate level. Don't worry! If your skill level
-            progresses quickly, the coaching staff may move you to the next
-            level. If the level that you are in is too difficult they can
-            accommodate your learning needs in a lower level.
+            ages 5+ years old.
+            {/* There are three levels: Learn to Play, Junior
+            and Senior to accommodate all levels of development.  */}
+            {/* This is not a graduated program, Teen Ranch staff will assess your
+            child and place them in an appropriate level. Don't worry! If your
+            skill level progresses quickly, the coaching staff may move you to
+            the next level. If the level that you are in is too difficult they
+            can accommodate your learning needs in a lower level. */}
           </p>
           {/* <p>
             Junior age players will join Shamrocks Local League players for
@@ -69,7 +70,7 @@ export default function Default() {
                   <td>5-8</td>
                   <td>10:00am - 11:00am</td>
                 </tr>
-                <tr>
+                {/* <tr>
                   <td>Junior</td>
                   <td>7-10</td>
                   <td>11:00am - 12:00am</td>
@@ -78,7 +79,7 @@ export default function Default() {
                   <td>Senior</td>
                   <td>11+</td>
                   <td>11:00am - 12:00am</td>
-                </tr>
+                </tr> */}
               </tbody>
             </table>
           </div>
@@ -172,7 +173,7 @@ export default function Default() {
             title={<>Pond Hockey</>}
             subTitle={`A year-long development program for boys and girls
             ages 5-16+ years old.`}
-            who="Learn to play (ages 5-8), Junior (ages 7-10), Senior (ages 11+)"
+            who="Learn to play (ages 5-8)"
             price={395}
             term="season"
             includes={["1 hour scrimmage every Saturday"]}

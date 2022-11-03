@@ -30,11 +30,9 @@ export function CovidContainer() {
             textAlign: "center",
           }}
         >
-          <h3>Summer camp 2023!</h3>
-          <p>
-            Summer camp information is now online. Registration opens January 1,
-            2023!
-          </p>
+          <h3>Summer Camp 2023</h3>
+          <p>Information for Summer Camp 2023 is now available online!</p>
+          <p>Registration opens January 16, 2023!</p>
 
           <div>
             <Button onClick={() => gotIt()}>Got it!</Button>

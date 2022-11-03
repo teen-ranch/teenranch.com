@@ -328,7 +328,7 @@ export default function Programs({ data }) {
         </PriceContainer>
       </Container>
 
-      <Container type="body">
+      {/* <Container type="body">
         <h2>Horse camp add-ons:</h2>
         <PriceAddon
           title="Extended care"
@@ -342,7 +342,7 @@ export default function Programs({ data }) {
           price={75}
           term="week"
         />
-      </Container>
+      </Container> */}
     </>
   )
 }

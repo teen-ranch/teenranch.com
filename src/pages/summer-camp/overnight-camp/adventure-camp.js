@@ -226,7 +226,7 @@ export default function Programs({ data }) {
             caving/spelunking, canoeing, white-water kayaking and mountain
             biking."
             who="Adventurous kids, must be able to swim"
-            price={1400}
+            price={1475}
             term="week"
             // startingAt
             oneWeekOnly

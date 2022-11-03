@@ -12,6 +12,11 @@ import { CTAButton } from "components/Button"
 // import Coach from 'components/Coach'
 // import { Link } from 'react-scroll'
 import { PriceContainer, Price } from "components/Price"
+import {
+  dayCampBulletsClassic,
+  dayCampBulletsHockey,
+} from "components/defaults"
+import { Time } from "components/Time"
 // import Grid from 'components/Grid'
 // import Sponsor from 'components/Sponsor'
 // import Img from 'gatsby-image'
@@ -22,7 +27,7 @@ const frontmatter = {
 }
 
 const pageData = {
-  subTitle: `Treat your kids to an exciting getaway close to home.`,
+  subTitle: `Treat your kids to an outdoor adventure only moments from home.`,
   keywords: "march break day camp, march break day camp orangeville",
 }
 
@@ -54,10 +59,12 @@ export default function Programs({ data }) {
         <h1>{frontmatter.title}</h1>
 
         <p>
-          Treat your kids to an exciting getaway close to home. Register them
-          for a full week or individual days. Rest assured that they will be
-          well taken care of, enjoy all kinds of outdoor active fun, and likely
-          meet a new friend or two!
+          Treat your kids to an outdoor adventure only moments from home. Enjoy
+          flexibility with the option of registering them for a full week or
+          individual days and rest assured that they will be well-engaged as
+          they enjoy all kinds of active outdoor fun, games, and sports
+          alongside other campers and our committed staff team! Daily story time
+          with an emphasis on sharing God's love!
         </p>
       </Container>
 
@@ -65,21 +72,13 @@ export default function Programs({ data }) {
         <h1>Available dates</h1>
 
         <ul>
-          <li>March 14-18, 2022</li>
+          <li>March 13-17, 2023</li>
         </ul>
 
-        <p>Drop off between 8:30am-8:50am and pick up at 4:30pm</p>
-      </Container>
-      <Container type="body">
-        <h1>Activities include</h1>
-        <ul>
-          <li>Superhero’s Unite! Theme with activities, games and crafts</li>
-          <li>Outdoor discovery, games and sports (weather permitting)</li>
-          <li>Indoor ice skating with kid-friendly music</li>
-          <li>Pony rides*</li>
-          <li>Hockey option available</li>
-        </ul>
-        <span className="note">* weather permitting</span>
+        <p>
+          Drop off between <Time>0830</Time> - <Time>0850</Time> and pick up at{" "}
+          <Time>1630</Time> - <Time>1645</Time>
+        </p>
       </Container>
 
       <div id="pricing" style={{ position: "absolute", marginTop: "-180px" }} />
@@ -104,14 +103,7 @@ export default function Programs({ data }) {
             who="Kids ages 5-12"
             price={89}
             term="day"
-            includes={[
-              "Superhero’s Unite! Theme with activities, games and crafts",
-              "Outdoor discovery, games and sports (weather permitting)",
-              "Indoor ice skating with kid-friendly music",
-              "Pony rides*",
-              "Hockey option available",
-              "Lunch & two snacks",
-            ]}
+            includes={dayCampBulletsClassic}
           >
             <CTAButton href="https://register.trmanager.com">
               Register now
@@ -133,14 +125,7 @@ export default function Programs({ data }) {
             who="Kids ages 5-12"
             price={420}
             term="week"
-            includes={[
-              "Superhero’s Unite! Theme with activities, games and crafts",
-              "Outdoor discovery, games and sports (weather permitting)",
-              "Indoor ice skating with kid-friendly music",
-              "Pony rides*",
-              "Hockey option available",
-              "Lunch & two snacks",
-            ]}
+            includes={dayCampBulletsClassic}
           >
             <CTAButton href="https://register.trmanager.com">
               Register now
@@ -157,17 +142,9 @@ export default function Programs({ data }) {
             }
             subTitle={`Individual day`}
             who="Kids ages 5-12"
-            price={109}
+            price={125}
             term="day"
-            includes={[
-              <strong>50 minute skills & skating session each morning</strong>,
-              "Superhero’s Unite! Theme with activities, games and crafts",
-              "Outdoor discovery, games and sports (weather permitting)",
-              "Indoor ice skating with kid-friendly music",
-              "Pony rides*",
-              "Hockey option available",
-              "Lunch & two snacks",
-            ]}
+            includes={dayCampBulletsHockey}
           >
             <CTAButton href="https://register.trmanager.com">
               Register now
@@ -183,21 +160,13 @@ export default function Programs({ data }) {
             }
             subTitle={
               <>
-                Bundle (<strong>SAVE $5/day</strong>)
+                Bundle (<strong>SAVE $10/day</strong>)
               </>
             }
             who="Kids ages 5-12"
-            price={520}
+            price={575}
             term="week"
-            includes={[
-              <strong>50 minute skills & skating session each morning</strong>,
-              "Superhero’s Unite! Theme with activities, games and crafts",
-              "Outdoor discovery, games and sports (weather permitting)",
-              "Indoor ice skating with kid-friendly music",
-              "Pony rides*",
-              "Hockey option available",
-              "Lunch & two snacks",
-            ]}
+            includes={dayCampBulletsHockey}
           >
             <CTAButton href="https://register.trmanager.com">
               Register now

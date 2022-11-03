@@ -24,6 +24,7 @@ import Grid from "components/Grid"
 import Img from "gatsby-image"
 import JumpStart from "../../components/JumpStart"
 import { OvernightCampTerms } from "components/Terms"
+import { Time } from "components/Time"
 
 const frontmatter = {
   title: "Overnight camp",
@@ -31,7 +32,7 @@ const frontmatter = {
 }
 
 const pageData = {
-  subTitle: `The complete camp experience: life-long friends, sports, and real life`,
+  subTitle: `The complete camp experience: action-packed fun, excellent sports training, and life-changing adventures`,
   keywords: "summer camp, summer sports camp",
 }
 
@@ -67,41 +68,24 @@ export default function Programs({ data }) {
       <div id="top" style={{ position: "absolute", marginTop: "-120px" }} />
 
       <Container type="body">
-        <div
-          style={{
-            padding: "4rem",
-            background: "#0074F7",
-            borderRadius: "4px",
-            color: "#fff",
-          }}
-        >
-          <h2 style={{ margin: "0 0 2rem 0" }}>
-            Balance payments, info pack, and snackbar:
-          </h2>{" "}
-          14 days before your camp check-in date we'll send you an email with:
-          all the details you need for camp, a link to pay your remaining
-          balance, and set up your snackbar account(s).
-        </div>
-      </Container>
-
-      <Container type="body">
         <h1>Overnight camp for outrageous fun</h1>
 
         <p>
-          Our popular overnight camps are back this year and better than ever!
-          Campers experience all the fun and adventure of summer camp packed
-          into five awesome nights as they enjoy the great outdoors, get active
-          and build friendships that can last a lifetime.
+          Register for overnight camp and experience all the fun and adventure a
+          week of summer camp has to offer. Enjoy the great outdoors, get
+          active, and make new friends.
         </p>
-
         <p>
-          In the morning, campers hone their skills in their sport of choice.
-          Afternoons are their chance to enjoy a variety of Teen Ranch
-          activities and evenings include camp-wide games and nightly campfires
-          with engaging, real-life topics shared from a biblical perspective.
-          Cabin time is a unique opportunity for growth, bonding and overall
-          fun!! This year campers can enjoy enhanced climbing wall apparatus and
-          features!
+          In the morning, hone your skills in your sport of choice. Afternoons
+          are your chance to enjoy a variety of Teen Ranch activities and
+          bunkroom time - a unique opportunity for growth, bonding and overall
+          fun!! Evenings include camp-wide games and nightly campfires with
+          engaging, real-life topics shared from a biblical perspective.
+        </p>
+        <p>
+          Campers are housed in top-notch facilities that include a private
+          washroom and air conditioning. consider linking top-notch facilities
+          to our facility photos.
         </p>
         <p>
           Our well-trained staff are committed to the safety and well-being of
@@ -109,24 +93,34 @@ export default function Programs({ data }) {
         </p>
 
         <h3>Weekly overview</h3>
-        <p>Summer overnight camps will run Sunday evenings-Friday evenings.</p>
+        <p>Summer overnight camps run Sunday evenings-Friday evenings.</p>
         <ul>
           <li>
-            <strong>Drop-off: Sunday, 4:00pm - 4:30pm</strong>{" "}
-            <sm style={{ fontSize: "1.3rem", color: "rgba(0,0,0,0.8)" }}>
-              Meet your leaders, visit the snack bar and western store, and
-              explore the property as a family.
-            </sm>
+            <strong>
+              Check-in: Sunday, <Time>1600</Time> - <Time>1630</Time>
+            </strong>
           </li>
           <li>
-            <strong>Pick-up: Friday, 7:00pm</strong>
+            <strong>
+              Camp kick-off: <Time>1630</Time> - <Time>1715</Time>
+            </strong>{" "}
+            <span style={{ fontSize: "1.3rem", color: "rgba(0,0,0,0.8)" }}>
+              - meet your leaders, visit the snack bar and western store,
+              explore the property as a family and enjoy a BBQ and official camp
+              welcome.
+            </span>
+          </li>
+          <li>
+            <strong>
+              Pick-up: Friday, <Time>1900</Time>
+            </strong>
           </li>
         </ul>
       </Container>
 
       <Container type="body">
         <h2>Info pack</h2>
-        <div>
+        {/* <div>
           <PdfButton
             target="_blank"
             rel="noopener noreferrer"
@@ -134,7 +128,7 @@ export default function Programs({ data }) {
           >
             Overnight camp info pack
           </PdfButton>
-        </div>
+        </div> */}
         <p>
           Families will be notified by email two weeks before the camp start
           date for payment reminders and camp information.
@@ -144,9 +138,9 @@ export default function Programs({ data }) {
       <Container type="body">
         <h1>Who it's for</h1>
         <p>
-          Overnight summer camp is perfect for kids and teens age 8+. We offer
-          specialized programs in horseback riding, hockey, adventure and WHAM
-          camp for when you want to experience a bit of everything!
+          Overnight summer camp is perfect for kids and teens age 8-16. We offer
+          specialized programs in horseback riding and hockey, and epic
+          activities through adventure and WHAM!
         </p>
 
         <ProgramContainer>
@@ -156,9 +150,9 @@ export default function Programs({ data }) {
             who="Players & goalies (age 8+)"
             src={hockey.childImageSharp.fluid}
           >
-            Skills & skating development for players and goalies from
-            house-league to rep. regular hockey, elite hockey, girl's hockey,
-            and goalie camps.
+            Skills & skating development and full-ice scrimmage for players and
+            goalies from house league to rep. Hockey, elite AA/AAA, girl's
+            hockey, and goalie camps.
             <br />
             <PrimaryButton to="/summer-camp/overnight-camp/hockey-camps/">
               Learn more
@@ -181,7 +175,7 @@ export default function Programs({ data }) {
           <Program
             small
             name="Adventure camp"
-            who="Adventurous kids (age 10-14)"
+            who="Adventurous kids (age 10+)"
             src={adventure.childImageSharp.fluid}
           >
             <i style={{ textDecoration: "italic" }}>One week only!</i>
@@ -202,8 +196,8 @@ export default function Programs({ data }) {
             src={wham.childImageSharp.fluid}
           >
             Epic activities like horseback riding, rock climbing, woodland
-            survival, volleyball, archery, waterslide, jousting pond and so much
-            more!
+            survival, outdoor sports, archery, waterslide, jousting pond, giant
+            swing and so much more!
             <br />
             <PrimaryButton to="/summer-camp/overnight-camp/wham-camp/">
               Learn more
@@ -229,9 +223,9 @@ export default function Programs({ data }) {
 
         <p>
           Each afternoon, campers get to take their pick from some amazing camp
-          activities on 150 beautiful acres including: rock climbing,
-          bouldering, water slide, swimming, water jousting, archery, tennis,
-          basketball, volleyball, and more.
+          activities on 150 beautiful acres including: rock climbing, giant
+          swing, bouldering, water slide, swimming, water jousting, archery,
+          tennis, basketball, volleyball, and more.
         </p>
 
         <Grid sm={2} md={2} lg={3} xl={5} gap={false}>
@@ -276,7 +270,7 @@ export default function Programs({ data }) {
             title="Hockey camps"
             subTitle={`Skills & skating development for players and goalies from house-league to rep. Standard, high-performance, girl's hockey, and goalie camps.`}
             who="Players and goalies"
-            price={1250}
+            price={1295}
             term="week"
             startingAt
             includes={[
@@ -285,7 +279,7 @@ export default function Programs({ data }) {
               "Skills development",
               "Skating development",
               "Off-ice program",
-              "Afternoon scrimmages",
+              "Full-ice afternoon scrimmages",
               "Breakfast, lunch & dinner",
               "Snackbar open morning and afternoon",
               "All camp activities",
@@ -304,11 +298,12 @@ export default function Programs({ data }) {
             title="Horse camps"
             subTitle="Horseback riding camps for beginner to advanced riders. Take your pick from western, english, rodeo, or intensive (hunter/jumper focused) camps."
             who="English & western riders"
-            price={1250}
+            price={1295}
             startingAt
             term="week"
             includes={[
               "Ability based lessons",
+              "Wrangler club",
               "Western and english specific disciplines",
               "Safe, well-schooled horses",
               "Instructors trained to CHA standards",
@@ -333,7 +328,7 @@ export default function Programs({ data }) {
             caving/spelunking, canoeing, white-water kayaking and mountain
             biking."
             who="Adventurous kids, must be able to swim"
-            price={1400}
+            price={1475}
             term="week"
             // startingAt
             oneWeekOnly
@@ -345,9 +340,8 @@ export default function Programs({ data }) {
               "Canoeing",
               "Paddle boarding",
               "Mountain biking",
-              "Breakfast, lunch & dinner",
-              "Snackbar open morning and afternoon",
               "Certified instructor",
+              "Snackbar open morning and afternoon",
             ]}
           >
             <center>
@@ -361,9 +355,9 @@ export default function Programs({ data }) {
           </Price>
           <Price
             title="WHAM camp"
-            subTitle="Epic activities like horseback riding, rock climbing, woodland survival, volleyball, archery, waterslide, jousting pond and so much more!"
+            subTitle="Epic activities like horseback riding, rock climbing, woodland survival, outdoor sports, archery, waterslide, jousting pond and so much more!"
             who="Kids who want to try everything"
-            price={1250}
+            price={1295}
             term="week"
             startingAt
             includes={[
@@ -373,7 +367,6 @@ export default function Programs({ data }) {
               "Volleyball, basketball & soccer",
               "Archery",
               "Waterslide, jousting pond, canoes, kayaks",
-              "Breakfast, lunch & dinner",
               "Snackbar open morning and afternoon",
               "All camp activities",
             ]}
@@ -401,10 +394,30 @@ export default function Programs({ data }) {
               each morning, Monday - Friday.
             </>
           }
-          price={200}
+          price={300}
           term="week"
           to="https://register.trmanager.com"
         />
+      </Container>
+
+      <Container type="body">
+        <div id="info" style={{ position: "absolute", marginTop: "-180px" }} />
+        <h2>Additional info</h2>
+        <div
+          style={{
+            padding: "4rem",
+            background: "#0074F7",
+            borderRadius: "4px",
+            color: "#fff",
+          }}
+        >
+          <h2 style={{ margin: "0 0 2rem 0" }}>
+            Balance payments, info pack, and snackbar:
+          </h2>{" "}
+          14 days before your camp check-in date we'll send you an email with:
+          all the details you need for camp, a link to pay your remaining
+          balance, and set up your snackbar account(s).
+        </div>
       </Container>
     </>
   )

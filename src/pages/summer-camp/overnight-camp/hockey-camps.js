@@ -70,6 +70,9 @@ export default function Programs({ data }) {
         <Link to="pricing" activeClass="active" spy={true}>
           Pricing
         </Link>
+        <Link to="addons" activeClass="active" spy={true}>
+          Add-ons
+        </Link>
       </SubNav>
 
       <div id="top" style={{ position: "absolute", marginTop: "-120px" }} />
@@ -187,8 +190,8 @@ export default function Programs({ data }) {
             who="Players & goalies (female)"
             src={girlsHockeyCamp.childImageSharp.fluid}
           >
-            A no-pressure skills & skating development program with the same
-            high-quality instruction just for girls.
+            A skills & skating development program with the same high-quality
+            instruction just for girls.
           </Program>
           <Program
             small
@@ -375,7 +378,7 @@ export default function Programs({ data }) {
             title="Hockey camp"
             subTitle="Skills & skating development for players and goalies of all ability levels, with a focus on enjoying the game."
             who="Players and goalies (co-ed)"
-            price={1250}
+            price={1295}
             term="week"
             includes={[
               "On-site, olympic-size ice rink",
@@ -383,9 +386,10 @@ export default function Programs({ data }) {
               "Skills development",
               "Skating development",
               "Fun-based off-ice program",
-              "Breakfast, lunch & dinner",
               "Free jersey",
-              "All camp activities",
+              "Breakfast, lunch & dinner",
+              "Snackbar open morning and afternoon",
+              "Camp activities",
             ]}
           >
             <CTAButton href="https://register.trmanager.com">
@@ -394,9 +398,9 @@ export default function Programs({ data }) {
           </Price>
           <Price
             title="Girl's hockey camp"
-            subTitle="A no-pressure skills & skating development program with the same high-quality instruction just for girls."
+            subTitle="A skills & skating development program with the same high-quality instruction just for girls."
             who="Players and goalies (female)"
-            price={1250}
+            price={1295}
             term="week"
             includes={[
               "On-site, olympic-size ice rink",
@@ -404,10 +408,10 @@ export default function Programs({ data }) {
               "Skills development",
               "Skating development",
               "Fun-based off-ice program",
+              "Free jersey",
               "Breakfast, lunch & dinner",
               "Snackbar open morning and afternoon",
-              "Free jersey",
-              "All camp activities",
+              "Camp activities",
             ]}
           >
             <CTAButton href="https://register.trmanager.com">
@@ -418,7 +422,7 @@ export default function Programs({ data }) {
             title={<>Elite hockey camp</>}
             subTitle="For high-performance players focused on advanced skills in skating, puck handling, shooting, and passing."
             who="Rep-level players (co-ed)"
-            price={1550}
+            price={1625}
             term="week"
             primary
             includes={[
@@ -442,7 +446,7 @@ export default function Programs({ data }) {
             title="Goalie camp"
             subTitle="Goalie specific training, with a focus on angles, technique, rebound-control, proper form, butterfly and much more."
             who="Goalies (co-ed)"
-            price={1550}
+            price={1625}
             term="week"
             includes={[
               <>
@@ -467,6 +471,10 @@ export default function Programs({ data }) {
       </Container>
 
       <Container type="body">
+        <div
+          id="addons"
+          style={{ position: "absolute", marginTop: "-180px" }}
+        />
         <h2>Additional summer programs:</h2>
         <PriceAddon
           title="Summer drop-in ice time"
@@ -477,7 +485,7 @@ export default function Programs({ data }) {
               each morning, Monday - Friday.
             </>
           }
-          price={200}
+          price={300}
           term="week"
           to="https://register.trmanager.com"
         />
@@ -485,7 +493,7 @@ export default function Programs({ data }) {
 
       <Container type="body">
         <h2>Hockey camp add-ons:</h2>
-        <PriceAddon
+        {/* <PriceAddon
           title="Semi-private lessons"
           subTitle="4:1 instructor ratio"
           description={
@@ -496,10 +504,10 @@ export default function Programs({ data }) {
           }
           price={100}
           term="hour"
-        />
+        /> */}
         <PriceAddon
-          title="Private lessons"
-          subTitle="1:1 instructor ratio"
+          title="Semi-private lessons"
+          subTitle="Max 4:1 instructor ratio"
           description={
             <>
               Get an edge up on the competition with focused and personalized
@@ -509,8 +517,9 @@ export default function Programs({ data }) {
               </p>
             </>
           }
-          price={300}
+          price={100}
           term="hour"
+          to="mailto:icecorral@teenranch.com?subject=Semi-private lessons"
         />
       </Container>
     </>

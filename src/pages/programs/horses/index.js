@@ -20,7 +20,7 @@ export default function Default() {
           name="Trail rides"
         >
           <strong style={{ color: "red" }}>
-            Trail rides are currently paused and will resume in the fall.
+            Trail rides are currently offered on Sundays.
           </strong>
           <ul>
             <li>
@@ -35,7 +35,9 @@ export default function Default() {
             <li>$55.00 +HST per person</li>
           </ul>
 
-          {/* <Button href="mailto:rachel.stevens@teenranch.com?subject=Trail ride booking inquiry">Book a trail ride</Button> */}
+          <Button href="mailto:rachel.stevens@teenranch.com?subject=Trail ride booking inquiry">
+            Book a trail ride
+          </Button>
         </Program>
 
         <Program

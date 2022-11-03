@@ -22,7 +22,19 @@ export default function Default() {
           name="3 on 3 hockey league"
         >
           <h3>When</h3>
-          Sunday's, July 10 - August 21 2022 (Excluding July 31, 2022)
+          Sunday's, July - August, 2023
+          <div
+            style={{
+              padding: "4rem",
+              background: "purple",
+              borderRadius: "4px",
+              color: "#fff",
+              textAlign: "center",
+              fontSize: "2rem",
+            }}
+          >
+            Returning Summer 2023
+          </div>
           <ul>
             <li>
               <strong>U-7 (Age 5-6)</strong>: 5:30pm - 6:30pm
@@ -37,10 +49,10 @@ export default function Default() {
               <strong>U-13/U-15 (Age 11-14)</strong>: 7:30pm - 8:30pm
             </li>
           </ul>
-          <h3>Cost</h3>
+          {/* <h3>Cost</h3>
           $180 +HST
           <br />
-          <Button href="https://register.trmanager.com">Book now</Button>
+          <Button href="https://register.trmanager.com">Book now</Button> */}
         </Program>
       </Container>
     </>

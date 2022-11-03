@@ -296,6 +296,9 @@ export default function Header({ location }) {
                 </ul>
               </li>
               <li>
+                <NavLink to="/facilities/">Facilities</NavLink>
+              </li>
+              <li>
                 <NavLink to="/staff/">Staff</NavLink>
               </li>
               <li>

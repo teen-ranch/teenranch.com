@@ -29,7 +29,7 @@ const frontmatter = {
 }
 
 const pageData = {
-  subTitle: "Minutes away - A world of difference",
+  subTitle: "Minutes away - A world apart",
   keywords: "family day event, what to do on family day",
 }
 
@@ -109,7 +109,7 @@ export default function Default({ data }) {
         {/* <PrimaryButton href={stripePaymentLink}>Pre-register now</PrimaryButton> */}
       </Container>
 
-      <Container>
+      {/* <Container>
         <h1>Upcoming events</h1>
         <Event
           title={frontmatter.title}
@@ -123,7 +123,7 @@ export default function Default({ data }) {
           images={[data.file.childImageSharp.fluid.src]}
           status={"SCHEDULED"}
         />
-      </Container>
+      </Container> */}
     </>
   )
 }
