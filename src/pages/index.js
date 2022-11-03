@@ -8,6 +8,7 @@ import { graphql } from "gatsby"
 import Program from "components/Program"
 import Button, { CTAButton } from "components/Button"
 import { CovidContainer } from "components/CovidContainer"
+import { SummerCampRegistrationNotice } from "components/SummerCampRegistrationNotice"
 
 export default function Index({ data }) {
   return (
@@ -15,12 +16,21 @@ export default function Index({ data }) {
       <Heading
         src={data.hockey.childImageSharp.fluid}
         alt="Summer camp"
-        title={"Check out our current year-round programs!"}
-        subtitle={`Hockey & skating programs, weekend retreats, day camps and more!`}
-        metaTitle="Summer Camp 2022 is ON!!!"
+        title={"Don't miss out on the best week of your life!"}
+        subtitle={
+          <>
+            Build confidence, form friendships and develop skills that will last
+            a lifetime.
+          </>
+        }
+        metaTitle="Summer Camp 2023 is ON!!!"
         metaDescription={`Overnight & Ultimate Day Camps`}
       >
-        {/* <CTAButton to="/summer-camp/">Get the details</CTAButton> */}
+        <CTAButton to="/summer-camp/">
+          Learn more about Summer Camp 2023
+        </CTAButton>
+        <h2 style={{ marginTop: "-3rem" }}>Registration opens January 16!</h2>
+
         <div id="mc_embed_signup">
           <form
             action="https://teenranch.us2.list-manage.com/subscribe/post?u=93bbc7a16b1a2719f9690a8b0&amp;id=41cfb19836"
@@ -33,7 +43,7 @@ export default function Index({ data }) {
           >
             <div id="mc_embed_signup_scroll">
               <h2 style={{ marginTop: "8rem" }}>
-                Want to be notified when a new dates are announced?
+                Enter your email address so you don't miss out!
               </h2>
 
               <div
@@ -161,13 +171,8 @@ export default function Index({ data }) {
 				</div>
 			</Heading> */}
 
-      <Container type="body" style={{ background: "#002146" }}>
+      {/* <Container type="body" style={{ background: "#002146" }}>
         <div className="mel">
-          {/* <h3>COVID-19 Announcement</h3>
-
-					<p>Teen Ranch is running a small set of temporary programs.</p>
-
-					<p>We look forward to serving you with more activities as restrictions continue to loosen.</p> */}
 
           <div className="image">
             <Img
@@ -178,7 +183,6 @@ export default function Index({ data }) {
           </div>
 
           <div>
-            {/* <h4>March 12th, 1936 - August 8th, 2020</h4> */}
             <h3>In Memory of Melville Charles Stevens</h3>
             <p>
               Mel Stevens, founder and long-time director of Teen Ranch, has
@@ -193,8 +197,12 @@ export default function Index({ data }) {
             </Link>
           </div>
         </div>
-      </Container>
+      </Container> */}
 
+      {/* <SummerCampRegistrationNotice>
+        <br />
+        <Button to="/summer-camp/">Learn more about summer camp</Button>
+      </SummerCampRegistrationNotice> */}
       <Container type="body">
         {/* <Program
 					src={ data.christmasDayCamp.childImageSharp.fluid }

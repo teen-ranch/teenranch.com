@@ -194,7 +194,7 @@ export default function Programs({ data }) {
             {/* <p style={{ fontSize: "1.2rem" }}>
               Application video must be approved to qualify for this program.
             </p> */}
-            <p style={{ color: "red" }}>Applications closed for 2022</p>
+            {/* <p style={{ color: "red" }}>Applications closed for 2022</p> */}
           </Program>
           <Program
             small

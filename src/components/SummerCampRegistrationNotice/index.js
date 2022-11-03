@@ -1,7 +1,7 @@
 import React from "react"
 import Container from "components/Container"
 
-export function SummerCampRegistrationNotice() {
+export function SummerCampRegistrationNotice({ children }) {
   return (
     <Container type="body">
       <div
@@ -15,6 +15,7 @@ export function SummerCampRegistrationNotice() {
         }}
       >
         Summer Camp Registration opens January 16, 2023
+        {children && <div>{children}</div>}
       </div>
     </Container>
   )
