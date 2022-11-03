@@ -18,7 +18,7 @@ import Program, { ProgramContainer } from "components/Program"
 import { Link } from "react-scroll"
 import { PriceContainer, Price, PriceAddon } from "components/Price"
 import Quote from "components/Quote"
-import CampSchedule from "components/CampSchedule"
+import CampSchedule, { PreBuiltCampSchedule } from "components/CampSchedule"
 import Grid from "components/Grid"
 // import Sponsor from 'components/Sponsor'
 import Img from "gatsby-image"
@@ -211,94 +211,7 @@ export default function Programs({ data }) {
 
       <Container type="body">
         <h1>Camp dates</h1>
-        <h3>Legend: OC = Overnight camps</h3>
-        <CampSchedule
-          dates={[
-            "July 4-8",
-            "July 11-15",
-            "July 18-22",
-            "July 25-29",
-            "Aug. 1-5",
-            "Aug. 8-12",
-            "Aug. 15-19",
-            "Aug. 22-26",
-            <>Aug.&nbsp;29 - Sep.&nbsp;2</>,
-          ]}
-          programs={[
-            {
-              name: "Hockey camp",
-              dates: ["", "8-14", "OC", "OC", "", "OC", "OC", "8-14", "8-14"],
-            },
-            {
-              name: "Elite hockey camp",
-              dates: [
-                "",
-                "",
-                "OC",
-                "OC",
-                "",
-                "OC",
-                "OC",
-                <>
-                  8-14
-                  <br />
-                  AA/AAA
-                </>,
-                "",
-              ],
-            },
-            {
-              name: "Girl's hockey camp",
-              dates: ["", "8-14", "OC", "OC", "", "OC", "OC", "", ""],
-            },
-            {
-              name: "Summer drop-in ice time",
-              dates: ["", "", "OC", "OC", "", "OC", "OC", "", "8-14"],
-            },
-            {
-              name: "Western riding camp",
-              dates: [
-                "8-14",
-                "8-14",
-                "OC",
-                "OC",
-                "",
-                "OC",
-                "OC",
-                "8-14",
-                "8-14",
-              ],
-            },
-            {
-              name: "English riding camp",
-              dates: [
-                "8-14",
-                "8-14",
-                "OC",
-                "OC",
-                "",
-                "OC",
-                "OC",
-                "8-14",
-                "8-14",
-              ],
-            },
-            {
-              name: "WHAM camp",
-              dates: [
-                "8-14",
-                "8-14",
-                "OC",
-                "OC",
-                "",
-                "OC",
-                "OC",
-                "8-14",
-                "8-14",
-              ],
-            },
-          ]}
-        />
+        <PreBuiltCampSchedule type="UDC" />
 
         <p>
           For goalie camp, rodeo camp, adventure camp and, intensive equestrian

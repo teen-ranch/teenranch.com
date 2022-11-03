@@ -13,7 +13,7 @@ import Program, { ProgramContainer } from "components/Program"
 import { Link } from "react-scroll"
 import { PriceContainer, Price, PriceAddon } from "components/Price"
 import Quote from "components/Quote"
-import CampSchedule from "components/CampSchedule"
+import CampSchedule, { PreBuiltCampSchedule } from "components/CampSchedule"
 import Grid from "components/Grid"
 // import Sponsor from 'components/Sponsor'
 import Img from "gatsby-image"
@@ -205,36 +205,7 @@ export default function Programs({ data }) {
 
       <Container type="body">
         <h1>Camp dates</h1>
-        <h3>Legend: UDC = Ultimate day camps</h3>
-        <CampSchedule
-          dates={[
-            "July 3-8",
-            "July 10-15",
-            "July 17-22",
-            "July 24-29",
-            <>July&nbsp;31 - Aug.&nbsp;5</>,
-            "Aug. 7-12",
-            "Aug. 14-19",
-            "Aug. 21-26",
-            <>Aug.&nbsp;28 - Sep.&nbsp;2</>,
-          ]}
-          programs={[
-            {
-              name: "WHAM camp",
-              dates: [
-                "UDC",
-                "UDC",
-                "8-14",
-                "8-14",
-                "",
-                "8-14",
-                "8-14",
-                "UDC",
-                "UDC",
-              ],
-            },
-          ]}
-        />
+        <PreBuiltCampSchedule type="ONC" sections={["wham"]} />
 
         <CTAButton to="/summer-camp/overnight-camp/">Register now</CTAButton>
       </Container>

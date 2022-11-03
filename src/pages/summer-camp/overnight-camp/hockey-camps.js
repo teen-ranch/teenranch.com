@@ -13,7 +13,9 @@ import Program, { ProgramContainer } from "components/Program"
 import { Link } from "react-scroll"
 import { PriceContainer, Price, PriceAddon } from "components/Price"
 import Quote from "../../../components/Quote"
-import CampSchedule from "../../../components/CampSchedule"
+import CampSchedule, {
+  PreBuiltCampSchedule,
+} from "../../../components/CampSchedule"
 import Grid from "components/Grid"
 // import Sponsor from 'components/Sponsor'
 import Img from "gatsby-image"
@@ -355,73 +357,7 @@ export default function Programs({ data }) {
       <Container type="body">
         <h1>Camp dates</h1>
 
-        <CampSchedule
-          dates={[
-            "July 3-8",
-            "July 10-15",
-            "July 17-22",
-            "July 24-29",
-            <>July&nbsp;31 - Aug.&nbsp;5</>,
-            "Aug. 7-12",
-            "Aug. 14-19",
-            "Aug. 21-26",
-            <>Aug.&nbsp;28 - Sep.&nbsp;2</>,
-          ]}
-          programs={[
-            {
-              name: "Hockey camp",
-              dates: [
-                "UDC",
-                "UDC",
-                "8-11",
-                "11-14",
-                "",
-                "",
-                "8-14",
-                "UDC",
-                "UDC",
-              ],
-            },
-            {
-              name: "Elite hockey camp",
-              dates: [
-                "UDC",
-                "UDC",
-                <>
-                  8-11
-                  <br />
-                  AA/AAA
-                </>,
-                "",
-                "",
-                <>
-                  10-14
-                  <br />
-                  AA/AAA
-                </>,
-                <>
-                  13-16
-                  <br />
-                  All levels
-                </>,
-                "UDC",
-                "UDC",
-              ],
-            },
-            {
-              name: "Girl's hockey camp",
-              dates: ["UDC", "UDC", "", "11-14", "", "", "", "UDC", "UDC"],
-            },
-            {
-              name: "Goalie camp",
-              dates: ["UDC", "UDC", "", "", "", "8-14", "", "UDC", "UDC"],
-            },
-            {
-              name: "Summer drop-in ice time",
-              dates: ["UDC", "UDC", "", "", "", "", "", "UDC", "8-14"],
-            },
-          ]}
-        />
+        <PreBuiltCampSchedule type="ONC" sections={["hockey"]} />
       </Container>
 
       <div id="pricing" style={{ position: "absolute", marginTop: "-180px" }} />
