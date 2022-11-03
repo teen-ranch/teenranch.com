@@ -1,8 +1,8 @@
-import React from "react"
+import React, { useState } from "react"
 
 import "./campSchedule.scss"
 
-export default function CampSchedule({ dates, programs }) {
+export default function CampSchedule({ type, weeks, dates, programs }) {
   return (
     <div className="schedule__container">
       <div className="schedule__programs">
@@ -23,8 +23,38 @@ export default function CampSchedule({ dates, programs }) {
         >
           {dates.map((date, i) => {
             return (
-              <div key={i} className="schedule__date">
-                {date}
+              <div
+                key={i}
+                className={`schedule__date ${
+                  weeks && weeks[i] === "UDC"
+                    ? `schedule__date--UDC`
+                    : weeks && weeks[i] === "ONC"
+                    ? "schedule__date--ONC"
+                    : ""
+                } ${
+                  weeks && type && weeks[i] !== type
+                    ? "schedule__date--secondary"
+                    : ""
+                }`}
+              >
+                <div>
+                  <div className="schedule__dateHeading">{date}</div>
+                  {weeks && (
+                    <div
+                      className={`${
+                        weeks && type && weeks[i] !== type
+                          ? "schedule__date--secondary"
+                          : weeks[i] === "UDC"
+                          ? "schedule__dateColor--UDC"
+                          : weeks[i] === "ONC"
+                          ? "schedule__dateColor--ONC"
+                          : ""
+                      }`}
+                    >
+                      {weeks[i]}
+                    </div>
+                  )}
+                </div>
               </div>
             )
           })}
@@ -43,19 +73,32 @@ export default function CampSchedule({ dates, programs }) {
                 <div
                   key={i}
                   className={`schedule__programDate ${
-                    ["UDC", "OC", "NO CAMP"].includes(ages)
+                    ["UDC", "ONC", "NO CAMP", "TBD"].includes(ages)
                       ? "schedule__programDate--otherCamp"
                       : ages
-                      ? ""
+                      ? weeks && type && weeks[i] !== type
+                        ? "schedule__programDate--secondary"
+                        : ""
                       : "schedule__programDate--blank"
+                  } ${
+                    weeks && weeks[i] === "UDC"
+                      ? "schedule__programDate--UDC"
+                      : weeks && weeks[i] === "ONC"
+                      ? "schedule__programDate--ONC"
+                      : ""
                   }`}
+                  // style={{
+                  //   ...(weeks && {
+                  //     color: weeks[i] === "UDC" ? "green" : "blue",
+                  //   }),
+                  // }}
                 >
-                  {["UDC", "OC", "NO CAMP"].includes(ages)
+                  {["UDC", "ONC", "NO CAMP", "TBD"].includes(ages)
                     ? ages
                     : ages
                     ? `Age: `
                     : ""}
-                  {!["UDC", "OC", "NO CAMP"].includes(ages) && ages}
+                  {!["UDC", "ONC", "NO CAMP", "TBD"].includes(ages) && ages}
                 </div>
               ))}
             </div>
@@ -63,5 +106,221 @@ export default function CampSchedule({ dates, programs }) {
         })}
       </div>
     </div>
+  )
+}
+
+export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
+  const [type, setType] = useState(defaultType)
+  return (
+    <>
+      {!sections?.includes("junior") && (
+        <>
+          <h2>
+            Overnight <span style={{ color: "green" }}>(ONC)</span> and Ultimate
+            Day Camps <span style={{ color: "blue" }}>(UDC)</span>
+          </h2>
+
+          <div className="scheduleFilterContainer">
+            Filters:
+            <button
+              type="button"
+              onClick={() => setType("ONC")}
+              className={`scheduleFilterButton scheduleFilterButton-ONC ${
+                type === "ONC" ? "scheduleFilterButton--selected" : ""
+              }`}
+            >
+              Overnight camps
+            </button>
+            <button
+              type="button"
+              onClick={() => setType("UDC")}
+              className={`scheduleFilterButton scheduleFilterButton-UDC ${
+                type === "UDC" ? "scheduleFilterButton--selected" : ""
+              }`}
+            >
+              Ultimate day camps
+            </button>
+            <button
+              type="button"
+              onClick={() => setType(null)}
+              className="scheduleFilterButtonClear"
+            >
+              clear filter
+            </button>
+          </div>
+        </>
+      )}
+      <CampSchedule
+        type={type}
+        weeks={["UDC", "ONC", "ONC", "ONC", "ONC", "ONC", "ONC", "UDC", "UDC"]}
+        dates={[
+          <>July 3-7</>,
+          <>July 9-14</>,
+          <>July 16-21</>,
+          <>July 23-28</>,
+          <>July 30 - Aug. 4</>,
+          <>Aug. 7-11</>,
+          <>Aug. 13-18</>,
+          <>Aug. 21-25</>,
+          <>Aug. 28 - Sep. 1</>,
+        ]}
+        programs={[
+          ...(!sections || sections.includes("hockey")
+            ? [
+                {
+                  name: "Hockey camp",
+                  dates: [
+                    "",
+                    "8-12",
+                    "",
+                    "8-12",
+                    "",
+                    "8-11",
+                    "13-16",
+                    "8-13",
+                    "8-13",
+                  ],
+                },
+                {
+                  name: "Elite hockey camp",
+                  dates: [
+                    "",
+                    "",
+                    "",
+                    "",
+                    <>
+                      11-14
+                      <br />
+                      AA/AAA
+                    </>,
+                    <>
+                      8-11
+                      <br />
+                      AA/AAA
+                    </>,
+                    <>
+                      13-16
+                      <br />
+                      All levels
+                    </>,
+                    <>
+                      8-13
+                      <br />
+                      AA/AAA
+                    </>,
+                    "",
+                  ],
+                },
+                {
+                  name: "Girl's hockey camp",
+                  dates: ["", "", "", "8-13", "", "", "", "", ""],
+                },
+                {
+                  name: "Goalie camp",
+                  dates: ["", "", "", "", "8-14", "", "", "", ""],
+                },
+                {
+                  name: "Summer drop-in ice time",
+                  dates: ["", "", "", "", "", "", "", "", "8-13"],
+                },
+              ]
+            : []),
+          ...(!sections || sections.includes("horses")
+            ? [
+                {
+                  name: "Western riding camp",
+                  dates: [
+                    "8-12",
+                    "8-12",
+                    "10-14",
+                    "8-12",
+                    "10-14",
+                    "8-12",
+                    "13-16",
+                    "8-12",
+                    "8-12",
+                  ],
+                },
+                {
+                  name: "English riding camp",
+                  dates: [
+                    "8-12",
+                    "8-12",
+                    "10-14",
+                    "8-12",
+                    "10-14",
+                    "8-12",
+                    "13-16",
+                    "8-12",
+                    "8-12",
+                  ],
+                },
+                {
+                  name: "Rodeo camp",
+                  dates: ["", "", "", "", "12-16", "", "", "", ""],
+                },
+                {
+                  name: "Intensive equestrian camp",
+                  dates: ["", "", "", "", "", "", "12-16", "", ""],
+                },
+              ]
+            : []),
+          ...(!sections || sections.includes("wham")
+            ? [
+                {
+                  name: "WHAM camp",
+                  dates: [
+                    "8-12",
+                    "8-12",
+                    "10-14",
+                    "8-12",
+                    "10-14",
+                    "8-12",
+                    "13-16",
+                    "8-12",
+                    "8-12",
+                  ],
+                },
+              ]
+            : []),
+          ...(!sections || sections.includes("adventure")
+            ? [
+                {
+                  name: "Adventure camp",
+                  dates: [
+                    "TBD",
+                    "TBD",
+                    "TBD",
+                    "TBD",
+                    "TBD",
+                    "TBD",
+                    "TBD",
+                    "TBD",
+                    "TBD",
+                  ],
+                },
+              ]
+            : []),
+          ...(!sections || sections.includes("junior")
+            ? [
+                {
+                  name: "Junior day camp",
+                  dates: [
+                    "5-7",
+                    "5-7",
+                    "5-7",
+                    "5-7",
+                    "5-7",
+                    "5-7",
+                    "5-7",
+                    "5-7",
+                    "5-7",
+                  ],
+                },
+              ]
+            : []),
+        ]}
+      />
+    </>
   )
 }

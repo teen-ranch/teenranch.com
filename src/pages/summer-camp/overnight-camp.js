@@ -18,7 +18,7 @@ import Program, { ProgramContainer } from "components/Program"
 import { Link } from "react-scroll"
 import { PriceContainer, Price, PriceAddon } from "components/Price"
 import Quote from "components/Quote"
-import CampSchedule from "components/CampSchedule"
+import CampSchedule, { PreBuiltCampSchedule } from "components/CampSchedule"
 import Grid from "components/Grid"
 // import Sponsor from 'components/Sponsor'
 import Img from "gatsby-image"
@@ -254,134 +254,7 @@ export default function Programs({ data }) {
 
       <Container type="body">
         <h1>Camp dates</h1>
-        <h3>Legend: UDC = Ultimate day camps</h3>
-        <CampSchedule
-          dates={[
-            "July 3-8",
-            "July 10-15",
-            "July 17-22",
-            "July 24-29",
-            <>July&nbsp;31 - Aug.&nbsp;5</>,
-            "Aug. 7-12",
-            "Aug. 14-19",
-            "Aug. 21-26",
-            <>Aug.&nbsp;28 - Sep.&nbsp;2</>,
-          ]}
-          programs={[
-            {
-              name: "Hockey camp",
-              dates: [
-                "UDC",
-                "UDC",
-                "8-11",
-                "11-14",
-                "",
-                "",
-                "8-14",
-                "UDC",
-                "UDC",
-              ],
-            },
-            {
-              name: "Elite hockey camp",
-              dates: [
-                "UDC",
-                "UDC",
-                <>
-                  8-11
-                  <br />
-                  AA/AAA
-                </>,
-                "",
-                "",
-                <>
-                  10-14
-                  <br />
-                  AA/AAA
-                </>,
-                <>
-                  13-16
-                  <br />
-                  All levels
-                </>,
-                "UDC",
-                "UDC",
-              ],
-            },
-            {
-              name: "Girl's hockey camp",
-              dates: ["UDC", "UDC", "", "11-14", "", "", "", "UDC", "UDC"],
-            },
-            {
-              name: "Goalie camp",
-              dates: ["UDC", "UDC", "", "", "", "8-14", "", "UDC", "UDC"],
-            },
-            {
-              name: "Summer drop-in ice time",
-              dates: ["UDC", "UDC", "", "", "", "", "", "UDC", "8-14"],
-            },
-            {
-              name: "Western riding camp",
-              dates: [
-                "UDC",
-                "UDC",
-                "8-14",
-                "8-14",
-                "",
-                "8-14",
-                <>
-                  8-12
-                  <br />& 13-16
-                </>,
-                "UDC",
-                "UDC",
-              ],
-            },
-            {
-              name: "English riding camp",
-              dates: [
-                "UDC",
-                "UDC",
-                "8-14",
-                "8-14",
-                "",
-                "8-14",
-                <>
-                  8-12
-                  <br />& 13-16
-                </>,
-                "UDC",
-                "UDC",
-              ],
-            },
-            {
-              name: "Rodeo camp",
-              dates: ["UDC", "UDC", "", "", "", "11+", "", "UDC", "UDC"],
-            },
-            {
-              name: "Intensive equestrian camp",
-              dates: ["UDC", "UDC", "", "", "", "", "13-16", "UDC", "UDC"],
-            },
-            {
-              name: "WHAM camp",
-              dates: [
-                "UDC",
-                "UDC",
-                "8-14",
-                "8-14",
-                "",
-                "8-14",
-                "8-14",
-                "UDC",
-                "UDC",
-              ],
-            },
-            {
-              name: "Adventure camp",
-              dates: ["UDC", "UDC", "", "", "", "", "10-14", "UDC", "UDC"],
-            },
-          ]}
-        />
+        <PreBuiltCampSchedule type="ONC" />
 
         <CTAButton to="/summer-camp/overnight-camp/">Register now</CTAButton>
       </Container>

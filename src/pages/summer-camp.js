@@ -18,7 +18,7 @@ import Program, { ProgramContainer } from "components/Program"
 import { Link } from "react-scroll"
 import { PriceContainer, Price, PriceAddon } from "components/Price"
 import Quote from "../components/Quote"
-import CampSchedule from "../components/CampSchedule"
+import CampSchedule, { PreBuiltCampSchedule } from "../components/CampSchedule"
 import { SummerCampTerms } from "components/Terms"
 // import Sponsor from 'components/Sponsor'
 import Img from "gatsby-image"
@@ -63,6 +63,9 @@ export default function Programs({ data }) {
         </Link>
         <Link to="pricing" activeClass="active" spy={true}>
           Pricing
+        </Link>
+        <Link to="addons" activeClass="active" spy={true}>
+          Add-ons
         </Link>
       </SubNav>
 
@@ -231,270 +234,19 @@ export default function Programs({ data }) {
       </Container>
 
       <Container type="body">
+        <div id="dates" style={{ position: "absolute", marginTop: "-180px" }} />
         <h1>Camp dates</h1>
 
-        <h2>Overnight camp</h2>
+        {/* <h3>Legend: UDC = Ultimate day camps, ONC = Overnight camps</h3> */}
 
-        <div id="dates" style={{ position: "absolute", marginTop: "-180px" }} />
-
-        <h3>Legend: UDC = Ultimate day camps</h3>
-        <CampSchedule
-          dates={[
-            "July 3-8",
-            "July 10-15",
-            "July 17-22",
-            "July 24-29",
-            <>July&nbsp;31 - Aug.&nbsp;5</>,
-            "Aug. 7-12",
-            "Aug. 14-19",
-            "Aug. 21-26",
-            <>Aug.&nbsp;28 - Sep.&nbsp;2</>,
-          ]}
-          programs={[
-            {
-              name: "Hockey camp",
-              dates: [
-                "UDC",
-                "UDC",
-                "8-11",
-                "11-14",
-                "",
-                "",
-                "8-14",
-                "UDC",
-                "UDC",
-              ],
-            },
-            {
-              name: "Elite hockey camp",
-              dates: [
-                "UDC",
-                "UDC",
-                <>
-                  8-11
-                  <br />
-                  AA/AAA
-                </>,
-                "",
-                "",
-                <>
-                  10-14
-                  <br />
-                  AA/AAA
-                </>,
-                <>
-                  13-16
-                  <br />
-                  All levels
-                </>,
-                "UDC",
-                "UDC",
-              ],
-            },
-            {
-              name: "Girl's hockey camp",
-              dates: ["UDC", "UDC", "", "11-14", "", "", "", "UDC", "UDC"],
-            },
-            {
-              name: "Goalie camp",
-              dates: ["UDC", "UDC", "", "", "", "8-14", "", "UDC", "UDC"],
-            },
-            {
-              name: "Summer drop-in ice time",
-              dates: ["UDC", "UDC", "", "", "", "", "", "UDC", "8-14"],
-            },
-            {
-              name: "Western riding camp",
-              dates: [
-                "UDC",
-                "UDC",
-                "8-14",
-                "8-14",
-                "",
-                "8-14",
-                <>
-                  8-12
-                  <br />& 13-16
-                </>,
-                "UDC",
-                "UDC",
-              ],
-            },
-            {
-              name: "English riding camp",
-              dates: [
-                "UDC",
-                "UDC",
-                "8-14",
-                "8-14",
-                "",
-                "8-14",
-                <>
-                  8-12
-                  <br />& 13-16
-                </>,
-                "UDC",
-                "UDC",
-              ],
-            },
-            {
-              name: "Rodeo camp",
-              dates: ["UDC", "UDC", "", "", "", "11+", "", "UDC", "UDC"],
-            },
-            {
-              name: "Intensive equestrian camp",
-              dates: ["UDC", "UDC", "", "", "", "", "13-16", "UDC", "UDC"],
-            },
-            {
-              name: "WHAM camp",
-              dates: [
-                "UDC",
-                "UDC",
-                "8-14",
-                "8-14",
-                "",
-                "8-14",
-                "8-14",
-                "UDC",
-                "UDC",
-              ],
-            },
-            {
-              name: "Adventure camp",
-              dates: ["UDC", "UDC", "", "", "", "", "10-14", "UDC", "UDC"],
-            },
-          ]}
-        />
+        <PreBuiltCampSchedule />
 
         <CTAButton to="/summer-camp/overnight-camp/">
           Learn more about overnight summer camp
         </CTAButton>
-
-        <h2>Ultimate Day Camp</h2>
-        <h3>Legend: OC = Overnight camps</h3>
-        <CampSchedule
-          dates={[
-            "July 4-8",
-            "July 11-15",
-            "July 18-22",
-            "July 25-29",
-            "Aug. 1-5",
-            "Aug. 8-12",
-            "Aug. 15-19",
-            "Aug. 22-26",
-            <>Aug.&nbsp;29 - Sep.&nbsp;2</>,
-          ]}
-          programs={[
-            {
-              name: "Hockey camp",
-              dates: ["", "8-14", "OC", "OC", "", "OC", "OC", "8-14", "8-14"],
-            },
-            {
-              name: "Elite hockey camp",
-              dates: [
-                "",
-                "",
-                "OC",
-                "OC",
-                "",
-                "OC",
-                "OC",
-                <>
-                  8-14
-                  <br />
-                  AA/AAA
-                </>,
-                "",
-              ],
-            },
-            {
-              name: "Girl's hockey camp",
-              dates: ["", "8-14", "OC", "OC", "", "OC", "OC", "", ""],
-            },
-            {
-              name: "Summer drop-in ice time",
-              dates: ["", "", "OC", "OC", "", "OC", "OC", "", "8-14"],
-            },
-            {
-              name: "Western riding camp",
-              dates: [
-                "8-14",
-                "8-14",
-                "OC",
-                "OC",
-                "",
-                "OC",
-                "OC",
-                "8-14",
-                "8-14",
-              ],
-            },
-            {
-              name: "English riding camp",
-              dates: [
-                "8-14",
-                "8-14",
-                "OC",
-                "OC",
-                "",
-                "OC",
-                "OC",
-                "8-14",
-                "8-14",
-              ],
-            },
-            {
-              name: "WHAM camp",
-              dates: [
-                "8-14",
-                "8-14",
-                "OC",
-                "OC",
-                "",
-                "OC",
-                "OC",
-                "8-14",
-                "8-14",
-              ],
-            },
-          ]}
-        />
-
         <CTAButton to="/summer-camp/ultimate-day-camp/">
           Learn more about ultimate day camp
         </CTAButton>
-
-        <h2>Junior Day Camp</h2>
-        <CampSchedule
-          dates={[
-            "July 4-8",
-            "July 11-15",
-            "July 18-22",
-            "July 25-29",
-            "Aug. 1-5",
-            "Aug. 8-12",
-            "Aug. 15-19",
-            "Aug. 22-26",
-            <>Aug.&nbsp;29 - Sep.&nbsp;2</>,
-          ]}
-          programs={[
-            {
-              name: "Junior day camp",
-              dates: [
-                "5-7",
-                "5-7",
-                "5-7",
-                "5-7",
-                "",
-                "5-7",
-                "5-7",
-                "5-7",
-                "5-7",
-              ],
-            },
-          ]}
-        />
-
         <CTAButton to="/summer-camp/junior-day-camp/">
           Learn more about junior day camp
         </CTAButton>
@@ -537,7 +289,7 @@ export default function Programs({ data }) {
             }
             subTitle={`Games, crafts, swimming, pony rides, story time and more! A week full of friendship and fun!`}
             who="Kids age 5-7"
-            price={495}
+            price={525}
             term="week"
             includes={[
               "Games",
@@ -568,7 +320,7 @@ export default function Programs({ data }) {
             }
             subTitle="The full camp experience with your sport of choice, including daily campfires featuring engaging, real-life topics shared from a biblical perspective."
             who="Kids and teens 8+"
-            price={850}
+            price={895}
             startingAt
             term="week"
             includes={[
@@ -599,7 +351,7 @@ export default function Programs({ data }) {
             }
             subTitle="Campers experience all the fun and adventure of summer camp packed into five awesome days & nights as they enjoy the great outdoors, get active and build friendships that can last a lifetime."
             who="Kids and teens 8+"
-            price={1250}
+            price={1295}
             startingAt
             term="week"
             includes={[
@@ -625,6 +377,10 @@ export default function Programs({ data }) {
       </Container>
 
       <Container type="body">
+        <div
+          id="addons"
+          style={{ position: "absolute", marginTop: "-180px" }}
+        />
         <h2>Additional summer programs:</h2>
         <PriceAddon
           title="Summer drop-in ice time"
@@ -635,12 +391,11 @@ export default function Programs({ data }) {
               each morning, Monday - Friday.
             </>
           }
-          price={200}
+          price={300}
           term="week"
           to="https://register.trmanager.com"
         />
       </Container>
-
       <Container type="body">
         <h2>Ultimate & Day camp add-ons:</h2>
         <PriceAddon
