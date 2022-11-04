@@ -1,186 +1,201 @@
-import React from 'react'
-import Container from 'components/Container'
-import Heading from 'components/Heading'
+import React from "react"
+import Container from "components/Container"
+import Heading from "components/Heading"
 // import Button from 'components/Button'
-import { graphql } from 'gatsby'
+import { graphql } from "gatsby"
 
 // import SubNav from 'components/SubNav'
-import { CTAButton } from 'components/Button'
+import { CTAButton } from "components/Button"
 // import Program, { ProgramContainer } from 'components/Program'
 
 // import Grid from 'components/Grid'
 // import Coach from 'components/Coach'
 // import { Link } from 'react-scroll'
-import { PriceContainer, Price } from 'components/Price'
+import { PriceContainer, Price } from "components/Price"
+import {
+  dayCampBulletsClassic,
+  dayCampBulletsHockey,
+} from "components/defaults"
+import { FormatTime, Time } from "components/Time"
 // import Grid from 'components/Grid'
 // import Sponsor from 'components/Sponsor'
 // import Img from 'gatsby-image'
 
 const frontmatter = {
-    title: 'Christmas day Camp',
-    path: '/day-camp/christmas-day-camp/'
+  title: "Christmas day camp",
+  path: "/day-camp/christmas-day-camp/",
 }
 
 const pageData = {
-    subTitle: `The excitement of the season is multiplied with Teen Ranch's Christmas Winter Break Day Camps!`,
-    keywords: 'christmas day camp, christmas day camp, day camp orangeville, christmas day camp orangeville'
+  subTitle: `The excitement of the season is multiplied with Teen Ranch's Christmas Winter Break Day Camps!`,
+  keywords:
+    "christmas day camp, christmas day camp, day camp orangeville, christmas day camp orangeville",
 }
 
 export default function Programs({ data }) {
-    
-    const { file } = data
+  const { file } = data
 
-	return (
-        <>
+  return (
+    <>
+      <Heading
+        src={file.childImageSharp.fluid}
+        // src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/hockey14.jpg'
+        alt="Hockey player stopping with puck"
+        title={frontmatter.title}
+        subtitle={pageData.subTitle}
+        metaTitle={pageData.metaTitle || frontmatter.title}
+        metaDescription={pageData.metaDescription || pageData.subTitle}
+        keywords={pageData.keywords}
+      />
 
-            <Heading
-                src={ file.childImageSharp.fluid }
-                // src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/hockey14.jpg'
-                alt='Hockey player stopping with puck'
-                title={ frontmatter.title }
-                subtitle={ pageData.subTitle }
-                metaTitle={ pageData.metaTitle || frontmatter.title }
-                metaDescription={ pageData.metaDescription || pageData.subTitle }
-                keywords={ pageData.keywords }
-			/>
-
-            {/* <SubNav>
+      {/* <SubNav>
                 <Link to='top' activeClass='active' spy={true}>Overview</Link>
                 <Link to='dates' activeClass='active' spy={true}>Dates</Link>
                 <Link to='pricing' activeClass='active' spy={true}>Pricing</Link>
             </SubNav> */}
 
-            <div id='top' style={{ position: 'absolute', marginTop: '-120px', }}/>
+      <div id="top" style={{ position: "absolute", marginTop: "-120px" }} />
 
-            <Container type='body'>
+      <Container type="body">
+        <h1>Christmas day camp</h1>
 
-                <h1>Christmas day camp</h1> 
+        <p>
+          The excitement of the season is multiplied with Teen Ranch Christmas
+          Winter Break Day Camps! Our popular demand day camps offer outdoor fun
+          and activity as well as indoor festivities to celebrate winter and the
+          magic of the Christmas season! Treat your kids to a memorable day or
+          bundle package all four days at a daily savings!
+        </p>
+      </Container>
 
-                <p>The excitement of the season is multiplied with Teen Ranch's Christmas Winter Break Day Camps! Back this year by popular demand our day camps offer outdoor fun and activity as well as indoor festivities to celebrate the winter season and the magic of Christmas! Treat your kids to a memorable day or bundle package all four days at a daily savings!</p>    
+      <Container type="body">
+        <h1>Available dates</h1>
 
-            </Container>
+        <ul>
+          <li>January 3-6, 2023</li>
+        </ul>
 
-            <Container type='body'>
+        <p>
+          Drop off between <Time>0830</Time> - <Time>0850</Time> and pick up
+          between <Time>1630</Time> - <Time>1645</Time>
+        </p>
+      </Container>
 
-                <h1>Available dates</h1>         
+      <div id="pricing" style={{ position: "absolute", marginTop: "-180px" }} />
 
-                <ul>
-                    <li>December 20-23, 2021</li>
-                </ul>
-
-                <p>Drop off between 8:30-8:50 am and pick up between 4:30- 5:00 pm</p>
-
-            </Container>
-
-            <div id='pricing' style={{ position: 'absolute', marginTop: '-180px', }}/>
-
-            {/* <Container>
+      {/* <Container>
                 <h1>Pricing</h1>
             </Container> */}
 
-            <Container type='body'>
-                <h1>Pricing</h1>
-                 
-                <PriceContainer>
+      <Container type="body">
+        <h1>Pricing</h1>
 
-                    <Price 
-                        title={<>Day camp<br/>(Classic)</>}
-                        subTitle={`Individual day`} 
-                        who='Kids ages 5-12'
-                        price={75} 
-                        term='day'
-                        includes={[
-                            'Outdoor discovery, games and sports*',
-                            'Indoor ice skating with Christmas music',
-                            'Pony rides*',
-                            'Christmas and holiday activities and crafts',
-                            'Lunch & two snacks',
-                        ]}
-                    >
-                        <CTAButton href="https://register.trmanager.com">Register now</CTAButton>
-                    </Price>
+        <PriceContainer>
+          <Price
+            title={
+              <>
+                Day camp
+                <br />
+                (Classic)
+              </>
+            }
+            subTitle={`Individual day`}
+            who="Kids ages 5-12"
+            price={89}
+            term="day"
+            includes={dayCampBulletsClassic}
+          >
+            <CTAButton href="https://register.trmanager.com">
+              Register now
+            </CTAButton>
+          </Price>
 
-                    <Price 
-                        title={<>Day camp<br/>(Classic)</>}
-                        subTitle={`Bundle`} 
-                        who='Kids ages 5-12'
-                        price={280} 
-                        term='4 days'
-                        includes={[
-                            'Outdoor discovery, games and sports*',
-                            'Indoor ice skating with Christmas music',
-                            'Pony rides*',
-                            'Christmas and holiday activities and crafts',
-                            'Lunch & two snacks',
-                        ]}
-                    >
-                        <CTAButton href="https://register.trmanager.com">Register now</CTAButton>
-                    </Price>
+          <Price
+            title={
+              <>
+                Day camp
+                <br />
+                (Classic)
+              </>
+            }
+            subTitle={
+              <>
+                Bundle (<strong>SAVE $5/day</strong>)
+              </>
+            }
+            who="Kids ages 5-12"
+            price={336}
+            term="4 days"
+            includes={dayCampBulletsClassic}
+          >
+            <CTAButton href="https://register.trmanager.com">
+              Register now
+            </CTAButton>
+          </Price>
 
-                    <Price 
-                        title={<>Day camp<br/>(Hockey)</>}
-                        subTitle={`Individual day`} 
-                        who='Kids ages 5-12'
-                        price={95} 
-                        term='day'
-                        includes={[
-                            'Hockey skills, skating and fun!',
-                            'Outdoor discovery, games and sports*',
-                            'Indoor ice skating with Christmas music',
-                            'Pony rides*',
-                            'Christmas and holiday activities and crafts',
-                            'Lunch & two snacks',
-                        ]}
-                    >
-                        <CTAButton href="https://register.trmanager.com">Register now</CTAButton>
-                    </Price>
+          <Price
+            title={
+              <>
+                Day camp
+                <br />
+                (Hockey)
+              </>
+            }
+            subTitle={`Individual day`}
+            who="Kids ages 5-12"
+            price={125}
+            term="day"
+            includes={dayCampBulletsHockey}
+          >
+            <CTAButton href="https://register.trmanager.com">
+              Register now
+            </CTAButton>
+          </Price>
 
-                    <Price 
-                        title={<>Day camp<br/>(Hockey)</>}
-                        subTitle={`Bundle`} 
-                        who='Kids ages 5-12'
-                        price={360} 
-                        term='4 days'
-                        includes={[
-                            'Hockey skills, skating and fun!',
-                            'Outdoor discovery, games and sports*',
-                            'Indoor ice skating with Christmas music',
-                            'Pony rides*',
-                            'Christmas and holiday activities and crafts',
-                            'Lunch & two snacks',
-                        ]}
-                    >
-                        <CTAButton href="https://register.trmanager.com">Register now</CTAButton>
-                    </Price>
-                    
-                </PriceContainer>
+          <Price
+            title={
+              <>
+                Day camp
+                <br />
+                (Hockey)
+              </>
+            }
+            subTitle={
+              <>
+                Bundle (<strong>SAVE $10/day</strong>)
+              </>
+            }
+            who="Kids ages 5-12"
+            price={460}
+            term="4 days"
+            includes={dayCampBulletsHockey}
+          >
+            <CTAButton href="https://register.trmanager.com">
+              Register now
+            </CTAButton>
+          </Price>
+        </PriceContainer>
+      </Container>
 
-            </Container>
-
-            <Container>
-                <p>* Weather permitting</p>
-            </Container>
-
-        </>
-
-    )
+      <Container>
+        <p>* Weather permitting</p>
+      </Container>
+    </>
+  )
 }
-
-
 
 // const NavLink = ({ children, ...props }) => (
 //     <Link {...props} activeClassName='active'>{ children }</Link>
 // )
 
 export const query = graphql`
-    query {
-        file(relativePath: { eq: "events/winterTobogganing.jpg" }) {
-            childImageSharp {
-				fluid(maxWidth: 1920 quality: 64) {
-					...GatsbyImageSharpFluid_withWebp
-				}
-			}
+  query {
+    file(relativePath: { eq: "events/winterTobogganing.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1920, quality: 64) {
+          ...GatsbyImageSharpFluid_withWebp
         }
-
+      }
     }
+  }
 `

@@ -29,7 +29,20 @@ export default function Default() {
           </p>
 
           <h3>Ages 7-13</h3>
-          <div className="staffTable">
+
+          <div
+            style={{
+              padding: "4rem",
+              background: "purple",
+              borderRadius: "4px",
+              color: "#fff",
+              textAlign: "center",
+              fontSize: "2rem",
+            }}
+          >
+            Returning Summer 2023
+          </div>
+          {/* <div className="staffTable">
             <table>
               <thead>
                 <tr>
@@ -76,9 +89,9 @@ export default function Default() {
                 </tr>
               </tbody>
             </table>
-          </div>
+          </div> */}
 
-          <Button href="https://register.trmanager.com">Book now</Button>
+          {/* <Button href="https://register.trmanager.com">Book now</Button> */}
         </Program>
       </Container>
     </>

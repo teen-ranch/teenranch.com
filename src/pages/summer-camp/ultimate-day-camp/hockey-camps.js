@@ -77,24 +77,6 @@ export default function Programs({ data }) {
       <div id="top" style={{ position: "absolute", marginTop: "-120px" }} />
 
       <Container type="body">
-        <div
-          style={{
-            padding: "4rem",
-            background: "#0074F7",
-            borderRadius: "4px",
-            color: "#fff",
-          }}
-        >
-          <h2 style={{ margin: "0 0 2rem 0" }}>
-            Balance payments, info pack, and snackbar:
-          </h2>{" "}
-          14 days before your camp check-in date we'll send you an email with:
-          all the details you need for camp, a link to pay your remaining
-          balance, and set up your snackbar account(s).
-        </div>
-      </Container>
-
-      <Container type="body">
         <h1>Achieve your goals this season</h1>
 
         <p>
@@ -119,11 +101,11 @@ export default function Programs({ data }) {
 
       <Container type="body">
         <h2>Info pack</h2>
-        <div>
+        {/* <div>
           <PdfButton href="https://teenranch.nyc3.cdn.digitaloceanspaces.com/website/pdf/udcJdcCampInformation_2022.pdf">
             Ultimate day camp / junior day camp info pack
           </PdfButton>
-        </div>
+        </div> */}
         <p>
           Families will be notified by email two weeks before the camp start
           date for payment reminders and camp information.
@@ -134,7 +116,7 @@ export default function Programs({ data }) {
         <h1>Who it's for</h1>
         <p>
           Hockey camp is perfect for players and goalies of all ability levels.
-          We offer specialized programs for girls, rep-players and goalies.
+          We offer specialized programs for house league to rep-players.
         </p>
 
         <ProgramContainer>
@@ -144,17 +126,19 @@ export default function Programs({ data }) {
             who="Players & goalies (co-ed)"
             src={hockeyCamp.childImageSharp.fluid}
           >
-            Skills & skating development for players and goalies of all ability
-            levels, with a focus on enjoying the game.
+            Skills & skating development and full-ice scrimmages for players and
+            goalies of all ability levels, with a focus on enjoying the game.
           </Program>
           <Program
             small
-            name={`Girl's hockey day camp`}
+            name={`Girl's hockey camp`}
             who="Players & goalies (female)"
             src={girlsHockeyCamp.childImageSharp.fluid}
           >
-            A no-pressure skills & skating development program with the same
-            high-quality instruction just for girls.
+            For girl's specific camps,{" "}
+            <ReachLink to="/summer-camp/overnight-camp/hockey-camps/">
+              see our overnight camps
+            </ReachLink>
           </Program>
           <Program
             small
@@ -352,46 +336,25 @@ export default function Programs({ data }) {
             title="Hockey day camp"
             subTitle="Skills & skating development for players and goalies of all ability levels, with a focus on enjoying the game."
             who="Players and goalies (co-ed)"
-            price={850}
+            price={895}
             term="week"
             includes={[
               "On-site, olympic-size ice rink",
               "Minimum 7.5 hours on-ice per week",
               "Skills development",
               "Skating development",
-              "Fun-based off-ice program",
-              "Lunch & morning snack",
-              "Snackbar open in the afternoons",
+              "Off-ice program",
               "Free jersey",
-              "All camp activities",
+              "Breakfast, lunch & dinner",
+              "Snackbar open morning and afternoon",
+              "Camp activities",
             ]}
           >
             <CTAButton href="https://register.trmanager.com">
               Register now
             </CTAButton>
           </Price>
-          <Price
-            title="Girl's hockey day camp"
-            subTitle="A no-pressure skills & skating development program with the same high-quality instruction just for girls."
-            who="Players and goalies (female)"
-            price={850}
-            term="week"
-            includes={[
-              "On-site, olympic-size ice rink",
-              "Minimum 7.5 hours on-ice per week",
-              "Skills development",
-              "Skating development",
-              "Fun-based off-ice program",
-              "Lunch & morning snack",
-              "Snackbar open in the afternoons",
-              "Free jersey",
-              "All camp activities",
-            ]}
-          >
-            <CTAButton href="https://register.trmanager.com">
-              Register now
-            </CTAButton>
-          </Price>
+
           <Price
             title={
               <>
@@ -402,7 +365,7 @@ export default function Programs({ data }) {
             }
             subTitle="For high-performance players focused on advanced skills in skating, puck handling, shooting, and passing."
             who="Rep-level players (co-ed)"
-            price={1050}
+            price={1100}
             term="week"
             primary
             includes={[
@@ -461,7 +424,7 @@ export default function Programs({ data }) {
               each morning, Monday - Friday.
             </>
           }
-          price={200}
+          price={300}
           term="week"
           to="https://register.trmanager.com"
         />
@@ -469,7 +432,7 @@ export default function Programs({ data }) {
 
       <Container type="body">
         <h2>Hockey camp add-ons:</h2>
-        <PriceAddon
+        {/* <PriceAddon
           title="Extended care"
           subTitle="6:00pm late pick-up"
           description={
@@ -480,22 +443,10 @@ export default function Programs({ data }) {
           }
           price={75}
           term="week"
-        />
+        /> */}
         <PriceAddon
           title="Semi-private lessons"
-          subTitle="4:1 instructor ratio"
-          description={
-            <>
-              Get an edge up on the competition with focused and personalized
-              instruction.
-            </>
-          }
-          price={100}
-          term="hour"
-        />
-        <PriceAddon
-          title="Private lessons"
-          subTitle="1:1 instructor ratio"
+          subTitle="Max 4:1 instructor ratio"
           description={
             <>
               Get an edge up on the competition with focused and personalized
@@ -505,9 +456,28 @@ export default function Programs({ data }) {
               </p>
             </>
           }
-          price={300}
+          price={100}
           term="hour"
+          to="mailto:icecorral@teenranch.com?subject=Semi-private lessons"
         />
+      </Container>
+
+      <Container type="body">
+        <div
+          style={{
+            padding: "4rem",
+            background: "#0074F7",
+            borderRadius: "4px",
+            color: "#fff",
+          }}
+        >
+          <h2 style={{ margin: "0 0 2rem 0" }}>
+            Balance payments, info pack, and snackbar:
+          </h2>{" "}
+          14 days before your camp check-in date we'll send you an email with:
+          all the details you need for camp, a link to pay your remaining
+          balance, and set up your snackbar account(s).
+        </div>
       </Container>
     </>
   )

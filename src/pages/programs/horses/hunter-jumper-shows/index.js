@@ -64,10 +64,10 @@ export default function Default({ data }) {
       <div id="top" style={{ position: "absolute", marginTop: "-120px" }} />
 
       <Container type="body">
-        <h1>2022 Show Series</h1>
+        <h1>2023 Show Series</h1>
         <Program
           src={main.childImageSharp.fluid}
-          name="2022 Hunter/Jumper Shows"
+          name="2023 Hunter/Jumper Shows"
         >
           <div className="staffTable">
             <table>
@@ -75,84 +75,70 @@ export default function Default({ data }) {
                 <tr>
                   <th>Show date</th>
                   <th>Entries due</th>
-                  <th>Entries</th>
+                  {/* <th>Entries</th> */}
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>June 5, 2022</td>
-                  <td>May 30, 2022</td>
-                  <td>
-                    {/* <Button target="_blank" href="https://forms.zohopublic.com/teenranch1/form/HorseShowJune62021/formperma/nRrU9I5hIyQphoKEm5zZ8pZ9LZdhiCBq3RfVKJ9Qh-o?referrername=teenranch.com">June 6th entry form</Button>     */}
-
+                  <td>June 11, 2023</td>
+                  <td>June 5, 2023</td>
+                  {/* <td>
+                                        
                     <Button
                       target="_blank"
                       href="https://forms.zohopublic.com/teenranch1/form/HorseShowJune52022/formperma/ryr6HpYngAd_WuiqQ6d8b4Tk4GdKNEKsTAFJl26UGUw?referrername=teenranch.com"
                     >
                       June 5th entry form
                     </Button>
-                  </td>
+                  </td> */}
                 </tr>
                 <tr>
-                  <td>June 26, 2022</td>
-                  <td>June 20, 2022</td>
-                  <td>
-                    {/* <Button target="_blank" href="https://forms.zohopublic.com/teenranch1/form/HorseShowJune202021/formperma/UCncvQ2Mok0K75neDv4i3iS1G1XMqrLJxkDNatxGfUo?referrername=teenranch.com">June 20th entry form</Button> */}
+                  <td>June 25, 2023</td>
+                  <td>June 19, 2023</td>
+                  {/* <td>
                     <Button
                       target="_blank"
                       href="https://forms.zohopublic.com/teenranch1/form/HorseShowJune262022/formperma/_o5E_4MQPaEtARDMe2Swc4ep3xHo_eMJ0VacNXSWiKQ?referrername=teenranch.com"
                     >
                       June 26th entry form
                     </Button>
-                  </td>
+                  </td> */}
                 </tr>
                 <tr>
-                  <td>July 10, 2022</td>
-                  <td>July 4, 2022</td>
-                  <td>
+                  <td>July 9, 2023</td>
+                  <td>July 3, 2023</td>
+                  {/* <td>
                     <Button
                       target="_blank"
                       href="https://forms.zohopublic.com/teenranch1/form/HorseShowJuly102022/formperma/JqvcxNiAFSBAzq8Iprj4bgRzMCna3xODEMyEcVHnbm8?referrername=teenranch.com"
                     >
                       July 10th entry form
                     </Button>
-                  </td>
+                  </td> */}
                 </tr>
                 <tr>
-                  <td>July 24, 2022</td>
-                  <td>July 18, 2022</td>
-                  <td>
+                  <td>July 23, 2023</td>
+                  <td>July 17, 2023</td>
+                  {/* <td>
                     <Button
                       target="_blank"
                       href="https://forms.zohopublic.com/teenranch1/form/HorseShowJuly242022/formperma/SzVcZyYCfNyd_Vyk81MqJku0UVGl0NsJEpvlap5jIJM?referrername=teenranch.com"
                     >
                       July 24th entry form
                     </Button>
-                  </td>
+                  </td> */}
                 </tr>
                 <tr>
-                  <td>August 7, 2022</td>
-                  <td>August 1, 2022</td>
-                  <td>
+                  <td>August 20, 2023</td>
+                  <td>August 14, 2023</td>
+                  {/* <td>
                     <Button
                       target="_blank"
                       href="https://forms.zohopublic.com/teenranch1/form/HorseShowAugust72022/formperma/EM5BMnmvGclT71rjp76HZ7bgx0wJ8zCiLPMVFzSKL_o?referrername=teenranch.com"
                     >
                       August 7th entry form
                     </Button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>August 21, 2022</td>
-                  <td>August 15, 2022</td>
-                  <td>
-                    <Button
-                      target="_blank"
-                      href="https://forms.zohopublic.com/teenranch1/form/HorseShowAugust212022/formperma/xInGPFl-L-ZvuVXUjbWiUAXkmUPnV1cNW67bcKqkDI4?referrername=teenranch.com"
-                    >
-                      August 21th entry form
-                    </Button>
-                  </td>
+                  </td> */}
                 </tr>
               </tbody>
             </table>
@@ -173,29 +159,17 @@ export default function Default({ data }) {
             if you are interested.
           </p> */}
         </Program>
-        <h2>Links</h2>
+        {/* <h2>Links</h2>
         <Card style={{ padding: "2rem" }}>
           <div className="showButtons">
-            {/* <Button
-              target="_blank"
-              href="https://docs.google.com/forms/d/e/1FAIpQLSc4dEIQ-wOrqet3p_YUJBGa4G5d3XvZIYL_Czq-vmqARX8spg/viewform"
-            >
-              COVID-19 screening form
-            </Button> */}
             <Button target="_blank" href="https://show.teenranch.com">
               View 2022 season standings
             </Button>
             <Button to="/programs/horses/hunter-jumper-shows/show-photos/">
               View 2021 show photos
             </Button>
-            {/* <Button
-              target="_blank"
-              href="https://teenranch.nyc3.cdn.digitaloceanspaces.com/website/pdf/hunterJumperShowProgram_2021.pdf"
-            >
-              2021 Show Program
-            </Button> */}
           </div>
-        </Card>
+        </Card> */}
       </Container>
       {/* <Program src={image2.childImageSharp.fluid} name="Hunter/Jumper shows">
           <h2>Forms required for entry:</h2>
@@ -327,7 +301,7 @@ export default function Default({ data }) {
           id="year-end"
           style={{ position: "absolute", marginTop: "-180px" }}
         />
-        <h2>Year-end awards 2022</h2>
+        <h2>Year-end awards 2023</h2>
         <Card style={{ padding: "2rem" }}>
           <ul>
             <li>Plan for Year End Celebration TBD.</li>

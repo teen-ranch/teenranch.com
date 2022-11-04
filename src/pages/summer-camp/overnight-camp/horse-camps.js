@@ -64,24 +64,6 @@ export default function Programs({ data }) {
       <div id="top" style={{ position: "absolute", marginTop: "-120px" }} />
 
       <Container type="body">
-        <div
-          style={{
-            padding: "4rem",
-            background: "#0074F7",
-            borderRadius: "4px",
-            color: "#fff",
-          }}
-        >
-          <h2 style={{ margin: "0 0 2rem 0" }}>
-            Balance payments, info pack, and snackbar:
-          </h2>{" "}
-          14 days before your camp check-in date we'll send you an email with:
-          all the details you need for camp, a link to pay your remaining
-          balance, and set up your snackbar account(s).
-        </div>
-      </Container>
-
-      <Container type="body">
         <h1>Horse camp</h1>
 
         <p>
@@ -142,7 +124,7 @@ export default function Programs({ data }) {
 
       <Container type="body">
         <h2>Info pack</h2>
-        <div>
+        {/* <div>
           <PdfButton
             target="_blank"
             rel="noopener noreferrer"
@@ -150,7 +132,7 @@ export default function Programs({ data }) {
           >
             Overnight camp info pack
           </PdfButton>
-        </div>
+        </div> */}
         <p>
           Families will be notified by email two weeks before the camp start
           date for payment reminders and camp information.
@@ -194,7 +176,7 @@ export default function Programs({ data }) {
             {/* <p style={{ fontSize: "1.2rem" }}>
               Application video must be approved to qualify for this program.
             </p> */}
-            <p style={{ color: "red" }}>Applications closed for 2022</p>
+            {/* <p style={{ color: "red" }}>Applications closed for 2022</p> */}
           </Program>
           <Program
             small
@@ -264,10 +246,21 @@ export default function Programs({ data }) {
         <JumpStart />
         <PriceContainer>
           <Price
-            title="Western riding camp"
-            subTitle="An excellent place to start for first-time riders or western riding enthusiasts."
+            title={
+              <>
+                Western riding camp
+                <br />
+                <br />
+              </>
+            }
+            subTitle={
+              <>
+                An excellent place to start for first-time riders or western
+                riding enthusiasts.
+              </>
+            }
             who="Beginner to advanced"
-            price={1250}
+            price={1295}
             term="week"
             includes={[
               "Basic position & control",
@@ -286,10 +279,18 @@ export default function Programs({ data }) {
             </CTAButton>
           </Price>
           <Price
-            title="English riding camp"
-            subTitle="For kids of all riding levels to learn or develop new skills."
+            title={
+              <>
+                English riding camp
+                <br />
+                <br />
+              </>
+            }
+            subTitle={
+              <>For kids of all riding levels to learn or develop new skills.</>
+            }
             who="Beginner to advanced"
-            price={1250}
+            price={1295}
             term="week"
             includes={[
               "Basic position & control",
@@ -312,11 +313,11 @@ export default function Programs({ data }) {
               <>
                 For english riders looking to improve their success in the show
                 ring.
-                <p style={{ color: "red" }}>Applications closed for 2022</p>
+                {/* <p style={{ color: "red" }}>Applications closed for 2022</p> */}
               </>
             }
             who="Advanced hunter/jumper"
-            price={1750}
+            price={1825}
             term="week"
             primary
             includes={[
@@ -335,15 +336,27 @@ export default function Programs({ data }) {
                 Application video must be approved to qualify for this program.
               </center>
             </span>
-            <CTAButton href="https://register.trmanager.com">
-              Register now
+            <CTAButton
+              target="_blank"
+              href="mailto:camp@teenranch.com?subject=Intensive camp application request"
+            >
+              Apply now
             </CTAButton>
           </Price>
           <Price
-            title="Rodeo camp"
-            subTitle="For western riders who want a taste of rodeo competition."
+            title={
+              <>
+                Rodeo camp
+                <br />
+                <br />
+                <br />
+              </>
+            }
+            subTitle={
+              <>For western riders who want a taste of rodeo competition.</>
+            }
             who="Intermediate to advanced"
-            price={1400}
+            price={1475}
             term="week"
             includes={[
               "Roping",
@@ -361,6 +374,24 @@ export default function Programs({ data }) {
             </CTAButton>
           </Price>
         </PriceContainer>
+      </Container>
+
+      <Container type="body">
+        <div
+          style={{
+            padding: "4rem",
+            background: "#0074F7",
+            borderRadius: "4px",
+            color: "#fff",
+          }}
+        >
+          <h2 style={{ margin: "0 0 2rem 0" }}>
+            Balance payments, info pack, and snackbar:
+          </h2>{" "}
+          14 days before your camp check-in date we'll send you an email with:
+          all the details you need for camp, a link to pay your remaining
+          balance, and set up your snackbar account(s).
+        </div>
       </Container>
     </>
   )

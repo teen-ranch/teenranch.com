@@ -23,6 +23,8 @@ import { SummerCampTerms } from "components/Terms"
 // import Sponsor from 'components/Sponsor'
 import Img from "gatsby-image"
 import JumpStart from "components/JumpStart"
+import { SummerCampRegistrationNotice } from "components/SummerCampRegistrationNotice"
+import { Time } from "components/Time"
 
 const frontmatter = {
   title: "Summer camp",
@@ -71,26 +73,10 @@ export default function Programs({ data }) {
 
       <div id="top" style={{ position: "absolute", marginTop: "-120px" }} />
 
-      <Container type="body">
-        <div
-          style={{
-            padding: "4rem",
-            background: "#0074F7",
-            borderRadius: "4px",
-            color: "#fff",
-          }}
-        >
-          <h2 style={{ margin: "0 0 2rem 0" }}>
-            Balance payments, info pack, and snackbar:
-          </h2>{" "}
-          14 days before your camp check-in date we'll send you an email with:
-          all the details you need for camp, a link to pay your remaining
-          balance, and set up your snackbar account(s).
-        </div>
-      </Container>
+      {/* <SummerCampRegistrationNotice /> */}
 
       <Container type="body">
-        <h1>Summer Camp 2022 at Teen Ranch</h1>
+        <h1>Summer Camp 2023 at Teen Ranch</h1>
 
         <h2>Here's what you can expect this summer:</h2>
 
@@ -120,34 +106,40 @@ export default function Programs({ data }) {
         <p>Summer Overnight Camps will run Sunday evenings-Friday evenings.</p>
         <ul>
           <li>
-            <strong>Drop-off: Sunday, 4:00pm - 4:30pm</strong>{" "}
+            <strong>
+              Check-in: Sunday, <Time>1600</Time> - <Time>1630</Time>
+            </strong>
+          </li>
+          <li>
+            <strong>
+              Camp kick-off: Sunday, <Time>1630</Time> - <Time>1715</Time>
+            </strong>{" "}
+            -
             <sm style={{ fontSize: "1.3rem", color: "rgba(0,0,0,0.8)" }}>
               Meet your leaders, visit the snack bar and western store, and
               explore the property as a family.
             </sm>
           </li>
           <li>
-            <strong>Pick-up: Friday, 7:00pm</strong>
+            <strong>
+              Pick-up: Friday, <Time>1900</Time>
+            </strong>
           </li>
         </ul>
         <p>Summer Ultimate and Junior Day Camps will run Monday-Friday.</p>
         <ul>
           <li>
-            <strong>Drop-off:</strong> 8:30am - 8:50am
+            <strong>Drop-off:</strong> <Time>0830</Time> - <Time>0850</Time>
           </li>
           <li>
-            <strong>Pick-up:</strong> 4:45pm - 5:00pm
-          </li>
-          <li>
-            <strong>Extended care:</strong> 6:00pm late pick-up option
-            available.
+            <strong>Pick-up:</strong> <Time>1645</Time> - <Time>1700</Time>
           </li>
         </ul>
       </Container>
 
       <Container type="body">
         <h2>Info pack(s)</h2>
-        <div>
+        {/* <div>
           <PdfButton
             target="_blank"
             rel="noopener noreferrer"
@@ -160,7 +152,7 @@ export default function Programs({ data }) {
           <PdfButton href="https://teenranch.nyc3.cdn.digitaloceanspaces.com/website/pdf/udcJdcCampInformation_2022.pdf">
             Ultimate day camp / junior day camp info pack
           </PdfButton>
-        </div>
+        </div> */}
         <p>
           Families will be notified by email two weeks before the camp start
           date for payment reminders and camp information.
@@ -287,10 +279,19 @@ export default function Programs({ data }) {
                 day camp
               </>
             }
-            subTitle={`Games, crafts, swimming, pony rides, story time and more! A week full of friendship and fun!`}
+            subTitle={
+              <>
+                Games, crafts, swimming, pony rides, story time and more! A week
+                full of friendship and fun!
+                <br />
+                <br />
+                <br />
+              </>
+            }
             who="Kids age 5-7"
             price={525}
             term="week"
+            startingAtSpace
             includes={[
               "Games",
               "Crafts",
@@ -396,20 +397,23 @@ export default function Programs({ data }) {
           to="https://register.trmanager.com"
         />
       </Container>
+
       <Container type="body">
-        <h2>Ultimate & Day camp add-ons:</h2>
-        <PriceAddon
-          title="Extended care"
-          subTitle="6:00pm late pick-up"
-          description={
-            <>
-              Please contact us for additional options if 6:00pm late pick-up
-              doesn't work for your family.
-            </>
-          }
-          price={75}
-          term="week"
-        />
+        <div
+          style={{
+            padding: "4rem",
+            background: "#0074F7",
+            borderRadius: "4px",
+            color: "#fff",
+          }}
+        >
+          <h2 style={{ margin: "0 0 2rem 0" }}>
+            Balance payments, info pack, and snackbar:
+          </h2>{" "}
+          14 days before your camp check-in date we'll send you an email with:
+          all the details you need for camp, a link to pay your remaining
+          balance, and set up your snackbar account(s).
+        </div>
       </Container>
     </>
   )

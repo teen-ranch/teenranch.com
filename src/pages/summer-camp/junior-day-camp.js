@@ -24,6 +24,7 @@ import Grid from "components/Grid"
 import Img from "gatsby-image"
 import { DayCampTerms } from "components/Terms"
 import JumpStart from "components/JumpStart"
+import { Time } from "components/Time"
 
 const frontmatter = {
   title: "Junior day camp",
@@ -31,7 +32,7 @@ const frontmatter = {
 }
 
 const pageData = {
-  subTitle: `Games, crafts, swimming, pony rides, story time and more!`,
+  subTitle: `Outdoor games, crafts, swimming, pony rides, story time and more!`,
   keywords: "day camp, junior day camp, summer day camp",
 }
 
@@ -66,24 +67,6 @@ export default function Programs({ data }) {
       <div id="top" style={{ position: "absolute", marginTop: "-120px" }} />
 
       <Container type="body">
-        <div
-          style={{
-            padding: "4rem",
-            background: "#0074F7",
-            borderRadius: "4px",
-            color: "#fff",
-          }}
-        >
-          <h2 style={{ margin: "0 0 2rem 0" }}>
-            Balance payments, info pack, and snackbar:
-          </h2>{" "}
-          14 days before your camp check-in date we'll send you an email with:
-          all the details you need for camp, a link to pay your remaining
-          balance, and set up your snackbar account(s).
-        </div>
-      </Container>
-
-      <Container type="body">
         <h1>Junior day camp for little kids</h1>
 
         <p>
@@ -91,35 +74,35 @@ export default function Programs({ data }) {
           introduce little ones to the exciting world of camp, kids and their
           leaders travel together around camp to try some of the unique
           activities that Teen Ranch has to offer. Throughout the week they make
-          new friends and grow while engaging in games, crafts, swimming, pony
-          rides, campfire story time with an emphasis of God's beautiful
-          creation and love for all people, and more! Join us this summer for a
-          week full of friendship and fun!
+          new friends and grow while engaging in outdoor games, crafts,
+          swimming, pony rides, campfire story time with an emphasis of God's
+          beautiful creation and love for all people, and more! Join us this
+          summer for a week full of friendship and fun!
         </p>
 
         <h3>Weekly overview</h3>
-        <p>Summer day camps will run Monday-Friday.</p>
+        <p>Summer day camps run Monday-Friday.</p>
         <ul>
           <li>
-            <strong>Drop-off:</strong> 8:30am - 8:50am
+            <strong>Drop-off:</strong> <Time>0830</Time> - <Time>0850</Time>
           </li>
           <li>
-            <strong>Pick-up:</strong> 4:45pm - 5:00pm
+            <strong>Pick-up:</strong> <Time>1645</Time> - <Time>1700</Time>
           </li>
-          <li>
+          {/* <li>
             <strong>Extended care:</strong> 6:00pm late pick-up option
             available.
-          </li>
+          </li> */}
         </ul>
       </Container>
 
       <Container type="body">
         <h2>Info pack</h2>
-        <div>
+        {/* <div>
           <PdfButton href="https://teenranch.nyc3.cdn.digitaloceanspaces.com/website/pdf/udcJdcCampInformation_2022.pdf">
             Ultimate day camp / junior day camp info pack
           </PdfButton>
-        </div>
+        </div> */}
         <p>
           Families will be notified by email two weeks before the camp start
           date for payment reminders and camp information.
@@ -136,8 +119,8 @@ export default function Programs({ data }) {
             who="Kids age 5-7"
             src={daycamp.childImageSharp.fluid}
           >
-            Games, crafts, swimming, pony rides, story time and more! A week
-            full of friendship and fun!
+            Outdoor games, crafts, swimming, pony rides, story time and more! A
+            week full of friendship and fun!
           </Program>
         </ProgramContainer>
       </Container>
@@ -197,9 +180,9 @@ export default function Programs({ data }) {
                 Day Camp
               </>
             }
-            subTitle={`Games, crafts, swimming, pony rides, story time and more! A week full of friendship and fun!`}
+            subTitle={`Outdoor games, crafts, swimming, pony rides, story time and more! A week full of friendship and fun!`}
             who="Kids age 5-7"
-            price={495}
+            price={525}
             term="week"
             includes={[
               "Games",
@@ -221,6 +204,24 @@ export default function Programs({ data }) {
       </Container>
 
       <Container type="body">
+        <div
+          style={{
+            padding: "4rem",
+            background: "#0074F7",
+            borderRadius: "4px",
+            color: "#fff",
+          }}
+        >
+          <h2 style={{ margin: "0 0 2rem 0" }}>
+            Balance payments, info pack, and snackbar:
+          </h2>{" "}
+          14 days before your camp check-in date we'll send you an email with:
+          all the details you need for camp, a link to pay your remaining
+          balance, and set up your snackbar account(s).
+        </div>
+      </Container>
+
+      {/* <Container type="body">
         <h2>Day camp add-ons:</h2>
         <PriceAddon
           title="Extended care"
@@ -234,7 +235,7 @@ export default function Programs({ data }) {
           price={75}
           term="week"
         />
-      </Container>
+      </Container> */}
     </>
   )
 }

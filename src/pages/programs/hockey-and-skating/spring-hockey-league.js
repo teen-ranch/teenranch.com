@@ -27,28 +27,40 @@ export default function Default() {
             game. (Two teams per age group with limited spots per team.)
           </p>
           <h3>When</h3>
+          <div
+            style={{
+              padding: "4rem",
+              background: "purple",
+              borderRadius: "4px",
+              color: "#fff",
+              textAlign: "center",
+              fontSize: "2rem",
+            }}
+          >
+            Returning Summer 2023
+          </div>
           <ul>
             <li>
-              <strong>U-7 (Age 5-6)</strong>: Tuesdays, 6:00pm - 6:50pm, April
-              19 - June 14
+              <strong>U-7 (Age 5-6)</strong>: Tuesdays, 6:00pm - 6:50pm, April -
+              June, 2023
             </li>
             <li>
-              <strong>U-9 (Age 7-8)</strong>: Tuesdays, 7:00pm - 7:50pm, April
-              19 - June 14
+              <strong>U-9 (Age 7-8)</strong>: Tuesdays, 7:00pm - 7:50pm, April -
+              June, 2023
             </li>
             <li>
               <strong>U-11 (Age 9-10)</strong>: Wednesdays, 6:00pm - 6:50pm,
-              April 20 - June 15
+              April - June, 2023
             </li>
             <li>
               <strong>U-13/U-15 (Age 11-14)</strong>: Wednesdays, 7:00pm -
-              7:50pm, April 20 - June 15
+              7:50pm, April - June, 2023
             </li>
           </ul>
-          <h3>Cost</h3>
+          {/* <h3>Cost</h3>
           $250 +HST
           <br />
-          <Button href="https://register.trmanager.com">Book now</Button>
+          <Button href="https://register.trmanager.com">Book now</Button> */}
         </Program>
       </Container>
     </>

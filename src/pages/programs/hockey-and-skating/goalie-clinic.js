@@ -35,16 +35,28 @@ export default function Default({ data }) {
 
           <h3>When</h3>
           <p>(8) 1.5 hr on-ice sessions</p>
-          <p>Thursday's 12:30-2:00pm July 14-September 1</p>
+          {/* <p>Thursday's 12:30-2:00pm July 14-September 1</p> */}
+          <div
+            style={{
+              padding: "4rem",
+              background: "purple",
+              borderRadius: "4px",
+              color: "#fff",
+              textAlign: "center",
+              fontSize: "2rem",
+            }}
+          >
+            Returning Summer 2023
+          </div>
 
-          <h3>Cost</h3>
-          <p>$325 +HST/player</p>
+          {/* <h3>Cost</h3>
+          <p>$325 +HST/player</p> */}
 
           <p>
             <em>Partnering with MAD Athletic Development</em>
           </p>
 
-          <Button href="https://register.trmanager.com">Book now</Button>
+          {/* <Button href="https://register.trmanager.com">Book now</Button> */}
         </Program>
       </Container>
     </>

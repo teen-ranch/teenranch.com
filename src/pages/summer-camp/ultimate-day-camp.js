@@ -33,7 +33,7 @@ const frontmatter = {
 }
 
 const pageData = {
-  subTitle: `Friends, sports, and real life packed into five exciting days`,
+  subTitle: `Friends, sports, and adventure packed into five exciting days`,
   keywords: "summer camp, ultimate day camp, summer sports camp",
 }
 
@@ -68,34 +68,16 @@ export default function Programs({ data }) {
       <div id="top" style={{ position: "absolute", marginTop: "-120px" }} />
 
       <Container type="body">
-        <div
-          style={{
-            padding: "4rem",
-            background: "#0074F7",
-            borderRadius: "4px",
-            color: "#fff",
-          }}
-        >
-          <h2 style={{ margin: "0 0 2rem 0" }}>
-            Balance payments, info pack, and snackbar:
-          </h2>{" "}
-          14 days before your camp check-in date we'll send you an email with:
-          all the details you need for camp, a link to pay your remaining
-          balance, and set up your snackbar account(s).
-        </div>
-      </Container>
-
-      <Container type="body">
         <UltimateDayCampIntro />
       </Container>
 
       <Container type="body">
         <h2>Info pack</h2>
-        <div>
+        {/* <div>
           <PdfButton href="https://teenranch.nyc3.cdn.digitaloceanspaces.com/website/pdf/udcJdcCampInformation_2022.pdf">
             Ultimate day camp / junior day camp info pack
           </PdfButton>
-        </div>
+        </div> */}
         <p>
           Families will be notified by email two weeks before the camp start
           date for payment reminders and camp information.
@@ -106,8 +88,8 @@ export default function Programs({ data }) {
         <h1>Who it's for</h1>
         <p>
           Ulitmate day camp is perfect for kids and teens age 8+. We offer
-          specialized programs in horseback riding, hockey, bmx, and WHAM camp
-          for when you want to experience a bit of everything!
+          specialized programs in horseback riding, hockey, and WHAM camp for
+          when you want to experience a bit of everything!
         </p>
 
         <ProgramContainer>
@@ -117,9 +99,8 @@ export default function Programs({ data }) {
             who="Players & goalies (age 8+)"
             src={hockey.childImageSharp.fluid}
           >
-            Skills & skating development for players and goalies from
-            house-league to rep. Standard, high-performance, girl's hockey, and
-            goalie camps.
+            Skills & skating development and full-ice scrimmages for players and
+            goalies from house-league to rep.
             <br />
             <PrimaryButton to="/summer-camp/ultimate-day-camp/hockey-camps/">
               Learn more
@@ -132,8 +113,7 @@ export default function Programs({ data }) {
             src={horse.childImageSharp.fluid}
           >
             Horseback riding camps for beginner to advanced riders. Take your
-            pick from western, english, rodeo, or intensive (hunter/jumper
-            focused) camps.
+            pick from western or english camps.
             <br />
             <PrimaryButton to="/summer-camp/ultimate-day-camp/horse-camps/">
               Learn more
@@ -158,9 +138,9 @@ export default function Programs({ data }) {
             who="Kids who want to try everything (age 8+)"
             src={wham.childImageSharp.fluid}
           >
-            Epic activities like horseback riding, rock climbing, woodland
-            survival, volleyball, archery, waterslide, jousting pond and so much
-            more!
+            Epic activities like horseback riding, rock climbing, giant swing,
+            woodland survival, outdoor sports, archery, waterslide, jousting
+            pond and so much more!
             <br />
             <PrimaryButton to="/summer-camp/ultimate-day-camp/wham-camp/">
               Learn more
@@ -186,9 +166,9 @@ export default function Programs({ data }) {
 
         <p>
           Each afternoon, campers get to take their pick from some amazing camp
-          activities on 150 beautiful acres including: rock climbing,
-          bouldering, water slide, swimming, water jousting, archery, tennis,
-          basketball, volleyball, and more.
+          activities on 150 beautiful acres including: rock climbing, giant
+          swing, bouldering, water slide, swimming, water jousting, archery,
+          tennis, basketball, outdoor activities, and more.
         </p>
 
         <Grid sm={2} md={2} lg={3} xl={5} gap={false}>
@@ -214,8 +194,8 @@ export default function Programs({ data }) {
         <PreBuiltCampSchedule type="UDC" />
 
         <p>
-          For goalie camp, rodeo camp, adventure camp and, intensive equestrian
-          camp:{" "}
+          For girl's hockey camp, goalie camp, rodeo camp, adventure camp and,
+          intensive equestrian camp:{" "}
           <ReachLink to="/summer-camp/overnight-camp/">
             see our overnight camps.
           </ReachLink>
@@ -241,7 +221,7 @@ export default function Programs({ data }) {
             title="Hockey camps"
             subTitle={`Skills & skating development for players and goalies from house-league to rep. Standard, high-performance, girl's hockey, and goalie camps.`}
             who="Players and goalies"
-            price={850}
+            price={895}
             term="week"
             startingAt
             includes={[
@@ -267,9 +247,9 @@ export default function Programs({ data }) {
           </Price>
           <Price
             title="Horse camps"
-            subTitle="Horseback riding camps for beginner to advanced riders. Take your pick from western, english, rodeo, or intensive (hunter/jumper focused) camps."
+            subTitle="Horseback riding camps for beginner to advanced riders. Take your pick from western or english camps."
             who="English & western riders"
-            price={850}
+            price={895}
             startingAt
             term="week"
             includes={[
@@ -320,9 +300,9 @@ export default function Programs({ data }) {
           </Price> */}
           <Price
             title="WHAM camp"
-            subTitle="Epic activities like horseback riding, rock climbing, woodland survival, volleyball, archery, waterslide, jousting pond and so much more!"
+            subTitle="Epic activities like horseback riding, rock climbing, giant swing, woodland survival, outdoor sports, archery, waterslide, jousting pond and so much more!"
             who="Kids who want to try everything"
-            price={850}
+            price={895}
             term="week"
             startingAt
             includes={[
@@ -360,13 +340,31 @@ export default function Programs({ data }) {
               each morning, Monday - Friday.
             </>
           }
-          price={200}
+          price={300}
           term="week"
           to="https://register.trmanager.com"
         />
       </Container>
 
       <Container type="body">
+        <div
+          style={{
+            padding: "4rem",
+            background: "#0074F7",
+            borderRadius: "4px",
+            color: "#fff",
+          }}
+        >
+          <h2 style={{ margin: "0 0 2rem 0" }}>
+            Balance payments, info pack, and snackbar:
+          </h2>{" "}
+          14 days before your camp check-in date we'll send you an email with:
+          all the details you need for camp, a link to pay your remaining
+          balance, and set up your snackbar account(s).
+        </div>
+      </Container>
+
+      {/* <Container type="body">
         <h2>Ultimate day camp add-ons:</h2>
         <PriceAddon
           title="Extended care"
@@ -380,7 +378,7 @@ export default function Programs({ data }) {
           price={75}
           term="week"
         />
-      </Container>
+      </Container> */}
     </>
   )
 }

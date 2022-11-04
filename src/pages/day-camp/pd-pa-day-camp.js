@@ -12,6 +12,7 @@ import { CTAButton } from "components/Button"
 // import Coach from 'components/Coach'
 // import { Link } from 'react-scroll'
 import { PriceContainer, Price } from "components/Price"
+import { dayCampBulletsClassic } from "components/defaults"
 // import Grid from 'components/Grid'
 // import Sponsor from 'components/Sponsor'
 // import Img from 'gatsby-image'
@@ -66,12 +67,23 @@ export default function Programs({ data }) {
 
       <Container type="body">
         <h1>Available dates</h1>
-
-        <ul>
+        <div
+          style={{
+            padding: "4rem",
+            background: "purple",
+            borderRadius: "4px",
+            color: "#fff",
+            textAlign: "center",
+            fontSize: "2rem",
+          }}
+        >
+          Check back after Christmas for Winter/Spring 2023 dates
+        </div>
+        {/* <ul>
           <li>October 24, 2022</li>
           <li>November 25, 2022 (Hockey option available)</li>
-          {/* <li>June 3, 2022</li> */}
-        </ul>
+          <li>June 3, 2022</li>
+        </ul> */}
 
         <p>Drop off between 8:30-8:50 am and pick up between 4:30- 5:00 pm</p>
       </Container>
@@ -96,16 +108,9 @@ export default function Programs({ data }) {
             }
             subTitle={``}
             who="Kids ages 5-12"
-            price={79}
+            price={89}
             term="day"
-            includes={[
-              "Outdoor discovery, games, activity and fun!",
-              "Indoor ice skating with kid-themed music**",
-              "Woodland survival skills",
-              "Pony rides*",
-              "Creative activities and crafts",
-              "Lunch & two snacks",
-            ]}
+            includes={dayCampBulletsClassic}
           >
             <CTAButton href="https://register.trmanager.com">
               Register now
@@ -125,12 +130,14 @@ export default function Programs({ data }) {
             price={99}
             term="day"
             includes={[
-              "Hockey skills, skating and fun!",
-              "Outdoor discovery, games, activity and fun!",
-              "Indoor ice skating with kid-themed music**",
-              "Woodland survival skills",
+              <strong>
+                One on-ice skills and skating development session, including a
+                full-ice scrimmage{" "}
+              </strong>,
+              "Outdoor discovery, games and sports*",
+              "Indoor ice skating with kid-friendly music",
               "Pony rides*",
-              "Creative activities and crafts",
+              "Seasonal activities and crafts",
               "Lunch & two snacks",
             ]}
           >
@@ -143,7 +150,6 @@ export default function Programs({ data }) {
 
       <Container>
         <p>* Weather permitting</p>
-        <p>** Ice skating not available on October 24, 2022</p>
       </Container>
     </>
   )
