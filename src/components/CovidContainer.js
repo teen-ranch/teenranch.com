@@ -32,7 +32,7 @@ export function CovidContainer() {
         >
           <h3>Summer Camp 2023</h3>
           <p>Information for Summer Camp 2023 is now available online!</p>
-          <p>Registration opens soon!</p>
+          <p>Registration is now open!</p>
 
           <div>
             <Button onClick={() => gotIt()}>Got it!</Button>
