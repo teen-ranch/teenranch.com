@@ -2,10 +2,19 @@ import React, { useState } from "react"
 
 import "./campSchedule.scss"
 
-export default function CampSchedule({ type, weeks, dates, programs }) {
+export default function CampSchedule({
+  type,
+  weeks,
+  dates,
+  discountedWeeks,
+  programs,
+}) {
   return (
     <div className="schedule__container">
       <div className="schedule__programs">
+        {discountedWeeks?.length > 0 && (
+          <div className="schedule__spacerDiscount">&nbsp;</div>
+        )}
         <div className="schedule__spacer">Program / Date</div>
         {programs.map((program, i) => (
           <div key={i} className="schedule__program">
@@ -21,11 +30,38 @@ export default function CampSchedule({ type, weeks, dates, programs }) {
             gridTemplateColumns: `repeat(${dates.length}, 1fr)`,
           }}
         >
+          {discountedWeeks.map((isDiscount, i) => {
+            return (
+              <div
+                key={i}
+                className={`schedule__dateDiscount ${
+                  isDiscount ? `schedule__dateDiscount--discounted` : ""
+                }`}
+              >
+                {isDiscount ? <div>Discounted</div> : <>&nbsp;</>}
+              </div>
+            )
+          })}
+        </div>
+        <div
+          className="schedule__row"
+          style={{
+            display: "grid",
+            gridTemplateColumns: `repeat(${dates.length}, 1fr)`,
+          }}
+        >
           {dates.map((date, i) => {
+            const isDiscount = discountedWeeks[i]
+            const isPreviousDiscount = discountedWeeks[i - 1]
+
             return (
               <div
                 key={i}
                 className={`schedule__date ${
+                  isDiscount ? "schedule__date--discount" : ""
+                } ${
+                  isPreviousDiscount ? "schedule__date--discountPrevious" : ""
+                } ${
                   weeks && weeks[i] === "UDC"
                     ? `schedule__date--UDC`
                     : weeks && weeks[i] === "ONC"
@@ -60,6 +96,8 @@ export default function CampSchedule({ type, weeks, dates, programs }) {
           })}
         </div>
         {programs.map((program, i) => {
+          const isLastProgram = i === programs.length - 1
+
           return (
             <div
               className="schedule__row"
@@ -69,38 +107,54 @@ export default function CampSchedule({ type, weeks, dates, programs }) {
                 gridTemplateColumns: `repeat(${dates.length}, 1fr)`,
               }}
             >
-              {program.dates.map((ages, i) => (
-                <div
-                  key={i}
-                  className={`schedule__programDate ${
-                    ["UDC", "ONC", "NO CAMP", "TBD"].includes(ages)
-                      ? "schedule__programDate--otherCamp"
-                      : ages
-                      ? weeks && type && weeks[i] !== type
-                        ? "schedule__programDate--secondary"
+              {program.dates.map((ages, i) => {
+                const isDiscount = discountedWeeks[i]
+                const isPreviousDiscount = discountedWeeks[i - 1]
+                return (
+                  <div
+                    key={i}
+                    className={`schedule__programDate ${
+                      !isLastProgram && isDiscount
+                        ? "schedule__date--discount"
                         : ""
-                      : "schedule__programDate--blank"
-                  } ${
-                    weeks && weeks[i] === "UDC"
-                      ? "schedule__programDate--UDC"
-                      : weeks && weeks[i] === "ONC"
-                      ? "schedule__programDate--ONC"
-                      : ""
-                  }`}
-                  // style={{
-                  //   ...(weeks && {
-                  //     color: weeks[i] === "UDC" ? "green" : "blue",
-                  //   }),
-                  // }}
-                >
-                  {["UDC", "ONC", "NO CAMP", "TBD"].includes(ages)
-                    ? ages
-                    : ages
-                    ? `Age: `
-                    : ""}
-                  {!["UDC", "ONC", "NO CAMP", "TBD"].includes(ages) && ages}
-                </div>
-              ))}
+                    }  ${
+                      !isLastProgram && isPreviousDiscount
+                        ? "schedule__date--discountPrevious"
+                        : ""
+                    } ${
+                      isLastProgram && isDiscount
+                        ? `schedule__date--discountLast`
+                        : ""
+                    } ${
+                      ["UDC", "ONC", "NO CAMP", "TBD"].includes(ages)
+                        ? "schedule__programDate--otherCamp"
+                        : ages
+                        ? weeks && type && weeks[i] !== type
+                          ? "schedule__programDate--secondary"
+                          : ""
+                        : "schedule__programDate--blank"
+                    } ${
+                      weeks && weeks[i] === "UDC"
+                        ? "schedule__programDate--UDC"
+                        : weeks && weeks[i] === "ONC"
+                        ? "schedule__programDate--ONC"
+                        : ""
+                    }`}
+                    // style={{
+                    //   ...(weeks && {
+                    //     color: weeks[i] === "UDC" ? "green" : "blue",
+                    //   }),
+                    // }}
+                  >
+                    {["UDC", "ONC", "NO CAMP", "TBD"].includes(ages)
+                      ? ages
+                      : ages
+                      ? `Age: `
+                      : ""}
+                    {!["UDC", "ONC", "NO CAMP", "TBD"].includes(ages) && ages}
+                  </div>
+                )
+              })}
             </div>
           )
         })}
@@ -150,9 +204,24 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
           </div>
         </>
       )}
+      <div style={{ padding: "1rem 0", color: "red", fontSize: "1.4rem" }}>
+        <strong>Discounted week:</strong> (August 7 - 11) Due to the Civic
+        Holiday on August 7th, overnight camp will start on Monday.
+      </div>
       <CampSchedule
         type={type}
         weeks={["UDC", "ONC", "ONC", "ONC", "ONC", "ONC", "ONC", "UDC", "UDC"]}
+        discountedWeeks={[
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+        ]}
         dates={[
           <>July 3-7</>,
           <>July 9-14</>,
