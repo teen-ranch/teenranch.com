@@ -94,7 +94,7 @@ export default function Default({ data }) {
           another over a common love of horses and adventure.
         </p>
         <p>
-          Beginning at 7:00pm on Friday May 13th, 2022, enjoy a wonderful
+          Beginning at 7:00pm on Friday May 12th, 2023, enjoy a wonderful
           weekend away together in beautiful accommodations with delicious food,
           entertaining evenings, inspirational speakers, a one-hour horse riding
           lesson with awesome instructors, scenic trail rides through the
@@ -104,7 +104,7 @@ export default function Default({ data }) {
         <Button href="https://register.trmanager.com">Book now</Button>
 
         <h3>When is it?</h3>
-        <p>May 13-15, 2022</p>
+        <p>May 12-14, 2023</p>
 
         <h3>This weekend getaway package includes:</h3>
         <p>Breakfasts, Lunches and Supper.</p>
