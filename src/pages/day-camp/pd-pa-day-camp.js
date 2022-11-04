@@ -67,6 +67,10 @@ export default function Programs({ data }) {
 
       <Container type="body">
         <h1>Available dates</h1>
+
+        <ul>
+          <li>November 25, 2022 (Hockey option available)</li>
+        </ul>
         <div
           style={{
             padding: "4rem",

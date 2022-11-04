@@ -84,8 +84,7 @@ export default function Programs({ data }) {
         </p>
         <p>
           Campers are housed in top-notch facilities that include a private
-          washroom and air conditioning. consider linking top-notch facilities
-          to our facility photos.
+          washroom and air conditioning.
         </p>
         <p>
           Our well-trained staff are committed to the safety and well-being of

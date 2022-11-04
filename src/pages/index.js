@@ -254,7 +254,7 @@ export default function Index({ data }) {
           alt="Skills development"
         >
           <p>
-            Join us for a 5 session program focused on the development of
+            Join us for a 6 session program focused on the development of
             individual shooting, stick handling, creativity and passing skills,
             as well as game situation type skills. For boys and girls ages 6-13.
           </p>
@@ -265,7 +265,7 @@ export default function Index({ data }) {
 
           <h3>Skating Development</h3>
           <p>
-            Join us for a 5 session program focused on the development of
+            Join us for a 6 session program focused on the development of
             individual shooting, stick handling, creativity and passing skills,
             as well as game situation type skills. For boys and girls ages 6-13.
           </p>
