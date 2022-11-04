@@ -14,7 +14,7 @@ export function SummerCampRegistrationNotice({ children }) {
           fontSize: "2rem",
         }}
       >
-        Summer Camp Registration opens January 16, 2023
+        Summer Camp Registration opens Soon
         {children && <div>{children}</div>}
       </div>
     </Container>

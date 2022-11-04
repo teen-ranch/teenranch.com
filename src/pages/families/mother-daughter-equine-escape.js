@@ -59,7 +59,7 @@ export default function Default({ data }) {
         zone: "America/Toronto",
       }).toISODate()}
       startTime="19:00:00"
-      endDate={DateTime.fromISO("2022-05-15", {
+      endDate={DateTime.fromISO("2022-12-15", {
         zone: "America/Toronto",
       }).toISODate()}
       endTime="14:00:00"
@@ -116,7 +116,7 @@ export default function Default({ data }) {
 
         <ul>
           <li>
-            <strong>Olympic Style/Chalet Room:</strong> $395 +HST /person (Bring
+            <strong>Olympic Style/Chalet Room:</strong> $425 +HST /person (Bring
             your own bedding & towels)
             <em>
               {" "}
@@ -125,12 +125,12 @@ export default function Default({ data }) {
             </em>
           </li>
           <li>
-            <strong>Western-style Hotel Room:</strong> $460 +HST /person (Linens
+            <strong>Western-style Hotel Room:</strong> $490 +HST /person (Linens
             & towels provided)
             <em> - Private accommodation for each mother/daughter</em>
           </li>
           <li>
-            <strong>Coach House/Family Suite:</strong> $495 +HST /person (Linens
+            <strong>Coach House/Family Suite:</strong> $525 +HST /person (Linens
             & towels provided)
             <em> - Private accommodation for each mother/daughter</em>
           </li>
@@ -229,10 +229,10 @@ export default function Default({ data }) {
         <Button href="https://register.trmanager.com">Book now</Button>
       </Container>
 
-      <Container>
-        <h1>Upcoming events</h1>
-        {events}
-      </Container>
+      {/* <Container>
+          <h1>Upcoming events</h1>
+          {events}
+        </Container> */}
 
       {/* </div> */}
     </>

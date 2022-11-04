@@ -29,7 +29,7 @@ export default function Index({ data }) {
         <CTAButton to="/summer-camp/">
           Learn more about Summer Camp 2023
         </CTAButton>
-        <h2 style={{ marginTop: "-3rem" }}>Registration opens January 16!</h2>
+        <h2 style={{ marginTop: "-3rem" }}>Registration opens soon!</h2>
 
         <div id="mc_embed_signup">
           <form

@@ -64,24 +64,6 @@ export default function Programs({ data }) {
       <div id="top" style={{ position: "absolute", marginTop: "-120px" }} />
 
       <Container type="body">
-        <div
-          style={{
-            padding: "4rem",
-            background: "#0074F7",
-            borderRadius: "4px",
-            color: "#fff",
-          }}
-        >
-          <h2 style={{ margin: "0 0 2rem 0" }}>
-            Balance payments, info pack, and snackbar:
-          </h2>{" "}
-          14 days before your camp check-in date we'll send you an email with:
-          all the details you need for camp, a link to pay your remaining
-          balance, and set up your snackbar account(s).
-        </div>
-      </Container>
-
-      <Container type="body">
         <h1>Horse camp</h1>
 
         <p>
@@ -142,7 +124,7 @@ export default function Programs({ data }) {
 
       <Container type="body">
         <h2>Info pack</h2>
-        <div>
+        {/* <div>
           <PdfButton
             target="_blank"
             rel="noopener noreferrer"
@@ -150,7 +132,7 @@ export default function Programs({ data }) {
           >
             Overnight camp info pack
           </PdfButton>
-        </div>
+        </div> */}
         <p>
           Families will be notified by email two weeks before the camp start
           date for payment reminders and camp information.
@@ -392,6 +374,24 @@ export default function Programs({ data }) {
             </CTAButton>
           </Price>
         </PriceContainer>
+      </Container>
+
+      <Container type="body">
+        <div
+          style={{
+            padding: "4rem",
+            background: "#0074F7",
+            borderRadius: "4px",
+            color: "#fff",
+          }}
+        >
+          <h2 style={{ margin: "0 0 2rem 0" }}>
+            Balance payments, info pack, and snackbar:
+          </h2>{" "}
+          14 days before your camp check-in date we'll send you an email with:
+          all the details you need for camp, a link to pay your remaining
+          balance, and set up your snackbar account(s).
+        </div>
       </Container>
     </>
   )

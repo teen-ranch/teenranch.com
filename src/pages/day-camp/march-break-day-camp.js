@@ -177,7 +177,7 @@ export default function Programs({ data }) {
 
       <Container>
         <p>* Weather permitting</p>
-        <p>** Ice skating not available on January 28, 2022</p>
+        {/* <p>** Ice skating not available on January 28, 2022</p> */}
       </Container>
     </>
   )
