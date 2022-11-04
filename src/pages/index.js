@@ -29,7 +29,9 @@ export default function Index({ data }) {
         <CTAButton to="/summer-camp/">
           Learn more about Summer Camp 2023
         </CTAButton>
-        <h2 style={{ marginTop: "-3rem" }}>Registration opens soon!</h2>
+        <h2 style={{ marginTop: "-3rem" }}>
+          <p>Registration is now open!</p>
+        </h2>
 
         <div id="mc_embed_signup">
           <form
@@ -43,7 +45,7 @@ export default function Index({ data }) {
           >
             <div id="mc_embed_signup_scroll">
               <h2 style={{ marginTop: "8rem" }}>
-                Enter your email address so you don't miss out!
+                Enter your email address so you don't miss out on any details!
               </h2>
 
               <div
