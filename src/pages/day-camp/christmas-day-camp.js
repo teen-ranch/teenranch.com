@@ -61,8 +61,8 @@ export default function Programs({ data }) {
 
         <p>
           The excitement of the season is multiplied with Teen Ranch Christmas
-          Winter Break Day Camps! Our popular demand day camps offer outdoor fun
-          and activity as well as indoor festivities to celebrate winter and the
+          Winter Break Day Camps! Our popular day camps offer outdoor fun and
+          activity as well as indoor festivities to celebrate winter and the
           magic of the Christmas season! Treat your kids to a memorable day or
           bundle package all four days at a daily savings!
         </p>
