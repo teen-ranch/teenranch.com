@@ -385,6 +385,7 @@ export default function Programs({ data }) {
               "Minimum 7.5 hours on-ice per week",
               "Skills development",
               "Skating development",
+              "Full-ice scrimmages",
               "Fun-based off-ice program",
               "Free jersey",
               "Breakfast, lunch & dinner",
