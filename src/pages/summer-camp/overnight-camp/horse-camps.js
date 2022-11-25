@@ -342,7 +342,20 @@ export default function Programs({ data }) {
           >
             <span style={{ fontSize: "1.2rem" }}>
               <center>
-                Application video must be approved to qualify for this program.
+                <p>
+                  Application video must be approved to qualify for this
+                  program.
+                </p>
+                <p style={{ textAlign: "justify" }}>
+                  The application video should showcase short clips of trot,
+                  sitting trot, canter, jumping 2’3 or higher. Video should show
+                  ability to recognize and change lead on their own. Videos can
+                  be sent to{" "}
+                  <a href="mailto:corrie.ensom@teenranch.com">
+                    corrie.ensom@teenranch.com
+                  </a>
+                  .
+                </p>
               </center>
             </span>
             <CTAButton
