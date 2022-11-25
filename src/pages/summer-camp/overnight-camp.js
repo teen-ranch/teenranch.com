@@ -71,24 +71,19 @@ export default function Programs({ data }) {
         <h1>Overnight camp for outrageous fun</h1>
 
         <p>
-          Register for overnight camp and experience all the fun and adventure a
-          week of summer camp has to offer. Enjoy the great outdoors, get
-          active, and make new friends.
+          Our popular overnight camps are back this year and better than ever!
+          Campers experience all the fun and adventure of summer camp packed
+          into five awesome nights as they enjoy the great outdoors, get active
+          and build friendships that can last a lifetime.
         </p>
         <p>
           In the morning, hone your skills in your sport of choice. Afternoons
-          are your chance to enjoy a variety of Teen Ranch activities and
-          bunkroom time - a unique opportunity for growth, bonding and overall
-          fun!! Evenings include camp-wide games and nightly campfires with
-          engaging, real-life topics shared from a biblical perspective.
-        </p>
-        <p>
-          Campers are housed in top-notch facilities that include a private
-          washroom and air conditioning.
+          are your chance to enjoy a variety of activities and daily campfires
+          with engaging, real-life topics shared from a biblical perspective.
         </p>
         <p>
           Our well-trained staff are committed to the safety and well-being of
-          each camper and aim to come alongside them to challenge and inspire!
+          each camper and aim to come alongside you to challenge and inspire!
         </p>
 
         <h3>Weekly overview</h3>
@@ -98,16 +93,15 @@ export default function Programs({ data }) {
             <strong>
               Check-in: Sunday, <Time>1600</Time> - <Time>1630</Time>
             </strong>
+            <span style={{ fontSize: "1.3rem", color: "rgba(0,0,0,0.8)" }}>
+              - Meet your leaders, visit the snack bar and western store, and
+              explore the property as a family.
+            </span>
           </li>
           <li>
             <strong>
               Camp kick-off: <Time>1630</Time> - <Time>1715</Time>
             </strong>{" "}
-            <span style={{ fontSize: "1.3rem", color: "rgba(0,0,0,0.8)" }}>
-              - meet your leaders, visit the snack bar and western store,
-              explore the property as a family and enjoy a BBQ and official camp
-              welcome.
-            </span>
           </li>
           <li>
             <strong>
@@ -340,6 +334,7 @@ export default function Programs({ data }) {
               "Paddle boarding",
               "Mountain biking",
               "Certified instructor",
+              "Breakfast, lunch & dinner",
               "Snackbar open morning and afternoon",
             ]}
           >
@@ -366,6 +361,7 @@ export default function Programs({ data }) {
               "Volleyball, basketball & soccer",
               "Archery",
               "Waterslide, jousting pond, canoes, kayaks",
+              "Breakfast, lunch & dinner",
               "Snackbar open morning and afternoon",
               "All camp activities",
             ]}
