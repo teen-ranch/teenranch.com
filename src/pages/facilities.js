@@ -37,21 +37,11 @@ export default function Default({ data }) {
           With a capacity of over 125 guests for overnight trips, we offer a
           variety of accommodation options to meet the unique needs of groups
           and camps throughout all seasons of the year. Our rooms are inviting,
-          clean, comfortably-sized, boast a private washroom designed for the
-          number of occupants, provide heat in the cold months and air
-          conditioning in the hot season, and are sure to make one’s stay
-          enjoyable. Many rooms offer an adjacent bunkroom or a separate smaller
-          room so that supervision is always available when needed.
+          clean, comfortably-sized, feature over-sized bunk beds, en-suite
+          washrooms and are climate controlled for year-round comfort. Many
+          rooms offer an adjacent bunk room or a separate smaller room so that
+          supervision is always available when needed.
         </p>
-        <div className="facilityWrapper">
-          {aerial.edges.map(({ node }, i) => {
-            return (
-              <div key={i} className="facility">
-                <Img fluid={node.childImageSharp.fluid} alt="Aerial Photos" />
-              </div>
-            )
-          })}
-        </div>
 
         <h3>The Carriage House</h3>
         <p>
@@ -181,6 +171,16 @@ export default function Default({ data }) {
             return (
               <div key={i} className="facility">
                 <Img fluid={node.childImageSharp.fluid} alt="The Ice Corral" />
+              </div>
+            )
+          })}
+        </div>
+        <h3>Historical photos</h3>
+        <div className="facilityWrapper">
+          {aerial.edges.map(({ node }, i) => {
+            return (
+              <div key={i} className="facility">
+                <Img fluid={node.childImageSharp.fluid} alt="Aerial Photos" />
               </div>
             )
           })}

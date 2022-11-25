@@ -21,6 +21,7 @@ import Grid from "components/Grid"
 import Img from "gatsby-image"
 import { OvernightCampTerms } from "../../../components/Terms"
 import JumpStart from "components/JumpStart"
+import { Time } from "components/Time"
 
 const frontmatter = {
   title: "Hockey camps",
@@ -78,24 +79,6 @@ export default function Programs({ data }) {
       <div id="top" style={{ position: "absolute", marginTop: "-120px" }} />
 
       <Container type="body">
-        <div
-          style={{
-            padding: "4rem",
-            background: "#0074F7",
-            borderRadius: "4px",
-            color: "#fff",
-          }}
-        >
-          <h2 style={{ margin: "0 0 2rem 0" }}>
-            Balance payments, info pack, and snackbar:
-          </h2>{" "}
-          14 days before your camp check-in date we'll send you an email with:
-          all the details you need for camp, a link to pay your remaining
-          balance, and set up your snackbar account(s).
-        </div>
-      </Container>
-
-      <Container type="body">
         <h1>Achieve your goals this season</h1>
 
         <p>
@@ -123,7 +106,6 @@ export default function Programs({ data }) {
           into five awesome nights as they enjoy the great outdoors, get active
           and build friendships that can last a lifetime.
         </p>
-
         <p>
           In the morning, hone your skills in your sport of choice. Afternoons
           are your chance to enjoy a variety of activities and daily campfires
@@ -135,17 +117,26 @@ export default function Programs({ data }) {
         </p>
 
         <h3>Weekly overview</h3>
-        <p>Summer Overnight Camps will run Sunday evenings-Friday evenings.</p>
+        <p>Summer overnight camps run Sunday evenings-Friday evenings.</p>
         <ul>
           <li>
-            <strong>Drop-off: Sunday, 4:00pm - 4:30pm</strong>{" "}
-            <sm style={{ fontSize: "1.3rem", color: "rgba(0,0,0,0.8)" }}>
-              Meet your leaders, visit the snack bar and western store, and
+            <strong>
+              Check-in: Sunday, <Time>1600</Time> - <Time>1630</Time>
+            </strong>
+            <span style={{ fontSize: "1.3rem", color: "rgba(0,0,0,0.8)" }}>
+              - Meet your leaders, visit the snack bar and western store, and
               explore the property as a family.
-            </sm>
+            </span>
           </li>
           <li>
-            <strong>Pick-up: Friday, 7:00pm</strong>
+            <strong>
+              Camp kick-off: <Time>1630</Time> - <Time>1715</Time>
+            </strong>{" "}
+          </li>
+          <li>
+            <strong>
+              Pick-up: Friday, <Time>1900</Time>
+            </strong>
           </li>
         </ul>
       </Container>
@@ -522,6 +513,23 @@ export default function Programs({ data }) {
           term="hour"
           to="mailto:icecorral@teenranch.com?subject=Semi-private lessons"
         />
+      </Container>
+      <Container type="body">
+        <div
+          style={{
+            padding: "4rem",
+            background: "#0074F7",
+            borderRadius: "4px",
+            color: "#fff",
+          }}
+        >
+          <h2 style={{ margin: "0 0 2rem 0" }}>
+            Balance payments, info pack, and snackbar:
+          </h2>{" "}
+          14 days before your camp check-in date we'll send you an email with:
+          all the details you need for camp, a link to pay your remaining
+          balance, and set up your snackbar account(s).
+        </div>
       </Container>
     </>
   )

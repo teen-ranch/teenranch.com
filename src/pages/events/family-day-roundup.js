@@ -48,7 +48,7 @@ const eventData = {
 }
 
 export default function Default({ data }) {
-  const stripePaymentLink = "https://buy.stripe.com/9AQ5nO6lqa1i98scMN"
+  const stripePaymentLink = "https://buy.stripe.com/fZeg2s8tyflCfwQfZ1"
   // process.env.CF_PAGES_BRANCH === "main"
   //   ? "https://buy.stripe.com/9AQ5nO6lqa1i98scMN"
   //   : "https://buy.stripe.com/test_eVabKh7DidOO8dW7st"
@@ -67,10 +67,10 @@ export default function Default({ data }) {
 
       <Container>
         <h1>{frontmatter.title}</h1>
-        <div style={{ color: "red", fontSize: "2em" }}>
+        {/* <div style={{ color: "red", fontSize: "2em" }}>
           Family day is full, we are no longer accepting registrations. Thank
           you!
-        </div>
+        </div> */}
         <p>
           Less than an hour from Toronto and located in the beautiful Caledon
           Hills, Teen Ranch is thrilled to offer you winter outdoor activities
@@ -78,19 +78,20 @@ export default function Default({ data }) {
           lasting memories together.
         </p>
         <h2>When is it?</h2>
-        Monday, February 21, 2022: 10:00am - 1:00pm
+        Monday, February 20, 2023: 10:00am - 1:00pm
         <h2>Who is it for?</h2>
         Open to all Ages
         <h2>Activities include:</h2>
         <ul>
           <li>
-            Pond skating (bring your own skates and helmet (helmet optional for
-            adults)
+            Skating - bring your own skates; helmets are required for ages 8 &
+            under; helmets are encouraged for all ages
           </li>
+          <li>Hayrides</li>
           <li>Broomball</li>
-          <li>Tubing (use our tubes or bring your own)</li>
-          <li>Showshoeing (bring yours or use ours (adult sizes only)</li>
-          <li>Cross-country skiing (bring your own skis)</li>
+          <li>Tubing - use our tubes or bring your own</li>
+          <li>Showshoeing - bring yours or use ours (adult sizes only)</li>
+          <li>Cross-country skiing - bring your own equipment</li>
           <li>Hiking</li>
           <li>Snow fort building</li>
           <li>Campfire: warm up with hot chocolate & marshmallow roast</li>
@@ -98,15 +99,13 @@ export default function Default({ data }) {
         <span style={{ fontStyle: "italic" }}>
           Snow activities and outdoor skating weather permitting
         </span>
-      </Container>
-      <Container>
         <h2>Pre-registration required</h2>
         <ul>
-          <li>$75 per family of five</li>
-          <li>Additional family members: $15/person</li>
+          <li>$80 +HST: up to 5 family members</li>
+          <li>Additional family members: $16/person</li>
           <li>Children age two and under are free</li>
         </ul>
-        {/* <PrimaryButton href={stripePaymentLink}>Pre-register now</PrimaryButton> */}
+        <PrimaryButton href={stripePaymentLink}>Pre-register now</PrimaryButton>
       </Container>
 
       {/* <Container>

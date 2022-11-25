@@ -31,7 +31,7 @@ export default function Default() {
             <li>One-hour in length</li>
             <li>Walk/trot (if comfortable)</li>
             <li>Max. participant weight of 250lbs</li>
-            <li>Pre-booking and pre-payment required*</li>
+            <li>Pre-booking and pre-payment required</li>
             <li>$55.00 +HST per person</li>
           </ul>
 
