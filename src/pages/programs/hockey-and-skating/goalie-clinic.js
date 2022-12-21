@@ -4,6 +4,7 @@ import Heading from "components/Heading"
 import Button from "components/Button"
 import Program from "components/Program"
 import { graphql } from "gatsby"
+import { Time } from "components/Time"
 
 export default function Default({ data }) {
   const { file, file2 } = data
@@ -29,14 +30,15 @@ export default function Default({ data }) {
               <strong>Full equipment is required.</strong>
             </i>
           </p>
-
           <h3>Who it's for</h3>
           <p>Boys and Girls ages 6-14</p>
-
           <h3>When</h3>
-          <p>(8) 1.5 hr on-ice sessions</p>
+          <p>(8) 1 hr on-ice sessions</p>
+          Wednesdays: January 18, 2023 - March 8, 2023
+          <br />
+          <Time>1700</Time> - <Time>1800</Time>
           {/* <p>Thursday's 12:30-2:00pm July 14-September 1</p> */}
-          <div
+          {/* <div
             style={{
               padding: "4rem",
               background: "purple",
@@ -47,15 +49,12 @@ export default function Default({ data }) {
             }}
           >
             Returning Summer 2023
-          </div>
-
-          {/* <h3>Cost</h3>
-          <p>$325 +HST/player</p> */}
-
+          </div> */}
+          <h3>Cost</h3>
+          <p>$399 +HST/player</p>
           <p>
             <em>Partnering with MAD Athletic Development</em>
           </p>
-
           {/* <Button href="https://register.trmanager.com">Book now</Button> */}
         </Program>
       </Container>
