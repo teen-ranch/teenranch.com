@@ -206,17 +206,38 @@ export default function Index({ data }) {
         <Button to="/summer-camp/">Learn more about summer camp</Button>
       </SummerCampRegistrationNotice> */}
       <Container type="body">
-        {/* <Program
-					src={ data.christmasDayCamp.childImageSharp.fluid }
-					name='Christmas day camp'
-					alt='Christmas day camp'
-				>
-					<p>
-						The excitement of the season is multiplied with Teen Ranch's Christmas Winter Break Day Camps! Back this year by popular demand our day camps offer outdoor fun and activity as well as indoor festivities to celebrate the winter season and the magic of Christmas! Treat your kids to a memorable day or bundle package all four days at a daily savings!
-					</p>
+        <Program
+          src={data.christmasDayCamp.childImageSharp.fluid}
+          name="Christmas day camp"
+          alt="Christmas day camp"
+          swap
+        >
+          <p>
+            The excitement of the season is multiplied with Teen Ranch's
+            Christmas Winter Break Day Camps! Back this year by popular demand
+            our day camps offer outdoor fun and activity as well as indoor
+            festivities to celebrate the winter season and the magic of
+            Christmas! Treat your kids to a memorable day or bundle package all
+            four days at a daily savings!
+          </p>
 
-					<Button to='/day-camp/christmas-day-camp/'>Learn more</Button>
-				</Program> */}
+          <Button to="/day-camp/christmas-day-camp/">Learn more</Button>
+        </Program>
+
+        <Program
+          src={data.goalieClinic.childImageSharp.fluid}
+          name="Winter Goalie Clinic"
+          alt="Winter Goalie Clinic"
+        >
+          <p>
+            Focus on skating, tracking the puck, situational awareness, rebound
+            control and more
+          </p>
+
+          <Button to="/programs/hockey-and-skating/goalie-clinic/">
+            Learn more
+          </Button>
+        </Program>
 
         {/* <Program
           src={data.fatherSon.childImageSharp.fluid}
@@ -426,6 +447,14 @@ export const query = graphql`
     figureSkating: file(
       relativePath: { eq: "programs/figureSkating/figureskating.jpg" }
     ) {
+      childImageSharp {
+        fluid(maxWidth: 600, maxHeight: 334, quality: 64) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+
+    goalieClinic: file(relativePath: { eq: "coaches/eddie-davey.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600, maxHeight: 334, quality: 64) {
           ...GatsbyImageSharpFluid_withWebp
