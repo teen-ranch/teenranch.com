@@ -55,7 +55,7 @@ export default function Default({ data }) {
           <p>
             <em>Partnering with MAD Athletic Development</em>
           </p>
-          {/* <Button href="https://register.trmanager.com">Book now</Button> */}
+          <Button href="https://register.trmanager.com">Book now</Button>
         </Program>
       </Container>
     </>
