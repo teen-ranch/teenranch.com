@@ -53,7 +53,7 @@ export default function Default() {
                 </tr>
                 <tr>
                   <td>#3</td>
-                  <td>January 11, 2023 - February 8, 2023</td>
+                  <td>January 11, 2023 - February 15, 2023</td>
                   <td>6:00pm - 6:50pm</td>
                   <td>7:00pm - 7:50pm</td>
                 </tr>
