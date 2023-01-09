@@ -32,7 +32,7 @@
     "gatsby-transformer-javascript-frontmatter": "^2.6.0",
     "gatsby-transformer-sharp": "^2.8.0",
     "iframe-resizer-react": "^1.1.0",
-    "luxon": "^3.0.4",
+    "luxon": "^3.2.1",
     "node-sass": "^4.14.1",
     "react": "^17.0.1",
     "react-calendly": "^2.2.2",
