@@ -281,6 +281,11 @@ export default function Header({ location }) {
                         {/* <li><NavLink to='/events/march-april-break-day-camp/'><s>March</s> April Break Day Camp</NavLink></li> */}
                         {/* <li><NavLink to='/events/family-winter-activity-adventure/'>Winter Activity Adventure</NavLink></li> */}
                         <li>
+                          <NavLink to="/events/march-break-camp-for-a-weekend/">
+                            March Break Camp for a Weekend
+                          </NavLink>
+                        </li>
+                        <li>
                           <NavLink to="/events/family-day-roundup/">
                             Family day roundup
                           </NavLink>

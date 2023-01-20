@@ -23,10 +23,6 @@ export default function Default() {
             Trail rides are currently offered on Sundays.
           </strong>
           <ul>
-            <li>
-              Maximum 10 people including staff for keeping with government
-              restrictions
-            </li>
             <li>Ages 10+</li>
             <li>One-hour in length</li>
             <li>Walk/trot (if comfortable)</li>

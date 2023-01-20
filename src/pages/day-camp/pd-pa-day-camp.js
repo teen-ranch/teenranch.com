@@ -12,7 +12,10 @@ import { CTAButton } from "components/Button"
 // import Coach from 'components/Coach'
 // import { Link } from 'react-scroll'
 import { PriceContainer, Price } from "components/Price"
-import { dayCampBulletsClassic } from "components/defaults"
+import {
+  dayCampBulletsClassic,
+  dayCampBulletsHockey,
+} from "components/defaults"
 // import Grid from 'components/Grid'
 // import Sponsor from 'components/Sponsor'
 // import Img from 'gatsby-image'
@@ -68,9 +71,6 @@ export default function Programs({ data }) {
       <Container type="body">
         <h1>Available dates</h1>
 
-        <ul>
-          <li>November 25, 2022 (Hockey option available)</li>
-        </ul>
         <div
           style={{
             padding: "4rem",
@@ -114,7 +114,7 @@ export default function Programs({ data }) {
             who="Kids ages 5-12"
             price={89}
             term="day"
-            includes={dayCampBulletsClassic}
+            includes={[dayCampBulletsClassic]}
           >
             <CTAButton href="https://register.trmanager.com">
               Register now
@@ -133,17 +133,7 @@ export default function Programs({ data }) {
             who="Kids ages 5-12"
             price={99}
             term="day"
-            includes={[
-              <strong>
-                One on-ice skills and skating development session, including a
-                full-ice scrimmage{" "}
-              </strong>,
-              "Outdoor discovery, games and sports*",
-              "Indoor ice skating with kid-friendly music",
-              "Pony rides*",
-              "Seasonal activities and crafts",
-              "Lunch & two snacks",
-            ]}
+            includes={dayCampBulletsHockey}
           >
             <CTAButton href="https://register.trmanager.com">
               Register now
