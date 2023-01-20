@@ -113,7 +113,6 @@ export default function Default({ data }) {
 
       <Container type="body">
         <h1>Pricing</h1>
-
         <PriceContainer>
           <Price
             title={<>March Break Camp for a Weekend</>}
@@ -128,7 +127,10 @@ export default function Default({ data }) {
               "Seasonal Sports ",
               "Indoor Archery",
               "Woodland Survival Skills ",
-              "Snow Tubing – weather dependent",
+              "Snow Tubing",
+              "Camp Wide games",
+              "Campfire ",
+              "Cabin Time",
             ]}
             // includes={dayCampBulletsClassic}
           >
@@ -149,7 +151,10 @@ export default function Default({ data }) {
               "Seasonal Sports ",
               "Indoor Archery",
               "Woodland Survival Skills ",
-              "Snow Tubing – weather dependent",
+              "Snow Tubing",
+              "Camp Wide games",
+              "Campfire ",
+              "Cabin Time",
             ]}
             // includes={dayCampBulletsClassic}
           >
@@ -158,6 +163,7 @@ export default function Default({ data }) {
             </CTAButton>
           </Price>
         </PriceContainer>
+        * All activities are weather permitting.
       </Container>
 
       <Container>
