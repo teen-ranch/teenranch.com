@@ -218,19 +218,11 @@ export default function Default({ data }) {
           <Card style={{ padding: "2rem 2rem" }}>
             <h3>Ring #1 (9:00 am start)</h3>
             <ul>
-              <li>Intermediate Hunters</li>
-              <li>
-                Novice Equitation Division -{" "}
-                <em style={{ fontSize: "13px" }}>Simplified courses!</em>
-              </li>
               <li>Novice Hack Division</li>
-              <li>Green Hunter Division</li>
-              <li>
-                Short Stirrup Division -{" "}
-                <em style={{ fontSize: "13px" }}>
-                  Division will be split in half by age if more than 15 entries.
-                </em>
-              </li>
+              <li>Intermediate Hunters</li>
+              <li>Green Hunters</li>
+              <li>Novice Hunters</li>
+              <li>Short Stirrup Division</li>
             </ul>
           </Card>
 
@@ -238,29 +230,21 @@ export default function Default({ data }) {
             <h3>Ring #3 (9:00 am start)</h3>
             <ul>
               <li>Hack Division</li>
-              <li>2' Hunter Division</li>
-              <li>2'3" Hunter Division</li>
+              <li>2' Hunters</li>
+              <li>2'3" Hunters</li>
               <li>Amateur Equitation Division</li>
-              <li>Hi/Low Hunter Division</li>
+              <li>Hi/Low Hunters</li>
             </ul>
           </Card>
 
           <Card style={{ padding: "2rem 2rem" }}>
-            <h3>Ring #4 (8:30 am start)</h3>
+            <h3>Ring #4 (8:00 am start)</h3>
             <ul>
               <li>Leadline Division</li>
-              <li>
-                Beginner Division -{" "}
-                <em style={{ fontSize: "13px" }}>
-                  Division will be split in half by age if more than 15 entries.
-                </em>
-              </li>
-              <li>
-                Rookie Division -{" "}
-                <em style={{ fontSize: "13px" }}>
-                  Division will be split in half by age if more than 15 entries.
-                </em>
-              </li>
+              <li>Starter Division</li>
+              <li>Beginner 'A' Division</li>
+              <li>Beginner 'B' Division</li>
+              <li>Rookie Division</li>
             </ul>
           </Card>
 
@@ -270,11 +254,10 @@ export default function Default({ data }) {
               <li>
                 Jumper Division -{" "}
                 <em style={{ fontSize: "13px" }}>
-                  Open to all. Choose .75m OR .9m. Both heights are judged
+                  Open to all. Choose .6m, .75m OR .9m. All heights are judged
                   together.
                 </em>
               </li>
-              <li>Jumper Division - .6m</li>
             </ul>
             Will begin at the completion of the Rookie Division. (if shod, it’s
             advised to use corks)
@@ -282,7 +265,7 @@ export default function Default({ data }) {
         </div>
         <Button
           target="_blank"
-          href="https://teenranch.nyc3.cdn.digitaloceanspaces.com/website/pdf/hjClassDescriptions_2022_V1.pdf"
+          href="https://teenranch.nyc3.cdn.digitaloceanspaces.com/website/pdf/hjClassDescriptions_2023_V1.pdf"
         >
           View class descriptions
         </Button>
@@ -338,6 +321,8 @@ export default function Default({ data }) {
                 <li>High Point Low Hunter TB (under 2’6)</li>
                 <li>High Point High Hunter TB (2’6 & over)</li>
                 <li>High Point Jr. Rider</li>
+                <li>High Point Sr. Rider</li>
+                <li>High Point Equitation Rider</li>
               </ul>
             </li>
             <li>
@@ -369,7 +354,7 @@ export default function Default({ data }) {
               </em>
             </li>
             <li>
-              Horse of the Year – <em>Sponsored by Dr. Kendra Clark</em>
+              Horse of the Year – <em>Sponsored by Dr. Kristin Varik</em>
               <br />
               <em style={{ fontSize: "13px" }}>
                 Horse/pony earning the most points of the season. Receives an
@@ -390,7 +375,7 @@ export default function Default({ data }) {
       <Container type="body">
         <div id="rules" style={{ position: "absolute", marginTop: "-180px" }} />
         <h2>Rules & policies</h2>
-        <Grid lg={1} xl={2} gap={true}>
+        <Grid lg={1} xl={1} gap={true}>
           <Card style={{ padding: "2rem" }}>
             <h4>Show rules</h4>
             <ol>
@@ -402,10 +387,10 @@ export default function Default({ data }) {
                 Back number must be worn and visible at all times while on
                 horseback.
               </li>
-              <li>
+              {/* <li>
                 Covid Protocols in place. See Covid Policy on website for
                 details.
-              </li>
+              </li> */}
               <li>
                 Please read class descriptions to see rules on cross-entering.
               </li>
@@ -443,7 +428,9 @@ export default function Default({ data }) {
               <li>
                 <strong>Pony Riders</strong> – we don’t set age limits to show
                 ponies, as we believe it’s better for ponies to get this time in
-                training so they are safe for younger riders later.{" "}
+                training so they are safe for younger riders later. <br />
+                Please be sure the rider is of suitable size for the pony's
+                comfort.
               </li>
               <li>
                 For all other concerns, EQUINE CANADA RULES APPLY. Please check
@@ -455,11 +442,11 @@ export default function Default({ data }) {
               </li>
             </ol>
           </Card>
-          <Card style={{ padding: "2rem" }}>
+          {/* <Card style={{ padding: "2rem" }}>
             <h4>COVID-19 policy</h4>
             Please self screen. If you have any symptoms, please stay home.
             <p>We are looking forward to a safe and fun competition!</p>
-          </Card>
+          </Card> */}
         </Grid>
       </Container>
 
