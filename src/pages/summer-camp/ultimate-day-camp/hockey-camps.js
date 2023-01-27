@@ -346,8 +346,8 @@ export default function Programs({ data }) {
               "Full-ice scrimmages",
               "Off-ice program",
               "Free jersey",
-              "Breakfast, lunch & dinner",
-              "Snackbar open morning and afternoon",
+              "Lunch & morning snack",
+              "Snackbar open in the afternoons",
               "Camp activities",
             ]}
           >
