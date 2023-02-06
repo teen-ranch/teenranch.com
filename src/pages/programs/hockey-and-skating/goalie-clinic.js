@@ -34,9 +34,10 @@ export default function Default({ data }) {
           <p>Boys and Girls ages 6-14</p>
           <h3>When</h3>
           <p>(8) 1 hr on-ice sessions</p>
+          {/* <p>(8) 1 hr on-ice sessions</p>
           Wednesdays: January 18, 2023 - March 8, 2023
           <br />
-          <Time>1700</Time> - <Time>1800</Time>
+          <Time>1700</Time> - <Time>1800</Time> */}
           {/* <p>Thursday's 12:30-2:00pm July 14-September 1</p> */}
           {/* <div
             style={{
@@ -50,8 +51,35 @@ export default function Default({ data }) {
           >
             Returning Summer 2023
           </div> */}
+          <div className="staffTable">
+            <table>
+              <thead>
+                <tr>
+                  <th>Session</th>
+                  <th>Date</th>
+                  <th>Age 6-14</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>(A) Winter session</td>
+                  <td>Wednesdays: January 18, 2023 - March 8, 2023</td>
+                  <td>
+                    <Time>1700</Time> - <Time>1800</Time>
+                  </td>
+                </tr>
+                <tr>
+                  <td>(B) Summer session</td>
+                  <td>Thursdays: July 13, 2023 - August 31, 2023</td>
+                  <td>
+                    <Time>1230</Time> - <Time>1400</Time>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <h3>Cost</h3>
-          <p>$399 +HST/player</p>
+          <p>$400 +HST/player</p>
           <p>
             <em>Partnering with MAD Athletic Development</em>
           </p>

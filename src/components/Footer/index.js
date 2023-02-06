@@ -74,6 +74,12 @@ export default function Footer() {
           <div>
             <div className="footerTitle">Hockey & skating</div>
             <ul className="footerNavigation">
+              <div className="subNavDivider">Skills & Skating</div>
+              <li>
+                <Link to="/programs/hockey-and-skating/skills-and-skating-development/">
+                  Skills & skating development
+                </Link>
+              </li>
               <div className="subNavDivider">Skating</div>
               <li>
                 <Link to="/programs/hockey-and-skating/learn-to-skate/">
@@ -91,11 +97,7 @@ export default function Footer() {
                 </Link>
               </li>
               <div className="subNavDivider">Skills</div>
-              <li>
-                <Link to="/programs/hockey-and-skating/pre-season-skills-and-skating/">
-                  Pre-season skills & skating
-                </Link>
-              </li>
+
               <li>
                 <Link to="/programs/hockey-and-skating/goalie-clinic/">
                   Goalie clinic
