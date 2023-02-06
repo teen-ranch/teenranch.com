@@ -356,7 +356,17 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
             ? [
                 {
                   name: "Adventure camp",
-                  dates: ["", "TBD", "TBD", "TBD", "TBD", "TBD", "TBD", "", ""],
+                  dates: [
+                    "",
+                    "TBD",
+                    "TBD",
+                    "TBD",
+                    "TBD",
+                    "10-12",
+                    "TBD",
+                    "",
+                    "",
+                  ],
                 },
               ]
             : []),

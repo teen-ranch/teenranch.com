@@ -94,7 +94,10 @@ export default function Programs({ data }) {
         </p>
 
         <h3>Weekly overview</h3>
-        <p>Summer overnight camps run Sunday evenings-Friday evenings.</p>
+        <p>
+          Summer overnight camps run Sunday evenings-Friday evenings. (August
+          7-11 week starts Monday)
+        </p>
         <ul>
           <li>
             <strong>
