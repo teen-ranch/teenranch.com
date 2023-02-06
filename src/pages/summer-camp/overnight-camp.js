@@ -343,7 +343,7 @@ export default function Programs({ data }) {
               "Mountain biking",
               "Certified instructor",
               "Breakfast, lunch & dinner",
-              "Snackbar open morning and afternoon",
+              "Snackbar",
             ]}
           >
             <center>
