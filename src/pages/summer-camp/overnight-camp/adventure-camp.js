@@ -98,7 +98,8 @@ export default function Programs({ data }) {
         </p>
         <p>
           Our well-trained staff are committed to the safety and well-being of
-          each camper and aim to come alongside them to challenge and inspire!
+          each camper and aim to come alongside them to challenge, encourage,
+          and inspire!
         </p>
 
         <h3>Weekly overview</h3>
