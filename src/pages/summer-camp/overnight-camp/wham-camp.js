@@ -78,16 +78,17 @@ export default function Programs({ data }) {
         <h1>Overnight camp for outrageous fun</h1>
 
         <p>
-          Register for overnight camp and experience all the fun and adventure a
-          week of summer camp has to offer. Enjoy the great outdoors, get
+          Overnight campers experience all the fun and adventure a week of
+          summer camp has to offer. Campers enjoy the great outdoors, get
           active, and make new friends.
         </p>
         <p>
-          In the morning, hone your skills in your sport of choice. Afternoons
-          are your chance to enjoy a variety of Teen Ranch activities and
-          bunkroom time - a unique opportunity for growth, bonding and overall
-          fun! Evenings include camp-wide games and nightly campfires with
-          engaging, real-life topics shared from a biblical perspective.
+          In the morning, campers hone skills in their sport of choice.
+          Afternoons are their chance to enjoy a variety of Teen Ranch
+          activities and bunkroom time - a unique opportunity for growth,
+          bonding, and overall fun!! Evenings include camp-wide games and
+          nightly campfires with engaging, real-life topics shared from a
+          biblical perspective.
         </p>
         <p>
           Campers are housed in{" "}
