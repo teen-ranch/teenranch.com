@@ -78,20 +78,27 @@ export default function Programs({ data }) {
         <h1>Overnight camp for outrageous fun</h1>
 
         <p>
-          Our popular overnight camps are back this year and better than ever!
-          Campers experience all the fun and adventure of summer camp packed
-          into five awesome nights as they enjoy the great outdoors, get active,
-          and build friendships that can last a lifetime.
+          Register for overnight camp and experience all the fun and adventure a
+          week of summer camp has to offer. Enjoy the great outdoors, get
+          active, and make new friends.
         </p>
         <p>
-          In the morning, campers hone their skills in their sport of choice.
-          Afternoons are their chance to enjoy a variety of activities, and
-          evenings include camp-wide games and a campfire with engaging,
-          real-life topics shared from a biblical perspective.
+          In the morning, hone your skills in your sport of choice. Afternoons
+          are your chance to enjoy a variety of Teen Ranch activities and
+          bunkroom time - a unique opportunity for growth, bonding and overall
+          fun! Evenings include camp-wide games and nightly campfires with
+          engaging, real-life topics shared from a biblical perspective.
+        </p>
+        <p>
+          Campers are housed in{" "}
+          <a href="/facilities/" target="_blank">
+            top-notch facilities
+          </a>{" "}
+          that include a private washroom and air conditioning.
         </p>
         <p>
           Our well-trained staff are committed to the safety and well-being of
-          each camper and aim to come alongside you to challenge and inspire!
+          each camper and aim to come alongside them to challenge and inspire!
         </p>
 
         <h3>Weekly overview</h3>
