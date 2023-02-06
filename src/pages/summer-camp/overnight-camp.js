@@ -177,9 +177,9 @@ export default function Programs({ data }) {
             <i style={{ textDecoration: "italic" }}>One week only!</i>
             <br />
             <br />
-            Off-site, day adventures in kayaking, caving/spelunking, canoeing,
-            paddle boarding and mountain biking. Campers must be able to swim
-            and eager to try new things.
+            Off-site, day adventures may include kayaking, caving/spelunking,
+            canoeing, and mountain biking. Campers must be able to swim and
+            eager to try new things.
             <br />
             <PrimaryButton to="/summer-camp/overnight-camp/adventure-camp/">
               Learn more
@@ -320,9 +320,7 @@ export default function Programs({ data }) {
           </Price>
           <Price
             title="Adventure camp"
-            subTitle="Off-site, day adventures in outdoor rock climbing,
-            caving/spelunking, canoeing, white-water kayaking and mountain
-            biking."
+            subTitle="Off-site, day adventures may include kayaking, caving/spelunking, canoeing, and mountain biking. Campers must be able to swim and eager to try new things."
             who="Adventurous kids, must be able to swim"
             price={1225}
             term="week"
