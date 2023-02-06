@@ -43,10 +43,13 @@ export default function Default() {
           <Button href="https://register.trmanager.com">Book now</Button>
 
           <h3>Summer hockey league (30+)</h3>
-          <p>Thursday nights. 7:00pm and 8:00pm game times (4 teams)</p>
+          <p>
+            Thursday nights. 8:00pm, 9:00pm, and 10:00 (if needed) game times
+            (4-6 teams)
+          </p>
           <ul>
             <li>
-              <strong>When:</strong> Thursday May 26 - August 25, 2022.
+              <strong>When:</strong> Thursday May 25 - August 24, 2023.
             </li>
             <li>
               <strong>Cost:</strong> $260 +HST (12 games + playoffs)

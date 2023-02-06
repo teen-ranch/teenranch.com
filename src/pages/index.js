@@ -206,7 +206,7 @@ export default function Index({ data }) {
         <Button to="/summer-camp/">Learn more about summer camp</Button>
       </SummerCampRegistrationNotice> */}
       <Container type="body">
-        <Program
+        {/* <Program
           src={data.christmasDayCamp.childImageSharp.fluid}
           name="Christmas day camp"
           alt="Christmas day camp"
@@ -237,7 +237,7 @@ export default function Index({ data }) {
           <Button to="/programs/hockey-and-skating/goalie-clinic/">
             Learn more
           </Button>
-        </Program>
+        </Program> */}
 
         {/* <Program
           src={data.fatherSon.childImageSharp.fluid}

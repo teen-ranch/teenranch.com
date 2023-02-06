@@ -126,6 +126,16 @@ export default function Header({ location }) {
                     {/* <ul className='subSubNav'>
                                         <li><NavLink to='/programs/summer-camp/hockey-camp/'>Summer hockey camp</NavLink></li>
                                     </ul> */}
+
+                    <div className="subNavDivider">Skills & Skating</div>
+                    <ul className="subSubNav">
+                      <li>
+                        <NavLink to="/programs/hockey-and-skating/skills-and-skating-development/">
+                          Skills & skating development
+                        </NavLink>
+                      </li>
+                    </ul>
+
                     <div className="subNavDivider">Skating</div>
                     <ul className="subSubNav">
                       <li>
@@ -146,11 +156,6 @@ export default function Header({ location }) {
                     </ul>
                     <div className="subNavDivider">Skills</div>
                     <ul className="subSubNav">
-                      <li>
-                        <NavLink to="/programs/hockey-and-skating/pre-season-skills-and-skating/">
-                          Pre-season skills & skating
-                        </NavLink>
-                      </li>
                       <li>
                         <NavLink to="/programs/hockey-and-skating/goalie-clinic/">
                           Goalie clinic
