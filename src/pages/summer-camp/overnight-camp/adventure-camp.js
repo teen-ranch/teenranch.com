@@ -65,11 +65,11 @@ export default function Programs({ data }) {
         <h1>Adventure camp</h1>
 
         <p>
-          For those who love to push their limits, this is for you! Each day you
-          will enjoy an exciting variety of unique adventures including
-          kayaking, caving, canoeing, paddle boarding, and mountain biking.
-          Campers must be able to swim and eager to try new things. Please note
-          campers will be off-site for many adventures.
+          For those who love to push their limits! Each day campers will enjoy
+          an exciting, unique daily adventure which may include kayaking,
+          canoeing, caving, and/or mountain biking. Campers must be able to swim
+          and eager to try new things. Please note campers will be off-site for
+          many adventures.
         </p>
       </Container>
 
@@ -93,11 +93,14 @@ export default function Programs({ data }) {
         </p>
 
         <h3>Weekly overview</h3>
-        <p>Summer overnight camps run Sunday evenings-Friday evenings.</p>
+        <p>
+          Summer overnight camps run Sunday evenings-Friday evenings. (August
+          7-11 week starts Monday)
+        </p>
         <ul>
           <li>
             <strong>
-              Check-in: Sunday, <Time>1600</Time> - <Time>1630</Time>
+              Check-in: Monday, <Time>1600</Time> - <Time>1630</Time>
             </strong>
             <span style={{ fontSize: "1.3rem", color: "rgba(0,0,0,0.8)" }}>
               - Meet your leaders, visit the snack bar and western store, and
@@ -117,22 +120,13 @@ export default function Programs({ data }) {
         </ul>
       </Container>
 
-      <Container type="body">
+      {/* <Container type="body">
         <h2>Info pack</h2>
-        {/* <div>
-          <PdfButton
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://teenranch.nyc3.cdn.digitaloceanspaces.com/website/pdf/overnightCampInformation_2022.pdf"
-          >
-            Overnight camp info pack
-          </PdfButton>
-        </div> */}
         <p>
           Families will be notified by email two weeks before the camp start
           date for payment reminders and camp information.
         </p>
-      </Container>
+      </Container> */}
 
       <Container type="body">
         <h1>Who it's for</h1>
@@ -141,12 +135,12 @@ export default function Programs({ data }) {
           <Program
             small
             name="Adventure camp"
-            who="Adventurous kids (age 10-14)"
+            who="Adventurous kids (age 10-12)"
             src={file.childImageSharp.fluid}
           >
-            Off-site, day adventures in kayaking, caving/spelunking, canoeing,
-            paddle boarding and mountain biking. Campers must be able to swim
-            and eager to try new things.
+            Off-site, day adventures may include kayaking, caving/spelunking,
+            canoeing, and mountain biking. Campers must be able to swim and
+            eager to try new things.
           </Program>
         </ProgramContainer>
       </Container>
@@ -213,11 +207,9 @@ export default function Programs({ data }) {
         <PriceContainer>
           <Price
             title="Adventure camp"
-            subTitle="Off-site, day adventures in outdoor rock climbing,
-            caving/spelunking, canoeing, white-water kayaking and mountain
-            biking."
+            subTitle="Off-site, day adventures may include kayaking, caving/spelunking, canoeing, and mountain biking. Campers must be able to swim and eager to try new things."
             who="Adventurous kids, must be able to swim"
-            price={1475}
+            price={1225}
             term="week"
             // startingAt
             oneWeekOnly
@@ -227,7 +219,6 @@ export default function Programs({ data }) {
               "Kayaking",
               "Caving/spelunking",
               "Canoeing",
-              "Paddle boarding",
               "Mountain biking",
               "Certified instructor",
               "Breakfast, lunch & dinner",
