@@ -73,13 +73,14 @@ export default function Programs({ data }) {
         <p>
           Our popular overnight camps are back this year and better than ever!
           Campers experience all the fun and adventure of summer camp packed
-          into five awesome nights as they enjoy the great outdoors, get active
+          into five awesome nights as they enjoy the great outdoors, get active,
           and build friendships that can last a lifetime.
         </p>
         <p>
-          In the morning, hone your skills in your sport of choice. Afternoons
-          are your chance to enjoy a variety of activities and daily campfires
-          with engaging, real-life topics shared from a biblical perspective.
+          In the morning, campers hone their skills in their sport of choice.
+          Afternoons are their chance to enjoy a variety of activities, and
+          evenings include camp-wide games and a campfire with engaging,
+          real-life topics shared from a biblical perspective.
         </p>
         <p>
           Our well-trained staff are committed to the safety and well-being of
