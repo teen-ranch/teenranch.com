@@ -130,13 +130,22 @@ export default function Programs({ data }) {
         </ul>
       </Container>
 
-      {/* <Container type="body">
+      <Container type="body">
         <h2>Info pack</h2>
+        <div>
+          <PdfButton
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.canva.com/design/DAFUvmaHLP8/FV-_FiDK8D1ICxRnW64zcQ/view"
+          >
+            Overnight camp info pack
+          </PdfButton>
+        </div>
         <p>
           Families will be notified by email two weeks before the camp start
           date for payment reminders and camp information.
         </p>
-      </Container> */}
+      </Container>
 
       <Container type="body">
         <h1>Who it's for</h1>

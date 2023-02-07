@@ -7,21 +7,22 @@ export default function UltimateDayCampIntro() {
       <h1>Ultimate day camp for ultimate kids</h1>
 
       <p>
-        Ultimate day campers experience all the fun and adventure of summer camp
-        packed into five awesome days as they enjoy the great outdoors, get
-        active and build friendships and memories that last a lifetime.
+        Ultimate day campers experience all the fun and adventure a week of
+        summer camp has to offer. Campers enjoy the great outdoors, get active,
+        and make new friends.
       </p>
 
       <p>
-        In the morning, campers hone their skills in their sport of choice.
-        Afternoons are their chance to enjoy a variety of activities and daily
-        campfires with engaging music and real-life topics shared from a
-        biblical perspective.
+        In the morning, campers hone skills in their sport of choice. Afternoons
+        are their chance to enjoy a variety of activities and daily campfires
+        with engaging music and real-life topics shared from a biblical
+        perspective.
       </p>
 
       <p>
         Our well-trained staff are committed to the safety and well-being of
-        each camper and aim to come alongside them to challenge and inspire!
+        each camper and aim to come alongside them to challenge, encourage, and
+        inspire!
       </p>
 
       <h3>Weekly overview</h3>
