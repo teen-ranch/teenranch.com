@@ -98,7 +98,8 @@ export default function Programs({ data }) {
         </p>
         <p>
           Our well-trained staff are committed to the safety and well-being of
-          each camper and aim to come alongside them to challenge and inspire!
+          each camper and aim to come alongside them to challenge, encourage,
+          and inspire!
         </p>
 
         <h3>Weekly overview</h3>
@@ -129,13 +130,22 @@ export default function Programs({ data }) {
         </ul>
       </Container>
 
-      {/* <Container type="body">
+      <Container type="body">
         <h2>Info pack</h2>
+        <div>
+          <PdfButton
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.canva.com/design/DAFUvmaHLP8/FV-_FiDK8D1ICxRnW64zcQ/view"
+          >
+            Overnight camp info pack
+          </PdfButton>
+        </div>
         <p>
           Families will be notified by email two weeks before the camp start
           date for payment reminders and camp information.
         </p>
-      </Container> */}
+      </Container>
 
       <Container type="body">
         <h1>Who it's for</h1>
