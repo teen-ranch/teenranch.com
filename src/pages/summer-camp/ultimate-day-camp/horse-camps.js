@@ -94,11 +94,15 @@ export default function Programs({ data }) {
 
       <Container type="body">
         <h2>Info pack</h2>
-        {/* <div>
-          <PdfButton href="https://teenranch.nyc3.cdn.digitaloceanspaces.com/website/pdf/udcJdcCampInformation_2022.pdf">
+        <div>
+          <PdfButton
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.canva.com/design/DAFVN48gWC8/8q-Pi1qC3cjkfSIFkOsUPg/view"
+          >
             Ultimate day camp / junior day camp info pack
           </PdfButton>
-        </div> */}
+        </div>
         <p>
           Families will be notified by email two weeks before the camp start
           date for payment reminders and camp information.

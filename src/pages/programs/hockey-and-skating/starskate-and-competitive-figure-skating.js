@@ -55,10 +55,10 @@ export default function Default() {
             <thead>
               <tr>
                 <th aria-label="Empty cell"></th>
-                <th>Fall: Sep. 12 - Nov. 18</th>
-                <th>Holiday: Nov. 20 - Feb. 3</th>
-                <th>Winter: Feb. 5 - Apr. 21</th>
-                {/* <th>Spring: May 16 - June 24 </th> */}
+                {/* <th>Fall: Sep. 12 - Nov. 18</th> */}
+                {/* <th>Holiday: Nov. 20 - Feb. 3</th> */}
+                <th>Winter: Feb. 5, 2023 - Apr. 21, 2023</th>
+                <th>Spring: Apr. 30, 2023 - Jun. 23, 2023 </th>
               </tr>
             </thead>
             <tbody>
@@ -68,10 +68,10 @@ export default function Default() {
                   <br />
                   On-ice: 10:00am - 11:50am
                   <br />
-                  Off-ice: 12:10pm - 12:30pm
+                  Off-ice: 12:00pm - 12:30pm
                   <br />
                 </td>
-                <td>
+                {/* <td>
                   <strong>$250 +HST</strong> (8 sessions)
                   <br />
                   No session Oct. 9
@@ -80,20 +80,25 @@ export default function Default() {
                   <strong>$280 +HST</strong> (9 sessions)
                   <br />
                   No session Dec. 25 or Jan. 1
-                </td>
+                </td> */}
                 <td>
                   <strong>$310 +HST</strong> (10 sessions)
                   <br />
                   No session Apr. 9
+                </td>
+                <td>
+                  <strong>$220 +HST</strong> (7 sessions)
+                  <br />
+                  No session May 21
                 </td>
               </tr>
               <tr>
                 <td>
                   <strong>Mondays</strong>
                   <br />
-                  On-ice: 4:30pm - 6:00pm
+                  On-ice: 4:30pm - 5:50pm
                 </td>
-                <td>
+                {/* <td>
                   <strong>$225 +HST</strong> (9 sessions)
                   <br />
                   No session Oct. 10
@@ -102,11 +107,16 @@ export default function Default() {
                   <strong>$225 +HST</strong> (9 sessions)
                   <br />
                   No session Dec. 26 or Jan. 2
-                </td>
+                </td> */}
                 <td>
                   <strong>$225 +HST</strong> (9 sessions)
                   <br />
                   No session Feb. 20 or Apr. 10
+                </td>
+                <td>
+                  <strong>$175 +HST</strong> (7 sessions)
+                  <br />
+                  No session May 22
                 </td>
               </tr>
               <tr>
@@ -115,18 +125,21 @@ export default function Default() {
                   <br />
                   On-ice: 4:30pm - 5:50pm
                   <br />
-                  Off-ice: 6:00pm - 6:20pm
+                  Off-ice: 6:00pm - 6:30pm
                 </td>
-                <td>
+                {/* <td>
                   <strong>$250 +HST</strong> (10 sessions)
                 </td>
                 <td>
                   <strong>$225 +HST</strong> (9 sessions)
                   <br />
                   No session Dec. 29 or Jan. 5
-                </td>
+                </td> */}
                 <td>
                   <strong>$275 +HST</strong> (11 sessions)
+                </td>
+                <td>
+                  <strong>$200 +HST</strong> (8 sessions)
                 </td>
               </tr>
               <tr>
@@ -135,18 +148,21 @@ export default function Default() {
                   <br />
                   On-ice: 4:30pm - 5:50pm
                 </td>
-                <td>
+                {/* <td>
                   <strong>$250 +HST</strong> (10 sessions)
                 </td>
                 <td>
                   <strong>$200 +HST</strong> (8 sessions)
                   <br />
                   No session Dec. 23, Dec. 30 or Jan. 6
-                </td>
+                </td> */}
                 <td>
                   <strong>$250 +HST</strong> (10 sessions)
                   <br />
                   No session Apr. 7
+                </td>
+                <td>
+                  <strong>$200 +HST</strong> (8 sessions)
                 </td>
               </tr>
             </tbody>
@@ -219,12 +235,15 @@ export default function Default() {
 
         <h3>
           FutureSTARS Enrichment Program{" "}
-          <span style={{ fontWeight: "normal" }}>
-            (participants must skate at least 3 days per week and take dry-land
-            training classes)
+          <span
+            style={{ fontWeight: "normal", fontSize: "11pt", display: "block" }}
+          >
+            (FutureSTARS members MUST skate at least 3 days per week and should
+            participate in off-ice classes, performances, competitions & tests
+            under direction of the Head Coach.)
           </span>
         </h3>
-        <h4>Cost: $1,500 +HST</h4>
+        <h4>SPRING - Cost: $550 +HST (30 Sessions)</h4>
         <p>
           DPSC partnered with Teen Ranch supports the pursuit of excellence in
           sport & life skills necessary to become an accomplished figure skater!

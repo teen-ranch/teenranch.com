@@ -15,7 +15,7 @@ export default function Default() {
         title="Learn to skate"
         subtitle="A beginner skating program for all ice sports."
         keywords="starskate, competitive figure skating, dufferin peel skating club"
-        metaTitle="DSTARSKATE & Competitive Figure Skating"
+        metaTitle="STARSKATE & Competitive Figure Skating"
         metaDescription="A beginner skating program for all ice sports."
       />
       <Container type="body">
@@ -91,10 +91,10 @@ export default function Default() {
             <thead>
               <tr>
                 <th aria-label="Empty cell"></th>
-                <th>Fall: Sep. 12 - Nov. 18</th>
-                <th>Holiday: Nov. 21 - Feb. 3</th>
-                <th>Winter: Feb. 6 - Apr. 21</th>
-                {/* <th>Spring: May 20 - June 24 </th> */}
+                {/* <th>Fall: Sep. 12 - Nov. 18</th>
+                <th>Holiday: Nov. 21 - Feb. 3</th> */}
+                <th>Winter: Feb. 6, 2023 - Apr. 21, 2023</th>
+                <th>Spring: May 1, 2023 - June 19, 2023</th>
               </tr>
             </thead>
             <tbody>
@@ -104,20 +104,25 @@ export default function Default() {
                   <br />
                   On-ice: 6:00pm - 6:50pm
                 </td>
-                <td>
+                {/* <td>
                   <strong>$250 +HST</strong> (8 sessions)
                   <br />
                   No session Oct. 10 or Oct. 31
-                </td>
-                <td>
+                </td> */}
+                {/* <td>
                   <strong>$280 +HST</strong> (9 sessions)
                   <br />
                   No session Dec. 26 or Jan. 2
-                </td>
+                </td> */}
                 <td>
                   <strong>$280 +HST</strong> (9 sessions)
                   <br />
                   No session Feb. 20 or Apr. 10
+                </td>
+                <td>
+                  <strong>$220 +HST</strong> (7 sessions)
+                  <br />
+                  No session May 22
                 </td>
               </tr>
               <tr>
@@ -126,21 +131,22 @@ export default function Default() {
                   <br />
                   On-ice: 6:00pm - 6:50pm
                 </td>
-                <td>
+                {/* <td>
                   <strong>$280 +HST</strong> (9 sessions)
                   <br />
                   No session Oct. 21
-                </td>
-                <td>
+                </td> */}
+                {/* <td>
                   <strong>$250 +HST</strong> (8 sessions)
                   <br />
                   No session Dec. 23, Dec. 30 or Jan. 6
-                </td>
+                </td> */}
                 <td>
                   <strong>$310 +HST</strong> (10 sessions)
                   <br />
                   No session Apr. 7
                 </td>
+                <td></td>
                 {/* <td>
                   <strong>$186 +HST</strong> (6 sessions)
                 </td> */}
