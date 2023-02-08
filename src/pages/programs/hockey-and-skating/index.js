@@ -23,16 +23,16 @@ export default function Default() {
       <Container type="body">
         <Program
           src="https://teenranch.nyc3.digitaloceanspaces.com/website/assets/DSC_0513.JPG"
-          name="Pre-Season Skills and Skating"
+          name="Skills and Skating Development"
         >
           <p>
             A six week program focused on the development of forward and
             backward skating, crossovers, tight-turns, individual shooting,
             stick handling, creativity, passing, as well as game situation type
-            skills. For boys and girls ages 7-13.
+            skills. For boys and girls ages 6-13.
           </p>
 
-          <Button to="/programs/hockey-and-skating/pre-season-skills-and-skating/">
+          <Button to="/programs/hockey-and-skating/skills-and-skating-development/">
             Learn more
           </Button>
         </Program>

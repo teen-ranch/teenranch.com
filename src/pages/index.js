@@ -294,6 +294,17 @@ export default function Index({ data }) {
           <Button to="/programs/hockey-and-skating/skating-development/">
             Learn more
           </Button>
+          <h3>Skills & Skating Development</h3>
+          <p>
+            A six week program focused on the development of forward and
+            backward skating, crossovers, tight-turns, individual shooting,
+            stick handling, creativity, passing, as well as game situation type
+            skills. For boys and girls ages 6-13.
+          </p>
+
+          <Button to="/programs/hockey-and-skating/skills-and-skating-development/">
+            Learn more
+          </Button>
         </Program>
 
         <Program
