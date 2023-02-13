@@ -3,6 +3,7 @@ import Container from "components/Container"
 import Heading from "components/Heading"
 // import Button from 'components/Button'
 import Program from "components/Program"
+import { Time } from "components/Time"
 
 export default function Default() {
   return (
@@ -21,6 +22,19 @@ export default function Default() {
           src="https://teenranch.nyc3.digitaloceanspaces.com/website/assets/familyDay.jpg"
           name="Public skating"
         >
+          <div
+            style={{
+              border: "1px solid blue",
+              borderRadius: "4px",
+              padding: "2rem",
+            }}
+          >
+            <h3 style={{ color: "red" }}>Family Day Free Skate</h3>
+            <strong>When:</strong> Monday, February 20, 2023: <Time>1000</Time>{" "}
+            - <Time>1200</Time> (doors open at <Time>0945</Time>)
+            <br />
+            <strong>Cost:</strong> FREE
+          </div>
           <p>
             Public skating is back! It’s a great way to spend time with friends
             and family while keeping fit!
