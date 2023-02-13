@@ -22,6 +22,7 @@ import Event from "components/Event"
 
 import { DateTime } from "luxon"
 import Img from "gatsby-image"
+import { Time } from "components/Time"
 
 const frontmatter = {
   title: "Teen Ranch - Family Day Roundup",
@@ -29,7 +30,8 @@ const frontmatter = {
 }
 
 const pageData = {
-  subTitle: "Minutes away - A world apart",
+  subTitle:
+    "Come and enjoy some active time together with your family and friends this Famiy Day!",
   keywords: "family day event, what to do on family day",
 }
 
@@ -56,7 +58,7 @@ export default function Default({ data }) {
   return (
     <>
       <Heading
-        src={data.file.childImageSharp.fluid}
+        src={`https://teenranch.nyc3.digitaloceanspaces.com/website/assets/familyDay.jpg`}
         alt={frontmatter.title}
         title={frontmatter.title}
         subtitle={pageData.subTitle}
@@ -67,11 +69,22 @@ export default function Default({ data }) {
 
       <Container>
         <h1>{frontmatter.title}</h1>
+        <p>
+          Teen Ranch is happy to offer a <strong>FREE</strong> Family Day Skate!
+          Come and enjoy some active time together with your family and friends
+          this Famiy Day!
+        </p>
+        <h2>When is it?</h2>
+        Monday, February 20, 2023: <Time>1000</Time> - <Time>1200</Time> (doors
+        open at <Time>0945</Time>)<h2>Who is it for?</h2>
+        Open to all ages
+        <h2>Cost</h2>
+        <strong>FREE</strong>
         {/* <div style={{ color: "red", fontSize: "2em" }}>
           Family day is full, we are no longer accepting registrations. Thank
           you!
         </div> */}
-        <p>
+        {/* <p>
           Less than an hour from Toronto and located in the beautiful Caledon
           Hills, Teen Ranch is thrilled to offer you winter outdoor activities
           to help celebrate your family, Enjoy playing, laughing, and making
@@ -105,7 +118,7 @@ export default function Default({ data }) {
           <li>Additional family members: $16/person</li>
           <li>Children age two and under are free</li>
         </ul>
-        <PrimaryButton href={stripePaymentLink}>Pre-register now</PrimaryButton>
+        <PrimaryButton href={stripePaymentLink}>Pre-register now</PrimaryButton> */}
       </Container>
 
       {/* <Container>
@@ -127,14 +140,14 @@ export default function Default({ data }) {
   )
 }
 
-export const query = graphql`
-  query {
-    file(relativePath: { eq: "events/winterTobogganing.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1920, quality: 64) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-  }
-`
+// export const query = graphql`
+//   query {
+//     file(relativePath: { eq: "events/winterTobogganing.jpg" }) {
+//       childImageSharp {
+//         fluid(maxWidth: 1920, quality: 64) {
+//           ...GatsbyImageSharpFluid_withWebp
+//         }
+//       }
+//     }
+//   }
+// `
