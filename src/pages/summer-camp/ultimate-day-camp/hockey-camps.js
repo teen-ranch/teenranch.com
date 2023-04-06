@@ -38,7 +38,8 @@ const pageData = {
 export default function Programs({ data }) {
   const {
     brent,
-    eddie,
+    erik,
+    matt,
     file,
     iceCorral,
     hockeyNowWinner,
@@ -218,7 +219,28 @@ export default function Programs({ data }) {
             Management and is the Liberty Flames third all-time leading scorer.
           </p>
         </Program>
+        <Program src={erik.childImageSharp.fluid} swap>
+          <h2>Erik Bradford</h2>
+          <h3>Hockey coach</h3>
+          <p>
+            Erik Bradford from Orangeville joins us again this summer as a full
+            time hockey coach. Erik played for the Cleveland Monsters of the
+            American Hockey League this past season, the AHL affiliate of the
+            Columbus Blue Jackets.
+          </p>
+        </Program>
 
+        <Program src={matt.childImageSharp.fluid}>
+          <h2>Matthew Maggio</h2>
+          <h3>Guest hockey coach</h3>
+          <p>
+            Matthew Maggio will join us on ice as a guest coach. Matthew was the
+            Captain of the Windsor Spitfires and the OHL's leading scorer this
+            past season, as well as leading the league in goals scored. He was
+            drafted by the New York Islanders in the 5th round of the 2022 NHL
+            draft.
+          </p>
+        </Program>
         {/* <Program src={ eddie.childImageSharp.fluid } swap>
                         <h2>Eddie Davey</h2>
                         <h3>Goalie coach</h3>
@@ -557,7 +579,29 @@ export const query = graphql`
         }
       }
     }
+    erik: file(
+      relativePath: {
+        eq: "coaches/221022_-_W_-_BRADFORD_enters_the_zone_D_AMICO_in_background.webp"
+      }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 1920, quality: 64) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
 
+    matt: file(
+      relativePath: {
+        eq: "coaches/Windsor-Spitfires-Matthew-Maggio-1200x935.webp"
+      }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 1920, quality: 64) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
     # eddie: file(relativePath: { eq: "coaches/eddie-davey.jpg" }) {
     #     childImageSharp {
     # 		fluid(maxWidth: 1920 quality: 64) {
