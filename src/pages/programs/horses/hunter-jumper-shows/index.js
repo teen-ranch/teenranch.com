@@ -82,63 +82,62 @@ export default function Default({ data }) {
                 <tr>
                   <td>June 11, 2023</td>
                   <td>June 5, 2023</td>
-                  {/* <td>
-                                        
+                  <td>
                     <Button
                       target="_blank"
-                      href="https://forms.zohopublic.com/teenranch1/form/HorseShowJune52022/formperma/ryr6HpYngAd_WuiqQ6d8b4Tk4GdKNEKsTAFJl26UGUw?referrername=teenranch.com"
+                      href="https://forms.zohopublic.com/teenranch1/form/HorseShowJune112023/formperma/nzlRfaucFBZY1-sZ1XyVT6v4h2zWyVCe67-A4y5A77A?referrername=teenranch.com"
                     >
-                      June 5th entry form
+                      June 11th entry form
                     </Button>
-                  </td> */}
+                  </td>
                 </tr>
                 <tr>
                   <td>June 25, 2023</td>
                   <td>June 19, 2023</td>
-                  {/* <td>
+                  <td>
                     <Button
                       target="_blank"
-                      href="https://forms.zohopublic.com/teenranch1/form/HorseShowJune262022/formperma/_o5E_4MQPaEtARDMe2Swc4ep3xHo_eMJ0VacNXSWiKQ?referrername=teenranch.com"
+                      href="https://forms.zohopublic.com/teenranch1/form/HorseShowJune1120231/formperma/7eqJQuGREMRk2hksfWr1hxkyTGBx8q_PZIcvYI3HjUI?referrername=teenranch.com"
                     >
-                      June 26th entry form
+                      June 25th entry form
                     </Button>
-                  </td> */}
+                  </td>
                 </tr>
                 <tr>
                   <td>July 9, 2023</td>
                   <td>July 3, 2023</td>
-                  {/* <td>
+                  <td>
                     <Button
                       target="_blank"
-                      href="https://forms.zohopublic.com/teenranch1/form/HorseShowJuly102022/formperma/JqvcxNiAFSBAzq8Iprj4bgRzMCna3xODEMyEcVHnbm8?referrername=teenranch.com"
+                      href="https://forms.zohopublic.com/teenranch1/form/HorseShowJuly92023/formperma/gTnIUXmLM1BE0N1apJXXCYJq7aHxYdIwvbOTY4ILeWc?referrername=teenranch.com"
                     >
-                      July 10th entry form
+                      July 9th entry form
                     </Button>
-                  </td> */}
+                  </td>
                 </tr>
                 <tr>
                   <td>July 23, 2023</td>
                   <td>July 17, 2023</td>
-                  {/* <td>
+                  <td>
                     <Button
                       target="_blank"
-                      href="https://forms.zohopublic.com/teenranch1/form/HorseShowJuly242022/formperma/SzVcZyYCfNyd_Vyk81MqJku0UVGl0NsJEpvlap5jIJM?referrername=teenranch.com"
+                      href="https://forms.zohopublic.com/teenranch1/form/HorseShowJuly232023/formperma/ILbthXTQWIQnb08iBm_L24bPvZp2C3m96RbiMH3aEjk?referrername=teenranch.com"
                     >
-                      July 24th entry form
+                      July 23rd entry form
                     </Button>
-                  </td> */}
+                  </td>
                 </tr>
                 <tr>
                   <td>August 20, 2023</td>
                   <td>August 14, 2023</td>
-                  {/* <td>
+                  <td>
                     <Button
                       target="_blank"
-                      href="https://forms.zohopublic.com/teenranch1/form/HorseShowAugust72022/formperma/EM5BMnmvGclT71rjp76HZ7bgx0wJ8zCiLPMVFzSKL_o?referrername=teenranch.com"
+                      href="https://forms.zohopublic.com/teenranch1/form/HorseShowAugust202023/formperma/tNGE0I4xTrDGPUxkp_e8O4w7WrgssCgedEt7sDClCtI?referrername=teenranch.com"
                     >
-                      August 7th entry form
+                      August 20th entry form
                     </Button>
-                  </td> */}
+                  </td>
                 </tr>
               </tbody>
             </table>
