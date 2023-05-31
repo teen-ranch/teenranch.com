@@ -406,10 +406,10 @@ export default function Default({ data }) {
               <li>
                 <strong>Champion/Reserve Champions</strong> at each show are
                 calculated as follows: 7,5,4,3,2,1. Champion Tie-Breakers – In
-                the Leadline, Short Stirrup, Beginner & Rookie Division, most
-                points in Equitation wins. In other divisions, most points over
-                fences wins. After that or in hack divisions, judge may flip a
-                coin or do conformation line up for the winner.
+                the Leadline, Short Stirrup, Starter, Beginner & Rookie
+                Division, most points in Equitation wins. In other divisions,
+                most points over fences wins. After that or in hack divisions,
+                judge may flip a coin or do conformation line up for the winner.
               </li>
               <li>
                 <strong>Year-End Awards</strong> – Must show in at least 3 shows
