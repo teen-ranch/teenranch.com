@@ -54,7 +54,7 @@ export default function Default() {
             </li>
             <li>
               <strong>U-13/U-15 (Age 11-14)</strong>: Wednesdays, 7:00pm -
-              7:50pm, April - June, 2023
+              7:50pm, April 26 - June 21, 2023
             </li>
           </ul>
           <h3>Cost</h3>
