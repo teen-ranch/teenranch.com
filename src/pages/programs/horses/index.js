@@ -87,7 +87,7 @@ export default function Default() {
           <ul>
             <li>Ring 1, 3 & 4 hunter courses available</li>
             <li>Pre-booking and pre-payment required*</li>
-            <li>$25.00 +HST per horse per hour of ring time</li>
+            <li>$35.00 +HST per horse per hour of ring time</li>
           </ul>
 
           <Button href="mailto:corrie.ensom@teenranch.com?subject=Schooling ring rental">
