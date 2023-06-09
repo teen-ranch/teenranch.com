@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 
 import "./campSchedule.scss"
 
@@ -9,6 +9,22 @@ export default function CampSchedule({
   discountedWeeks,
   programs,
 }) {
+  const [capacity, setCapacity] = useState([])
+  useEffect(() => {
+    getCapacity()
+  }, [])
+
+  async function getCapacity() {
+    const res = await fetch(
+      `${
+        process.env.NODE_ENV === "development"
+          ? "http://localhost:4000"
+          : "https://api.teenranch.com"
+      }/capacities`
+    ).then(res => res.json())
+    setCapacity(res)
+  }
+
   return (
     <div className="schedule__container">
       <div className="schedule__programs">
@@ -98,6 +114,14 @@ export default function CampSchedule({
         {programs.map((program, i) => {
           const isLastProgram = i === programs.length - 1
 
+          const programCapacities = capacity
+            .filter(currentProgramCapacity =>
+              program.ids.includes(currentProgramCapacity.programId)
+            )
+            .sort((a, b) => a.startDate - b.startDate)
+
+          let realDateIndex = 0
+
           return (
             <div
               className="schedule__row"
@@ -110,9 +134,37 @@ export default function CampSchedule({
               {program.dates.map((ages, i) => {
                 const isDiscount = discountedWeeks[i]
                 const isPreviousDiscount = discountedWeeks[i - 1]
+
+                const programCapacity = programCapacities[realDateIndex]
+
+                // const programCapacity = programCapacities.find(
+                //   currentProgramCapacity => currentProgramCapacity.startDate <
+                // )
+
+                const capacityPercentage = Math.round(
+                  programCapacity
+                    ? (programCapacity.currentCapacity /
+                        programCapacity.capacity) *
+                        100
+                    : 0
+                )
+
+                const spotsleft = Number(
+                  programCapacity
+                    ? programCapacity.capacity - programCapacity.currentCapacity
+                    : 0
+                )
+
+                if (ages.length > 0) {
+                  realDateIndex += 1
+                }
+
                 return (
                   <div
                     key={i}
+                    style={{
+                      ...(spotsleft === 0 && { color: "gray" }),
+                    }}
                     className={`schedule__programDate ${
                       !isLastProgram && isDiscount
                         ? "schedule__date--discount"
@@ -146,12 +198,34 @@ export default function CampSchedule({
                     //   }),
                     // }}
                   >
-                    {["UDC", "ONC", "NO CAMP", "TBD"].includes(ages)
-                      ? ages
-                      : ages
-                      ? `Age: `
-                      : ""}
-                    {!["UDC", "ONC", "NO CAMP", "TBD"].includes(ages) && ages}
+                    <div>
+                      {" "}
+                      {["UDC", "ONC", "NO CAMP", "TBD"].includes(ages)
+                        ? ages
+                        : ages
+                        ? `Age: `
+                        : ""}
+                      {!["UDC", "ONC", "NO CAMP", "TBD"].includes(ages) && ages}
+                      {ages && capacityPercentage >= 80 ? (
+                        <div
+                          style={{
+                            fontSize: "1rem",
+                            color: spotsleft === 0 ? "red" : "darkred",
+                            textTransform: "uppercase",
+                            marginTop: ".2rem",
+                          }}
+                        >
+                          {spotsleft > 0 ? (
+                            <>
+                              {spotsleft} {spotsleft === 1 ? "spot" : "spots"}{" "}
+                              remaining
+                            </>
+                          ) : (
+                            <>Program is full</>
+                          )}
+                        </div>
+                      ) : null}
+                    </div>
                   </div>
                 )
               })}
@@ -249,8 +323,10 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
                     "8-13",
                     "8-13",
                   ],
+                  ids: [2, 63],
                 },
                 {
+                  ids: [59, 64],
                   name: "Elite hockey camp",
                   dates: [
                     "",
@@ -281,14 +357,17 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
                   ],
                 },
                 {
+                  ids: [3],
                   name: "Girl's hockey camp",
                   dates: ["", "", "", "8-13", "", "", "", "", ""],
                 },
                 {
+                  ids: [4],
                   name: "Goalie camp",
                   dates: ["", "", "", "", "8-14", "", "", "", ""],
                 },
                 {
+                  ids: [74],
                   name: "Summer drop-in ice time",
                   dates: ["", "", "", "", "", "", "", "", "8-13"],
                 },
@@ -297,6 +376,7 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
           ...(!sections || sections.includes("horses")
             ? [
                 {
+                  ids: [8, 67],
                   name: "Western riding camp",
                   dates: [
                     "8-12",
@@ -311,6 +391,7 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
                   ],
                 },
                 {
+                  ids: [7, 68],
                   name: "English riding camp",
                   dates: [
                     "8-12",
@@ -325,10 +406,12 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
                   ],
                 },
                 {
+                  ids: [27],
                   name: "Rodeo camp",
                   dates: ["", "", "", "", "12-16", "", "", "", ""],
                 },
                 {
+                  ids: [9],
                   name: "Intensive equestrian camp",
                   dates: ["", "", "", "", "", "", "12-16", "", ""],
                 },
@@ -337,6 +420,7 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
           ...(!sections || sections.includes("wham")
             ? [
                 {
+                  ids: [70, 73],
                   name: "WHAM camp",
                   dates: [
                     "8-12",
@@ -355,24 +439,16 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
           ...(!sections || sections.includes("adventure")
             ? [
                 {
+                  ids: [13],
                   name: "Adventure camp",
-                  dates: [
-                    "",
-                    "TBD",
-                    "TBD",
-                    "TBD",
-                    "TBD",
-                    "10-12",
-                    "TBD",
-                    "",
-                    "",
-                  ],
+                  dates: ["", "", "", "", "", "10-12", "", "", ""],
                 },
               ]
             : []),
           ...(!sections || sections.includes("junior")
             ? [
                 {
+                  ids: [15],
                   name: "Junior day camp",
                   dates: [
                     "5-7",
