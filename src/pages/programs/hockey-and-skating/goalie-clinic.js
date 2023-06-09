@@ -63,16 +63,36 @@ export default function Default({ data }) {
               <tbody>
                 <tr>
                   <td>(A) Winter session</td>
-                  <td>Wednesdays: January 18, 2023 - March 8, 2023</td>
+                  <td>
+                    <strong>Wednesdays:</strong> January 18, 2023 - March 8,
+                    2023
+                  </td>
                   <td>
                     <Time>1700</Time> - <Time>1800</Time>
                   </td>
                 </tr>
                 <tr>
                   <td>(B) Summer session</td>
-                  <td>Thursdays: July 13, 2023 - August 31, 2023</td>
+                  <td>
+                    <strong>Thursdays:</strong> July 13, 2023 - August 31, 2023
+                  </td>
                   <td>
                     <Time>1230</Time> - <Time>1400</Time>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span style={{ color: "red" }}>NEW $250 +HST</span>
+                    <br />
+                    (C) Summer session
+                  </td>
+                  <td>
+                    <strong>Wednesdays:</strong> July 5, 12, 19 & 26, 2023
+                    <br />
+                    <strong>Mondays:</strong> July 31 & August 14, 2023
+                  </td>
+                  <td>
+                    <Time>1800</Time> - <Time>1900</Time>
                   </td>
                 </tr>
               </tbody>
