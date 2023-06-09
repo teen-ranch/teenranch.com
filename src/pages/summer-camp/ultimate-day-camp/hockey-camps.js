@@ -223,18 +223,18 @@ export default function Programs({ data }) {
           <h2>Erik Bradford</h2>
           <h3>Hockey coach</h3>
           <p>
-            Erik Bradford from Orangeville joins us again this summer as a full
-            time hockey coach. Erik played for the Cleveland Monsters of the
-            American Hockey League this past season, the AHL affiliate of the
-            Columbus Blue Jackets.
+            Joining us again this summer as a full time hockey coach is Erik
+            Bradford from Orangeville. Erik played for the Cleveland Monsters of
+            the American Hockey League this past season, the AHL affiliate of
+            the Columbus Blue Jackets.
           </p>
         </Program>
 
         <Program src={matt.childImageSharp.fluid}>
           <h2>Matthew Maggio</h2>
-          <h3>Guest hockey coach</h3>
+          <h3>Guest hockey coach (July 30th - August 4th week)</h3>
           <p>
-            Matthew Maggio will join us on ice as a guest coach. Matthew was the
+            Guest coach Matthew Maggio will join us on ice. Matthew was the
             Captain of the Windsor Spitfires and the OHL's leading scorer this
             past season, as well as leading the league in goals scored. He was
             drafted by the New York Islanders in the 5th round of the 2022 NHL
@@ -251,14 +251,17 @@ export default function Programs({ data }) {
 
         <h2>Previous guest instructors</h2>
         <ul>
-          <li>Laurie Boschman - ex. 14 year NHL veteran and Captain</li>
-          <li>Brock Matheson - ex. AHL/ECHL/Europe Pro player</li>
-          <li>James Naylor - Toronto Marlboros Minor Hockey Coach</li>
-          <li>Erik Bradford - Brampton Beast - ECHL/ Toronto Marlies - AHL</li>
-          <li>Alex Adams – Brampton Beast - ECHL</li>
-          <li>Justin Brack - Brock University - USports</li>
-          <li>Matthew Maggio - Ottawa 67’s – OHL</li>
-          <li>Brian Stapleton - NHL</li>
+          <li>James Naylor - Toronto Marlboros Minor Hockey President</li>
+          <li>Erik Bradford - Cleveland Monsters - AHL</li>
+          <li>Alex Adams – ex. ECHL/USports player</li>
+          <li>
+            Matthew Maggio - Windsor Spitfires – OHL - 5th round NHL Draft pick
+            to the New York Islanders
+          </li>
+          <li>Brian Stapleton - ex NHL player</li>
+          <li>Brenden Miller - Cleveland Monsters - AHL</li>
+          <li>Marcus Joughin - Sacred Heart University - NCAA Div 1</li>
+          <li>Brendan Kennette - Sacred Heart University - NCAA Div 1</li>
         </ul>
 
         {/* <Coach name='Brent Boschman' title='Head coach' src={ brent.childImageSharp.fluid }
