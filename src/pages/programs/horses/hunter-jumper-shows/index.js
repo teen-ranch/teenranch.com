@@ -22,6 +22,7 @@ export default function Default({ data }) {
     image2,
     eliteSponsors,
     ringSponsors,
+    goldSponsors,
     banquetSponsors,
     inkindSponsors,
     prizeSponsors,
@@ -543,7 +544,7 @@ export default function Default({ data }) {
         </Button> */}
 
         <h3>Elite sponsors</h3>
-        <Grid lg={2} xl={4} gap={false}>
+        <Grid lg={3} xl={3} gap={false}>
           {eliteSponsors?.edges?.map((edge, i) => {
             return (
               <Sponsor key={i}>
@@ -570,7 +571,7 @@ export default function Default({ data }) {
           })}
         </Grid>
 
-        <h3>Banquet sponsors</h3>
+        {/* <h3>Banquet sponsors</h3>
         <Grid lg={4} xl={6} gap={false}>
           {banquetSponsors?.edges?.map((edge, i) => {
             return (
@@ -582,11 +583,25 @@ export default function Default({ data }) {
               </Sponsor>
             )
           })}
-        </Grid>
+        </Grid> */}
 
-        <h3>In-kind sponsors</h3>
+        {/* <h3>In-kind sponsors</h3>
         <Grid lg={5} xl={7} gap={false}>
           {inkindSponsors?.edges?.map((edge, i) => {
+            return (
+              <Sponsor key={i}>
+                <Img
+                  fluid={edge.node.childImageSharp.fluid}
+                  alt={edge.node.name}
+                />
+              </Sponsor>
+            )
+          })}
+        </Grid> */}
+
+        <h3>Gold sponsors</h3>
+        <Grid lg={3} xl={5} gap={false}>
+          {goldSponsors?.edges?.map((edge, i) => {
             return (
               <Sponsor key={i}>
                 <Img
@@ -703,7 +718,7 @@ export const query = graphql`
     }
 
     eliteSponsors: allFile(
-      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2022/elite" } }
+      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2023/elite" } }
     ) {
       edges {
         node {
@@ -719,7 +734,7 @@ export const query = graphql`
 
     banquetSponsors: allFile(
       filter: {
-        relativeDirectory: { eq: "hunter-jumper/sponsors2022/banquet" }
+        relativeDirectory: { eq: "hunter-jumper/sponsors2023/banquet" }
       }
     ) {
       edges {
@@ -735,7 +750,7 @@ export const query = graphql`
     }
 
     ringSponsors: allFile(
-      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2022/ring" } }
+      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2023/ring" } }
     ) {
       edges {
         node {
@@ -749,8 +764,8 @@ export const query = graphql`
       }
     }
 
-    inkindSponsors: allFile(
-      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2022/inkind" } }
+    goldSponsors: allFile(
+      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2023/gold" } }
     ) {
       edges {
         node {
@@ -763,9 +778,24 @@ export const query = graphql`
         }
       }
     }
+
+    # inkindSponsors: allFile(
+    #   filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2023/inkind" } }
+    # ) {
+    #   edges {
+    #     node {
+    #       name
+    #       childImageSharp {
+    #         fluid {
+    #           ...GatsbyImageSharpFluid
+    #         }
+    #       }
+    #     }
+    #   }
+    # }
 
     photographers: allFile(
-      filter: { relativeDirectory: { eq: "hunter-jumper/photographers2022" } }
+      filter: { relativeDirectory: { eq: "hunter-jumper/photographers2023" } }
     ) {
       edges {
         node {
@@ -780,7 +810,7 @@ export const query = graphql`
     }
 
     prizeSponsors: allFile(
-      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2022/prize" } }
+      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2023/prize" } }
     ) {
       edges {
         node {
