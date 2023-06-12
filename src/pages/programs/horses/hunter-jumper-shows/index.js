@@ -667,16 +667,18 @@ export default function Default({ data }) {
         <h2>Photographers</h2>
 
         <Grid lg={2} xl={4} gap={false}>
-          {photographers?.edges?.map((edge, i) => {
-            return (
-              <Sponsor key={i}>
-                <Img
-                  fluid={edge.node.childImageSharp.fluid}
-                  alt={edge.node.name}
-                />
-              </Sponsor>
-            )
-          })}
+          {photographers?.edges
+            ?.sort((a, b) => a.node.name - b.node.name)
+            .map((edge, i) => {
+              return (
+                <Sponsor key={i}>
+                  <Img
+                    fluid={edge.node.childImageSharp.fluid}
+                    alt={edge.node.name}
+                  />
+                </Sponsor>
+              )
+            })}
         </Grid>
       </Container>
     </>
