@@ -446,7 +446,7 @@ export default function Programs({ data }) {
       <Container type="body">
         <h2>Additional summer programs:</h2>
         <PriceAddon
-          title="Summer drop-in ice time"
+          title="Summer drop-in ice time (9:00am - 10:30am)"
           subTitle="One-week only!"
           description={
             <>
