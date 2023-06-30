@@ -218,11 +218,11 @@ export default function Default({ data }) {
           <Card style={{ padding: "2rem 2rem" }}>
             <h3>Ring #1 (9:00 am start)</h3>
             <ul>
-              <li>Novice Hack Division</li>
               <li>Intermediate Hunters</li>
-              <li>Green Hunters</li>
-              <li>Novice Hunters</li>
+              <li>Novice Hack Division</li>
               <li>Short Stirrup Division</li>
+              <li>Novice Hunters</li>
+              <li>Green Hunters</li>
             </ul>
           </Card>
 
@@ -231,8 +231,8 @@ export default function Default({ data }) {
             <ul>
               <li>Hack Division</li>
               <li>2' Hunters</li>
-              <li>2'3" Hunters</li>
               <li>Amateur Equitation Division</li>
+              <li>2'3" Hunters</li>
               <li>Hi/Low Hunters</li>
             </ul>
           </Card>
@@ -265,7 +265,7 @@ export default function Default({ data }) {
         </div>
         <Button
           target="_blank"
-          href="https://teenranch.nyc3.cdn.digitaloceanspaces.com/website/pdf/hjClassDescriptions_2023_V1.pdf"
+          href="https://teenranch.nyc3.cdn.digitaloceanspaces.com/website/pdf/hjClassDescriptions_2023_V2.pdf"
         >
           View class descriptions
         </Button>
