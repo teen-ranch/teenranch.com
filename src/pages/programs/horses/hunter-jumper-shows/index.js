@@ -258,7 +258,7 @@ export default function Default({ data }) {
                 </em>
               </li>
             </ul>
-            Will begin at the completion of the Rookie Division. (if shod, it’s
+            Will begin at the completion of the Hi/Low Division. (if shod, it’s
             advised to use corks)
           </Card>
         </div>
