@@ -242,8 +242,7 @@ export default function Default({ data }) {
             <ul>
               <li>Leadline Division</li>
               <li>Starter Division</li>
-              <li>Beginner 'A' Division</li>
-              <li>Beginner 'B' Division</li>
+              <li>Beginner Division</li>
               <li>Rookie Division</li>
             </ul>
           </Card>
