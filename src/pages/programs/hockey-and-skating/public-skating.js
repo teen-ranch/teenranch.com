@@ -22,7 +22,7 @@ export default function Default() {
           src="https://teenranch.nyc3.digitaloceanspaces.com/website/assets/familyDay.jpg"
           name="Public skating"
         >
-          <div
+          {/* <div
             style={{
               border: "1px solid blue",
               borderRadius: "4px",
@@ -34,7 +34,7 @@ export default function Default() {
             - <Time>1200</Time> (doors open at <Time>0945</Time>)
             <br />
             <strong>Cost:</strong> FREE
-          </div>
+          </div> */}
           <p>
             Public skating is back! It’s a great way to spend time with friends
             and family while keeping fit!
@@ -44,11 +44,11 @@ export default function Default() {
           <h3>When</h3>
 
           <p>
-            Saturdays: October 22, 2022 - April 1, 2023 (6:30pm - 8:00pm)
+            Saturdays: October 14, 2023 - April 6, 2024 (6:30pm - 7:50pm)
             <br />
             <strong>
-              Public skating is NOT available Saturday, December 24th, or
-              December 31
+              Public skating is NOT available Saturday, December 23, or December
+              30, 2023
             </strong>
           </p>
 

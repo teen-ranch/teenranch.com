@@ -81,12 +81,12 @@ export default function Programs({ data }) {
             fontSize: "2rem",
           }}
         >
-          Check back after Christmas for Winter/Spring 2023 dates
+          Check back soon for 2023/2024 season dates
         </div>
         {/* <ul>
-          <li>October 24, 2022</li>
-          <li>November 25, 2022 (Hockey option available)</li>
-          <li>June 3, 2022</li>
+          <li>Friday October 27, 2023</li>
+          <li>Friday November 24, 2023</li>
+          <li>Friday February 16, 2024</li>
         </ul> */}
 
         <p>Drop off between 8:30-8:50 am and pick up between 4:30- 5:00 pm</p>
@@ -98,7 +98,7 @@ export default function Programs({ data }) {
                 <h1>Pricing</h1>
             </Container> */}
 
-      <Container type="body">
+      {/* <Container type="body">
         <h1>Pricing</h1>
 
         <PriceContainer>
@@ -140,7 +140,7 @@ export default function Programs({ data }) {
             </CTAButton>
           </Price>
         </PriceContainer>
-      </Container>
+      </Container> */}
 
       <Container>
         <p>* Weather permitting</p>

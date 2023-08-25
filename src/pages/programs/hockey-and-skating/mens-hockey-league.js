@@ -33,10 +33,11 @@ export default function Default() {
           </ul>
           <ul>
             <li>
-              <strong>When:</strong> Starts Wednesday September 21, 2022.
+              <strong>When:</strong> Starts Wednesday September 20, 2023 &
+              Thursday September 21, 2023.
             </li>
             <li>
-              <strong>Cost:</strong> $490 +HST
+              <strong>Cost:</strong> $495 +HST
             </li>
           </ul>
 

@@ -3,6 +3,7 @@ import Container from "components/Container"
 import Heading from "components/Heading"
 import Button from "components/Button"
 import Program from "components/Program"
+import { Time } from "components/Time"
 
 export default function Default() {
   return (
@@ -48,17 +49,17 @@ export default function Default() {
           <Button href="https://register.trmanager.com">Book now</Button>
         </Program>
 
-        <h3>2022/2023 Semesters</h3>
+        <h3>2023/2024 Semesters</h3>
 
         <div className="staffTable">
           <table>
             <thead>
               <tr>
                 <th aria-label="Empty cell"></th>
-                {/* <th>Fall: Sep. 12 - Nov. 18</th> */}
-                {/* <th>Holiday: Nov. 20 - Feb. 3</th> */}
-                <th>Winter: Feb. 5, 2023 - Apr. 21, 2023</th>
-                <th>Spring: Apr. 30, 2023 - Jun. 23, 2023 </th>
+                <th>Fall: Sep. 10, 2023 - Nov. 17, 2023</th>
+                <th>Holiday: Nov. 19, 2023 - Feb. 2, 2024</th>
+                <th>Winter: Feb. 4, 2024 - Apr. 12, 2024</th>
+                {/* <th>Spring: Apr. 30, 2023 - Jun. 23, 2023 </th> */}
               </tr>
             </thead>
             <tbody>
@@ -66,103 +67,87 @@ export default function Default() {
                 <td>
                   <strong>Sundays</strong>
                   <br />
-                  On-ice: 10:00am - 11:50am
+                  On-ice: <Time>1000</Time> - <Time>1120</Time>
                   <br />
-                  Off-ice: 12:00pm - 12:30pm
+                  Off-ice: <Time>1130</Time> - <Time>1230</Time>
                   <br />
-                </td>
-                {/* <td>
-                  <strong>$250 +HST</strong> (8 sessions)
-                  <br />
-                  No session Oct. 9
                 </td>
                 <td>
                   <strong>$280 +HST</strong> (9 sessions)
                   <br />
-                  No session Dec. 25 or Jan. 1
-                </td> */}
-                <td>
-                  <strong>$310 +HST</strong> (10 sessions)
-                  <br />
-                  No session Apr. 9
+                  No session Oct. 8
                 </td>
                 <td>
-                  <strong>$220 +HST</strong> (7 sessions)
+                  <strong>$280 +HST</strong> (9 sessions)
                   <br />
-                  No session May 21
+                  No session Dec. 24, Dec. 31
+                </td>
+                <td>
+                  <strong>$280 +HST</strong> (9 sessions)
+                  <br />
+                  No session Mar. 31
                 </td>
               </tr>
               <tr>
                 <td>
                   <strong>Mondays</strong>
                   <br />
-                  On-ice: 4:30pm - 5:50pm
-                </td>
-                {/* <td>
-                  <strong>$225 +HST</strong> (9 sessions)
-                  <br />
-                  No session Oct. 10
+                  On-ice: <Time>1630</Time> - <Time>1750</Time>
                 </td>
                 <td>
-                  <strong>$225 +HST</strong> (9 sessions)
+                  <strong>$280 +HST</strong> (9 sessions)
                   <br />
-                  No session Dec. 26 or Jan. 2
-                </td> */}
-                <td>
-                  <strong>$225 +HST</strong> (9 sessions)
-                  <br />
-                  No session Feb. 20 or Apr. 10
+                  No session Oct. 9
                 </td>
                 <td>
-                  <strong>$175 +HST</strong> (7 sessions)
+                  <strong>$280 +HST</strong> (9 sessions)
                   <br />
-                  No session May 22
+                  No session Dec. 25, Jan. 1
+                </td>
+                <td>
+                  <strong>$250 +HST</strong> (9 sessions)
+                  <br />
+                  No session Feb. 19, Apr. 1
                 </td>
               </tr>
               <tr>
                 <td>
                   <strong>Thursdays</strong>
                   <br />
-                  On-ice: 4:30pm - 5:50pm
+                  On-ice: <Time>1630</Time> - <Time>1750</Time>
                   <br />
-                  Off-ice: 6:00pm - 6:30pm
-                </td>
-                {/* <td>
-                  <strong>$250 +HST</strong> (10 sessions)
+                  Off-ice: <Time>1800</Time> - <Time>1820</Time>
                 </td>
                 <td>
-                  <strong>$225 +HST</strong> (9 sessions)
+                  <strong>$310 +HST</strong> (10 sessions)
+                </td>
+                <td>
+                  <strong>$280 +HST</strong> (9 sessions)
                   <br />
-                  No session Dec. 29 or Jan. 5
-                </td> */}
-                <td>
-                  <strong>$275 +HST</strong> (11 sessions)
+                  No session Dec. 28, Jan. 4
                 </td>
                 <td>
-                  <strong>$200 +HST</strong> (8 sessions)
+                  <strong>$310 +HST</strong> (10 sessions)
                 </td>
               </tr>
               <tr>
                 <td>
                   <strong>Fridays</strong>
                   <br />
-                  On-ice: 4:30pm - 5:50pm
-                </td>
-                {/* <td>
-                  <strong>$250 +HST</strong> (10 sessions)
+                  On-ice: <Time>1630</Time> - <Time>1750</Time>
                 </td>
                 <td>
-                  <strong>$200 +HST</strong> (8 sessions)
+                  <strong>$310 +HST</strong> (10 sessions)
+                </td>
+                <td>
+                  <strong>$280 +HST</strong> (9 sessions)
                   <br />
-                  No session Dec. 23, Dec. 30 or Jan. 6
-                </td> */}
-                <td>
-                  <strong>$250 +HST</strong> (10 sessions)
-                  <br />
-                  No session Apr. 7
+                  No session Dec. 29, Jan. 5
                 </td>
                 <td>
-                  <strong>$200 +HST</strong> (8 sessions)
+                  <strong>$280 +HST</strong> (9 sessions)
+                  <br />
+                  No session Mar. 29
                 </td>
               </tr>
             </tbody>
@@ -243,14 +228,14 @@ export default function Default() {
             under direction of the Head Coach.)
           </span>
         </h3>
-        <h4>SPRING - Cost: $550 +HST (30 Sessions)</h4>
+        <h4>Fall/Holiday/Winter - Cost: $1,600 +HST</h4>
         <p>
           DPSC partnered with Teen Ranch supports the pursuit of excellence in
           sport & life skills necessary to become an accomplished figure skater!
         </p>
         <p>
-          FutureSTARS members skate 3-4 days per week, take Sunday Fitness
-          Classes, goal-setting activities, take part in performances,
+          FutureSTARS participants must skate 3-4 days per week, take off-ice
+          technique classes, goal-setting activities, take part in performances,
           competitions & tests and assist with Learn-to-Skate when scheduled.
         </p>
         <p>
@@ -269,7 +254,7 @@ export default function Default() {
 
         <ul>
           <li>
-            Annual DPSC club membership: $50 +HST (covers Skate Canada
+            Annual DPSC club membership: $60 +HST (covers Skate Canada
             registration and insurance)
           </li>
         </ul>
@@ -278,9 +263,11 @@ export default function Default() {
 
         <ul>
           <li>
-            DPSC Club membership fee $50 is paid once per year. This fee covers
-            Skate Canada registration and insurance. If home club is not DPSC,
-            then the membership fee is $10.
+            <strong>
+              DPSC Club membership fee $60 is paid once per year. This fee
+              covers Skate Canada registration and insurance.
+            </strong>{" "}
+            If home club is not DPSC, then the membership fee is $10.
           </li>
           <li>HST will be added to all fees.</li>
           <li>No mandatory fundraising.</li>
@@ -289,19 +276,19 @@ export default function Default() {
         <h3>Registration Discounts</h3>
 
         <ul>
-          <li>
+          {/* <li>
             5% discount for 2 semesters or 2 family members in the figure
             skating program
-          </li>
+          </li> */}
           <li>
             10% discount for 3 semesters or 3 or more family members in the
             figure skating program
           </li>
-          <li>
+          {/* <li>
             Figure Skaters that serve as Learn-to-Skate Program Assistants AND
             register for at least 2 sessions per week will receive an additional
             practice day at no additional cost.The lowest price session is free.
-          </li>
+          </li> */}
         </ul>
 
         <p>

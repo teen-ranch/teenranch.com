@@ -46,14 +46,20 @@ export default function Default() {
               </thead>
               <tbody>
                 <tr>
+                  <td>#1</td>
+                  <td>September 13, 2023 - October 18, 2023</td>
+                  <td>6:00pm - 6:50pm</td>
+                  <td>7:00pm - 7:50pm</td>
+                </tr>
+                <tr>
                   <td>#2</td>
-                  <td>November 9, 2022 - December 14, 2022</td>
+                  <td>November 8, 2023 - December 13, 2023</td>
                   <td>6:00pm - 6:50pm</td>
                   <td>7:00pm - 7:50pm</td>
                 </tr>
                 <tr>
                   <td>#3</td>
-                  <td>January 11, 2023 - February 15, 2023</td>
+                  <td>January 17, 2024 - February 21, 2024</td>
                   <td>6:00pm - 6:50pm</td>
                   <td>7:00pm - 7:50pm</td>
                 </tr>
@@ -72,7 +78,7 @@ export default function Default() {
           </div>
 
           <h3>Cost</h3>
-          <p>$250 +HST/player</p>
+          <p>$260 +HST/player</p>
 
           <Button href="https://register.trmanager.com">Book now</Button>
         </Program>

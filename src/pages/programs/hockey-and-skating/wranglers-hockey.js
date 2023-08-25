@@ -12,18 +12,18 @@ export default function Default() {
       <Heading
         src="https://teenranch.nyc3.digitaloceanspaces.com/website/assets/DSC_0513.JPG"
         alt="Smiling kids playing hockey"
-        title="Pond Hockey"
+        title="Wranglers Hockey"
         subtitle="A year-long development program for boys and girls ages 5+"
-        metaTitle="Pond hockey"
-        metaDescription="Pond hockey is a year-long development program for boys and girls ages 5-16+ years old. There are three levels: Learn to Play, Junior and Senior to accommodate all levels of development."
+        metaTitle="Wranglers hockey"
+        metaDescription="Wranglers hockey is a year-long development program for boys and girls ages 5-16+ years old. There are three levels: Learn to Play, Junior and Senior to accommodate all levels of development."
       />
       <Container type="body">
         {/* <Grid md={2} gapSize="8rem"> */}
         <div>
-          <h2>Pond hockey</h2>
+          <h2>Wranglers hockey</h2>
           <p>
-            Pond Hockey is a year-long development program for boys and girls
-            ages 5+ years old.
+            Wranglers Hockey is a year-long development program for boys and
+            girls ages 5+ years old.
             {/* There are three levels: Learn to Play, Junior
             and Senior to accommodate all levels of development.  */}
             {/* This is not a graduated program, Teen Ranch staff will assess your
@@ -44,14 +44,14 @@ export default function Default() {
 
           <h3>When</h3>
           <p>
-            Saturdays: October 22, 2022 - March 11, 2023 (18 sessions)
+            Saturdays: October 14, 2023 - March 2, 2024 (18 sessions)
             <br />
             <br />
             <strong>No sessions on:</strong>
             <ul>
-              <li>December 24, 2022</li>
-              <li>December 31, 2022</li>
-              <li>February 18, 2023</li>
+              <li>December 23, 2023</li>
+              <li>December 30, 2023</li>
+              <li>February 17, 2024</li>
             </ul>
           </p>
 
@@ -70,16 +70,16 @@ export default function Default() {
                   <td>5-8</td>
                   <td>10:00am - 11:00am</td>
                 </tr>
-                {/* <tr>
+                <tr>
                   <td>Junior</td>
-                  <td>7-10</td>
+                  <td>8-11</td>
                   <td>11:00am - 12:00am</td>
                 </tr>
                 <tr>
                   <td>Senior</td>
-                  <td>11+</td>
-                  <td>11:00am - 12:00am</td>
-                </tr> */}
+                  <td>12-16</td>
+                  <td>12:00pm - 1:00pm</td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -170,11 +170,11 @@ export default function Default() {
         <h1>Pricing</h1>
         <PriceContainer>
           <Price
-            title={<>Pond Hockey</>}
+            title={<>Wranglers Hockey</>}
             subTitle={`A year-long development program for boys and girls
             ages 5-16+ years old.`}
             who="Learn to play (ages 5-8)"
-            price={395}
+            price={415}
             term="season"
             includes={["1 hour scrimmage every Saturday"]}
           >
