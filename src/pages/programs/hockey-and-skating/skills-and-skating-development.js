@@ -3,6 +3,7 @@ import Container from "components/Container"
 import Heading from "components/Heading"
 import Button from "components/Button"
 import Program from "components/Program"
+import { Link } from "gatsby"
 
 export default function Default() {
   return (
@@ -28,6 +29,17 @@ export default function Default() {
             skills. For boys and girls ages 6-13.
           </p>
           <h3>Ages 6-13</h3>
+          <div style={{ color: "red" }}>
+            Please see our current{" "}
+            <Link to="/programs/hockey-and-skating/skating-development/">
+              Skating Development
+            </Link>{" "}
+            and{" "}
+            <Link to="/programs/hockey-and-skating/skills-development/">
+              Skills Development
+            </Link>{" "}
+            programs.
+          </div>
           <div className="staffTable">
             <table>
               <thead>

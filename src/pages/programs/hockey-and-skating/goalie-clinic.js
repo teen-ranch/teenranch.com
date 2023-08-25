@@ -33,7 +33,6 @@ export default function Default({ data }) {
           <h3>Who it's for</h3>
           <p>Boys and Girls ages 6-14</p>
           <h3>When</h3>
-          <p>(8) 1 hr on-ice sessions</p>
           {/* <p>(8) 1 hr on-ice sessions</p>
           Wednesdays: January 18, 2023 - March 8, 2023
           <br />
@@ -62,44 +61,35 @@ export default function Default({ data }) {
               </thead>
               <tbody>
                 <tr>
-                  <td>(A) Winter session</td>
+                  <td>(A) Fall session</td>
                   <td>
-                    <strong>Wednesdays:</strong> January 18, 2023 - March 8,
-                    2023
+                    <strong>Wednesdays:</strong> September 13, 2023 - October
+                    18, 2023 (6 sessions)
                   </td>
                   <td>
                     <Time>1700</Time> - <Time>1800</Time>
                   </td>
                 </tr>
                 <tr>
-                  <td>(B) Summer session</td>
+                  <td>(B) Winter session</td>
                   <td>
-                    <strong>Thursdays:</strong> July 13, 2023 - August 31, 2023
+                    <strong>Wednesdays:</strong> January 17, 2024 - March 6,
+                    2024 (8 sessions)
                   </td>
                   <td>
-                    <Time>1230</Time> - <Time>1400</Time>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <span style={{ color: "red" }}>NEW $250 +HST</span>
-                    <br />
-                    (C) Summer session
-                  </td>
-                  <td>
-                    <strong>Wednesdays:</strong> July 5, 12, 19 & 26, 2023
-                    <br />
-                    <strong>Mondays:</strong> July 31 & August 14, 2023
-                  </td>
-                  <td>
-                    <Time>1800</Time> - <Time>1900</Time>
+                    <Time>1700</Time> - <Time>1800</Time>
                   </td>
                 </tr>
               </tbody>
             </table>
           </div>
           <h3>Cost</h3>
-          <p>$400 +HST/player</p>
+          <p>
+            <strong>Fall session:</strong> $300 +HST/player (6 sessions)
+          </p>
+          <p>
+            <strong>Winter session:</strong> $400 +HST/player (8 sessions)
+          </p>
           <p>
             <em>Partnering with MAD Athletic Development</em>
           </p>

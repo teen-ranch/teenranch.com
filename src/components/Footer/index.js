@@ -125,8 +125,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/programs/hockey-and-skating/pond-hockey/">
-                  Pond hockey
+                <Link to="/programs/hockey-and-skating/wranglers-hockey/">
+                  Wranglers hockey (Formerly Pond Hockey)
                 </Link>
               </li>
               <li>

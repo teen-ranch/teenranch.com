@@ -309,13 +309,13 @@ export default function Index({ data }) {
 
         <Program
           src={data.pondHockey.childImageSharp.fluid}
-          name="Pond Hockey"
-          alt="Pond hockey"
+          name="Wranglers Hockey"
+          alt="Wranglers hockey"
           swap
         >
           <p>A year-long development program for boys and girls ages 5-16+</p>
 
-          <Button to="/programs/hockey-and-skating/pond-hockey/">
+          <Button to="/programs/hockey-and-skating/wranglers-hockey/">
             Learn more
           </Button>
         </Program>

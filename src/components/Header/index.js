@@ -185,8 +185,8 @@ export default function Header({ location }) {
                         </NavLink>
                       </li>
                       <li>
-                        <NavLink to="/programs/hockey-and-skating/pond-hockey/">
-                          Pond hockey
+                        <NavLink to="/programs/hockey-and-skating/wranglers-hockey/">
+                          Wranglers hockey (Formerly Pond Hockey)
                         </NavLink>
                       </li>
                       <li>
