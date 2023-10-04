@@ -9,6 +9,7 @@ import Program from "components/Program"
 import Button, { CTAButton } from "components/Button"
 import { CovidContainer } from "components/CovidContainer"
 import { SummerCampRegistrationNotice } from "components/SummerCampRegistrationNotice"
+import Card from "components/Card"
 
 export default function Index({ data }) {
   return (
@@ -257,6 +258,11 @@ export default function Index({ data }) {
           <Button to="/families/father-son-hockey-weekend/">Learn more</Button>
         </Program> */}
 
+        <div style={{ maxWidth: "960px", margin: "0 auto" }}>
+          <Card>
+            <Img src="https://teenranch.nyc3.digitaloceanspaces.com/website/assets/FallHockeyPrograms-1.png" />
+          </Card>
+        </div>
         <Program
           src={data.christmasDayCamp.childImageSharp.fluid}
           name="PD/PA day camp"
