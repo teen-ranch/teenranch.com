@@ -3,6 +3,7 @@ import Container from "components/Container"
 import Heading from "components/Heading"
 import Button from "components/Button"
 import Program from "components/Program"
+import Card from "components/Card"
 
 export default function Default() {
   return (
@@ -17,6 +18,15 @@ export default function Default() {
         metaDescription="Men's hockey leages near Orangeville, Ontario, Canada"
       />
       <Container type="body">
+        <Card>
+          <div style={{ padding: "1rem 4rem", display: "flex", gap: "2rem" }}>
+            <h2>Men's league standings</h2>
+            <Button href="https://www.hometeamsonline.com/teams/default.asp?u=TEENRANCHHOCKEYLEAGU&s=hockey&p=home">
+              View Standings
+            </Button>
+          </div>
+        </Card>
+
         <Program
           src="https://teenranch.nyc3.digitaloceanspaces.com/website/assets/hockey15.jpg"
           name="Men's hockey league"

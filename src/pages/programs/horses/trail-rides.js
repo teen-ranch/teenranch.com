@@ -29,7 +29,7 @@ export default function Default() {
             <li>Walk/trot (if comfortable)</li>
             <li>Max. participant weight of 250lbs</li>
             <li>Pre-booking and pre-payment required</li>
-            <li>$60.00 +HST per person</li>
+            <li>$55.00 +HST per person</li>
           </ul>
 
           <Button href="mailto:rachel.stevens@teenranch.com?subject=Trail ride booking inquiry">

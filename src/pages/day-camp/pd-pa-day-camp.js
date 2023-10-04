@@ -16,6 +16,7 @@ import {
   dayCampBulletsClassic,
   dayCampBulletsHockey,
 } from "components/defaults"
+import { Time } from "components/Time"
 // import Grid from 'components/Grid'
 // import Sponsor from 'components/Sponsor'
 // import Img from 'gatsby-image'
@@ -63,15 +64,15 @@ export default function Programs({ data }) {
           their days off with our PD Day Camps! Designed for ample time outdoors
           to explore, play group games, and enjoy the season's best activities,
           these days will be sure to get your kids moving and having a blast.
-          For the hockey enthusiast, we offer a hockey option on two of our PD
-          Day Camps.
+          For the hockey enthusiast, we offer a hockey option as well. Drop off
+          at 9 am and pick up at 4:30 pm. Two snacks.
         </p>
       </Container>
 
       <Container type="body">
         <h1>Available dates</h1>
 
-        <div
+        {/* <div
           style={{
             padding: "4rem",
             background: "purple",
@@ -82,23 +83,21 @@ export default function Programs({ data }) {
           }}
         >
           Check back soon for 2023/2024 season dates
-        </div>
-        {/* <ul>
+        </div> */}
+        <ul>
           <li>Friday October 27, 2023</li>
           <li>Friday November 24, 2023</li>
           <li>Friday February 16, 2024</li>
-        </ul> */}
+        </ul>
 
-        <p>Drop off between 8:30-8:50 am and pick up between 4:30- 5:00 pm</p>
+        <p>
+          Drop off between <Time>0900</Time> and pick up at <Time>1630</Time>
+        </p>
       </Container>
 
       <div id="pricing" style={{ position: "absolute", marginTop: "-180px" }} />
 
-      {/* <Container>
-                <h1>Pricing</h1>
-            </Container> */}
-
-      {/* <Container type="body">
+      <Container type="body">
         <h1>Pricing</h1>
 
         <PriceContainer>
@@ -112,9 +111,9 @@ export default function Programs({ data }) {
             }
             subTitle={``}
             who="Kids ages 5-12"
-            price={89}
+            price={75}
             term="day"
-            includes={[dayCampBulletsClassic]}
+            includes={dayCampBulletsClassic}
           >
             <CTAButton href="https://register.trmanager.com">
               Register now
@@ -140,7 +139,7 @@ export default function Programs({ data }) {
             </CTAButton>
           </Price>
         </PriceContainer>
-      </Container> */}
+      </Container>
 
       <Container>
         <p>* Weather permitting</p>

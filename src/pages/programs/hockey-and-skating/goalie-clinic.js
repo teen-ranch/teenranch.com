@@ -88,7 +88,7 @@ export default function Default({ data }) {
             <strong>Fall session:</strong> $300 +HST/player (6 sessions)
           </p>
           <p>
-            <strong>Winter session:</strong> $400 +HST/player (8 sessions)
+            <strong>Winter session:</strong> $425 +HST/player (8 sessions)
           </p>
           <p>
             <em>Partnering with MAD Athletic Development</em>
