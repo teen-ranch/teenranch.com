@@ -48,6 +48,7 @@ export default function Index({ data }) {
             target="_blank"
             noValidate
           >
+            <input type="hidden" name="tags" value="405" />
             <div id="mc_embed_signup_scroll">
               <h2 style={{ marginTop: "8rem" }}>
                 Enter your email address so you don't miss out on any details!
