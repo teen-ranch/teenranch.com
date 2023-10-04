@@ -20,8 +20,8 @@ export default function Default() {
           name="Trail rides"
         >
           <strong style={{ color: "red" }}>
-            {/* Trail rides are currently offered on Sundays. */}
-            Trail rides will resume in the fall.
+            September 17, 2023 through mid-June
+            {/* Trail rides will resume in the Fall. */}
           </strong>
           <ul>
             <li>

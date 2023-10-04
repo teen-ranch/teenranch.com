@@ -71,15 +71,15 @@ export default function Default() {
                   <td>10:00am - 11:00am</td>
                 </tr>
                 <tr>
-                  <td>Junior</td>
-                  <td>8-11</td>
+                  <td>Junior & Senior</td>
+                  <td>8-11 & 12-16</td>
                   <td>11:00am - 12:00am</td>
                 </tr>
-                <tr>
+                {/* <tr>
                   <td>Senior</td>
                   <td>12-16</td>
                   <td>12:00pm - 1:00pm</td>
-                </tr>
+                </tr> */}
               </tbody>
             </table>
           </div>
