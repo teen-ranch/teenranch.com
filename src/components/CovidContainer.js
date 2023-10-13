@@ -16,6 +16,7 @@ export function CovidContainer() {
     setIsOpen(false)
     localStorage.setItem("gotIt", updatedAt)
   }
+  return null
   return (
     <div
       style={{
