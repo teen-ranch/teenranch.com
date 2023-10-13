@@ -258,11 +258,23 @@ export default function Index({ data }) {
           <Button to="/families/father-son-hockey-weekend/">Learn more</Button>
         </Program> */}
 
-        <div style={{ maxWidth: "960px", margin: "0 auto" }}>
+        <div
+          style={{ maxWidth: "960px", margin: "0 auto", textAlign: "center" }}
+        >
+          <Button
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://teenranch.nyc3.digitaloceanspaces.com/website/assets/FallHockeyPrograms-1.png"
+          >
+            2023/2024 Hockey & Skating Programs At-a-Glance
+          </Button>
+        </div>
+
+        {/* <div style={{ maxWidth: "960px", margin: "0 auto" }}>
           <Card>
             <Img src="https://teenranch.nyc3.digitaloceanspaces.com/website/assets/FallHockeyPrograms-1.png" />
           </Card>
-        </div>
+        </div> */}
         <Program
           src={data.christmasDayCamp.childImageSharp.fluid}
           name="PD/PA day camp"

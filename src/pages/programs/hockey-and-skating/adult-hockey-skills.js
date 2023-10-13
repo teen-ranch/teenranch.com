@@ -39,7 +39,8 @@ export default function Default() {
             Saturday mornings: (9:00am - 10:00am) October 21, 2023 - March 2,
             2024 (16 sessions)
             <br />
-            (No session October 8th)
+            (No session December 23rd, December 30th, January 6th or February
+            17)
           </p>
 
           <h3>Cost</h3>
