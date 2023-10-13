@@ -5,6 +5,7 @@ import Button, { CTAButton } from "components/Button"
 import Program from "components/Program"
 import { Price, PriceContainer } from "components/Price"
 import Grid from "components/Grid"
+import { Time } from "components/Time"
 
 export default function Default() {
   return (
@@ -65,15 +66,17 @@ export default function Default() {
                 </tr>
               </thead>
               <tbody>
-                <tr>
+                {/* <tr>
                   <td>Learn to play</td>
                   <td>5-8</td>
                   <td>10:00am - 11:00am</td>
-                </tr>
+                </tr> */}
                 <tr>
                   <td>Junior & Senior</td>
                   <td>8-11 & 12-16</td>
-                  <td>11:00am - 12:00am</td>
+                  <td>
+                    <Time>1100</Time> - <Time>1150</Time>
+                  </td>
                 </tr>
                 {/* <tr>
                   <td>Senior</td>
@@ -172,8 +175,8 @@ export default function Default() {
           <Price
             title={<>Wranglers Hockey</>}
             subTitle={`A year-long development program for boys and girls
-            ages 5-16+ years old.`}
-            who="Learn to play (ages 5-8)"
+            ages 8-16+ years old.`}
+            who="Junior & Senior (ages 8-16)"
             price={415}
             term="season"
             includes={["1 hour scrimmage every Saturday"]}
