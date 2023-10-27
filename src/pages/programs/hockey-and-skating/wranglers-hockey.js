@@ -73,9 +73,9 @@ export default function Default() {
                 </tr> */}
                 <tr>
                   <td>Junior & Senior</td>
-                  <td>8-11 & 12-16</td>
+                  <td>8-14</td>
                   <td>
-                    <Time>1100</Time> - <Time>1150</Time>
+                    <Time>1000</Time> - <Time>1050</Time>
                   </td>
                 </tr>
                 {/* <tr>
