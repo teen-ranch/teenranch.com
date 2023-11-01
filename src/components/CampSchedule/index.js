@@ -23,6 +23,8 @@ export default function CampSchedule({
           : "https://api.teenranch.com"
       }/capacities`
     ).then(res => res.json())
+
+    console.log(res)
     setCapacity(res)
   }
 
@@ -120,7 +122,8 @@ export default function CampSchedule({
               program?.ids?.includes(currentProgramCapacity.programId)
             )
             .sort((a, b) => a.startDate - b.startDate)
-
+          if (program.ids.includes(59))
+            console.log("PROGRAM CAPACITIES", programCapacities)
           let realDateIndex = 0
 
           return (
@@ -137,7 +140,7 @@ export default function CampSchedule({
                 const isPreviousDiscount = discountedWeeks[i - 1]
 
                 const programCapacity = programCapacities[realDateIndex]
-                console.log(programCapacity)
+
                 const price =
                   Number(programCapacity?.programDatePrice) ||
                   Number(programCapacity?.programPrice)
@@ -160,7 +163,9 @@ export default function CampSchedule({
                     : 0
                 )
 
-                if (ages.length > 0) {
+                if (program.ids.includes(59)) console.log(ages)
+
+                if (ages) {
                   realDateIndex += 1
                 }
 
@@ -322,12 +327,12 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
                 {
                   name: "Hockey Camp",
                   dates: [
-                    "",
-                    "",
+                    null,
+                    null,
                     "10-14",
-                    "",
-                    "",
-                    "",
+                    null,
+                    null,
+                    null,
                     "13-16",
                     "8-12",
                     "10-13",
@@ -338,11 +343,11 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
                   ids: [59, 64],
                   name: "Elite Hockey Camp",
                   dates: [
-                    "",
-                    "",
-                    "",
-                    "",
-                    "",
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
                     <>
                       8-11
                       <br />
@@ -358,28 +363,58 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
                       <br />
                       AA/AAA
                     </>,
-                    "",
+                    null,
                   ],
                 },
                 {
                   name: "Hawerchuk Strong Hockey",
-                  dates: ["", "", "", "13-16", "9-12", "", "", "", ""],
+                  dates: [
+                    null,
+                    null,
+                    null,
+                    "13-16",
+                    "9-12",
+                    null,
+                    null,
+                    null,
+                    "",
+                  ],
                   ids: [1000002],
                 },
                 {
                   ids: [3],
                   name: "Girl's Hockey Camp",
-                  dates: ["", "", "10-14", "", "", "", "", "", ""],
+                  dates: [
+                    null,
+                    null,
+                    "10-14",
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    "",
+                  ],
                 },
                 {
                   ids: [4],
                   name: "Goalie Camp",
-                  dates: ["", "", "", "", "", "8-13", "", "", ""],
+                  dates: [null, null, null, null, null, "8-13", null, null, ""],
                 },
                 {
                   ids: [74],
                   name: "Summer Drop-in Ice Time (Regular Hockey)",
-                  dates: ["", "", "", "", "", "", "", "8-12", "10-13"],
+                  dates: [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    "8-12",
+                    "10-13",
+                  ],
                 },
               ]
             : []),
@@ -418,12 +453,32 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
                 {
                   ids: [27],
                   name: "Rodeo Camp",
-                  dates: ["", "", "", "", "", "", "13-16", "", ""],
+                  dates: [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    "13-16",
+                    null,
+                    "",
+                  ],
                 },
                 {
                   ids: [9],
                   name: "Intensive Equestrian Camp",
-                  dates: ["", "", "", "13-16", "", "", "", "", ""],
+                  dates: [
+                    null,
+                    null,
+                    null,
+                    "13-16",
+                    null,
+                    null,
+                    null,
+                    null,
+                    "",
+                  ],
                 },
               ]
             : []),
@@ -451,7 +506,7 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
           //       {
           //         ids: [13],
           //         name: "Adventure Camp",
-          //         dates: ["", "", "", "", "", "", "", "", ""],
+          //         dates: [null, null, null, null, null, null, null, null, ""],
           //       },
           //     ]
           //   : []),
