@@ -180,7 +180,7 @@ export default function Programs({ data }) {
         <h1>Pricing</h1>
         <DayCampTerms />
         <JumpStart />
-        <PriceContainer>
+        <PriceContainer xl={1} lg={1} md={1}>
           <Price
             title={
               <>
