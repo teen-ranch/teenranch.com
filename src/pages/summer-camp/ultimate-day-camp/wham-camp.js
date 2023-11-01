@@ -196,7 +196,7 @@ export default function Programs({ data }) {
             title="WHAM camp"
             subTitle={`Epic activities like giant swing, horseback riding, rock climbing, woodland survival, initiatives course challenge, archery, waterslide, jousting pond, and so much more!`}
             who="KIDS WHO WANT TO TRY EVERYTHING (AGE 8+)"
-            price={850}
+            price={895}
             term="week"
             includes={[
               "Horseback riding",
