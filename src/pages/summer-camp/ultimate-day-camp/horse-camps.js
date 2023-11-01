@@ -23,6 +23,8 @@ import { UltimateDayCampTerms } from "components/Terms"
 import { Link as ReachLink } from "@reach/router"
 import JumpStart from "components/JumpStart"
 import UltimateDayCampIntro from "components/UltimateDayCampIntro"
+import { BalancePayments } from "components/BalancePayments"
+import { PhotoGrid } from "components/PhotoGrid"
 
 const frontmatter = {
   title: "Horse camps",
@@ -94,7 +96,7 @@ export default function Programs({ data }) {
 
       <Container type="body">
         <h2>Info pack</h2>
-        <div>
+        {/* <div>
           <PdfButton
             target="_blank"
             rel="noopener noreferrer"
@@ -102,9 +104,9 @@ export default function Programs({ data }) {
           >
             Ultimate day camp / junior day camp info pack
           </PdfButton>
-        </div>
+        </div> */}
         <p>
-          Families will be notified by email two weeks before the camp start
+          Families will be notified by email six weeks before the camp start
           date for payment reminders and camp information.
         </p>
       </Container>
@@ -116,7 +118,7 @@ export default function Programs({ data }) {
           levels.
         </p>
 
-        <ProgramContainer>
+        <ProgramContainer xl={2} lg={2}>
           <Program
             small
             name="Western riding camp"
@@ -172,12 +174,14 @@ export default function Programs({ data }) {
 
         <p>
           Each afternoon, campers get to take their pick from some amazing camp
-          activities on 150 beautiful acres including: rock climbing,
-          bouldering, water slide, swimming, water jousting, archery, tennis,
-          basketball, volleyball, and more.
+          activities on 150 beautiful acres including: giant swing, trail rides,
+          rock climbing, bouldering, ninja climbing feature (NEW), water slide,
+          swimming, water jousting, archery, tennis, basketball, volleyball, and
+          more.
         </p>
+        <PhotoGrid srcs={activities.edges} />
 
-        <Grid sm={2} md={2} lg={3} xl={5} gap={false}>
+        {/* <Grid sm={2} md={2} lg={5} xl={5} gap={false}>
           {activities &&
             activities.edges &&
             activities.edges.map((edge, i) => {
@@ -190,7 +194,7 @@ export default function Programs({ data }) {
                 </div>
               )
             })}
-        </Grid>
+        </Grid> */}
       </Container>
 
       <div id="dates" style={{ position: "absolute", marginTop: "-120px" }} />
@@ -219,12 +223,12 @@ export default function Programs({ data }) {
         <h1>Pricing</h1>
         <UltimateDayCampTerms />
         <JumpStart />
-        <PriceContainer>
+        <PriceContainer xl={2} lg={2}>
           <Price
             title="Western riding camp"
             subTitle="An excellent place to start for first-time riders or western riding enthusiasts."
             who="Beginner to advanced"
-            price={850}
+            price={895}
             term="week"
             includes={[
               "Basic position & control",
@@ -234,7 +238,7 @@ export default function Programs({ data }) {
               "Barrel racing (advanced)",
               "Pole bending (advanced)",
               "Lunch & morning snack",
-              "Snackbar open in the afternoons",
+              "Snackbar",
               "All camp activities",
             ]}
           >
@@ -246,7 +250,7 @@ export default function Programs({ data }) {
             title="English riding camp"
             subTitle="For kids of all riding levels to learn or develop new skills."
             who="Beginner to advanced"
-            price={850}
+            price={895}
             term="week"
             includes={[
               "Basic position & control",
@@ -255,7 +259,7 @@ export default function Programs({ data }) {
               "Jumping position",
               "Equitation",
               "Lunch & morning snack",
-              "Snackbar open in the afternoons",
+              "Snackbar",
               "All camp activities",
             ]}
           >
@@ -314,23 +318,7 @@ export default function Programs({ data }) {
         </PriceContainer>
       </Container>
 
-      <Container type="body">
-        <div
-          style={{
-            padding: "4rem",
-            background: "#0074F7",
-            borderRadius: "4px",
-            color: "#fff",
-          }}
-        >
-          <h2 style={{ margin: "0 0 2rem 0" }}>
-            Balance payments, info pack, and snackbar:
-          </h2>{" "}
-          14 days before your camp check-in date we'll send you an email with:
-          all the details you need for camp, a link to pay your remaining
-          balance, and set up your snackbar account(s).
-        </div>
-      </Container>
+      <BalancePayments />
 
       {/* <Container type="body">
         <h2>Horse camp add-ons:</h2>

@@ -13,10 +13,10 @@ export default function UltimateDayCampIntro() {
       </p>
 
       <p>
-        In the morning, campers hone skills in their sport of choice. Afternoons
-        are their chance to enjoy a variety of activities and daily campfires
-        with engaging music and real-life topics shared from a biblical
-        perspective.
+        In the morning, campers hone skills in their program/sport of choice.
+        Afternoons are their chance to enjoy a variety of activities and daily
+        campfires with engaging music and real-life topics shared from a
+        biblical perspective.
       </p>
 
       <p>

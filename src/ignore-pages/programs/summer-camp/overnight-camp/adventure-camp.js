@@ -20,6 +20,7 @@ import Img from "gatsby-image"
 import { OvernightCampTerms } from "components/Terms"
 import JumpStart from "components/JumpStart"
 import { Time } from "components/Time"
+import { BalancePayments } from "components/BalancePayments"
 
 const frontmatter = {
   title: "Adventure camp",
@@ -82,7 +83,7 @@ export default function Programs({ data }) {
           active, and make new friends.
         </p>
         <p>
-          In the morning, campers hone skills in their sport of choice.
+          In the morning, campers hone skills in their program/sport of choice.
           Afternoons are their chance to enjoy a variety of Teen Ranch
           activities and bunkroom time - a unique opportunity for growth,
           bonding, and overall fun!! Evenings include camp-wide games and
@@ -105,7 +106,7 @@ export default function Programs({ data }) {
         <h3>Weekly overview</h3>
         <p>
           Summer overnight camps run Sunday evenings-Friday evenings. (August
-          7-11 week starts Monday)
+          5-9 week starts Monday)
         </p>
         <ul>
           <li>
@@ -142,7 +143,7 @@ export default function Programs({ data }) {
           </PdfButton>
         </div>
         <p>
-          Families will be notified by email two weeks before the camp start
+          Families will be notified by email six weeks before the camp start
           date for payment reminders and camp information.
         </p>
       </Container>
@@ -251,23 +252,7 @@ export default function Programs({ data }) {
         </PriceContainer>
       </Container>
 
-      <Container type="body">
-        <div
-          style={{
-            padding: "4rem",
-            background: "#0074F7",
-            borderRadius: "4px",
-            color: "#fff",
-          }}
-        >
-          <h2 style={{ margin: "0 0 2rem 0" }}>
-            Balance payments, info pack, and snackbar:
-          </h2>{" "}
-          14 days before your camp check-in date we'll send you an email with:
-          all the details you need for camp, a link to pay your remaining
-          balance, and set up your snackbar account(s).
-        </div>
-      </Container>
+      <BalancePayments />
     </>
   )
 }

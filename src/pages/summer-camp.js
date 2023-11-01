@@ -76,7 +76,7 @@ export default function Programs({ data }) {
       {/* <SummerCampRegistrationNotice /> */}
 
       <Container type="body">
-        <h1>Summer Camp 2023 at Teen Ranch</h1>
+        <h1>Summer Camp 2024 at Teen Ranch</h1>
 
         <h2>Here's what you can expect this summer:</h2>
 
@@ -104,8 +104,8 @@ export default function Programs({ data }) {
 
         <h3>Weekly overview</h3>
         <p>
-          Summer Overnight Camps will run Sunday (August 7-11 week starts
-          Monday) evenings-Friday evenings.
+          Summer Overnight Camps will run Sunday (August 5-9 week starts Monday)
+          evenings-Friday evenings.
         </p>
         <ul>
           <li>
@@ -157,7 +157,7 @@ export default function Programs({ data }) {
           </PdfButton>
         </div> */}
         <p>
-          Families will be notified by email two weeks before the camp start
+          Families will be notified by email six weeks before the camp start
           date for payment reminders and camp information.
         </p>
       </Container>
@@ -166,7 +166,7 @@ export default function Programs({ data }) {
         <div id="who" style={{ position: "absolute", marginTop: "-180px" }} />
         <h1>Who it's for</h1>
 
-        <ProgramContainer>
+        <ProgramContainer xl={3}>
           <Program
             small
             name="Junior Day Camp"
@@ -273,7 +273,7 @@ export default function Programs({ data }) {
         <h1>Pricing</h1>
         <SummerCampTerms />
         <JumpStart />
-        <PriceContainer>
+        <PriceContainer xl={3}>
           <Price
             title={
               <>
@@ -292,7 +292,7 @@ export default function Programs({ data }) {
               </>
             }
             who="Kids age 5-7"
-            price={525}
+            price={450}
             term="week"
             startingAtSpace
             includes={[
@@ -301,7 +301,7 @@ export default function Programs({ data }) {
               "Swimming",
               "Pony rides",
               "Lunch & morning snack",
-              "Snackbar open in the afternoons",
+              "Snackbar",
               "Story time",
             ]}
           >
@@ -332,7 +332,7 @@ export default function Programs({ data }) {
               "Your sport of choice",
               "Daily campfire",
               "Lunch & morning snack",
-              "Snackbar open in the afternoons",
+              "Snackbar",
               "Real-life",
             ]}
           >
@@ -355,7 +355,7 @@ export default function Programs({ data }) {
             }
             subTitle="Campers experience all the fun and adventure of summer camp packed into five awesome days & nights as they enjoy the great outdoors, get active and build friendships that can last a lifetime."
             who="Kids and teens 8+"
-            price={1295}
+            price={1315}
             startingAt
             term="week"
             includes={[
@@ -364,7 +364,7 @@ export default function Programs({ data }) {
               "Evening camp-wide games",
               "Evening campfires",
               "Breakfast, lunch & dinner",
-              "Snackbar open morning and afternoon",
+              "Snackbar",
               "Real-life",
             ]}
           >
@@ -388,14 +388,14 @@ export default function Programs({ data }) {
         <h2>Additional summer programs:</h2>
         <PriceAddon
           title="Summer drop-in ice time (9:00am - 10:30am)"
-          subTitle="One-week only!"
+          subTitle="Two-weeks only!"
           description={
             <>
               Join in with our regular hockey program for 1.5 hours of ice time
               each morning, Monday - Friday.
             </>
           }
-          price={300}
+          price={350}
           term="week"
           to="https://register.trmanager.com"
         />
@@ -413,7 +413,7 @@ export default function Programs({ data }) {
           <h2 style={{ margin: "0 0 2rem 0" }}>
             Balance payments, info pack, and snackbar:
           </h2>{" "}
-          14 days before your camp check-in date we'll send you an email with:
+          6 weeks before your camp check-in date we'll send you an email with:
           all the details you need for camp, a link to pay your remaining
           balance, and set up your snackbar account(s).
         </div>

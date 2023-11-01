@@ -17,8 +17,8 @@ export default function Index({ data }) {
       <Heading
         src={data.hockey.childImageSharp.fluid}
         alt="Summer camp"
-        // title={"Don't miss out on the best week of your life!"}
-        title={`Check back soon! Summer Camp 2024 info and registration will be available November 1st.`}
+        title={"Don't miss out on the best week of your life!"}
+        // title={`Check back soon! Summer Camp 2024 info and registration will be available November 1st.`}
         subtitle={
           // <>
           //   Check back soon! Summer Camp 2024 info and registration will be
@@ -29,15 +29,15 @@ export default function Index({ data }) {
             will last a lifetime.
           </>
         }
-        metaTitle="Summer Camp 2024 is coming soon!"
+        metaTitle="Don't miss out on the best week of your life!"
         metaDescription={`Overnight & Ultimate Day Camps`}
       >
-        {/* <CTAButton to="/summer-camp/">
-          Learn more about Summer Camp 2023
-        </CTAButton> */}
-        {/* <h2 style={{ marginTop: "-3rem" }}> */}
-        {/* <p>Registration is now open!</p> */}
-        {/* </h2> */}
+        <CTAButton to="/summer-camp/">
+          Learn more about Summer Camp 2024
+        </CTAButton>
+        <h2 style={{ marginTop: "-3rem" }}>
+          <p>Registration is now open!</p>
+        </h2>
 
         <div id="mc_embed_signup">
           <form

@@ -7,6 +7,7 @@ import { Link } from "gatsby"
 
 import logo from "./teenRanchLogo_lightBGR.svg"
 import { CovidContainer } from "components/CovidContainer"
+import { Banner } from "components/Banner"
 
 export default function Header({ location }) {
   const [expanded, setExpanded] = useState()
@@ -17,6 +18,7 @@ export default function Header({ location }) {
 
   return (
     <>
+      <Banner />
       <header>
         <Container type={`header${expanded ? " header--expanded" : ""}`}>
           <NavLink to="/">
@@ -73,11 +75,11 @@ export default function Header({ location }) {
                         </NavLink>
                       </li>
 
-                      <li>
+                      {/* <li>
                         <NavLink to="/summer-camp/overnight-camp/adventure-camp/">
                           Adventure camp
                         </NavLink>
-                      </li>
+                      </li> */}
 
                       <div className="subNavDivider">Ultimate day camp</div>
                       <li>

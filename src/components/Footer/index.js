@@ -38,11 +38,11 @@ export default function Footer() {
                   WHAM camp
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/summer-camp/overnight-camp/adventure-camp/">
                   Adventure camp
                 </Link>
-              </li>
+              </li> */}
               <div className="subNavDivider">Ultimate day camp</div>
               <li>
                 <Link to="/summer-camp/ultimate-day-camp/">

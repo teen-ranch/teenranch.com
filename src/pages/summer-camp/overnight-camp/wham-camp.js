@@ -20,6 +20,9 @@ import Img from "gatsby-image"
 import { OvernightCampTerms } from "../../../components/Terms"
 import JumpStart from "components/JumpStart"
 import { Time } from "components/Time"
+import { BalancePayments } from "components/BalancePayments"
+import Video from "components/Video"
+import { PhotoGrid } from "components/PhotoGrid"
 
 const frontmatter = {
   title: "WHAM camp",
@@ -83,7 +86,7 @@ export default function Programs({ data }) {
           active, and make new friends.
         </p>
         <p>
-          In the morning, campers hone skills in their sport of choice.
+          In the morning, campers hone skills in their program/sport of choice.
           Afternoons are their chance to enjoy a variety of Teen Ranch
           activities and bunkroom time - a unique opportunity for growth,
           bonding, and overall fun!! Evenings include camp-wide games and
@@ -106,7 +109,7 @@ export default function Programs({ data }) {
         <h3>Weekly overview</h3>
         <p>
           Summer overnight camps run Sunday evenings-Friday evenings. (August
-          7-11 week starts Monday)
+          5-9 week starts Monday)
         </p>
         <ul>
           <li>
@@ -133,7 +136,7 @@ export default function Programs({ data }) {
 
       <Container type="body">
         <h2>Info pack</h2>
-        <div>
+        {/* <div>
           <PdfButton
             target="_blank"
             rel="noopener noreferrer"
@@ -141,9 +144,9 @@ export default function Programs({ data }) {
           >
             Overnight camp info pack
           </PdfButton>
-        </div>
+        </div> */}
         <p>
-          Families will be notified by email two weeks before the camp start
+          Families will be notified by email six weeks before the camp start
           date for payment reminders and camp information.
         </p>
       </Container>
@@ -158,11 +161,15 @@ export default function Programs({ data }) {
             who="Kids who want to try everything (age 8+)"
             src={file.childImageSharp.fluid}
           >
-            Epic activities like horseback riding, rock climbing, woodland
-            survival, volleyball, archery, waterslide, jousting pond and so much
-            more!
+            Epic activities like giant swing, horseback riding, rock climbing,
+            woodland survival, initiatives course challenge, archery,
+            waterslide, jousting pond, and so much more!
           </Program>
         </ProgramContainer>
+      </Container>
+
+      <Container>
+        <Video src="https://www.youtube-nocookie.com/embed/hjLhkn7TcXo?si=4MitxKMv_F_H5dTY" />
       </Container>
 
       <Container type="body">
@@ -173,7 +180,7 @@ export default function Programs({ data }) {
       </Container>
 
       <Container type="body">
-        <Grid sm={2} md={2} lg={3} xl={5} gap={false}>
+        {/* <Grid sm={2} md={2} lg={3} xl={5} gap={false}>
           {whamAll &&
             whamAll.edges &&
             whamAll.edges.map((edge, i) => {
@@ -183,13 +190,16 @@ export default function Programs({ data }) {
                 </div>
               )
             })}
-        </Grid>
+        </Grid> */}
+        <PhotoGrid srcs={whamAll.edges} />
       </Container>
 
       <Container type="body">
         <h1>Afternoon activities</h1>
 
-        <Grid sm={2} md={2} lg={3} xl={5} gap={false}>
+        <PhotoGrid srcs={activities.edges} />
+
+        {/* <Grid sm={2} md={2} lg={5} xl={5} gap={false}>
           {activities &&
             activities.edges &&
             activities.edges.map((edge, i) => {
@@ -202,7 +212,7 @@ export default function Programs({ data }) {
                 </div>
               )
             })}
-        </Grid>
+        </Grid> */}
       </Container>
 
       <div id="dates" style={{ position: "absolute", marginTop: "-120px" }} />
@@ -224,10 +234,10 @@ export default function Programs({ data }) {
         <h1>Pricing</h1>
         <OvernightCampTerms />
         <JumpStart />
-        <PriceContainer>
+        <PriceContainer xl={1} lg={1} md={1}>
           <Price
             title="WHAM camp"
-            subTitle={`Epic activities like horseback riding, rock climbing, woodland survival, volleyball, archery, waterslide, jousting pond and so much more!`}
+            subTitle={`Epic activities like giant swing, horseback riding, rock climbing, woodland survival, initiatives course challenge, archery, waterslide, jousting pond, and so much more!`}
             who="KIDS WHO WANT TO TRY EVERYTHING (AGE 8+)"
             price={1250}
             term="week"
@@ -240,7 +250,7 @@ export default function Programs({ data }) {
               "Waterslide, jousting pond, canoeing, kayaking",
               "Swimming",
               "Breakfast, lunch & dinner",
-              "Snackbar open in the afternoons",
+              "Snackbar",
               "All camp activities",
             ]}
           >
@@ -251,23 +261,7 @@ export default function Programs({ data }) {
         </PriceContainer>
       </Container>
 
-      <Container type="body">
-        <div
-          style={{
-            padding: "4rem",
-            background: "#0074F7",
-            borderRadius: "4px",
-            color: "#fff",
-          }}
-        >
-          <h2 style={{ margin: "0 0 2rem 0" }}>
-            Balance payments, info pack, and snackbar:
-          </h2>{" "}
-          14 days before your camp check-in date we'll send you an email with:
-          all the details you need for camp, a link to pay your remaining
-          balance, and set up your snackbar account(s).
-        </div>
-      </Container>
+      <BalancePayments />
     </>
   )
 }
