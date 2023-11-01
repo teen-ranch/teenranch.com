@@ -25,6 +25,8 @@ import Img from "gatsby-image"
 import { DayCampTerms } from "components/Terms"
 import JumpStart from "components/JumpStart"
 import { Time } from "components/Time"
+import { BalancePayments } from "components/BalancePayments"
+import { PhotoGrid } from "components/PhotoGrid"
 
 const frontmatter = {
   title: "Junior day camp",
@@ -32,7 +34,7 @@ const frontmatter = {
 }
 
 const pageData = {
-  subTitle: `Outdoor games, crafts, swimming, pony rides, story time and more!`,
+  subTitle: `Outdoor fun, swimming, pony rides, climbing wall, ice skating, and more!`,
   keywords: "day camp, junior day camp, summer day camp",
 }
 
@@ -71,13 +73,15 @@ export default function Programs({ data }) {
 
         <p>
           Jump into adventure with our junior day camp program! Designed to
-          introduce little ones to the exciting world of camp, kids and their
-          leaders travel together around camp to try some of the unique
-          activities that Teen Ranch has to offer. Throughout the week they make
-          new friends and grow while engaging in outdoor games, crafts,
-          swimming, pony rides, campfire story time with an emphasis of God's
-          beautiful creation and love for all people, and more! Join us this
-          summer for a week full of friendship and fun!
+          introduce your kids to the exciting world of camp, junior day campers
+          and their leaders travel together around camp to try some of the
+          unique activities that Teen Ranch has to offer. Throughout the week
+          they make new friends and grow while engaging in outdoor games and
+          skill-building activities, swimming, pony rides, rock climbing,
+          archery, ice skating, and more! Junior day campers are engaged in Teen
+          Ranch’s campfire story time including music and fun with an emphasis
+          on God's beautiful creation and love for all people. Join us this
+          summer for a week full of friendship and fun for your little camper!
         </p>
 
         <h3>Weekly overview</h3>
@@ -98,7 +102,7 @@ export default function Programs({ data }) {
 
       <Container type="body">
         <h2>Info pack</h2>
-        <div>
+        {/* <div>
           <PdfButton
             target="_blank"
             rel="noopener noreferrer"
@@ -106,9 +110,9 @@ export default function Programs({ data }) {
           >
             Ultimate day camp / junior day camp info pack
           </PdfButton>
-        </div>
+        </div> */}
         <p>
-          Families will be notified by email two weeks before the camp start
+          Families will be notified by email six weeks before the camp start
           date for payment reminders and camp information.
         </p>
       </Container>
@@ -123,8 +127,8 @@ export default function Programs({ data }) {
             who="Kids age 5-7"
             src={daycamp.childImageSharp.fluid}
           >
-            Outdoor games, crafts, swimming, pony rides, story time and more! A
-            week full of friendship and fun!
+            Outdoor fun, swimming, pony rides, climbing wall, ice skating, and
+            more!
           </Program>
         </ProgramContainer>
       </Container>
@@ -138,8 +142,9 @@ export default function Programs({ data }) {
 
       <Container type="body">
         <h1>Day camp activities</h1>
+        <PhotoGrid srcs={activities.edges} />
 
-        <Grid sm={2} md={2} lg={3} xl={5} gap={false}>
+        {/* <Grid sm={2} md={2} lg={3} xl={5} gap={false}>
           {activities &&
             activities.edges &&
             activities.edges.map((edge, i) => {
@@ -152,7 +157,7 @@ export default function Programs({ data }) {
                 </div>
               )
             })}
-        </Grid>
+        </Grid> */}
       </Container>
 
       <div id="dates" style={{ position: "absolute", marginTop: "-120px" }} />
@@ -186,18 +191,20 @@ export default function Programs({ data }) {
             }
             subTitle={`Outdoor games, crafts, swimming, pony rides, story time and more! A week full of friendship and fun!`}
             who="Kids age 5-7"
-            price={525}
+            price={450}
             term="week"
             includes={[
-              "Games",
-              "Forest time",
-              "Crafts",
-              "Swimming",
+              "Dynamic outdoor group activities",
+              "Forest time & nature hike",
+              "Creative crafts",
+              "Swimming, boating & waterslide",
               "Pony rides",
-              "Bouldering",
-              "Story time",
+              "Bouldering & climbing wall (NEW)",
+              "Archery (NEW)",
+              "Campfire story time",
+              "Optional Ice Skate (helmet, warm clothes, mitts, & skates required) (NEW)",
               "Lunch & morning snack",
-              "Snackbar open in the afternoons",
+              "Afternoon snackbar",
             ]}
           >
             <CTAButton href="https://register.trmanager.com">
@@ -207,23 +214,7 @@ export default function Programs({ data }) {
         </PriceContainer>
       </Container>
 
-      <Container type="body">
-        <div
-          style={{
-            padding: "4rem",
-            background: "#0074F7",
-            borderRadius: "4px",
-            color: "#fff",
-          }}
-        >
-          <h2 style={{ margin: "0 0 2rem 0" }}>
-            Balance payments, info pack, and snackbar:
-          </h2>{" "}
-          14 days before your camp check-in date we'll send you an email with:
-          all the details you need for camp, a link to pay your remaining
-          balance, and set up your snackbar account(s).
-        </div>
-      </Container>
+      <BalancePayments />
 
       {/* <Container type="body">
         <h2>Day camp add-ons:</h2>

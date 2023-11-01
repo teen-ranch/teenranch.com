@@ -26,6 +26,8 @@ import { UltimateDayCampTerms } from "components/Terms"
 import { Link as ReachLink } from "@reach/router"
 import JumpStart from "components/JumpStart"
 import UltimateDayCampIntro from "components/UltimateDayCampIntro"
+import { BalancePayments } from "components/BalancePayments"
+import { PhotoGrid } from "components/PhotoGrid"
 
 const frontmatter = {
   title: "Ultimate day camp",
@@ -73,7 +75,7 @@ export default function Programs({ data }) {
 
       <Container type="body">
         <h2>Info pack</h2>
-        <div>
+        {/* <div>
           <PdfButton
             target="_blank"
             rel="noopener noreferrer"
@@ -81,9 +83,9 @@ export default function Programs({ data }) {
           >
             Ultimate day camp / junior day camp info pack
           </PdfButton>
-        </div>
+        </div> */}
         <p>
-          Families will be notified by email two weeks before the camp start
+          Families will be notified by email six weeks before the camp start
           date for payment reminders and camp information.
         </p>
       </Container>
@@ -93,10 +95,10 @@ export default function Programs({ data }) {
         <p>
           Ulitmate day camp is perfect for kids and teens age 8+. We offer
           specialized programs in horseback riding, hockey, and WHAM camp for
-          when you want to experience a bit of everything!
+          kids who want to experience a variety of outdoor adventures!
         </p>
 
-        <ProgramContainer>
+        <ProgramContainer xl={3}>
           <Program
             small
             name="Hockey camps"
@@ -142,9 +144,9 @@ export default function Programs({ data }) {
             who="Kids who want to try everything (age 8+)"
             src={wham.childImageSharp.fluid}
           >
-            Epic activities like horseback riding, rock climbing, giant swing,
-            woodland survival, outdoor sports, archery, waterslide, jousting
-            pond and so much more!
+            Epic activities like giant swing, horseback riding, rock climbing,
+            woodland survival, initiatives course challenge, archery,
+            waterslide, jousting pond, and so much more!
             <br />
             <PrimaryButton to="/summer-camp/ultimate-day-camp/wham-camp/">
               Learn more
@@ -170,12 +172,14 @@ export default function Programs({ data }) {
 
         <p>
           Each afternoon, campers get to take their pick from some amazing camp
-          activities on 150 beautiful acres including: rock climbing, giant
-          swing, bouldering, water slide, swimming, water jousting, archery,
-          tennis, basketball, outdoor activities, and more.
+          activities on 150 beautiful acres including: giant swing, trail rides,
+          rock climbing, bouldering, ninja climbing feature (NEW), water slide,
+          swimming, water jousting, archery, tennis, basketball, outdoor
+          activities, and more.
         </p>
+        <PhotoGrid srcs={activities.edges} />
 
-        <Grid sm={2} md={2} lg={3} xl={5} gap={false}>
+        {/* <Grid sm={2} md={2} lg={5} xl={5} gap={false}>
           {activities &&
             activities.edges &&
             activities.edges.map((edge, i) => {
@@ -188,7 +192,7 @@ export default function Programs({ data }) {
                 </div>
               )
             })}
-        </Grid>
+        </Grid> */}
       </Container>
 
       <div id="dates" style={{ position: "absolute", marginTop: "-120px" }} />
@@ -198,8 +202,8 @@ export default function Programs({ data }) {
         <PreBuiltCampSchedule type="UDC" />
 
         <p>
-          For girl's hockey camp, goalie camp, rodeo camp, adventure camp and,
-          intensive equestrian camp:{" "}
+          For girl's hockey camp, goalie camp, rodeo camp, and, intensive
+          equestrian camp:{" "}
           <ReachLink to="/summer-camp/overnight-camp/">
             see our overnight camps.
           </ReachLink>
@@ -220,7 +224,7 @@ export default function Programs({ data }) {
         <h1>Pricing</h1>
         <UltimateDayCampTerms />
         <JumpStart />
-        <PriceContainer>
+        <PriceContainer xl={3}>
           <Price
             title="Hockey camps"
             subTitle={`Skills & skating development for players and goalies from house-league to rep. Standard, high-performance, girl's hockey, and goalie camps.`}
@@ -230,13 +234,14 @@ export default function Programs({ data }) {
             startingAt
             includes={[
               "On-site, olympic-size ice rink",
-              "Starting at 7.5 hours on-ice per week",
+              "Minimum 7.5 hours on-ice per week",
               "Skills development",
               "Skating development",
-              "Off-ice program",
-              "Afternoon scrimmages",
-              "Lunch & morning snack",
-              "Snackbar open in the afternoons",
+              "Full-ice scrimmages",
+              "Fun-based off-ice program",
+              "Jersey included",
+              "Breakfast, lunch & dinner",
+              "Snackbar",
               "All camp activities",
             ]}
           >
@@ -257,13 +262,13 @@ export default function Programs({ data }) {
             startingAt
             term="week"
             includes={[
-              "Ability based lessons",
+              "Ability-based lessons",
               "Western and english specific disciplines",
               "Safe, well-schooled horses",
               "Instructors trained to CHA standards",
               "First-aid certified full-time staff",
               "Lunch & morning snack",
-              "Snackbar open in the afternoons",
+              "Snackbar",
               "All camp activities",
             ]}
           >
@@ -304,7 +309,7 @@ export default function Programs({ data }) {
           </Price> */}
           <Price
             title="WHAM camp"
-            subTitle="Epic activities like horseback riding, rock climbing, giant swing, woodland survival, outdoor sports, archery, waterslide, jousting pond and so much more!"
+            subTitle="Epic activities like giant swing, horseback riding, rock climbing, woodland survival, initiatives course challenge, archery, waterslide, jousting pond, and so much more!"
             who="Kids who want to try everything"
             price={895}
             term="week"
@@ -317,7 +322,7 @@ export default function Programs({ data }) {
               "Archery",
               "Waterslide, jousting pond, canoes, kayaks",
               "Lunch & morning snack",
-              "Snackbar open in the afternoons",
+              "Snackbar",
               "All camp activities",
             ]}
           >
@@ -337,36 +342,20 @@ export default function Programs({ data }) {
         <h2>Additional summer programs:</h2>
         <PriceAddon
           title="Summer drop-in ice time (9:00am - 10:30am)"
-          subTitle="One-week only!"
+          subTitle="Two-weeks only!"
           description={
             <>
               Join in with our regular hockey program for 1.5 hours of ice time
               each morning, Monday - Friday.
             </>
           }
-          price={300}
+          price={350}
           term="week"
           to="https://register.trmanager.com"
         />
       </Container>
 
-      <Container type="body">
-        <div
-          style={{
-            padding: "4rem",
-            background: "#0074F7",
-            borderRadius: "4px",
-            color: "#fff",
-          }}
-        >
-          <h2 style={{ margin: "0 0 2rem 0" }}>
-            Balance payments, info pack, and snackbar:
-          </h2>{" "}
-          14 days before your camp check-in date we'll send you an email with:
-          all the details you need for camp, a link to pay your remaining
-          balance, and set up your snackbar account(s).
-        </div>
-      </Container>
+      <BalancePayments />
 
       {/* <Container type="body">
         <h2>Ultimate day camp add-ons:</h2>

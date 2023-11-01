@@ -22,6 +22,8 @@ import Img from "gatsby-image"
 import { OvernightCampTerms } from "../../../components/Terms"
 import JumpStart from "components/JumpStart"
 import { Time } from "components/Time"
+import { BalancePayments } from "components/BalancePayments"
+import { PhotoGrid } from "components/PhotoGrid"
 
 const frontmatter = {
   title: "Hockey camps",
@@ -45,6 +47,7 @@ export default function Programs({ data }) {
     hockeyCamp,
     girlsHockeyCamp,
     highPerformanceHockey,
+    hawerchuckStrongHockey,
     goalieCamp,
     activities,
   } = data
@@ -107,7 +110,7 @@ export default function Programs({ data }) {
           active, and make new friends.
         </p>
         <p>
-          In the morning, campers hone skills in their sport of choice.
+          In the morning, campers hone skills in their program/sport of choice.
           Afternoons are their chance to enjoy a variety of Teen Ranch
           activities and bunkroom time - a unique opportunity for growth,
           bonding, and overall fun!! Evenings include camp-wide games and
@@ -130,7 +133,7 @@ export default function Programs({ data }) {
         <h3>Weekly overview</h3>
         <p>
           Summer overnight camps run Sunday evenings-Friday evenings. (August
-          7-11 week starts Monday)
+          5-9 week starts Monday)
         </p>
         <ul>
           <li>
@@ -157,7 +160,7 @@ export default function Programs({ data }) {
 
       <Container type="body">
         <h2>Info pack</h2>
-        <div>
+        {/* <div>
           <PdfButton
             target="_blank"
             rel="noopener noreferrer"
@@ -165,9 +168,9 @@ export default function Programs({ data }) {
           >
             Overnight camp info pack
           </PdfButton>
-        </div>
+        </div> */}
         <p>
-          Families will be notified by email two weeks before the camp start
+          Families will be notified by email six weeks before the camp start
           date for payment reminders and camp information.
         </p>
       </Container>
@@ -179,10 +182,10 @@ export default function Programs({ data }) {
           We offer specialized programs for girls, rep-players and goalies.
         </p>
 
-        <ProgramContainer>
+        <ProgramContainer lg={3} xl={5}>
           <Program
             small
-            name="Hockey camp"
+            name="Hockey Camp"
             who="Players & goalies (co-ed)"
             src={hockeyCamp.childImageSharp.fluid}
           >
@@ -191,7 +194,7 @@ export default function Programs({ data }) {
           </Program>
           <Program
             small
-            name={`Girl's hockey camp`}
+            name={`Girl's Hockey Camp`}
             who="Players & goalies (female)"
             src={girlsHockeyCamp.childImageSharp.fluid}
           >
@@ -200,7 +203,7 @@ export default function Programs({ data }) {
           </Program>
           <Program
             small
-            name="Elite hockey camp"
+            name="Elite Hockey Camp"
             who="Players & goalies (co-ed)"
             src={highPerformanceHockey.childImageSharp.fluid}
           >
@@ -209,7 +212,17 @@ export default function Programs({ data }) {
           </Program>
           <Program
             small
-            name="Goalie camp"
+            name="Hawerchuck Strong Hockey Camp"
+            who="AA/AAA Players & goalies (Male)"
+            src={hawerchuckStrongHockey.childImageSharp.fluid}
+          >
+            An elite specialty camp run in partnership with MASH Hockey
+            featuring current and ex NHL coaches as well as other current
+            professionals, in support of the Hawerchuk Strong foundation.
+          </Program>
+          <Program
+            small
+            name="Goalie Camp"
             who="Goalies (co-ed)"
             src={goalieCamp.childImageSharp.fluid}
           >
@@ -365,12 +378,14 @@ export default function Programs({ data }) {
 
         <p>
           Each afternoon, campers get to take their pick from some amazing camp
-          activities on 150 beautiful acres including: rock climbing,
-          bouldering, water slide, swimming, water jousting, archery, tennis,
-          basketball, volleyball, and more.
+          activities on 150 beautiful acres including: giant swing, trail rides,
+          rock climbing, bouldering, ninja climbing feature (NEW), water slide,
+          swimming, water jousting, archery, tennis, basketball, volleyball, and
+          more.
         </p>
+        <PhotoGrid srcs={activities.edges} />
 
-        <Grid sm={2} md={2} lg={3} xl={5} gap={false}>
+        {/* <Grid sm={2} md={2} lg={5} xl={5} gap={false}>
           {activities &&
             activities.edges &&
             activities.edges.map((edge, i) => {
@@ -383,7 +398,7 @@ export default function Programs({ data }) {
                 </div>
               )
             })}
-        </Grid>
+        </Grid> */}
       </Container>
 
       <div id="dates" style={{ position: "absolute", marginTop: "-120px" }} />
@@ -404,12 +419,12 @@ export default function Programs({ data }) {
         <h1>Pricing</h1>
         <OvernightCampTerms />
         <JumpStart />
-        <PriceContainer>
+        <PriceContainer xl={3}>
           <Price
             title="Hockey camp"
             subTitle="Skills & skating development for players and goalies of all ability levels, with a focus on enjoying the game."
             who="Players and goalies (co-ed)"
-            price={1295}
+            price={1315}
             term="week"
             includes={[
               "On-site, olympic-size ice rink",
@@ -418,10 +433,10 @@ export default function Programs({ data }) {
               "Skating development",
               "Full-ice scrimmages",
               "Fun-based off-ice program",
-              "Free jersey",
+              "Jersey included",
               "Breakfast, lunch & dinner",
-              "Snackbar open morning and afternoon",
-              "Camp activities",
+              "Snackbar",
+              "All camp activities",
             ]}
           >
             <CTAButton href="https://register.trmanager.com">
@@ -432,18 +447,19 @@ export default function Programs({ data }) {
             title="Girl's hockey camp"
             subTitle="A skills & skating development program with the same high-quality instruction just for girls."
             who="Players and goalies (female)"
-            price={1295}
+            price={1315}
             term="week"
             includes={[
               "On-site, olympic-size ice rink",
               "Minimum 7.5 hours on-ice per week",
               "Skills development",
               "Skating development",
+              "Full-ice scrimmages",
               "Fun-based off-ice program",
-              "Free jersey",
+              "Jersey included",
               "Breakfast, lunch & dinner",
-              "Snackbar open morning and afternoon",
-              "Camp activities",
+              "Snackbar",
+              "All camp activities",
             ]}
           >
             <CTAButton href="https://register.trmanager.com">
@@ -454,7 +470,7 @@ export default function Programs({ data }) {
             title={<>Elite hockey camp</>}
             subTitle="For high-performance players focused on advanced skills in skating, puck handling, shooting, and passing."
             who="Rep-level players (co-ed)"
-            price={1625}
+            price={1645}
             term="week"
             primary
             includes={[
@@ -465,9 +481,9 @@ export default function Programs({ data }) {
               "High-intensity skills development",
               "Power skating",
               "Game-situation skills",
+              "Afternoon Full-ice scrimmages",
               "Functional fitness program",
-              "Free t-shirt and shorts",
-              "Afternoon scrimmages",
+              "T-shirt and shorts included",
             ]}
           >
             <CTAButton href="https://register.trmanager.com">
@@ -478,7 +494,7 @@ export default function Programs({ data }) {
             title="Goalie camp"
             subTitle="Goalie specific training, with a focus on angles, technique, rebound-control, proper form, butterfly and much more."
             who="Goalies (co-ed)"
-            price={1625}
+            price={1645}
             term="week"
             includes={[
               <>
@@ -490,9 +506,36 @@ export default function Programs({ data }) {
               "Butterfly",
               "Angles",
               "Rebound-control",
+              "Afternoon full-ice scrimmages",
               "Functional fitness program",
-              "Free t-shirt and shorts",
-              "Afternoon scrimmages",
+              "T-shirt and shorts included",
+            ]}
+          >
+            <CTAButton href="https://register.trmanager.com">
+              Register now
+            </CTAButton>
+          </Price>
+          <Price
+            title={<>Hawerchuck Strong Hockey Camp</>}
+            subTitle="An elite specialty camp run in partnership with MASH Hockey featuring current and ex NHL coaches as well as other current professionals, in support of the Hawerchuk Strong foundation.  "
+            who="AA/AAA Players & goalies (Male)"
+            price={1775}
+            term="week"
+            // primary
+            includes={[
+              <>
+                Everything in <strong>hockey camp</strong>, plus:
+              </>,
+              "Minimum 12.5 hours ice time",
+              "Run by MASH Hockey",
+              "Guest coaches include current NHLers, ex-NHLers, current Pros",
+              "High-intensity skills development",
+              "Power skating",
+              "Game-situation skills",
+              "Full-ice scrimmage",
+              "Functional fitness program - run by NHL strength coaches",
+              "Visualization Training ",
+              "Hawerchuk Strong/MASH Hockey gift package included",
             ]}
           >
             <CTAButton href="https://register.trmanager.com">
@@ -510,14 +553,14 @@ export default function Programs({ data }) {
         <h2>Additional summer programs:</h2>
         <PriceAddon
           title="Summer drop-in ice time (9:00am - 10:30am)"
-          subTitle="One-week only!"
+          subTitle="Two-weeks only!"
           description={
             <>
               Join in with our regular hockey program for 1.5 hours of ice time
               each morning, Monday - Friday.
             </>
           }
-          price={300}
+          price={350}
           term="week"
           to="https://register.trmanager.com"
         />
@@ -554,23 +597,7 @@ export default function Programs({ data }) {
           to="mailto:icecorral@teenranch.com?subject=Semi-private lessons"
         />
       </Container>
-      <Container type="body">
-        <div
-          style={{
-            padding: "4rem",
-            background: "#0074F7",
-            borderRadius: "4px",
-            color: "#fff",
-          }}
-        >
-          <h2 style={{ margin: "0 0 2rem 0" }}>
-            Balance payments, info pack, and snackbar:
-          </h2>{" "}
-          14 days before your camp check-in date we'll send you an email with:
-          all the details you need for camp, a link to pay your remaining
-          balance, and set up your snackbar account(s).
-        </div>
-      </Container>
+      <BalancePayments />
     </>
   )
 }
@@ -621,6 +648,16 @@ export const query = graphql`
 
     highPerformanceHockey: file(
       relativePath: { eq: "facilities/iceCorral/hockey14.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 600, quality: 64) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+
+    hawerchuckStrongHockey: file(
+      relativePath: { eq: "facilities/iceCorral/hockey12.jpg" }
     ) {
       childImageSharp {
         fluid(maxWidth: 600, quality: 64) {

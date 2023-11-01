@@ -79,9 +79,10 @@ export default function Programs({ data }) {
         </p>
 
         <p>
-          In the morning, hone your skills in your sport of choice. Afternoons
-          are your chance to enjoy a variety of activities and daily campfires
-          with engaging, real-life topics shared from a biblical perspective.
+          In the morning, hone your skills in your program/sport of choice.
+          Afternoons are your chance to enjoy a variety of activities and daily
+          campfires with engaging, real-life topics shared from a biblical
+          perspective.
         </p>
         <p>
           Our well-trained staff are committed to the safety and well-being of
@@ -198,7 +199,7 @@ export default function Programs({ data }) {
         <p>
           In order to keep payments as low-risk as possible for you, we are only
           requiring a $50 non-refundable deposit per registration. The balance
-          will be due 14 days prior to arrival at camp and is non-refundable. In
+          will be due 6 weeks prior to arrival at camp and is non-refundable. In
           the case of absence for any reason during the camp week, including
           homesickness or disciplinary departure, no refund will be issued
           except upon a signed physician’s order. In this event, a prorated camp
@@ -207,7 +208,7 @@ export default function Programs({ data }) {
         <ul>
           <li>$50 non-refundable deposit per registration</li>
           <li>
-            The balance is due 14 days prior to arrival at camp and is
+            The balance is due 6 weeks prior to arrival at camp and is
             non-refundable.
           </li>
         </ul>

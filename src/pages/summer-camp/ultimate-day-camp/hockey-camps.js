@@ -23,6 +23,8 @@ import { UltimateDayCampTerms } from "components/Terms"
 import { Link as ReachLink } from "@reach/router"
 import JumpStart from "components/JumpStart"
 import UltimateDayCampIntro from "components/UltimateDayCampIntro"
+import { BalancePayments } from "components/BalancePayments"
+import { PhotoGrid } from "components/PhotoGrid"
 
 const frontmatter = {
   title: "Hockey camps",
@@ -102,7 +104,7 @@ export default function Programs({ data }) {
 
       <Container type="body">
         <h2>Info pack</h2>
-        <div>
+        {/* <div>
           <PdfButton
             target="_blank"
             rel="noopener noreferrer"
@@ -110,9 +112,9 @@ export default function Programs({ data }) {
           >
             Ultimate day camp / junior day camp info pack
           </PdfButton>
-        </div>
+        </div> */}
         <p>
-          Families will be notified by email two weeks before the camp start
+          Families will be notified by email six weeks before the camp start
           date for payment reminders and camp information.
         </p>
       </Container>
@@ -187,7 +189,7 @@ export default function Programs({ data }) {
       </Container>
 
       <Container type="body">
-        <h1>Functional fitness program (high-performance & goalie)</h1>
+        <h1>Functional fitness program (Elite & Goalie)</h1>
 
         <p>
           High-performance athletes have exclusive access to our functional
@@ -313,12 +315,14 @@ export default function Programs({ data }) {
 
         <p>
           Each afternoon, campers get to take their pick from some amazing camp
-          activities on 150 beautiful acres including: rock climbing,
-          bouldering, water slide, swimming, water jousting, archery, tennis,
-          basketball, volleyball, and more.
+          activities on 150 beautiful acres including: giant swing, trail rides,
+          rock climbing, bouldering, ninja climbing feature (NEW), water slide,
+          swimming, water jousting, archery, tennis, basketball, volleyball, and
+          more.
         </p>
+        <PhotoGrid srcs={activities.edges} />
 
-        <Grid sm={2} md={2} lg={3} xl={5} gap={false}>
+        {/* <Grid sm={2} md={2} lg={5} xl={5} gap={false}>
           {activities &&
             activities.edges &&
             activities.edges.map((edge, i) => {
@@ -331,7 +335,7 @@ export default function Programs({ data }) {
                 </div>
               )
             })}
-        </Grid>
+        </Grid> */}
       </Container>
 
       <div id="dates" style={{ position: "absolute", marginTop: "-120px" }} />
@@ -360,7 +364,7 @@ export default function Programs({ data }) {
         <h1>Pricing</h1>
         <UltimateDayCampTerms />
         <JumpStart />
-        <PriceContainer>
+        <PriceContainer xl={2} lg={2}>
           <Price
             title="Hockey day camp"
             subTitle="Skills & skating development for players and goalies of all ability levels, with a focus on enjoying the game."
@@ -373,11 +377,11 @@ export default function Programs({ data }) {
               "Skills development",
               "Skating development",
               "Full-ice scrimmages",
-              "Off-ice program",
-              "Free jersey",
-              "Lunch & morning snack",
-              "Snackbar open in the afternoons",
-              "Camp activities",
+              "Fun-based off-ice program",
+              "Jersey included",
+              "Breakfast, lunch & dinner",
+              "Snackbar",
+              "All camp activities",
             ]}
           >
             <CTAButton href="https://register.trmanager.com">
@@ -386,13 +390,7 @@ export default function Programs({ data }) {
           </Price>
 
           <Price
-            title={
-              <>
-                High-performance
-                <br />
-                hockey day camp
-              </>
-            }
+            title={<>Elite hockey day camp</>}
             subTitle="For high-performance players focused on advanced skills in skating, puck handling, shooting, and passing."
             who="Rep-level players (co-ed)"
             price={1100}
@@ -406,9 +404,9 @@ export default function Programs({ data }) {
               "High-intensity skills development",
               "Power skating",
               "Game-situation skills",
+              "Afternoon Full-ice scrimmages",
               "Functional fitness program",
-              "Free t-shirt and shorts",
-              "Afternoon scrimmages",
+              "T-shirt and shorts included",
             ]}
           >
             <CTAButton href="https://register.trmanager.com">
@@ -447,14 +445,14 @@ export default function Programs({ data }) {
         <h2>Additional summer programs:</h2>
         <PriceAddon
           title="Summer drop-in ice time (9:00am - 10:30am)"
-          subTitle="One-week only!"
+          subTitle="Two-weeks only!"
           description={
             <>
               Join in with our regular hockey program for 1.5 hours of ice time
               each morning, Monday - Friday.
             </>
           }
-          price={300}
+          price={350}
           term="week"
           to="https://register.trmanager.com"
         />
@@ -492,23 +490,7 @@ export default function Programs({ data }) {
         />
       </Container>
 
-      <Container type="body">
-        <div
-          style={{
-            padding: "4rem",
-            background: "#0074F7",
-            borderRadius: "4px",
-            color: "#fff",
-          }}
-        >
-          <h2 style={{ margin: "0 0 2rem 0" }}>
-            Balance payments, info pack, and snackbar:
-          </h2>{" "}
-          14 days before your camp check-in date we'll send you an email with:
-          all the details you need for camp, a link to pay your remaining
-          balance, and set up your snackbar account(s).
-        </div>
-      </Container>
+      <BalancePayments />
     </>
   )
 }
