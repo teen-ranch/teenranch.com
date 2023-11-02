@@ -13,6 +13,7 @@ import "../horses.scss"
 import SubNav from "components/SubNav"
 import { Link } from "react-scroll"
 import Card from "components/Card"
+import { Time } from "components/Time"
 
 export default function Default({ data }) {
   const {
@@ -81,64 +82,64 @@ export default function Default({ data }) {
               </thead>
               <tbody>
                 <tr>
-                  <td>June 11, 2023</td>
-                  <td>June 5, 2023</td>
-                  <td>
+                  <td>May 26, 2024</td>
+                  <td>May 20, 2024</td>
+                  {/* <td>
                     <Button
                       target="_blank"
                       href="https://forms.zohopublic.com/teenranch1/form/HorseShowJune112023/formperma/nzlRfaucFBZY1-sZ1XyVT6v4h2zWyVCe67-A4y5A77A?referrername=teenranch.com"
                     >
                       June 11th entry form
                     </Button>
-                  </td>
+                  </td> */}
                 </tr>
                 <tr>
-                  <td>June 25, 2023</td>
-                  <td>June 19, 2023</td>
-                  <td>
+                  <td>June 23, 2024</td>
+                  <td>June 17, 2024</td>
+                  {/* <td>
                     <Button
                       target="_blank"
                       href="https://forms.zohopublic.com/teenranch1/form/HorseShowJune1120231/formperma/7eqJQuGREMRk2hksfWr1hxkyTGBx8q_PZIcvYI3HjUI?referrername=teenranch.com"
                     >
                       June 25th entry form
                     </Button>
-                  </td>
+                  </td> */}
                 </tr>
                 <tr>
-                  <td>July 9, 2023</td>
-                  <td>July 3, 2023</td>
-                  <td>
+                  <td>July 28, 2024</td>
+                  <td>July 22, 2024</td>
+                  {/* <td>
                     <Button
                       target="_blank"
                       href="https://forms.zohopublic.com/teenranch1/form/HorseShowJuly92023/formperma/gTnIUXmLM1BE0N1apJXXCYJq7aHxYdIwvbOTY4ILeWc?referrername=teenranch.com"
                     >
                       July 9th entry form
                     </Button>
-                  </td>
+                  </td> */}
                 </tr>
                 <tr>
-                  <td>July 23, 2023</td>
-                  <td>July 17, 2023</td>
-                  <td>
+                  <td>August 25, 2024</td>
+                  <td>August 19, 2024</td>
+                  {/* <td>
                     <Button
                       target="_blank"
                       href="https://forms.zohopublic.com/teenranch1/form/HorseShowJuly232023/formperma/ILbthXTQWIQnb08iBm_L24bPvZp2C3m96RbiMH3aEjk?referrername=teenranch.com"
                     >
                       July 23rd entry form
                     </Button>
-                  </td>
+                  </td> */}
                 </tr>
                 <tr>
-                  <td>August 20, 2023</td>
-                  <td>August 14, 2023</td>
-                  <td>
+                  <td>September 22, 2024</td>
+                  <td>September 16, 2024</td>
+                  {/* <td>
                     <Button
                       target="_blank"
                       href="https://forms.zohopublic.com/teenranch1/form/HorseShowAugust202023/formperma/tNGE0I4xTrDGPUxkp_e8O4w7WrgssCgedEt7sDClCtI?referrername=teenranch.com"
                     >
                       August 20th entry form
                     </Button>
-                  </td>
+                  </td> */}
                 </tr>
               </tbody>
             </table>
@@ -159,17 +160,17 @@ export default function Default({ data }) {
             if you are interested.
           </p> */}
         </Program>
-        <h2>Links</h2>
-        <Card style={{ padding: "2rem" }}>
+        {/* <h2>Links</h2> */}
+        {/* <Card style={{ padding: "2rem" }}>
           <div className="showButtons">
             <Button target="_blank" href="https://show.teenranch.com">
               View 2023 season standings
-            </Button>
-            {/* <Button to="/programs/horses/hunter-jumper-shows/show-photos/">
+            </Button> */}
+        {/* <Button to="/programs/horses/hunter-jumper-shows/show-photos/">
               View 2021 show photos
             </Button> */}
-          </div>
-        </Card>
+        {/* </div>
+        </Card> */}
       </Container>
       {/* <Program src={image2.childImageSharp.fluid} name="Hunter/Jumper shows">
           <h2>Forms required for entry:</h2>
@@ -216,18 +217,34 @@ export default function Default({ data }) {
         <h2>Divisions and classes</h2>
         <div className="hunter-jumper-class-grid">
           <Card style={{ padding: "2rem 2rem" }}>
-            <h3>Ring #1 (9:00 am start)</h3>
+            <h3>
+              Ring #1 (<Time>0900</Time> start)
+            </h3>
+            <small>
+              <i>
+                This ring is intended for riders or horses with less experience.
+                All lines in this sand ring are set for an 11' canter stride.
+              </i>
+            </small>
             <ul>
-              <li>Intermediate Hunters</li>
               <li>Novice Hack Division</li>
-              <li>Short Stirrup Division</li>
-              <li>Novice Hunters</li>
               <li>Green Hunters</li>
+              <li>Novice Equitation Development</li>
+              <li>Novice Hunters</li>
+              <li>Short Stirrup Division</li>
             </ul>
           </Card>
 
           <Card style={{ padding: "2rem 2rem" }}>
-            <h3>Ring #3 (9:00 am start)</h3>
+            <h3>
+              Ring #3 (<Time>0830</Time> start)
+            </h3>
+            <small>
+              <i>
+                This ring is designed for the more experienced riders. All lines
+                are set for a 12' canter stride.
+              </i>
+            </small>
             <ul>
               <li>Hack Division</li>
               <li>2' Hunters</li>
@@ -238,7 +255,16 @@ export default function Default({ data }) {
           </Card>
 
           <Card style={{ padding: "2rem 2rem" }}>
-            <h3>Ring #4 (8:00 am start)</h3>
+            <h3>
+              Ring #4 (<Time>0800</Time> start)
+            </h3>
+            <small>
+              <i>
+                This smaller sand ring is designed for beginner-novice riders.
+                Lines to be set for an 11' stride. Divisions to be split in half
+                by age if there are more than competitors entered.
+              </i>
+            </small>
             <ul>
               <li>Leadline Division</li>
               <li>Starter Division</li>
@@ -248,7 +274,15 @@ export default function Default({ data }) {
           </Card>
 
           <Card style={{ padding: "2rem 2rem" }}>
-            <h3>Ring #2 - Grass Ring (Start time not before 12:00pm)</h3>
+            <h3>
+              Ring #2 - Grass Ring (Start time not before <Time>1200</Time>)
+            </h3>
+            <small>
+              <i>
+                Will begin at the completion of the Rookie Division. Grass Ring
+                (if shod, it’s advised to wear corks)
+              </i>
+            </small>
             <ul>
               <li>
                 Jumper Division -{" "}
@@ -264,7 +298,7 @@ export default function Default({ data }) {
         </div>
         <Button
           target="_blank"
-          href="https://teenranch.nyc3.cdn.digitaloceanspaces.com/website/pdf/hjClassDescriptions_2023_V2.pdf"
+          href="https://teenranch.nyc3.cdn.digitaloceanspaces.com/website/pdf/hjClassDescriptions_2024.pdf"
         >
           View class descriptions
         </Button>
@@ -273,17 +307,23 @@ export default function Default({ data }) {
         <h2>Fees</h2>
         <ul>
           <li>
-            Per Division fee: $90 +HST (division fee includes a warm-up round)
+            Per Division fee: $100 +HST (division fee includes a warm-up round)
           </li>
           <li>Back number fee: $10 +HST</li>
         </ul>
+        <h3>Schooling Ring Rental</h3>
+        <div>
+          Ring schooling will be available on the Saturday before each show
+          only:
+        </div>
+        <Button to="/programs/horses/schooling-ring-rental/">Learn More</Button>
       </Container>
       <Container type="body">
         <div
           id="year-end"
           style={{ position: "absolute", marginTop: "-180px" }}
         />
-        <h2>Year-end awards 2023</h2>
+        <h2>Year-end awards 2024</h2>
         <Card style={{ padding: "2rem" }}>
           <ul>
             <li>Plan for Year End Celebration TBD.</li>
@@ -306,6 +346,7 @@ export default function Default({ data }) {
                 Winner receives a GIANT custom ribbon.
               </em>
             </li>
+
             <li>
               High point TB Awards – <em>Sponsored by the Jockey Club</em>
               <br />
@@ -359,6 +400,14 @@ export default function Default({ data }) {
                 Horse/pony earning the most points of the season. Receives an
                 annual trophy, a custom ribbon and an equine massage.
               </em>
+            </li>
+            <li>
+              Year End Jumper Champion will receive the annual Johnny Barkey
+              Memorial Trophy
+            </li>
+            <li>
+              Year End Green Hunter Champion will receive the annual Christine
+              Legare Memorial Trophy.
             </li>
             <li>
               Custom Sponsored Awards –{" "}
@@ -686,7 +735,7 @@ export default function Default({ data }) {
 
 export const query = graphql`
   query {
-    main: file(relativePath: { eq: "hunter-jumper/ZANNA HIGH5 brydon.jpg" }) {
+    main: file(relativePath: { eq: "hunter-jumper/Willow and noelle of.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1920, quality: 64) {
           ...GatsbyImageSharpFluid_withWebp
@@ -694,7 +743,9 @@ export const query = graphql`
       }
     }
 
-    banner: file(relativePath: { eq: "hunter-jumper/Jumper grey J_R.jpg" }) {
+    banner: file(
+      relativePath: { eq: "hunter-jumper/Jumper Varielle Canada PACT.jpg" }
+    ) {
       childImageSharp {
         fluid(maxWidth: 1920, quality: 64) {
           ...GatsbyImageSharpFluid_withWebp
