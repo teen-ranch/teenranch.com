@@ -287,22 +287,22 @@ export default function Programs({ data }) {
           <h2>Erik Bradford</h2>
           <h3>Hockey coach</h3>
           <p>
-            Joining us again this summer as a full time hockey coach is Erik
-            Bradford from Orangeville. Erik played for the Cleveland Monsters of
-            the American Hockey League this past season, the AHL affiliate of
-            the Columbus Blue Jackets.
+            Joining us again this summer as a hockey coach is Erik Bradford from
+            Orangeville. Erik played for the Cleveland Monsters of the American
+            Hockey League this past season, the AHL affiliate of the Columbus
+            Blue Jackets.
           </p>
         </Program>
 
         <Program src={matt.childImageSharp.fluid}>
           <h2>Matthew Maggio</h2>
-          <h3>Guest hockey coach (July 30th - August 4th week)</h3>
+          <h3>Guest hockey coach</h3>
           <p>
-            Guest coach Matthew Maggio will join us on ice. Matthew was the
-            Captain of the Windsor Spitfires and the OHL's leading scorer this
-            past season, as well as leading the league in goals scored. He was
-            drafted by the New York Islanders in the 5th round of the 2022 NHL
-            draft.
+            Guest coach Matthew Maggio will join us on ice. Matthew was
+            previously the Captain of the Windsor Spitfires and the OHL's
+            leading scorer in points and goals scored. He was drafted by the New
+            York Islanders in the 5th round of the 2022 NHL draft and is
+            currently playing for the Bridgeport Islanders in the AHL.
           </p>
         </Program>
 
@@ -324,9 +324,10 @@ export default function Programs({ data }) {
             to the New York Islanders
           </li>
           <li>Brian Stapleton - ex NHL player</li>
-          <li>Brenden Miller - Cleveland Monsters - AHL</li>
+          <li>Brenden Miller - Iowa Wild - AHL</li>
           <li>Marcus Joughin - Sacred Heart University - NCAA Div 1</li>
           <li>Brendan Kennette - Sacred Heart University - NCAA Div 1</li>
+          <li>Logan Mailloux - Laval Rocket - AHL</li>
         </ul>
 
         {/* <Coach name='Brent Boschman' title='Head coach' src={ brent.childImageSharp.fluid }
