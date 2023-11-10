@@ -72,7 +72,7 @@ export default function Programs({ data }) {
         <h1>Available dates</h1>
 
         <ul>
-          <li>January 3-6, 2023</li>
+          <li>January 2-5, 2024</li>
         </ul>
 
         <p>
@@ -124,7 +124,7 @@ export default function Programs({ data }) {
               </>
             }
             who="Kids ages 5-12"
-            price={336}
+            price={300}
             term="4 days"
             includes={dayCampBulletsClassic}
           >
@@ -143,7 +143,7 @@ export default function Programs({ data }) {
             }
             subTitle={`Individual day`}
             who="Kids ages 5-12"
-            price={125}
+            price={115}
             term="day"
             includes={dayCampBulletsHockey}
           >
@@ -166,7 +166,7 @@ export default function Programs({ data }) {
               </>
             }
             who="Kids ages 5-12"
-            price={460}
+            price={395}
             term="4 days"
             includes={dayCampBulletsHockey}
           >
