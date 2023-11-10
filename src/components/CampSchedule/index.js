@@ -472,7 +472,7 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
                     null,
                     null,
                     null,
-                    "13-16",
+                    "12-15",
                     null,
                     null,
                     null,
