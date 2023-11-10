@@ -26,7 +26,7 @@ import { Time } from "components/Time"
 import Video from "components/Video"
 
 const frontmatter = {
-  title: "Teen Ranch - Christmas at the Ranch",
+  title: "Christmas at the Ranch",
   path: "/events/christmas-at-the-ranch/",
 }
 
