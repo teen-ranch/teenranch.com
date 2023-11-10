@@ -98,10 +98,10 @@ export default function Default({ data }) {
         </ul>
 
         <p>
-          <strong>Check-in:</strong> March 10, 2023 between <Time>1900</Time> -{" "}
+          <strong>Check-in:</strong> March 8, 2024 between <Time>1900</Time> -{" "}
           <Time>1930</Time>
           <br />
-          <strong>Pick up:</strong> March 12, 2023 at <Time>1300</Time>
+          <strong>Pick up:</strong> March 10, 2024 at <Time>1300</Time>
         </p>
       </Container>
 
