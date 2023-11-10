@@ -5,7 +5,7 @@ import Card from "components/Card"
 
 const SOURCES = ["youtube", "vimeo"]
 
-export default function Video({ src }) {
+export default function Video({ src, short = false }) {
   let type = ""
   SOURCES.map(source => {
     if (src.indexOf(source) !== -1) {
@@ -17,11 +17,11 @@ export default function Video({ src }) {
   if (type === "youtube") {
     return (
       <Card>
-        <div className="video-responsive">
+        <div className={short ? "video-responsive-short" : "video-responsive"}>
           <iframe
-            width="560"
+            width={short ? "315" : "560"}
             title={src}
-            height="315"
+            height={short ? "560" : "315"}
             src={`${src}&rel=0`}
             frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"

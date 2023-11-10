@@ -286,7 +286,11 @@ export default function Header({ location }) {
                         {/* <li><NavLink to='/events/christmas-photo-sessions/'>Christmas Photo Sessions</NavLink></li> */}
                         {/* <li><NavLink to='/events/the-christmas-winter-festival/'>Christmas Winter Festival</NavLink></li> */}
                         {/* <li><NavLink to='/events/march-april-break-day-camp/'><s>March</s> April Break Day Camp</NavLink></li> */}
-                        {/* <li><NavLink to='/events/family-winter-activity-adventure/'>Winter Activity Adventure</NavLink></li> */}
+                        <li>
+                          <NavLink to="/events/christmas-at-the-ranch/">
+                            Christmas at the Ranch
+                          </NavLink>
+                        </li>
                         <li>
                           <NavLink to="/events/march-break-camp-for-a-weekend/">
                             March Break Camp for a Weekend
