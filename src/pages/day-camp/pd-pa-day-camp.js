@@ -17,6 +17,8 @@ import {
   dayCampBulletsHockey,
 } from "components/defaults"
 import { Time } from "components/Time"
+import Grid from "components/Grid"
+import Video from "components/Video"
 // import Grid from 'components/Grid'
 // import Sponsor from 'components/Sponsor'
 // import Img from 'gatsby-image'
@@ -57,42 +59,51 @@ export default function Programs({ data }) {
       <div id="top" style={{ position: "absolute", marginTop: "-120px" }} />
 
       <Container type="body">
-        <h1>PD/PA day camp</h1>
+        <Grid md={2}>
+          <div>
+            <h1>PD/PA day camp</h1>
 
-        <p>
-          Parents, we've got you covered!! Give your kids adventure and fun on
-          their days off with our PD Day Camps! Designed for ample time outdoors
-          to explore, play group games, and enjoy the season's best activities,
-          these days will be sure to get your kids moving and having a blast.
-          For the hockey enthusiast, we offer a hockey option as well. Drop off
-          at 9 am and pick up at 4:30 pm. Two snacks.
-        </p>
-      </Container>
+            <p>
+              Parents, we've got you covered!! Give your kids adventure and fun
+              on their days off with our PD Day Camps! Designed for ample time
+              outdoors to explore, play group games, and enjoy the season's best
+              activities, these days will be sure to get your kids moving and
+              having a blast. For the hockey enthusiast, we offer a hockey
+              option as well. Drop off at 9 am and pick up at 4:30 pm. Two
+              snacks.
+            </p>
+            <h1>Available dates</h1>
 
-      <Container type="body">
-        <h1>Available dates</h1>
+            {/* <div
+  style={{
+    padding: "4rem",
+    background: "purple",
+    borderRadius: "4px",
+    color: "#fff",
+    textAlign: "center",
+    fontSize: "2rem",
+  }}
+>
+  Check back soon for 2023/2024 season dates
+</div> */}
+            <ul>
+              <li>Friday October 27, 2023</li>
+              <li>Friday November 24, 2023</li>
+              <li>Friday February 16, 2024</li>
+            </ul>
 
-        {/* <div
-          style={{
-            padding: "4rem",
-            background: "purple",
-            borderRadius: "4px",
-            color: "#fff",
-            textAlign: "center",
-            fontSize: "2rem",
-          }}
-        >
-          Check back soon for 2023/2024 season dates
-        </div> */}
-        <ul>
-          <li>Friday October 27, 2023</li>
-          <li>Friday November 24, 2023</li>
-          <li>Friday February 16, 2024</li>
-        </ul>
-
-        <p>
-          Drop off between <Time>0900</Time> and pick up at <Time>1630</Time>
-        </p>
+            <p>
+              Drop off between <Time>0900</Time> and pick up at{" "}
+              <Time>1630</Time>
+            </p>
+          </div>
+          <div style={{ maxWidth: "315px" }}>
+            <Video
+              src="https://youtube.com/embed/u_HdXnBd2xM?feature=shared"
+              short
+            />
+          </div>
+        </Grid>
       </Container>
 
       <div id="pricing" style={{ position: "absolute", marginTop: "-180px" }} />
