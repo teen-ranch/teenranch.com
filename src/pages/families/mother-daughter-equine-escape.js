@@ -94,7 +94,7 @@ export default function Default({ data }) {
           another over a common love of horses and adventure.
         </p>
         <p>
-          Beginning at 7:00pm on Friday May 12th, 2023, enjoy a wonderful
+          Beginning at 7:00pm on Friday May 10th, 2024, enjoy a wonderful
           weekend away together in beautiful accommodations with delicious food,
           entertaining evenings, inspirational speakers, a one-hour horse riding
           lesson with awesome instructors, scenic trail rides through the
@@ -104,7 +104,7 @@ export default function Default({ data }) {
         <Button href="https://register.trmanager.com">Book now</Button>
 
         <h3>When is it?</h3>
-        <p>May 12-14, 2023</p>
+        <p>May 10-12, 2024</p>
 
         <h3>This weekend getaway package includes:</h3>
         <p>Breakfasts, Lunches and Supper.</p>
@@ -116,7 +116,7 @@ export default function Default({ data }) {
 
         <ul>
           <li>
-            <strong>Olympic Style/Chalet Room:</strong> $425 +HST /person (Bring
+            <strong>Olympic Style/Chalet Room:</strong> $430 +HST /person (Bring
             your own bedding & towels)
             <em>
               {" "}
@@ -125,14 +125,19 @@ export default function Default({ data }) {
             </em>
           </li>
           <li>
-            <strong>Western-style Hotel Room:</strong> $490 +HST /person (Linens
+            <strong>Western-style Hotel Room:</strong> $495 +HST /person (Linens
             & towels provided)
             <em> - Private accommodation for each mother/daughter</em>
           </li>
           <li>
-            <strong>Coach House/Family Suite:</strong> $525 +HST /person (Linens
+            <strong>Coach House/Family Suite:</strong> $530 +HST /person (Linens
             & towels provided)
             <em> - Private accommodation for each mother/daughter</em>
+          </li>
+          <li>
+            Non-rider option: For family or friends who want to join but aren't
+            able to ride, but would share the same room, we are offering a $100
+            discount off of the regular price.
           </li>
         </ul>
 
