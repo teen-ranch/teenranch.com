@@ -120,7 +120,7 @@ export default function Programs({ data }) {
             }
             subTitle={
               <>
-                Bundle (<strong>SAVE $5/day</strong>)
+                Bundle (<strong>SAVE $14/day</strong>)
               </>
             }
             who="Kids ages 5-12"
@@ -162,7 +162,7 @@ export default function Programs({ data }) {
             }
             subTitle={
               <>
-                Bundle (<strong>SAVE $10/day</strong>)
+                Bundle (<strong>SAVE $16.25/day</strong>)
               </>
             }
             who="Kids ages 5-12"
