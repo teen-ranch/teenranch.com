@@ -94,7 +94,7 @@ export default function Default({ data }) {
         <h2>Available dates</h2>
 
         <ul>
-          <li>March 10-12, 2023</li>
+          <li>March 8-10, 2024</li>
         </ul>
 
         <p>
@@ -113,11 +113,11 @@ export default function Default({ data }) {
 
       <Container type="body">
         <h1>Pricing</h1>
-        <PriceContainer>
+        <PriceContainer md={1} lg={1} xl={1}>
           <Price
             title={<>March Break Camp for a Weekend</>}
-            subTitle={`Junior (JR)`}
-            who="Kids ages 8-12"
+            subTitle={`Junior (8-12) & Senior (13-16)`}
+            // who="Kids ages 8-12"
             price={250}
             term="weekend"
             includes={[
@@ -138,7 +138,7 @@ export default function Default({ data }) {
               Register now
             </CTAButton>
           </Price>
-          <Price
+          {/* <Price
             title={<>March Break Camp for a Weekend</>}
             subTitle={`Senior (SR)`}
             who="Kids ages 13-16"
@@ -161,7 +161,7 @@ export default function Default({ data }) {
             <CTAButton href="https://register.trmanager.com">
               Register now
             </CTAButton>
-          </Price>
+          </Price> */}
         </PriceContainer>
         * All activities are weather permitting.
       </Container>
