@@ -657,7 +657,7 @@ export const query = graphql`
     }
 
     hawerchuckStrongHockey: file(
-      relativePath: { eq: "facilities/iceCorral/hockey12.jpg" }
+      relativePath: { eq: "programs/hockey/hawerchuckStrong.png" }
     ) {
       childImageSharp {
         fluid(maxWidth: 600, quality: 64) {
