@@ -1,11 +1,22 @@
 .video-responsive {
   overflow: hidden;
-  padding-bottom: 56.25%;
+  // padding-bottom: 56.25%;
+  aspect-ratio: 16 / 9;
   position: relative;
-  height: 0;
+  // height: 0;
   margin: 0;
 }
-.video-responsive iframe {
+.video-responsive-short {
+  overflow: hidden;
+  // padding-bottom: 177.75%;
+  aspect-ratio: 9 / 16;
+  width: 100%;
+  position: relative;
+  // height: 0;
+  margin: 0;
+}
+.video-responsive iframe,
+.video-responsive-short iframe {
   left: 0;
   top: 0;
   height: 100%;
