@@ -72,7 +72,7 @@ export default function Programs({ data }) {
         <h1>Available dates</h1>
 
         <ul>
-          <li>March 13-17, 2023</li>
+          <li>March 11-15, 2024</li>
         </ul>
 
         <p>
@@ -119,11 +119,11 @@ export default function Programs({ data }) {
             }
             subTitle={
               <>
-                Bundle (<strong>SAVE $5/day</strong>)
+                Bundle (<strong>SAVE $14/day</strong>)
               </>
             }
             who="Kids ages 5-12"
-            price={420}
+            price={375}
             term="week"
             includes={dayCampBulletsClassic}
           >
@@ -142,7 +142,7 @@ export default function Programs({ data }) {
             }
             subTitle={`Individual day`}
             who="Kids ages 5-12"
-            price={125}
+            price={115}
             term="day"
             includes={dayCampBulletsHockey}
           >
@@ -160,11 +160,11 @@ export default function Programs({ data }) {
             }
             subTitle={
               <>
-                Bundle (<strong>SAVE $10/day</strong>)
+                Bundle (<strong>SAVE $16/day</strong>)
               </>
             }
             who="Kids ages 5-12"
-            price={575}
+            price={495}
             term="week"
             includes={dayCampBulletsHockey}
           >
