@@ -66,10 +66,10 @@ export default function Default({ data }) {
       <div id="top" style={{ position: "absolute", marginTop: "-120px" }} />
 
       <Container type="body">
-        <h1>2023 Show Series</h1>
+        <h1>2024 Show Series</h1>
         <Program
           src={main.childImageSharp.fluid}
-          name="2023 Hunter/Jumper Shows"
+          name="2024 Hunter/Jumper Shows"
         >
           <div className="staffTable">
             <table>
