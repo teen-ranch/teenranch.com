@@ -125,7 +125,7 @@ export default function Default({ data }) {
         </ul>
         <h2>Add-ons:</h2>
         <ul>
-          <li> Pony rides $10 per person* weather-permitting </li>
+          <li> Pony rides $5 per person* weather-permitting </li>
           <li> Christmas Trees</li>
           <li>Evergreen and Dogwood bundles </li>
           <li>Snack bar available (drinks, snacks, hot dogs) </li>
@@ -232,7 +232,7 @@ export default function Default({ data }) {
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "events/nativity.jpg" }) {
+    file(relativePath: { eq: "events/santaClaus.png" }) {
       childImageSharp {
         fluid(maxWidth: 1920, quality: 64) {
           ...GatsbyImageSharpFluid_withWebp
