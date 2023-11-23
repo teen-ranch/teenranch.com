@@ -3,8 +3,10 @@ import Container from "components/Container"
 import Heading from "components/Heading"
 import Button from "components/Button"
 import Program from "components/Program"
+import { PhotoGrid } from "components/PhotoGrid"
 
-export default function Default() {
+export default function Default({ data }) {
+  const { schoolingRing } = data
   return (
     <>
       <Heading
@@ -32,7 +34,27 @@ export default function Default() {
             Rent a schooling ring
           </Button>
         </Program>
+        <PhotoGrid srcs={schoolingRing.edges} />
       </Container>
     </>
   )
 }
+
+export const query = graphql`
+  query {
+    schoolingRing: allFile(
+      filter: { relativeDirectory: { eq: "hunter-jumper/schoolingRing" } }
+    ) {
+      edges {
+        node {
+          name
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`

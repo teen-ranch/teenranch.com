@@ -228,10 +228,10 @@ export default function Default({ data }) {
             </small>
             <ul>
               <li>Novice Hack Division</li>
-              <li>Green Hunters</li>
-              <li>Novice Equitation Development</li>
-              <li>Novice Hunters</li>
-              <li>Short Stirrup Division</li>
+              <li>2' Green Hunters</li>
+              <li>1'6"/1'9" Novice Equitation Development</li>
+              <li>1'9" Novice Hunters</li>
+              <li>1'6" Short Stirrup Division</li>
             </ul>
           </Card>
 
@@ -250,7 +250,7 @@ export default function Default({ data }) {
               <li>2' Hunters</li>
               <li>Amateur Equitation Division</li>
               <li>2'3" Hunters</li>
-              <li>Hi/Low Hunters</li>
+              <li>2'6"/2'9" Hi/Low Hunters</li>
             </ul>
           </Card>
 
@@ -262,7 +262,7 @@ export default function Default({ data }) {
               <i>
                 This smaller sand ring is designed for beginner-novice riders.
                 Lines to be set for an 11' stride. Divisions to be split in half
-                by age if there are more than competitors entered.
+                by age if there are more than 15 competitors entered.
               </i>
             </small>
             <ul>
@@ -279,8 +279,8 @@ export default function Default({ data }) {
             </h3>
             <small>
               <i>
-                Will begin at the completion of the Rookie Division. Grass Ring
-                (if shod, it’s advised to wear corks)
+                Will begin at the completion of the Hi/Low Division. (if shod,
+                it’s advised to use corks)
               </i>
             </small>
             <ul>
@@ -292,13 +292,11 @@ export default function Default({ data }) {
                 </em>
               </li>
             </ul>
-            Will begin at the completion of the Hi/Low Division. (if shod, it’s
-            advised to use corks)
           </Card>
         </div>
         <Button
           target="_blank"
-          href="https://teenranch.nyc3.cdn.digitaloceanspaces.com/website/pdf/hjClassDescriptions_2024.pdf"
+          href="https://assets.teenranch.com/hjClassDescriptions_2024_v2.pdf"
         >
           View class descriptions
         </Button>
