@@ -11,7 +11,7 @@ export function Banner() {
           style={{ color: "red" }}
         />
         <a
-          href="https://teenranch.nyc3.cdn.digitaloceanspaces.com/website/pdf/tenReasonsToSendYourKidToCamp.pdf"
+          href="https://www.canva.com/design/DAFz6YBjvDs/ry-3sMcEI3k8B0nWSjwtlA/view"
           target="_blank"
           rel="noopener noreferrer"
           style={{
