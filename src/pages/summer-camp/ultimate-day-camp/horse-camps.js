@@ -361,7 +361,7 @@ export const query = graphql`
       }
     }
 
-    english: file(relativePath: { eq: "programs/horse/lesson.jpg" }) {
+    english: file(relativePath: { eq: "programs/horse/78.JPG" }) {
       childImageSharp {
         fluid(maxWidth: 600, quality: 64) {
           ...GatsbyImageSharpFluid_withWebp
@@ -369,7 +369,7 @@ export const query = graphql`
       }
     }
 
-    western: file(relativePath: { eq: "programs/horse/Western (40).jpg" }) {
+    western: file(relativePath: { eq: "programs/horse/IMG_8574.JPG" }) {
       childImageSharp {
         fluid(maxWidth: 600, quality: 64) {
           ...GatsbyImageSharpFluid_withWebp
