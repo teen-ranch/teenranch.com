@@ -90,6 +90,7 @@ function Heading({
     <>
       <Helmet>
         <title>{`${pageTitle} - ${siteTitle}`}</title>
+        <meta property="og:site_name" content="Teen Ranch" />
         <meta property="og:title" content={`${pageTitle} - ${siteTitle}`} />
         <meta
           property="twitter:title"
