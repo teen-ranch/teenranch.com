@@ -11,6 +11,7 @@ export function PhotoGrid({
   lg = 3,
   xl = 5,
   xxl = 5,
+  forceAspectRatio = false,
 }) {
   const [imagesPerRow, setImagesPerRow] = useState(null)
   const [finalRowImages, setFinalRowImages] = useState(null)
@@ -61,11 +62,35 @@ export function PhotoGrid({
               <div key={rowIndex} style={{ display: "flex" }}>
                 {row.map((src, srcIndex) => {
                   const actualWidth = width / row.length
+                  const actualHeight = (actualWidth / 16) * 9
+                  if (src.node.name === "index") return null
                   return (
-                    <div style={{ width: actualWidth || 500 }} key={srcIndex}>
+                    <div
+                      style={{
+                        width: actualWidth || 500,
+                        ...(forceAspectRatio && {
+                          height: actualHeight || 281.25,
+                        }),
+                      }}
+                      key={srcIndex}
+                    >
                       <Img
                         fluid={src.node.childImageSharp.fluid}
                         alt={src}
+                        // width={actualWidth || 500}
+                        // height={actualHeight || 281.25}
+                        // style={{
+                        //   width: actualWidth || 500,
+                        //   height: actualHeight || 281.25,
+                        // }}
+
+                        style={{
+                          ...(forceAspectRatio && {
+                            width: actualWidth || 500,
+                            height: actualHeight || 281.25,
+                          }),
+                        }}
+
                         // style={{ width: calculatedWidth }}
                       />
                     </div>

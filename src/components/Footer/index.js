@@ -173,6 +173,21 @@ export default function Footer() {
                 <Link to="/programs/horses/trail-rides/">Trail rides</Link>
               </li>
             </ul>
+
+            <div className="footerTitle">Retreats</div>
+            <ul className="footerNavigation">
+              <div className="subNavDivider"></div>
+              <li>
+                <Link to="/retreats/">Group Retreats</Link>
+              </li>
+            </ul>
+            <div className="footerTitle">Outdoor Education</div>
+            <ul className="footerNavigation">
+              <div className="subNavDivider"></div>
+              <li>
+                <Link to="/outdoor-education/">Outdoor Education</Link>
+              </li>
+            </ul>
           </div>
 
           <div>

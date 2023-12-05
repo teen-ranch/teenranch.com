@@ -4,8 +4,9 @@ import Heading from "components/Heading"
 import Button from "components/Button"
 import Program from "components/Program"
 import { PhotoGrid } from "components/PhotoGrid"
+import { graphql } from "gatsby"
 
-export default function Default({ data }) {
+export default function SchoolingRingPage({ data }) {
   const { schoolingRing } = data
   return (
     <>
