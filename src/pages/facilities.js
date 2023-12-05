@@ -101,7 +101,7 @@ export default function Default({ data }) {
           })}
         </div>
 
-        <h3>The Bunkhouses</h3>
+        {/* <h3>The Bunkhouses</h3>
         <p>
           Comfortable and cozy, our western style bunkhouses easily accommodate
           over 64 guests by housing 8-11 guests per room. All bunkhouses are
@@ -115,7 +115,7 @@ export default function Default({ data }) {
               </div>
             )
           })}
-        </div>
+        </div> */}
 
         <h3>The Dining Room</h3>
         <p>
