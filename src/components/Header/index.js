@@ -312,6 +312,31 @@ export default function Header({ location }) {
                 </ul>
               </li>
               <li>
+                <NavLink to="/retreats/">Retreats</NavLink>
+                <ul className="subNav">
+                  <li>
+                    <ul className="subSubNav">
+                      <li>
+                        <NavLink to="/retreats/">Group Retreats</NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/families/mother-daughter-equine-escape/">
+                          Mother daughter equine escape
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/families/father-son-hockey-weekend/">
+                          Father-son hockey weekend
+                        </NavLink>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <NavLink to="/outdoor-education/">Outdoor Education</NavLink>
+              </li>
+              <li>
                 <NavLink to="/facilities/">Facilities</NavLink>
               </li>
               <li>
