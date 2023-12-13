@@ -7,6 +7,7 @@ import { Link, graphql } from "gatsby"
 import { PhotoGrid } from "components/PhotoGrid"
 import Quote from "components/Quote"
 import Grid from "components/Grid"
+import Img from "gatsby-image"
 
 const frontmatter = {
   title: "Outdoor Education",
@@ -21,7 +22,14 @@ const pageData = {
 }
 
 export default function Programs({ data }) {
-  const { file, outdoorEducation } = data
+  const {
+    file,
+    outdoorEducation,
+    customization,
+    diningRoom,
+    accomodations,
+    activities,
+  } = data
 
   return (
     <>
@@ -54,30 +62,90 @@ export default function Programs({ data }) {
           discovering an exciting world outside the classroom.
         </p>
         <p>Day and Overnight Ventures are available. </p>
-        <h2>Customization</h2>
-        We believe that each school and class is unique. Our staff will
-        collaborate with you to customize your visit and create a unique venture
-        for your group with the right balance of adventure, challenge, and the
-        great outdoors.
-        <h2>Accommodations</h2>
-        Our top-notch accommodations are clean, cozy, and feature over-sized
-        bunk beds, ensuite washrooms and are climate-controlled for year-round
-        comfort. Our Carriage and Coach House buildings each feature a spacious
-        central lounge and provide lodging for over 100 students and teachers.
-        Please visit our <Link to="/facilities/">Facilities</Link> page for more
-        information.
-        <h2>Dining Room</h2>
-        Our charming western-style dining room provides nutritious and delicious
-        meals as students and teachers connect around the tables. A range of
-        dietary options are available to book in advance in order to meet the
-        specific needs of the group.
-        <h2>Activities</h2>
-        Schools booking our Outdoor Education program are offered a range of
-        outdoor and indoor facilitated activities, combined with teacher-led
-        options, making for a well-rounded retreat and a high level of group
-        bonding. Challenging activities, combined with instruction and
-        encouragement, offer students the opportunity for personal growth and
-        skill acquisition.
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "1rem",
+            margin: "2rem 0",
+          }}
+        >
+          <Img
+            fixed={customization.childImageSharp.fixed}
+            alt={"Customization icon"}
+          />
+          <h2>Customization</h2>
+        </div>
+        <div style={{ paddingLeft: "76px" }}>
+          We believe that each school and class is unique. Our staff will
+          collaborate with you to customize your visit and create a unique
+          venture for your group with the right balance of adventure, challenge,
+          and the great outdoors.
+        </div>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "1rem",
+            margin: "2rem 0",
+          }}
+        >
+          <Img
+            fixed={accomodations.childImageSharp.fixed}
+            alt={"Accomodations icon"}
+          />
+          <h2>Accommodations</h2>
+        </div>
+        <div style={{ paddingLeft: "76px" }}>
+          Our top-notch accommodations are clean, cozy, and feature over-sized
+          bunk beds, ensuite washrooms and are climate-controlled for year-round
+          comfort. Our Carriage and Coach House buildings each feature a
+          spacious central lounge and provide lodging for over 100 students and
+          teachers. Please visit our <Link to="/facilities/">Facilities</Link>{" "}
+          page for more information.
+        </div>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "1rem",
+            margin: "2rem 0",
+          }}
+        >
+          <Img
+            fixed={diningRoom.childImageSharp.fixed}
+            alt={"Dining room icon"}
+          />
+          <h2>Dining Room</h2>
+        </div>
+        <div style={{ paddingLeft: "76px" }}>
+          Our charming western-style dining room provides nutritious and
+          delicious meals as students and teachers connect around the tables. A
+          range of dietary options are available to book in advance in order to
+          meet the specific needs of the group.
+        </div>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "1rem",
+            margin: "2rem 0",
+          }}
+        >
+          <Img
+            fixed={activities.childImageSharp.fixed}
+            alt={"Activities icon"}
+          />
+          <h2>Activities</h2>
+        </div>
+        <div style={{ paddingLeft: "76px", marginBottom: "2rem" }}>
+          Schools booking our Outdoor Education program are offered a range of
+          outdoor and indoor facilitated activities, combined with teacher-led
+          options, making for a well-rounded retreat and a high level of group
+          bonding. Challenging activities, combined with instruction and
+          encouragement, offer students the opportunity for personal growth and
+          skill acquisition.
+        </div>
         <Grid md={3} lg={3} xl={3}>
           <div>
             <h2>Year-Round Activities</h2>
@@ -158,6 +226,34 @@ export const query = graphql`
               ...GatsbyImageSharpFluid
             }
           }
+        }
+      }
+    }
+    customization: file(relativePath: { eq: "icons/customization.png" }) {
+      childImageSharp {
+        fixed(width: 64, height: 64, quality: 100) {
+          ...GatsbyImageSharpFixed_withWebp
+        }
+      }
+    }
+    accomodations: file(relativePath: { eq: "icons/accomodations.png" }) {
+      childImageSharp {
+        fixed(width: 64, height: 64, quality: 100) {
+          ...GatsbyImageSharpFixed_withWebp
+        }
+      }
+    }
+    diningRoom: file(relativePath: { eq: "icons/diningRoom.png" }) {
+      childImageSharp {
+        fixed(width: 64, height: 64, quality: 100) {
+          ...GatsbyImageSharpFixed_withWebp
+        }
+      }
+    }
+    activities: file(relativePath: { eq: "icons/activities.png" }) {
+      childImageSharp {
+        fixed(width: 64, height: 64, quality: 100) {
+          ...GatsbyImageSharpFixed_withWebp
         }
       }
     }

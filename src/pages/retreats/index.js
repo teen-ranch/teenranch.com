@@ -5,6 +5,7 @@ import Button from "components/Button"
 
 import { Link, graphql } from "gatsby"
 import { PhotoGrid } from "components/PhotoGrid"
+import Img from "gatsby-image"
 
 const frontmatter = {
   title: "Retreats",
@@ -20,7 +21,14 @@ const pageData = {
 }
 
 export default function Programs({ data }) {
-  const { retreats, file } = data
+  const {
+    retreats,
+    file,
+    customization,
+    diningRoom,
+    activities,
+    accomodations,
+  } = data
 
   return (
     <>
@@ -84,35 +92,99 @@ export default function Programs({ data }) {
           your group to make use of at their leisure. Each group is offered a
           scheduled trail ride as part of their booking package.{" "}
         </p>
-        <h3>Customization</h3>
-        Each group is unique. Our staff will collaborate with you to customize
-        your visit and create a memorable retreat for your group with the right
-        balance of activity, connection, and the great outdoors.
-        <h3>Accommodations</h3>
-        Our top-notch accommodations are clean, cozy, and feature over-sized
-        bunk beds, ensuite washrooms, and rooms are climate-controlled for
-        year-round comfort. Our Carriage and Coach House buildings, along with
-        our Plough Inn Hotel, each feature a spacious central lounge and
-        together provide lodging for over 100 guests. Please visit our{" "}
-        <Link to="/facilities/">Facilities</Link> page for more information.
-        <h3>Dining Room</h3>
-        Our charming western-style dining room provides nutritious and delicious
-        meals for guests as they connect around the tables. A range of dietary
-        options are available to book in advance in order to meet the specific
-        needs of the group.
-        <h3>Amenities</h3>
-        With over 150 acres of space, groups can truly connect with the great
-        outdoors. Hiking is available year-round, campfire locations offer great
-        areas to connect, sports fields provide ample opportunity for activity
-        and friendly competition, and our on-site arena is available for
-        energetic groups seeking skating or hockey. WIFI is available
-        throughout. Meeting spaces come equipped with a smart TV, whiteboard,
-        flip chart, and chairs. Tables are available upon request. Groups must
-        supply their own AV equipment.
-        <sm>
-          Please note: No alcohol is permitted on Teen Ranch Property. Smoking
-          is permitted only in a designated location.
-        </sm>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "1rem",
+            margin: "2rem 0",
+          }}
+        >
+          <Img
+            fixed={customization.childImageSharp.fixed}
+            alt={"Customization icon"}
+          />
+          <h2>Customization</h2>
+        </div>
+        <div style={{ paddingLeft: "76px" }}>
+          Each group is unique. Our staff will collaborate with you to customize
+          your visit and create a memorable retreat for your group with the
+          right balance of activity, connection, and the great outdoors.
+        </div>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "1rem",
+            margin: "2rem 0",
+          }}
+        >
+          <Img
+            fixed={accomodations.childImageSharp.fixed}
+            alt={"Accomodations icon"}
+          />
+          <h2>Accommodations</h2>
+        </div>
+        <div style={{ paddingLeft: "76px" }}>
+          Our top-notch accommodations are clean, cozy, and feature over-sized
+          bunk beds, ensuite washrooms, and rooms are climate-controlled for
+          year-round comfort. Our Carriage and Coach House buildings, along with
+          our Plough Inn Hotel, each feature a spacious central lounge and
+          together provide lodging for over 100 guests. Please visit our{" "}
+          <Link to="/facilities/">Facilities</Link> page for more information.
+        </div>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "1rem",
+            margin: "2rem 0",
+          }}
+        >
+          <Img
+            fixed={diningRoom.childImageSharp.fixed}
+            alt={"Dining room icon"}
+          />
+          <h2>Dining Room</h2>
+        </div>
+        <div style={{ paddingLeft: "76px" }}>
+          Our charming western-style dining room provides nutritious and
+          delicious meals for guests as they connect around the tables. A range
+          of dietary options are available to book in advance in order to meet
+          the specific needs of the group.
+        </div>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "1rem",
+            margin: "2rem 0",
+          }}
+        >
+          <Img
+            fixed={activities.childImageSharp.fixed}
+            alt={"Activities icon"}
+          />
+          <h2>Amenities</h2>
+        </div>
+        <div style={{ paddingLeft: "76px", marginBottom: "4rem" }}>
+          With over 150 acres of space, groups can truly connect with the great
+          outdoors. Hiking is available year-round, campfire locations offer
+          great areas to connect, sports fields provide ample opportunity for
+          activity and friendly competition, and our on-site arena is available
+          for energetic groups seeking skating or hockey. WIFI is available
+          throughout. Meeting spaces come equipped with a smart TV, whiteboard,
+          flip chart, and chairs. Tables are available upon request. Groups must
+          supply their own AV equipment.
+        </div>
+        <p>
+          <sm>
+            <i>
+              Please note: No alcohol is permitted on Teen Ranch Property.
+              Smoking is permitted only in a designated location.
+            </i>
+          </sm>
+        </p>
         <p>
           For more information, availability, pricing, and bookings please
           complete the brief form below.
@@ -147,6 +219,34 @@ export const query = graphql`
               ...GatsbyImageSharpFluid
             }
           }
+        }
+      }
+    }
+    customization: file(relativePath: { eq: "icons/customization.png" }) {
+      childImageSharp {
+        fixed(width: 64, height: 64, quality: 100) {
+          ...GatsbyImageSharpFixed_withWebp
+        }
+      }
+    }
+    accomodations: file(relativePath: { eq: "icons/accomodations.png" }) {
+      childImageSharp {
+        fixed(width: 64, height: 64, quality: 100) {
+          ...GatsbyImageSharpFixed_withWebp
+        }
+      }
+    }
+    diningRoom: file(relativePath: { eq: "icons/diningRoom.png" }) {
+      childImageSharp {
+        fixed(width: 64, height: 64, quality: 100) {
+          ...GatsbyImageSharpFixed_withWebp
+        }
+      }
+    }
+    activities: file(relativePath: { eq: "icons/activities.png" }) {
+      childImageSharp {
+        fixed(width: 64, height: 64, quality: 100) {
+          ...GatsbyImageSharpFixed_withWebp
         }
       }
     }
