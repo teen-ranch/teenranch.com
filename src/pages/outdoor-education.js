@@ -3,9 +3,10 @@ import Container from "components/Container"
 import Heading from "components/Heading"
 import Button from "components/Button"
 
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import { PhotoGrid } from "components/PhotoGrid"
 import Quote from "components/Quote"
+import Grid from "components/Grid"
 
 const frontmatter = {
   title: "Outdoor Education",
@@ -63,7 +64,8 @@ export default function Programs({ data }) {
         bunk beds, ensuite washrooms and are climate-controlled for year-round
         comfort. Our Carriage and Coach House buildings each feature a spacious
         central lounge and provide lodging for over 100 students and teachers.
-        Please visit our Facilities (link) page for more information.
+        Please visit our <Link to="/facilities/">Facilities</Link> page for more
+        information.
         <h2>Dining Room</h2>
         Our charming western-style dining room provides nutritious and delicious
         meals as students and teachers connect around the tables. A range of
@@ -76,36 +78,41 @@ export default function Programs({ data }) {
         bonding. Challenging activities, combined with instruction and
         encouragement, offer students the opportunity for personal growth and
         skill acquisition.
-        <h2>Year-Round Activities</h2>
-        <ul>
-          <li>Horseback Trail Riding</li>
-          <li>Horse Grooming & Saddling</li>
-          <li>Skating (Indoor Olympic Sized Rink)</li>
-          <li>Initiative Challenges</li>
-          <li>Archery </li>
-          <li>Woodland Survival Skills</li>
-          <li>Instincts for Survival Game</li>
-          <li>Map Orienteering</li>
-          <li>Souvenir Making Options</li>
-          <li>Scavenger Hunts</li>
-          <li>Hiking</li>
-        </ul>
-        <h2>Spring and Fall Activities</h2>
-        <ul>
-          <li>Climbing & Bouldering Walls</li>
-          <li>Giant 60’ Swing</li>
-          <li>Sports Medley</li>
-          <li>Field Games</li>
-        </ul>
-        <h2>Winter Activities</h2>
-        <ul>
-          <li>Cross-country Skiing</li>
-          <li>Snowshoeing</li>
-          <li>Snow Tubing</li>
-        </ul>
-        Can the activities be in two columns so one side would be year long and
-        the other side, the other seasons? Would help it look better than a long
-        list…
+        <Grid md={3} lg={3} xl={3}>
+          <div>
+            <h2>Year-Round Activities</h2>
+            <ul>
+              <li>Horseback Trail Riding</li>
+              <li>Horse Grooming & Saddling</li>
+              <li>Skating (Indoor Olympic Sized Rink)</li>
+              <li>Initiative Challenges</li>
+              <li>Archery </li>
+              <li>Woodland Survival Skills</li>
+              <li>Instincts for Survival Game</li>
+              <li>Map Orienteering</li>
+              <li>Souvenir Making Options</li>
+              <li>Scavenger Hunts</li>
+              <li>Hiking</li>
+            </ul>
+          </div>
+          <div>
+            <h2>Spring and Fall Activities</h2>
+            <ul>
+              <li>Climbing & Bouldering Walls</li>
+              <li>Giant 60’ Swing</li>
+              <li>Sports Medley</li>
+              <li>Field Games</li>
+            </ul>
+          </div>
+          <div>
+            <h2>Winter Activities</h2>
+            <ul>
+              <li>Cross-country Skiing</li>
+              <li>Snowshoeing</li>
+              <li>Snow Tubing</li>
+            </ul>
+          </div>
+        </Grid>
         <Quote cite="Joe Lionti - St. Jean de Brebeuf, YCDSB">
           “The staff at Teen Ranch truly enhanced the learning of the students
           we brought for the leadership retreat. From the planning phases to the
