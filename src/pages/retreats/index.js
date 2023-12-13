@@ -3,7 +3,7 @@ import Container from "components/Container"
 import Heading from "components/Heading"
 import Button from "components/Button"
 
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import { PhotoGrid } from "components/PhotoGrid"
 
 const frontmatter = {
@@ -93,8 +93,8 @@ export default function Programs({ data }) {
         bunk beds, ensuite washrooms, and rooms are climate-controlled for
         year-round comfort. Our Carriage and Coach House buildings, along with
         our Plough Inn Hotel, each feature a spacious central lounge and
-        together provide lodging for over 100 guests. Please visit our
-        Facilities (link) page for more information.
+        together provide lodging for over 100 guests. Please visit our{" "}
+        <Link to="/facilities/">Facilities</Link> page for more information.
         <h3>Dining Room</h3>
         Our charming western-style dining room provides nutritious and delicious
         meals for guests as they connect around the tables. A range of dietary
