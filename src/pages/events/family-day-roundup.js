@@ -75,11 +75,14 @@ export default function Default({ data }) {
           this Famiy Day!
         </p>
         <h2>When is it?</h2>
-        Monday, February 20, 2023: <Time>1000</Time> - <Time>1200</Time> (doors
+        Monday, February 19, 2024: <Time>1000</Time> - <Time>1200</Time> (doors
         open at <Time>0945</Time>)<h2>Who is it for?</h2>
         Open to all ages
         <h2>Cost</h2>
         <strong>FREE</strong>
+        <p>
+          <strong>Snack Bar will be open for purchases.</strong>
+        </p>
         {/* <div style={{ color: "red", fontSize: "2em" }}>
           Family day is full, we are no longer accepting registrations. Thank
           you!
