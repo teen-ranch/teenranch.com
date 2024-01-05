@@ -4,6 +4,7 @@ import Heading from "components/Heading"
 import Button from "components/Button"
 import Program from "components/Program"
 import { Link } from "gatsby"
+import { RinkClosed } from "components/RinkClosed"
 
 export default function Default() {
   return (
@@ -22,6 +23,7 @@ export default function Default() {
           src="https://teenranch.nyc3.digitaloceanspaces.com/website/assets/DSC_0513.JPG"
           name="Skills & Skating Development"
         >
+          <RinkClosed/>
           <p>
             A six session program focused on the development of forward and
             backward skating, crossovers, tight-turns, individual shooting,
@@ -76,3 +78,5 @@ export default function Default() {
     </>
   )
 }
+
+

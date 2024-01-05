@@ -10,6 +10,7 @@ import Button, { CTAButton } from "components/Button"
 import { CovidContainer } from "components/CovidContainer"
 import { SummerCampRegistrationNotice } from "components/SummerCampRegistrationNotice"
 import Card from "components/Card"
+import { RinkClosed } from "components/RinkClosed"
 
 export default function Index({ data }) {
   return (
@@ -270,6 +271,7 @@ export default function Index({ data }) {
           </Button>
         </div>
 
+          <RinkClosed/>
         {/* <div style={{ maxWidth: "960px", margin: "0 auto" }}>
           <Card>
             <Img src="https://teenranch.nyc3.digitaloceanspaces.com/website/assets/FallHockeyPrograms-1.png" />
