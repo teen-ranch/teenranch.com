@@ -31,7 +31,7 @@ const frontmatter = {
 
 const pageData = {
   subTitle:
-    "Come and enjoy some active time together with your family and friends this Famiy Day!",
+    "Come and enjoy some active time together with your family and friends this Family Day!",
   keywords: "family day event, what to do on family day",
 }
 
@@ -72,7 +72,7 @@ export default function Default({ data }) {
         <p>
           Teen Ranch is happy to offer a <strong>FREE</strong> Family Day Skate!
           Come and enjoy some active time together with your family and friends
-          this Famiy Day!
+          this Family Day!
         </p>
         <h2>When is it?</h2>
         Monday, February 19, 2024: <Time>1000</Time> - <Time>1200</Time> (doors
