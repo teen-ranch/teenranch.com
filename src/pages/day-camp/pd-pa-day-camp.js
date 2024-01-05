@@ -69,8 +69,7 @@ export default function Programs({ data }) {
               outdoors to explore, play group games, and enjoy the season's best
               activities, these days will be sure to get your kids moving and
               having a blast. For the hockey enthusiast, we offer a hockey
-              option as well. Drop off at 9 am and pick up at 4:30 pm. Two
-              snacks.
+              option as well. Drop off at <Time>0900</Time> and pick up at <Time>1630</Time>. Lunch and two snacks.
             </p>
             <h1>Available dates</h1>
 
@@ -93,7 +92,7 @@ export default function Programs({ data }) {
             </ul>
 
             <p>
-              Drop off between <Time>0900</Time> and pick up at{" "}
+              Drop off at <Time>0900</Time> and pick up at{" "}
               <Time>1630</Time>
             </p>
           </div>
