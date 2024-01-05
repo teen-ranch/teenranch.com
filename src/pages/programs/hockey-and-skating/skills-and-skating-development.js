@@ -48,36 +48,27 @@ export default function Default() {
                   <th>Date</th>
                   <th>Age 6-8</th>
                   <th>Age 9-13</th>
+                  <th>Cost</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>(A) Pre-tryout session</td>
-                  <td>Tuesdays: March 14, 2023 - April 18, 2023</td>
+                  <td>Tuesdays: March 5, 2024 - April 9, 2024 (6 sessions)</td>
                   <td>6:00pm - 6:50pm</td>
                   <td>7:00pm - 7:50pm</td>
+                  <td>$240 +HST</td>
                 </tr>
                 <tr>
-                  <td>
-                    <span style={{ color: "red" }}>NEW</span>
-                    <br />
-                    (B) Spring session
-                  </td>
-                  <td>Thursdays: May 11, 2023 - June 15, 2023</td>
+                  <td>(B) Spring session</td>
+                  <td>Thursdays: April 18, 2024 - May 23, 2024 (6 sessions)</td>
                   <td>6:00pm - 6:50pm</td>
                   <td>7:00pm - 7:50pm</td>
-                </tr>
-                <tr>
-                  <td>(C) Pre-season session</td>
-                  <td>Tuesdays: July 25, 2023 - August 29, 2023</td>
-                  <td>6:00pm - 6:50pm</td>
-                  <td>7:00pm - 7:50pm</td>
+                  <td>$260 +HST</td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <h3>Cost</h3>
-          $250 +HST
           <br />
           <Button href="https://register.trmanager.com">Book now</Button>
         </Program>
