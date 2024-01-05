@@ -3,6 +3,7 @@ import Container from "components/Container"
 import Heading from "components/Heading"
 import Button from "components/Button"
 import Program from "components/Program"
+import { RinkClosed } from "components/RinkClosed"
 
 const frontmatter = {
   title: "Hockey & skating",
@@ -25,6 +26,7 @@ export default function Default() {
           src="https://teenranch.nyc3.digitaloceanspaces.com/website/assets/DSC_0513.JPG"
           name="Skills and Skating Development"
         >
+          <RinkClosed/>
           <p>
             A six week program focused on the development of forward and
             backward skating, crossovers, tight-turns, individual shooting,

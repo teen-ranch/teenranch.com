@@ -42,23 +42,23 @@ export default function Default() {
           <ul>
             <li>
               <strong>U-7 (Age 5-6)</strong>: Tuesdays, 6:00pm - 6:50pm, April
-              25 - June 20, 2023
+              16 - May 21, 2024
             </li>
             <li>
               <strong>U-9 (Age 7-8)</strong>: Tuesdays, 7:00pm - 7:50pm, April
-              25 - June 20, 2023
+              16 - May 21, 2024
             </li>
             <li>
               <strong>U-11 (Age 9-10)</strong>: Wednesdays, 6:00pm - 6:50pm,
-              April 26 - June 21, 2023
+              April 17 - May 22, 2024
             </li>
             <li>
               <strong>U-13/U-15 (Age 11-14)</strong>: Wednesdays, 7:00pm -
-              7:50pm, April 26 - June 21, 2023
+              7:50pm, April 17 - May 22, 2024
             </li>
           </ul>
           <h3>Cost</h3>
-          $265 +HST
+          $180 +HST (6 sessions, jersey included)
           <br />
           <Button href="https://register.trmanager.com">Book now</Button>
         </Program>
