@@ -84,7 +84,9 @@ export default function Default({ data }) {
           Christian inspiration for youth of all ages.{" "}
         </p>
 
+        <p><strong>Senior and Junior campers will enjoy separate accommodation and programming during the weekend.</strong></p>
         <p>
+
           This is a great opportunity for new campers to grow comfortable at
           camp.
         </p>
