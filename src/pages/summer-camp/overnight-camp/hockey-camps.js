@@ -534,7 +534,7 @@ export default function Programs({ data }) {
               "Power skating",
               "Game-situation skills",
               "Full-ice scrimmage",
-              "Functional fitness program - run by NHL strength coaches",
+              "Functional fitness program - run by professional strength coaches",
               "Visualization Training ",
               "Hawerchuk Strong/MASH Hockey gift package included",
             ]}
