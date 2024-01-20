@@ -124,6 +124,7 @@ export default function Default({ data }) {
             term="weekend"
             includes={[
               "Horse Grooming  (JR)",
+              "Trail Ride Escapade (SR)",
               "Ice Skating (in our indoor ice arena)",
               "Crafts ",
               "Seasonal Sports ",
