@@ -1,20 +1,20 @@
-import React, { useState, useEffect } from "react"
+import React, { useEffect, useState } from "react";
 
-import "./hamburger.scss"
-import "./header.scss"
-import Container from "components/Container"
-import { Link } from "gatsby"
+import "./hamburger.scss";
+import "./header.scss";
+import Container from "components/Container";
+import { Link } from "gatsby";
 
-import logo from "./teenRanchLogo_lightBGR.svg"
-import { CovidContainer } from "components/CovidContainer"
-import { Banner } from "components/Banner"
+import logo from "./teenRanchLogo_lightBGR.svg";
+import { CovidContainer } from "components/CovidContainer";
+import { Banner } from "components/Banner";
 
 export default function Header({ location }) {
-  const [expanded, setExpanded] = useState()
+  const [expanded, setExpanded] = useState();
 
   useEffect(() => {
-    setExpanded()
-  }, [location])
+    setExpanded();
+  }, [location]);
 
   return (
     <>
@@ -28,7 +28,7 @@ export default function Header({ location }) {
             className={`hamburgerMenu ${
               expanded ? "hamburgerMenu--active" : ""
             }`}
-            onClick={() => setExpanded(expanded => !expanded)}
+            onClick={() => setExpanded((expanded) => !expanded)}
             aria-label="Navigation menu"
           >
             <span className="hamburgerBox">
@@ -64,22 +64,26 @@ export default function Header({ location }) {
                           Horse camps
                         </NavLink>
                       </li>
-                      {/* <li>
+                      {
+                        /* <li>
                         <NavLink to="/summer-camp/ultimate-day-camp/bmx-dirt-camp/">
                           BMX dirt camp
                         </NavLink>
-                      </li> */}
+                      </li> */
+                      }
                       <li>
                         <NavLink to="/summer-camp/overnight-camp/wham-camp/">
                           WHAM camp
                         </NavLink>
                       </li>
 
-                      {/* <li>
+                      {
+                        /* <li>
                         <NavLink to="/summer-camp/overnight-camp/adventure-camp/">
                           Adventure camp
                         </NavLink>
-                      </li> */}
+                      </li> */
+                      }
 
                       <div className="subNavDivider">Ultimate day camp</div>
                       <li>
@@ -97,11 +101,13 @@ export default function Header({ location }) {
                           Horse camps
                         </NavLink>
                       </li>
-                      {/* <li>
+                      {
+                        /* <li>
                         <NavLink to="/summer-camp/ultimate-day-camp/bmx-dirt-camp/">
                           BMX dirt camp
                         </NavLink>
-                      </li> */}
+                      </li> */
+                      }
                       <li>
                         <NavLink to="/summer-camp/ultimate-day-camp/wham-camp/">
                           WHAM camp
@@ -113,11 +119,13 @@ export default function Header({ location }) {
                           Junior day camp
                         </NavLink>
                       </li>
-                      {/* <li><NavLink to='/programs/summer-camp/hockey-camp/'>Figure skating camp</NavLink></li>
+                      {
+                        /* <li><NavLink to='/programs/summer-camp/hockey-camp/'>Figure skating camp</NavLink></li>
                                         <li><NavLink to='/programs/summer-camp/horse-camp/'>Horse camp</NavLink></li>
                                         <li><NavLink to='/programs/summer-camp/horse-camp/'>Adventure camp</NavLink></li>
                                         <li><NavLink to='/programs/summer-camp/hockey-camp/'>BMX dirt camp</NavLink></li>
-                                        <li><NavLink to='/programs/summer-camp/hockey-camp/'>WHAM camp</NavLink></li> */}
+                                        <li><NavLink to='/programs/summer-camp/hockey-camp/'>WHAM camp</NavLink></li> */
+                      }
                     </ul>
                   </li>
                   <li>
@@ -125,9 +133,11 @@ export default function Header({ location }) {
                       Hockey & skating
                     </NavLink>
                     {/* <div className='subNavDivider'>Summer camp</div> */}
-                    {/* <ul className='subSubNav'>
+                    {
+                      /* <ul className='subSubNav'>
                                         <li><NavLink to='/programs/summer-camp/hockey-camp/'>Summer hockey camp</NavLink></li>
-                                    </ul> */}
+                                    </ul> */
+                    }
 
                     <div className="subNavDivider">Skills & Skating</div>
                     <ul className="subSubNav">
@@ -268,9 +278,11 @@ export default function Header({ location }) {
                           <NavLink to="/families/mother-daughter-equine-escape/">
                             Mother daughter equine escape
                           </NavLink>
-                          {/* <NavLink to="/families/family-getaway-weekends/">
+                          {
+                            /* <NavLink to="/families/family-getaway-weekends/">
                             Family getaway weekends
-                          </NavLink> */}
+                          </NavLink> */
+                          }
                         </li>
                         <li>
                           <NavLink to="/families/father-son-hockey-weekend/">
@@ -301,13 +313,20 @@ export default function Header({ location }) {
                             Family day roundup
                           </NavLink>
                         </li>
+                        <li>
+                          <NavLink to="/events/easter-roundup/">
+                            Easter roundup
+                          </NavLink>
+                        </li>
                       </ul>
                     </li>
-                    {/* <li><NavLink to='/programs/leadership/'>Leadership & Development</NavLink>
+                    {
+                      /* <li><NavLink to='/programs/leadership/'>Leadership & Development</NavLink>
                                         <ul className='subSubNav'>
                                             <li><NavLink to='/programs/leadership/adventure-bible-program/'>Adventure Bible Program</NavLink></li>
                                         </ul>
-                                    </li> */}
+                                    </li> */
+                    }
                   </div>
                 </ul>
               </li>
@@ -371,7 +390,7 @@ export default function Header({ location }) {
       </header>
       <CovidContainer />
     </>
-  )
+  );
 }
 
 // export const NavLink = props => (
@@ -391,4 +410,4 @@ const NavLink = ({ children, ...props }) => (
   <Link {...props} activeClassName="active">
     {children}
   </Link>
-)
+);

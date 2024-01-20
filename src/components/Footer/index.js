@@ -1,9 +1,9 @@
-import React from "react"
-import Container from "components/Container"
+import React from "react";
+import Container from "components/Container";
 
-import "./footer.scss"
+import "./footer.scss";
 
-import { Link } from "gatsby"
+import { Link } from "gatsby";
 
 export default function Footer() {
   // const data = useStaticQuery(query)
@@ -38,11 +38,13 @@ export default function Footer() {
                   WHAM camp
                 </Link>
               </li>
-              {/* <li>
+              {
+                /* <li>
                 <Link to="/summer-camp/overnight-camp/adventure-camp/">
                   Adventure camp
                 </Link>
-              </li> */}
+              </li> */
+              }
               <div className="subNavDivider">Ultimate day camp</div>
               <li>
                 <Link to="/summer-camp/ultimate-day-camp/">
@@ -158,11 +160,13 @@ export default function Footer() {
                 </Link>
               </li>
               <div className="subNavDivider">Schooling</div>
-              {/* <li>
+              {
+                /* <li>
                 <Link to="/programs/horses/riding-lessons/">
                   Riding lessons
                 </Link>
-              </li> */}
+              </li> */
+              }
               <li>
                 <Link to="/programs/horses/schooling-ring-rental/">
                   Schooling ring rental
@@ -220,7 +224,12 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/events/family-day-roundup">Family day roundup</Link>
+                <Link to="/events/family-day-roundup/">Family day roundup</Link>
+              </li>
+              <li>
+                <Link to="/events/easter-roundup/">
+                  Easter roundup
+                </Link>
               </li>
               {/* <li><Link to='/events/teen-ranch-fall-gallop-a-cross-country-run/'>Teen Ranch Fall Gallop - A Cross Country Run</Link></li> */}
               {/* <li><Link to='/events/christmas-photo-sessions/'>Christmas Photo Sessions</Link></li> */}
@@ -241,17 +250,21 @@ export default function Footer() {
                   Father-son hockey weekend
                 </Link>
               </li>
-              {/* <li>
+              {
+                /* <li>
                 <Link to="/families/family-getaway-weekends">
                   Family getaway weekends
                 </Link>
-              </li> */}
+              </li> */
+              }
             </ul>
 
-            {/* <div className='footerTitle'>Leadership</div>
+            {
+              /* <div className='footerTitle'>Leadership</div>
                         <ul className='footerNavigation'>
                             <li><Link to='/programs/leadership/adventure-bible-program/'>Adventure Bible Program</Link></li>
-                        </ul> */}
+                        </ul> */
+            }
             <div className="footerTitle">Teen Ranch Canada</div>
             <ul className="footerNavigation">
               {/* <li><Link to='https://shop.teenranch.com'>Shop Teen Ranch Apparel</Link></li> */}
@@ -278,7 +291,7 @@ export default function Footer() {
         </div>
       </Container>
     </footer>
-  )
+  );
 }
 
 // const query = graphql`
