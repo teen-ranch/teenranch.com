@@ -10,11 +10,11 @@ import { CovidContainer } from "components/CovidContainer";
 import { Banner } from "components/Banner";
 
 export default function Header({ location }) {
-  const [expanded, setExpanded] = useState();
+  const [expanded, setExpanded] = useState(false);
 
   useEffect(() => {
-    setExpanded();
-  }, [location]);
+    setExpanded(false);
+  }, [location.pathname]);
 
   return (
     <>
@@ -42,7 +42,7 @@ export default function Header({ location }) {
               </li>
               {/* eslint-disable-next-line */}
               {/* <li><a target="_blank" rel="noopener" href='https://shop.teenranch.com'>Shop</a></li> */}
-              <li>
+              <LI location={location}>
                 <NavLink to="/programs">Programs</NavLink>
                 <ul className="subNav">
                   <li>
@@ -329,8 +329,8 @@ export default function Header({ location }) {
                     }
                   </div>
                 </ul>
-              </li>
-              <li>
+              </LI>
+              <LI>
                 <NavLink to="/retreats/">Retreats</NavLink>
                 <ul className="subNav">
                   <li>
@@ -351,7 +351,7 @@ export default function Header({ location }) {
                     </ul>
                   </li>
                 </ul>
-              </li>
+              </LI>
               <li>
                 <NavLink to="/outdoor-education/">Outdoor Education</NavLink>
               </li>
@@ -411,3 +411,19 @@ const NavLink = ({ children, ...props }) => (
     {children}
   </Link>
 );
+
+function LI({ location, children }) {
+  const [hovered, setHovered] = useState(false);
+  useEffect(() => {
+    setHovered(false);
+  }, [location?.pathname]);
+  return (
+    <li
+      onMouseOver={() => setHovered(true)}
+      onMouseOut={() => setHovered(false)}
+      className={`${hovered ? "hover" : ""}`}
+    >
+      {children}
+    </li>
+  );
+}
