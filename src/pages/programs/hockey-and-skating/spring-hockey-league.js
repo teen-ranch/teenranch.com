@@ -22,7 +22,7 @@ export default function Default() {
           name="Spring hockey league"
         >
           <p>
-            Join us for a fun, 9-week recreational program. Sessions will
+            Join us for a fun, 6-week recreational program. Sessions will
             consist of ten minutes of skill development followed by a 35-minute
             game. (Two teams per age group with limited spots per team.)
           </p>
