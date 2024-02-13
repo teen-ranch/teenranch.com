@@ -330,7 +330,7 @@ export default function Header({ location }) {
                   </div>
                 </ul>
               </LI>
-              <LI>
+              <LI location={location}>
                 <NavLink to="/retreats/">Retreats</NavLink>
                 <ul className="subNav">
                   <li>
