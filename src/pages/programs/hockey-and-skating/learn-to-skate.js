@@ -91,9 +91,10 @@ export default function Default() {
             <thead>
               <tr>
                 <th aria-label="Empty cell"></th>
-                <th>Fall: Sep. 11, 2023 - Nov. 17, 2023</th>
-                <th>Holiday: Nov. 20, 2023 - Feb. 2, 2024</th>
+                {/*<th>Fall: Sep. 11, 2023 - Nov. 17, 2023</th>*/}
+                {/*<th>Holiday: Nov. 20, 2023 - Feb. 2, 2024</th>*/}
                 <th>Winter: Feb. 5, 2024 - Apr. 12, 2024</th>
+                <th>Spring: Apr. 19, 2024 - May. 10, 2024</th>
                 {/* <th>Spring: May 1, 2023 - June 19, 2023</th> */}
               </tr>
             </thead>
@@ -109,20 +110,22 @@ export default function Default() {
                   <br />
                   No session Oct. 10 or Oct. 31
                 </td> */}
-                <td>
+                {/*<td>
                   <strong>$280 +HST</strong> (9 sessions)
                   <br />
                   No session Oct. 9
-                </td>
-                <td>
+                </td>*/}
+                {/*<td>
                   <strong>$280 +HST</strong> (9 sessions)
                   <br />
                   No session Dec. 25, Jan. 1
-                </td>
+                </td>*/}
                 <td>
                   <strong>$250 +HST</strong> (8 sessions)
                   <br />
                   No session Feb. 19, Apr. 1
+                </td>
+                <td>
                 </td>
               </tr>
               <tr>
@@ -141,22 +144,22 @@ export default function Default() {
                   <br />
                   No session Dec. 23, Dec. 30 or Jan. 6
                 </td> */}
-                <td>
+                {/*<td>
                   <strong>$310 +HST</strong> (10 sessions)
-                </td>
-                <td>
+                </td>*/}
+                {/*<td>
                   <strong>$280 +HST</strong> (9 sessions)
                   <br />
                   No session Dec. 29, Jan. 5
-                </td>
+                </td>*/}
                 <td>
                   <strong>$280 +HST</strong> (9 sessions)
                   <br />
                   No session Mar. 29
                 </td>
-                {/* <td>
-                  <strong>$186 +HST</strong> (6 sessions)
-                </td> */}
+                <td>
+                  <strong>$125 +HST</strong> (4 sessions)
+                </td>
               </tr>
             </tbody>
           </table>
