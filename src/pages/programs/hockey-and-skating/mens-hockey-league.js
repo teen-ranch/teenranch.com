@@ -4,6 +4,7 @@ import Heading from "components/Heading"
 import Button from "components/Button"
 import Program from "components/Program"
 import Card from "components/Card"
+import { Time } from "components/Time"
 
 export default function Default() {
   return (
@@ -32,7 +33,6 @@ export default function Default() {
           name="Men's hockey league"
         >
           {/* <p>Spring and Fall hockey leagues for men age 30+</p> */}
-
           <h3>Fall hockey league (35+)</h3>
           <p>(12 teams)</p>
           <ul>
@@ -52,15 +52,16 @@ export default function Default() {
           </ul>
 
           <Button href="https://register.trmanager.com">Book now</Button>
+          
 
           <h3>Summer hockey league (30+)</h3>
-          <p>Thursday nights. 8:00pm, 9:00pm, and 10:00 (6 teams)</p>
+          <p>Thursday nights. <Time>2000</Time> - <Time>2300</Time> (6 teams)</p>
           <ul>
             <li>
-              <strong>When:</strong> Thursday May 25 - August 31, 2023.
+              <strong>When:</strong> May 9, May 16, May 23, July 11 - September 5, 2024 (shut down for 6 weeks) 
             </li>
             <li>
-              <strong>Cost:</strong> $260 +HST (12 games + playoffs)
+              <strong>Cost:</strong> $210 +HST (9 games + playoffs)
             </li>
           </ul>
 
