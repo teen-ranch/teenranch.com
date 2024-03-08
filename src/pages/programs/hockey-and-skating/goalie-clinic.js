@@ -61,23 +61,22 @@ export default function Default({ data }) {
               </thead>
               <tbody>
                 <tr>
-                  <td>(A) Fall session</td>
+                  <td>(A) Summer session</td>
                   <td>
-                    <strong>Wednesdays:</strong> September 13, 2023 - October
-                    18, 2023 (6 sessions)
+                    <strong>Thursdays:</strong> July 11, 2024 - August 29, 2024 (8 sessions)
                   </td>
                   <td>
-                    <Time>1700</Time> - <Time>1800</Time>
+                    <Time>1230</Time> - <Time>1400</Time>
                   </td>
                 </tr>
                 <tr>
-                  <td>(B) Winter session</td>
+                  <td>(B) Summer session</td>
                   <td>
-                    <strong>Wednesdays:</strong> January 17, 2024 - March 6,
-                    2024 (8 sessions)
+                    <strong>Tuesdays:</strong> July 23, 2024 - August 27,
+                    2024 (6 sessions)
                   </td>
                   <td>
-                    <Time>1700</Time> - <Time>1800</Time>
+                    <Time>1700</Time> - <Time>1800</Time><br/>(<strong>Aug. 20, 27:</strong> <Time>2000</Time> - <Time>2100</Time>)
                   </td>
                 </tr>
               </tbody>
@@ -85,10 +84,9 @@ export default function Default({ data }) {
           </div>
           <h3>Cost</h3>
           <p>
-            <strong>Fall session:</strong> $300 +HST/player (6 sessions)
+            <strong>(A) Summer session:</strong> $410 +HST/goalie (8 sessions)
           </p>
           <p>
-            <strong>Winter session:</strong> $425 +HST/player (8 sessions)
           </p>
           <p>
             <em>Partnering with MAD Athletic Development</em>
