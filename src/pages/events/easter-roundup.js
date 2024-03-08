@@ -97,7 +97,7 @@ export default function Default({ data }) {
         The whole family is invited! Activities for all ages.
 
         <h2>Cost</h2>
-        <strong>$50 per vehicle</strong>
+        <strong>$50 (cash) per vehicle</strong>
         <p>
           <strong>Entry includes:</strong>{" "}
           Egg Hunts, Petting Farm, Climbing Wall, Hay Rides, Face Painting,
@@ -105,11 +105,12 @@ export default function Default({ data }) {
         </p>
         <p>
           <strong>Add-ons include:</strong>
+          (cash or card)
         </p>
         <ul>
-          <li>Giant Swing $20</li>
+          <li>Giant Swing $20 </li>
           <li>Trail Rides $20 (ten years and older)</li>
-          <li>Pony Rides $10 (9 years and younger)</li>
+          <li>Pony Rides $5 (9 years and younger)</li>
           <li>Concessions</li>
         </ul>
         <p>

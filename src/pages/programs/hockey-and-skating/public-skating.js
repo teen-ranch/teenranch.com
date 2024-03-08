@@ -52,6 +52,7 @@ export default function Default() {
                 <li>Saturday, December 23</li>
                 {/* <li>December 30, 2023</li> */}
                 <li>January 27, 2024</li>
+                <li>March 30, 2024</li>
               </ul>
             </strong>
           </p>

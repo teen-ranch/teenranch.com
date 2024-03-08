@@ -4,6 +4,7 @@ import Container from "components/Container";
 import "./footer.scss";
 
 import { Link } from "gatsby";
+import cciLogo from '../../images/cci-canada-horiz-white.webp'
 
 export default function Footer() {
   // const data = useStaticQuery(query)
@@ -289,6 +290,10 @@ export default function Footer() {
           <br />
           All rights reserved.
         </div>
+        <div style={{ textAlign:'center', marginTop: '4rem' }}>
+          <a target="_blank" href="https://www.cci-canada.ca/about/" className="cciLogo"><img src={cciLogo} alt='CCI Canada Logo' /></a>
+        </div>
+
       </Container>
     </footer>
   );
