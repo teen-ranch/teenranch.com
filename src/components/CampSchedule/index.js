@@ -292,15 +292,18 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
         </>
       )}
       <div style={{ padding: "1rem 0", color: "red", fontSize: "1.4rem" }}>
-        <strong>Discounted week:</strong> (August 5 - 9) Due to the Civic
+        <strong>Discounted weeks:</strong> 
+        <ul><li>(July 2-5) Due to Canada Day (July 1), camp will start on Tuesday.</li>
+        <li>(August 5 - 9) Due to the Civic
         Holiday on August 5th, overnight camp will start on Monday, junior day
-        camp will start on Tuesday.
+        camp will start on Tuesday.</li>
+        </ul>
       </div>
       <CampSchedule
         type={type}
         weeks={["UDC", "ONC", "ONC", "ONC", "ONC", "ONC", "ONC", "UDC", "UDC"]}
         discountedWeeks={[
-          false,
+          true,
           false,
           false,
           false,
@@ -311,7 +314,7 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
           false,
         ]}
         dates={[
-          <>July 1-5</>,
+          <>July 2-5</>,
           <>July 7-12</>,
           <>July 14-19</>,
           <>July 21-26</>,
