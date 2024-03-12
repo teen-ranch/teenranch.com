@@ -158,8 +158,6 @@ export default function Default() {
                 </td>*/}
                 <td>
                   <strong>$280 +HST</strong> (9 sessions)
-                  <br />
-                  No session Mar. 29
                 </td>
                 <td>
                   <strong>$186 +HST</strong> (6 sessions)
