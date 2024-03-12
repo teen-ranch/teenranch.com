@@ -212,7 +212,7 @@ export default function Programs({ data }) {
           </Program>
           <Program
             small
-            name="Hawerchuck Strong Hockey Camp"
+            name="Hawerchuk Strong Hockey Camp"
             who="AA/AAA Players & goalies (Male)"
             src={hawerchuckStrongHockey.childImageSharp.fluid}
           >
@@ -517,7 +517,7 @@ export default function Programs({ data }) {
             </CTAButton>
           </Price>
           <Price
-            title={<>Hawerchuck Strong Hockey Camp</>}
+            title={<>Hawerchuk Strong Hockey Camp</>}
             subTitle="An elite specialty camp run in partnership with MASH Hockey featuring current and ex NHL coaches as well as other current professionals, in support of the Hawerchuk Strong foundation.  "
             who="AA/AAA Players & goalies (Male)"
             price={1775}
