@@ -285,13 +285,13 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="copyright">
-          Copyright &copy; {new Date().getFullYear()} Teen Ranch.
-          <br />
-          All rights reserved.
-        </div>
         <div style={{ textAlign:'center', marginTop: '4rem' }}>
           <a target="_blank" href="https://www.cci-canada.ca/about/" className="cciLogo"><img src={cciLogo} alt='CCI Canada Logo' /><div>Christian Camping International</div></a>
+        </div>
+        <div className="copyright">
+          Copyright &copy; {new Date().getFullYear()} Caledon Teen Ranch.
+          <br />
+          All rights reserved.
         </div>
 
       </Container>
