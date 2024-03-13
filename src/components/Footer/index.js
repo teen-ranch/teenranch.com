@@ -291,7 +291,7 @@ export default function Footer() {
           All rights reserved.
         </div>
         <div style={{ textAlign:'center', marginTop: '4rem' }}>
-          <a target="_blank" href="https://www.cci-canada.ca/about/" className="cciLogo"><img src={cciLogo} alt='CCI Canada Logo' /></a>
+          <a target="_blank" href="https://www.cci-canada.ca/about/" className="cciLogo"><img src={cciLogo} alt='CCI Canada Logo' /><div>Christian Camping International</div></a>
         </div>
 
       </Container>
