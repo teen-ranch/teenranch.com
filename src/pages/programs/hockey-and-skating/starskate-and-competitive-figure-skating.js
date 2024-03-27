@@ -139,7 +139,7 @@ export default function Default() {
                   <strong>$310 +HST</strong> (10 sessions)
                 </td>
                 <td>
-                  <strong>$186 +HST</strong> (6 sessions)
+                  <strong>$246 +HST</strong> (6 sessions)
                 </td>
               </tr>
               <tr>
