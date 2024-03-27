@@ -44,7 +44,7 @@ export default function Default() {
           <h3>When</h3>
 
           <p>
-            Saturdays: October 14, 2023 - April 6, 2024 (6:30pm - 7:50pm)
+            Saturdays: October 14, 2023 - May 4, 2024 (6:30pm - 7:50pm)
             <br />
             <strong>
               Public skating is NOT available on:
