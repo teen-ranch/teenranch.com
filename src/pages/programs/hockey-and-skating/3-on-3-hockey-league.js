@@ -39,10 +39,10 @@ export default function Default() {
           </div> */}
           <ul>
             <li>
-              <strong>U-7 (Age 5-6)</strong>: 5:30pm - 6:30pm (2 teams)
+              <strong>U-7 (Age 5-6)</strong>: 4:30pm - 5:30pm (4 teams)
             </li>
             <li>
-              <strong>U-9 (Age 7-8)</strong>: 5:30pm - 6:30pm (2 teams)
+              <strong>U-9 (Age 7-8)</strong>: 5:30pm - 6:30pm (4 teams)
             </li>
             <li>
               <strong>U-11 (Age 9-10)</strong>: 6:30pm - 7:30pm (4 teams)
