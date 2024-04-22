@@ -84,16 +84,15 @@ export default function Default({ data }) {
                 <tr>
                   <td>May 26, 2024</td>
                   <td>May 20, 2024</td>
-                  {
-                    /* <td>
+                  <td>
                     <Button
                       target="_blank"
-                      href="https://forms.zohopublic.com/teenranch1/form/HorseShowJune112023/formperma/nzlRfaucFBZY1-sZ1XyVT6v4h2zWyVCe67-A4y5A77A?referrername=teenranch.com"
+                      href="https://forms.zohopublic.com/teenranch1/form/HorseShowMay262024/formperma/85JpZZzwMt21pTohnANjt30AtPDyy7dQGvyq44-LpiQ?referrername=teenranch.com"
                     >
                       June 11th entry form
                     </Button>
-                  </td> */
-                  }
+                  </td>
+                  
                 </tr>
                 <tr>
                   <td>June 23, 2024</td>
