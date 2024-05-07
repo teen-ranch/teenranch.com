@@ -168,9 +168,9 @@ export default function Programs({ data }) {
         </ProgramContainer>
       </Container>
 
-      <Container>
+      {/*<Container>
         <Video src="https://www.youtube-nocookie.com/embed/hjLhkn7TcXo?si=4MitxKMv_F_H5dTY" />
-      </Container>
+      </Container>*/}
 
       <Container type="body">
         <Quote cite="Shocked Parent">
