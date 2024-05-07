@@ -379,7 +379,7 @@ export default function Programs({ data }) {
               "Full-ice scrimmages",
               "Fun-based off-ice program",
               "Jersey included",
-              "Breakfast, lunch & dinner",
+              "Lunch & morning snack",
               "Snackbar",
               "All camp activities",
             ]}
