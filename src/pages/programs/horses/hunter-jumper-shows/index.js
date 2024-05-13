@@ -622,19 +622,19 @@ export default function Default({ data }) {
           })}
         </Grid>
 
-        <h3>Ring sponsors</h3>
-        <Grid lg={2} xl={4} gap={false}>
-          {ringSponsors?.edges?.map((edge, i) => {
-            return (
-              <Sponsor key={i}>
-                <Img
-                  fluid={edge.node.childImageSharp.fluid}
-                  alt={edge.node.name}
-                />
-              </Sponsor>
-            )
-          })}
-        </Grid>
+        {/* <h3>Ring sponsors</h3> */}
+        {/* <Grid lg={2} xl={4} gap={false}> */}
+        {/*   {ringSponsors?.edges?.map((edge, i) => { */}
+        {/*     return ( */}
+        {/*       <Sponsor key={i}> */}
+        {/*         <Img */}
+        {/*           fluid={edge.node.childImageSharp.fluid} */}
+        {/*           alt={edge.node.name} */}
+        {/*         /> */}
+        {/*       </Sponsor> */}
+        {/*     ) */}
+        {/*   })} */}
+        {/* </Grid> */}
 
         {/* <h3>Banquet sponsors</h3>
         <Grid lg={4} xl={6} gap={false}>
