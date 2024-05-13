@@ -1,19 +1,19 @@
-import React from "react";
-import Container from "components/Container";
-import Heading from "components/Heading";
-import Button from "components/Button";
-import Program from "components/Program";
-import { graphql } from "gatsby";
-import Img from "gatsby-image";
+import React from "react"
+import Container from "components/Container"
+import Heading from "components/Heading"
+import Button from "components/Button"
+import Program from "components/Program"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 
-import Grid from "components/Grid";
-import Sponsor from "components/Sponsor";
+import Grid from "components/Grid"
+import Sponsor from "components/Sponsor"
 
-import "../horses.scss";
-import SubNav from "components/SubNav";
-import { Link } from "react-scroll";
-import Card from "components/Card";
-import { Time } from "components/Time";
+import "../horses.scss"
+import SubNav from "components/SubNav"
+import { Link } from "react-scroll"
+import Card from "components/Card"
+import { Time } from "components/Time"
 
 export default function Default({ data }) {
   const {
@@ -24,11 +24,13 @@ export default function Default({ data }) {
     eliteSponsors,
     ringSponsors,
     goldSponsors,
+    silverSponsors,
+    bronzeSponsors,
     banquetSponsors,
     inkindSponsors,
     prizeSponsors,
     photographers,
-  } = data;
+  } = data
 
   return (
     <>
@@ -92,69 +94,59 @@ export default function Default({ data }) {
                       May 26th entry form
                     </Button>
                   </td>
-                  
                 </tr>
                 <tr>
                   <td>June 23, 2024</td>
                   <td>June 17, 2024</td>
-                  {
-                    /* <td>
+                  {/* <td>
                     <Button
                       target="_blank"
                       href="https://forms.zohopublic.com/teenranch1/form/HorseShowJune1120231/formperma/7eqJQuGREMRk2hksfWr1hxkyTGBx8q_PZIcvYI3HjUI?referrername=teenranch.com"
                     >
                       June 25th entry form
                     </Button>
-                  </td> */
-                  }
+                  </td> */}
                 </tr>
                 <tr>
                   <td>July 28, 2024</td>
                   <td>July 22, 2024</td>
-                  {
-                    /* <td>
+                  {/* <td>
                     <Button
                       target="_blank"
                       href="https://forms.zohopublic.com/teenranch1/form/HorseShowJuly92023/formperma/gTnIUXmLM1BE0N1apJXXCYJq7aHxYdIwvbOTY4ILeWc?referrername=teenranch.com"
                     >
                       July 9th entry form
                     </Button>
-                  </td> */
-                  }
+                  </td> */}
                 </tr>
                 <tr>
                   <td>August 25, 2024</td>
                   <td>August 19, 2024</td>
-                  {
-                    /* <td>
+                  {/* <td>
                     <Button
                       target="_blank"
                       href="https://forms.zohopublic.com/teenranch1/form/HorseShowJuly232023/formperma/ILbthXTQWIQnb08iBm_L24bPvZp2C3m96RbiMH3aEjk?referrername=teenranch.com"
                     >
                       July 23rd entry form
                     </Button>
-                  </td> */
-                  }
+                  </td> */}
                 </tr>
                 <tr>
                   <td>September 22, 2024</td>
                   <td>September 16, 2024</td>
-                  {
-                    /* <td>
+                  {/* <td>
                     <Button
                       target="_blank"
                       href="https://forms.zohopublic.com/teenranch1/form/HorseShowAugust202023/formperma/tNGE0I4xTrDGPUxkp_e8O4w7WrgssCgedEt7sDClCtI?referrername=teenranch.com"
                     >
                       August 20th entry form
                     </Button>
-                  </td> */
-                  }
+                  </td> */}
                 </tr>
               </tbody>
             </table>
           </div>
-          {
-            /* <h3>Stalls</h3>
+          {/* <h3>Stalls</h3>
           <p>
             Stalls will be available at each show for the 2022 season. Priority
             goes to those showing all 6 shows.
@@ -168,29 +160,24 @@ export default function Default({ data }) {
           <p>
             Email <a href="mailto:events@teenranch.com">events@teenranch.com</a>{" "}
             if you are interested.
-          </p> */
-          }
+          </p> */}
         </Program>
-        {/* <h2>Links</h2> */}
-        {
-          /* <Card style={{ padding: "2rem" }}>
+        <h2>Links</h2>
+        {/* <Card style={{ padding: "2rem" }}>
           <div className="showButtons">
             <Button target="_blank" href="https://show.teenranch.com">
               View 2023 season standings
-            </Button> */
-        }
-        {
-          /* <Button to="/programs/horses/hunter-jumper-shows/show-photos/">
-              View 2021 show photos
-            </Button> */
-        }
-        {
-          /* </div>
-        </Card> */
-        }
+            </Button> */}
+        <Button
+          target="_blank"
+          href="https://assets.teenranch.com/hunterJumperShowProgram_2024.pdf"
+        >
+          View 2024 show program
+        </Button>
+        {/* </div>
+        </Card> */}
       </Container>
-      {
-        /* <Program src={image2.childImageSharp.fluid} name="Hunter/Jumper shows">
+      {/* <Program src={image2.childImageSharp.fluid} name="Hunter/Jumper shows">
           <h2>Forms required for entry:</h2>
           <ol>
             <li>Entry form (see below)</li>
@@ -225,8 +212,7 @@ export default function Default({ data }) {
           >
             2021 Show Program
           </Button>
-        </Program> */
-      }
+        </Program> */}
       {/* https://teenranch.nyc3.cdn.digitaloceanspaces.com/website/pdf/hjClassDescriptions_2020.pdf */}
       <Container type="body">
         <div
@@ -452,52 +438,48 @@ export default function Default({ data }) {
                 Back number must be worn and visible at all times while on
                 horseback.
               </li>
-              {
-                /* <li>
+              {/* <li>
                 Covid Protocols in place. See Covid Policy on website for
                 details.
-              </li> */
-              }
+              </li> */}
               <li>
                 Please read class descriptions to see rules on cross-entering.
               </li>
               <li>
-                <strong>Entries</strong>{" "}
-                MUST be submitted on the Monday before each show.
+                <strong>Entries</strong> MUST be submitted on the Monday before
+                each show.
               </li>
               <li>
-                <strong>Hunter Classes</strong>{" "}
-                - Flash nose bands and running or german martingales are not
-                permitted. Leg protection may be worn on horse in warm-up and
-                inclement weather only when approved by judge.
+                <strong>Hunter Classes</strong> - Flash nose bands and running
+                or german martingales are not permitted. Leg protection may be
+                worn on horse in warm-up and inclement weather only when
+                approved by judge.
               </li>
               <li>
-                <strong>Champion/Reserve Champions</strong>{" "}
-                at each show are calculated as follows: 7,5,4,3,2,1. Champion
-                Tie-Breakers – In the Leadline, Short Stirrup, Starter, Beginner
-                & Rookie Division, most points in Equitation wins. In other
-                divisions, most points over fences wins. After that or in hack
-                divisions, judge may flip a coin or do conformation line up for
-                the winner.
+                <strong>Champion/Reserve Champions</strong> at each show are
+                calculated as follows: 7,5,4,3,2,1. Champion Tie-Breakers – In
+                the Leadline, Short Stirrup, Starter, Beginner & Rookie
+                Division, most points in Equitation wins. In other divisions,
+                most points over fences wins. After that or in hack divisions,
+                judge may flip a coin or do conformation line up for the winner.
               </li>
               <li>
-                <strong>Year-End Awards</strong>{" "}
-                – Must show in at least 3 shows in the division to qualify.
-                Points are awarded to horses in hunter/jumper divisions, the
-                rider in equitation/lead line divisions and horse/rider
-                combinations for the beginner, rookie, and short stirrup
-                divisions. Points are calculated as follows: 7xentries,
-                5xentries, 4xentries, 3xentries, 2xentries, 1xentries.
+                <strong>Year-End Awards</strong> – Must show in at least 3 shows
+                in the division to qualify. Points are awarded to horses in
+                hunter/jumper divisions, the rider in equitation/lead line
+                divisions and horse/rider combinations for the beginner, rookie,
+                and short stirrup divisions. Points are calculated as follows:
+                7xentries, 5xentries, 4xentries, 3xentries, 2xentries,
+                1xentries.
               </li>
               <li>
-                <strong>Fall of horse or rider</strong>{" "}
-                = elimination. Rider must exit ring before re-mounting.
+                <strong>Fall of horse or rider</strong> = elimination. Rider
+                must exit ring before re-mounting.
               </li>
               <li>
-                <strong>Pony Riders</strong>{" "}
-                – we don’t set age limits to show ponies, as we believe it’s
-                better for ponies to get this time in training so they are safe
-                for younger riders later. <br />
+                <strong>Pony Riders</strong> – we don’t set age limits to show
+                ponies, as we believe it’s better for ponies to get this time in
+                training so they are safe for younger riders later. <br />
                 Please be sure the rider is of suitable size for the pony's
                 comfort.
               </li>
@@ -511,13 +493,11 @@ export default function Default({ data }) {
               </li>
             </ol>
           </Card>
-          {
-            /* <Card style={{ padding: "2rem" }}>
+          {/* <Card style={{ padding: "2rem" }}>
             <h4>COVID-19 policy</h4>
             Please self screen. If you have any symptoms, please stay home.
             <p>We are looking forward to a safe and fun competition!</p>
-          </Card> */
-          }
+          </Card> */}
         </Grid>
       </Container>
 
@@ -568,7 +548,7 @@ export default function Default({ data }) {
           </p>
         </Card>
 
-       {/* 
+        {/* 
         <h3>Many thanks to our sponsors from last season:</h3>
 
         <Grid lg={2} xl={4} gap={true}>
@@ -638,7 +618,7 @@ export default function Default({ data }) {
                   alt={edge.node.name}
                 />
               </Sponsor>
-            );
+            )
           })}
         </Grid>
 
@@ -652,12 +632,11 @@ export default function Default({ data }) {
                   alt={edge.node.name}
                 />
               </Sponsor>
-            );
+            )
           })}
         </Grid>
 
-        {
-          /* <h3>Banquet sponsors</h3>
+        {/* <h3>Banquet sponsors</h3>
         <Grid lg={4} xl={6} gap={false}>
           {banquetSponsors?.edges?.map((edge, i) => {
             return (
@@ -669,24 +648,7 @@ export default function Default({ data }) {
               </Sponsor>
             )
           })}
-        </Grid> */
-        }
-
-        {
-          /* <h3>In-kind sponsors</h3>
-        <Grid lg={5} xl={7} gap={false}>
-          {inkindSponsors?.edges?.map((edge, i) => {
-            return (
-              <Sponsor key={i}>
-                <Img
-                  fluid={edge.node.childImageSharp.fluid}
-                  alt={edge.node.name}
-                />
-              </Sponsor>
-            )
-          })}
-        </Grid> */
-        }
+        </Grid> */}
 
         <h3>Gold sponsors</h3>
         <Grid lg={3} xl={5} gap={false}>
@@ -698,10 +660,49 @@ export default function Default({ data }) {
                   alt={edge.node.name}
                 />
               </Sponsor>
-            );
+            )
+          })}
+        </Grid>
+        <h3>Silver sponsors</h3>
+        <Grid lg={3} xl={5} gap={false}>
+          {silverSponsors?.edges?.map((edge, i) => {
+            return (
+              <Sponsor key={i}>
+                <Img
+                  fluid={edge.node.childImageSharp.fluid}
+                  alt={edge.node.name}
+                />
+              </Sponsor>
+            )
+          })}
+        </Grid>
+        <h3>Bronze sponsors</h3>
+        <Grid lg={3} xl={5} gap={false}>
+          {bronzeSponsors?.edges?.map((edge, i) => {
+            return (
+              <Sponsor key={i}>
+                <Img
+                  fluid={edge.node.childImageSharp.fluid}
+                  alt={edge.node.name}
+                />
+              </Sponsor>
+            )
           })}
         </Grid>
 
+        <h3>In-kind sponsors</h3>
+        <Grid lg={5} xl={7} gap={false}>
+          {inkindSponsors?.edges?.map((edge, i) => {
+            return (
+              <Sponsor key={i}>
+                <Img
+                  fluid={edge.node.childImageSharp.fluid}
+                  alt={edge.node.name}
+                />
+              </Sponsor>
+            )
+          })}
+        </Grid>
         <h3>Prize sponsors</h3>
         <Grid lg={5} xl={7} gap={false}>
           {prizeSponsors?.edges?.map((edge, i) => {
@@ -712,12 +713,11 @@ export default function Default({ data }) {
                   alt={edge.node.name}
                 />
               </Sponsor>
-            );
+            )
           })}
         </Grid>
 
-        {
-          /* <h3>Division sponsors</h3>
+        {/* <h3>Division sponsors</h3>
         <Grid lg={2} xl={4} gap={false}>
           {divisionSponsors &&
             divisionSponsors.edges &&
@@ -747,8 +747,7 @@ export default function Default({ data }) {
                 </Sponsor>
               )
             })}
-        </Grid> */
-        }
+        </Grid> */}
       </Container>
       <Container type="body">
         <div
@@ -757,7 +756,7 @@ export default function Default({ data }) {
         />
         <h2>Photographers</h2>
 
-        <Grid lg={2} xl={4} gap={false}>
+        <Grid lg={2} xl={3} gap={false}>
           {photographers?.edges
             ?.sort((a, b) => a.node.name - b.node.name)
             .map((edge, i) => {
@@ -768,12 +767,12 @@ export default function Default({ data }) {
                     alt={edge.node.name}
                   />
                 </Sponsor>
-              );
+              )
             })}
         </Grid>
       </Container>
     </>
-  );
+  )
 }
 
 export const query = graphql`
@@ -813,7 +812,7 @@ export const query = graphql`
     }
 
     eliteSponsors: allFile(
-      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2023/elite" } }
+      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2024/elite" } }
     ) {
       edges {
         node {
@@ -829,7 +828,7 @@ export const query = graphql`
 
     banquetSponsors: allFile(
       filter: {
-        relativeDirectory: { eq: "hunter-jumper/sponsors2023/banquet" }
+        relativeDirectory: { eq: "hunter-jumper/sponsors2024/banquet" }
       }
     ) {
       edges {
@@ -845,7 +844,7 @@ export const query = graphql`
     }
 
     ringSponsors: allFile(
-      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2023/ring" } }
+      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2024/ring" } }
     ) {
       edges {
         node {
@@ -860,7 +859,49 @@ export const query = graphql`
     }
 
     goldSponsors: allFile(
-      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2023/gold" } }
+      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2024/gold" } }
+    ) {
+      edges {
+        node {
+          name
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+    silverSponsors: allFile(
+      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2024/silver" } }
+    ) {
+      edges {
+        node {
+          name
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+    bronzeSponsors: allFile(
+      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2024/bronze" } }
+    ) {
+      edges {
+        node {
+          name
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+    inkindSponsors: allFile(
+      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2024/inkind" } }
     ) {
       edges {
         node {
@@ -874,23 +915,8 @@ export const query = graphql`
       }
     }
 
-    # inkindSponsors: allFile(
-    #   filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2023/inkind" } }
-    # ) {
-    #   edges {
-    #     node {
-    #       name
-    #       childImageSharp {
-    #         fluid {
-    #           ...GatsbyImageSharpFluid
-    #         }
-    #       }
-    #     }
-    #   }
-    # }
-
     photographers: allFile(
-      filter: { relativeDirectory: { eq: "hunter-jumper/photographers2023" } }
+      filter: { relativeDirectory: { eq: "hunter-jumper/photographers2024" } }
     ) {
       edges {
         node {
@@ -905,7 +931,7 @@ export const query = graphql`
     }
 
     prizeSponsors: allFile(
-      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2023/prize" } }
+      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2024/prize" } }
     ) {
       edges {
         node {
@@ -919,4 +945,4 @@ export const query = graphql`
       }
     }
   }
-`;
+`
