@@ -160,15 +160,15 @@ export default function Programs({ data }) {
 
       <Container type="body">
         <h2>Info pack</h2>
-        {/* <div>
+        <div>
           <PdfButton
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.canva.com/design/DAFUvmaHLP8/FV-_FiDK8D1ICxRnW64zcQ/view"
+            href="https://www.canva.com/design/DAGDKdD0AZM/B5d22jRawTZsCCB0GSNRBw/view?utm_content=DAGDKdD0AZM&utm_campaign=summer-camp&utm_medium=link&utm_source=teenranch.com"
           >
             Overnight camp info pack
           </PdfButton>
-        </div> */}
+        </div>
         <p>
           Families will be notified by email six weeks before the camp start
           date for payment reminders and camp information.
