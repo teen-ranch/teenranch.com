@@ -142,20 +142,24 @@ export default function Programs({ data }) {
 
       <Container type="body">
         <h2>Info pack(s)</h2>
-        {/* <div>
+        <div>
           <PdfButton
             target="_blank"
             rel="noopener noreferrer"
-            href="https://teenranch.nyc3.cdn.digitaloceanspaces.com/website/pdf/overnightCampInformation_2022.pdf"
+            href="https://www.canva.com/design/DAGDKdD0AZM/B5d22jRawTZsCCB0GSNRBw/view?utm_content=DAGDKdD0AZM&utm_campaign=summer-camp&utm_medium=link&utm_source=teenranch.com"
           >
             Overnight camp info pack
           </PdfButton>
         </div>
         <div>
-          <PdfButton href="https://teenranch.nyc3.cdn.digitaloceanspaces.com/website/pdf/udcJdcCampInformation_2022.pdf">
+          <PdfButton
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.canva.com/design/DAGFJIcYvyU/1HdTdbLNfDu487m1nvWzEg/view?utm_content=DAGFJIcYvyU&utm_campaign=summer-camp&utm_medium=link&utm_source=teenranch.com"
+          >
             Ultimate day camp / junior day camp info pack
           </PdfButton>
-        </div> */}
+        </div>
         <p>
           Families will be notified by email six weeks before the camp start
           date for payment reminders and camp information.

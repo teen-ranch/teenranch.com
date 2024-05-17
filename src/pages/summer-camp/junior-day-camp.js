@@ -1,27 +1,16 @@
 import React from "react"
 import Container from "components/Container"
 import Heading from "components/Heading"
-// import Button from 'components/Button'
 import { graphql } from "gatsby"
 
 import SubNav from "components/SubNav"
-import {
-  PrimaryButton,
-  SecondaryButton,
-  CTAButton,
-  PdfButton,
-} from "components/Button"
+import { CTAButton, PdfButton } from "components/Button"
 import Program, { ProgramContainer } from "components/Program"
 
-// import Grid from 'components/Grid'
-// import Coach from 'components/Coach'
 import { Link } from "react-scroll"
-import { PriceContainer, Price, PriceAddon } from "components/Price"
+import { PriceContainer, Price } from "components/Price"
 import Quote from "components/Quote"
-import CampSchedule, { PreBuiltCampSchedule } from "components/CampSchedule"
-import Grid from "components/Grid"
-// import Sponsor from 'components/Sponsor'
-import Img from "gatsby-image"
+import { PreBuiltCampSchedule } from "components/CampSchedule"
 import { DayCampTerms } from "components/Terms"
 import JumpStart from "components/JumpStart"
 import { Time } from "components/Time"
@@ -34,7 +23,7 @@ const frontmatter = {
 }
 
 const pageData = {
-  subTitle: `Outdoor fun, swimming, pony rides, climbing wall, ice skating, and more!`,
+  subTitle: `Outdoor fun, swimming, pony rides, climbing wall, and more!`,
   keywords: "day camp, junior day camp, summer day camp",
 }
 
@@ -78,10 +67,10 @@ export default function Programs({ data }) {
           unique activities that Teen Ranch has to offer. Throughout the week
           they make new friends and grow while engaging in outdoor games and
           skill-building activities, swimming, pony rides, rock climbing,
-          archery, ice skating, and more! Junior day campers are engaged in Teen
-          Ranch’s campfire story time including music and fun with an emphasis
-          on God's beautiful creation and love for all people. Join us this
-          summer for a week full of friendship and fun for your little camper!
+          archery, and more! Junior day campers are engaged in Teen Ranch’s
+          campfire story time including music and fun with an emphasis on God's
+          beautiful creation and love for all people. Join us this summer for a
+          week full of friendship and fun for your little camper!
         </p>
 
         <h3>Weekly overview</h3>
@@ -102,15 +91,15 @@ export default function Programs({ data }) {
 
       <Container type="body">
         <h2>Info pack</h2>
-        {/* <div>
+        <div>
           <PdfButton
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.canva.com/design/DAFVN48gWC8/8q-Pi1qC3cjkfSIFkOsUPg/view"
+            href="https://www.canva.com/design/DAGFJIcYvyU/1HdTdbLNfDu487m1nvWzEg/view?utm_content=DAGFJIcYvyU&utm_campaign=summer-camp&utm_medium=link&utm_source=teenranch.com"
           >
             Ultimate day camp / junior day camp info pack
           </PdfButton>
-        </div> */}
+        </div>
         <p>
           Families will be notified by email six weeks before the camp start
           date for payment reminders and camp information.
@@ -127,8 +116,8 @@ export default function Programs({ data }) {
             who="Kids age 5-7"
             src={daycamp.childImageSharp.fluid}
           >
-            Outdoor fun, swimming, pony rides, climbing wall, ice skating, and
-            more!
+            Outdoor fun, swimming, pony rides, climbing wall, junior wrangler
+            club, and more!
           </Program>
         </ProgramContainer>
       </Container>
@@ -197,14 +186,15 @@ export default function Programs({ data }) {
               "Dynamic outdoor group activities",
               "Forest time & nature hike",
               "Creative crafts",
-              "Swimming, boating & waterslide",
+              "Swimming, boating, waterslide & Power Paddler Boats (NEW)",
               "Pony rides",
+              "Junior Wrangler Club (NEW)",
               "Bouldering & climbing wall (NEW)",
               "Archery (NEW)",
               "Campfire story time",
-              "Optional Ice Skate (helmet, warm clothes, mitts, & skates required) (NEW)",
               "Lunch & morning snack",
               "Afternoon snackbar",
+              "New themes each week!",
             ]}
           >
             <CTAButton href="https://register.trmanager.com">

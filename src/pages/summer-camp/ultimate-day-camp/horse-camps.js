@@ -96,15 +96,15 @@ export default function Programs({ data }) {
 
       <Container type="body">
         <h2>Info pack</h2>
-        {/* <div>
+        <div>
           <PdfButton
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.canva.com/design/DAFVN48gWC8/8q-Pi1qC3cjkfSIFkOsUPg/view"
+            href="https://www.canva.com/design/DAGFJIcYvyU/1HdTdbLNfDu487m1nvWzEg/view?utm_content=DAGFJIcYvyU&utm_campaign=summer-camp&utm_medium=link&utm_source=teenranch.com"
           >
             Ultimate day camp / junior day camp info pack
           </PdfButton>
-        </div> */}
+        </div>
         <p>
           Families will be notified by email six weeks before the camp start
           date for payment reminders and camp information.
