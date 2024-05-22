@@ -25,13 +25,13 @@ export default function Default() {
           <div className="donationOption">
             <h3>Option 1</h3>
             <h2>Give to Teen Ranch Canada</h2>
-            <h4>(Not tax deductable)</h4>
+            <h4>(Not tax deductible)</h4>
 
             <p>
               Teen Ranch Canada is a registered non-profit organization
               responsible for day-to-day operations of sports, outdoor education
               and retreat programs. Money given to Teen Ranch will be used for
-              ongoing operating expenses and is not tax deductable.
+              ongoing operating expenses and is not tax deductible.
             </p>
 
             <h5>How to give to Teen Ranch Canada:</h5>
@@ -52,7 +52,7 @@ export default function Default() {
           <div className="donationOption">
             <h3>Option 2</h3>
             <h2>Donate to Teen Ranch Ministries</h2>
-            <h4>(Tax deductable)</h4>
+            <h4>(Tax deductible)</h4>
 
             <p>
               Teen Ranch Ministries is a registered charitable organization
