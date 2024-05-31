@@ -25,7 +25,7 @@ export default function Default() {
         >
           <RinkClosed/>
           <p>
-            A six session program focused on the development of forward and
+            A six (five sessions for (B-REP)) session program focused on the development of forward and
             backward skating, crossovers, tight-turns, individual shooting,
             stick handling, creativity, passing, as well as game situation type
             skills. For boys and girls ages 6-13.
@@ -55,18 +55,31 @@ export default function Default() {
               </thead>
               <tbody>
                 <tr>
-                  <td>(A) Pre-tryout session</td>
-                  <td>Tuesdays: March 5, 2024 - April 9, 2024 (6 sessions)</td>
-                  <td>6:00pm - 6:50pm</td>
-                  <td>7:00pm - 7:50pm</td>
-                  <td>$240 +HST</td>
-                </tr>
-                <tr>
-                  <td>(B) Spring session</td>
-                  <td>Thursdays: April 18, 2024 - May 23, 2024 (6 sessions)</td>
+                  <td>(A) Pre-season session</td>
+                  <td>Tuesdays: July 23, 2024 - August 27, 2024 (6 sessions)</td>
                   <td>6:00pm - 6:50pm</td>
                   <td>7:00pm - 7:50pm</td>
                   <td>$260 +HST</td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <thead>
+                <tr>
+                  <th>Session</th>
+                  <th>Date</th>
+                  <th>2014, 2015, 2016</th>
+                  <th>2011, 2012, 2013</th>
+                  <th>Cost</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>(B-REP) Pre-season session</td>
+                  <td>Wednesdays: July 24, 2024 - August 28, 2024 (5 sessions)<br/><span style={{color:'red'}}>No session August 14</span></td>
+                  <td>6:00pm - 6:50pm</td>
+                  <td>7:00pm - 7:50pm</td>
+                  <td>$220 +HST</td>
                 </tr>
               </tbody>
             </table>
