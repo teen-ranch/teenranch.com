@@ -156,6 +156,21 @@ export default function Programs({ data }) {
             </strong>
           </li>
         </ul>
+        <p>
+         Hockey (Day Camp) is two weeks only. 
+        </p>
+        <ul>
+          <li>
+            <strong>
+              Drop-off: <Time>0830</Time> - <Time>0850</Time>
+            </strong>
+          </li>
+          <li>
+            <strong>
+              Pick-up: <Time>1645</Time> - <Time>1700</Time>
+            </strong>
+          </li>
+        </ul>
       </Container>
 
       <Container type="body">
@@ -213,7 +228,7 @@ export default function Programs({ data }) {
           <Program
             small
             name="Hawerchuk Strong Hockey Camp"
-            who="AA/AAA Players & goalies (Male)"
+            who="A/AA/AAA Players & goalies (Male)"
             src={hawerchuckStrongHockey.childImageSharp.fluid}
           >
             An elite specialty camp run in partnership with MASH Hockey
@@ -422,6 +437,30 @@ export default function Programs({ data }) {
         <JumpStart />
         <PriceContainer xl={3}>
           <Price
+            title="Hockey (Day Camp)"
+            subTitle="Skills & skating development for players and goalies of all ability levels, with a focus on enjoying the game."
+            who="Players and goalies (co-ed)"
+            price={1230}
+            term="week"
+            includes={[
+              "On-site, olympic-size ice rink",
+              "Minimum 7.5 hours on-ice per week",
+              "Skills development",
+              "Skating development",
+              "Full-ice scrimmages",
+              "Fun-based off-ice program",
+              "Jersey included",
+              // "Breakfast, lunch & dinner",
+              "Lunch",
+              "Snackbar",
+              "All camp activities",
+            ]}
+          >
+            <CTAButton href="https://register.trmanager.com">
+              Register now
+            </CTAButton>
+          </Price>
+          <Price
             title="Hockey camp"
             subTitle="Skills & skating development for players and goalies of all ability levels, with a focus on enjoying the game."
             who="Players and goalies (co-ed)"
@@ -519,7 +558,7 @@ export default function Programs({ data }) {
           <Price
             title={<>Hawerchuk Strong Hockey Camp</>}
             subTitle="An elite specialty camp run in partnership with MASH Hockey featuring current and ex NHL coaches as well as other current professionals, in support of the Hawerchuk Strong foundation.  "
-            who="AA/AAA Players & goalies (Male)"
+            who="A/AA/AAA Players & goalies (Male)"
             price={1775}
             term="week"
             // primary
