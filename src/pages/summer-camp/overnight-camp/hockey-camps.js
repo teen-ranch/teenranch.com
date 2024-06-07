@@ -157,7 +157,7 @@ export default function Programs({ data }) {
           </li>
         </ul>
         <p>
-         Hockey (Day Camp) is two weeks only. 
+         Hawerchuk Strong Hockey Camp (Day Option). 
         </p>
         <ul>
           <li>
@@ -436,30 +436,7 @@ export default function Programs({ data }) {
         <OvernightCampTerms />
         <JumpStart />
         <PriceContainer xl={3}>
-          <Price
-            title="Hockey (Day Camp)"
-            subTitle="Skills & skating development for players and goalies of all ability levels, with a focus on enjoying the game."
-            who="Players and goalies (co-ed)"
-            price={1230}
-            term="week"
-            includes={[
-              "On-site, olympic-size ice rink",
-              "Minimum 7.5 hours on-ice per week",
-              "Skills development",
-              "Skating development",
-              "Full-ice scrimmages",
-              "Fun-based off-ice program",
-              "Jersey included",
-              // "Breakfast, lunch & dinner",
-              "Lunch",
-              "Snackbar",
-              "All camp activities",
-            ]}
-          >
-            <CTAButton href="https://register.trmanager.com">
-              Register now
-            </CTAButton>
-          </Price>
+          
           <Price
             title="Hockey camp"
             subTitle="Skills & skating development for players and goalies of all ability levels, with a focus on enjoying the game."
@@ -576,6 +553,34 @@ export default function Programs({ data }) {
               "Functional fitness program - run by professional strength coaches",
               "Visualization Training ",
               "Hawerchuk Strong/MASH Hockey gift package included",
+            ]}
+          >
+            <CTAButton href="https://register.trmanager.com">
+              Register now
+            </CTAButton>
+          </Price><Price
+            title="Hawerchuk Strong Hockey Camp (Day Option)"
+            subTitle="An elite specialty camp run in partnership with MASH Hockey featuring current and ex NHL coaches as well as other current professionals, in support of the Hawerchuk Strong foundation.  "
+            who="A/AA/AAA Players & goalies (Male)"
+            price={1230}
+            term="week"
+            includes={[
+              <>
+                Everything in <strong>hockey camp</strong>, plus:
+              </>,
+              "Minimum 12.5 hours ice time",
+              "Run by MASH Hockey",
+              "Guest coaches include current NHLers, ex-NHLers, current Pros",
+              "High-intensity skills development",
+              "Power skating",
+              "Game-situation skills",
+              "Full-ice scrimmage",
+              "Functional fitness program - run by professional strength coaches",
+              "Visualization Training ",
+              "Hawerchuk Strong/MASH Hockey gift package included",
+              "Lunch",
+              "Snackbar",
+              "All camp activities",
             ]}
           >
             <CTAButton href="https://register.trmanager.com">
