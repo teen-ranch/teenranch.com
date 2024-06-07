@@ -83,6 +83,7 @@ export default function Default() {
                 </tr>
               </tbody>
             </table>
+            <div style={{fontSize: '11pt', marginTop: '10px'}}>Note: (B-REP) Skills & Skating participants receive one free ticket to <a href="https://www.hockeynightdc.ca/" target="_blank" rel="noopener noreferrer">Hockey Night in Dufferin-Caledon</a>.</div>
           </div>
           <br />
           <Button href="https://register.trmanager.com">Book now</Button>
