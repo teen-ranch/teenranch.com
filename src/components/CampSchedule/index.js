@@ -328,21 +328,6 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
           ...(!sections || sections.includes("hockey")
             ? [
                 {
-                  name: "Hockey (Day Camp)",
-                  dates: [
-                    null,
-                    null,
-                    null,
-                    "10-14",
-                    "9-12",
-                    null,
-                    null,
-                    null,
-                    null,
-                  ],
-                  ids: [1000003],
-                },
-                {
                   name: "Hockey Camp",
                   dates: [
                     null,
@@ -398,6 +383,21 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
                     "",
                   ],
                   ids: [1000002],
+                },
+                {
+                  name: "Hawerchuck Strong Hockey (Day Option)",
+                  dates: [
+                    null,
+                    null,
+                    null,
+                    "13-16",
+                    "9-12",
+                    null,
+                    null,
+                    null,
+                    null,
+                  ],
+                  ids: [1000003],
                 },
                 {
                   ids: [3],
