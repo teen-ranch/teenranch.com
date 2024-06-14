@@ -142,6 +142,7 @@ export default function Programs({ data }) {
 
       <Container type="body">
         <h2>Info pack(s)</h2>
+        <div style={{color:'red'}}>Check out our weekly camp themes and details in our overnight camp info pack below:</div>
         <div>
           <PdfButton
             target="_blank"
