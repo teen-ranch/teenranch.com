@@ -55,7 +55,7 @@ export default function Default() {
               </thead>
               <tbody>
                 <tr>
-                  <td>(A) Pre-season session</td>
+                  <td>(Session 1) Pre-season</td>
                   <td>Tuesdays: July 23, 2024 - August 27, 2024 (6 sessions)</td>
                   <td>6:00pm - 6:50pm</td>
                   <td>7:00pm - 7:50pm</td>
@@ -75,7 +75,7 @@ export default function Default() {
               </thead>
               <tbody>
                 <tr>
-                  <td>(B-REP) Pre-season session</td>
+                  <td>(Session 2) Pre-season (REP)</td>
                   <td>Wednesdays: July 24, 2024 - August 28, 2024 (5 sessions)<br/><span style={{color:'red'}}>No session August 14</span></td>
                   <td>6:00pm - 6:50pm</td>
                   <td>7:00pm - 7:50pm</td>

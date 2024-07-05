@@ -45,14 +45,12 @@ export default function Default() {
 
           <h3>When</h3>
           <p>
-            Saturdays: October 14, 2023 - March 2, 2024 (18 sessions)
+            Saturdays: October 19, 2024 - March 1, 2025 (19 sessions)
             <br />
             <br />
-            <strong>No sessions on:</strong>
+            <strong>No session on:</strong>
             <ul>
-              <li>December 23, 2023</li>
-              <li>December 30, 2023</li>
-              <li>February 17, 2024</li>
+              <li>December 28, 2024</li>
             </ul>
           </p>
 
@@ -66,16 +64,18 @@ export default function Default() {
                 </tr>
               </thead>
               <tbody>
-                {/* <tr>
+                <tr>
                   <td>Learn to play</td>
                   <td>5-8</td>
-                  <td>10:00am - 11:00am</td>
-                </tr> */}
-                <tr>
-                  <td>Junior & Senior</td>
-                  <td>8-14</td>
                   <td>
                     <Time>1000</Time> - <Time>1050</Time>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Junior & Senior</td>
+                  <td>8-16</td>
+                  <td>
+                    <Time>1100</Time> - <Time>1150</Time>
                   </td>
                 </tr>
                 {/* <tr>
@@ -175,9 +175,9 @@ export default function Default() {
           <Price
             title={<>Wranglers Hockey</>}
             subTitle={`A year-long development program for boys and girls
-            ages 8-16+ years old.`}
-            who="Junior & Senior (ages 8-16)"
-            price={415}
+            ages 5-16 years old.`}
+            who={<>Learn to Play (ages 5-8)<br/>Junior & Senior (ages 8-16)</>}
+            price={450}
             term="season"
             includes={["1 hour scrimmage every Saturday"]}
           >
