@@ -99,12 +99,12 @@ export default function Default({ data }) {
                   <td>July 7, 2024</td>
                   <td>July 1, 2024</td>
                   <td>
-                    <Button
+                    {/* <Button
                       target="_blank"
                       href="https://forms.zohopublic.com/teenranch1/form/HorseShowJune232024/formperma/b922CUkLENoXBBXvWVcjpe-GbH2ERg_BUNJ4aL40DiQ?referrername=teenranch.com"
                     >
                       July 7th entry form
-                    </Button>
+                    </Button> */}
                   </td>
                   {/* <td>
                     <Button
@@ -138,26 +138,27 @@ export default function Default({ data }) {
                 <tr>
                   <td>August 25, 2024</td>
                   <td>August 19, 2024</td>
-                  {/* <td>
+                  <td>
+
                     <Button
                       target="_blank"
-                      href="https://forms.zohopublic.com/teenranch1/form/HorseShowJuly232023/formperma/ILbthXTQWIQnb08iBm_L24bPvZp2C3m96RbiMH3aEjk?referrername=teenranch.com"
+                      href="https://forms.zohopublic.com/teenranch1/form/HorseShowAugust252024/formperma/8wIUhM-UetMO2wXs_2xikZWso3WOAbusBItiYBGw9ww?referrername=teenranch.com"
                     >
-                      July 23rd entry form
+                      August 25th entry form
                     </Button>
-                  </td> */}
+                  </td>
                 </tr>
                 <tr>
                   <td>September 22, 2024</td>
                   <td>September 16, 2024</td>
-                  {/* <td>
+                  <td>
                     <Button
                       target="_blank"
-                      href="https://forms.zohopublic.com/teenranch1/form/HorseShowAugust202023/formperma/tNGE0I4xTrDGPUxkp_e8O4w7WrgssCgedEt7sDClCtI?referrername=teenranch.com"
+                      href="https://forms.zohopublic.com/teenranch1/form/HorseShowSeptember222024/formperma/ezVt-lR23gZKAbhKiwCYSEt78Mi6CH27RJYFkAYAQWw?referrername=teenranch.com"
                     >
-                      August 20th entry form
+                      August 25th entry form
                     </Button>
-                  </td> */}
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -249,8 +250,8 @@ export default function Default({ data }) {
             </small>
             <ul>
               <li>Novice Hack Division</li>
-              <li>2'/2'3" Green Hunters</li>
-              <li>1'6"/1'9" Novice Equitation Development</li>
+              <li>2' / 2'3" Green Hunters</li>
+              <li>1'9" / 2' Novice Equitation Development</li>
               <li>1'9" Novice Hunters</li>
               <li>1'6" Short Stirrup Division</li>
             </ul>
@@ -271,7 +272,20 @@ export default function Default({ data }) {
               <li>2' Hunters</li>
               <li>Amateur Equitation Division</li>
               <li>2'3" Hunters</li>
-              <li>2'6"/2'9" Hi/Low Hunters</li>
+              <li>2'6" / 2'9" Hi/Low Hunters</li>
+            </ul>
+            <small>
+              <i>
+                Jumper division will begin at the completion of the Hi/Low Division. (Start time not before 1:00pm)              </i>
+            </small>
+            <ul>
+              <li>
+                Jumper Division -{" "}
+                <em style={{ fontSize: "13px" }}>
+                  Open to all. Choose .6m, .75m OR .9m. All heights are judged
+                  together.
+                </em>
+              </li>
             </ul>
           </Card>
 
@@ -294,26 +308,7 @@ export default function Default({ data }) {
             </ul>
           </Card>
 
-          <Card style={{ padding: "2rem 2rem" }}>
-            <h3>
-              Ring #2 - Grass Ring (Start time not before <Time>1200</Time>)
-            </h3>
-            <small>
-              <i>
-                Will begin at the completion of the Hi/Low Division. (if shod,
-                it’s advised to use corks)
-              </i>
-            </small>
-            <ul>
-              <li>
-                Jumper Division -{" "}
-                <em style={{ fontSize: "13px" }}>
-                  Open to all. Choose .6m, .75m OR .9m. All heights are judged
-                  together.
-                </em>
-              </li>
-            </ul>
-          </Card>
+          
         </div>
         <Button
           target="_blank"
