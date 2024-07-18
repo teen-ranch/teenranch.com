@@ -312,7 +312,7 @@ export default function Default({ data }) {
         </div>
         <Button
           target="_blank"
-          href="https://assets.teenranch.com/hjClassDescriptions_2024_v2.pdf"
+          href="https://assets.teenranch.com/hjClassDescriptions_2024_v3.pdf"
         >
           View class descriptions
         </Button>
