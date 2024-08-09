@@ -26,7 +26,7 @@ export default function Default() {
           src="https://teenranch.nyc3.digitaloceanspaces.com/website/assets/DSC_0513.JPG"
           name="Skills and Skating Development"
         >
-          <RinkClosed/>
+          {/* <RinkClosed/> */}
           <p>
             A six week program focused on the development of forward and
             backward skating, crossovers, tight-turns, individual shooting,

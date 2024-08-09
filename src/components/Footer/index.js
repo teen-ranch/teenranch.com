@@ -89,11 +89,11 @@ export default function Footer() {
                   Learn to skate
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/programs/hockey-and-skating/skating-development/">
                   Skating development
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link to="/programs/hockey-and-skating/starskate-and-competitive-figure-skating/">
                   STARSkate & Competitive Figure Skating
@@ -106,11 +106,11 @@ export default function Footer() {
                   Goalie clinic
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/programs/hockey-and-skating/skills-development/">
                   Skills development
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link to="/programs/hockey-and-skating/adult-hockey-skills/">
                   Adult hockey skills

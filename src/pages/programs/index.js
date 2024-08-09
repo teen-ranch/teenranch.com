@@ -41,8 +41,7 @@ export default function Programs() {
           name="Hockey & skating programs"
         >
           <ul>
-            <li>Skating development</li>
-            <li>Skills development</li>
+            <li>Skills & Skating development</li>
             <li>Hockey leagues</li>
             <li>Public skating</li>
             <li>Ice rentals</li>

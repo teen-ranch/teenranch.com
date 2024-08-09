@@ -60,7 +60,7 @@ export default function Default({ data }) {
                 </tr>
               </thead>
               <tbody>
-                <tr>
+                <tr style={{ color: `rgba(0,0,0,0.5)` }}>
                   <td>(A) Summer session</td>
                   <td>
                     <strong>Thursdays:</strong> July 11, 2024 - August 29, 2024 (8 sessions)
@@ -69,7 +69,7 @@ export default function Default({ data }) {
                     <Time>1230</Time> - <Time>1400</Time>
                   </td>
                 </tr>
-                <tr>
+                <tr style={{ color: `rgba(0,0,0,0.5)` }}>
                   <td>(B) Summer session</td>
                   <td>
                     <strong>Tuesdays:</strong> July 23, 2024 - August 27,
@@ -79,12 +79,34 @@ export default function Default({ data }) {
                     <Time>1700</Time> - <Time>1800</Time><br/>(<strong>Aug. 20, 27:</strong> <Time>2000</Time> - <Time>2100</Time>)
                   </td>
                 </tr>
+                <tr>
+                  <td>(C) Fall session</td>
+                  <td>
+                    <strong>Wednesdays:</strong> September 11, 2024 - October 16,
+                    2024 (6 sessions)
+                  </td>
+                  <td>
+                    <Time>1700</Time> - <Time>1800</Time>
+                  </td>
+                </tr>
+                <tr>
+                  <td>(D) Winter session</td>
+                  <td>
+                    <strong>Wednesdays:</strong> February 12, 2025 - March 26,
+                    2025 (7 sessions)
+                  </td>
+                  <td>
+                    <Time>1700</Time> - <Time>1800</Time>
+                  </td>
+                </tr>
               </tbody>
             </table>
           </div>
           <h3>Cost</h3>
           <p>
-            <strong>(A) Summer session:</strong> $410 +HST/goalie (8 sessions)
+            <strong>(C) Fall session:</strong> $300 +HST/goalie (6 sessions)
+            <br/>
+            <strong>(D) Winter session:</strong> $350 +HST/goalie (6 sessions)
           </p>
           <p>
           </p>

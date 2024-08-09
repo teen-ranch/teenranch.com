@@ -271,7 +271,7 @@ export default function Index({ data }) {
           </Button>
         </div>
 
-          <RinkClosed/>
+          {/* <RinkClosed/> */}
         {/* <div style={{ maxWidth: "960px", margin: "0 auto" }}>
           <Card>
             <Img src="https://teenranch.nyc3.digitaloceanspaces.com/website/assets/FallHockeyPrograms-1.png" />
