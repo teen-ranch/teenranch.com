@@ -68,6 +68,7 @@ export default function Default() {
 <ul>
   <li>Wednesdays: <Time>2000</Time> - <Time>2300</Time> game times</li>
   <li>Thursdays: <Time>1900</Time> - <Time>2300</Time> game times</li>
+  <li><strong>Cost:</strong> $495 +HST</li>
   <li>Full-team entry</li>
 </ul>
 <strong>Contact <a href="mailto:brent.boschman@teenranch.com">brent.boschman@teenranch.com</a> for team bookings.</strong>
