@@ -146,6 +146,10 @@ export default function Header({ location }) {
                           Skills & skating development
                         </NavLink>
                       </li>
+                      <li>
+                        <NavLink to="/programs/hockey-and-skating/private-lessons/">
+                          Private lessons                        </NavLink>
+                      </li>
                     </ul>
 
                     <div className="subNavDivider">Skating</div>

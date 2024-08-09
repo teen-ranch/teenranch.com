@@ -83,6 +83,9 @@ export default function Footer() {
                   Skills & skating development
                 </Link>
               </li>
+              <li>
+                <Link to="/programs/hockey-and-skating/private-lessons/">Private lessons</Link>
+              </li>
               <div className="subNavDivider">Skating</div>
               <li>
                 <Link to="/programs/hockey-and-skating/learn-to-skate/">
