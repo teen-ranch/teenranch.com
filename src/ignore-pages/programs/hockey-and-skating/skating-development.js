@@ -43,39 +43,25 @@ export default function Default() {
                 <tr>
                   <th>Session</th>
                   <th>Tuesday evenings</th>
-                  <th>Ages 6-8</th>
-                  <th>Ages 9-13</th>
+                  <th>2017, 2018, 2019</th>
+                  <th>2014, 2015, 2016</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>#1</td>
-                  <td>September 12, 2023 - October 17, 2023</td>
+                  <td>November 12, 2024 - December 17, 2024</td>
                   <td>6:00pm - 6:50pm</td>
                   <td>7:00pm - 7:50pm</td>
                 </tr>
                 <tr>
                   <td>#2</td>
-                  <td>November 7, 2023 - December 12, 2023</td>
+                  <td>January 14, 2025 - February 18, 2024</td>
                   <td>6:00pm - 6:50pm</td>
                   <td>7:00pm - 7:50pm</td>
                 </tr>
-                <tr>
-                  <td>#3</td>
-                  <td>January 16, 2024 - February 20, 2024</td>
-                  <td>6:00pm - 6:50pm</td>
-                  <td>7:00pm - 7:50pm</td>
-                </tr>
-                {/* <tr>
-                  <td>November 9, 2021 - December 14, 2021</td>
-                  <td>6:00pm - 6:50pm</td>
-                  <td>7:00pm - 7:50pm</td>
-                </tr>
-                <tr>
-                  <td>February 1, 2022 - March 8, 2022</td>
-                  <td>6:00pm - 6:50pm</td>
-                  <td>7:00pm - 7:50pm</td>
-                </tr> */}
+
+              
               </tbody>
             </table>
           </div>

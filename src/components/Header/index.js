@@ -155,11 +155,11 @@ export default function Header({ location }) {
                           Learn to skate
                         </NavLink>
                       </li>
-                      <li>
+                      {/* <li>
                         <NavLink to="/programs/hockey-and-skating/skating-development/">
                           Skating development
                         </NavLink>
-                      </li>
+                      </li> */}
                       <li>
                         <NavLink to="/programs/hockey-and-skating/starskate-and-competitive-figure-skating/">
                           STARSkate & Competitive Figure Skating
@@ -173,11 +173,11 @@ export default function Header({ location }) {
                           Goalie clinic
                         </NavLink>
                       </li>
-                      <li>
+                      {/* <li>
                         <NavLink to="/programs/hockey-and-skating/skills-development/">
                           Skills development
                         </NavLink>
-                      </li>
+                      </li> */}
                       <li>
                         <NavLink to="/programs/hockey-and-skating/adult-hockey-skills/">
                           Adult hockey skills

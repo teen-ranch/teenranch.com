@@ -3,7 +3,7 @@ import Container from "components/Container"
 import Heading from "components/Heading"
 import Button from "components/Button"
 import Program from "components/Program"
-import Card from "components/Card"
+import Card, { CardPadding } from "components/Card"
 import { Time } from "components/Time"
 
 export default function Default() {
@@ -30,42 +30,51 @@ export default function Default() {
 
         <Program
           src="https://teenranch.nyc3.digitaloceanspaces.com/website/assets/hockey15.jpg"
-          name="Men's hockey league"
+          // name="Men's hockey league"
         >
           {/* <p>Spring and Fall hockey leagues for men age 30+</p> */}
-          <h3>Fall hockey league (35+)</h3>
-          <p>(12 teams)</p>
-          <ul>
-            <li>Wednesday nights: 8:00pm and 9:00pm game times</li>
-            <li>
-              Thursday nights: 7:00pm, 8:00pm, 9:00pm and 10:00pm game times
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <strong>When:</strong> Starts Wednesday September 20, 2023 &
-              Thursday September 21, 2023.
-            </li>
-            <li>
-              <strong>Cost:</strong> $495 +HST
-            </li>
-          </ul>
 
+<Card>
+  <CardPadding>
+  
+<h3>Men's Recreational League (35+) <sm style={{fontSize: '11pt'}}>(4-6 teams)</sm></h3>
+<p><strong>When:</strong> September 24, 2024 - April 8, 2025</p>
+<ul>
+  <li>Tuesday nights: <Time>2000</Time>, <Time>2100</Time>, and <Time>2200</Time> game times</li>
+  <li><strong>Cost:</strong> $450 +HST</li>
+</ul>
           <Button href="https://register.trmanager.com">Book now</Button>
-          
+          </CardPadding>
+</Card>
 
-          <h3>Summer hockey league (30+)</h3>
-          <p>Thursday nights. <Time>2000</Time> - <Time>2300</Time> (6 teams)</p>
-          <ul>
-            <li>
-              <strong>When:</strong> May 9, May 16, May 23, July 11 - September 5, 2024 (shut down for 6 weeks) 
-            </li>
-            <li>
-              <strong>Cost:</strong> $210 +HST (9 games + playoffs)
-            </li>
-          </ul>
+<Card>
+  <CardPadding>
+<h3>Sunday League (18+) <sm style={{fontSize: '11pt'}}>(18 teams)</sm></h3>
+<p><strong>When:</strong></p>
+<ul>
+  <li>Sundays: <Time>1330</Time> - <Time>2300</Time> game times</li>
+  <li>Full-team entry</li>
+</ul>
+<strong>Contact <a href="mailto:brent.boschman@teenranch.com">brent.boschman@teenranch.com</a> for team bookings.</strong>
+  </CardPadding>
+</Card>
 
-          <Button href="https://register.trmanager.com">Book now</Button>
+
+<Card>
+  <CardPadding>
+
+<h3>Men's League (35+) <sm style={{fontSize: '11pt'}}>(14 teams)</sm></h3>
+<p><strong>When:</strong></p>
+<ul>
+  <li>Wednesdays: <Time>2000</Time> - <Time>2300</Time> game times</li>
+  <li>Thursdays: <Time>1900</Time> - <Time>2300</Time> game times</li>
+  <li>Full-team entry</li>
+</ul>
+<strong>Contact <a href="mailto:brent.boschman@teenranch.com">brent.boschman@teenranch.com</a> for team bookings.</strong>
+  </CardPadding>
+</Card>
+
+
         </Program>
       </Container>
     </>

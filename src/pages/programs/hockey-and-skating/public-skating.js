@@ -44,17 +44,16 @@ export default function Default() {
           <h3>When</h3>
 
           <p>
-            Saturdays: October 14, 2023 - May 4, 2024 (6:30pm - 7:50pm)
-            <br />
-            <strong>
+            Saturdays: October 19, 2024 - April 12, 2025 (6:30pm - 7:50pm)
+            {/* <br /> */}
+            {/* <strong>
               Public skating is NOT available on:
               <ul>
                 <li>Saturday, December 23</li>
-                {/* <li>December 30, 2023</li> */}
                 <li>January 27, 2024</li>
                 <li>March 30, 2024</li>
               </ul>
-            </strong>
+            </strong> */}
           </p>
 
           <h3>Cost</h3>
