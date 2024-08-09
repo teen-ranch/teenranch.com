@@ -109,7 +109,7 @@ export default function Default() {
                   <td>$250 +HST</td>
                 </tr>
                 <tr>
-                  <td><strong>Wednesdays:</strong><br/>January 13, 2025 - February 19, 2025</td>
+                  <td><strong>Wednesdays:</strong><br/>January 15, 2025 - February 19, 2025</td>
                   <td>2011, 2012, 2013, 2014</td>
                   <td></td>
                   <td>$250 +HST</td>
@@ -126,7 +126,7 @@ export default function Default() {
             <table>
               <thead>
                 <tr>
-                  <th>Pre-Tryout Session</th>
+                  <th>Session #4 (Pre-tryout)</th>
                   <th>6:00pm - 6:50pm</th>
                   <th>7:00pm - 7:50pm</th>
                   <th>Cost</th>
@@ -150,7 +150,7 @@ export default function Default() {
            <table>
               <thead>
                 <tr>
-                  <th>Pre-Tryout Session (REP)</th>
+                  <th>Session #4 (Pre-tryout: REP)</th>
                   <th>6:00pm - 6:50pm</th>
                   <th>7:00pm - 7:50pm</th>
                   <th>Cost</th>
