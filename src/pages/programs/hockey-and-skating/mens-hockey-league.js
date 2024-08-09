@@ -50,7 +50,7 @@ export default function Default() {
 <Card>
   <CardPadding>
 <h3>Sunday League (18+) <sm style={{fontSize: '11pt'}}>(18 teams)</sm></h3>
-<p><strong>When:</strong></p>
+<p><strong>When: September, 2024 - April, 2025</strong></p>
 <ul>
   <li>Sundays: <Time>1330</Time> - <Time>2300</Time> game times</li>
   <li>Full-team entry</li>
@@ -64,7 +64,7 @@ export default function Default() {
   <CardPadding>
 
 <h3>Men's League (35+) <sm style={{fontSize: '11pt'}}>(14 teams)</sm></h3>
-<p><strong>When:</strong></p>
+<p><strong>When: September 18, 2024 - April 17, 2025</strong></p>
 <ul>
   <li>Wednesdays: <Time>2000</Time> - <Time>2300</Time> game times</li>
   <li>Thursdays: <Time>1900</Time> - <Time>2300</Time> game times</li>
