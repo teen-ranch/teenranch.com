@@ -32,7 +32,7 @@ export default function Default() {
             stick handling, creativity, passing, as well as game situation type
             skills. For boys and girls ages 6-13.
           </p>
-          <h3>Ages 6-13</h3>
+          <h3>Ages 5-13</h3>
           <div className="staffTable">
           <Card>
 
