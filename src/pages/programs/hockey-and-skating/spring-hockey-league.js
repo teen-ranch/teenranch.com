@@ -22,9 +22,7 @@ export default function Default() {
           name="Spring hockey league"
         >
           <p>
-            Join us for a fun, 6-week recreational program. Sessions will
-            consist of ten minutes of skill development followed by a 35-minute
-            game. (Two teams per age group with limited spots per team.)
+            Join us for a fun, 9-week recreational program. Sessions will consist of a ten-minute warm up drill, followed by a 35-minute game. Two teams and two goalies per age group, with limited spots per team.
           </p>
           <h3>When</h3>
           {/* <div
@@ -41,24 +39,24 @@ export default function Default() {
           </div> */}
           <ul>
             <li>
-              <strong>U-7 (Age 5-6, 2017-2018)</strong>: Tuesdays, 6:00pm - 6:50pm, April
-              16 - May 21, 2024
+              <strong>U-7 (Age 5-6, 2018-2019)</strong>: Tuesdays, 6:00pm - 6:50pm, April
+              22 - June 17, 2025
             </li>
             <li>
-              <strong>U-9 (Age 7-8, 2015-2016)</strong>: Tuesdays, 7:00pm - 7:50pm, April
-              16 - May 21, 2024
+              <strong>U-9 (Age 7-8, 2016-2017)</strong>: Tuesdays, 7:00pm - 7:50pm, April
+              22 - June 17, 2025
             </li>
             <li>
-              <strong>U-11 (Age 9-10, 2013-2014)</strong>: Wednesdays, 6:00pm - 6:50pm,
-              April 17 - May 22, 2024
+              <strong>U-11 (Age 9-10, 2014-2015)</strong>: Wednesdays, 6:00pm - 6:50pm,
+              April 23 - June 18, 2025
             </li>
             <li>
-              <strong>U-13/U-15 (Age 11-14, 2009-2012)</strong>: Wednesdays, 7:00pm -
-              7:50pm, April 17 - May 22, 2024
+              <strong>U-13/U-15 (Age 11-14, 2010-2013)</strong>: Wednesdays, 7:00pm -
+              7:50pm, April 23 - June 18, 2025
             </li>
           </ul>
           <h3>Cost</h3>
-          $180 +HST (6 sessions, jersey included)
+          $275 +HST (9 sessions, jersey included)
           <br />
           <Button href="https://register.trmanager.com">Book now</Button>
         </Program>

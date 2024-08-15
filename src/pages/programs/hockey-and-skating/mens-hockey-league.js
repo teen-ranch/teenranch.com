@@ -5,6 +5,7 @@ import Button from "components/Button"
 import Program from "components/Program"
 import Card, { CardPadding } from "components/Card"
 import { Time } from "components/Time"
+import Grid from "components/Grid"
 
 export default function Default() {
   return (
@@ -28,15 +29,17 @@ export default function Default() {
           </div>
         </Card>
 
-        <Program
+        {/* <Program
           src="https://teenranch.nyc3.digitaloceanspaces.com/website/assets/hockey15.jpg"
         // name="Men's hockey league"
-        >
+        > */}
           {/* <p>Spring and Fall hockey leagues for men age 30+</p> */}
 
+<Grid md={2} gapSize='6rem'>
+  <div>
+    <h2>Fall/Winter Leagues</h2>
           <Card>
             <CardPadding>
-
               <h3>Men's Recreational League (35+) <sm style={{ fontSize: '11pt' }}>(4-6 teams)</sm></h3>
               <p><strong>When:</strong> September 24, 2024 - April 8, 2025</p>
               <ul>
@@ -59,7 +62,6 @@ export default function Default() {
             </CardPadding>
           </Card>
 
-
           <Card>
             <CardPadding>
 
@@ -74,9 +76,49 @@ export default function Default() {
               <strong>Contact <a href="mailto:brent.boschman@teenranch.com">brent.boschman@teenranch.com</a> for team bookings.</strong>
             </CardPadding>
           </Card>
+          </div>
+          <div>
+            <h2>Summer Leagues</h2>
+<Card>
+            <CardPadding>
+              <h3>Summer Men's League (30+) <sm style={{ fontSize: '11pt' }}>(4-6 teams)</sm></h3>
+              <p><strong>When:</strong> May 15, 2025 - August 28, 2025</p>
+              <ul>
+                <li>Thursday nights: <Time>2000</Time>, <Time>2100</Time>, and <Time>2200</Time> game times</li>
+                <li><strong>Cost:</strong> $315 +HST</li>
+              </ul>
+              <Button href="https://register.trmanager.com">Book now</Button>
+            </CardPadding>
+          </Card>
 
+          <Card>
+            <CardPadding>
+              <h3>Monday League (18+) <sm style={{ fontSize: '11pt' }}>(6-8 teams)</sm></h3>
+              <p><strong>When: May, 2025 - August, 2025</strong></p>
+              <ul>
+                <li>Mondays: <Time>1900</Time> - <Time>2200</Time> game times</li>
+                <li>Full-team entry</li>
+              </ul>
+              <strong>Contact <a href="mailto:brent.boschman@teenranch.com">brent.boschman@teenranch.com</a> for team bookings.</strong>
+            </CardPadding>
+          </Card>
 
-        </Program>
+          <Card>
+            <CardPadding>
+
+              <h3>Wednesday League (18+) <sm style={{ fontSize: '11pt' }}>(6 teams)</sm></h3>
+              <p><strong>When: September 18, 2024 - April 17, 2025</strong></p>
+              <ul>
+                <li>Wednesdays: <Time>2000</Time> - <Time>2200</Time> game times</li>
+                <li>Full-team entry</li>
+              </ul>
+              <strong>Contact <a href="mailto:brent.boschman@teenranch.com">brent.boschman@teenranch.com</a> for team bookings.</strong>
+            </CardPadding>
+          </Card>
+          </div>
+</Grid>
+
+        {/* </Program> */}
       </Container>
     </>
   )
