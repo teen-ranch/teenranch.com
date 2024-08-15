@@ -72,7 +72,7 @@ export default function Programs({ data }) {
         <h1>Available dates</h1>
 
         <ul>
-          <li>March 11-15, 2024</li>
+          <li>March 10-14, 2025</li>
         </ul>
 
         <p>
@@ -87,98 +87,98 @@ export default function Programs({ data }) {
                 <h1>Pricing</h1>
             </Container> */}
 
-      <Container type="body">
-        <h1>Pricing</h1>
-
-        <PriceContainer>
-          <Price
-            title={
-              <>
-                Day camp
-                <br />
-                (Classic)
-              </>
-            }
-            subTitle={`Individual day`}
-            who="Kids ages 5-12"
-            price={89}
-            term="day"
-            includes={dayCampBulletsClassic}
-          >
-            <CTAButton href="https://register.trmanager.com">
-              Register now
-            </CTAButton>
-          </Price>
-          <Price
-            title={
-              <>
-                Day camp
-                <br />
-                (Classic)
-              </>
-            }
-            subTitle={
-              <>
-                Bundle (<strong>SAVE $14/day</strong>)
-              </>
-            }
-            who="Kids ages 5-12"
-            price={375}
-            term="week"
-            includes={dayCampBulletsClassic}
-          >
-            <CTAButton href="https://register.trmanager.com">
-              Register now
-            </CTAButton>
-          </Price>
-
-          <Price
-            title={
-              <>
-                Day camp
-                <br />
-                (Hockey)
-              </>
-            }
-            subTitle={`Individual day`}
-            who="Kids ages 5-12"
-            price={115}
-            term="day"
-            includes={dayCampBulletsHockey}
-          >
-            <CTAButton href="https://register.trmanager.com">
-              Register now
-            </CTAButton>
-          </Price>
-          <Price
-            title={
-              <>
-                Day camp
-                <br />
-                (Hockey)
-              </>
-            }
-            subTitle={
-              <>
-                Bundle (<strong>SAVE $16/day</strong>)
-              </>
-            }
-            who="Kids ages 5-12"
-            price={495}
-            term="week"
-            includes={dayCampBulletsHockey}
-          >
-            <CTAButton href="https://register.trmanager.com">
-              Register now
-            </CTAButton>
-          </Price>
-        </PriceContainer>
-      </Container>
-
-      <Container>
-        <p>* Weather permitting</p>
-        {/* <p>** Ice skating not available on January 28, 2022</p> */}
-      </Container>
+      {/* <Container type="body"> */}
+      {/*   <h1>Pricing</h1> */}
+      {/**/}
+      {/*   <PriceContainer> */}
+      {/*     <Price */}
+      {/*       title={ */}
+      {/*         <> */}
+      {/*           Day camp */}
+      {/*           <br /> */}
+      {/*           (Classic) */}
+      {/*         </> */}
+      {/*       } */}
+      {/*       subTitle={`Individual day`} */}
+      {/*       who="Kids ages 5-12" */}
+      {/*       price={89} */}
+      {/*       term="day" */}
+      {/*       includes={dayCampBulletsClassic} */}
+      {/*     > */}
+      {/*       <CTAButton href="https://register.trmanager.com"> */}
+      {/*         Register now */}
+      {/*       </CTAButton> */}
+      {/*     </Price> */}
+      {/*     <Price */}
+      {/*       title={ */}
+      {/*         <> */}
+      {/*           Day camp */}
+      {/*           <br /> */}
+      {/*           (Classic) */}
+      {/*         </> */}
+      {/*       } */}
+      {/*       subTitle={ */}
+      {/*         <> */}
+      {/*           Bundle (<strong>SAVE $14/day</strong>) */}
+      {/*         </> */}
+      {/*       } */}
+      {/*       who="Kids ages 5-12" */}
+      {/*       price={375} */}
+      {/*       term="week" */}
+      {/*       includes={dayCampBulletsClassic} */}
+      {/*     > */}
+      {/*       <CTAButton href="https://register.trmanager.com"> */}
+      {/*         Register now */}
+      {/*       </CTAButton> */}
+      {/*     </Price> */}
+      {/**/}
+      {/*     <Price */}
+      {/*       title={ */}
+      {/*         <> */}
+      {/*           Day camp */}
+      {/*           <br /> */}
+      {/*           (Hockey) */}
+      {/*         </> */}
+      {/*       } */}
+      {/*       subTitle={`Individual day`} */}
+      {/*       who="Kids ages 5-12" */}
+      {/*       price={115} */}
+      {/*       term="day" */}
+      {/*       includes={dayCampBulletsHockey} */}
+      {/*     > */}
+      {/*       <CTAButton href="https://register.trmanager.com"> */}
+      {/*         Register now */}
+      {/*       </CTAButton> */}
+      {/*     </Price> */}
+      {/*     <Price */}
+      {/*       title={ */}
+      {/*         <> */}
+      {/*           Day camp */}
+      {/*           <br /> */}
+      {/*           (Hockey) */}
+      {/*         </> */}
+      {/*       } */}
+      {/*       subTitle={ */}
+      {/*         <> */}
+      {/*           Bundle (<strong>SAVE $16/day</strong>) */}
+      {/*         </> */}
+      {/*       } */}
+      {/*       who="Kids ages 5-12" */}
+      {/*       price={495} */}
+      {/*       term="week" */}
+      {/*       includes={dayCampBulletsHockey} */}
+      {/*     > */}
+      {/*       <CTAButton href="https://register.trmanager.com"> */}
+      {/*         Register now */}
+      {/*       </CTAButton> */}
+      {/*     </Price> */}
+      {/*   </PriceContainer> */}
+      {/* </Container> */}
+      {/**/}
+      {/* <Container> */}
+      {/*   <p>* Weather permitting</p> */}
+      {/*   {/* <p>** Ice skating not available on January 28, 2022</p> */} */}
+      {/* </Container> */}
     </>
   )
 }
