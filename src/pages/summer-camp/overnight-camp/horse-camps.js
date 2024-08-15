@@ -148,7 +148,7 @@ export default function Programs({ data }) {
 
       <Container type="body">
         <h2>Info pack</h2>
-        <div style={{color:'red'}}>Check out our weekly camp themes and details in our camp info pack below:</div>
+        <div style={{ color: 'red' }}>Check out our weekly camp themes and details in our camp info pack below:</div>
         <div>
           <PdfButton
             target="_blank"
@@ -350,7 +350,7 @@ export default function Programs({ data }) {
             includes={[
               "Minimum of 2 hours in-tack lessons per day",
               "Minimum of 1 hour out-of-tack lesson per day",
-              "Off-site outing (pending covid restrictions)",
+              "Off-site outing",
               "Photo shoot with your horse",
               "Free division entry in Sunday on-site hunter/jumper show",
               "Breakfast, lunch & dinner",
