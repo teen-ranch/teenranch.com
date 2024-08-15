@@ -18,6 +18,19 @@ export default function Default() {
         metaDescription="In association with Dufferin-Peel Skating Club"
       />
       <Container type="body">
+        <div
+          style={{
+            padding: "4rem",
+            background: "purple",
+            borderRadius: "4px",
+            color: "#fff",
+            textAlign: "center",
+            fontSize: "2rem",
+          }}
+        >
+          <strong>Note:</strong> DPSC Club membership fee $70 is paid once per year.
+        </div>
+
         <Program
           src="https://teenranch.nyc3.digitaloceanspaces.com/website/assets/figureskating.JPG"
           name="Dufferin-peel skating club"
@@ -82,7 +95,7 @@ export default function Default() {
                   <br />
                   No session Dec. 22, Dec. 29
                 </td>
-               
+
                 <td>
                   <strong>$345 +HST</strong> (11 sessions)
                 </td>
