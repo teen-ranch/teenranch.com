@@ -25,9 +25,8 @@ export default function Header({ location }) {
             <img className="logo" src={logo} alt="Teen Ranch Logo" />
           </NavLink>
           <button
-            className={`hamburgerMenu ${
-              expanded ? "hamburgerMenu--active" : ""
-            }`}
+            className={`hamburgerMenu ${expanded ? "hamburgerMenu--active" : ""
+              }`}
             onClick={() => setExpanded((expanded) => !expanded)}
             aria-label="Navigation menu"
           >
