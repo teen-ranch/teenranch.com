@@ -95,7 +95,7 @@ header {
 
     li {
       height: 100px;
-      position: relative;
+      // position: relative;
       a {
         margin-top: 25px;
       }
@@ -114,12 +114,15 @@ header {
       background: #fff;
       position: absolute;
       display: none;
+      // display: flex;
       border-radius: $border-radius;
       box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
       padding: 4rem;
       left: 50%;
+      // left:0;
       top: 8rem;
       transform: translateX(-50%);
+
       z-index: 1;
 
       li {
@@ -212,3 +215,4 @@ header {
     text-align: center;
   }
 }
+
