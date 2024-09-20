@@ -156,7 +156,7 @@ export default function Default({ data }) {
                       target="_blank"
                       href="https://forms.zohopublic.com/teenranch1/form/HorseShowSeptember222024/formperma/ezVt-lR23gZKAbhKiwCYSEt78Mi6CH27RJYFkAYAQWw?referrername=teenranch.com"
                     >
-                      August 25th entry form
+                      September 22nd entry form
                     </Button>
                   </td>
                 </tr>
