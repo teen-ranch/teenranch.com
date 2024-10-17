@@ -86,15 +86,17 @@ export default function Programs({ data }) {
   Check back soon for 2023/2024 season dates
 </div> */}
             <ul>
-              <li>Friday October 27, 2023</li>
-              <li>Friday November 24, 2023</li>
-              <li>Friday February 16, 2024</li>
+              <li>Friday October 25, 2024</li>
+              <li>Friday November 22, 2024</li>
+              <li>Friday February 14, 2025</li>
+              <li>Friday April 4, 2025</li>
             </ul>
 
             <p>
-              Drop off at <Time>0900</Time> and pick up at{" "}
-              <Time>1630</Time>
+              Drop off at <Time>0845</Time> and pick up at{" "}
+              <Time>1645</Time>
             </p>
+            <p>Daily Campfire Time with an emphasis on sharing God's love!</p>
           </div>
           <div style={{ maxWidth: "315px" }}>
             <Video
@@ -140,7 +142,7 @@ export default function Programs({ data }) {
             }
             subTitle={``}
             who="Kids ages 5-12"
-            price={99}
+            price={110}
             term="day"
             includes={dayCampBulletsHockey}
           >

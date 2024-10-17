@@ -48,9 +48,9 @@ export default function Default({ data }) {
   const events = [
     <Event
       title={frontmatter.title}
-      startDate={"2023-03-10"}
+      startDate={"2025-03-07"}
       startTime="19:00:00"
-      endDate={"2023-03-12"}
+      endDate={"2025-03-09"}
       endTime="13:00:00"
       price={eventData.price}
       description={eventData.description}
@@ -86,9 +86,7 @@ export default function Default({ data }) {
 
         <p><strong>Senior and Junior campers will enjoy separate accommodation and programming during the weekend.</strong></p>
         <p>
-
-          This is a great opportunity for new campers to grow comfortable at
-          camp.
+        This is a great opportunity for new campers to experience camp for the first time and past campers to meet again!
         </p>
       </Container>
 
@@ -96,7 +94,7 @@ export default function Default({ data }) {
         <h2>Available dates</h2>
 
         <ul>
-          <li>March 8-10, 2024</li>
+          <li>March 7-9, 2025</li>
         </ul>
 
         <p>
