@@ -88,17 +88,17 @@ export default function Default({ data }) {
             </p>
             <p>Make this your family christmas tree outing!</p>
             <h2>When is it?</h2>
-            Saturday, December 9, 2023: <Time>1130</Time> - <Time>1500</Time>.
+            Saturday, December 7, 2025: <Time>1130</Time> - <Time>1500</Time>.
             Open to all ages
             <h2>Cost</h2>
             <strong>
-              $19.95 +HST per person. Children age two and under are free.
+              $16.00 +HST per person. Children age two and under are free.
             </strong>
             <div>
               <PrimaryButton
                 target="_blank"
                 rel="noopener noreferrer"
-                href={`https://forms.zohopublic.com/teenranch1/form/ChristmasattheRanch2023/formperma/jGJGsyqrGHIP8naStBZ3ZJTKsptVYFdcdnra3mzmcGg?referrername=teenranch.com`}
+                href={`https://forms.zohopublic.com/teenranch1/form/ChristmasattheRanch2025/formperma/Ifag5DRl4fugJ5ebOYgJJHexd-iMpH_X0djXXBEMVvA?referrername=teenranch.com`}
               >
                 Register now
               </PrimaryButton>
@@ -106,7 +106,7 @@ export default function Default({ data }) {
           </div>
           <div style={{ maxWidth: "315px" }}>
             <Video
-              src="https://youtube.com/embed/fhjKXlZUCDY?feature=shared"
+              src="https://youtube.com/embed/Ec__mV4yx84?feature=shared"
               short
             />
           </div>
@@ -126,15 +126,16 @@ export default function Default({ data }) {
         <h2>Add-ons:</h2>
         <ul>
           <li> Pony rides $5 per person* weather-permitting </li>
-          <li> Christmas Trees</li>
+          <li>Christmas Trees</li>
           <li>Evergreen and Dogwood bundles </li>
-          <li>Snack bar available (drinks, snacks, hot dogs) </li>
+          <li>Teen Ranch Snack bar available (drinks, snacks, hot dogs) </li>
+          <li>Funnel Cake Dream (winter funnel cakes, fries, poutine) </li>
         </ul>
         <h2>Schedule</h2>
         <ul>
-          <li>11:30 am - 1:00 pm Ice Skating - Santa will join us on ice</li>
-          <li>12:00 - 3:00 pm Hayrides </li>
-          <li>1:00- 3:00 pm Pony rides and photo opportunity</li>
+          <li><Time>1200</Time> - <Time>1500</Time> Ice Skating - Santa will join us on ice between <Time>1200</Time> - <Time>1330</Time></li>
+          <li><Time>1200</Time> - <Time>1500</Time> Hayrides </li>
+          <li><Time>1300</Time> - <Time>1500</Time> Pony rides and photo opportunity</li>
         </ul>
         *Great photo opportunities with Santa throughout these activities
         <p>
