@@ -9,7 +9,7 @@ export const dayCampBulletsClassic = [
   "Lunch & two snacks",
 ]
 export const dayCampBulletsHockey = [
-  "One on-ice skills and skating development session, including a full-ice scrimmage",
+  "One on-ice skills and skating development session (1.5 hours), including a full-ice scrimmage",
   "Outdoor discovery, games, and sports",
   "Indoor ice skating with kid-themed music**",
   "Woodland survival skills",
