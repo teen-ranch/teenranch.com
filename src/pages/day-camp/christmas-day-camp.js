@@ -71,6 +71,7 @@ export default function Programs({ data }) {
         <h1>Available dates</h1>
 
         <ul>
+          <li>Monday, December 23, 2024 Christmas Day Camp Special! $69.00 +HST. <em>Note: no hockey option for this day only. Not a part of the bundle.</em></li>
           <li>Monday, December 30, 2024</li>
           <li>Tuesday, December 31, 2024</li>
           <li>Thursday, January 2, 2025</li>

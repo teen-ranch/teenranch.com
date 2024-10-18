@@ -63,8 +63,7 @@ export default function Programs({ data }) {
           flexibility with the option of registering them for a full week or
           individual days and rest assured that they will be well-engaged as
           they enjoy all kinds of active outdoor fun, games, and sports
-          alongside other campers and our committed staff team! Daily story time
-          with an emphasis on sharing God's love!
+          alongside other campers and our committed staff team!
         </p>
         <p>Daily indoor “Campfire Time” with an emphasis on sharing God's love!</p>
       </Container>
