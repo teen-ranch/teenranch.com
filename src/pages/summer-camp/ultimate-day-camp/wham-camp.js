@@ -91,7 +91,7 @@ export default function Programs({ data }) {
           <PdfButton
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.canva.com/design/DAGFJIcYvyU/1HdTdbLNfDu487m1nvWzEg/view?utm_content=DAGFJIcYvyU&utm_campaign=summer-camp&utm_medium=link&utm_source=teenranch.com"
+            href="https://www.canva.com/design/DAGU44ENrkk/0p3yyCAVgJDGmLX3UHjWaQ/view"
           >
             Ultimate day camp / junior day camp info pack
           </PdfButton>
@@ -172,7 +172,7 @@ export default function Programs({ data }) {
         <PreBuiltCampSchedule type="UDC" sections={["wham"]} />
 
         <p>
-          For goalie camp, rodeo camp, and intensive equestrian camp:{" "}
+          For goalie camp and rodeo camp:{" "}
           <ReachLink to="/summer-camp/overnight-camp/">
             see our overnight camps.
           </ReachLink>
@@ -196,18 +196,18 @@ export default function Programs({ data }) {
             title="WHAM camp"
             subTitle={`Epic activities like giant swing, horseback riding, rock climbing, woodland survival, initiatives course challenge, archery, waterslide, jousting pond, and so much more!`}
             who="KIDS WHO WANT TO TRY EVERYTHING (AGE 8+)"
-            price={895}
+            price={425}
+            priceTo={895}
             term="week"
             includes={[
               "Horseback riding",
               "Rock climbing & bouldering",
               "Woodland survival skills",
-              "Volleyball, Soccer, & basketball",
+              "Volleyball, soccer, & basketball",
               "Archery",
               "Waterslide, jousting pond, canoeing, kayaking",
               "Swimming",
-              "Lunch & morning snack",
-              "Snackbar",
+              "Lunch",
               "All camp activities",
             ]}
           >

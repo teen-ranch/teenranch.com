@@ -108,8 +108,9 @@ export default function Programs({ data }) {
 
         <h3>Weekly overview</h3>
         <p>
-          Summer overnight camps run Sunday evenings-Friday evenings. (August
-          5-9 week starts Monday)
+
+          Summer Overnight Camps will run Sunday evenings - Friday evenings (August 4-8 week starts Monday).
+
         </p>
         <ul>
           <li>
@@ -128,20 +129,21 @@ export default function Programs({ data }) {
           </li>
           <li>
             <strong>
-              Pick-up: Friday, <Time>1900</Time>
+              Pick-up: Friday, <Time>1830</Time>
             </strong>
           </li>
         </ul>
+        <p><em>Note: See info pack for more details.</em></p>
       </Container>
 
       <Container type="body">
         <h2>Info pack</h2>
-        <div style={{color:'red'}}>Check out our weekly camp themes and details in our camp info pack below:</div>
+        <div style={{ color: 'red' }}>Check out our weekly camp themes and details in our camp info pack below:</div>
         <div>
           <PdfButton
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.canva.com/design/DAGDKdD0AZM/B5d22jRawTZsCCB0GSNRBw/view?utm_content=DAGDKdD0AZM&utm_campaign=summer-camp&utm_medium=link&utm_source=teenranch.com"
+            href="https://www.canva.com/design/DAGU3k4-QpE/M2c_z_Zcd_ZTDW8ITuMyWw/view"
           >
             Overnight camp info pack
           </PdfButton>
@@ -240,18 +242,18 @@ export default function Programs({ data }) {
             title="WHAM camp"
             subTitle={`Epic activities like giant swing, horseback riding, rock climbing, woodland survival, initiatives course challenge, archery, waterslide, jousting pond, and so much more!`}
             who="KIDS WHO WANT TO TRY EVERYTHING (AGE 8+)"
-            price={1315}
+            price={1065}
+            priceTo={1335}
             term="week"
             includes={[
               "Horseback riding",
               "Rock climbing & bouldering",
               "Woodland survival skills",
-              "Volleyball, Soccer, & basketball",
+              "Volleyball, soccer, & basketball",
               "Archery",
               "Waterslide, jousting pond, canoeing, kayaking",
               "Swimming",
-              "Breakfast, lunch & dinner",
-              "Snackbar",
+              "All meals",
               "All camp activities",
             ]}
           >

@@ -87,6 +87,7 @@ export default function Programs({ data }) {
             available.
           </li> */}
         </ul>
+        <p><em>Note: Parents, junior day campers enjoy lots of activities all accross the property. Campers must be toilet trained.</em></p>
       </Container>
 
       <Container type="body">
@@ -95,7 +96,7 @@ export default function Programs({ data }) {
           <PdfButton
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.canva.com/design/DAGFJIcYvyU/1HdTdbLNfDu487m1nvWzEg/view?utm_content=DAGFJIcYvyU&utm_campaign=summer-camp&utm_medium=link&utm_source=teenranch.com"
+            href="https://www.canva.com/design/DAGU44ENrkk/0p3yyCAVgJDGmLX3UHjWaQ/view"
           >
             Ultimate day camp / junior day camp info pack
           </PdfButton>
@@ -192,8 +193,8 @@ export default function Programs({ data }) {
               "Bouldering & climbing wall (NEW)",
               "Archery (NEW)",
               "Campfire story time",
-              "Lunch & morning snack",
-              "Afternoon snackbar",
+              "Lunch",
+              "T-shirt included",
               "New themes each week!",
             ]}
           >

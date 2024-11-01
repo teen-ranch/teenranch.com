@@ -76,7 +76,7 @@ export default function Programs({ data }) {
       {/* <SummerCampRegistrationNotice /> */}
 
       <Container type="body">
-        <h1>Summer Camp 2024 at Teen Ranch</h1>
+        <h1>Summer Camp 2025 at Teen Ranch</h1>
 
         <h2>Here's what you can expect this summer:</h2>
 
@@ -104,8 +104,8 @@ export default function Programs({ data }) {
 
         <h3>Weekly overview</h3>
         <p>
-          Summer Overnight Camps will run Sunday (August 5-9 week starts Monday)
-          evenings-Friday evenings.
+          Summer Overnight Camps will run Sunday evenings - Friday evenings (August 4-8 week starts Monday).
+
         </p>
         <ul>
           <li>
@@ -125,7 +125,7 @@ export default function Programs({ data }) {
           </li>
           <li>
             <strong>
-              Pick-up: Friday, <Time>1900</Time>
+              Pick-up: Friday, <Time>1830</Time>
             </strong>
           </li>
         </ul>
@@ -138,16 +138,17 @@ export default function Programs({ data }) {
             <strong>Pick-up:</strong> <Time>1645</Time> - <Time>1700</Time>
           </li>
         </ul>
+        <p><em>Note: See info pack for more details.</em></p>
       </Container>
 
       <Container type="body">
         <h2>Info pack(s)</h2>
-        <div style={{color:'red'}}>Check out our weekly camp themes and details in our overnight camp info pack below:</div>
+        <div style={{ color: 'red' }}>Check out our weekly camp themes and details in our overnight camp info pack below:</div>
         <div>
           <PdfButton
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.canva.com/design/DAGDKdD0AZM/B5d22jRawTZsCCB0GSNRBw/view?utm_content=DAGDKdD0AZM&utm_campaign=summer-camp&utm_medium=link&utm_source=teenranch.com"
+            href="https://www.canva.com/design/DAGU3k4-QpE/M2c_z_Zcd_ZTDW8ITuMyWw/view"
           >
             Overnight camp info pack
           </PdfButton>
@@ -156,7 +157,7 @@ export default function Programs({ data }) {
           <PdfButton
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.canva.com/design/DAGFJIcYvyU/1HdTdbLNfDu487m1nvWzEg/view?utm_content=DAGFJIcYvyU&utm_campaign=summer-camp&utm_medium=link&utm_source=teenranch.com"
+            href="https://www.canva.com/design/DAGU44ENrkk/0p3yyCAVgJDGmLX3UHjWaQ/view"
           >
             Ultimate day camp / junior day camp info pack
           </PdfButton>
@@ -297,16 +298,15 @@ export default function Programs({ data }) {
               </>
             }
             who="Kids age 5-7"
-            price={450}
+            price={270}
+            priceTo={450}
             term="week"
-            startingAtSpace
             includes={[
               "Games",
               "Crafts",
               "Swimming",
               "Pony rides",
-              "Lunch & morning snack",
-              "Snackbar",
+              "Lunch",
               "Story time",
             ]}
           >
@@ -329,15 +329,14 @@ export default function Programs({ data }) {
             }
             subTitle="The full camp experience with your sport of choice, including daily campfires featuring engaging, real-life topics shared from a biblical perspective."
             who="Kids and teens 8+"
-            price={895}
-            startingAt
+            price={450}
+            priceTo={1100}
             term="week"
             includes={[
               "Full camp experience",
               "Your sport of choice",
               "Daily campfire",
-              "Lunch & morning snack",
-              "Snackbar",
+              "Lunch",
               "Real-life",
             ]}
           >
@@ -360,16 +359,15 @@ export default function Programs({ data }) {
             }
             subTitle="Campers experience all the fun and adventure of summer camp packed into five awesome days & nights as they enjoy the great outdoors, get active and build friendships that can last a lifetime."
             who="Kids and teens 8+"
-            price={1315}
-            startingAt
+            price={1065}
+            priceTo={1775}
             term="week"
             includes={[
               "Complete camp experience",
               "Your sport of choice",
               "Evening camp-wide games",
               "Evening campfires",
-              "Breakfast, lunch & dinner",
-              "Snackbar",
+              "All meals",
               "Real-life",
             ]}
           >
@@ -393,7 +391,7 @@ export default function Programs({ data }) {
         <h2>Additional summer programs:</h2>
         <PriceAddon
           title="Summer drop-in ice time (9:00am - 10:30am)"
-          subTitle="Two-weeks only!"
+          subTitle="One week only!"
           description={
             <>
               Join in with our regular hockey program for 1.5 hours of ice time

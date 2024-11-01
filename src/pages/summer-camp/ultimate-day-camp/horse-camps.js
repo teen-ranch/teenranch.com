@@ -100,7 +100,7 @@ export default function Programs({ data }) {
           <PdfButton
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.canva.com/design/DAGFJIcYvyU/1HdTdbLNfDu487m1nvWzEg/view?utm_content=DAGFJIcYvyU&utm_campaign=summer-camp&utm_medium=link&utm_source=teenranch.com"
+            href="https://www.canva.com/design/DAGU44ENrkk/0p3yyCAVgJDGmLX3UHjWaQ/view"
           >
             Ultimate day camp / junior day camp info pack
           </PdfButton>
@@ -175,7 +175,7 @@ export default function Programs({ data }) {
         <p>
           Each afternoon, campers get to take their pick from some amazing camp
           activities on 150 beautiful acres including: giant swing, trail rides,
-          rock climbing, bouldering, ninja climbing feature (NEW), water slide,
+          rock climbing, bouldering, water slide,
           swimming, water jousting, archery, tennis, basketball, volleyball, and
           more.
         </p>
@@ -204,7 +204,7 @@ export default function Programs({ data }) {
         <PreBuiltCampSchedule type="UDC" sections={["horses"]} />
 
         <p>
-          For rodeo camp, and intensive equestrian camp:{" "}
+          For rodeo camp:{" "}
           <ReachLink to="/summer-camp/overnight-camp/">
             see our overnight camps.
           </ReachLink>
@@ -228,7 +228,8 @@ export default function Programs({ data }) {
             title="Western riding camp"
             subTitle="An excellent place to start for first-time riders or western riding enthusiasts."
             who="Beginner to advanced"
-            price={895}
+            price={425}
+            priceTo={895}
             term="week"
             includes={[
               "Basic position & control",
@@ -237,8 +238,7 @@ export default function Programs({ data }) {
               "Games on horseback",
               "Barrel racing (advanced)",
               "Pole bending (advanced)",
-              "Lunch & morning snack",
-              "Snackbar",
+              "Lunch",
               "All camp activities",
             ]}
           >
@@ -250,7 +250,8 @@ export default function Programs({ data }) {
             title="English riding camp"
             subTitle="For kids of all riding levels to learn or develop new skills."
             who="Beginner to advanced"
-            price={895}
+            price={425}
+            priceTo={895}
             term="week"
             includes={[
               "Basic position & control",
@@ -258,8 +259,7 @@ export default function Programs({ data }) {
               "Games on horseback",
               "Jumping position",
               "Equitation",
-              "Lunch & morning snack",
-              "Snackbar",
+              "Lunch",
               "All camp activities",
             ]}
           >

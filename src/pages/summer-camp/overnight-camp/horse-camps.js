@@ -120,8 +120,9 @@ export default function Programs({ data }) {
 
         <h3>Weekly overview</h3>
         <p>
-          Summer overnight camps run Sunday evenings-Friday evenings. (August
-          5-9 week starts Monday)
+
+          Summer Overnight Camps will run Sunday evenings - Friday evenings (August 4-8 week starts Monday).
+
         </p>
         <ul>
           <li>
@@ -140,10 +141,11 @@ export default function Programs({ data }) {
           </li>
           <li>
             <strong>
-              Pick-up: Friday, <Time>1900</Time>
+              Pick-up: Friday, <Time>1830</Time>
             </strong>
           </li>
         </ul>
+        <p><em>Note: See info pack for more details.</em></p>
       </Container>
 
       <Container type="body">
@@ -153,7 +155,7 @@ export default function Programs({ data }) {
           <PdfButton
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.canva.com/design/DAGDKdD0AZM/B5d22jRawTZsCCB0GSNRBw/view?utm_content=DAGDKdD0AZM&utm_campaign=summer-camp&utm_medium=link&utm_source=teenranch.com"
+            href="https://www.canva.com/design/DAGU3k4-QpE/M2c_z_Zcd_ZTDW8ITuMyWw/view"
           >
             Overnight camp info pack
           </PdfButton>
@@ -168,8 +170,7 @@ export default function Programs({ data }) {
         <h1>Who it's for</h1>
         <p>
           Horse camp is perfect for english and western riders of all ability
-          levels. We offer specialized rodeo and intensive (hunter/jumper)
-          programs in addition to our english and western programs.
+          levels. We offer a specialized rodeo program in addition to our english and western programs.
         </p>
 
         <ProgramContainer>
@@ -190,19 +191,19 @@ export default function Programs({ data }) {
           >
             For kids of all riding levels to learn or develop new skills.
           </Program>
-          <Program
-            small
-            name="Intensive equestrian camp"
-            who="Advanced hunter/jumper (age 12+)"
-            src={intensive.childImageSharp.fluid}
-          >
-            For english riders looking to improve their success in the show
-            ring.
-            {/* <p style={{ fontSize: "1.2rem" }}>
-              Application video must be approved to qualify for this program.
-            </p> */}
-            {/* <p style={{ color: "red" }}>Applications closed for 2022</p> */}
-          </Program>
+          {/* <Program */}
+          {/*   small */}
+          {/*   name="Intensive equestrian camp" */}
+          {/*   who="Advanced hunter/jumper (age 12+)" */}
+          {/*   src={intensive.childImageSharp.fluid} */}
+          {/* > */}
+          {/*   For english riders looking to improve their success in the show */}
+          {/*   ring. */}
+          {/*   {/* <p style={{ fontSize: "1.2rem" }}> */}
+          {/*     Application video must be approved to qualify for this program. */}
+          {/*   </p> */}
+          {/*   {/* <p style={{ color: "red" }}>Applications closed for 2022</p> */}
+          {/* </Program> */}
           <Program
             small
             name="Rodeo"
@@ -230,7 +231,7 @@ export default function Programs({ data }) {
         <p>
           Each afternoon, campers get to take their pick from some amazing camp
           activities on 150 beautiful acres including: giant swing, trail rides,
-          rock climbing, bouldering, ninja climbing feature (NEW), water slide,
+          rock climbing, bouldering, water slide,
           swimming, water jousting, archery, tennis, basketball, volleyball, and
           more.
         </p>
@@ -271,7 +272,7 @@ export default function Programs({ data }) {
         <h1>Pricing</h1>
         <OvernightCampTerms />
         <JumpStart />
-        <PriceContainer>
+        <PriceContainer xl={3}>
           <Price
             title={
               <>
@@ -287,7 +288,8 @@ export default function Programs({ data }) {
               </>
             }
             who="Beginner to advanced"
-            price={1315}
+            price={1065}
+            priceTo={1335}
             term="week"
             includes={[
               "Basic position & control",
@@ -296,8 +298,7 @@ export default function Programs({ data }) {
               "Games on horseback",
               "Barrel racing (advanced)",
               "Pole bending (advanced)",
-              "Breakfast, lunch & dinner",
-              "Snackbar",
+              "All meals",
               "All camp activities",
             ]}
           >
@@ -317,7 +318,8 @@ export default function Programs({ data }) {
               <>For kids of all riding levels to learn or develop new skills.</>
             }
             who="Beginner to advanced"
-            price={1315}
+            price={1065}
+            priceTo={1335}
             term="week"
             includes={[
               "Basic position & control",
@@ -325,8 +327,7 @@ export default function Programs({ data }) {
               "Games on horseback",
               "Jumping position",
               "Equitation",
-              "Breakfast, lunch & dinner",
-              "Snackbar",
+              "All meals",
               "All camp activities",
             ]}
           >
@@ -334,55 +335,54 @@ export default function Programs({ data }) {
               Register now
             </CTAButton>
           </Price>
-          <Price
-            title="Intensive equestrian camp"
-            subTitle={
-              <>
-                For english riders looking to improve their success in the show
-                ring.
-                {/* <p style={{ color: "red" }}>Applications closed for 2022</p> */}
-              </>
-            }
-            who="Advanced hunter/jumper"
-            price={1825}
-            term="week"
-            primary
-            includes={[
-              "Minimum of 2 hours in-tack lessons per day",
-              "Minimum of 1 hour out-of-tack lesson per day",
-              "Off-site outing",
-              "Photo shoot with your horse",
-              "Free division entry in Sunday on-site hunter/jumper show",
-              "Breakfast, lunch & dinner",
-              "Snackbar",
-              "Stay over Friday & Saturday night",
-            ]}
-          >
-            <span style={{ fontSize: "1.2rem" }}>
-              <center>
-                <p>
-                  Application video must be approved to qualify for this
-                  program.
-                </p>
-                <p style={{ textAlign: "justify" }}>
-                  The application video should showcase short clips of trot,
-                  sitting trot, canter, jumping 2’3 or higher. Video should show
-                  ability to recognize and change lead on their own. Videos can
-                  be sent to{" "}
-                  <a href="mailto:corrie.ensom@teenranch.com">
-                    corrie.ensom@teenranch.com
-                  </a>
-                  .
-                </p>
-              </center>
-            </span>
-            <CTAButton
-              target="_blank"
-              href="mailto:camp@teenranch.com?subject=Intensive camp application request"
-            >
-              Apply now
-            </CTAButton>
-          </Price>
+          {/* <Price */}
+          {/*   title="Intensive equestrian camp" */}
+          {/*   subTitle={ */}
+          {/*     <> */}
+          {/*       For english riders looking to improve their success in the show */}
+          {/*       ring. */}
+          {/*       {/* <p style={{ color: "red" }}>Applications closed for 2022</p> */}
+          {/*     </> */}
+          {/*   } */}
+          {/*   who="Advanced hunter/jumper" */}
+          {/*   price={1825} */}
+          {/*   term="week" */}
+          {/*   primary */}
+          {/*   includes={[ */}
+          {/*     "Minimum of 2 hours in-tack lessons per day", */}
+          {/*     "Minimum of 1 hour out-of-tack lesson per day", */}
+          {/*     "Off-site outing", */}
+          {/*     "Photo shoot with your horse", */}
+          {/*     "Free division entry in Sunday on-site hunter/jumper show", */}
+          {/*     "All meals", */}
+          {/*     "Stay over Friday & Saturday night", */}
+          {/*   ]} */}
+          {/* > */}
+          {/*   <span style={{ fontSize: "1.2rem" }}> */}
+          {/*     <center> */}
+          {/*       <p> */}
+          {/*         Application video must be approved to qualify for this */}
+          {/*         program. */}
+          {/*       </p> */}
+          {/*       <p style={{ textAlign: "justify" }}> */}
+          {/*         The application video should showcase short clips of trot, */}
+          {/*         sitting trot, canter, jumping 2’3 or higher. Video should show */}
+          {/*         ability to recognize and change lead on their own. Videos can */}
+          {/*         be sent to{" "} */}
+          {/*         <a href="mailto:corrie.ensom@teenranch.com"> */}
+          {/*           corrie.ensom@teenranch.com */}
+          {/*         </a> */}
+          {/*         . */}
+          {/*       </p> */}
+          {/*     </center> */}
+          {/*   </span> */}
+          {/*   <CTAButton */}
+          {/*     target="_blank" */}
+          {/*     href="mailto:camp@teenranch.com?subject=Intensive camp application request" */}
+          {/*   > */}
+          {/*     Apply now */}
+          {/*   </CTAButton> */}
+          {/* </Price> */}
           <Price
             title={
               <>
@@ -396,7 +396,7 @@ export default function Programs({ data }) {
               <>For western riders who want a taste of rodeo competition.</>
             }
             who="Intermediate to advanced"
-            price={1495}
+            price={1595}
             term="week"
             includes={[
               "Roping",
@@ -404,8 +404,7 @@ export default function Programs({ data }) {
               "Pole bending",
               "Goat tying",
               "Rodeo camp showdown",
-              "Breakfast, lunch & dinner",
-              "Snackbar",
+              "All meals",
               "All camp activities",
             ]}
           >
