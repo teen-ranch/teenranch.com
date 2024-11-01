@@ -105,17 +105,13 @@ export default function Programs({ data }) {
         <ul>
           <li>
             <strong>
-              Check-in: Sunday, <Time>1600</Time> - <Time>1630</Time>
-            </strong>
-            <span style={{ fontSize: "1.3rem", color: "rgba(0,0,0,0.8)" }}>
-              - Meet your leaders, visit the snack bar and western store, and
-              explore the property as a family.
-            </span>
+              Check-in and BBQ: Sunday, <Time>1630</Time>
+            </strong> - Check-in and then visit the snack bar, western store, settle into your room and meet your leaders! Camp welcome following BBQ.
           </li>
           <li>
             <strong>
-              Camp kick-off: <Time>1630</Time> - <Time>1715</Time>
-            </strong>{" "}
+              Parent goodbye: Sunday, <Time>1730</Time>
+            </strong>
           </li>
           <li>
             <strong>
