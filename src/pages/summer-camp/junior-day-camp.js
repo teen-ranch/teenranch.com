@@ -87,7 +87,7 @@ export default function Programs({ data }) {
             available.
           </li> */}
         </ul>
-        <p><em>Note: Parents, junior day campers enjoy lots of activities all accross the property. Campers must be toilet trained.</em></p>
+        <p><em>Note: Parents, junior day campers enjoy lots of activities all across the property. Campers must be toilet trained.</em></p>
       </Container>
 
       <Container type="body">
