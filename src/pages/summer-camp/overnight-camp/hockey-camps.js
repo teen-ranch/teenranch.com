@@ -41,6 +41,7 @@ export default function Programs({ data }) {
     brent,
     erik,
     matt,
+    logan,
     file,
     iceCorral,
     hockeyNowWinner,
@@ -132,8 +133,7 @@ export default function Programs({ data }) {
 
         <h3>Weekly overview</h3>
         <p>
-          Summer overnight camps run Sunday evenings-Friday evenings. (August
-          5-9 week starts Monday)
+          Summer Overnight Camps will run Sunday evenings - Friday evenings (August 4-8 week starts Monday).
         </p>
         <ul>
           <li>
@@ -152,35 +152,21 @@ export default function Programs({ data }) {
           </li>
           <li>
             <strong>
-              Pick-up: Friday, <Time>1900</Time>
+              Pick-up: Friday, <Time>1830</Time>
             </strong>
           </li>
         </ul>
-        <p>
-         Hawerchuk Strong Hockey Camp (Day Option). 
-        </p>
-        <ul>
-          <li>
-            <strong>
-              Drop-off: <Time>0830</Time> - <Time>0850</Time>
-            </strong>
-          </li>
-          <li>
-            <strong>
-              Pick-up: <Time>1645</Time> - <Time>1700</Time>
-            </strong>
-          </li>
-        </ul>
+        <p><em>Note: See info pack for more details.</em></p>
       </Container>
 
       <Container type="body">
         <h2>Info pack</h2>
-        <div style={{color:'red'}}>Check out our weekly camp themes and details in our camp info pack below:</div>
+        <div style={{ color: 'red' }}>Check out our weekly camp themes and details in our camp info pack below:</div>
         <div>
           <PdfButton
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.canva.com/design/DAGDKdD0AZM/B5d22jRawTZsCCB0GSNRBw/view?utm_content=DAGDKdD0AZM&utm_campaign=summer-camp&utm_medium=link&utm_source=teenranch.com"
+            href="https://www.canva.com/design/DAGU3k4-QpE/M2c_z_Zcd_ZTDW8ITuMyWw/view"
           >
             Overnight camp info pack
           </PdfButton>
@@ -301,26 +287,27 @@ export default function Programs({ data }) {
 
         <Program src={erik.childImageSharp.fluid} swap>
           <h2>Erik Bradford</h2>
-          <h3>Hockey coach</h3>
+          <h3>Guest hockey coach</h3>
           <p>
-            Joining us again this summer as a hockey coach is Erik Bradford from
-            Orangeville. Erik played for the Cleveland Monsters of the American
-            Hockey League this past season, the AHL affiliate of the Columbus
-            Blue Jackets.
-          </p>
+            Joining us again this summer as a guest hockey coach is Erik Bradford from Orangeville. Erik played in the OHL for five years before a nine-year professional career in North America in the AHL and ECHL, where he finished second in league scoring and a league All-Star in his final year before heading overseas. He is currently playing in Sweden's HockeyAllsvenskan league for IK Oskarshamn.          </p>
         </Program>
 
         <Program src={matt.childImageSharp.fluid}>
           <h2>Matthew Maggio</h2>
           <h3>Guest hockey coach</h3>
           <p>
-            Guest coach Matthew Maggio will join us on ice. Matthew was
-            previously the Captain of the Windsor Spitfires and the OHL's
-            leading scorer in points and goals scored. He was drafted by the New
-            York Islanders in the 5th round of the 2022 NHL draft and is
-            currently playing for the Bridgeport Islanders in the AHL.
+            Guest coach Matthew Maggio will join us on ice. Matthew was previously the Captain of the Windsor Spitfires and the OHL's leading scorer in points and goals scored. He was drafted by the New York Islanders in the 5th round of the 2022 NHL draft and is currently playing for the Bridgeport Islanders in the AHL.          </p>
+        </Program>
+
+        <Program src={logan.childImageSharp.fluid} swap>
+          <h2>Logan Mailloux</h2>
+          <h3>Guest hockey coach</h3>
+          <p>
+            Logan is a defenseman currently playing for the Montreal Canadiens in the NHL. He was drafted by Montreal in the 1st round, 31st overall in the 2021 NHL Draft. He was previously an OHL All-Star for the London Knights and an AHL All-Star for the Laval Rocket before making his NHL debut at the end of the 2023 season.
           </p>
         </Program>
+
+        <p><em>Note: Guest Instructors schedules are subject to last minute changes. </em></p>
 
         {/* <Program src={ eddie.childImageSharp.fluid } swap>
                         <h2>Eddie Davey</h2>
@@ -396,7 +383,7 @@ export default function Programs({ data }) {
         <p>
           Each afternoon, campers get to take their pick from some amazing camp
           activities on 150 beautiful acres including: giant swing, trail rides,
-          rock climbing, bouldering, ninja climbing feature (NEW), water slide,
+          rock climbing, bouldering, water slide,
           swimming, water jousting, archery, tennis, basketball, volleyball, and
           more.
         </p>
@@ -437,23 +424,22 @@ export default function Programs({ data }) {
         <OvernightCampTerms />
         <JumpStart />
         <PriceContainer xl={3}>
-          
+
           <Price
             title="Hockey camp"
             subTitle="Skills & skating development for players and goalies of all ability levels, with a focus on enjoying the game."
             who="Players and goalies (co-ed)"
-            price={1315}
+            price={1395}
             term="week"
             includes={[
               "On-site, olympic-size ice rink",
-              "Minimum 7.5 hours on-ice per week",
+              "10.5 hours on-ice per week",
               "Skills development",
               "Skating development",
               "Full-ice scrimmages",
               "Fun-based off-ice program",
               "Jersey included",
-              "Breakfast, lunch & dinner",
-              "Snackbar",
+              "All meals",
               "All camp activities",
             ]}
           >
@@ -465,18 +451,17 @@ export default function Programs({ data }) {
             title="Girl's hockey camp"
             subTitle="A skills & skating development program with the same high-quality instruction just for girls."
             who="Players and goalies (female)"
-            price={1315}
+            price={1395}
             term="week"
             includes={[
               "On-site, olympic-size ice rink",
-              "Minimum 7.5 hours on-ice per week",
+              "10.5 hours on-ice per week",
               "Skills development",
               "Skating development",
               "Full-ice scrimmages",
               "Fun-based off-ice program",
               "Jersey included",
-              "Breakfast, lunch & dinner",
-              "Snackbar",
+              "All meals",
               "All camp activities",
             ]}
           >
@@ -487,8 +472,8 @@ export default function Programs({ data }) {
           <Price
             title={<>Elite hockey camp</>}
             subTitle="For high-performance players focused on advanced skills in skating, puck handling, shooting, and passing."
-            who="Rep-level players (co-ed)"
-            price={1645}
+            price={1315}
+            priceTo={1645}
             term="week"
             primary
             includes={[
@@ -512,7 +497,7 @@ export default function Programs({ data }) {
             title="Goalie camp"
             subTitle="Goalie specific training, with a focus on angles, technique, rebound-control, proper form, butterfly and much more."
             who="Goalies (co-ed)"
-            price={1645}
+            price={1315}
             term="week"
             includes={[
               <>
@@ -559,34 +544,6 @@ export default function Programs({ data }) {
             <CTAButton href="https://register.trmanager.com">
               Register now
             </CTAButton>
-          </Price><Price
-            title="Hawerchuk Strong Hockey Camp (Day Option)"
-            subTitle="An elite specialty camp run in partnership with MASH Hockey featuring current and ex NHL coaches as well as other current professionals, in support of the Hawerchuk Strong foundation.  "
-            who="A/AA/AAA Players & goalies (Male)"
-            price={1230}
-            term="week"
-            includes={[
-              <>
-                Everything in <strong>hockey camp</strong>, plus:
-              </>,
-              "Minimum 12.5 hours ice time",
-              "Run by MASH Hockey",
-              "Guest coaches include current NHLers, ex-NHLers, current Pros",
-              "High-intensity skills development",
-              "Power skating",
-              "Game-situation skills",
-              "Full-ice scrimmage",
-              "Functional fitness program - run by professional strength coaches",
-              "Visualization Training ",
-              "Hawerchuk Strong/MASH Hockey gift package included",
-              "Lunch",
-              "Snackbar",
-              "All camp activities",
-            ]}
-          >
-            <CTAButton href="https://register.trmanager.com">
-              Register now
-            </CTAButton>
           </Price>
         </PriceContainer>
       </Container>
@@ -599,7 +556,7 @@ export default function Programs({ data }) {
         <h2>Additional summer programs:</h2>
         <PriceAddon
           title="Summer drop-in ice time (9:00am - 10:30am)"
-          subTitle="Two-weeks only!"
+          subTitle="One week only!"
           description={
             <>
               Join in with our regular hockey program for 1.5 hours of ice time
@@ -750,6 +707,19 @@ export const query = graphql`
         }
       }
     }
+
+    logan: file(
+      relativePath: {
+        eq: "coaches/loganMailloux.jpg"
+      }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 1920, quality: 64) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+
 
     iceCorral: file(
       relativePath: { eq: "facilities/iceCorral/iceCorral1.jpg" }

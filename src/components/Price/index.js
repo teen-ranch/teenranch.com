@@ -11,6 +11,7 @@ export function Price({
   subTitle,
   who,
   price,
+  priceTo,
   term,
   includes,
   primary = false,
@@ -21,9 +22,8 @@ export function Price({
 }) {
   return (
     <section
-      className={`price__container ${
-        primary ? "price__container--primary" : ""
-      }`}
+      className={`price__container ${primary ? "price__container--primary" : ""
+        }`}
       style={{
         display: "flex",
         flexDirection: "column",
@@ -38,8 +38,10 @@ export function Price({
           <div className="price">
             {oneWeekOnly && <div className="startingAt">One week only!</div>}
             {startingAt && <div className="startingAt">Starting at</div>}
-            {startingAtSpace && <div className="startingAt">&nbsp;</div>}$
-            {new Intl.NumberFormat("en-US").format(price)}{" "}
+            {startingAtSpace && <div className="startingAt">&nbsp;</div>}
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem' }}>
+              ${new Intl.NumberFormat("en-US").format(price)}{priceTo && <> <sm style={{ fontSize: '14pt' }}>to</sm> ${new Intl.NumberFormat("en-US").format(priceTo)}</>}{" "}
+            </div>
             <span className="term">/{term}</span>
           </div>
         ) : (

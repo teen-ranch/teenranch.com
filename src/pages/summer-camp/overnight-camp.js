@@ -100,8 +100,7 @@ export default function Programs({ data }) {
 
         <h3>Weekly overview</h3>
         <p>
-          Summer overnight camps run Sunday evenings-Friday evenings. (August
-          5-9 week starts Monday)
+          Summer Overnight Camps will run Sunday evenings - Friday evenings (August 4-8 week starts Monday).
         </p>
         <ul>
           <li>
@@ -120,20 +119,21 @@ export default function Programs({ data }) {
           </li>
           <li>
             <strong>
-              Pick-up: Friday, <Time>1900</Time>
+              Pick-up: Friday, <Time>1830</Time>
             </strong>
           </li>
         </ul>
+        <p><em>Note: See info pack for more details.</em></p>
       </Container>
 
       <Container type="body">
         <h2>Info pack</h2>
-        <div style={{color:'red'}}>Check out our weekly camp themes and details in our camp info pack below:</div>
+        <div style={{ color: 'red' }}>Check out our weekly camp themes and details in our camp info pack below:</div>
         <div>
           <PdfButton
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.canva.com/design/DAGDKdD0AZM/B5d22jRawTZsCCB0GSNRBw/view?utm_content=DAGDKdD0AZM&utm_campaign=summer-camp&utm_medium=link&utm_source=teenranch.com"
+            href="https://www.canva.com/design/DAGU3k4-QpE/M2c_z_Zcd_ZTDW8ITuMyWw/view"
           >
             Overnight camp info pack
           </PdfButton>
@@ -174,8 +174,7 @@ export default function Programs({ data }) {
             src={horse.childImageSharp.fluid}
           >
             Horseback riding camps for beginner to advanced riders. Take your
-            pick from western, english, rodeo, or intensive (hunter/jumper
-            focused) camps.
+            pick from western, english, or rodeo camps.
             <br />
             <PrimaryButton to="/summer-camp/overnight-camp/horse-camps/">
               Learn more
@@ -233,7 +232,7 @@ export default function Programs({ data }) {
         <p>
           Each afternoon, campers get to take their pick from some amazing camp
           activities on 150 beautiful acres including: giant swing, trail rides,
-          rock climbing, bouldering, ninja climbing feature (NEW), water slide,
+          rock climbing, bouldering,  water slide,
           swimming, water jousting, archery, tennis, basketball, volleyball, and
           more.
         </p>
@@ -283,8 +282,8 @@ export default function Programs({ data }) {
             subTitle={`Skills & skating development for players and goalies from house-league to rep. Standard, high-performance, girl's hockey, and goalie camps.`}
             who="Players and goalies"
             price={1315}
+            priceTo={1775}
             term="week"
-            startingAt
             includes={[
               "On-site, olympic-size ice rink",
               "Minimum 7.5 hours on-ice per week",
@@ -293,8 +292,7 @@ export default function Programs({ data }) {
               "Full-ice scrimmages",
               "Fun-based off-ice program",
               "Jersey included",
-              "Breakfast, lunch & dinner",
-              "Snackbar",
+              "All meals",
               "All camp activities",
             ]}
           >
@@ -309,10 +307,10 @@ export default function Programs({ data }) {
           </Price>
           <Price
             title="Horse camps"
-            subTitle="Horseback riding camps for beginner to advanced riders. Take your pick from western, english, rodeo, or intensive (hunter/jumper focused) camps."
+            subTitle="Horseback riding camps for beginner to advanced riders. Take your pick from western, english, or rodeo camps."
             who="English & western riders"
-            price={1315}
-            startingAt
+            price={1065}
+            priceTo={1335}
             term="week"
             includes={[
               "Ability-based lessons",
@@ -321,8 +319,7 @@ export default function Programs({ data }) {
               "Safe, well-schooled horses",
               "Instructors trained to CHA standards",
               "First-aid certified full-time staff",
-              "Breakfast, lunch & dinner",
-              "Snackbar",
+              "All meals",
               "All camp activities",
             ]}
           >
@@ -351,8 +348,7 @@ export default function Programs({ data }) {
               "Canoeing",
               "Mountain biking",
               "Certified instructor",
-              "Breakfast, lunch & dinner",
-              "Snackbar",
+              "All meals",
             ]}
           >
             <center>
@@ -368,9 +364,9 @@ export default function Programs({ data }) {
             title="WHAM camp"
             subTitle="Epic activities like giant swing, horseback riding, rock climbing, woodland survival, initiatives course challenge, archery, waterslide, jousting pond, and so much more!"
             who="Kids who want to try everything"
-            price={1315}
+            price={1065}
+            priceTo={1335}
             term="week"
-            startingAt
             includes={[
               "Horseback riding",
               "Rock climbing & bouldering",
@@ -378,8 +374,7 @@ export default function Programs({ data }) {
               "Volleyball, basketball & soccer",
               "Archery",
               "Waterslide, jousting pond, canoes, kayaks",
-              "Breakfast, lunch & dinner",
-              "Snackbar",
+              "All meals",
               "All camp activities",
             ]}
           >
@@ -399,7 +394,7 @@ export default function Programs({ data }) {
         <h2>Additional summer programs:</h2>
         <PriceAddon
           title="Summer drop-in ice time (9:00am - 10:30am)"
-          subTitle="Two-weeks only!"
+          subTitle="One week only!"
           description={
             <>
               Join in with our regular hockey program for 1.5 hours of ice time

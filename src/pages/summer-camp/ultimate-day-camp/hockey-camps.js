@@ -108,7 +108,7 @@ export default function Programs({ data }) {
           <PdfButton
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.canva.com/design/DAGFJIcYvyU/1HdTdbLNfDu487m1nvWzEg/view?utm_content=DAGFJIcYvyU&utm_campaign=summer-camp&utm_medium=link&utm_source=teenranch.com"
+            href="https://www.canva.com/design/DAGU44ENrkk/0p3yyCAVgJDGmLX3UHjWaQ/view"
           >
             Ultimate day camp / junior day camp info pack
           </PdfButton>
@@ -316,7 +316,7 @@ export default function Programs({ data }) {
         <p>
           Each afternoon, campers get to take their pick from some amazing camp
           activities on 150 beautiful acres including: giant swing, trail rides,
-          rock climbing, bouldering, ninja climbing feature (NEW), water slide,
+          rock climbing, bouldering,  water slide,
           swimming, water jousting, archery, tennis, basketball, volleyball, and
           more.
         </p>
@@ -369,7 +369,8 @@ export default function Programs({ data }) {
             title="Hockey day camp"
             subTitle="Skills & skating development for players and goalies of all ability levels, with a focus on enjoying the game."
             who="Players and goalies (co-ed)"
-            price={895}
+            price={425}
+            priceTo={895}
             term="week"
             includes={[
               "On-site, olympic-size ice rink",
@@ -379,8 +380,7 @@ export default function Programs({ data }) {
               "Full-ice scrimmages",
               "Fun-based off-ice program",
               "Jersey included",
-              "Lunch & morning snack",
-              "Snackbar",
+              "Lunch",
               "All camp activities",
             ]}
           >
@@ -445,7 +445,7 @@ export default function Programs({ data }) {
         <h2>Additional summer programs:</h2>
         <PriceAddon
           title="Summer drop-in ice time (9:00am - 10:30am)"
-          subTitle="Two-weeks only!"
+          subTitle="One week only!"
           description={
             <>
               Join in with our regular hockey program for 1.5 hours of ice time

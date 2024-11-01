@@ -17,10 +17,9 @@ export default function CampSchedule({
 
   async function getCapacity() {
     const res = await fetch(
-      `${
-        process.env.NODE_ENV === "developments"
-          ? "http://localhost:4000"
-          : "https://api.teenranch.com"
+      `${process.env.NODE_ENV === "developments"
+        ? "http://localhost:4000"
+        : "https://api.teenranch.com"
       }/capacities`
     ).then(res => res.json())
 
@@ -53,9 +52,8 @@ export default function CampSchedule({
             return (
               <div
                 key={i}
-                className={`schedule__dateDiscount ${
-                  isDiscount ? `schedule__dateDiscount--discounted` : ""
-                }`}
+                className={`schedule__dateDiscount ${isDiscount ? `schedule__dateDiscount--discounted` : ""
+                  }`}
               >
                 {isDiscount ? <div>Discounted</div> : <>&nbsp;</>}
               </div>
@@ -76,35 +74,30 @@ export default function CampSchedule({
             return (
               <div
                 key={i}
-                className={`schedule__date ${
-                  isDiscount ? "schedule__date--discount" : ""
-                } ${
-                  isPreviousDiscount ? "schedule__date--discountPrevious" : ""
-                } ${
-                  weeks && weeks[i] === "UDC"
+                className={`schedule__date ${isDiscount ? "schedule__date--discount" : ""
+                  } ${isPreviousDiscount ? "schedule__date--discountPrevious" : ""
+                  } ${weeks && weeks[i] === "UDC"
                     ? `schedule__date--UDC`
                     : weeks && weeks[i] === "ONC"
-                    ? "schedule__date--ONC"
-                    : ""
-                } ${
-                  weeks && type && weeks[i] !== type
+                      ? "schedule__date--ONC"
+                      : ""
+                  } ${weeks && type && weeks[i] !== type
                     ? "schedule__date--secondary"
                     : ""
-                }`}
+                  }`}
               >
                 <div>
                   <div className="schedule__dateHeading">{date}</div>
                   {weeks && (
                     <div
-                      className={`${
-                        weeks && type && weeks[i] !== type
-                          ? "schedule__date--secondary"
-                          : weeks[i] === "UDC"
+                      className={`${weeks && type && weeks[i] !== type
+                        ? "schedule__date--secondary"
+                        : weeks[i] === "UDC"
                           ? "schedule__dateColor--UDC"
                           : weeks[i] === "ONC"
-                          ? "schedule__dateColor--ONC"
-                          : ""
-                      }`}
+                            ? "schedule__dateColor--ONC"
+                            : ""
+                        }`}
                     >
                       {weeks[i]}
                     </div>
@@ -152,8 +145,8 @@ export default function CampSchedule({
                 const capacityPercentage = Math.round(
                   programCapacity
                     ? (programCapacity.currentCapacity /
-                        programCapacity.capacity) *
-                        100
+                      programCapacity.capacity) *
+                    100
                     : 0
                 )
 
@@ -175,36 +168,31 @@ export default function CampSchedule({
                     style={{
                       ...(spotsleft === 0 && { color: "gray" }),
                     }}
-                    className={`schedule__programDate ${
-                      isDiscount ? "schedule__date--discount" : ""
-                    }  ${
-                      isPreviousDiscount
+                    className={`schedule__programDate ${isDiscount ? "schedule__date--discount" : ""
+                      }  ${isPreviousDiscount
                         ? "schedule__date--discountPrevious"
                         : ""
-                    } ${
-                      isLastProgram && isDiscount
+                      } ${isLastProgram && isDiscount
                         ? `schedule__date--discountLast`
                         : ""
-                    } ${
-                      ["UDC", "ONC", "NO CAMP", "TBD"].includes(ages)
+                      } ${["UDC", "ONC", "NO CAMP", "TBD"].includes(ages)
                         ? "schedule__programDate--otherCamp"
                         : ages
-                        ? weeks && type && weeks[i] !== type
-                          ? "schedule__programDate--secondary"
-                          : ""
-                        : "schedule__programDate--blank"
-                    } ${
-                      weeks && weeks[i] === "UDC"
+                          ? weeks && type && weeks[i] !== type
+                            ? "schedule__programDate--secondary"
+                            : ""
+                          : "schedule__programDate--blank"
+                      } ${weeks && weeks[i] === "UDC"
                         ? "schedule__programDate--UDC"
                         : weeks && weeks[i] === "ONC"
-                        ? "schedule__programDate--ONC"
-                        : ""
-                    }`}
-                    // style={{
-                    //   ...(weeks && {
-                    //     color: weeks[i] === "UDC" ? "green" : "blue",
-                    //   }),
-                    // }}
+                          ? "schedule__programDate--ONC"
+                          : ""
+                      }`}
+                  // style={{
+                  //   ...(weeks && {
+                  //     color: weeks[i] === "UDC" ? "green" : "blue",
+                  //   }),
+                  // }}
                   >
                     <div>
                       {" "}
@@ -216,8 +204,8 @@ export default function CampSchedule({
                       {["UDC", "ONC", "NO CAMP", "TBD"].includes(ages)
                         ? ages
                         : ages
-                        ? `Age: `
-                        : ""}
+                          ? `Age: `
+                          : ""}
                       {!["UDC", "ONC", "NO CAMP", "TBD"].includes(ages) && ages}
                       {ages && capacityPercentage >= 80 ? (
                         <div
@@ -266,18 +254,16 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
             <button
               type="button"
               onClick={() => setType("ONC")}
-              className={`scheduleFilterButton scheduleFilterButton-ONC ${
-                type === "ONC" ? "scheduleFilterButton--selected" : ""
-              }`}
+              className={`scheduleFilterButton scheduleFilterButton-ONC ${type === "ONC" ? "scheduleFilterButton--selected" : ""
+                }`}
             >
               Overnight camps
             </button>
             <button
               type="button"
               onClick={() => setType("UDC")}
-              className={`scheduleFilterButton scheduleFilterButton-UDC ${
-                type === "UDC" ? "scheduleFilterButton--selected" : ""
-              }`}
+              className={`scheduleFilterButton scheduleFilterButton-UDC ${type === "UDC" ? "scheduleFilterButton--selected" : ""
+                }`}
             >
               Ultimate day camps
             </button>
@@ -292,11 +278,11 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
         </>
       )}
       <div style={{ padding: "1rem 0", color: "red", fontSize: "1.4rem" }}>
-        <strong>Discounted weeks:</strong> 
-        <ul><li>(July 2-5) Due to Canada Day (July 1), camp will start on Tuesday.</li>
-        <li>(August 5 - 9) Due to the Civic
-        Holiday on August 5th, overnight camp will start on Monday, junior day
-        camp will start on Tuesday.</li>
+        <strong>Discounted weeks:</strong>
+        <ul><li>(July 2-4) Due to Canada Day (July 1), camp will start on Wednesday.</li>
+          <li>(August 4-8) Due to the Civic
+            Holiday on August 3rd, overnight camp will start on Monday, junior day
+            camp will start on Tuesday.</li>
         </ul>
       </div>
       <CampSchedule
@@ -314,210 +300,190 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
           false,
         ]}
         dates={[
-          <>July 2-5</>,
-          <>July 7-12</>,
-          <>July 14-19</>,
-          <>July 21-26</>,
-          <>July 28 - Aug. 2</>,
-          <>Aug. 5-9</>,
-          <>Aug. 11-16</>,
-          <>Aug. 19-23</>,
-          <>Aug. 26-30</>,
+          <>July 2-4</>,
+          <>July 6-11</>,
+          <>July 13-18</>,
+          <>July 20-25</>,
+          <>July 27 - Aug. 1</>,
+          <>Aug. 4-8</>,
+          <>Aug. 10-15</>,
+          <>Aug. 18-22</>,
+          <>Aug. 25-29</>,
         ]}
         programs={[
           ...(!sections || sections.includes("hockey")
             ? [
-                {
-                  name: "Hockey Camp",
-                  dates: [
-                    null,
-                    null,
-                    "10-14",
-                    "10-14",
-                    null,
-                    null,
-                    "13-16",
-                    "8-12",
-                    "10-13",
-                  ],
-                  ids: [2, 63],
-                },
-                {
-                  ids: [59, 64],
-                  name: "Elite Hockey Camp",
-                  dates: [
-                    null,
-                    null,
-                    null,
-                    null,
-                    null,
-                    <>
-                      8-11
-                      <br />
-                      AA/AAA
-                    </>,
-                    <>
-                      13-16
-                      <br />
-                      All levels
-                    </>,
-                    <>
-                      8-12
-                      <br />
-                      AA/AAA
-                    </>,
-                    null,
-                  ],
-                },
-                {
-                  name: "Hawerchuk Strong Hockey",
-                  dates: [
-                    null,
-                    null,
-                    null,
-                    "13-16",
-                    "9-12",
-                    null,
-                    null,
-                    null,
-                    "",
-                  ],
-                  ids: [1000002],
-                },
-                {
-                  name: "Hawerchuck Strong Hockey (Day Option)",
-                  dates: [
-                    null,
-                    null,
-                    null,
-                    "13-16",
-                    "9-12",
-                    null,
-                    null,
-                    null,
-                    null,
-                  ],
-                  ids: [1000003],
-                },
-                {
-                  ids: [3],
-                  name: "Girl's Hockey Camp",
-                  dates: [
-                    null,
-                    null,
-                    "10-14",
-                    null,
-                    null,
-                    null,
-                    null,
-                    null,
-                    "",
-                  ],
-                },
-                {
-                  ids: [4],
-                  name: "Goalie Camp",
-                  dates: [null, null, null, null, null, "8-13", null, null, ""],
-                },
-                {
-                  ids: [74],
-                  name: "Summer Drop-in Ice Time (Regular Hockey)",
-                  dates: [
-                    null,
-                    null,
-                    null,
-                    null,
-                    null,
-                    null,
-                    null,
-                    "8-12",
-                    "10-13",
-                  ],
-                },
-              ]
+              {
+                name: "Hockey Camp",
+                dates: [
+                  "8-12",
+                  "5-8 (UDC)",
+                  "10-14",
+                  "9-14",
+                  null,
+                  null,
+                  "13-16",
+                  "8-13",
+                  null,
+                ],
+                ids: [2, 63],
+              },
+              {
+                ids: [59, 64],
+                name: "Elite Hockey Camp",
+                dates: [
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  <>
+                    8-12
+                  </>,
+                  <>
+                    13-16
+                  </>,
+                  <>
+                    8-12
+                  </>,
+                  null,
+                ],
+              },
+              {
+                name: "Hawerchuk Strong Hockey",
+                dates: [
+                  null,
+                  null,
+                  null,
+                  null,
+                  "9-14",
+                  null,
+                  null,
+                  null,
+                  "",
+                ],
+                ids: [1000002],
+              },
+              {
+                ids: [3],
+                name: "Girl's Hockey Camp",
+                dates: [
+                  null,
+                  "8-10",
+                  "10-14",
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  "",
+                ],
+              },
+              {
+                ids: [4],
+                name: "Goalie Camp",
+                dates: [null, null, null, null, null, "8-13", null, null, null],
+              },
+              {
+                ids: [74],
+                name: "Summer Drop-in Ice Time (Regular Hockey)",
+                dates: [
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  "8-13",
+                  null,
+                ],
+              },
+            ]
             : []),
           ...(!sections || sections.includes("horses")
             ? [
-                {
-                  ids: [8, 67],
-                  name: "Western Riding Camp",
-                  dates: [
-                    "8-12",
-                    "8-12",
-                    "10-14",
-                    "10-14",
-                    "8-12",
-                    "8-12",
-                    "13-16",
-                    "8-12",
-                    "8-12",
-                  ],
-                },
-                {
-                  ids: [7, 68],
-                  name: "English Riding Camp",
-                  dates: [
-                    "8-12",
-                    "8-12",
-                    "10-14",
-                    "10-14",
-                    "8-12",
-                    "8-12",
-                    "13-16",
-                    "8-12",
-                    "8-12",
-                  ],
-                },
-                {
-                  ids: [27],
-                  name: "Rodeo Camp",
-                  dates: [
-                    null,
-                    null,
-                    null,
-                    null,
-                    null,
-                    null,
-                    "13-16",
-                    null,
-                    "",
-                  ],
-                },
-                {
-                  ids: [9],
-                  name: "Intensive Equestrian Camp",
-                  dates: [
-                    null,
-                    null,
-                    null,
-                    "12-15",
-                    null,
-                    null,
-                    null,
-                    null,
-                    "",
-                  ],
-                },
-              ]
+              {
+                ids: [8, 67],
+                name: "Western Riding Camp",
+                dates: [
+                  "8-12",
+                  "8-12",
+                  "10-14",
+                  "10-14",
+                  "10-14",
+                  "8-12",
+                  "13-16",
+                  "8-12",
+                  "8-12",
+                ],
+              },
+              {
+                ids: [7, 68],
+                name: "English Riding Camp",
+                dates: [
+                  "8-12",
+                  "8-12",
+                  "10-14",
+                  "10-14",
+                  "10-14",
+                  "8-12",
+                  "13-16",
+                  "8-12",
+                  "8-12",
+
+                ],
+              },
+              {
+                ids: [27],
+                name: "Rodeo Camp",
+                dates: [
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  "13-16",
+                  null,
+                  null,
+                ],
+              },
+              // {
+              //   ids: [9],
+              //   name: "Intensive Equestrian Camp",
+              //   dates: [
+              //     null,
+              //     null,
+              //     null,
+              //     "12-15",
+              //     null,
+              //     null,
+              //     null,
+              //     null,
+              //     "",
+              //   ],
+              // },
+            ]
             : []),
           ...(!sections || sections.includes("wham")
             ? [
-                {
-                  ids: [70, 73],
-                  name: "WHAM Camp",
-                  dates: [
-                    "8-12",
-                    "8-12",
-                    "10-14",
-                    "10-14",
-                    "8-12",
-                    "8-12",
-                    "13-16",
-                    "8-12",
-                    "8-12",
-                  ],
-                },
-              ]
+              {
+                ids: [70, 73],
+                name: "WHAM Camp",
+                dates: [
+                  "8-12",
+                  "8-12",
+                  "10-14",
+                  "10-14",
+                  "10-14",
+                  "8-12",
+                  "13-16",
+                  "8-12",
+                  "8-12",
+                ],
+              },
+            ]
             : []),
           // ...(!sections || sections.includes("adventure")
           //   ? [
@@ -530,22 +496,22 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
           //   : []),
           ...(!sections || sections.includes("junior")
             ? [
-                {
-                  ids: [15],
-                  name: "Junior Day Camp",
-                  dates: [
-                    "5-7",
-                    "5-7",
-                    "5-7",
-                    "5-7",
-                    "5-7",
-                    "5-7",
-                    "5-7",
-                    "5-7",
-                    "5-7",
-                  ],
-                },
-              ]
+              {
+                ids: [15],
+                name: "Junior Day Camp",
+                dates: [
+                  "5-7",
+                  "5-7",
+                  "5-7",
+                  "5-7",
+                  "5-7",
+                  "5-7",
+                  "5-7",
+                  "5-7",
+                  "5-7",
+                ],
+              },
+            ]
             : []),
         ]}
       />

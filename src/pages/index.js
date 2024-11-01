@@ -18,7 +18,10 @@ export default function Index({ data }) {
       <Heading
         src={data.hockey.childImageSharp.fluid}
         alt="Summer camp"
-        title={"Don't miss out on the best week of your life!"}
+        // title={"Don't miss out on the best week of your life!"}
+        title={
+          <img src="/adventureAwaits2025.png" alt="Adventure Awaits 2025" />
+        }
         // title={`Check back soon! Summer Camp 2024 info and registration will be available November 1st.`}
         subtitle={
           // <>
@@ -34,108 +37,108 @@ export default function Index({ data }) {
         metaDescription={`Overnight & Ultimate Day Camps`}
       >
         <CTAButton to="/summer-camp/">
-          Learn more about Summer Camp 2024
+          Learn more about Summer Camp 2025
         </CTAButton>
         <h2 style={{ marginTop: "-3rem" }}>
           <p>Registration is now open!</p>
         </h2>
 
-        <div id="mc_embed_signup">
-          <form
-            action="https://teenranch.us2.list-manage.com/subscribe/post?u=93bbc7a16b1a2719f9690a8b0&amp;id=41cfb19836"
-            method="post"
-            id="mc-embedded-subscribe-form"
-            name="mc-embedded-subscribe-form"
-            className="validate"
-            target="_blank"
-            noValidate
-          >
-            <input type="hidden" name="tags" value="405" />
-            <div id="mc_embed_signup_scroll">
-              <h2 style={{ marginTop: "8rem" }}>
-                Enter your email address so you don't miss out on any details!
-              </h2>
-
-              <div
-                style={{ position: "absolute", left: "-5000px" }}
-                aria-hidden="true"
-              >
-                <input
-                  type="text"
-                  name="b_93bbc7a16b1a2719f9690a8b0_41cfb19836"
-                  tabIndex="-1"
-                  defaultValue=""
-                />
-              </div>
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                }}
-              >
-                <input
-                  type="email"
-                  name="EMAIL"
-                  className="email"
-                  id="mce-EMAIL"
-                  placeholder="Your email address"
-                  required
-                  style={{
-                    margin: "1rem 0",
-                    borderRadius: "4px 0 0 4px",
-                    outline: "none",
-                    appearance: "none",
-                    border: "none",
-                    padding: "1rem",
-                  }}
-                />
-                <div className="clear">
-                  <input
-                    type="submit"
-                    defaultValue="Notify me"
-                    name="subscribe"
-                    id="mc-embedded-subscribe"
-                    className="button"
-                    style={{
-                      borderRadius: "0 4px 4px 0",
-                    }}
-                  />
-                </div>
-              </div>
-              <div
-                style={{
-                  textAlign: "center",
-                  color: "rgba(204, 204, 204, 0.95)",
-                  fontSize: "1.1rem",
-                }}
-              >
-                We don't like spam either :)
-              </div>
-            </div>
-          </form>
-          {/* <div
-            style={{
-              textAlign: "center",
-              color: "white",
-              marginTop: "4rem",
-            }}
-          >
-            <p>
-              For ages 8 - 16, choose Overnight or Ultimate Day Camp programs
-              available on select weeks, including:
-            </p>
-            Hockey, Girl's Hockey, Goalie, Elite hockey
-            <br />
-            English, Western, Rodeo, & Intensive Equestrian
-            <br />
-            WHAM & Adventure
-            <p>Junior Day Camp (ages 5-7)</p>
-            <p>
-              Details and Registration will be available on our website January
-              19, 2022
-            </p>
-          </div> */}
-        </div>
+        {/* <div id="mc_embed_signup"> */}
+        {/*   <form */}
+        {/*     action="https://teenranch.us2.list-manage.com/subscribe/post?u=93bbc7a16b1a2719f9690a8b0&amp;id=41cfb19836" */}
+        {/*     method="post" */}
+        {/*     id="mc-embedded-subscribe-form" */}
+        {/*     name="mc-embedded-subscribe-form" */}
+        {/*     className="validate" */}
+        {/*     target="_blank" */}
+        {/*     noValidate */}
+        {/*   > */}
+        {/*     <input type="hidden" name="tags" value="405" /> */}
+        {/*     <div id="mc_embed_signup_scroll"> */}
+        {/*       <h2 style={{ marginTop: "8rem" }}> */}
+        {/*         Enter your email address so you don't miss out on any details! */}
+        {/*       </h2> */}
+        {/**/}
+        {/*       <div */}
+        {/*         style={{ position: "absolute", left: "-5000px" }} */}
+        {/*         aria-hidden="true" */}
+        {/*       > */}
+        {/*         <input */}
+        {/*           type="text" */}
+        {/*           name="b_93bbc7a16b1a2719f9690a8b0_41cfb19836" */}
+        {/*           tabIndex="-1" */}
+        {/*           defaultValue="" */}
+        {/*         /> */}
+        {/*       </div> */}
+        {/*       <div */}
+        {/*         style={{ */}
+        {/*           display: "flex", */}
+        {/*           justifyContent: "center", */}
+        {/*         }} */}
+        {/*       > */}
+        {/*         <input */}
+        {/*           type="email" */}
+        {/*           name="EMAIL" */}
+        {/*           className="email" */}
+        {/*           id="mce-EMAIL" */}
+        {/*           placeholder="Your email address" */}
+        {/*           required */}
+        {/*           style={{ */}
+        {/*             margin: "1rem 0", */}
+        {/*             borderRadius: "4px 0 0 4px", */}
+        {/*             outline: "none", */}
+        {/*             appearance: "none", */}
+        {/*             border: "none", */}
+        {/*             padding: "1rem", */}
+        {/*           }} */}
+        {/*         /> */}
+        {/*         <div className="clear"> */}
+        {/*           <input */}
+        {/*             type="submit" */}
+        {/*             defaultValue="Notify me" */}
+        {/*             name="subscribe" */}
+        {/*             id="mc-embedded-subscribe" */}
+        {/*             className="button" */}
+        {/*             style={{ */}
+        {/*               borderRadius: "0 4px 4px 0", */}
+        {/*             }} */}
+        {/*           /> */}
+        {/*         </div> */}
+        {/*       </div> */}
+        {/*       <div */}
+        {/*         style={{ */}
+        {/*           textAlign: "center", */}
+        {/*           color: "rgba(204, 204, 204, 0.95)", */}
+        {/*           fontSize: "1.1rem", */}
+        {/*         }} */}
+        {/*       > */}
+        {/*         We don't like spam either :) */}
+        {/*       </div> */}
+        {/*     </div> */}
+        {/*   </form> */}
+        {/*   {/* <div */}
+        {/*     style={{ */}
+        {/*       textAlign: "center", */}
+        {/*       color: "white", */}
+        {/*       marginTop: "4rem", */}
+        {/*     }} */}
+        {/*   > */}
+        {/*     <p> */}
+        {/*       For ages 8 - 16, choose Overnight or Ultimate Day Camp programs */}
+        {/*       available on select weeks, including: */}
+        {/*     </p> */}
+        {/*     Hockey, Girl's Hockey, Goalie, Elite hockey */}
+        {/*     <br /> */}
+        {/*     English, Western, Rodeo, & Intensive Equestrian */}
+        {/*     <br /> */}
+        {/*     WHAM & Adventure */}
+        {/*     <p>Junior Day Camp (ages 5-7)</p> */}
+        {/*     <p> */}
+        {/*       Details and Registration will be available on our website January */}
+        {/*       19, 2022 */}
+        {/*     </p> */}
+        {/*   </div> */} }
+        {/* </div> */}
       </Heading>
 
       {/* <Heading
@@ -259,19 +262,19 @@ export default function Index({ data }) {
           <Button to="/families/father-son-hockey-weekend/">Learn more</Button>
         </Program> */}
 
-        <div
-          style={{ maxWidth: "960px", margin: "0 auto", textAlign: "center" }}
-        >
-          <Button
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://teenranch.nyc3.digitaloceanspaces.com/website/assets/FallHockeyPrograms-1.png"
-          >
-            2023/2024 Hockey & Skating Programs At-a-Glance
-          </Button>
-        </div>
+        {/* <div */}
+        {/*   style={{ maxWidth: "960px", margin: "0 auto", textAlign: "center" }} */}
+        {/* > */}
+        {/*   <Button */}
+        {/*     target="_blank" */}
+        {/*     rel="noopener noreferrer" */}
+        {/*     href="https://teenranch.nyc3.digitaloceanspaces.com/website/assets/FallHockeyPrograms-1.png" */}
+        {/*   > */}
+        {/*     2023/2024 Hockey & Skating Programs At-a-Glance */}
+        {/*   </Button> */}
+        {/* </div> */}
 
-          {/* <RinkClosed/> */}
+        {/* <RinkClosed/> */}
         {/* <div style={{ maxWidth: "960px", margin: "0 auto" }}>
           <Card>
             <Img src="https://teenranch.nyc3.digitaloceanspaces.com/website/assets/FallHockeyPrograms-1.png" />

@@ -88,7 +88,7 @@ export default function Default({ data }) {
             </p>
             <p>Make this your family christmas tree outing!</p>
             <h2>When is it?</h2>
-            Saturday, December 7, 2025: <Time>1130</Time> - <Time>1500</Time>.
+            Saturday, December 7, 2024: <Time>1130</Time> - <Time>1500</Time>.
             Open to all ages
             <h2>Cost</h2>
             <strong>
@@ -98,7 +98,7 @@ export default function Default({ data }) {
               <PrimaryButton
                 target="_blank"
                 rel="noopener noreferrer"
-                href={`https://forms.zohopublic.com/teenranch1/form/ChristmasattheRanch2025/formperma/Ifag5DRl4fugJ5ebOYgJJHexd-iMpH_X0djXXBEMVvA?referrername=teenranch.com`}
+                href={`https://zfrmz.com/6ioB2cTxo4xf1bucBToT?referrername=teenranch.com`}
               >
                 Register now
               </PrimaryButton>

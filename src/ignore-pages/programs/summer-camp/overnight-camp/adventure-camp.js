@@ -137,7 +137,7 @@ export default function Programs({ data }) {
           <PdfButton
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.canva.com/design/DAFUvmaHLP8/FV-_FiDK8D1ICxRnW64zcQ/view"
+            href="https://www.canva.com/design/DAGU3k4-QpE/M2c_z_Zcd_ZTDW8ITuMyWw/view"
           >
             Overnight camp info pack
           </PdfButton>
@@ -241,8 +241,7 @@ export default function Programs({ data }) {
               "Canoeing",
               "Mountain biking",
               "Certified instructor",
-              "Breakfast, lunch & dinner",
-              "Snackbar",
+              "All meals",
             ]}
           >
             <CTAButton href="https://register.trmanager.com">
