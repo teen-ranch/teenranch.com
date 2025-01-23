@@ -337,12 +337,6 @@ export default function Default({ data }) {
 							<li>2'3" / 2'6" / 2'9" Hi/Low Hunters</li>
 							<li>0.6m / 0.75m / 0.9m Jumper Division</li>
 						</ul>
-						<small>
-							<i>
-								Jumper division will begin at the completion of the Hi/Low
-								Division. (Start time not before 1:00pm){" "}
-							</i>
-						</small>
 					</Card>
 				</div>
 				<Button
