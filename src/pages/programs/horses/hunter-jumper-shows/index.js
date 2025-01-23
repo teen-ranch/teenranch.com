@@ -662,7 +662,7 @@ export default function Default({ data }) {
 				<Button
 					target="_blank"
 					//   href="https://forms.zohopublic.com/teenranch1/form/HorseShowSponsorshipPackage/formperma/F0i3DDm5ylIGPkS4c7JDnMr8oB1UxmOqi-DVzhjNkuM"
-					href="https://teenranch.nyc3.cdn.digitaloceanspaces.com/website/pdf/hunterJumper_sponsorshipPackage_2024.pdf"
+					href="https://assets.teenranch.com/hunterJumperSponsorshipPackage_2025.pdf"
 				>
 					I want to sponsor
 				</Button>
