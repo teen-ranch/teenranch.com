@@ -69,12 +69,14 @@ export default function Default({ data }) {
 			<div id="top" style={{ position: "absolute", marginTop: "-120px" }} />
 
 			<div
+				className="sponsorBar"
 				style={{
-					display: "flex",
 					justifyContent: "center",
 					gap: "6rem",
 					padding: "2rem 0",
 					borderBottom: "1px solid #efefef",
+					overflowX: "auto",
+					maxWidth: "100%",
 				}}
 			>
 				{eliteSponsors?.edges?.map((edge, i) => {
@@ -84,7 +86,6 @@ export default function Default({ data }) {
 							fixed={edge.node.childImageSharp.fixed}
 							alt={edge.node.name}
 							objectFit="cover"
-							style={{}}
 						/>
 					);
 				})}
@@ -312,7 +313,6 @@ export default function Default({ data }) {
 							</i>
 						</small>
 						<ul>
-							<li>Novice Hack Division</li>
 							<li>2' / 2'3" Green Hunters</li>
 							<li>Novice Equitation Development - $ Added</li>
 							<li>1'9" Novice Hunters</li>
@@ -343,15 +343,6 @@ export default function Default({ data }) {
 								Division. (Start time not before 1:00pm){" "}
 							</i>
 						</small>
-						<ul>
-							<li>
-								Jumper Division -{" "}
-								<em style={{ fontSize: "13px" }}>
-									Open to all. Choose .6m, .75m OR .9m. All heights are judged
-									together.
-								</em>
-							</li>
-						</ul>
 					</Card>
 				</div>
 				<Button
@@ -368,7 +359,7 @@ export default function Default({ data }) {
 						Per Division fee: $100 +HST (division fee includes a warm-up round)
 					</li>
 					<li>Back number fee: $10 +HST</li>
-					<li>Admin fee: $50 +HST</li>
+					<li>Admin fee: $20 +HST</li>
 				</ul>
 				<h3>Schooling Ring Rental</h3>
 				<div>
@@ -383,6 +374,10 @@ export default function Default({ data }) {
 					style={{ position: "absolute", marginTop: "-180px" }}
 				/>
 				<h2>Year-end awards 2025</h2>
+				<div style={{ color: "red" }}>
+					Note: 2025 details will be updated once sponsors are confirmed.
+				</div>
+
 				<Card style={{ padding: "2rem" }}>
 					<ul>
 						<li>Plan for Year End Celebration TBD.</li>
