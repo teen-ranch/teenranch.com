@@ -37,7 +37,7 @@ const pageData = {
 
 const eventData = {
 	title: frontmatter.title,
-	description: `Less than an hour from Toronto and located in the beautiful Caledon Hills, Teen Ranch is thrilled to offer you winter outdoor activities to help celebrate your family. Enjoy playing, laughing, and making lasting memories together. `,
+	description: `Less than an hour from Toronto and located in the beautiful Caledon Hills, Teen Ranch is thrilled to offer you a winter activity to help celebrate your family. Enjoy indoor skating and making lasting memories together. Our Snackbar is open with hot dogs, fries, treats, and drinks available for sale.`,
 	venue: {
 		name: "Teen Ranch",
 		address: {
