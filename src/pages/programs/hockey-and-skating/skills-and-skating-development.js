@@ -7,6 +7,7 @@ import { Link } from "gatsby";
 import { RinkClosed } from "components/RinkClosed";
 import { Time } from "components/Time";
 import Card, { CardPadding } from "components/Card";
+import { Terms_HockeyAndSkating } from "components/Terms";
 
 export default function Default() {
 	return (
@@ -217,6 +218,7 @@ export default function Default() {
 					</Card>
 				</div>{" "}
 				<Button href="https://register.trmanager.com">Book now</Button>
+				<Terms_HockeyAndSkating />
 				{/* </Program> */}
 			</Container>
 		</>

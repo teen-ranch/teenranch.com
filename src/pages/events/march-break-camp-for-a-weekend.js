@@ -17,6 +17,7 @@ import Event from "components/Event";
 
 import { Time } from "components/Time";
 import { Price, PriceContainer } from "components/Price";
+import Terms, { Terms_CFAW } from "components/Terms";
 
 const frontmatter = {
 	title: "March Break Camp for a Weekend",
@@ -176,6 +177,7 @@ export default function Default({ data }) {
 			<Container>
 				<h1>Upcoming events</h1>
 				{events}
+				<Terms_CFAW />
 			</Container>
 		</>
 	);

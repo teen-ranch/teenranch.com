@@ -4,6 +4,7 @@ import Heading from "components/Heading";
 import Button from "components/Button";
 import Program from "components/Program";
 import { Time } from "components/Time";
+import { Terms_HockeyAndSkating } from "components/Terms";
 
 export default function Default() {
 	return (
@@ -393,6 +394,7 @@ export default function Default() {
                         </tbody>
                     </table>
                 </div> */}
+				<Terms_HockeyAndSkating />
 			</Container>
 		</>
 	);
