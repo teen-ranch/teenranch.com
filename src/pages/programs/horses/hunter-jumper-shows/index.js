@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Container from "components/Container";
 import Heading from "components/Heading";
 import Button from "components/Button";
@@ -14,10 +14,12 @@ import SubNav from "components/SubNav";
 import { Link } from "react-scroll";
 import Card from "components/Card";
 import { Time } from "components/Time";
+import { useInterval } from "hooks/useInterval";
 
 export default function Default({ data }) {
 	const {
 		banner,
+		banners,
 		main,
 		image1,
 		image2,
@@ -32,10 +34,21 @@ export default function Default({ data }) {
 		photographers,
 	} = data;
 
+	// const [bannerIndex, setBannerIndex] = useState(0);
+	const bannerIndex = 1;
+
+	/* useInterval(() => {
+		if (bannerIndex < banners.edges.length - 1) {
+			setBannerIndex(bannerIndex + 1);
+		} else {
+			setBannerIndex(0);
+		}
+	}, [5000]) */
+
 	return (
 		<>
 			<Heading
-				src={banner.childImageSharp.fluid}
+				src={banners.edges[bannerIndex].node.childImageSharp.fluid}
 				alt="Rider and horse jumping at Teen Ranch"
 				title="Celebrating 40 Years"
 				subtitle="Professional hunter/jumper courses and divisions for first-time competitors to those schooling before Gold Shows."
@@ -843,6 +856,20 @@ export const query = graphql`
       }
     }
 
+    banners: allFile(
+      filter: { relativeDirectory: { eq: "hunter-jumper/banners" } }
+    ) {
+			edges {
+			  node {
+					name
+          childImageSharp {
+            fluid(maxWidth: 1920, quality: 64) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+      }
+    }
     image1: file(relativePath: { eq: "hunter-jumper/CUTIE PATUTIE.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1920, quality: 64) {
