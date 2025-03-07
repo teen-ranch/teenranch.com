@@ -61,43 +61,24 @@ export default function Default({ data }) {
 								</tr>
 							</thead>
 							<tbody>
-								<tr style={{ color: `rgba(0,0,0,0.5)` }}>
+								<tr>
 									<td>(A) Summer session</td>
 									<td>
-										<strong>Thursdays:</strong> July 11, 2024 - August 29, 2024
+										<strong>Thursdays:</strong> July 10, 2025 - August 28, 2025
+										<br />
 										(8 sessions)
 									</td>
 									<td>
 										<Time>1230</Time> - <Time>1400</Time>
+										<br />(<strong>Aug. 28:</strong> <Time>1200</Time> -{" "}
+										<Time>1330</Time>)
 									</td>
 								</tr>
-								<tr style={{ color: `rgba(0,0,0,0.5)` }}>
+								<tr>
 									<td>(B) Summer session</td>
 									<td>
-										<strong>Tuesdays:</strong> July 23, 2024 - August 27, 2024
+										<strong>Tuesdays:</strong> July 15, 2025 - August 19, 2025
 										(6 sessions)
-									</td>
-									<td>
-										<Time>1700</Time> - <Time>1800</Time>
-										<br />(<strong>Aug. 20, 27:</strong> <Time>2000</Time> -{" "}
-										<Time>2100</Time>)
-									</td>
-								</tr>
-								<tr>
-									<td>(C) Fall session</td>
-									<td>
-										<strong>Wednesdays:</strong> September 11, 2024 - October
-										16, 2024 (6 sessions)
-									</td>
-									<td>
-										<Time>1700</Time> - <Time>1800</Time>
-									</td>
-								</tr>
-								<tr>
-									<td>(D) Winter session</td>
-									<td>
-										<strong>Wednesdays:</strong> February 12, 2025 - March 26,
-										2025 (7 sessions)
 									</td>
 									<td>
 										<Time>1700</Time> - <Time>1800</Time>
@@ -108,11 +89,10 @@ export default function Default({ data }) {
 					</div>
 					<h3>Cost</h3>
 					<p>
-						<strong>(C) Fall session:</strong> $300 +HST/goalie (6 sessions)
+						<strong>(A) Summer session:</strong> $450 +HST/goalie (8 sessions)
 						<br />
-						<strong>(D) Winter session:</strong> $350 +HST/goalie (6 sessions)
+						<strong>(B) Summer session:</strong> $315 +HST/goalie (6 sessions)
 					</p>
-					<p></p>
 					<p>
 						<em>Partnering with MAD Athletic Development</em>
 					</p>

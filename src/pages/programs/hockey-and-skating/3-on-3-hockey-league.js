@@ -27,11 +27,10 @@ export default function Default() {
 						periods. Play half-ice on our Olympic-sized ice surface and improve
 						your child's overall skill and game strategy by challenging players
 						both offensively and defensively in this high-tempo, small-area game
-						situation. This popular program fills quickly, limited space
-						available.
+						situation. Limited space available.
 					</p>
 					<h3>When</h3>
-					Sunday's, July 7 - August 25, 2024 (No session August 4, 2024)
+					Sunday's, July 6 - August 24, 2025 (No session August 3, 2025)
 					{/* <div
             style={{
               padding: "4rem",
@@ -46,20 +45,28 @@ export default function Default() {
           </div> */}
 					<ul>
 						<li>
-							<strong>U-7 (Age 5-6)</strong>: 4:30pm - 5:30pm (4 teams)
+							<strong>U-7 (Age 5-6: 2019, 2020)</strong>: 4:30pm - 5:30pm (4
+							teams)
 						</li>
 						<li>
-							<strong>U-9 (Age 7-8)</strong>: 5:30pm - 6:30pm (4 teams)
+							<strong>U-9 (Age 7-8: 2017, 2018)</strong>: 5:30pm - 6:30pm (4
+							teams)
 						</li>
 						<li>
-							<strong>U-11 (Age 9-10)</strong>: 6:30pm - 7:30pm (4 teams)
+							<strong>U-11 (Age 9-10: 2015, 2016)</strong>: 6:30pm - 7:30pm (4
+							teams)
 						</li>
 						<li>
-							<strong>U-13/U-15 (Age 11-14)</strong>: 7:30pm - 8:30pm (4 teams)
+							<strong>U-13/U-15 (Age 11-14: 2011, 2012, 2013, 2014)</strong>:
+							7:30pm - 8:30pm (4 teams)
 						</li>
 					</ul>
 					<h3>Cost</h3>
-					$225 +HST (jersey included)
+					$230 +HST (7 sessions, jersey included)
+					<br />
+					<br />
+					*Teams will be evened out in the first two weeks by trades if
+					necessary.
 					<br />
 					<Button href="https://register.trmanager.com">Book now</Button>
 				</Program>

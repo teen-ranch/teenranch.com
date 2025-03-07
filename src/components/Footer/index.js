@@ -82,6 +82,11 @@ export default function Footer() {
 								</Link>
 							</li>
 							<li>
+								<Link to="/programs/hockey-and-skating/afternoon-summer-skills-clinics/">
+									Afternoon Summer Skills Clinics
+								</Link>
+							</li>
+							<li>
 								<Link to="/programs/hockey-and-skating/private-lessons/">
 									Private lessons
 								</Link>
