@@ -10,390 +10,386 @@ import { CovidContainer } from "components/CovidContainer";
 import { Banner } from "components/Banner";
 
 export default function Header({ location }) {
-  const [expanded, setExpanded] = useState(false);
+	const [expanded, setExpanded] = useState(false);
 
-  useEffect(() => {
-    setExpanded(false);
-  }, [location.pathname]);
+	useEffect(() => {
+		setExpanded(false);
+	}, [location.pathname]);
 
-  return (
-    <>
-      <Banner />
-      <header>
-        <Container type={`header${expanded ? " header--expanded" : ""}`}>
-          <NavLink to="/">
-            <img className="logo" src={logo} alt="Teen Ranch Logo" />
-          </NavLink>
-          <button
-            className={`hamburgerMenu ${expanded ? "hamburgerMenu--active" : ""
-              }`}
-            onClick={() => setExpanded((expanded) => !expanded)}
-            aria-label="Navigation menu"
-          >
-            <span className="hamburgerBox">
-              <span className="hamburgerInner"></span>
-            </span>
-          </button>
-          <nav className={`menu ${expanded ? "menu--expanded" : ""}`}>
-            <ul>
-              <li>
-                <NavLink to="/">Home</NavLink>
-              </li>
-              {/* eslint-disable-next-line */}
-              {/* <li><a target="_blank" rel="noopener" href='https://shop.teenranch.com'>Shop</a></li> */}
-              <LI location={location}>
-                <NavLink to="/programs">Programs</NavLink>
-                <ul className="subNav">
-                  <li>
-                    <NavLink to="/summer-camp/">Summer camp</NavLink>
-                    <ul className="subSubNav">
-                      <div className="subNavDivider">Overnight camp</div>
-                      <li>
-                        <NavLink to="/summer-camp/overnight-camp/">
-                          Overview: Overnight camp
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink to="/summer-camp/overnight-camp/hockey-camps/">
-                          Hockey camps
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink to="/summer-camp/overnight-camp/horse-camps/">
-                          Horse camps
-                        </NavLink>
-                      </li>
-                      {
-                        /* <li>
+	return (
+		<>
+			<Banner />
+			<header>
+				<Container type={`header${expanded ? " header--expanded" : ""}`}>
+					<NavLink to="/">
+						<img className="logo" src={logo} alt="Teen Ranch Logo" />
+					</NavLink>
+					<button
+						className={`hamburgerMenu ${
+							expanded ? "hamburgerMenu--active" : ""
+						}`}
+						onClick={() => setExpanded((expanded) => !expanded)}
+						aria-label="Navigation menu"
+					>
+						<span className="hamburgerBox">
+							<span className="hamburgerInner"></span>
+						</span>
+					</button>
+					<nav className={`menu ${expanded ? "menu--expanded" : ""}`}>
+						<ul>
+							<li>
+								<NavLink to="/">Home</NavLink>
+							</li>
+							{/* eslint-disable-next-line */}
+							{/* <li><a target="_blank" rel="noopener" href='https://shop.teenranch.com'>Shop</a></li> */}
+							<LI location={location}>
+								<NavLink to="/programs">Programs</NavLink>
+								<ul className="subNav">
+									<li>
+										<NavLink to="/summer-camp/">Summer camp</NavLink>
+										<ul className="subSubNav">
+											<div className="subNavDivider">Overnight camp</div>
+											<li>
+												<NavLink to="/summer-camp/overnight-camp/">
+													Overview: Overnight camp
+												</NavLink>
+											</li>
+											<li>
+												<NavLink to="/summer-camp/overnight-camp/hockey-camps/">
+													Hockey camps
+												</NavLink>
+											</li>
+											<li>
+												<NavLink to="/summer-camp/overnight-camp/horse-camps/">
+													Horse camps
+												</NavLink>
+											</li>
+											{/* <li>
                         <NavLink to="/summer-camp/ultimate-day-camp/bmx-dirt-camp/">
                           BMX dirt camp
                         </NavLink>
-                      </li> */
-                      }
-                      <li>
-                        <NavLink to="/summer-camp/overnight-camp/wham-camp/">
-                          WHAM camp
-                        </NavLink>
-                      </li>
+                      </li> */}
+											<li>
+												<NavLink to="/summer-camp/overnight-camp/wham-camp/">
+													WHAM camp
+												</NavLink>
+											</li>
 
-                      {
-                        /* <li>
+											{/* <li>
                         <NavLink to="/summer-camp/overnight-camp/adventure-camp/">
                           Adventure camp
                         </NavLink>
-                      </li> */
-                      }
+                      </li> */}
 
-                      <div className="subNavDivider">Ultimate day camp</div>
-                      <li>
-                        <NavLink to="/summer-camp/ultimate-day-camp/">
-                          Overview: Ultimate day camp
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink to="/summer-camp/ultimate-day-camp/hockey-camps/">
-                          Hockey camps
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink to="/summer-camp/ultimate-day-camp/horse-camps/">
-                          Horse camps
-                        </NavLink>
-                      </li>
-                      {
-                        /* <li>
+											<div className="subNavDivider">Ultimate day camp</div>
+											<li>
+												<NavLink to="/summer-camp/ultimate-day-camp/">
+													Overview: Ultimate day camp
+												</NavLink>
+											</li>
+											<li>
+												<NavLink to="/summer-camp/ultimate-day-camp/hockey-camps/">
+													Hockey camps
+												</NavLink>
+											</li>
+											<li>
+												<NavLink to="/summer-camp/ultimate-day-camp/horse-camps/">
+													Horse camps
+												</NavLink>
+											</li>
+											{/* <li>
                         <NavLink to="/summer-camp/ultimate-day-camp/bmx-dirt-camp/">
                           BMX dirt camp
                         </NavLink>
-                      </li> */
-                      }
-                      <li>
-                        <NavLink to="/summer-camp/ultimate-day-camp/wham-camp/">
-                          WHAM camp
-                        </NavLink>
-                      </li>
-                      <div className="subNavDivider">Junior day camp</div>
-                      <li>
-                        <NavLink to="/summer-camp/junior-day-camp/">
-                          Junior day camp
-                        </NavLink>
-                      </li>
-                      {
-                        /* <li><NavLink to='/programs/summer-camp/hockey-camp/'>Figure skating camp</NavLink></li>
+                      </li> */}
+											<li>
+												<NavLink to="/summer-camp/ultimate-day-camp/wham-camp/">
+													WHAM camp
+												</NavLink>
+											</li>
+											<div className="subNavDivider">Junior day camp</div>
+											<li>
+												<NavLink to="/summer-camp/junior-day-camp/">
+													Junior day camp
+												</NavLink>
+											</li>
+											{/* <li><NavLink to='/programs/summer-camp/hockey-camp/'>Figure skating camp</NavLink></li>
                                         <li><NavLink to='/programs/summer-camp/horse-camp/'>Horse camp</NavLink></li>
                                         <li><NavLink to='/programs/summer-camp/horse-camp/'>Adventure camp</NavLink></li>
                                         <li><NavLink to='/programs/summer-camp/hockey-camp/'>BMX dirt camp</NavLink></li>
-                                        <li><NavLink to='/programs/summer-camp/hockey-camp/'>WHAM camp</NavLink></li> */
-                      }
-                    </ul>
-                  </li>
-                  <li>
-                    <NavLink to="/programs/hockey-and-skating/">
-                      Hockey & skating
-                    </NavLink>
-                    {/* <div className='subNavDivider'>Summer camp</div> */}
-                    {
-                      /* <ul className='subSubNav'>
+                                        <li><NavLink to='/programs/summer-camp/hockey-camp/'>WHAM camp</NavLink></li> */}
+										</ul>
+									</li>
+									<li>
+										<NavLink to="/programs/hockey-and-skating/">
+											Hockey & skating
+										</NavLink>
+										{/* <div className='subNavDivider'>Summer camp</div> */}
+										{/* <ul className='subSubNav'>
                                         <li><NavLink to='/programs/summer-camp/hockey-camp/'>Summer hockey camp</NavLink></li>
-                                    </ul> */
-                    }
+                                    </ul> */}
 
-                    <div className="subNavDivider">Skills & Skating</div>
-                    <ul className="subSubNav">
-                      <li>
-                        <NavLink to="/programs/hockey-and-skating/skills-and-skating-development/">
-                          Skills & skating development
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink to="/programs/hockey-and-skating/private-lessons/">
-                          Private lessons                        </NavLink>
-                      </li>
-                    </ul>
+										<div className="subNavDivider">Skills & Skating</div>
+										<ul className="subSubNav">
+											<li>
+												<NavLink to="/programs/hockey-and-skating/skills-and-skating-development/">
+													Skills & skating development
+												</NavLink>
+											</li>
+											<li>
+												<NavLink
+													to="/programs/hockey-and-skating/afternoon-summer-skills-clinics/"
+													new
+												>
+													Afternoon Summer Skills Clinics
+												</NavLink>
+											</li>
+											<li>
+												<NavLink to="/programs/hockey-and-skating/private-lessons/">
+													Private lessons{" "}
+												</NavLink>
+											</li>
+										</ul>
 
-                    <div className="subNavDivider">Skating</div>
-                    <ul className="subSubNav">
-                      <li>
-                        <NavLink to="/programs/hockey-and-skating/learn-to-skate/">
-                          Learn to skate
-                        </NavLink>
-                      </li>
-                      {/* <li>
+										<div className="subNavDivider">Skating</div>
+										<ul className="subSubNav">
+											<li>
+												<NavLink to="/programs/hockey-and-skating/learn-to-skate/">
+													Learn to skate
+												</NavLink>
+											</li>
+											{/* <li>
                         <NavLink to="/programs/hockey-and-skating/skating-development/">
                           Skating development
                         </NavLink>
                       </li> */}
-                      <li>
-                        <NavLink to="/programs/hockey-and-skating/starskate-and-competitive-figure-skating/">
-                          STARSkate & Competitive Figure Skating
-                        </NavLink>
-                      </li>
-                    </ul>
-                    <div className="subNavDivider">Skills</div>
-                    <ul className="subSubNav">
-                      <li>
-                        <NavLink to="/programs/hockey-and-skating/goalie-clinic/">
-                          Goalie clinic
-                        </NavLink>
-                      </li>
-                      {/* <li>
+											<li>
+												<NavLink to="/programs/hockey-and-skating/starskate-and-competitive-figure-skating/">
+													STARSkate & Competitive Figure Skating
+												</NavLink>
+											</li>
+										</ul>
+										<div className="subNavDivider">Skills</div>
+										<ul className="subSubNav">
+											<li>
+												<NavLink to="/programs/hockey-and-skating/goalie-clinic/">
+													Goalie clinic
+												</NavLink>
+											</li>
+											{/* <li>
                         <NavLink to="/programs/hockey-and-skating/skills-development/">
                           Skills development
                         </NavLink>
                       </li> */}
-                      <li>
-                        <NavLink to="/programs/hockey-and-skating/adult-hockey-skills/">
-                          Adult hockey skills
-                        </NavLink>
-                      </li>
-                    </ul>
-                    <div className="subNavDivider">Leagues</div>
-                    <ul className="subSubNav">
-                      <li>
-                        <NavLink to="/programs/hockey-and-skating/spring-hockey-league/">
-                          Spring hockey league
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink to="/programs/hockey-and-skating/3-on-3-hockey-league/">
-                          3 on 3 hockey league
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink to="/programs/hockey-and-skating/wranglers-hockey/">
-                          Wranglers hockey (Formerly Pond Hockey)
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink to="/programs/hockey-and-skating/mens-hockey-league/">
-                          Men's hockey league
-                        </NavLink>
-                      </li>
-                    </ul>
-                    <div className="subNavDivider">Recreation</div>
-                    <ul className="subSubNav">
-                      <li>
-                        <NavLink to="/programs/hockey-and-skating/ice-rental/">
-                          Ice rental
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink to="/programs/hockey-and-skating/public-skating/">
-                          Public skating
-                        </NavLink>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <NavLink to="/programs/horses/">Horses</NavLink>
-                    <div className="subNavDivider">Shows</div>
-                    <ul className="subSubNav">
-                      <li>
-                        <NavLink to="/programs/horses/hunter-jumper-shows/">
-                          Hunter / Jumper shows
-                        </NavLink>
-                      </li>
-                    </ul>
-                    <div className="subNavDivider">Schooling</div>
-                    <ul className="subSubNav">
-                      {/* <li><NavLink to='/programs/horses/riding-lessons/'>Riding lessons</NavLink></li> */}
-                      <li>
-                        <NavLink to="/programs/horses/schooling-ring-rental/">
-                          Schooling ring rental
-                        </NavLink>
-                      </li>
-                    </ul>
-                    <div className="subNavDivider">Recreation</div>
-                    <ul className="subSubNav">
-                      <li>
-                        <NavLink to="/programs/horses/trail-rides/">
-                          Trail rides
-                        </NavLink>
-                      </li>
-                    </ul>
-                  </li>
-                  <div>
-                    <li>
-                      <span className="linkTitle">Day camp</span>
-                      <ul className="subSubNav">
-                        <li>
-                          <NavLink to="/day-camp/pd-pa-day-camp/">
-                            PD/PA day camp
-                          </NavLink>
-                        </li>
-                        <li>
-                          <NavLink to="/day-camp/christmas-day-camp/">
-                            Christmas day camp
-                          </NavLink>
-                        </li>
-                        <li>
-                          <NavLink to="/day-camp/march-break-day-camp/">
-                            March break day camp
-                          </NavLink>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <NavLink to="/families">Families</NavLink>
-                      {/* <span className='linkTitle'>Families</span> */}
-                      <ul className="subSubNav">
-                        <li>
-                          <NavLink to="/families/mother-daughter-equine-escape/">
-                            Mother daughter equine escape
-                          </NavLink>
-                          {
-                            /* <NavLink to="/families/family-getaway-weekends/">
+											<li>
+												<NavLink to="/programs/hockey-and-skating/adult-hockey-skills/">
+													Adult hockey skills
+												</NavLink>
+											</li>
+										</ul>
+										<div className="subNavDivider">Leagues</div>
+										<ul className="subSubNav">
+											<li>
+												<NavLink to="/programs/hockey-and-skating/spring-hockey-league/">
+													Spring hockey league
+												</NavLink>
+											</li>
+											<li>
+												<NavLink to="/programs/hockey-and-skating/3-on-3-hockey-league/">
+													3 on 3 hockey league
+												</NavLink>
+											</li>
+											<li>
+												<NavLink to="/programs/hockey-and-skating/wranglers-hockey/">
+													Wranglers hockey (Formerly Pond Hockey)
+												</NavLink>
+											</li>
+											<li>
+												<NavLink to="/programs/hockey-and-skating/mens-hockey-league/">
+													Men's hockey league
+												</NavLink>
+											</li>
+										</ul>
+										<div className="subNavDivider">Recreation</div>
+										<ul className="subSubNav">
+											<li>
+												<NavLink to="/programs/hockey-and-skating/ice-rental/">
+													Ice rental
+												</NavLink>
+											</li>
+											<li>
+												<NavLink to="/programs/hockey-and-skating/public-skating/">
+													Public skating
+												</NavLink>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<NavLink to="/programs/horses/">Horses</NavLink>
+										<div className="subNavDivider">Shows</div>
+										<ul className="subSubNav">
+											<li>
+												<NavLink to="/programs/horses/hunter-jumper-shows/">
+													Hunter / Jumper shows
+												</NavLink>
+											</li>
+										</ul>
+										<div className="subNavDivider">Schooling</div>
+										<ul className="subSubNav">
+											{/* <li><NavLink to='/programs/horses/riding-lessons/'>Riding lessons</NavLink></li> */}
+											<li>
+												<NavLink to="/programs/horses/schooling-ring-rental/">
+													Schooling ring rental
+												</NavLink>
+											</li>
+										</ul>
+										<div className="subNavDivider">Recreation</div>
+										<ul className="subSubNav">
+											<li>
+												<NavLink to="/programs/horses/trail-rides/">
+													Trail rides
+												</NavLink>
+											</li>
+										</ul>
+									</li>
+									<div>
+										<li>
+											<span className="linkTitle">Day camp</span>
+											<ul className="subSubNav">
+												<li>
+													<NavLink to="/day-camp/pd-pa-day-camp/">
+														PD/PA day camp
+													</NavLink>
+												</li>
+												<li>
+													<NavLink to="/day-camp/christmas-day-camp/">
+														Christmas day camp
+													</NavLink>
+												</li>
+												<li>
+													<NavLink to="/day-camp/march-break-day-camp/">
+														March break day camp
+													</NavLink>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<NavLink to="/families">Families</NavLink>
+											{/* <span className='linkTitle'>Families</span> */}
+											<ul className="subSubNav">
+												<li>
+													<NavLink to="/families/mother-daughter-equine-escape/">
+														Mother daughter equine escape
+													</NavLink>
+													{/* <NavLink to="/families/family-getaway-weekends/">
                             Family getaway weekends
-                          </NavLink> */
-                          }
-                        </li>
-                        <li>
-                          <NavLink to="/families/father-son-hockey-weekend/">
-                            Father-son hockey weekend
-                          </NavLink>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <NavLink to="/events">Events</NavLink>
-                      <ul className="subSubNav">
-                        {/* <li><NavLink to='/events/teen-ranch-fall-gallop-a-cross-country-run/'>Teen Ranch Fall Gallop - A Cross Country Run</NavLink></li> */}
-                        {/* <li><NavLink to='/events/christmas-photo-sessions/'>Christmas Photo Sessions</NavLink></li> */}
-                        {/* <li><NavLink to='/events/the-christmas-winter-festival/'>Christmas Winter Festival</NavLink></li> */}
-                        {/* <li><NavLink to='/events/march-april-break-day-camp/'><s>March</s> April Break Day Camp</NavLink></li> */}
-                        <li>
-                          <NavLink to="/events/christmas-at-the-ranch/">
-                            Christmas at the Ranch
-                          </NavLink>
-                        </li>
-                        <li>
-                          <NavLink to="/events/march-break-camp-for-a-weekend/">
-                            March Break Camp for a Weekend
-                          </NavLink>
-                        </li>
-                        <li>
-                          <NavLink to="/events/family-day-roundup/">
-                            Family day roundup
-                          </NavLink>
-                        </li>
-                        <li>
-                          <NavLink to="/events/easter-roundup/">
-                            Easter roundup
-                          </NavLink>
-                        </li>
-                      </ul>
-                    </li>
-                    {
-                      /* <li><NavLink to='/programs/leadership/'>Leadership & Development</NavLink>
+                          </NavLink> */}
+												</li>
+												<li>
+													<NavLink to="/families/father-son-hockey-weekend/">
+														Father-son hockey weekend
+													</NavLink>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<NavLink to="/events">Events</NavLink>
+											<ul className="subSubNav">
+												{/* <li><NavLink to='/events/teen-ranch-fall-gallop-a-cross-country-run/'>Teen Ranch Fall Gallop - A Cross Country Run</NavLink></li> */}
+												{/* <li><NavLink to='/events/christmas-photo-sessions/'>Christmas Photo Sessions</NavLink></li> */}
+												{/* <li><NavLink to='/events/the-christmas-winter-festival/'>Christmas Winter Festival</NavLink></li> */}
+												{/* <li><NavLink to='/events/march-april-break-day-camp/'><s>March</s> April Break Day Camp</NavLink></li> */}
+												<li>
+													<NavLink to="/events/christmas-at-the-ranch/">
+														Christmas at the Ranch
+													</NavLink>
+												</li>
+												<li>
+													<NavLink to="/events/march-break-camp-for-a-weekend/">
+														March Break Camp for a Weekend
+													</NavLink>
+												</li>
+												<li>
+													<NavLink to="/events/family-day-roundup/">
+														Family day roundup
+													</NavLink>
+												</li>
+												<li>
+													<NavLink to="/events/easter-roundup/">
+														Easter roundup
+													</NavLink>
+												</li>
+											</ul>
+										</li>
+										{/* <li><NavLink to='/programs/leadership/'>Leadership & Development</NavLink>
                                         <ul className='subSubNav'>
                                             <li><NavLink to='/programs/leadership/adventure-bible-program/'>Adventure Bible Program</NavLink></li>
                                         </ul>
-                                    </li> */
-                    }
-                  </div>
-                </ul>
-              </LI>
-              <LI location={location}>
-                <NavLink to="/retreats/">Retreats</NavLink>
-                <ul className="subNav">
-                  <li>
-                    <ul className="subSubNav">
-                      <li>
-                        <NavLink to="/retreats/">Group Retreats</NavLink>
-                      </li>
-                      <li>
-                        <NavLink to="/families/mother-daughter-equine-escape/">
-                          Mother daughter equine escape
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink to="/families/father-son-hockey-weekend/">
-                          Father-son hockey weekend
-                        </NavLink>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </LI>
-              <li>
-                <NavLink to="/outdoor-education/">Outdoor Education</NavLink>
-              </li>
-              <li>
-                <NavLink to="/facilities/">Facilities</NavLink>
-              </li>
-              <li>
-                <NavLink to="/staff/">Staff</NavLink>
-              </li>
-              <li>
-                <a
-                  href="https://teenranchcanada.wordpress.com/"
-                  rel="noopener noreferrer"
-                >
-                  Blog
-                </a>
-              </li>
-              <li>
-                <NavLink to="/contact/">Contact</NavLink>
-              </li>
-              <li className="giveLink">
-                <NavLink to="/give">Give</NavLink>
-              </li>
-              <li>
-                <a
-                  className="ctaLink"
-                  rel="noopener noreferrer"
-                  href="https://register.trmanager.com"
-                >
-                  Sign up
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </Container>
-      </header>
-      <CovidContainer />
-    </>
-  );
+                                    </li> */}
+									</div>
+								</ul>
+							</LI>
+							<LI location={location}>
+								<NavLink to="/retreats/">Retreats</NavLink>
+								<ul className="subNav">
+									<li>
+										<ul className="subSubNav">
+											<li>
+												<NavLink to="/retreats/">Group Retreats</NavLink>
+											</li>
+											<li>
+												<NavLink to="/families/mother-daughter-equine-escape/">
+													Mother daughter equine escape
+												</NavLink>
+											</li>
+											<li>
+												<NavLink to="/families/father-son-hockey-weekend/">
+													Father-son hockey weekend
+												</NavLink>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</LI>
+							<li>
+								<NavLink to="/outdoor-education/">Outdoor Education</NavLink>
+							</li>
+							<li>
+								<NavLink to="/facilities/">Facilities</NavLink>
+							</li>
+							<li>
+								<NavLink to="/staff/">Staff</NavLink>
+							</li>
+							<li>
+								<a
+									href="https://teenranchcanada.wordpress.com/"
+									rel="noopener noreferrer"
+								>
+									Blog
+								</a>
+							</li>
+							<li>
+								<NavLink to="/contact/">Contact</NavLink>
+							</li>
+							<li className="giveLink">
+								<NavLink to="/give">Give</NavLink>
+							</li>
+							<li>
+								<a
+									className="ctaLink"
+									rel="noopener noreferrer"
+									href="https://register.trmanager.com"
+								>
+									Sign up
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</Container>
+			</header>
+			<CovidContainer />
+		</>
+	);
 }
 
 // export const NavLink = props => (
@@ -410,23 +406,39 @@ export default function Header({ location }) {
 //   );
 
 const NavLink = ({ children, ...props }) => (
-  <Link {...props} activeClassName="active">
-    {children}
-  </Link>
+	<Link
+		{...props}
+		activeClassName="active"
+		style={{ display: "flex", gap: "8px", alignItems: "center" }}
+	>
+		{children}
+		{props.new && (
+			<div
+				style={{
+					background: "red",
+					padding: "2px 4px",
+					borderRadius: "4px",
+					fontSize: "9pt",
+				}}
+			>
+				NEW
+			</div>
+		)}
+	</Link>
 );
 
 function LI({ location, children }) {
-  const [hovered, setHovered] = useState(false);
-  useEffect(() => {
-    setHovered(false);
-  }, [location?.pathname]);
-  return (
-    <li
-      onMouseOver={() => setHovered(true)}
-      onMouseOut={() => setHovered(false)}
-      className={`${hovered ? "hover" : ""}`}
-    >
-      {children}
-    </li>
-  );
+	const [hovered, setHovered] = useState(false);
+	useEffect(() => {
+		setHovered(false);
+	}, [location?.pathname]);
+	return (
+		<li
+			onMouseOver={() => setHovered(true)}
+			onMouseOut={() => setHovered(false)}
+			className={`${hovered ? "hover" : ""}`}
+		>
+			{children}
+		</li>
+	);
 }

@@ -97,43 +97,7 @@ export default function Default() {
 						</CardPadding>
 					</Card>
 					<Button href="https://register.trmanager.com">Book now</Button> */}
-					<Card>
-						<CardPadding>
-							<table>
-								<thead>
-									<tr>
-										<th>Session #3</th>
-										<th>6:00pm - 6:50pm</th>
-										<th>7:00pm - 7:50pm</th>
-										<th>Cost</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>
-											<strong>Tuesdays:</strong>
-											<br />
-											January 14, 2025 - February 18, 2025
-										</td>
-										<td>2017, 2018, 2019</td>
-										<td>2014, 2015, 2016</td>
-										<td>$250 +HST</td>
-									</tr>
-									<tr>
-										<td>
-											<strong>Wednesdays:</strong>
-											<br />
-											January 15, 2025 - February 19, 2025
-										</td>
-										<td>2011, 2012, 2013, 2014</td>
-										<td></td>
-										<td>$250 +HST</td>
-									</tr>
-								</tbody>
-							</table>
-						</CardPadding>
-					</Card>
-					<Button href="https://register.trmanager.com">Book now</Button>
+
 					<Card>
 						<CardPadding>
 							<table>
@@ -216,8 +180,63 @@ export default function Default() {
 							</table>
 						</CardPadding>
 					</Card>
+
+					<Button href="https://register.trmanager.com">Book now</Button>
+					<Card>
+						<CardPadding>
+							<table>
+								<thead>
+									<tr>
+										<th>Session #6 (Pre-season)</th>
+										<th>6:00pm - 6:50pm</th>
+										<th>7:00pm - 7:50pm</th>
+										<th>Cost</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<strong>Tuesdays:</strong>
+											<br />
+											July 22, 2025 - August 26, 2025
+										</td>
+										<td>2016, 2017, 2018, 2019</td>
+										<td>2011, 2012, 2013, 2014, 2015</td>
+										<td>$260 +HST (6 Sessions)</td>
+									</tr>
+								</tbody>
+							</table>
+						</CardPadding>
+					</Card>
+					<Button href="https://register.trmanager.com">Book now</Button>
+					<Card>
+						<CardPadding>
+							<table>
+								<thead>
+									<tr>
+										<th>Session #7 (Pre-season: REP)</th>
+										<th>6:00pm - 6:50pm</th>
+										<th>7:00pm - 7:50pm</th>
+										<th>Cost</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<strong>Wednesdays:</strong>
+											<br />
+											July 23, 2025 - August 27, 2025 (No session August 13)
+										</td>
+										<td>2017, 2018, 2019</td>
+										<td>2011, 2012, 2013, 2014, 2015, 2016</td>
+										<td>$220 +HST (5 Sessions)</td>
+									</tr>
+								</tbody>
+							</table>
+						</CardPadding>
+					</Card>
+					<Button href="https://register.trmanager.com">Book now</Button>
 				</div>{" "}
-				<Button href="https://register.trmanager.com">Book now</Button>
 				<Terms_HockeyAndSkating />
 				{/* </Program> */}
 			</Container>
