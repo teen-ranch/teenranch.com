@@ -67,6 +67,20 @@ export default function Default({ data }) {
 			/>
 
 			<Container>
+				<div style={{ display: "flex", justifyContent: "center" }}>
+					<div
+						style={{
+							border: "1px solid #ddd",
+							borderRadius: "12px",
+							background: "#efefef",
+							padding: "2rem",
+							fontStyle: "italic",
+						}}
+					>
+						Camp impacts lives. Proceeds from this event help sponsor kids in
+						need.
+					</div>
+				</div>
 				<h1>{frontmatter.title}</h1>
 				<p>
 					Teen Ranch's much-loved Easter Roundup is back! Mark your calendars
