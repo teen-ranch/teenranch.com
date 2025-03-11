@@ -71,10 +71,10 @@ export default function Default() {
 						<thead>
 							<tr>
 								<th aria-label="Empty cell"></th>
-								<th>Fall: Sep. 9, 2024 - Nov. 15, 2024</th>
-								<th>Holiday: Nov. 17, 2024 - Jan. 24, 2025</th>
+								{/* <th>Fall: Sep. 9, 2024 - Nov. 15, 2024</th> */}
+								{/* <th>Holiday: Nov. 17, 2024 - Jan. 24, 2025</th> */}
 								<th>Winter: Jan. 26, 2025 - Apr. 11, 2025</th>
-								{/* <th>Spring: Apr. 14, 2024 - May. 24, 2024</th> */}
+								<th>Spring: Apr. 13, 2025 - June. 20, 2025</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -87,7 +87,7 @@ export default function Default() {
 									Off-ice: <Time>1130</Time> - <Time>1200</Time>
 									<br />
 								</td>
-								<td>
+								{/* <td>
 									<strong>$220 +HST</strong> (7 sessions)
 									<br />
 									No session Sep. 8, Sep. 15, Oct. 13
@@ -96,14 +96,16 @@ export default function Default() {
 									<strong>$250 +HST</strong> (8 sessions)
 									<br />
 									No session Dec. 22, Dec. 29
-								</td>
+								</td> */}
 
 								<td>
 									<strong>$345 +HST</strong> (11 sessions)
 								</td>
-								{/* <td>
-                  <strong>$246 +HST</strong> (6 sessions)
-                </td> */}
+								<td>
+									<strong>$248 +HST</strong> (8 sessions)
+									<br />
+									No session Apr. 20, May 18
+								</td>
 							</tr>
 							<tr>
 								<td>
@@ -111,7 +113,7 @@ export default function Default() {
 									<br />
 									On-ice: <Time>1630</Time> - <Time>1750</Time>
 								</td>
-								<td>
+								{/* <td>
 									<strong>$280 +HST</strong> (9 sessions)
 									<br />
 									No session Oct. 14
@@ -120,11 +122,16 @@ export default function Default() {
 									<strong>$250 +HST</strong> (8 sessions)
 									<br />
 									No session Dec. 23, Dec. 30
-								</td>
+								</td> */}
 								<td>
 									<strong>$310 +HST</strong> (10 sessions)
 									<br />
 									No session Feb. 17
+								</td>
+								<td>
+									<strong>$248 +HST</strong> (8 sessions)
+									<br />
+									No session Apr. 21, May 19
 								</td>
 							</tr>
 							<tr>
@@ -133,18 +140,21 @@ export default function Default() {
 									<br />
 									On-ice: <Time>1630</Time> - <Time>1750</Time>
 									<br />
-									Off-ice: <Time>1800</Time> - <Time>1820</Time>
+									Off-ice: <Time>1800</Time> - <Time>1830</Time>
 								</td>
-								<td>
+								{/* <td>
 									<strong>$310 +HST</strong> (10 sessions)
 								</td>
 								<td>
 									<strong>$250 +HST</strong> (8 sessions)
 									<br />
 									No session Dec. 26, Jan. 2
-								</td>
+								</td> */}
 								<td>
 									<strong>$345 +HST</strong> (11 sessions)
+								</td>
+								<td>
+									<strong>$310 +HST</strong> (10 sessions)
 								</td>
 							</tr>
 							<tr>
@@ -153,16 +163,21 @@ export default function Default() {
 									<br />
 									On-ice: <Time>1630</Time> - <Time>1750</Time>
 								</td>
-								<td>
+								{/* <td>
 									<strong>$310 +HST</strong> (10 sessions)
 								</td>
 								<td>
 									<strong>$250 +HST</strong> (8 sessions)
 									<br />
 									No session Dec. 27, Jan. 3
-								</td>
+								</td> */}
 								<td>
 									<strong>$345 +HST</strong> (11 sessions)
+								</td>
+								<td>
+									<strong>$279 +HST</strong> (9 sessions)
+									<br />
+									No session Apr. 18
 								</td>
 							</tr>
 						</tbody>
@@ -243,8 +258,8 @@ export default function Default() {
 						under direction of the Head Coach.)
 					</span>
 				</h3>
-				<h4>Fall/Holiday/Winter - Cost: $1,600 +HST</h4>
-				{/* <h4>Spring - Cost: $500 +HST (24 sessions)</h4> */}
+				{/* <h4>Fall/Holiday/Winter - Cost: $1,600 +HST</h4> */}
+				<h4>Spring - Cost: $600 +HST (35 sessions)</h4>
 				<p>
 					DPSC partnered with Teen Ranch supports the pursuit of excellence in
 					sport & life skills necessary to become an accomplished figure skater!
@@ -272,6 +287,18 @@ export default function Default() {
 					<li>
 						Annual DPSC club membership: $70 +HST (covers Skate Canada
 						registration and insurance)
+					</li>
+					<li>
+						Figure Skating Session fees include{" "}
+						<span style={{ textDecoration: "underline" }}>only</span> ice costs.
+						Instruction must be arranged with Head Coach, Patty{" "}
+						<a
+							target="_blank"
+							rel="noopener noreferrer"
+							href="mailto:icex@rogers.com"
+						>
+							icex@rogers.com
+						</a>
 					</li>
 				</ul>
 

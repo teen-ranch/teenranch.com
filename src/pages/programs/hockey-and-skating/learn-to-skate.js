@@ -92,10 +92,10 @@ export default function Default() {
 						<thead>
 							<tr>
 								<th aria-label="Empty cell"></th>
-								<th>Fall: Sep. 9, 2024 - Nov. 15, 2024</th>
-								<th>Holiday: Nov. 18, 2024 - Jan. 24, 2025</th>
+								{/* <th>Fall: Sep. 9, 2024 - Nov. 15, 2024</th> */}
+								{/* <th>Holiday: Nov. 18, 2024 - Jan. 24, 2025</th> */}
 								<th>Winter: Jan. 27, 2025 - Apr. 11, 2025</th>
-								{/* <th>Spring: Apr. 19, 2024 - May. 10, 2024</th> */}
+								<th>Spring: Apr. 25, 2025 - May. 16, 2025</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -105,7 +105,7 @@ export default function Default() {
 									<br />
 									On-ice: 6:00pm - 6:50pm
 								</td>
-								<td>
+								{/* <td>
 									<strong>$280 +HST</strong> (9 sessions)
 									<br />
 									No session Oct. 14
@@ -114,12 +114,13 @@ export default function Default() {
 									<strong>$250 +HST</strong> (8 sessions)
 									<br />
 									No session Dec. 23, Dec. 30
-								</td>
+								</td> */}
 								<td>
 									<strong>$310 +HST</strong> (10 sessions)
 									<br />
 									No session Feb. 17
 								</td>
+								<td></td>
 								{/* <td>
                   <strong>$250 +HST</strong> (8 sessions)
                   <br />
@@ -132,22 +133,20 @@ export default function Default() {
 									<br />
 									On-ice: 6:00pm - 6:50pm
 								</td>
-								<td>
+								{/* <td>
 									<strong>$310 +HST</strong> (10 sessions)
 								</td>
 								<td>
 									<strong>$250 +HST</strong> (8 sessions)
 									<br />
 									No session Dec. 27, Jan. 3
-								</td>
+								</td> */}
 								<td>
 									<strong>$340 +HST</strong> (11 sessions)
 								</td>
-								{/*<td>
-                  <strong>$280 +HST</strong> (9 sessions)
-                  <br />
-                  No session Dec. 29, Jan. 5
-                </td>*/}
+								<td>
+									<strong>$125 +HST</strong> (4 sessions)
+								</td>
 							</tr>
 						</tbody>
 					</table>
