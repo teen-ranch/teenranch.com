@@ -144,19 +144,19 @@ export default function Default({ data }) {
 							<tbody>
 								<tr>
 									<td>May 4, 2025</td>
-									<td>April 28, 2025</td>
+									<td>April 30, 2025</td>
 									<td>
-										{/* <Button
-                      target="_blank"
-                      href="https://forms.zohopublic.com/teenranch1/form/HorseShowMay262024/formperma/85JpZZzwMt21pTohnANjt30AtPDyy7dQGvyq44-LpiQ?referrername=teenranch.com"
-                    >
-                      May 26th entry form
-                    </Button> */}
+										<Button
+											target="_blank"
+											href="https://forms.zohopublic.com/teenranch1/form/HorseShowMay42025/formperma/3aOV7JyB3qQjWPygySsTkWbYkn0TyCfnhaQ6_EVZDmk"
+										>
+											May 4th entry form
+										</Button>
 									</td>
 								</tr>
 								<tr>
 									<td>June 8, 2025</td>
-									<td>June 2, 2025</td>
+									<td>June 4, 2025</td>
 									<td>
 										{/* <Button
                       target="_blank"
@@ -176,7 +176,7 @@ export default function Default({ data }) {
 								</tr>
 								<tr>
 									<td>July 13, 2025</td>
-									<td>July 7, 2025</td>
+									<td>July 9, 2025</td>
 									<td>
 										{/* <Button */}
 										{/*   target="_blank" */}
@@ -196,7 +196,7 @@ export default function Default({ data }) {
 								</tr>
 								<tr>
 									<td>August 10, 2025</td>
-									<td>August 4, 2025</td>
+									<td>August 6, 2025</td>
 									<td>
 										{/* <Button */}
 										{/*   target="_blank" */}
@@ -208,7 +208,7 @@ export default function Default({ data }) {
 								</tr>
 								<tr>
 									<td>September 14, 2025</td>
-									<td>September 8, 2025</td>
+									<td>September 10, 2025</td>
 									<td>
 										{/* <Button */}
 										{/*   target="_blank" */}
