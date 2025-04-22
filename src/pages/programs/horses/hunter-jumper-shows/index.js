@@ -237,20 +237,20 @@ export default function Default({ data }) {
             if you are interested.
           </p> */}
 				</Program>
-				{/* <h2>Links</h2>
+				<h2>Links</h2>
 				<Card style={{ padding: "2rem" }}>
 					<div className="showButtons">
-						<Button target="_blank" href="https://show.teenranch.com">
+						{/* <Button target="_blank" href="https://show.teenranch.com">
 							View 2024 season standings
-						</Button>
+						</Button> */}
 						<Button
 							target="_blank"
-							href="https://assets.teenranch.com/hunterJumperShowProgram_2024.pdf"
+							href="https://assets.teenranch.com/hunterJumperShowProgram_2025.pdf"
 						>
-							View 2024 show program
+							View 2025 show program
 						</Button>
 					</div>
-				</Card> */}
+				</Card>
 			</Container>
 			{/* <Program src={image2.childImageSharp.fluid} name="Hunter/Jumper shows">
           <h2>Forms required for entry:</h2>
