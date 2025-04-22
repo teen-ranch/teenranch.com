@@ -82,32 +82,53 @@ export default function Default({ data }) {
 			<div id="top" style={{ position: "absolute", marginTop: "-120px" }} />
 
 			<div
-				className="sponsorBar"
+				className="sponsorBarContainer"
 				style={{
-					justifyContent: "center",
-					gap: "6rem",
-					padding: "2rem 0",
-					borderBottom: "1px solid #efefef",
-					overflowX: "auto",
 					maxWidth: "100%",
+					overflowX: "auto",
 				}}
 			>
-				{eliteSponsors?.edges?.map((edge, i) => {
-					return (
-						<div key={i} style={{ maxWidth: "120px", maxHeight: "100%" }}>
-							<Img
-								style={{
-									maxWidth: "100%",
-									maxHeight: "100%",
-								}}
-								imgStyle={{ objectFit: "contain" }}
-								fixed={edge.node.childImageSharp.fixed}
-								alt={edge.node.name}
-								objectFit="contain"
-							/>
-						</div>
-					);
-				})}
+				<div
+					className="sponsorBar"
+					style={{
+						margin: "0px auto",
+						width: "auto",
+						// justifyContent: "center",
+						gap: "6rem",
+						padding: "2rem",
+						borderBottom: "1px solid #efefef",
+						// overflowX: "auto",
+						// width: "100dvw",
+						// maxWidth: "100%",
+					}}
+				>
+					{eliteSponsors?.edges?.map((edge, i) => {
+						const styles = {};
+						if (i === 0) {
+							styles.marginLeft = "auto";
+						}
+						if (i === eliteSponsors?.edges?.length - 1) {
+							styles.marginRight = "auto";
+						}
+						return (
+							<div
+								key={i}
+								style={{ maxWidth: "120px", maxHeight: "100%", ...styles }}
+							>
+								<Img
+									style={{
+										maxWidth: "100%",
+										maxHeight: "100%",
+									}}
+									imgStyle={{ objectFit: "contain" }}
+									fixed={edge.node.childImageSharp.fixed}
+									alt={edge.node.name}
+									objectFit="contain"
+								/>
+							</div>
+						);
+					})}
+				</div>
 			</div>
 			<Container type="body">
 				<h1>2025 Marks our 40th Anniversary</h1>

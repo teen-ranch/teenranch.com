@@ -1,6 +1,9 @@
 .sponsorBar {
   display: none;
 }
+.sponsorBarContainer {
+ display:none;
+}
 @media screen and (min-width: 64em) {
   .hunter-jumper-class-grid {
     display: grid;
@@ -11,6 +14,9 @@
     display: flex;
     gap: 2rem;
     // justify-content: space-evenly;
+  }
+  .sponsorBarContainer {
+    display:block;
   }
   .sponsorBar {
     display: flex;
