@@ -30,7 +30,7 @@ export default function Default({ data }) {
 		bronzeSponsors,
 		banquetSponsors,
 		inkindSponsors,
-		prizeSponsors,
+		equitationSponsors,
 		photographers,
 	} = data;
 
@@ -94,12 +94,18 @@ export default function Default({ data }) {
 			>
 				{eliteSponsors?.edges?.map((edge, i) => {
 					return (
-						<Img
-							key={i}
-							fixed={edge.node.childImageSharp.fixed}
-							alt={edge.node.name}
-							objectFit="cover"
-						/>
+						<div key={i} style={{ maxWidth: "120px", maxHeight: "100%" }}>
+							<Img
+								style={{
+									maxWidth: "100%",
+									maxHeight: "100%",
+								}}
+								imgStyle={{ objectFit: "contain" }}
+								fixed={edge.node.childImageSharp.fixed}
+								alt={edge.node.name}
+								objectFit="contain"
+							/>
+						</div>
 					);
 				})}
 			</div>
@@ -360,6 +366,56 @@ export default function Default({ data }) {
 				</Button>
 			</Container>
 			<Container type="body">
+				<h2>Gifts & Awards</h2>
+				<ul>
+					<li>
+						Every entry receives a <strong>$10 GIFT CARD</strong> generously
+						sponsored by Bahr Saddlery.
+					</li>
+					<li>
+						<strong>FREE MAGAZINE</strong> to all guests generously sponsored by
+						Canadian Horse Journals.
+					</li>
+					<li>
+						<strong>RIBBONS</strong> 1st-6th in each class.{" "}
+					</li>
+					<li>Ribbons created by SE Equestrian.</li>
+					<li>
+						<strong>PARTICIPANT RIBBONS</strong> available for all competitors
+						in the Leadline, Starter, Beginner and Rookie Divisions. These
+						divisions will be split if more than 15.
+					</li>
+					<li>
+						<strong>CHAMPION & RESERVE CHAMPION RIBBONS</strong> in every
+						division.
+					</li>
+					<li>
+						<strong>PRIZES</strong> to the Champion and Reserve Champion of
+						every division, provided by our amazing sponsors!
+					</li>
+					<li>
+						<strong>EQUITATION MONEY ADDED</strong> goes to every ribbon winner
+						in our Equitation Divisions.
+					</li>
+					<li>
+						<strong>MEDALS</strong> to 1st-3rd placings in all equitation
+						classes.
+					</li>
+					<li>
+						<strong>AMAZING PRIZES & YEAR END RIBBONS</strong> to the top 6 in
+						each division.
+					</li>
+					<li>
+						Top 7 of each division qualify to compete at{" "}
+						<strong>ONTARIO FALL FINALS</strong> in a similar division.
+					</li>
+					<li>
+						<strong>FREE BOTTLED WATER</strong> at each in-gate sponsored by
+						Julie Huppe Real Estate.
+					</li>
+				</ul>
+			</Container>
+			<Container type="body">
 				<h2>Fees</h2>
 				<ul>
 					<li>
@@ -381,13 +437,77 @@ export default function Default({ data }) {
 					style={{ position: "absolute", marginTop: "-180px" }}
 				/>
 				<h2>Year-end awards 2025</h2>
-				<div style={{ color: "red" }}>
+				{/* <div style={{ color: "red" }}>
 					Note: 2025 details will be updated once sponsors are confirmed.
-				</div>
+				</div> */}
 
 				<Card style={{ padding: "2rem" }}>
 					<ul>
-						<li>Plan for Year End Celebration TBD.</li>
+						<li>Ribbons and Prizes to top 6 in each division.</li>
+						<li>
+							High Point Male Rider Award to the male rider earning most points
+							in one division. Winner receives an annual and keeper trophy.
+							Sponsored by Denworth Equine Mngt.
+						</li>
+						<li>
+							High point Welsh/Half Welsh Award to the pony earning the most
+							points throughout the season. Photo of papers to be sent to
+							events@teenranch.com to qualify. Winner receives a GIANT ribbon
+							sponsored by Beaverwood Farm.
+						</li>
+						<li>
+							High point TB Awards – All winners receive a ribbon & prize
+							sponsored by the Jockey Club.
+							<ul>
+								<li>High Point Hack TB</li>
+								<li>Jumper TB * Green TB </li>
+								<li>Jr. Rider * Sr. Rider </li>
+								<li>Equitation Rider on a TB</li>
+								<li>Low Hunter TB (under 2’6)</li>
+								<li>High Hunter TB (2’6 & over)</li>
+							</ul>
+						</li>
+
+						<li>
+							Barn Challenge Annual Trophy and Ribbons to the stable earning the
+							most points this season.{" "}
+						</li>
+						<li>
+							Sportsmanship Award to be voted on by competitors, coaches and
+							show staff. All nominees get a ribbon, winner receives an annual
+							trophy & keeper trophy sponsored by Brian and Cathy Aker, and a
+							prize donated by Greenhawk.
+						</li>
+						<li>
+							Tenacity Award–in memory of Layne Stevens. All nominees get a
+							ribbon, winner receives an annual trophy and keeper trophy
+							sponsored by Laynlee Collection. Send nods to
+							leelee0701@hotmail.com{" "}
+						</li>
+						<li>
+							Horse of the Year – Horse earning the most points of the season in
+							one division receives an annual trophy, a gift certificate from
+							Varik Animal Chiropractic and a $200 Gift Certificate to Running
+							Fox.
+						</li>
+						<li>
+							Professional Turnout Award: winner receives a $200 Gift Card to
+							Running Fox and a beautiful cooler from Purina.{" "}
+						</li>
+						<li>
+							High Point Equitation Rider of the Year – receives a $500 prize
+							donated by Antares.
+						</li>
+						<li>
+							Year End Jumper Champion receives the annual and keeper Johnny
+							Barkey Memorial Trophy.
+						</li>
+						<li>
+							Year End Green Hunter Champion will receive the annual Christine
+							Legare Memorial Trophy.
+						</li>
+
+						{/* <li>Plan for Year End Celebration TBD.</li>
 						<li>Ribbons and Prizes to top 6 in each division.</li>
 						<li>
 							Professional Turnout - <em>Sponsored by Running Fox.</em>
@@ -488,7 +608,7 @@ export default function Default({ data }) {
 						<li>
 							Year End Green Hunter Champion will receive the annual Christine
 							Legare Memorial Trophy
-						</li>
+						</li> */}
 					</ul>
 				</Card>
 			</Container>
@@ -751,9 +871,9 @@ export default function Default({ data }) {
 					})}
 				</Grid>
 
-				<h3>In-kind sponsors</h3>
+				<h3>Equitation sponsors</h3>
 				<Grid lg={5} xl={7} gap={false}>
-					{inkindSponsors?.edges?.map((edge, i) => {
+					{equitationSponsors?.edges?.map((edge, i) => {
 						return (
 							<Sponsor key={i}>
 								<Img
@@ -764,9 +884,9 @@ export default function Default({ data }) {
 						);
 					})}
 				</Grid>
-				<h3>Prize sponsors</h3>
+				<h3>In-kind sponsors</h3>
 				<Grid lg={5} xl={7} gap={false}>
-					{prizeSponsors?.edges?.map((edge, i) => {
+					{inkindSponsors?.edges?.map((edge, i) => {
 						return (
 							<Sponsor key={i}>
 								<Img
@@ -887,7 +1007,7 @@ export const query = graphql`
     }
 
     eliteSponsors: allFile(
-      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2024/elite" } }
+      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2025/elite" } }
     ) {
       edges {
         node {
@@ -906,7 +1026,7 @@ export const query = graphql`
 
     banquetSponsors: allFile(
       filter: {
-        relativeDirectory: { eq: "hunter-jumper/sponsors2024/banquet" }
+        relativeDirectory: { eq: "hunter-jumper/sponsors2025/banquet" }
       }
     ) {
       edges {
@@ -922,7 +1042,7 @@ export const query = graphql`
     }
 
     ringSponsors: allFile(
-      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2024/ring" } }
+      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2025/ring" } }
     ) {
       edges {
         node {
@@ -937,7 +1057,7 @@ export const query = graphql`
     }
 
     goldSponsors: allFile(
-      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2024/gold" } }
+      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2025/gold" } }
     ) {
       edges {
         node {
@@ -951,7 +1071,7 @@ export const query = graphql`
       }
     }
     silverSponsors: allFile(
-      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2024/silver" } }
+      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2025/silver" } }
     ) {
       edges {
         node {
@@ -965,7 +1085,7 @@ export const query = graphql`
       }
     }
     bronzeSponsors: allFile(
-      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2024/bronze" } }
+      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2025/bronze" } }
     ) {
       edges {
         node {
@@ -979,7 +1099,7 @@ export const query = graphql`
       }
     }
     inkindSponsors: allFile(
-      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2024/inkind" } }
+      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2025/inkind" } }
     ) {
       edges {
         node {
@@ -994,7 +1114,7 @@ export const query = graphql`
     }
 
     photographers: allFile(
-      filter: { relativeDirectory: { eq: "hunter-jumper/photographers2024" } }
+      filter: { relativeDirectory: { eq: "hunter-jumper/photographers2025" } }
     ) {
       edges {
         node {
@@ -1008,8 +1128,8 @@ export const query = graphql`
       }
     }
 
-    prizeSponsors: allFile(
-      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2024/prize" } }
+    equitationSponsors: allFile(
+      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2025/equitation" } }
     ) {
       edges {
         node {
