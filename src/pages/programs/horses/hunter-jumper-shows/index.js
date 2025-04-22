@@ -185,19 +185,19 @@ export default function Default({ data }) {
 									<td>June 8, 2025</td>
 									<td>June 4, 2025</td>
 									<td>
-										{/* <Button
-                      target="_blank"
-                      href="https://forms.zohopublic.com/teenranch1/form/HorseShowJune232024/formperma/b922CUkLENoXBBXvWVcjpe-GbH2ERg_BUNJ4aL40DiQ?referrername=teenranch.com"
-                    >
-                      July 7th entry form
-                    </Button> */}
+										<Button
+											target="_blank"
+											href="https://forms.zohopublic.com/teenranch1/form/HorseShowJune82025/formperma/R-Lx69Q0GMPAotfFOLk0rut0tmmiGDkZF9ts6z0V3ts"
+										>
+											June 8th entry form
+										</Button>
 									</td>
 									{/* <td>
                     <Button
                       target="_blank"
                       href="https://forms.zohopublic.com/teenranch1/form/HorseShowJune1120231/formperma/7eqJQuGREMRk2hksfWr1hxkyTGBx8q_PZIcvYI3HjUI?referrername=teenranch.com"
                     >
-                      June 25th entry form
+                      July 13th entry form
                     </Button>
                   </td> */}
 								</tr>
@@ -205,44 +205,36 @@ export default function Default({ data }) {
 									<td>July 13, 2025</td>
 									<td>July 9, 2025</td>
 									<td>
-										{/* <Button */}
-										{/*   target="_blank" */}
-										{/*   href="https://forms.zohopublic.com/teenranch1/form/HorseShowJuly282024/formperma/D5_gAyp7ENAmixoHZ4P2s8BAX8bJog7EIjQbEbqkEKY?referrername=teenranch.com" */}
-										{/* > */}
-										{/*   July 28th entry form */}
-										{/* </Button> */}
+										<Button
+											target="_blank"
+											href="https://forms.zohopublic.com/teenranch1/form/HorseShowJuly132025/formperma/p8QVkR4zBTOkXunXa0SF71rQddiUegEolFZPbXJmG6E"
+										>
+											July 13th entry form
+										</Button>
 									</td>
-									{/* <td>
-                    <Button
-                      target="_blank"
-                      href="https://forms.zohopublic.com/teenranch1/form/HorseShowJuly92023/formperma/gTnIUXmLM1BE0N1apJXXCYJq7aHxYdIwvbOTY4ILeWc?referrername=teenranch.com"
-                    >
-                      July 9th entry form
-                    </Button>
-                  </td> */}
 								</tr>
 								<tr>
 									<td>August 10, 2025</td>
 									<td>August 6, 2025</td>
 									<td>
-										{/* <Button */}
-										{/*   target="_blank" */}
-										{/*   href="https://forms.zohopublic.com/teenranch1/form/HorseShowAugust252024/formperma/8wIUhM-UetMO2wXs_2xikZWso3WOAbusBItiYBGw9ww?referrername=teenranch.com" */}
-										{/* > */}
-										{/*   August 25th entry form */}
-										{/* </Button> */}
+										<Button
+											target="_blank"
+											href="https://forms.zohopublic.com/teenranch1/form/HorseShowAugust102025/formperma/dWOnHoGcD7zalDBOLn-KDw5v5vmy49l7sgOQeooK9Nk"
+										>
+											August 10th entry form
+										</Button>
 									</td>
 								</tr>
 								<tr>
 									<td>September 14, 2025</td>
 									<td>September 10, 2025</td>
 									<td>
-										{/* <Button */}
-										{/*   target="_blank" */}
-										{/*   href="https://forms.zohopublic.com/teenranch1/form/HorseShowSeptember222024/formperma/ezVt-lR23gZKAbhKiwCYSEt78Mi6CH27RJYFkAYAQWw?referrername=teenranch.com" */}
-										{/* > */}
-										{/*   September 22nd entry form */}
-										{/* </Button> */}
+										<Button
+											target="_blank"
+											href="https://forms.zohopublic.com/teenranch1/form/HorseShowSeptember142025/formperma/j9Ias4yMCus6w6sVWbZlsOIwQwDcoIVpyM1jRntmF2Q"
+										>
+											September 14th entry form
+										</Button>
 									</td>
 								</tr>
 							</tbody>
