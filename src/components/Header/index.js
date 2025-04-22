@@ -21,9 +21,9 @@ export default function Header({ location }) {
 			<Banner />
 			<header>
 				<Container type={`header${expanded ? " header--expanded" : ""}`}>
-					<NavLink to="/">
+					<Link to="/">
 						<img className="logo" src={logo} alt="Teen Ranch Logo" />
-					</NavLink>
+					</Link>
 					<button
 						className={`hamburgerMenu ${
 							expanded ? "hamburgerMenu--active" : ""

@@ -94,12 +94,18 @@ export default function Default({ data }) {
 			>
 				{eliteSponsors?.edges?.map((edge, i) => {
 					return (
-						<Img
-							key={i}
-							fixed={edge.node.childImageSharp.fixed}
-							alt={edge.node.name}
-							objectFit="cover"
-						/>
+						<div key={i} style={{ maxWidth: "120px", maxHeight: "100%" }}>
+							<Img
+								style={{
+									maxWidth: "100%",
+									maxHeight: "100%",
+								}}
+								imgStyle={{ objectFit: "contain" }}
+								fixed={edge.node.childImageSharp.fixed}
+								alt={edge.node.name}
+								objectFit="contain"
+							/>
+						</div>
 					);
 				})}
 			</div>
