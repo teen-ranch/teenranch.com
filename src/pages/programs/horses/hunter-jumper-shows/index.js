@@ -259,9 +259,9 @@ export default function Default({ data }) {
 				<h2>Links</h2>
 				<Card style={{ padding: "2rem" }}>
 					<div className="showButtons">
-						{/* <Button target="_blank" href="https://show.teenranch.com">
-							View 2024 season standings
-						</Button> */}
+						<Button target="_blank" href="https://show.teenranch.com">
+							View 2025 season standings
+						</Button>
 						<Button
 							target="_blank"
 							href="https://assets.teenranch.com/hunterJumperShowProgram_2025.pdf"
