@@ -1,138 +1,138 @@
-import React from "react"
-import Container from "components/Container"
-import Heading from "components/Heading"
+import React from "react";
+import Container from "components/Container";
+import Heading from "components/Heading";
 // import Button from 'components/Button'
-import { graphql } from "gatsby"
+import { graphql } from "gatsby";
 
-import SubNav from "components/SubNav"
-import { CTAButton, PdfButton } from "components/Button"
-import Program, { ProgramContainer } from "components/Program"
+import SubNav from "components/SubNav";
+import { CTAButton, PdfButton } from "components/Button";
+import Program, { ProgramContainer } from "components/Program";
 
 // import Grid from 'components/Grid'
 // import Coach from 'components/Coach'
-import { Link } from "react-scroll"
-import { PriceContainer, Price, PriceAddon } from "components/Price"
-import Quote from "components/Quote"
-import CampSchedule, { PreBuiltCampSchedule } from "components/CampSchedule"
-import Grid from "components/Grid"
+import { Link } from "react-scroll";
+import { PriceContainer, Price, PriceAddon } from "components/Price";
+import Quote from "components/Quote";
+import CampSchedule, { PreBuiltCampSchedule } from "components/CampSchedule";
+import Grid from "components/Grid";
 // import Sponsor from 'components/Sponsor'
-import Img from "gatsby-image"
-import { UltimateDayCampTerms } from "components/Terms"
-import { Link as ReachLink } from "@reach/router"
-import JumpStart from "components/JumpStart"
-import UltimateDayCampIntro from "components/UltimateDayCampIntro"
-import { BalancePayments } from "components/BalancePayments"
-import Video from "components/Video"
-import { PhotoGrid } from "components/PhotoGrid"
+import Img from "gatsby-image";
+import { UltimateDayCampTerms } from "components/Terms";
+import { Link as ReachLink } from "@reach/router";
+import JumpStart from "components/JumpStart";
+import UltimateDayCampIntro from "components/UltimateDayCampIntro";
+import { BalancePayments } from "components/BalancePayments";
+import Video from "components/Video";
+import { PhotoGrid } from "components/PhotoGrid";
 
 const frontmatter = {
-  title: "WHAM camp",
-  path: "/summer-camp/ultimate-day-camp/wham-camp/",
-}
+	title: "WHAM camp",
+	path: "/summer-camp/ultimate-day-camp/wham-camp/",
+};
 
 const pageData = {
-  subTitle: `Where heaps of activities meet.`,
-  keywords: "ultimate day camp, summer sports camp, summer day camp",
-}
+	subTitle: `Where heaps of activities meet.`,
+	keywords: "ultimate day camp, summer sports camp, summer day camp",
+};
 
 export default function Programs({ data }) {
-  const { file, whamAll, activities } = data
-  const srcs = []
-  activities &&
-    activities.edges &&
-    activities.edges.map(edge => srcs.push(edge.node.childImageSharp.fluid))
-  return (
-    <>
-      <Heading
-        src={file.childImageSharp.fluid}
-        // src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/hockey14.jpg'
-        alt="Hockey player stopping with puck"
-        title={frontmatter.title}
-        subtitle={pageData.subTitle}
-        metaTitle={pageData.metaTitle || frontmatter.title}
-        metaDescription={pageData.metaDescription || pageData.subTitle}
-        keywords={pageData.keywords}
-      />
+	const { file, whamAll, activities } = data;
+	const srcs = [];
+	activities &&
+		activities.edges &&
+		activities.edges.map((edge) => srcs.push(edge.node.childImageSharp.fluid));
+	return (
+		<>
+			<Heading
+				src={file.childImageSharp.fluid}
+				// src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/hockey14.jpg'
+				alt="Hockey player stopping with puck"
+				title={frontmatter.title}
+				subtitle={pageData.subTitle}
+				metaTitle={pageData.metaTitle || frontmatter.title}
+				metaDescription={pageData.metaDescription || pageData.subTitle}
+				keywords={pageData.keywords}
+			/>
 
-      <SubNav>
-        <Link to="top" activeClass="active" spy={true}>
-          Overview
-        </Link>
-        <Link to="dates" activeClass="active" spy={true}>
-          Dates
-        </Link>
-        <Link to="pricing" activeClass="active" spy={true}>
-          Pricing
-        </Link>
-      </SubNav>
+			<SubNav>
+				<Link to="top" activeClass="active" spy={true}>
+					Overview
+				</Link>
+				<Link to="dates" activeClass="active" spy={true}>
+					Dates
+				</Link>
+				<Link to="pricing" activeClass="active" spy={true}>
+					Pricing
+				</Link>
+			</SubNav>
 
-      <div id="top" style={{ position: "absolute", marginTop: "-120px" }} />
+			<div id="top" style={{ position: "absolute", marginTop: "-120px" }} />
 
-      <Container type="body">
-        <h1>WHAM camp</h1>
+			<Container type="body">
+				<h1>WHAM camp</h1>
 
-        <p>Where heaps of activities meet!</p>
+				<p>Where heaps of activities meet!</p>
 
-        <p>
-          Want to experience LOTS of camp fun, try a load of activities and meet
-          friends for life? WHAM Camp (Where Heaps of Activities Meet) is
-          designed just for you! Come and experience all the best of what Teen
-          Ranch has to offer. You won’t want to miss these epic activities!
-        </p>
-      </Container>
+				<p>
+					Want to experience LOTS of camp fun, try a load of activities and meet
+					friends for life? WHAM Camp (Where Heaps of Activities Meet) is
+					designed just for you! Come and experience all the best of what Teen
+					Ranch has to offer. You won’t want to miss these epic activities!
+				</p>
+			</Container>
 
-      <Container type="body">
-        <UltimateDayCampIntro />
-      </Container>
+			<Container type="body">
+				<UltimateDayCampIntro />
+			</Container>
 
-      <Container type="body">
-        <h2>Info pack</h2>
-        <div>
-          <PdfButton
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.canva.com/design/DAGU44ENrkk/0p3yyCAVgJDGmLX3UHjWaQ/view"
-          >
-            Ultimate day camp / junior day camp info pack
-          </PdfButton>
-        </div>
-        <p>
-          Families will be notified by email six weeks before the camp start
-          date for payment reminders and camp information.
-        </p>
-      </Container>
+			<Container type="body">
+				<h2>Info pack</h2>
+				<div>
+					<PdfButton
+						target="_blank"
+						rel="noopener noreferrer"
+						href="https://www.canva.com/design/DAGoGdnyY6E/nqIanj2GHA11W8-XM-zLcg/view"
+					>
+						Ultimate day camp / junior day camp info pack
+					</PdfButton>
+				</div>
+				<p>
+					Families will be notified by email six weeks before the camp start
+					date for payment reminders and camp information.
+				</p>
+			</Container>
 
-      <Container type="body">
-        <h1>Who it's for</h1>
+			<Container type="body">
+				<h1>Who it's for</h1>
 
-        <ProgramContainer>
-          <Program
-            small
-            name="WHAM camp"
-            who="Kids who want to try everything (age 8+)"
-            src={file.childImageSharp.fluid}
-          >
-            Epic activities like giant swing, horseback riding, rock climbing,
-            woodland survival, initiatives course challenge, archery,
-            waterslide, jousting pond, and so much more!
-          </Program>
-        </ProgramContainer>
-      </Container>
+				<ProgramContainer>
+					<Program
+						small
+						name="WHAM camp"
+						who="Kids who want to try everything (age 8+)"
+						src={file.childImageSharp.fluid}
+					>
+						Epic activities like giant swing, horseback riding, rock climbing,
+						woodland survival, initiatives course challenge, archery,
+						waterslide, jousting pond, and so much more!
+					</Program>
+				</ProgramContainer>
+			</Container>
 
-      {/*<Container>
+			{/*<Container>
         <Video src="https://www.youtube-nocookie.com/embed/hjLhkn7TcXo?si=4MitxKMv_F_H5dTY" />
       </Container>*/}
 
-      <Container type="body">
-        <Quote cite="Shocked Parent">
-          It's only January and the kids are starting their countdown to camp,
-          but Disney is 13 days away. They'd rather camp than do Disney?
-        </Quote>
-      </Container>
+			<Container type="body">
+				<Quote cite="Shocked Parent">
+					It's only January and the kids are starting their countdown to camp,
+					but Disney is 13 days away. They'd rather camp than do Disney?
+				</Quote>
+			</Container>
 
-      <Container type="body">
-        <PhotoGrid srcs={whamAll.edges} />
-        {/* <Grid sm={2} md={2} lg={3} xl={5} gap={false}>
+			<Container type="body">
+				<PhotoGrid srcs={whamAll.edges} />
+				{/* <Grid sm={2} md={2} lg={3} xl={5} gap={false}>
           {whamAll &&
             whamAll.edges &&
             whamAll.edges.map((edge, i) => {
@@ -143,13 +143,13 @@ export default function Programs({ data }) {
               )
             })}
         </Grid> */}
-      </Container>
+			</Container>
 
-      <Container type="body">
-        <h1>Afternoon activities</h1>
-        <PhotoGrid srcs={activities.edges} />
+			<Container type="body">
+				<h1>Afternoon activities</h1>
+				<PhotoGrid srcs={activities.edges} />
 
-        {/* <Grid sm={2} md={2} lg={5} xl={5} gap={false}>
+				{/* <Grid sm={2} md={2} lg={5} xl={5} gap={false}>
           {activities &&
             activities.edges &&
             activities.edges.map((edge, i) => {
@@ -163,64 +163,64 @@ export default function Programs({ data }) {
               )
             })}
         </Grid> */}
-      </Container>
+			</Container>
 
-      <div id="dates" style={{ position: "absolute", marginTop: "-120px" }} />
+			<div id="dates" style={{ position: "absolute", marginTop: "-120px" }} />
 
-      <Container type="body">
-        <h1>Camp dates</h1>
-        <PreBuiltCampSchedule type="UDC" sections={["wham"]} />
+			<Container type="body">
+				<h1>Camp dates</h1>
+				<PreBuiltCampSchedule type="UDC" sections={["wham"]} />
 
-        <p>
-          For goalie camp and rodeo camp:{" "}
-          <ReachLink to="/summer-camp/overnight-camp/">
-            see our overnight camps.
-          </ReachLink>
-        </p>
+				<p>
+					For goalie camp and rodeo camp:{" "}
+					<ReachLink to="/summer-camp/overnight-camp/">
+						see our overnight camps.
+					</ReachLink>
+				</p>
 
-        <CTAButton to="/summer-camp/ultimate-day-camp/">Register now</CTAButton>
-      </Container>
+				<CTAButton to="/summer-camp/ultimate-day-camp/">Register now</CTAButton>
+			</Container>
 
-      <div id="pricing" style={{ position: "absolute", marginTop: "-180px" }} />
+			<div id="pricing" style={{ position: "absolute", marginTop: "-180px" }} />
 
-      {/* <Container>
+			{/* <Container>
                 <h1>Pricing</h1>
             </Container> */}
 
-      <Container type="body">
-        <h1>Pricing</h1>
-        <UltimateDayCampTerms />
-        <JumpStart />
-        <PriceContainer xl={1} lg={1} md={1}>
-          <Price
-            title="WHAM camp"
-            subTitle={`Epic activities like giant swing, horseback riding, rock climbing, woodland survival, initiatives course challenge, archery, waterslide, jousting pond, and so much more!`}
-            who="KIDS WHO WANT TO TRY EVERYTHING (AGE 8+)"
-            price={425}
-            priceTo={895}
-            term="week"
-            includes={[
-              "Horseback riding",
-              "Rock climbing & bouldering",
-              "Woodland survival skills",
-              "Volleyball, soccer, & basketball",
-              "Archery",
-              "Waterslide, jousting pond, canoeing, kayaking",
-              "Swimming",
-              "Lunch",
-              "All camp activities",
-            ]}
-          >
-            <CTAButton href="https://register.trmanager.com">
-              Register now
-            </CTAButton>
-          </Price>
-        </PriceContainer>
-      </Container>
+			<Container type="body">
+				<h1>Pricing</h1>
+				<UltimateDayCampTerms />
+				<JumpStart />
+				<PriceContainer xl={1} lg={1} md={1}>
+					<Price
+						title="WHAM camp"
+						subTitle={`Epic activities like giant swing, horseback riding, rock climbing, woodland survival, initiatives course challenge, archery, waterslide, jousting pond, and so much more!`}
+						who="KIDS WHO WANT TO TRY EVERYTHING (AGE 8+)"
+						price={425}
+						priceTo={895}
+						term="week"
+						includes={[
+							"Horseback riding",
+							"Rock climbing & bouldering",
+							"Woodland survival skills",
+							"Volleyball, soccer, & basketball",
+							"Archery",
+							"Waterslide, jousting pond, canoeing, kayaking",
+							"Swimming",
+							"Lunch",
+							"All camp activities",
+						]}
+					>
+						<CTAButton href="https://register.trmanager.com">
+							Register now
+						</CTAButton>
+					</Price>
+				</PriceContainer>
+			</Container>
 
-      <BalancePayments />
+			<BalancePayments />
 
-      {/* <Container type="body">
+			{/* <Container type="body">
         <h2>Day camp add-ons:</h2>
         <PriceAddon
           title="Extended care"
@@ -235,8 +235,8 @@ export default function Programs({ data }) {
           term="week"
         />
       </Container> */}
-    </>
-  )
+		</>
+	);
 }
 
 // const NavLink = ({ children, ...props }) => (
@@ -279,4 +279,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

@@ -1,130 +1,130 @@
-import React from "react"
-import Container from "components/Container"
-import Heading from "components/Heading"
+import React from "react";
+import Container from "components/Container";
+import Heading from "components/Heading";
 // import Button from 'components/Button'
-import { graphql } from "gatsby"
+import { graphql } from "gatsby";
 
-import SubNav from "components/SubNav"
+import SubNav from "components/SubNav";
 import {
-  PrimaryButton,
-  SecondaryButton,
-  CTAButton,
-  PdfButton,
-} from "components/Button"
-import Program, { ProgramContainer } from "components/Program"
+	PrimaryButton,
+	SecondaryButton,
+	CTAButton,
+	PdfButton,
+} from "components/Button";
+import Program, { ProgramContainer } from "components/Program";
 
 // import Grid from 'components/Grid'
 // import Coach from 'components/Coach'
-import { Link } from "react-scroll"
-import { PriceContainer, Price, PriceAddon } from "components/Price"
-import Quote from "components/Quote"
-import { PreBuiltCampSchedule } from "components/CampSchedule"
+import { Link } from "react-scroll";
+import { PriceContainer, Price, PriceAddon } from "components/Price";
+import Quote from "components/Quote";
+import { PreBuiltCampSchedule } from "components/CampSchedule";
 // import Sponsor from 'components/Sponsor'
-import Img from "gatsby-image"
-import { UltimateDayCampTerms } from "components/Terms"
-import { Link as ReachLink } from "@reach/router"
-import JumpStart from "components/JumpStart"
-import UltimateDayCampIntro from "components/UltimateDayCampIntro"
-import { BalancePayments } from "components/BalancePayments"
-import { PhotoGrid } from "components/PhotoGrid"
+import Img from "gatsby-image";
+import { UltimateDayCampTerms } from "components/Terms";
+import { Link as ReachLink } from "@reach/router";
+import JumpStart from "components/JumpStart";
+import UltimateDayCampIntro from "components/UltimateDayCampIntro";
+import { BalancePayments } from "components/BalancePayments";
+import { PhotoGrid } from "components/PhotoGrid";
 
 const frontmatter = {
-  title: "Ultimate day camp",
-  path: "/summer-camp/ultimate-day-camp/",
-}
+	title: "Ultimate day camp",
+	path: "/summer-camp/ultimate-day-camp/",
+};
 
 const pageData = {
-  subTitle: `Friends, sports, and adventure packed into five exciting days`,
-  keywords: "summer camp, ultimate day camp, summer sports camp",
-}
+	subTitle: `Friends, sports, and adventure packed into five exciting days`,
+	keywords: "summer camp, ultimate day camp, summer sports camp",
+};
 
 export default function Programs({ data }) {
-  const { file, hockeyNowWinner, hockey, horse, bmx, wham, activities } = data
+	const { file, hockeyNowWinner, hockey, horse, bmx, wham, activities } = data;
 
-  return (
-    <>
-      <Heading
-        src={file.childImageSharp.fluid}
-        // src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/hockey14.jpg'
-        alt="Hockey player stopping with puck"
-        title={frontmatter.title}
-        subtitle={pageData.subTitle}
-        metaTitle={pageData.metaTitle || frontmatter.title}
-        metaDescription={pageData.metaDescription || pageData.subTitle}
-        keywords={pageData.keywords}
-      />
+	return (
+		<>
+			<Heading
+				src={file.childImageSharp.fluid}
+				// src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/hockey14.jpg'
+				alt="Hockey player stopping with puck"
+				title={frontmatter.title}
+				subtitle={pageData.subTitle}
+				metaTitle={pageData.metaTitle || frontmatter.title}
+				metaDescription={pageData.metaDescription || pageData.subTitle}
+				keywords={pageData.keywords}
+			/>
 
-      <SubNav>
-        <Link to="top" activeClass="active" spy={true}>
-          Overview
-        </Link>
-        <Link to="dates" activeClass="active" spy={true}>
-          Dates
-        </Link>
-        <Link to="pricing" activeClass="active" spy={true}>
-          Pricing
-        </Link>
-      </SubNav>
+			<SubNav>
+				<Link to="top" activeClass="active" spy={true}>
+					Overview
+				</Link>
+				<Link to="dates" activeClass="active" spy={true}>
+					Dates
+				</Link>
+				<Link to="pricing" activeClass="active" spy={true}>
+					Pricing
+				</Link>
+			</SubNav>
 
-      <div id="top" style={{ position: "absolute", marginTop: "-120px" }} />
+			<div id="top" style={{ position: "absolute", marginTop: "-120px" }} />
 
-      <Container type="body">
-        <UltimateDayCampIntro />
-      </Container>
+			<Container type="body">
+				<UltimateDayCampIntro />
+			</Container>
 
-      <Container type="body">
-        <h2>Info pack</h2>
-        <div>
-          <PdfButton
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.canva.com/design/DAGU44ENrkk/0p3yyCAVgJDGmLX3UHjWaQ/view"
-          >
-            Ultimate day camp / junior day camp info pack
-          </PdfButton>
-        </div>
-        <p>
-          Families will be notified by email six weeks before the camp start
-          date for payment reminders and camp information.
-        </p>
-      </Container>
+			<Container type="body">
+				<h2>Info pack</h2>
+				<div>
+					<PdfButton
+						target="_blank"
+						rel="noopener noreferrer"
+						href="https://www.canva.com/design/DAGoGdnyY6E/nqIanj2GHA11W8-XM-zLcg/view"
+					>
+						Ultimate day camp / junior day camp info pack
+					</PdfButton>
+				</div>
+				<p>
+					Families will be notified by email six weeks before the camp start
+					date for payment reminders and camp information.
+				</p>
+			</Container>
 
-      <Container type="body">
-        <h1>Who it's for</h1>
-        <p>
-          Ulitmate day camp is perfect for kids and teens age 8+. We offer
-          specialized programs in horseback riding, hockey, and WHAM camp for
-          kids who want to experience a variety of outdoor adventures!
-        </p>
+			<Container type="body">
+				<h1>Who it's for</h1>
+				<p>
+					Ulitmate day camp is perfect for kids and teens age 8+. We offer
+					specialized programs in horseback riding, hockey, and WHAM camp for
+					kids who want to experience a variety of outdoor adventures!
+				</p>
 
-        <ProgramContainer xl={3}>
-          <Program
-            small
-            name="Hockey camps"
-            who="Players & goalies (age 8+)"
-            src={hockey.childImageSharp.fluid}
-          >
-            Skills & skating development and full-ice scrimmages for players and
-            goalies from house-league to rep.
-            <br />
-            <PrimaryButton to="/summer-camp/ultimate-day-camp/hockey-camps/">
-              Learn more
-            </PrimaryButton>
-          </Program>
-          <Program
-            small
-            name="Horse camps"
-            who="English & western riders (age 8+)"
-            src={horse.childImageSharp.fluid}
-          >
-            Horseback riding camps for beginner to advanced riders. Take your
-            pick from western or english camps.
-            <br />
-            <PrimaryButton to="/summer-camp/ultimate-day-camp/horse-camps/">
-              Learn more
-            </PrimaryButton>
-          </Program>
-          {/* <Program
+				<ProgramContainer xl={3}>
+					<Program
+						small
+						name="Hockey camps"
+						who="Players & goalies (age 8+)"
+						src={hockey.childImageSharp.fluid}
+					>
+						Skills & skating development and full-ice scrimmages for players and
+						goalies from house-league to rep.
+						<br />
+						<PrimaryButton to="/summer-camp/ultimate-day-camp/hockey-camps/">
+							Learn more
+						</PrimaryButton>
+					</Program>
+					<Program
+						small
+						name="Horse camps"
+						who="English & western riders (age 8+)"
+						src={horse.childImageSharp.fluid}
+					>
+						Horseback riding camps for beginner to advanced riders. Take your
+						pick from western or english camps.
+						<br />
+						<PrimaryButton to="/summer-camp/ultimate-day-camp/horse-camps/">
+							Learn more
+						</PrimaryButton>
+					</Program>
+					{/* <Program
             small
             name="Ad camp"
             who="Beginner to advanced riders (age 8+)"
@@ -137,48 +137,47 @@ export default function Programs({ data }) {
               Learn more
             </PrimaryButton>
           </Program> */}
-          <Program
-            small
-            name="WHAM camp"
-            who="Kids who want to try everything (age 8+)"
-            src={wham.childImageSharp.fluid}
-          >
-            Epic activities like giant swing, horseback riding, rock climbing,
-            woodland survival, initiatives course challenge, archery,
-            waterslide, jousting pond, and so much more!
-            <br />
-            <PrimaryButton to="/summer-camp/ultimate-day-camp/wham-camp/">
-              Learn more
-            </PrimaryButton>
-          </Program>
-        </ProgramContainer>
-      </Container>
+					<Program
+						small
+						name="WHAM camp"
+						who="Kids who want to try everything (age 8+)"
+						src={wham.childImageSharp.fluid}
+					>
+						Epic activities like giant swing, horseback riding, rock climbing,
+						woodland survival, initiatives course challenge, archery,
+						waterslide, jousting pond, and so much more!
+						<br />
+						<PrimaryButton to="/summer-camp/ultimate-day-camp/wham-camp/">
+							Learn more
+						</PrimaryButton>
+					</Program>
+				</ProgramContainer>
+			</Container>
 
-      <Container type="body">
-        <div style={{ textAlign: "center" }}>
-          <Img
-            fixed={hockeyNowWinner.childImageSharp.fixed}
-            alt="Best hockey school in Ontario award."
-          />
-        </div>
-        <Quote cite="James">
-          On a scale of one to ten this camp is a twenty five!
-        </Quote>
-      </Container>
+			<Container type="body">
+				<div style={{ textAlign: "center" }}>
+					<Img
+						fixed={hockeyNowWinner.childImageSharp.fixed}
+						alt="Best hockey school in Ontario award."
+					/>
+				</div>
+				<Quote cite="James">
+					On a scale of one to ten this camp is a twenty five!
+				</Quote>
+			</Container>
 
-      <Container type="body">
-        <h1>Afternoon activities</h1>
+			<Container type="body">
+				<h1>Afternoon activities</h1>
 
-        <p>
-          Each afternoon, campers get to take their pick from some amazing camp
-          activities on 150 beautiful acres including: giant swing, trail rides,
-          rock climbing, bouldering, water slide,
-          swimming, water jousting, archery, tennis, basketball, outdoor
-          activities, and more.
-        </p>
-        <PhotoGrid srcs={activities.edges} />
+				<p>
+					Each afternoon, campers get to take their pick from some amazing camp
+					activities on 150 beautiful acres including: giant swing, trail rides,
+					rock climbing, bouldering, water slide, swimming, water jousting,
+					archery, tennis, basketball, outdoor activities, and more.
+				</p>
+				<PhotoGrid srcs={activities.edges} />
 
-        {/* <Grid sm={2} md={2} lg={5} xl={5} gap={false}>
+				{/* <Grid sm={2} md={2} lg={5} xl={5} gap={false}>
           {activities &&
             activities.edges &&
             activities.edges.map((edge, i) => {
@@ -192,92 +191,92 @@ export default function Programs({ data }) {
               )
             })}
         </Grid> */}
-      </Container>
+			</Container>
 
-      <div id="dates" style={{ position: "absolute", marginTop: "-120px" }} />
+			<div id="dates" style={{ position: "absolute", marginTop: "-120px" }} />
 
-      <Container type="body">
-        <h1>Camp dates</h1>
-        <PreBuiltCampSchedule type="UDC" />
+			<Container type="body">
+				<h1>Camp dates</h1>
+				<PreBuiltCampSchedule type="UDC" />
 
-        <p>
-          For girl's hockey camp, goalie camp, and rodeo camp:{" "}
-          <ReachLink to="/summer-camp/overnight-camp/">
-            see our overnight camps.
-          </ReachLink>
-        </p>
+				<p>
+					For girl's hockey camp, goalie camp, and rodeo camp:{" "}
+					<ReachLink to="/summer-camp/overnight-camp/">
+						see our overnight camps.
+					</ReachLink>
+				</p>
 
-        <CTAButton to="/summer-camp/ultimate-day-camp/">Register now</CTAButton>
-      </Container>
+				<CTAButton to="/summer-camp/ultimate-day-camp/">Register now</CTAButton>
+			</Container>
 
-      {/* <Container>
+			{/* <Container>
                 <h1>Pricing</h1>
             </Container> */}
 
-      <Container type="body">
-        <div
-          id="pricing"
-          style={{ position: "absolute", marginTop: "-180px" }}
-        />
-        <h1>Pricing</h1>
-        <UltimateDayCampTerms />
-        <JumpStart />
-        <PriceContainer xl={3}>
-          <Price
-            title="Hockey camps"
-            subTitle={`Skills & skating development for players and goalies from house-league to rep. Standard, high-performance, girl's hockey, and goalie camps.`}
-            who="Players and goalies"
-            price={425}
-            priceTo={1100}
-            term="week"
-            includes={[
-              "On-site, olympic-size ice rink",
-              "Minimum 7.5 hours on-ice per week",
-              "Skills development",
-              "Skating development",
-              "Full-ice scrimmages",
-              "Fun-based off-ice program",
-              "Jersey included",
-              "All meals",
-              "All camp activities",
-            ]}
-          >
-            <center>
-              <SecondaryButton to="/summer-camp/ultimate-day-camp/hockey-camps/">
-                Learn more
-              </SecondaryButton>
-            </center>
-            <CTAButton href="https://register.trmanager.com">
-              Register now
-            </CTAButton>
-          </Price>
-          <Price
-            title="Horse camps"
-            subTitle="Horseback riding camps for beginner to advanced riders. Take your pick from western or english camps."
-            who="English & western riders"
-            price={425}
-            priceTo={895}
-            term="week"
-            includes={[
-              "Ability-based lessons",
-              "Western and english specific disciplines",
-              "Safe, well-schooled horses",
-              "Instructors trained to CHA standards",
-              "First-aid certified full-time staff",
-              "Lunch",
-              "All camp activities",
-            ]}
-          >
-            <center>
-              <SecondaryButton to="/summer-camp/ultimate-day-camp/horse-camps/">
-                Learn more
-              </SecondaryButton>
-            </center>
-            <CTAButton href="https://register.trmanager.com">
-              Register now
-            </CTAButton>
-          </Price>
-          {/* <Price
+			<Container type="body">
+				<div
+					id="pricing"
+					style={{ position: "absolute", marginTop: "-180px" }}
+				/>
+				<h1>Pricing</h1>
+				<UltimateDayCampTerms />
+				<JumpStart />
+				<PriceContainer xl={3}>
+					<Price
+						title="Hockey camps"
+						subTitle={`Skills & skating development for players and goalies from house-league to rep. Standard, high-performance, girl's hockey, and goalie camps.`}
+						who="Players and goalies"
+						price={425}
+						priceTo={1100}
+						term="week"
+						includes={[
+							"On-site, olympic-size ice rink",
+							"Minimum 7.5 hours on-ice per week",
+							"Skills development",
+							"Skating development",
+							"Full-ice scrimmages",
+							"Fun-based off-ice program",
+							"Jersey included",
+							"All meals",
+							"All camp activities",
+						]}
+					>
+						<center>
+							<SecondaryButton to="/summer-camp/ultimate-day-camp/hockey-camps/">
+								Learn more
+							</SecondaryButton>
+						</center>
+						<CTAButton href="https://register.trmanager.com">
+							Register now
+						</CTAButton>
+					</Price>
+					<Price
+						title="Horse camps"
+						subTitle="Horseback riding camps for beginner to advanced riders. Take your pick from western or english camps."
+						who="English & western riders"
+						price={425}
+						priceTo={895}
+						term="week"
+						includes={[
+							"Ability-based lessons",
+							"Western and english specific disciplines",
+							"Safe, well-schooled horses",
+							"Instructors trained to CHA standards",
+							"First-aid certified full-time staff",
+							"Lunch",
+							"All camp activities",
+						]}
+					>
+						<center>
+							<SecondaryButton to="/summer-camp/ultimate-day-camp/horse-camps/">
+								Learn more
+							</SecondaryButton>
+						</center>
+						<CTAButton href="https://register.trmanager.com">
+							Register now
+						</CTAButton>
+					</Price>
+					{/* <Price
             title="BMX dirt camp"
             subTitle="Tabletops, rollers, step-ups, step-downs, whoops, berms, hip jumps and even a pump track for riders of all levels."
             who="Beginner to advanced riders"
@@ -303,56 +302,56 @@ export default function Programs({ data }) {
               Register now
             </CTAButton>
           </Price> */}
-          <Price
-            title="WHAM camp"
-            subTitle="Epic activities like giant swing, horseback riding, rock climbing, woodland survival, initiatives course challenge, archery, waterslide, jousting pond, and so much more!"
-            who="Kids who want to try everything"
-            price={425}
-            priceTo={895}
-            term="week"
-            includes={[
-              "Horseback riding",
-              "Rock climbing & bouldering",
-              "Woodland survival skills",
-              "Volleyball, basketball & soccer",
-              "Archery",
-              "Waterslide, jousting pond, canoes, kayaks",
-              "Lunch",
-              "All camp activities",
-            ]}
-          >
-            <center>
-              <SecondaryButton to="/summer-camp/ultimate-day-camp/wham-camp/">
-                Learn more
-              </SecondaryButton>
-            </center>
-            <CTAButton href="https://register.trmanager.com">
-              Register now
-            </CTAButton>
-          </Price>
-        </PriceContainer>
-      </Container>
+					<Price
+						title="WHAM camp"
+						subTitle="Epic activities like giant swing, horseback riding, rock climbing, woodland survival, initiatives course challenge, archery, waterslide, jousting pond, and so much more!"
+						who="Kids who want to try everything"
+						price={425}
+						priceTo={895}
+						term="week"
+						includes={[
+							"Horseback riding",
+							"Rock climbing & bouldering",
+							"Woodland survival skills",
+							"Volleyball, basketball & soccer",
+							"Archery",
+							"Waterslide, jousting pond, canoes, kayaks",
+							"Lunch",
+							"All camp activities",
+						]}
+					>
+						<center>
+							<SecondaryButton to="/summer-camp/ultimate-day-camp/wham-camp/">
+								Learn more
+							</SecondaryButton>
+						</center>
+						<CTAButton href="https://register.trmanager.com">
+							Register now
+						</CTAButton>
+					</Price>
+				</PriceContainer>
+			</Container>
 
-      <Container type="body">
-        <h2>Additional summer programs:</h2>
-        <PriceAddon
-          title="Summer drop-in ice time (9:00am - 10:30am)"
-          subTitle="One week only!"
-          description={
-            <>
-              Join in with our regular hockey program for 1.5 hours of ice time
-              each morning, Monday - Friday.
-            </>
-          }
-          price={350}
-          term="week"
-          to="https://register.trmanager.com"
-        />
-      </Container>
+			<Container type="body">
+				<h2>Additional summer programs:</h2>
+				<PriceAddon
+					title="Summer drop-in ice time (9:00am - 10:30am)"
+					subTitle="One week only!"
+					description={
+						<>
+							Join in with our regular hockey program for 1.5 hours of ice time
+							each morning, Monday - Friday.
+						</>
+					}
+					price={350}
+					term="week"
+					to="https://register.trmanager.com"
+				/>
+			</Container>
 
-      <BalancePayments />
+			<BalancePayments />
 
-      {/* <Container type="body">
+			{/* <Container type="body">
         <h2>Ultimate day camp add-ons:</h2>
         <PriceAddon
           title="Extended care"
@@ -367,8 +366,8 @@ export default function Programs({ data }) {
           term="week"
         />
       </Container> */}
-    </>
-  )
+		</>
+	);
 }
 
 // const NavLink = ({ children, ...props }) => (
@@ -442,4 +441,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;
