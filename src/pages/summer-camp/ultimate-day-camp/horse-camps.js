@@ -1,142 +1,142 @@
-import React from "react"
-import Container from "components/Container"
-import Heading from "components/Heading"
+import React from "react";
+import Container from "components/Container";
+import Heading from "components/Heading";
 // import Button from 'components/Button'
-import { graphql } from "gatsby"
+import { graphql } from "gatsby";
 
-import SubNav from "components/SubNav"
-import { CTAButton, PdfButton } from "components/Button"
-import Program, { ProgramContainer } from "components/Program"
+import SubNav from "components/SubNav";
+import { CTAButton, PdfButton } from "components/Button";
+import Program, { ProgramContainer } from "components/Program";
 
 // import Grid from 'components/Grid'
 // import Coach from 'components/Coach'
-import { Link } from "react-scroll"
-import { PriceContainer, Price, PriceAddon } from "components/Price"
-import Quote from "../../../components/Quote"
+import { Link } from "react-scroll";
+import { PriceContainer, Price, PriceAddon } from "components/Price";
+import Quote from "../../../components/Quote";
 import CampSchedule, {
-  PreBuiltCampSchedule,
-} from "../../../components/CampSchedule"
-import Grid from "components/Grid"
+	PreBuiltCampSchedule,
+} from "../../../components/CampSchedule";
+import Grid from "components/Grid";
 // import Sponsor from 'components/Sponsor'
-import Img from "gatsby-image"
-import { UltimateDayCampTerms } from "components/Terms"
-import { Link as ReachLink } from "@reach/router"
-import JumpStart from "components/JumpStart"
-import UltimateDayCampIntro from "components/UltimateDayCampIntro"
-import { BalancePayments } from "components/BalancePayments"
-import { PhotoGrid } from "components/PhotoGrid"
+import Img from "gatsby-image";
+import { UltimateDayCampTerms } from "components/Terms";
+import { Link as ReachLink } from "@reach/router";
+import JumpStart from "components/JumpStart";
+import UltimateDayCampIntro from "components/UltimateDayCampIntro";
+import { BalancePayments } from "components/BalancePayments";
+import { PhotoGrid } from "components/PhotoGrid";
 
 const frontmatter = {
-  title: "Horse camps",
-  path: "/summer-camp/ultimate-day-camp/horse-camps/",
-}
+	title: "Horse camps",
+	path: "/summer-camp/ultimate-day-camp/horse-camps/",
+};
 
 const pageData = {
-  subTitle: `Canada's finest horse camp since 1967`,
-  keywords:
-    "summer horse camp, horse camp ontario, horse camp orangeville, horse camp toronto",
-}
+	subTitle: `Canada's finest horse camp since 1967`,
+	keywords:
+		"summer horse camp, horse camp ontario, horse camp orangeville, horse camp toronto",
+};
 
 export default function Programs({ data }) {
-  const { file, western, english, intensive, rodeo, activities } = data
+	const { file, western, english, intensive, rodeo, activities } = data;
 
-  return (
-    <>
-      <Heading
-        src={file.childImageSharp.fluid}
-        // src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/hockey14.jpg'
-        alt="Hockey player taking a slapshot"
-        title={frontmatter.title}
-        subtitle={pageData.subTitle}
-        metaTitle={pageData.metaTitle || frontmatter.title}
-        metaDescription={pageData.metaDescription || pageData.subTitle}
-        keywords={pageData.keywords}
-      />
+	return (
+		<>
+			<Heading
+				src={file.childImageSharp.fluid}
+				// src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/hockey14.jpg'
+				alt="Hockey player taking a slapshot"
+				title={frontmatter.title}
+				subtitle={pageData.subTitle}
+				metaTitle={pageData.metaTitle || frontmatter.title}
+				metaDescription={pageData.metaDescription || pageData.subTitle}
+				keywords={pageData.keywords}
+			/>
 
-      <SubNav>
-        <Link to="top" activeClass="active" spy={true}>
-          Overview
-        </Link>
-        <Link to="dates" activeClass="active" spy={true}>
-          Dates
-        </Link>
-        <Link to="pricing" activeClass="active" spy={true}>
-          Pricing
-        </Link>
-      </SubNav>
+			<SubNav>
+				<Link to="top" activeClass="active" spy={true}>
+					Overview
+				</Link>
+				<Link to="dates" activeClass="active" spy={true}>
+					Dates
+				</Link>
+				<Link to="pricing" activeClass="active" spy={true}>
+					Pricing
+				</Link>
+			</SubNav>
 
-      <div id="top" style={{ position: "absolute", marginTop: "-120px" }} />
+			<div id="top" style={{ position: "absolute", marginTop: "-120px" }} />
 
-      <Container type="body">
-        <h1>Horse camp</h1>
+			<Container type="body">
+				<h1>Horse camp</h1>
 
-        <p>
-          The Teen Ranch horse program is for all ability levels to learn or
-          develop their skills on safe, well-schooled horses.
-        </p>
+				<p>
+					The Teen Ranch horse program is for all ability levels to learn or
+					develop their skills on safe, well-schooled horses.
+				</p>
 
-        <p>
-          Beginner riders start with the basics of position and control.
-          Intermediate riders continue to hone the basics while being introduced
-          to new skills. Advanced riders will be challenged to perfect their
-          jumping position, equitation and effective communication with their
-          horse.
-        </p>
+				<p>
+					Beginner riders start with the basics of position and control.
+					Intermediate riders continue to hone the basics while being introduced
+					to new skills. Advanced riders will be challenged to perfect their
+					jumping position, equitation and effective communication with their
+					horse.
+				</p>
 
-        <p>
-          Teen Ranch instructors are trained according to CHA standards, putting
-          the largest emphasis on safety, education and fun. All full-time staff
-          are certified in First Aid.
-        </p>
-      </Container>
+				<p>
+					Teen Ranch instructors are trained according to CHA standards, putting
+					the largest emphasis on safety, education and fun. All full-time staff
+					are certified in First Aid.
+				</p>
+			</Container>
 
-      <Container type="body">
-        <UltimateDayCampIntro />
-      </Container>
+			<Container type="body">
+				<UltimateDayCampIntro />
+			</Container>
 
-      <Container type="body">
-        <h2>Info pack</h2>
-        <div>
-          <PdfButton
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.canva.com/design/DAGU44ENrkk/0p3yyCAVgJDGmLX3UHjWaQ/view"
-          >
-            Ultimate day camp / junior day camp info pack
-          </PdfButton>
-        </div>
-        <p>
-          Families will be notified by email six weeks before the camp start
-          date for payment reminders and camp information.
-        </p>
-      </Container>
+			<Container type="body">
+				<h2>Info pack</h2>
+				<div>
+					<PdfButton
+						target="_blank"
+						rel="noopener noreferrer"
+						href="https://www.canva.com/design/DAGoGdnyY6E/nqIanj2GHA11W8-XM-zLcg/view"
+					>
+						Ultimate day camp / junior day camp info pack
+					</PdfButton>
+				</div>
+				<p>
+					Families will be notified by email six weeks before the camp start
+					date for payment reminders and camp information.
+				</p>
+			</Container>
 
-      <Container type="body">
-        <h1>Who it's for</h1>
-        <p>
-          Horse camp is perfect for english and western riders of all ability
-          levels.
-        </p>
+			<Container type="body">
+				<h1>Who it's for</h1>
+				<p>
+					Horse camp is perfect for english and western riders of all ability
+					levels.
+				</p>
 
-        <ProgramContainer xl={2} lg={2}>
-          <Program
-            small
-            name="Western riding camp"
-            who="Beginner to advanced (age 8+)"
-            src={western.childImageSharp.fluid}
-          >
-            An excellent place to start for first-time riders or western riding
-            enthusiasts.
-          </Program>
-          <Program
-            small
-            name="English riding camp"
-            who="Beginner to advanced (age 8+)"
-            src={english.childImageSharp.fluid}
-          >
-            For kids of all riding levels to learn or develop new skills.
-          </Program>
-          {/* <Program
+				<ProgramContainer xl={2} lg={2}>
+					<Program
+						small
+						name="Western riding camp"
+						who="Beginner to advanced (age 8+)"
+						src={western.childImageSharp.fluid}
+					>
+						An excellent place to start for first-time riders or western riding
+						enthusiasts.
+					</Program>
+					<Program
+						small
+						name="English riding camp"
+						who="Beginner to advanced (age 8+)"
+						src={english.childImageSharp.fluid}
+					>
+						For kids of all riding levels to learn or develop new skills.
+					</Program>
+					{/* <Program
             small
             name="Intensive equestrian camp"
             who="Advanced hunter/jumper (age 12+)"
@@ -156,32 +156,31 @@ export default function Programs({ data }) {
           >
             For western riders who want a taste of rodeo competition.
           </Program> */}
-        </ProgramContainer>
-      </Container>
+				</ProgramContainer>
+			</Container>
 
-      <Container type="body">
-        <Quote cite="Diane">
-          My child loves Teen Ranch and requests to go every year. That says so
-          much coming from a kid. It is the only camp she is always eager to
-          attend. She loves the horses and horseback riding. She loves the
-          diverse activities, the food, and crafts. The staff are wonderful and
-          friendly and she can't wait to go again!
-        </Quote>
-      </Container>
+			<Container type="body">
+				<Quote cite="Diane">
+					My child loves Teen Ranch and requests to go every year. That says so
+					much coming from a kid. It is the only camp she is always eager to
+					attend. She loves the horses and horseback riding. She loves the
+					diverse activities, the food, and crafts. The staff are wonderful and
+					friendly and she can't wait to go again!
+				</Quote>
+			</Container>
 
-      <Container type="body">
-        <h1>Afternoon activities</h1>
+			<Container type="body">
+				<h1>Afternoon activities</h1>
 
-        <p>
-          Each afternoon, campers get to take their pick from some amazing camp
-          activities on 150 beautiful acres including: giant swing, trail rides,
-          rock climbing, bouldering, water slide,
-          swimming, water jousting, archery, tennis, basketball, volleyball, and
-          more.
-        </p>
-        <PhotoGrid srcs={activities.edges} />
+				<p>
+					Each afternoon, campers get to take their pick from some amazing camp
+					activities on 150 beautiful acres including: giant swing, trail rides,
+					rock climbing, bouldering, water slide, swimming, water jousting,
+					archery, tennis, basketball, volleyball, and more.
+				</p>
+				<PhotoGrid srcs={activities.edges} />
 
-        {/* <Grid sm={2} md={2} lg={5} xl={5} gap={false}>
+				{/* <Grid sm={2} md={2} lg={5} xl={5} gap={false}>
           {activities &&
             activities.edges &&
             activities.edges.map((edge, i) => {
@@ -195,79 +194,79 @@ export default function Programs({ data }) {
               )
             })}
         </Grid> */}
-      </Container>
+			</Container>
 
-      <div id="dates" style={{ position: "absolute", marginTop: "-120px" }} />
+			<div id="dates" style={{ position: "absolute", marginTop: "-120px" }} />
 
-      <Container type="body">
-        <h1>Camp dates</h1>
-        <PreBuiltCampSchedule type="UDC" sections={["horses"]} />
+			<Container type="body">
+				<h1>Camp dates</h1>
+				<PreBuiltCampSchedule type="UDC" sections={["horses"]} />
 
-        <p>
-          For rodeo camp:{" "}
-          <ReachLink to="/summer-camp/overnight-camp/">
-            see our overnight camps.
-          </ReachLink>
-        </p>
+				<p>
+					For rodeo camp:{" "}
+					<ReachLink to="/summer-camp/overnight-camp/">
+						see our overnight camps.
+					</ReachLink>
+				</p>
 
-        <CTAButton to="/summer-camp/ultimate-day-camp/">Register now</CTAButton>
-      </Container>
+				<CTAButton to="/summer-camp/ultimate-day-camp/">Register now</CTAButton>
+			</Container>
 
-      <div id="pricing" style={{ position: "absolute", marginTop: "-180px" }} />
+			<div id="pricing" style={{ position: "absolute", marginTop: "-180px" }} />
 
-      {/* <Container>
+			{/* <Container>
                 <h1>Pricing</h1>
             </Container> */}
 
-      <Container type="body">
-        <h1>Pricing</h1>
-        <UltimateDayCampTerms />
-        <JumpStart />
-        <PriceContainer xl={2} lg={2}>
-          <Price
-            title="Western riding camp"
-            subTitle="An excellent place to start for first-time riders or western riding enthusiasts."
-            who="Beginner to advanced"
-            price={425}
-            priceTo={895}
-            term="week"
-            includes={[
-              "Basic position & control",
-              "Lateral movement",
-              "Patterns",
-              "Games on horseback",
-              "Barrel racing (advanced)",
-              "Pole bending (advanced)",
-              "Lunch",
-              "All camp activities",
-            ]}
-          >
-            <CTAButton href="https://register.trmanager.com">
-              Register now
-            </CTAButton>
-          </Price>
-          <Price
-            title="English riding camp"
-            subTitle="For kids of all riding levels to learn or develop new skills."
-            who="Beginner to advanced"
-            price={425}
-            priceTo={895}
-            term="week"
-            includes={[
-              "Basic position & control",
-              "Lateral movement",
-              "Games on horseback",
-              "Jumping position",
-              "Equitation",
-              "Lunch",
-              "All camp activities",
-            ]}
-          >
-            <CTAButton href="https://register.trmanager.com">
-              Register now
-            </CTAButton>
-          </Price>
-          {/* <Price
+			<Container type="body">
+				<h1>Pricing</h1>
+				<UltimateDayCampTerms />
+				<JumpStart />
+				<PriceContainer xl={2} lg={2}>
+					<Price
+						title="Western riding camp"
+						subTitle="An excellent place to start for first-time riders or western riding enthusiasts."
+						who="Beginner to advanced"
+						price={425}
+						priceTo={895}
+						term="week"
+						includes={[
+							"Basic position & control",
+							"Lateral movement",
+							"Patterns",
+							"Games on horseback",
+							"Barrel racing (advanced)",
+							"Pole bending (advanced)",
+							"Lunch",
+							"All camp activities",
+						]}
+					>
+						<CTAButton href="https://register.trmanager.com">
+							Register now
+						</CTAButton>
+					</Price>
+					<Price
+						title="English riding camp"
+						subTitle="For kids of all riding levels to learn or develop new skills."
+						who="Beginner to advanced"
+						price={425}
+						priceTo={895}
+						term="week"
+						includes={[
+							"Basic position & control",
+							"Lateral movement",
+							"Games on horseback",
+							"Jumping position",
+							"Equitation",
+							"Lunch",
+							"All camp activities",
+						]}
+					>
+						<CTAButton href="https://register.trmanager.com">
+							Register now
+						</CTAButton>
+					</Price>
+					{/* <Price
             title="Intensive equestrian camp"
             subTitle="For english riders looking to improve their success in the show ring."
             who="Advanced hunter/jumper"
@@ -315,12 +314,12 @@ export default function Programs({ data }) {
               Register now
             </CTAButton>
           </Price> */}
-        </PriceContainer>
-      </Container>
+				</PriceContainer>
+			</Container>
 
-      <BalancePayments />
+			<BalancePayments />
 
-      {/* <Container type="body">
+			{/* <Container type="body">
         <h2>Horse camp add-ons:</h2>
         <PriceAddon
           title="Extended care"
@@ -335,8 +334,8 @@ export default function Programs({ data }) {
           term="week"
         />
       </Container> */}
-    </>
-  )
+		</>
+	);
 }
 
 // const NavLink = ({ children, ...props }) => (
@@ -398,4 +397,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;
