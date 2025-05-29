@@ -64,8 +64,59 @@ export default function Default() {
 					<Button href="https://register.trmanager.com">Book now</Button>
 				</Program>
 
-				<h3>2024/2025 Semesters</h3>
+				<h3>2025 Summer Program: June 30 - August 27, 2025</h3>
+				<p>
+					Our flexible Summer Skating program is designed to fit in with busy
+					summer schedules.
+				</p>
+				<p>
+					Ice fees payable at the Ice Corral: $45 +HST per session, $40 per
+					session if pre-registered and paid in advance for 14+ sessions.
+				</p>
+				<p>
+					Figure Skating session fees include only ice costs. Instruction must
+					be arranged in advance with Head Coach Patty{" "}
+					<a
+						target="_blank"
+						rel="noopener noreferrer"
+						href="mailto:icex@rogers.com"
+					>
+						icex@rogers.com
+					</a>
+				</p>
+				<p>
+					For more information: please call the office at{" "}
+					<a target="_blank" rel="noopener noreferrer" href="tel:+15199414501">
+						519-941-4501
+					</a>{" "}
+					or email{" "}
+					<a
+						target="_blank"
+						rel="noopener noreferrer"
+						href="mailto:icex@rogers.com"
+					>
+						icex@rogers.com
+					</a>
+				</p>
 
+				<ul>
+					<li>
+						Mondays, <Time>1630</Time> - <Time>1750</Time> (Aug. 25,{" "}
+						<Time>1200</Time> - <Time>1320</Time>)
+					</li>
+					<li>
+						Wednesdays, <Time>1630</Time> - <Time>1750</Time>
+					</li>
+					<li>
+						Thursdays, <Time>1630</Time> - <Time>1750</Time>
+					</li>
+					<li>
+						Fridays, <Time>1630</Time> - <Time>1750</Time>
+					</li>
+				</ul>
+				<hr />
+
+				<h3>2024/2025 Semesters</h3>
 				<div className="staffTable">
 					<table>
 						<thead>

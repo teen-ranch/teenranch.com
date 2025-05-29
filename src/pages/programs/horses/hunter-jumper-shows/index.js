@@ -268,6 +268,9 @@ export default function Default({ data }) {
 						>
 							View 2025 show program
 						</Button>
+						<Button target="_blank" href="mailto:events@teenranch.com">
+							Send us an email
+						</Button>
 					</div>
 				</Card>
 			</Container>
