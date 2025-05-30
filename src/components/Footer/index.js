@@ -221,6 +221,11 @@ export default function Footer() {
 						<div className="footerTitle">Events</div>
 						<ul className="footerNavigation">
 							<li>
+								<Link to="/events/1980s-staff-reunion/">
+									🎉 80's Camp Staff Reunion Weekend! 🎉
+								</Link>
+							</li>
+							<li>
 								<Link to="/events/christmas-at-the-ranch/">
 									Christmas at the Ranch
 								</Link>
