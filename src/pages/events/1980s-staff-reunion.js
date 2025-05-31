@@ -88,7 +88,7 @@ export default function Default({ data }) {
 						<li>Old Time Evening Campfire</li>
 					</ul>
 					<p>
-						80s-themed dinner in the Dining Lounge. Bring your best 80s attire
+						80s-themed dinner in the Dining Room. Bring your best 80s attire
 						(acid wash jeans are permitted, along with wigs)
 					</p>
 					<p>
