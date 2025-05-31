@@ -66,7 +66,12 @@ export default function Default({ data }) {
 			<Container>
 				<div>
 					<h1>{frontmatter.title}</h1>
-					<p>We’re bringing it all back—big hair, neon colors, and the unforgettable friendships we made at camp. Join us for a weekend of laughter, memories, and good times with the crew that made it all so special.</p>
+					<p>
+						We’re bringing it all back—big hair, neon colors, and the
+						unforgettable friendships we made at camp. Join us for a weekend of
+						laughter, memories, and good times with the crew that made it all so
+						special.
+					</p>
 					<h2>When</h2>
 					<p>
 						This event runs from Saturday, October 25, 2025 at <Time>1130</Time>{" "}
@@ -75,7 +80,7 @@ export default function Default({ data }) {
 					</p>
 					<h2>What's Included</h2>
 					<ul>
-						<li>Lodging options: Coach House, Carriage House, & Hotel</li>
+						<li>Lodging options: Coach House & Carriage House</li>
 						<li>Meals Included</li>
 						<li>Hiking</li>
 						<li>80s Themed Dinner</li>
@@ -83,33 +88,39 @@ export default function Default({ data }) {
 						<li>Old Time Evening Campfire</li>
 					</ul>
 					<p>
-					80s-themed dinner in the Dining Lounge. Bring your best 80s attire (acid wash jeans are permitted, along with wigs for those who are now follicly challenged)
+						80s-themed dinner in the Dining Lounge. Bring your best 80s attire
+						(acid wash jeans are permitted, along with wigs)
 					</p>
 					<p>
-					Featuring all of your Ranch favourites and some throwback performances by alumni campfire musos and Guest Speaker Bubby Stapleton.
+						Featuring all of your Ranch favourites and some throwback
+						performances by alumni campfire musos and Guest Speaker Bubby
+						Stapleton.
 					</p>
 					<p>
-						Confirmed attendees include legendary camp directors BJ Bob Johnson,
+						Confirmed attendees include legendary program directors BJ Bob Johnson,
 						Bubby Stapleton, Rob Gerber, Brian Carlson and campfire stars like
 						Dave Smylie, Bob Fukumoto, and a growing list of alumni that are
-						expected to join in the fun. The notorious Maintenance Liberation
-						Organization (MLO) as well as those infamous songbirds, included!
+						expected to join in the fun. The infamous songbirds are also included!
 					</p>
-					
+
 					<h2>Cost</h2>
 					<ul>
-						<li><strong>Overnight:</strong> $175 +HST per person (trail ride included - optional)</li>
-						<li><strong>Day Pass:</strong> $89 +HST per person</li>
+						<li>
+							<strong>Overnight:</strong> $175 +HST per person (trail ride
+							included - optional)
+						</li>
+						<li>
+							<strong>Day Pass:</strong> $89 +HST per person
+						</li>
 						<li>Trail Ride add-on: $55 +HST per person</li>
 					</ul>
-					
-					<div>
-						
-					<Button href="https://register.trmanager.com">Book now</Button>
 
+					<div>
+						<div style={{color:"red", fontWeight:"bold"}}>This event is exclusively for alumni staff from the 1980s. To keep it focused on reconnecting, we're keeping it to alumni only - spouses and children are not permitted.</div>
+						<Button href="https://register.trmanager.com">Book now</Button>
 					</div>
 				</div>
-				
+
 				{/* <div style={{ color: "red", fontSize: "2em" }}>
           Family day is full, we are no longer accepting registrations. Thank
           you!
