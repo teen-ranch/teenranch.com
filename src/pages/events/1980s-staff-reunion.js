@@ -116,7 +116,7 @@ export default function Default({ data }) {
 					</ul>
 
 					<div>
-						<div style={{color:"red", fontWeight:"bold"}}>This event is exclusively for alumni staff from the 1980s. To keep it focused on reconnecting, we're keeping it to alumni only - spouses and children are not permitted.</div>
+						{/* <div style={{color:"red", fontWeight:"bold"}}>This event is exclusively for alumni staff from the 1980s. To keep it focused on reconnecting, we're keeping it to alumni only - spouses and children are not permitted.</div> */}
 						<Button href="https://register.trmanager.com">Book now</Button>
 					</div>
 				</div>
