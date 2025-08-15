@@ -5,6 +5,7 @@ import Button from "components/Button";
 import Program from "components/Program";
 import ExternalLink from "components/ExternalLink";
 import { Terms_HockeyAndSkating } from "components/Terms";
+import { Time } from "components/Time";
 
 export default function Default() {
 	return (
@@ -85,17 +86,17 @@ export default function Default() {
 					want to continue learning for fun and fitness.
 				</p>
 
-				<h3>2024/2025 Semesters</h3>
+				<h3>2025/2026 Semesters</h3>
 
 				<div className="staffTable">
 					<table>
 						<thead>
 							<tr>
 								<th aria-label="Empty cell"></th>
-								{/* <th>Fall: Sep. 9, 2024 - Nov. 15, 2024</th> */}
-								{/* <th>Holiday: Nov. 18, 2024 - Jan. 24, 2025</th> */}
-								<th>Winter: Jan. 27, 2025 - Apr. 11, 2025</th>
-								<th>Spring: Apr. 25, 2025 - May. 16, 2025</th>
+								<th>Fall: Sep. 8, 2025 - Nov. 14, 2025</th>
+								<th>Holiday: Nov. 17, 2025 - Jan. 23, 2026</th>
+								<th>Winter: Jan. 26, 2026 - Mar. 27, 2026</th>
+								{/* <th>Spring: Apr. 25, 2025 - May. 16, 2025</th> */}
 							</tr>
 						</thead>
 						<tbody>
@@ -103,29 +104,29 @@ export default function Default() {
 								<td>
 									<strong>Mondays</strong>
 									<br />
-									On-ice: 6:00pm - 6:50pm
+									On-ice: <Time>1800</Time> - <Time>1850</Time>
 								</td>
-								{/* <td>
+								<td>
 									<strong>$280 +HST</strong> (9 sessions)
 									<br />
-									No session Oct. 14
+									No session Oct. 13
 								</td>
 								<td>
 									<strong>$250 +HST</strong> (8 sessions)
 									<br />
-									No session Dec. 23, Dec. 30
-								</td> */}
-								<td>
+									No session Dec. 22, Dec. 29
+								</td>
+								{/* <td>
 									<strong>$310 +HST</strong> (10 sessions)
 									<br />
 									No session Feb. 17
-								</td>
-								<td></td>
-								{/* <td>
+								</td> */}
+								{/* <td></td> */}
+								<td>
                   <strong>$250 +HST</strong> (8 sessions)
                   <br />
-                  No session Feb. 19, Apr. 1
-                </td> */}
+                  No session Feb. 16
+                </td>
 							</tr>
 							<tr>
 								<td>
@@ -133,19 +134,21 @@ export default function Default() {
 									<br />
 									On-ice: 6:00pm - 6:50pm
 								</td>
-								{/* <td>
-									<strong>$310 +HST</strong> (10 sessions)
+								<td>
+									<strong>$280 +HST</strong> (9 sessions)
+									<br/>
+									No session Oct. 31
 								</td>
 								<td>
 									<strong>$250 +HST</strong> (8 sessions)
 									<br />
-									No session Dec. 27, Jan. 3
+									No session Dec. 26, Jan. 2
+								</td>
+								{/* <td>
+									<strong>$340 +HST</strong> (11 sessions)
 								</td> */}
 								<td>
-									<strong>$340 +HST</strong> (11 sessions)
-								</td>
-								<td>
-									<strong>$125 +HST</strong> (4 sessions)
+									<strong>$280 +HST</strong> (9 sessions)
 								</td>
 							</tr>
 						</tbody>

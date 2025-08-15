@@ -7,6 +7,8 @@ import { Price, PriceContainer } from "components/Price";
 import Grid from "components/Grid";
 import { Time } from "components/Time";
 import { Terms_HockeyAndSkating } from "components/Terms";
+import Card, { CardPadding } from "components/Card";
+import { HockeyAges } from "components/HockeyAges";
 
 export default function Default() {
 	return (
@@ -15,7 +17,7 @@ export default function Default() {
 				src="https://teenranch.nyc3.digitaloceanspaces.com/website/assets/DSC_0513.JPG"
 				alt="Smiling kids playing hockey"
 				title="Wranglers Hockey"
-				subtitle="A year-long development program for boys and girls ages 5+"
+				subtitle="A season-long development program for boys and girls ages 6-13"
 				metaTitle="Wranglers hockey"
 				metaDescription="Wranglers hockey is a year-long development program for boys and girls ages 5-16+ years old. There are three levels: Learn to Play, Junior and Senior to accommodate all levels of development."
 			/>
@@ -24,8 +26,8 @@ export default function Default() {
 				<div>
 					<h2>Wranglers hockey</h2>
 					<p>
-						Wranglers Hockey is a year-long development program for boys and
-						girls ages 5+ years old.
+						Wranglers Hockey is a season-long development program for boys and
+						girls ages 6-13 years old.
 						{/* There are three levels: Learn to Play, Junior
             and Senior to accommodate all levels of development.  */}
 						{/* This is not a graduated program, Teen Ranch staff will assess your
@@ -46,47 +48,22 @@ export default function Default() {
 
 					<h3>When</h3>
 					<p>
-						Saturdays: October 19, 2024 - March 1, 2025 (19 sessions)
+						Saturdays: October 18, 2025 - March 7, 2026 (19 sessions)
+						<br/>
+						<Time>1000</Time> - <Time>1100</Time>
 						<br />
 						<br />
 						<strong>No session on:</strong>
 						<ul>
-							<li>December 28, 2024</li>
+							<li>December 27, 2025</li>
 						</ul>
 					</p>
+					
+					<h3>Ages</h3>
+					<HockeyAges years="2012,2013,2014,2015,2016,2017,2018,2017,2018,2019"/>
+					<br/>
+					(Organized into age-specific groups and lines.)
 
-					<div className="staffTable">
-						<table>
-							<thead>
-								<tr>
-									<th>Division</th>
-									<th>Ages</th>
-									<th>Time</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Learn to play</td>
-									<td>5-8</td>
-									<td>
-										<Time>1000</Time> - <Time>1050</Time>
-									</td>
-								</tr>
-								<tr>
-									<td>Junior & Senior</td>
-									<td>8-16</td>
-									<td>
-										<Time>1100</Time> - <Time>1150</Time>
-									</td>
-								</tr>
-								{/* <tr>
-                  <td>Senior</td>
-                  <td>12-16</td>
-                  <td>12:00pm - 1:00pm</td>
-                </tr> */}
-							</tbody>
-						</table>
-					</div>
 				</div>
 			</Container>
 
@@ -99,18 +76,18 @@ export default function Default() {
 				<PriceContainer>
 					<Price
 						title={<>Wranglers Hockey</>}
-						subTitle={`A year-long development program for boys and girls
-            ages 5-16 years old.`}
-						who={
-							<>
-								Learn to Play (ages 5-8)
-								<br />
-								Junior & Senior (ages 8-16)
-							</>
-						}
-						price={450}
+						subTitle={`A season-long development program for boys and girls
+            ages 6-13 years old.`}
+						// who={
+						// 	<>
+						// 		Learn to Play (ages 5-8)
+						// 		<br />
+						// 		Junior & Senior (ages 8-16)
+						// 	</>
+						// }
+						price={455}
 						term="season"
-						includes={["1 hour scrimmage every Saturday"]}
+						includes={["1 hour skills & scrimmage every Saturday"]}
 					>
 						<CTAButton href="https://register.trmanager.com">
 							Register now

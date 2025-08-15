@@ -36,7 +36,7 @@ export default function Default() {
         > */}
 				{/* <p>Spring and Fall hockey leagues for men age 30+</p> */}
 
-				<Grid md={2} gapSize="6rem">
+				<Grid md={1} gapSize="6rem">
 					<div>
 						<h2>Fall/Winter Leagues</h2>
 						<Card>
@@ -46,15 +46,15 @@ export default function Default() {
 									<sm style={{ fontSize: "11pt" }}>(4-6 teams)</sm>
 								</h3>
 								<p>
-									<strong>When:</strong> September 24, 2024 - April 8, 2025
+									<strong>When:</strong> September 23, 2025 - April 21, 2026
 								</p>
 								<ul>
 									<li>
 										Tuesday nights: <Time>2000</Time>, <Time>2100</Time>, and{" "}
-										<Time>2200</Time> game times
+										<Time>2200</Time> (if necessary) game times
 									</li>
 									<li>
-										<strong>Cost:</strong> $450 +HST
+										<strong>Cost:</strong> $500 +HST
 									</li>
 								</ul>
 								<Button href="https://register.trmanager.com">Book now</Button>
@@ -68,11 +68,11 @@ export default function Default() {
 									<sm style={{ fontSize: "11pt" }}>(18 teams)</sm>
 								</h3>
 								<p>
-									<strong>When: September, 2024 - April, 2025</strong>
+									<strong>When: September, 2025 - April, 2026</strong>
 								</p>
 								<ul>
 									<li>
-										Sundays: <Time>1330</Time> - <Time>2200</Time> game times
+										Sundays: <Time>1330</Time> - <Time>2300</Time>
 									</li>
 									<li>Full-team entry</li>
 								</ul>
@@ -93,17 +93,14 @@ export default function Default() {
 									<sm style={{ fontSize: "11pt" }}>(14 teams)</sm>
 								</h3>
 								<p>
-									<strong>When: September 18, 2024 - April 17, 2025</strong>
+									<strong>When: September 17, 2025 - April 30, 2026</strong>
 								</p>
 								<ul>
 									<li>
-										Wednesdays: <Time>2000</Time> - <Time>2200</Time> game times
+										Wednesdays: <Time>2000</Time> - <Time>2300</Time>
 									</li>
 									<li>
-										Thursdays: <Time>1900</Time> - <Time>2200</Time> game times
-									</li>
-									<li>
-										<strong>Cost:</strong> $510 +HST
+										Thursdays: <Time>1900</Time> - <Time>2300</Time>
 									</li>
 									<li>Full-team entry</li>
 								</ul>
@@ -117,7 +114,7 @@ export default function Default() {
 							</CardPadding>
 						</Card>
 					</div>
-					<div>
+					{/* <div>
 						<h2>Summer Leagues</h2>
 						<Card>
 							<CardPadding>
@@ -190,7 +187,7 @@ export default function Default() {
 								</strong>
 							</CardPadding>
 						</Card>
-					</div>
+					</div> */}
 				</Grid>
 
 				{/* </Program> */}
