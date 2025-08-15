@@ -37,15 +37,14 @@ export default function Default() {
 					<h3>When</h3>
 
 					<p>
-						Saturday mornings: (9:00am - 10:00am) October 19, 2024 - March 29,
-						2025 (19 sessions)
+						Saturday mornings: (9:00am - 10:00am) October 18, 2025 - March 7,
+						2026 (18 sessions)
 						<br />
-						(No session December 28, January 4, February 15, March 8, or March
-						15)
+						(No session December 27, January 3 or February 14)
 					</p>
 
 					<h3>Cost</h3>
-					<p>$475 +HST/player</p>
+					<p>$475 +HST</p>
 
 					<Button href="https://register.trmanager.com">Book now</Button>
 				</Program>

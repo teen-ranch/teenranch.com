@@ -8,6 +8,7 @@ import { RinkClosed } from "components/RinkClosed";
 import { Time } from "components/Time";
 import Card, { CardPadding } from "components/Card";
 import { Terms_HockeyAndSkating } from "components/Terms";
+import { HockeyAges } from "components/HockeyAges";
 
 export default function Default() {
 	return (
@@ -103,7 +104,7 @@ export default function Default() {
 							<table>
 								<thead>
 									<tr>
-										<th>Session #4 (Pre-tryout)</th>
+										<th>Session #1</th>
 										<th>6:00pm - 6:50pm</th>
 										<th>7:00pm - 7:50pm</th>
 										<th>Cost</th>
@@ -114,12 +115,11 @@ export default function Default() {
 										<td>
 											<strong>Tuesdays:</strong>
 											<br />
-											March 4, 2025 - April 15, 2025
+											September 9, 2025 - October 14, 2025
 											<br />
-											(No session March 11)
 										</td>
-										<td>2017, 2018, 2019</td>
-										<td>2012, 2013, 2014, 2015, 2016</td>
+										<td><HockeyAges years="2017, 2018, 2019, 2020"/></td>
+										<td><HockeyAges years="2012, 2013, 2014, 2015, 2016"/></td>
 										<td>$260 +HST</td>
 									</tr>
 								</tbody>
@@ -127,6 +127,86 @@ export default function Default() {
 						</CardPadding>
 					</Card>
 					<Button href="https://register.trmanager.com">Book now</Button>
+					<Card>
+						<CardPadding>
+							<table>
+								<thead>
+									<tr>
+										<th>Session #2</th>
+										<th>6:00pm - 6:50pm</th>
+										<th>7:00pm - 7:50pm</th>
+										<th>Cost</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<strong>Tuesdays:</strong>
+											<br />
+											November 11, 2025 - December 16, 2025
+											<br />
+										</td>
+										<td><HockeyAges years="2018, 2019, 2020"/></td>
+										<td><HockeyAges years="2015, 2016, 2017"/></td>
+										<td>$260 +HST</td>
+									</tr>
+									<tr>
+										<td>
+											<strong>Wednesdays:</strong>
+											<br />
+											November 12, 2025 - December 17, 2025
+											<br />
+										</td>
+										<td><HockeyAges years="2012, 2013, 2014, 2015"/></td>
+										<td></td>
+										<td>$260 +HST</td>
+									</tr>
+								</tbody>
+							</table>
+						</CardPadding>
+					</Card>
+					<Button href="https://register.trmanager.com">Book now</Button>
+					
+					<Card>
+						<CardPadding>
+							<table>
+								<thead>
+									<tr>
+										<th>Session #3</th>
+										<th>6:00pm - 6:50pm</th>
+										<th>7:00pm - 7:50pm</th>
+										<th>Cost</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<strong>Tuesdays:</strong>
+											<br />
+											January 13, 2026 - February 17, 2026
+											<br />
+										</td>
+										<td><HockeyAges years="2018, 2019, 2020"/></td>
+										<td><HockeyAges years="2015, 2016, 2017"/></td>
+										<td>$260 +HST</td>
+									</tr>
+									<tr>
+										<td>
+											<strong>Wednesdays:</strong>
+											<br />
+											January 14, 2026 - February 18, 2026
+											<br />
+										</td>
+										<td><HockeyAges years="2012, 2013, 2014, 2015"/></td>
+										<td></td>
+										<td>$260 +HST</td>
+									</tr>
+								</tbody>
+							</table>
+						</CardPadding>
+					</Card>
+					<Button href="https://register.trmanager.com">Book now</Button>
+{/* 
 					<Card>
 						<CardPadding>
 							<table>
@@ -235,7 +315,7 @@ export default function Default() {
 							</table>
 						</CardPadding>
 					</Card>
-					<Button href="https://register.trmanager.com">Book now</Button>
+					<Button href="https://register.trmanager.com">Book now</Button> */}
 				</div>{" "}
 				<Terms_HockeyAndSkating />
 				{/* </Program> */}
