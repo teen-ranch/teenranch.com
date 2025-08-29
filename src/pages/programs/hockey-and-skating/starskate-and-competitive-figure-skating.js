@@ -29,7 +29,7 @@ export default function Default() {
 						fontSize: "2rem",
 					}}
 				>
-					<strong>Note:</strong> DPSC Club membership fee $70 is paid once per
+					<strong>Note:</strong> DPSC Club membership fee $75 is paid once per
 					year.
 				</div>
 
@@ -51,20 +51,17 @@ export default function Default() {
 
 					<p>
 						<i>
-							The fee schedule includes ice time only. Please contact Head
-							Coach, Patty Lambertus at{" "}
-							<a href="mailto:icex@rogers.com">icex@rogers.com</a> to arrange a
-							personal training program to achieve your skating goals and
-							budget. Private, semi-private and group lessons will be
-							incorporated into your program by our fully certified Skate Canada
-							Professional Coaching Team. Lessons will be invoiced separately by
-							the Head Coach.
+							The fee schedule includes ice time only. Please contact our DPSC Coaching Team at{" "}
+							<a href="mailto:dufferinpeelskatingclub@gmail.com">dufferinpeelskatingclub@gmail.com</a> to arrange a personal training program to achieve your
+skating goals and budget. Private, semi-private and group lessons will be incorporated into your
+program by our fully certified Skate Canada Professional Coaching Team. <strong>Lessons will be
+invoiced separately by the Coaching Team.</strong>
 						</i>
 					</p>
 					<Button href="https://register.trmanager.com">Book now</Button>
 				</Program>
 
-				<h3>2025 Summer Program: June 30 - August 27, 2025</h3>
+				{/* <h3>2025 Summer Program: June 30 - August 27, 2025</h3>
 				<p>
 					Our flexible Summer Skating program is designed to fit in with busy
 					summer schedules.
@@ -79,9 +76,9 @@ export default function Default() {
 					<a
 						target="_blank"
 						rel="noopener noreferrer"
-						href="mailto:icex@rogers.com"
+						href="mailto:dufferinpeelskatingclub@gmail.com"
 					>
-						icex@rogers.com
+						dufferinpeelskatingclub@gmail.com
 					</a>
 				</p>
 				<p>
@@ -93,39 +90,41 @@ export default function Default() {
 					<a
 						target="_blank"
 						rel="noopener noreferrer"
-						href="mailto:icex@rogers.com"
+						href="mailto:dufferinpeelskatingclub@gmail.com"
 					>
-						icex@rogers.com
+						dufferinpeelskatingclub@gmail.com
 					</a>
-				</p>
+				</p> */}
 
-				<ul>
+				{/* <ul>
 					<li>
-						Mondays, <Time>1630</Time> - <Time>1750</Time> (Aug. 25,{" "}
-						<Time>1200</Time> - <Time>1320</Time>)
+						Sundays, <Time>1000</Time> - <Time>1120</Time> (<Time>1130</Time> - <Time>1200</Time> Off Ice Jump / Spin)
 					</li>
 					<li>
+						Mondays, <Time>1630</Time> - <Time>1750</Time> 
+					</li>
+					{/* <li>
 						Wednesdays, <Time>1630</Time> - <Time>1750</Time>
 					</li>
 					<li>
-						Thursdays, <Time>1630</Time> - <Time>1750</Time>
+						Thursdays, <Time>1630</Time> - <Time>1750</Time> (<Time>1800</Time> - <Time>1820</Time> Off Ice Jump / Spin)
 					</li>
 					<li>
 						Fridays, <Time>1630</Time> - <Time>1750</Time>
 					</li>
-				</ul>
-				<hr />
+				</ul>*/}
+				{/* <hr />  */}
 
-				<h3>2024/2025 Semesters</h3>
+				<h3>2025/2026 Semesters</h3>
 				<div className="staffTable">
 					<table>
 						<thead>
 							<tr>
 								<th aria-label="Empty cell"></th>
-								{/* <th>Fall: Sep. 9, 2024 - Nov. 15, 2024</th> */}
-								{/* <th>Holiday: Nov. 17, 2024 - Jan. 24, 2025</th> */}
-								<th>Winter: Jan. 26, 2025 - Apr. 11, 2025</th>
-								<th>Spring: Apr. 13, 2025 - June. 20, 2025</th>
+								<th>Fall: Sep. 8, 2025 - Nov. 14, 2025</th>
+								<th>Holiday: Nov. 16, 2025 - Jan. 23, 2026</th>
+								<th>Winter: Jan. 25, 2026 - Apr. 2, 2026</th>
+								{/* <th>Spring: Apr. 13, 2025 - June. 20, 2025</th> */}
 							</tr>
 						</thead>
 						<tbody>
@@ -138,25 +137,24 @@ export default function Default() {
 									Off-ice: <Time>1130</Time> - <Time>1200</Time>
 									<br />
 								</td>
-								{/* <td>
-									<strong>$220 +HST</strong> (7 sessions)
+								<td>
+									<strong>$250 +HST</strong> (8 sessions)
 									<br />
-									No session Sep. 8, Sep. 15, Oct. 13
+									No session Oct. 12
 								</td>
 								<td>
 									<strong>$250 +HST</strong> (8 sessions)
 									<br />
-									No session Dec. 22, Dec. 29
-								</td> */}
-
-								<td>
-									<strong>$345 +HST</strong> (11 sessions)
+									No session Dec. 21, Dec. 28
 								</td>
 								<td>
+									<strong>$310 +HST</strong> (10 sessions)
+								</td>
+								{/* <td>
 									<strong>$248 +HST</strong> (8 sessions)
 									<br />
 									No session Apr. 20, May 18
-								</td>
+								</td> */}
 							</tr>
 							<tr>
 								<td>
@@ -164,26 +162,26 @@ export default function Default() {
 									<br />
 									On-ice: <Time>1630</Time> - <Time>1750</Time>
 								</td>
-								{/* <td>
+								<td>
 									<strong>$280 +HST</strong> (9 sessions)
 									<br />
-									No session Oct. 14
+									No session Oct. 13
 								</td>
 								<td>
 									<strong>$250 +HST</strong> (8 sessions)
 									<br />
-									No session Dec. 23, Dec. 30
-								</td> */}
-								<td>
-									<strong>$310 +HST</strong> (10 sessions)
-									<br />
-									No session Feb. 17
+									No session Dec. 22, Dec. 29
 								</td>
 								<td>
+									<strong>$280 +HST</strong> (9 sessions)
+									<br />
+									No session Feb. 16
+								</td>
+								{/* <td>
 									<strong>$248 +HST</strong> (8 sessions)
 									<br />
 									No session Apr. 21, May 19
-								</td>
+								</td> */}
 							</tr>
 							<tr>
 								<td>
@@ -193,20 +191,20 @@ export default function Default() {
 									<br />
 									Off-ice: <Time>1800</Time> - <Time>1830</Time>
 								</td>
-								{/* <td>
+								<td>
 									<strong>$310 +HST</strong> (10 sessions)
 								</td>
 								<td>
 									<strong>$250 +HST</strong> (8 sessions)
 									<br />
-									No session Dec. 26, Jan. 2
-								</td> */}
-								<td>
-									<strong>$345 +HST</strong> (11 sessions)
+									No session Dec. 25, Jan. 1
 								</td>
 								<td>
 									<strong>$310 +HST</strong> (10 sessions)
 								</td>
+								{/* <td>
+									<strong>$310 +HST</strong> (10 sessions)
+								</td> */}
 							</tr>
 							<tr>
 								<td>
@@ -214,22 +212,23 @@ export default function Default() {
 									<br />
 									On-ice: <Time>1630</Time> - <Time>1750</Time>
 								</td>
-								{/* <td>
-									<strong>$310 +HST</strong> (10 sessions)
+								<td>
+									<strong>$280 +HST</strong> (9 sessions)
+									<br/>No session Oct. 31
 								</td>
 								<td>
 									<strong>$250 +HST</strong> (8 sessions)
 									<br />
-									No session Dec. 27, Jan. 3
-								</td> */}
-								<td>
-									<strong>$345 +HST</strong> (11 sessions)
+									No session Dec. 26, Jan. 2
 								</td>
 								<td>
+									<strong>$280 +HST</strong> (9 sessions)
+								</td>
+								{/* <td>
 									<strong>$279 +HST</strong> (9 sessions)
 									<br />
 									No session Apr. 18
-								</td>
+								</td> */}
 							</tr>
 						</tbody>
 					</table>
@@ -309,16 +308,15 @@ export default function Default() {
 						under direction of the Head Coach.)
 					</span>
 				</h3>
-				{/* <h4>Fall/Holiday/Winter - Cost: $1,600 +HST</h4> */}
-				<h4>Spring - Cost: $600 +HST (35 sessions)</h4>
+				<h4>Fall/Holiday/Winter - Cost: $1,600 +HST</h4>
+				{/* <h4>Spring - Cost: $600 +HST (35 sessions)</h4> */}
 				<p>
-					DPSC partnered with Teen Ranch supports the pursuit of excellence in
-					sport & life skills necessary to become an accomplished figure skater!
+					DPSC partnered with Teen Ranch supports the pursuit of excellence in sport & the life skills necessary to
+become an accomplished figure skater!
 				</p>
 				<p>
-					FutureSTARS participants must skate 3-4 days per week, take off-ice
-					technique classes, goal-setting activities, take part in performances,
-					competitions & tests and assist with Learn-to-Skate when scheduled.
+					FutureSTARS participants must skate 3-4 days per week and are encouraged to take off-ice technique
+classes, goal-setting activities, take part in performances, competitions, tests and be positive role models.
 				</p>
 				<p>
 					<i>
@@ -327,8 +325,10 @@ export default function Default() {
 				</p>
 				<p>
 					<strong>
-						Please check with Head Coach Patty, before registering for this
-						program to ensure it is the right fit for your skater.
+						Please check with the Coaching Team before registering for this program to ensure it is the right fit
+for your skater <a target="_blank"
+							rel="noopener noreferrer"
+href="mailto:dufferinpeelskatingclub@gmail.com">dufferinpeelskatingclub@gmail.com</a>
 					</strong>
 				</p>
 
@@ -336,19 +336,19 @@ export default function Default() {
 
 				<ul>
 					<li>
-						Annual DPSC club membership: $70 +HST (covers Skate Canada
+						Annual DPSC club membership: $75 +HST (covers Skate Canada
 						registration and insurance)
 					</li>
 					<li>
 						Figure Skating Session fees include{" "}
 						<span style={{ textDecoration: "underline" }}>only</span> ice costs.
-						Instruction must be arranged with Head Coach, Patty{" "}
+						Instruction must be arranged with the DPSC Coaching Team{" "}
 						<a
 							target="_blank"
 							rel="noopener noreferrer"
-							href="mailto:icex@rogers.com"
+							href="mailto:dufferinpeelskatingclub@gmail.com"
 						>
-							icex@rogers.com
+							dufferinpeelskatingclub@gmail.com
 						</a>
 					</li>
 				</ul>
@@ -358,7 +358,7 @@ export default function Default() {
 				<ul>
 					<li>
 						<strong>
-							DPSC Club membership fee $70 is paid once per year. This fee
+							DPSC Club membership fee $75 is paid once per year. This fee
 							covers Skate Canada registration and insurance.
 						</strong>{" "}
 						If home club is not DPSC, then the membership fee is $10.
