@@ -59,7 +59,7 @@ export default function Programs() {
         >
           <ul>
             <li>Trail rides</li>
-            <li>Riding lessons</li>
+            {/* <li>Riding lessons</li> */}
             <li>Hunter/Jumper shows</li>
             <li>Schooling ring rental</li>
           </ul>
