@@ -86,10 +86,10 @@ export default function Programs({ data }) {
   Check back soon for 2023/2024 season dates
 </div> */}
             <ul>
-              <li>Friday October 25, 2024</li>
-              <li>Friday November 22, 2024</li>
-              <li>Friday February 14, 2025</li>
-              <li>Friday April 4, 2025</li>
+              <li>Friday October 24, 2025</li>
+              <li>Friday November 28, 2025</li>
+              <li>Friday January 30, 2026</li>
+              <li>Friday February 13, 2026</li>
             </ul>
 
             <p>
@@ -142,7 +142,7 @@ export default function Programs({ data }) {
             }
             subTitle={``}
             who="Kids ages 5-12"
-            price={110}
+            price={100}
             term="day"
             includes={dayCampBulletsHockey}
           >

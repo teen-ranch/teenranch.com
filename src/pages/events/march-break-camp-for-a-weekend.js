@@ -101,7 +101,7 @@ export default function Default({ data }) {
 				<h2>Available dates</h2>
 
 				<ul>
-					<li>March 7-9, 2025</li>
+					<li>March 13-15, 2026</li>
 				</ul>
 
 				<p>
@@ -128,16 +128,15 @@ export default function Default({ data }) {
 						price={250}
 						term="weekend"
 						includes={[
-							"Horse Grooming  (JR)",
-							"Trail Ride Escapade (SR)",
+							"Trail Ride and Wrangler Club (JR)",
+							"Trail Ride Adventure (SR)",
 							"Ice Skating (in our indoor ice arena)",
-							"Crafts ",
-							"Seasonal Sports ",
-							"Indoor Archery",
+							"Crafts",
+							"Seasonal Sports",
 							"Woodland Survival Skills ",
 							"Snow Tubing",
-							"Camp Wide games",
-							"Campfire ",
+							"Camp-wide games",
+							"Campfire",
 							"Cabin Time",
 						]}
 						// includes={dayCampBulletsClassic}
