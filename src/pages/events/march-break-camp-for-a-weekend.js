@@ -125,7 +125,7 @@ export default function Default({ data }) {
 						title={<>March Break Camp for a Weekend</>}
 						subTitle={`Junior (8-12) & Senior (13-16)`}
 						// who="Kids ages 8-12"
-						price={250}
+						price={175}
 						term="weekend"
 						includes={[
 							"Trail Ride and Wrangler Club (JR)",
