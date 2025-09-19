@@ -65,14 +65,14 @@ export default function Programs({ data }) {
           they enjoy all kinds of active outdoor fun, games, and sports
           alongside other campers and our committed staff team!
         </p>
-        <p>Daily indoor “Campfire Time” with an emphasis on sharing God's love!</p>
+        <p>Daily indoor Campfire Time with an emphasis on sharing God's love!</p>
       </Container>
 
       <Container type="body">
         <h1>Available dates</h1>
 
         <ul>
-          <li>March 10-14, 2025</li>
+          <li>March 16-20, 2026</li>
         </ul>
 
         <p>
@@ -98,7 +98,7 @@ export default function Programs({ data }) {
              } 
              subTitle={`Individual day`} 
              who="Kids ages 5-12" 
-             price={89} 
+             price={93} 
              term="day" 
              includes={dayCampBulletsClassic} 
            > 
@@ -120,7 +120,7 @@ export default function Programs({ data }) {
                </> 
              } 
              who="Kids ages 5-12" 
-             price={400} 
+             price={420} 
              term="week" 
              includes={dayCampBulletsClassic} 
            > 
@@ -139,7 +139,7 @@ export default function Programs({ data }) {
              } 
              subTitle={`Individual day`} 
              who="Kids ages 5-12" 
-             price={120} 
+             price={125} 
              term="day" 
              includes={dayCampBulletsHockey} 
            > 
@@ -161,7 +161,7 @@ export default function Programs({ data }) {
                </> 
              } 
              who="Kids ages 5-12" 
-             price={550} 
+             price={575} 
              term="week" 
              includes={dayCampBulletsHockey} 
            > 

@@ -71,11 +71,11 @@ export default function Programs({ data }) {
         <h1>Available dates</h1>
 
         <ul>
-          <li>Monday, December 23, 2024 Christmas Day Camp Special! $69.00 +HST. <em>Note: no hockey option for this day only. Not a part of the bundle.</em></li>
-          <li>Monday, December 30, 2024</li>
-          <li>Tuesday, December 31, 2024</li>
-          <li>Thursday, January 2, 2025</li>
-          <li>Friday, January 3, 2025</li>
+          <li>Monday, December 22, 2025</li>
+          <li>Tuesday, December 23, 2025</li>
+          <li>Monday, December 29, 2025</li>
+          <li>Tuesday, December 30, 2025</li>
+          <li>Wednesday, December 31, 2025</li>
         </ul>
 
         <p>
@@ -122,8 +122,8 @@ export default function Programs({ data }) {
               </>
             }
             who="Kids ages 5-12"
-            price={320}
-            term="4 days"
+            price={395}
+            term="5 days"
             includes={dayCampBulletsClassic}
           >
             <CTAButton href="https://register.trmanager.com">
@@ -164,8 +164,8 @@ export default function Programs({ data }) {
               </>
             }
             who="Kids ages 5-12"
-            price={450}
-            term="4 days"
+            price={545}
+            term="5 days"
             includes={dayCampBulletsHockey}
           >
             <CTAButton href="https://register.trmanager.com">
