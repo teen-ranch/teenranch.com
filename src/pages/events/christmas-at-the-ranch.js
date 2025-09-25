@@ -24,6 +24,7 @@ import { DateTime } from "luxon"
 import Img from "gatsby-image"
 import { Time } from "components/Time"
 import Video from "components/Video"
+import Quote from "components/Quote"
 
 const frontmatter = {
   title: "Christmas at the Ranch",
@@ -32,13 +33,64 @@ const frontmatter = {
 
 const pageData = {
   subTitle:
-    "Round up your family and celebrate the season at our Christmas at the Ranch event!",
+  <>Round up your family and friends and celebrate the true meaning of the season with Christmas at the Ranch!<br/><br/>              <em>
+  <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            textAlign: "center",
+            padding: "4rem 0rem",
+          }}
+        >
+          <div
+            style={{ display: "flex", flexDirection: "column", gap: "2rem" }}
+          >
+            <div
+              style={{
+                fontFamily: "serif",
+                fontStyle: "italic",
+                fontSize: "16pt",
+              }}
+            >
+            "For unto us a child is born, unto us a son is given..."
+            </div>
+            <div>Isaiah 9:6</div>
+          </div>
+        </div>
+
+  </em>
+</>,
   keywords: "christmas event, christmas with the family",
 }
 
 const eventData = {
   title: frontmatter.title,
-  description: `Experience a magical day filled with western fun and a very special guest. Families can enjoy a Santa Skate, visit and snap photos right alongside Teen Ranch’s very own Santa, enjoy a hayride through the ranch grounds, and warm up at our outdoor campfire. `,
+  description: <>Round up your family and friends and celebrate the true meaning of the season with Christmas at the Ranch!<br/><br/>              <em>
+                <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            textAlign: "center",
+            padding: "4rem 2rem",
+          }}
+        >
+          <div
+            style={{ display: "flex", flexDirection: "column", gap: "2rem" }}
+          >
+            <div
+              style={{
+                fontFamily: "serif",
+                fontStyle: "italic",
+                fontSize: "16pt",
+              }}
+            >
+            For unto us a child is born, unto us a son is given...            </div>
+            <div>Isaiah 9:6</div>
+          </div>
+        </div>
+
+  </em>
+</>,
   venue: {
     name: "Teen Ranch",
     address: {
@@ -67,34 +119,64 @@ export default function Default({ data }) {
         metaTitle={pageData.metaTitle || frontmatter.title}
         metaDescription={pageData.metaDescription || pageData.subTitle}
         keywords={pageData.keywords}
+        lighten
       />
 
       <Container>
-        <Grid md={2}>
+        {/* <Grid md={2}> */}
           <div>
             <h1>{frontmatter.title}</h1>
             <p>
-              Round up your family and celebrate the season at our Christmas at
-              the Ranch event! Experience a magical day filled with western fun
-              and a very special guest. Families can enjoy a Santa Skate, visit
-              and snap photos right alongside Teen Ranch’s very own Santa, enjoy
-              a hayride through the ranch grounds, and warm up at our outdoor
-              campfire. Treat your kids to a special pony ride through our
-              Evergreen Forest Trail. Come dressed in your seasonal attire and
-              be ready for a festive day of family fun!
+             Round up your family and friends and celebrate the true meaning of the season with Christmas at the Ranch!
+Experience the joy of Christmas with festive fun, western charm, and a special visit from Santa himself.
             </p>
-            <p>
-              Christmas trees and evergreen bundles will be available for sale.
-            </p>
-            <p>Make this your family christmas tree outing!</p>
+          
+
+            
             <h2>When is it?</h2>
-            Saturday, December 7, 2024: <Time>1130</Time> - <Time>1500</Time>.
+            Saturday, December 6, 2025: <Time>1130</Time> - <Time>1500</Time>.
             Open to all ages
+          
+          <h2>Families can enjoy</h2>
+          <ul style={{listStyle:'none'}}>
+            <li>🎅 Santa Skate- Visit with Santa and snap photos while skating (bring your skates / helmets are recommended)</li>
+<li>📸 Photos with Santa - Santa will be available to visit and take photos at different locations around the event.</li>
+<li>🎨 Christmas Crafts</li>
+<li>☕ Hot Chocolate & Holiday Treat</li>
+<li>🚜 Hayrides – Cozy up and tour the scenic ranch grounds</li>
+<li>🔥 Outdoor Campfire – Warm up and roast some S’mores</li>
+          </ul>
+          
+          <p>Put on your christmas sweater and make some holiday memories with us at the ranch.</p>
+          
+          <h2>Extras</h2>
+
+<ul style={{listStyle:'none'}}>
+<li>🐴 Pony rides — $5 per person (weather permitting) through our Evergreen Forest Trail</li>
+<li>🎄 Christmas trees for purchase</li>
+<li>🌿 Evergreen and Dogwood bundles</li>
+<li>🌭 Teen Ranch Snack Bar — hot dogs, fries, drinks, snacks, & more!</li>
+<li>🥣🚚 Funnel Cake Dream Food Truck — winter funnel cakes</li>
+</ul>
+          
+          <h2>Schedule</h2>
+          <ul>
+<li><Time>1130</Time> - <Time>1500</Time> Ice Skating (Santa Skate between <Time>1200</Time> - <Time>1330</Time>)</li>
+<li><Time>1200</Time> - <Time>1500</Time> Hayrides</li>
+<li><Time>1300</Time> - <Time>1500</Time> Pony rides & photo opportunity</li>
+          </ul>
+          
             <h2>Cost</h2>
+Children age two and under are free.<br/>
+            <strong>Per Person:</strong> $12.00
+            <br/>
             <strong>
-              $16.00 +HST per person. Children age two and under are free.
-            </strong>
-            <div>
+              Family Pricing:</strong> $40.00 (2 adults, up to 5 kids)
+            <br/><br/>
+            * All prices include tax.<br/>
+            ** Entry fee collected at the gate.
+
+            {/* <div>
               <PrimaryButton
                 target="_blank"
                 rel="noopener noreferrer"
@@ -102,58 +184,32 @@ export default function Default({ data }) {
               >
                 Register now
               </PrimaryButton>
-            </div>
+            </div> */}
           </div>
-          <div style={{ maxWidth: "315px" }}>
+          {/* <div style={{ maxWidth: "315px" }}>
             <Video
               src="https://youtube.com/embed/Ec__mV4yx84?feature=shared"
               short
             />
           </div>
-        </Grid>
-        <h2>Event includes:</h2>
-        <ul>
-          <li>
-            Santa Skate - Visit with Santa and snap photos while skating (bring
-            your skates / helmets are recommended). Santa will be available to
-            visit and take photos at different locations around the event.
-          </li>
-          <li>Hayride through the ranch grounds</li>
-          <li>Christmas Craft </li>
-          <li>Outdoor campfire fun</li>
-          <li>Hot cocoa and treat </li>
-        </ul>
-        <h2>Add-ons:</h2>
-        <ul>
-          <li> Pony rides $5 per person* weather-permitting </li>
-          <li>Christmas Trees</li>
-          <li>Evergreen and Dogwood bundles </li>
-          <li>Teen Ranch Snack bar available (drinks, snacks, hot dogs) </li>
-          <li>Funnel Cake Dream (winter funnel cakes, fries, poutine) </li>
-        </ul>
-        <h2>Schedule</h2>
-        <ul>
-          <li><Time>1200</Time> - <Time>1500</Time> Ice Skating - Santa will join us on ice between <Time>1200</Time> - <Time>1330</Time></li>
-          <li><Time>1200</Time> - <Time>1500</Time> Hayrides </li>
-          <li><Time>1300</Time> - <Time>1500</Time> Pony rides and photo opportunity</li>
-        </ul>
-        *Great photo opportunities with Santa throughout these activities
+        </Grid> */}
+        {/* *Great photo opportunities with Santa throughout these activities */}
         <p>
           Contact our office if you have any questions:{" "}
           <a href="mailto:camp@teenranch.com">camp@teenranch.com</a> or{" "}
-          <a href="tel:+15199414501">5192163749</a>
+          <a href="tel:+15199414501">519-216-3749</a>
         </p>
-        <p>
+        {/* <p>
           <sm style={{ fontSize: "9pt" }}>
             Register online. All sales are final.
           </sm>
-        </p>
+        </p> */}
         <div
           style={{
             display: "flex",
             justifyContent: "center",
             textAlign: "center",
-            padding: "16rem 8rem",
+            padding: "16rem 2rem",
           }}
         >
           <div
@@ -166,9 +222,9 @@ export default function Default({ data }) {
                 fontSize: "16pt",
               }}
             >
-              When they saw the star, they rejoiced exceedingly with great joy.
+            And the angel said unto them, 'Fear not: for, behold, I bring you good tidings of great joy, which shall be to all people.
             </div>
-            <div>Matthew 2:10 ESV</div>
+            <div>Luke 2:10</div>
           </div>
         </div>
         {/* <div style={{ color: "red", fontSize: "2em" }}>
@@ -233,7 +289,7 @@ export default function Default({ data }) {
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "events/santaClaus.png" }) {
+    file(relativePath: { eq: "events/christmas-horses.png" }) {
       childImageSharp {
         fluid(maxWidth: 1920, quality: 64) {
           ...GatsbyImageSharpFluid_withWebp
