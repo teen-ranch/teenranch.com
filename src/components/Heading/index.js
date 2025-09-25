@@ -23,6 +23,7 @@ function Heading({
 	imageOptions,
 	children,
 	hunterJumper,
+	lighten
 }) {
 	const { pathname } = useLocation();
 
@@ -70,7 +71,7 @@ function Heading({
 							/>
 						)}
 					</div>
-					<div className={`overlayContainer`}>
+				<div className={`overlayContainer ${lighten ? 'overlayContainerTransparency':''}`}>
 						<div className="overlay">
 							<h1>{title}</h1>
 							{subtitle && <h2>{subtitle}</h2>}
@@ -111,7 +112,7 @@ function Heading({
 				<div className="imageContainer">
 					{src && <GatsbyImg fluid={src} alt={alt || pageTitle} />}
 				</div>
-				<div className={`overlayContainer`}>
+				<div className={`overlayContainer ${lighten ? 'overlayContainerTransparency':''}`}>
 					<div className="overlay">
 						<h1 style={{ opacity: hunterJumper ? 0 : 1 }}>{title}</h1>
 						{hunterJumper && (
