@@ -116,6 +116,26 @@ export default function Programs({ data }) {
           <Price
             title={
               <>
+                On-Ice Only<br/>
+                Option
+              </>
+            }
+            subTitle={``}
+            who="Kids ages 5-12"
+            price={40}
+            term="day"
+            includes={[
+              '1 Hour Ice Time',
+             <><Time>1100</Time> to <Time>1200</Time></> 
+            ]}
+          >
+            <CTAButton href="https://register.trmanager.com">
+              Register now
+            </CTAButton>
+          </Price>
+          <Price
+            title={
+              <>
                 Day camp
                 <br />
                 (Classic)
