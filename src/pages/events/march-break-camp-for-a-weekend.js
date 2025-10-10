@@ -49,9 +49,9 @@ export default function Default({ data }) {
 	const events = [
 		<Event
 			title={frontmatter.title}
-			startDate={"2025-03-07"}
+			startDate={"2026-03-13"}
 			startTime="19:00:00"
-			endDate={"2025-03-09"}
+			endDate={"2026-03-15"}
 			endTime="13:00:00"
 			price={eventData.price}
 			description={eventData.description}
@@ -105,10 +105,10 @@ export default function Default({ data }) {
 				</ul>
 
 				<p>
-					<strong>Check-in:</strong> March 7, 2025 from <Time>1900</Time> -{" "}
+					<strong>Check-in:</strong> March 13, 2026 from <Time>1900</Time> -{" "}
 					<Time>1930</Time>
 					<br />
-					<strong>Pick up:</strong> March 9, 2025 at <Time>1300</Time>
+					<strong>Pick up:</strong> March 15, 2026 at <Time>1300</Time>
 				</p>
 			</Container>
 
