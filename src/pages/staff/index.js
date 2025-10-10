@@ -24,7 +24,7 @@ export default function Default() {
                 
                 <h2>Weekend Volunteering</h2>
                 
-                <p>Volunteers provide significant support to God's ministry at Teen Ranch and we are grateful for these people.</p>
+                <p>Volunteers provide significant support to God's ministry at Teen Ranch and we are grateful for each one of them.</p>
                 
                 <p>Weekend volunteers, aged 14 and older, can earn up to 16 volunteer hours per weekend, with hours counting toward their high school diploma. Skilled role models train volunteers and help them develop their skill set and work ethic. Onsite weekend volunteers are provided a bed, food, and a fun experience while fulfilling their volunteer hours.</p>
                 
@@ -38,7 +38,7 @@ export default function Default() {
                 
                 <p><strong>Riding Instructor (16 years of age and up):</strong> Serving as barn staff at Teen Ranch offers a unique opportunity to make a lasting impact on campers through our equestrian program. All barn staff serve as either English or Western riding instructors, have strong horsemanship skills, and are able to ride at least one level above what they are assigned to teach. At the same time, they are willing to learn and grow in their skills. Along with a passion for mentoring and developing young riders, they must be able to foster a positive, structured environment while ensuring class safety and discipline.</p>
                 
-                <p><strong>Kitchen Staff (15 years of age and up):</strong> Join a dynamic and energetic team responsible for preparing and serving three delicious camp meals each day. Applicants must be at least 15 years old, willing to learn, and able to take initiative in a fast-paced environment. A strong work ethic and teamwork skills are essential. While prior serving experience is a plus, it is not required.</p>
+                <p><strong>Kitchen Staff:</strong> Join a dynamic and energetic team responsible for preparing and serving three delicious camp meals each day. Applicants must be at least 15 years old, willing to learn, and able to take initiative in a fast-paced environment. A strong work ethic and teamwork skills are essential. While prior serving experience is a plus, it is not required.</p>
                 
                 <p><strong>Lifeguard:</strong> Play a vital role in ensuring a safe and enjoyable swimming experience for all campers. To qualify, you must hold a current NLS certification (Waterfront preferred), have waterfront experience or an equivalent qualification based on OCA standards, and possess strong communication skills. This position is often combined with another role to provide a well-rounded experience.</p>
                 

@@ -123,7 +123,7 @@ export default function Default({ data }) {
       />
 
       <Container>
-        {/* <Grid md={2}> */}
+        <Grid md={2}>
           <div>
             <h1>{frontmatter.title}</h1>
             <p>
@@ -186,18 +186,18 @@ Children age two and under are free.<br/>
               </PrimaryButton>
             </div> */}
           </div>
-          {/* <div style={{ maxWidth: "315px" }}>
+          <div style={{ maxWidth: "315px" }}>
             <Video
-              src="https://youtube.com/embed/Ec__mV4yx84?feature=shared"
+              src="https://youtube.com/embed/tflDzyRmV8I?feature=shared"
               short
             />
           </div>
-        </Grid> */}
+        </Grid>
         {/* *Great photo opportunities with Santa throughout these activities */}
         <p>
           Contact our office if you have any questions:{" "}
           <a href="mailto:camp@teenranch.com">camp@teenranch.com</a> or{" "}
-          <a href="tel:+15199414501">519-216-3749</a>
+          <a href="tel:+15199414501">519-941-4501</a>
         </p>
         {/* <p>
           <sm style={{ fontSize: "9pt" }}>
@@ -289,7 +289,7 @@ Children age two and under are free.<br/>
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "events/christmas-horses.png" }) {
+    file(relativePath: { eq: "events/christmasAtTheRanch.png" }) {
       childImageSharp {
         fluid(maxWidth: 1920, quality: 64) {
           ...GatsbyImageSharpFluid_withWebp
