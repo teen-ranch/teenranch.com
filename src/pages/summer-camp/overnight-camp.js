@@ -207,9 +207,9 @@ export default function Programs({ data }) {
 						who="Kids who want to try everything (age 8+)"
 						src={wham.childImageSharp.fluid}
 					>
-						Epic activities like giant swing, horseback riding, rock climbing,
-						woodland survival, initiatives course challenge, archery,
-						waterslide, jousting pond, and so much more!
+This camp has something for everyone! Epic activities include rappelling, survival skills, forts & fires, team challenges, portaging, water games, animal encounters, 
+strategic challenges, and more!
+					
 						<br />
 						<PrimaryButton to="/summer-camp/overnight-camp/wham-camp/">
 							Learn more
@@ -284,8 +284,8 @@ export default function Programs({ data }) {
 						title="Hockey camps"
 						subTitle={`Skills & skating development for players and goalies from house-league to rep. Standard, high-performance, girl's hockey, and goalie camps.`}
 						who="Players and goalies"
-						price={1315}
-						priceTo={1775}
+						price={1355}
+						priceTo={1795}
 						term="week"
 						includes={[
 							"On-site, olympic-size ice rink",
@@ -312,8 +312,8 @@ export default function Programs({ data }) {
 						title="Horse camps"
 						subTitle="Horseback riding camps for beginner to advanced riders. Take your pick from western, english, or rodeo camps."
 						who="English & western riders"
-						price={1065}
-						priceTo={1335}
+						price={1100}
+						priceTo={1645}
 						term="week"
 						includes={[
 							"Ability-based lessons",
@@ -367,8 +367,8 @@ export default function Programs({ data }) {
 						title="WHAM camp"
 						subTitle="Epic activities like giant swing, horseback riding, rock climbing, woodland survival, initiatives course challenge, archery, waterslide, jousting pond, and so much more!"
 						who="Kids who want to try everything"
-						price={1065}
-						priceTo={1335}
+						price={1100}
+						priceTo={1375}
 						term="week"
 						includes={[
 							"Horseback riding",
@@ -396,8 +396,8 @@ export default function Programs({ data }) {
 			<Container type="body">
 				<h2>Additional summer programs:</h2>
 				<PriceAddon
-					title="Summer drop-in ice time (9:00am - 10:30am)"
-					subTitle="One week only!"
+					title="Summer drop-in ice time"
+					subTitle="Aug. 24-28, 2026 9:00am - 10:30am & Aug. 31-Sept. 4, 2026 12:00pm - 1:30pm"
 					description={
 						<>
 							Join in with our regular hockey program for 1.5 hours of ice time

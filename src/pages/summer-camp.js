@@ -76,7 +76,7 @@ export default function Programs({ data }) {
 			{/* <SummerCampRegistrationNotice /> */}
 
 			<Container type="body">
-				<h1>Summer Camp 2025 at Teen Ranch</h1>
+				<h1>Summer Camp 2026 at Teen Ranch</h1>
 
 				<h2>Here's what you can expect this summer:</h2>
 
@@ -91,7 +91,7 @@ export default function Programs({ data }) {
 
 				<ul>
 					<li>
-						<strong>Junior Day Camp:</strong> For kids age 5-7
+						<strong>Junior Day Camp:</strong> For kids age 5-8
 					</li>
 					<li>
 						<strong>Ultimate Day Camp:</strong> For kids and teens age 8+
@@ -178,7 +178,7 @@ export default function Programs({ data }) {
 					<Program
 						small
 						name="Junior Day Camp"
-						who="Kids age 5-7"
+						who="Kids age 5-8"
 						src={file.childImageSharp.fluid}
 					>
 						Games, crafts, swimming, pony rides, story time and more! A week
@@ -299,9 +299,9 @@ export default function Programs({ data }) {
 								<br />
 							</>
 						}
-						who="Kids age 5-7"
-						price={270}
-						priceTo={450}
+						who="Kids age 5-8"
+						price={380}
+						priceTo={475}
 						term="week"
 						includes={[
 							"Games",
@@ -331,8 +331,8 @@ export default function Programs({ data }) {
 						}
 						subTitle="The full camp experience with your sport of choice, including daily campfires featuring engaging, real-life topics shared from a biblical perspective."
 						who="Kids and teens 8+"
-						price={450}
-						priceTo={1100}
+						price={925}
+						priceTo={1145}
 						term="week"
 						includes={[
 							"Full camp experience",
@@ -361,8 +361,8 @@ export default function Programs({ data }) {
 						}
 						subTitle="Campers experience all the fun and adventure of summer camp packed into five awesome days & nights as they enjoy the great outdoors, get active and build friendships that can last a lifetime."
 						who="Kids and teens 8+"
-						price={1065}
-						priceTo={1775}
+						price={1100}
+						priceTo={1795}
 						term="week"
 						includes={[
 							"Complete camp experience",

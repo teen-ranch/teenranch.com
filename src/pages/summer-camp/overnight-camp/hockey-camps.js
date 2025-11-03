@@ -318,7 +318,7 @@ export default function Programs({ data }) {
 					<h2>Logan Mailloux</h2>
 					<h3>Guest hockey coach</h3>
 					<p>
-						Logan is a defenseman currently playing for the Montreal Canadiens
+						Logan is a defenseman currently playing for the St. Louis Blues
 						in the NHL. He was drafted by Montreal in the 1st round, 31st
 						overall in the 2021 NHL Draft. He was previously an OHL All-Star for
 						the London Knights and an AHL All-Star for the Laval Rocket before
@@ -354,7 +354,7 @@ export default function Programs({ data }) {
 					<li>Brenden Miller - Iowa Wild - AHL</li>
 					<li>Marcus Joughin - Sacred Heart University - NCAA Div 1</li>
 					<li>Brendan Kennette - Sacred Heart University - NCAA Div 1</li>
-					<li>Logan Mailloux - Laval Rocket - AHL</li>
+					<li>Nick Ritchie - ex NHL Player</li>
 				</ul>
 
 				{/* <Coach name='Brent Boschman' title='Head coach' src={ brent.childImageSharp.fluid }
@@ -451,7 +451,7 @@ export default function Programs({ data }) {
 						title="Hockey camp"
 						subTitle="Skills & skating development for players and goalies of all ability levels, with a focus on enjoying the game."
 						who="Players and goalies (co-ed)"
-						price={1395}
+						price={1435}
 						term="week"
 						includes={[
 							"On-site, olympic-size ice rink",
@@ -473,7 +473,7 @@ export default function Programs({ data }) {
 						title="Girl's hockey camp"
 						subTitle="A skills & skating development program with the same high-quality instruction just for girls."
 						who="Players and goalies (female)"
-						price={1395}
+						price={1435}
 						term="week"
 						includes={[
 							"On-site, olympic-size ice rink",
@@ -494,8 +494,8 @@ export default function Programs({ data }) {
 					<Price
 						title={<>Elite hockey camp</>}
 						subTitle="For high-performance players focused on advanced skills in skating, puck handling, shooting, and passing."
-						price={1315}
-						priceTo={1645}
+						price={1355}
+						priceTo={1695}
 						term="week"
 						primary
 						includes={[
@@ -519,7 +519,7 @@ export default function Programs({ data }) {
 						title="Goalie camp"
 						subTitle="Goalie specific training, with a focus on angles, technique, rebound-control, proper form, butterfly and much more."
 						who="Goalies (co-ed)"
-						price={1315}
+						price={1355}
 						term="week"
 						includes={[
 							<>
@@ -544,7 +544,7 @@ export default function Programs({ data }) {
 						title={<>Hawerchuk Strong Hockey Camp</>}
 						subTitle="An elite specialty camp run in partnership with MASH Hockey featuring current and ex NHL coaches as well as other current professionals, in support of the Hawerchuk Strong foundation.  "
 						who="A/AA/AAA Players & goalies (Male)"
-						price={1775}
+						price={1795}
 						term="week"
 						// primary
 						includes={[
@@ -577,8 +577,8 @@ export default function Programs({ data }) {
 				/>
 				<h2>Additional summer programs:</h2>
 				<PriceAddon
-					title="Summer drop-in ice time (9:00am - 10:30am)"
-					subTitle="One week only!"
+					title="Summer drop-in ice time"
+					subTitle="Aug. 24-28, 2026 9:00am - 10:30am & Aug. 31-Sept. 4, 2026 12:00pm - 1:30pm"
 					description={
 						<>
 							Join in with our regular hockey program for 1.5 hours of ice time
@@ -606,7 +606,7 @@ export default function Programs({ data }) {
           term="hour"
         /> */}
 				<PriceAddon
-					title="Semi-private lessons"
+					title="Small group lessons"
 					subTitle="Max 4:1 instructor ratio"
 					description={
 						<>
@@ -619,7 +619,7 @@ export default function Programs({ data }) {
 					}
 					price={100}
 					term="hour"
-					to="mailto:icecorral@teenranch.com?subject=Semi-private lessons"
+					to="mailto:icecorral@teenranch.com?subject=Small group lessons"
 				/>
 			</Container>
 			<BalancePayments />
@@ -732,7 +732,7 @@ export const query = graphql`
 
     logan: file(
       relativePath: {
-        eq: "coaches/loganMailloux.jpg"
+        eq: "coaches/loganMailloux-stLouis.jpg"
       }
     ) {
       childImageSharp {
