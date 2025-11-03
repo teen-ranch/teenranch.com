@@ -369,8 +369,8 @@ export default function Programs({ data }) {
             title="Hockey day camp"
             subTitle="Skills & skating development for players and goalies of all ability levels, with a focus on enjoying the game."
             who="Players and goalies (co-ed)"
-            price={425}
-            priceTo={895}
+            price={925}
+            // priceTo={895}
             term="week"
             includes={[
               "On-site, olympic-size ice rink",
@@ -393,7 +393,7 @@ export default function Programs({ data }) {
             title={<>Elite hockey day camp</>}
             subTitle="For high-performance players focused on advanced skills in skating, puck handling, shooting, and passing."
             who="Rep-level players (co-ed)"
-            price={1100}
+            price={1145}
             term="week"
             primary
             includes={[
@@ -444,8 +444,8 @@ export default function Programs({ data }) {
       <Container type="body">
         <h2>Additional summer programs:</h2>
         <PriceAddon
-          title="Summer drop-in ice time (9:00am - 10:30am)"
-          subTitle="One week only!"
+          title="Summer drop-in ice time"
+          subTitle="Aug. 24-28, 2026 9:00am - 10:30am & Aug. 31-Sept. 4, 2026 12:00pm - 1:30pm"
           description={
             <>
               Join in with our regular hockey program for 1.5 hours of ice time
@@ -473,7 +473,7 @@ export default function Programs({ data }) {
           term="week"
         /> */}
         <PriceAddon
-          title="Semi-private lessons"
+          title="Small group lessons"
           subTitle="Max 4:1 instructor ratio"
           description={
             <>
@@ -486,7 +486,7 @@ export default function Programs({ data }) {
           }
           price={100}
           term="hour"
-          to="mailto:icecorral@teenranch.com?subject=Semi-private lessons"
+          to="mailto:icecorral@teenranch.com?subject=Small group lessons"
         />
       </Container>
 

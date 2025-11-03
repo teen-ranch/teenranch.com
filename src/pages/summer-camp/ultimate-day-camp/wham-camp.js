@@ -74,10 +74,7 @@ export default function Programs({ data }) {
 				<p>Where heaps of activities meet!</p>
 
 				<p>
-					Want to experience LOTS of camp fun, try a load of activities and meet
-					friends for life? WHAM Camp (Where Heaps of Activities Meet) is
-					designed just for you! Come and experience all the best of what Teen
-					Ranch has to offer. You won’t want to miss these epic activities!
+					Looking for nonstop fun, a variety of activities, and exciting challenges? <strong>WHAM Camp (Where Heaps of Activities Meet)</strong> is made for exactly that! This fresh and upgraded summer camp program encourages campers to jump into the very best outdoor experiences, from thrilling adventures to epic outdoor challenges. These unforgettable experiences are not to be missed!
 				</p>
 			</Container>
 
@@ -112,9 +109,8 @@ export default function Programs({ data }) {
 						who="Kids who want to try everything (age 8+)"
 						src={file.childImageSharp.fluid}
 					>
-						Epic activities like giant swing, horseback riding, rock climbing,
-						woodland survival, initiatives course challenge, archery,
-						waterslide, jousting pond, and so much more!
+						This camp has something for everyone! Epic activities include rappelling, survival skills, forts & fires, team challenges, portaging, water games, animal encounters, 
+strategic challenges, and more!
 					</Program>
 				</ProgramContainer>
 			</Container>
@@ -196,8 +192,8 @@ export default function Programs({ data }) {
 						title="WHAM camp"
 						subTitle={`Epic activities like giant swing, horseback riding, rock climbing, woodland survival, initiatives course challenge, archery, waterslide, jousting pond, and so much more!`}
 						who="KIDS WHO WANT TO TRY EVERYTHING (AGE 8+)"
-						price={425}
-						priceTo={895}
+						price={925}
+						// priceTo={895}
 						term="week"
 						includes={[
 							"Horseback riding",

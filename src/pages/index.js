@@ -18,26 +18,23 @@ export default function Index({ data }) {
       <Heading
         src={data.hockey.childImageSharp.fluid}
         alt="Summer camp"
-        // title={"Don't miss out on the best week of your life!"}
-        title={
-          <img src="/adventureAwaits2025.png" alt="Adventure Awaits 2025" />
-        }
+        title={"Building confidence, character and lifelong friends"}
+        // title={
+        //   <img src="/adventureAwaits2025.png" alt="Adventure Awaits 2025" />
+        // }
         // title={`Check back soon! Summer Camp 2024 info and registration will be available November 1st.`}
         subtitle={
           // <>
           //   Check back soon! Summer Camp 2024 info and registration will be
           //   available November 1st.
           // </>
-          <>
-            Building confidence - forming friendships - developing skills that
-            will last a lifetime.
-          </>
+          <>Teen Ranch has been providing positive, life-changing experiences for more than 50 years to campers age 5+. Join us for one of the best experiences of your life.</>
         }
         metaTitle="Don't miss out on the best week of your life!"
         metaDescription={`Overnight & Ultimate Day Camps`}
       >
         <CTAButton to="/summer-camp/">
-          Learn more about Summer Camp 2025
+          Register now for Summer Camp 2026
         </CTAButton>
         <h2 style={{ marginTop: "-3rem" }}>
           <p>Registration is now open!</p>

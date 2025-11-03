@@ -279,36 +279,36 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
       )}
       <div style={{ padding: "1rem 0", color: "red", fontSize: "1.4rem" }}>
         <strong>Discounted weeks:</strong>
-        <ul><li>(July 2-4) Due to Canada Day (July 1), camp will start on Wednesday.</li>
-          <li>(August 4-8) Due to the Civic
+        <ul>
+          <li>(August 3-7) Due to the Civic
             Holiday on August 3rd, overnight camp will start on Monday, junior day
             camp will start on Tuesday.</li>
         </ul>
       </div>
       <CampSchedule
         type={type}
-        weeks={["UDC", "ONC", "ONC", "ONC", "ONC", "ONC", "ONC", "UDC", "UDC"]}
+        weeks={["ONC", "ONC", "ONC", "ONC", "ONC", "ONC", "ONC", "UDC", "UDC"]}
         discountedWeeks={[
-          true,
           false,
           false,
           false,
           false,
           true,
+          false,
           false,
           false,
           false,
         ]}
         dates={[
-          <>July 2-4</>,
-          <>July 6-11</>,
-          <>July 13-18</>,
-          <>July 20-25</>,
-          <>July 27 - Aug. 1</>,
-          <>Aug. 4-8</>,
-          <>Aug. 10-15</>,
-          <>Aug. 18-22</>,
-          <>Aug. 25-29</>,
+          <>July 5-10</>,
+          <>July 12-17</>,
+          <>July 19-24</>,
+          <>July 26-31</>,
+          <>Aug. 3-7</>,
+          <>Aug. 9-14</>,
+          <>Aug. 16-21</>,
+          <>Aug. 24-28</>,
+          <>Aug. 13 - Sep. 4</>,
         ]}
         programs={[
           ...(!sections || sections.includes("hockey")
@@ -316,12 +316,12 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
               {
                 name: "Hockey Camp (ONC)",
                 dates: [
-                  null,
                   "8-10",
+                  "13-16",
+                  null,
                   "10-14",
-                  "9-14",
                   null,
-                  null,
+                  "9-13",
                   "13-16",
                   null,
                   null,
@@ -331,36 +331,30 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
               {
                 name: "Hockey Camp (UDC)",
                 dates: [
-                  "8-12",
-                  "5-8",
+                  null,
+                  <>5-8<br/><span style={{fontSize:"9pt", fontWeight:'bold'}}>UDC Hockey</span></>,
                   null,
                   null,
                   null,
                   null,
                   null,
                   "8-13",
-                  null,
+                  <>8-12<br/><span style={{fontSize:"9pt", fontWeight:'bold'}}>Hockey Fusion</span></>,
                 ],
                 ids: [63],
               },
               {
-                ids: [59, 64],
+                ids: [59,64],
                 name: "Elite Hockey Camp",
                 dates: [
                   null,
                   null,
                   null,
                   null,
+                  "8-12",
                   null,
-                  <>
-                    8-12
-                  </>,
-                  <>
-                    13-16
-                  </>,
-                  <>
-                    8-12
-                  </>,
+                  "13-16",
+                  "8-12",
                   null,
                 ],
               },
@@ -369,13 +363,13 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
                 dates: [
                   null,
                   null,
-                  null,
-                  null,
                   "9-14",
                   null,
                   null,
                   null,
-                  "",
+                  null,
+                  null,
+                  null,
                 ],
                 ids: [1000002],
               },
@@ -385,23 +379,23 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
                 dates: [
                   null,
                   null,
+                  null,
                   "10-14",
                   null,
                   null,
                   null,
                   null,
                   null,
-                  "",
                 ],
               },
               {
                 ids: [4],
                 name: "Goalie Camp",
-                dates: [null, null, null, null, null, "8-13", null, null, null],
+                dates: [null, null, null, null, "8-13", null,  null, null, null],
               },
               {
                 ids: [74],
-                name: "Summer Drop-in Ice Time (Regular Hockey)",
+                name: "Summer Drop-in Ice Time",
                 dates: [
                   null,
                   null,
@@ -410,8 +404,8 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
                   null,
                   null,
                   null,
-                  "8-13",
-                  null,
+                  <>8-13<br/><span style={{fontSize:"9pt", fontWeight:'bold'}}>9:00am - 10:30am</span></>,
+                  <>8-12<br/><span style={{fontSize:"9pt", fontWeight:'bold'}}>12:00pm - 1:30pm</span></>,
                 ],
               },
             ]
@@ -423,14 +417,14 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
                 name: "Western Riding Camp",
                 dates: [
                   "8-12",
+                  "13-16",
+                  "10-14",
+                  "10-14",
                   "8-12",
                   "10-14",
-                  "10-14",
-                  "10-14",
-                  "8-12",
                   "13-16",
                   "8-12",
-                  "8-12",
+                  null,
                 ],
               },
               {
@@ -438,15 +432,14 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
                 name: "English Riding Camp",
                 dates: [
                   "8-12",
+                  "13-16",
+                  "10-14",
+                  "10-14",
                   "8-12",
                   "10-14",
-                  "10-14",
-                  "10-14",
-                  "8-12",
                   "13-16",
                   "8-12",
-                  "8-12",
-
+                  null,
                 ],
               },
               {
@@ -488,14 +481,14 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
                 name: "WHAM Camp",
                 dates: [
                   "8-12",
+                  "13-16",
+                  "10-14",
+                  "10-14",
                   "8-12",
                   "10-14",
-                  "10-14",
-                  "10-14",
-                  "8-12",
                   "13-16",
                   "8-12",
-                  "8-12",
+                  <>8-12<br/><span style={{fontSize:"9pt", fontWeight:'bold'}}>WHAM Finale</span></>,
                 ],
               },
             ]
@@ -515,15 +508,15 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
                 ids: [15],
                 name: "Junior Day Camp",
                 dates: [
-                  "5-7",
-                  "5-7",
-                  "5-7",
-                  "5-7",
-                  "5-7",
-                  "5-7",
-                  "5-7",
-                  "5-7",
-                  "5-7",
+                  "5-8",
+                  "5-8",
+                  "5-8",
+                  "5-8",
+                  "5-8",
+                  "5-8",
+                  "5-8",
+                  "5-8",
+                  "5-8",
                 ],
               },
             ]

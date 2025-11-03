@@ -227,8 +227,8 @@ export default function Programs({ data }) {
 						title="Western riding camp"
 						subTitle="An excellent place to start for first-time riders or western riding enthusiasts."
 						who="Beginner to advanced"
-						price={425}
-						priceTo={895}
+						price={925}
+						// priceTo={895}
 						term="week"
 						includes={[
 							"Basic position & control",
@@ -249,8 +249,8 @@ export default function Programs({ data }) {
 						title="English riding camp"
 						subTitle="For kids of all riding levels to learn or develop new skills."
 						who="Beginner to advanced"
-						price={425}
-						priceTo={895}
+						price={925}
+						// priceTo={895}
 						term="week"
 						includes={[
 							"Basic position & control",

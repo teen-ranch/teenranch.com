@@ -119,7 +119,7 @@ export default function Programs({ data }) {
 					<Program
 						small
 						name="Junior day camp"
-						who="Kids age 5-7"
+						who="Kids age 5-8"
 						src={daycamp.childImageSharp.fluid}
 					>
 						Outdoor fun, swimming, pony rides, climbing wall, junior wrangler
@@ -185,8 +185,9 @@ export default function Programs({ data }) {
 							</>
 						}
 						subTitle={`Outdoor games, crafts, swimming, pony rides, story time and more! A week full of friendship and fun!`}
-						who="Kids age 5-7"
-						price={450}
+						who="Kids age 5-8"
+						price={380}
+						priceTo={475}
 						term="week"
 						includes={[
 							"Dynamic outdoor group activities",

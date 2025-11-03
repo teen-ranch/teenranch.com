@@ -290,8 +290,8 @@ export default function Programs({ data }) {
 							</>
 						}
 						who="Beginner to advanced"
-						price={1065}
-						priceTo={1335}
+						price={1100}
+						priceTo={1375}
 						term="week"
 						includes={[
 							"Basic position & control",
@@ -320,8 +320,8 @@ export default function Programs({ data }) {
 							<>For kids of all riding levels to learn or develop new skills.</>
 						}
 						who="Beginner to advanced"
-						price={1065}
-						priceTo={1335}
+						price={1100}
+						priceTo={1375}
 						term="week"
 						includes={[
 							"Basic position & control",
@@ -391,14 +391,13 @@ export default function Programs({ data }) {
 								Rodeo camp
 								<br />
 								<br />
-								<br />
 							</>
 						}
 						subTitle={
 							<>For western riders who want a taste of rodeo competition.</>
 						}
 						who="Intermediate to advanced"
-						price={1595}
+						price={1645}
 						term="week"
 						includes={[
 							"Roping",
