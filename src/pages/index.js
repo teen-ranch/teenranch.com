@@ -134,7 +134,7 @@ export default function Index({ data }) {
         {/*       Details and Registration will be available on our website January */}
         {/*       19, 2022 */}
         {/*     </p> */}
-        {/*   </div> */} }
+        {/*   </div> */}
         {/* </div> */}
       </Heading>
 
