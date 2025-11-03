@@ -145,6 +145,7 @@ Experience the joy of Christmas with festive fun, western charm, and a special v
 <li>☕ Hot Chocolate & Holiday Treat</li>
 <li>🚜 Hayrides – Cozy up and tour the scenic ranch grounds</li>
 <li>🔥 Outdoor Campfire – Warm up and roast some S’mores</li>
+<li>An engaging retelling of the First Christmas Story</li>
           </ul>
           
           <p>Put on your christmas sweater and make some holiday memories with us at the ranch.</p>
@@ -156,7 +157,6 @@ Experience the joy of Christmas with festive fun, western charm, and a special v
 <li>🎄 Christmas trees for purchase</li>
 <li>🌿 Evergreen and Dogwood bundles</li>
 <li>🌭 Teen Ranch Snack Bar — hot dogs, fries, drinks, snacks, & more!</li>
-<li>🥣🚚 Funnel Cake Dream Food Truck — winter funnel cakes</li>
 </ul>
           
           <h2>Schedule</h2>
