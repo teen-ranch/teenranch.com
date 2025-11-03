@@ -210,21 +210,23 @@ strategic challenges, and more!
 				<PriceContainer xl={1} lg={1} md={1}>
 					<Price
 						title="WHAM camp"
-						subTitle={`Epic activities like giant swing, horseback riding, rock climbing, woodland survival, initiatives course challenge, archery, waterslide, jousting pond, and so much more!`}
+						subTitle={`This camp has something for everyone! Epic activities include rappelling, survival skills, forts & fires, team challenges, portaging, water games, animal encounters, strategic challenges, and more!`}
+
 						who="KIDS WHO WANT TO TRY EVERYTHING (AGE 8+)"
 						price={925}
 						// priceTo={895}
 						term="week"
 						includes={[
-							"Horseback riding",
-							"Rock climbing & bouldering",
-							"Woodland survival skills",
-							"Volleyball, soccer, & basketball",
-							"Archery",
-							"Waterslide, jousting pond, canoeing, kayaking",
-							"Swimming",
-							"Lunch",
-							"All camp activities",
+							
+"Teamwork & adventure",
+"Outdoor skills & survival",
+"Hands-On Creativity",
+"Wrangler Crew",
+"Water Games",
+"Camp fun & connection",
+"All meals",
+"All camp activities",
+
 						]}
 					>
 						<CTAButton href="https://register.trmanager.com">
