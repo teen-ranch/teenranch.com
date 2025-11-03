@@ -9,7 +9,7 @@ import "./mel-stevens.scss";
 // import Video from 'components/Video'
 // import ExternalLink from 'components/ExternalLink'
 import { graphql } from "gatsby";
-import Terms from "components/Terms";
+import Terms, { SummerCampTerms } from "components/Terms";
 
 export default function Default({ data }) {
 	return (
@@ -38,7 +38,7 @@ export default function Default({ data }) {
 					<Terms type="mdee" />
 					<Terms type="cfaw" />
 					<Terms type="hockeyAndSkating" />
-					<Terms />
+					<SummerCampTerms/>
 				</div>
 			</Container>
 		</>
