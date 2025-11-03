@@ -72,6 +72,21 @@ export default function Programs({ data }) {
 				<p>
 					Looking for nonstop fun, a variety of activities, and exciting challenges? <strong>WHAM Camp (Where Heaps of Activities Meet)</strong> is made for exactly that! This fresh and upgraded summer camp program encourages campers to jump into the very best outdoor experiences, from thrilling adventures to epic outdoor challenges. These unforgettable experiences are not to be missed!
 				</p>
+				
+				<p>
+					<ul>
+					<li><strong>Team Initiatives</strong> - tackling challenges together</li>	
+					<li><strong>Rock Face Rappelling</strong> - reaching new heights</li>	
+					<li><strong>Woodland Survival Experience</strong> - mastering skills and exploring the wild woods</li>	
+					<li><strong>Portaging adventure</strong> - carrying, paddling, and exploring as a team</li>	
+					<li><strong>Forts & Fires</strong> - constructing, collaborating, and feasting in the woods</li>	
+					<li><strong>Wrangler Crew</strong> - connecting with Teen Ranch barn animals in unique camp style</li>	
+					<li><strong>Instincts for Survival Forest Game</strong> - outsmarting, evading, and surviving</li>	
+					<li><strong>BUILDit Project</strong> - build something cool, useful, and all their own to take home</li>	
+					<li><strong>Hydroball</strong> - classic games with a twist</li>	
+					<li><strong>The Great Bandana Race</strong> - racing, problem solving, and guarding in this epic, cross-camp team adventure!</li>	
+					</ul>
+				</p>
 			</Container>
 
 			<Container type="body">
