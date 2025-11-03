@@ -127,6 +127,27 @@ export default function Terms({ type }) {
 			</>
 		);
 	}
+	
+	if (type === 'summer-camp-extras') {
+		return (
+			<>
+		    <ol>
+					<li><strong>Support Needs:</strong> To ensure every camper has a safe and successful experience, children who are supported by a designated support worker at school will also require a support worker at camp. Please reach out to the camp office for further information and approval.</li>
+					<li><strong>Age and Readiness Requirements:</strong> To ensure campers can be safe and thrive at camp, children must:<ul>
+						<li><strong>Be the appropriate age of the camp program.</strong></li>
+						<li>Be able and willing to follow group instructions, as individual one-on-one support cannot be provided in this camp setting and campers who are unable to follow instructions may be <strong>removed from the program and no refund will be issued.</strong></li>
+						</ul></li>
+					<li><strong>Health and Environmental Risks:</strong> Campers enjoy group activities and outdoor adventures, which may occasionally involve exposure to illness or pests. Teen Ranch takes every reasonable precaution to ensure a safe and healthy environment, but cannot be held responsible for sickness or pest-related issues that may occur during or after camp. No refunds will be issued for such occurrences.</li>
+					<li><strong>Bullying and Behavior Expectations:</strong> Teen Ranch has a zero-tolerance policy for bullying, harassment, or aggressive behavior. Campers are expected to <strong>treat all participants and staff with respect</strong>. Any camper found engaging in bullying or harmful behavior may be <strong>removed from camp at the parent/guardian’s expense.</strong>
+					</li>
+					<li>
+						<strong>Photo and Media Policy:</strong> Parents/guardians may <strong>opt out</strong> if they do not want their child included by emailing our camp registrar directly.
+					</li>
+					<li>It is the parent/guardian’s responsibility to ensure that campers are aware of Teen Ranch’s expectations before arriving at camp.</li>
+				</ol>
+			</>
+		)
+	}
 
 	return (
 		<>
@@ -153,19 +174,19 @@ export default function Terms({ type }) {
 }
 
 export function SummerCampTerms() {
-	return <Terms />;
+	return (<><Terms /><Terms type="summer-camp-extras"/></>);
 }
 
 export function OvernightCampTerms() {
-	return <Terms type="overnight" />;
+	return (<><Terms type="overnight" /><Terms type="summer-camp-extras"/></>);
 }
 
 export function DayCampTerms() {
-	return <Terms type="day" />;
+	return (<><Terms type="day" /><Terms type="summer-camp-extras"/></>);
 }
 
 export function UltimateDayCampTerms() {
-	return <Terms type="ultimate" />;
+	return (<><Terms type="ultimate" /><Terms type="summer-camp-extras"/></>);
 }
 
 export function Terms_MDEE() {
