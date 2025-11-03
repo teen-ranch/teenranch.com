@@ -100,6 +100,11 @@ export default function Programs({ data }) {
 
       <Container type="body">
         <UltimateDayCampIntro />
+        <h2>Hockey Fusion: August 13 - September 4, 2026</h2>
+				<p>
+         Hockey Fusion, is a special one-week only camp: 1.5 hours of ice time each morning, then hockey campers join WHAM campers for exciting team initiatives, and unique challenges. <a href="../wham-camp">See WHAM camp for more info.</a>
+				</p>
+
       </Container>
 
       <Container type="body">
@@ -117,6 +122,8 @@ export default function Programs({ data }) {
           Families will be notified by email six weeks before the camp start
           date for payment reminders and camp information.
         </p>
+        
+
       </Container>
 
       <Container type="body">
