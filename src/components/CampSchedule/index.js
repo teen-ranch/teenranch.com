@@ -308,7 +308,7 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
           <>Aug. 9-14</>,
           <>Aug. 16-21</>,
           <>Aug. 24-28</>,
-          <>Aug. 13 - Sep. 4</>,
+          <>Aug. 31 - Sep. 4</>,
         ]}
         programs={[
           ...(!sections || sections.includes("hockey")
