@@ -63,7 +63,7 @@ export default function Terms({ type }) {
 					requiring a $250 non-refundable deposit per overnight camp
 					registration. The balance will be due 6 weeks prior to arrival at camp
 					and is non-refundable. In the case of absence for any reason during
-					the camp week, including illness, homesickness, or disciplinary
+					the camp week, including illness, injury, homesickness, or disciplinary
 					departure, no refund will be issued. In the case of special
 					circumstances, contact the camp registrar.
 				</p>
@@ -87,7 +87,7 @@ export default function Terms({ type }) {
 					requiring a $175 non-refundable deposit per ultimate day camp
 					registration. The balance will be due 6 weeks prior to arrival at camp
 					and is non-refundable. In the case of absence for any reason during
-					the camp week, including illness, homesickness, or disciplinary
+					the camp week, including illness, injury, homesickness, or disciplinary
 					departure, no refund will be issued. In the case of special
 					circumstances, contact the camp registrar.
 				</p>
@@ -113,7 +113,7 @@ export default function Terms({ type }) {
 					requiring a $100 non-refundable deposit per day camp registration. The
 					balance will be due 6 weeks prior to arrival at camp and is
 					non-refundable. In the case of absence for any reason during the camp
-					week, including illness, homesickness, or disciplinary departure, no
+					week, including illness, injury, homesickness, or disciplinary departure, no
 					refund will be issued. In the case of special circumstances, contact
 					the camp registrar.
 				</p>
@@ -131,20 +131,18 @@ export default function Terms({ type }) {
 	if (type === 'summer-camp-extras') {
 		return (
 			<>
-		    <ol>
+				<strong>Parents, please note:</strong>
+		    <ul>
 					<li><strong>Support Needs:</strong> To ensure every camper has a safe and successful experience, children who are supported by a designated support worker at school will also require a support worker at camp. Please reach out to the camp office for further information and approval.</li>
-					<li><strong>Age and Readiness Requirements:</strong> To ensure campers can be safe and thrive at camp, children must:<ul>
-						<li><strong>Be the appropriate age of the camp program.</strong></li>
-						<li>Be able and willing to follow group instructions, as individual one-on-one support cannot be provided in this camp setting and campers who are unable to follow instructions may be <strong>removed from the program and no refund will be issued.</strong></li>
-						</ul></li>
-					<li><strong>Health and Environmental Risks:</strong> Campers enjoy group activities and outdoor adventures, which may occasionally involve exposure to illness or pests. Teen Ranch takes every reasonable precaution to ensure a safe and healthy environment, but cannot be held responsible for sickness or pest-related issues that may occur during or after camp. No refunds will be issued for such occurrences.</li>
-					<li><strong>Bullying and Behavior Expectations:</strong> Teen Ranch has a zero-tolerance policy for bullying, harassment, or aggressive behavior. Campers are expected to <strong>treat all participants and staff with respect</strong>. Any camper found engaging in bullying or harmful behavior may be <strong>removed from camp at the parent/guardian’s expense.</strong>
+					<li><strong>Age and Readiness Requirements:</strong> To ensure campers can be safe and thrive at camp, children must:
+					<ul>
+						<li>Be the appropriate age of the camp program.</li>
+						<li>Be able and willing to follow group instructions, as individual one-on-one support cannot be provided in this camp setting and campers who are unable to follow instructions may be removed from the program and no refund will be issued.</li>
+					</ul>
 					</li>
-					<li>
-						<strong>Photo and Media Policy:</strong> Parents/guardians may <strong>opt out</strong> if they do not want their child included by emailing our camp registrar directly.
-					</li>
-					<li>It is the parent/guardian’s responsibility to ensure that campers are aware of Teen Ranch’s expectations before arriving at camp.</li>
-				</ol>
+					<li><strong>Health and Environmental Risks:</strong> Campers enjoy group activities and outdoor adventures, which may occasionally involve exposure to illness or pests. Teen Ranch takes every reasonable precaution to ensure a safe and healthy environment, but cannot be held responsible for sickness or pest-related issues that may occur during or after camp.</li>
+					<li><strong>Bullying and Behavior Expectations:</strong> Teen Ranch has a zero-tolerance policy for bullying, harassment, or aggressive behavior. Campers are expected to treat all participants and staff with respect. Any camper found engaging in bullying or harmful behavior may be removed from camp at the parent/guardian's expense.</li>
+				</ul>
 			</>
 		)
 	}
@@ -156,7 +154,7 @@ export default function Terms({ type }) {
 				In order to keep payments as low-risk as possible for you, we are only
 				requiring a non-refundable deposit per registration. The balance will be
 				due 6 weeks prior to arrival at camp and is non-refundable. In the case
-				of absence for any reason during the camp week, including illness,
+				of absence for any reason during the camp week, including illness, injury,
 				homesickness, or disciplinary departure, no refund will be issued. In
 				the case of special circumstances, contact the camp registrar.
 			</p>
