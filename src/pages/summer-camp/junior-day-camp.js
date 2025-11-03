@@ -89,8 +89,7 @@ export default function Programs({ data }) {
 				</ul>
 				<p>
 					<em>
-						Note: Parents, junior day campers enjoy lots of activities all
-						across the property. Campers must be toilet trained.
+						<strong>Parents, please note:</strong> Junior Day Campers dive into a full day of outdoor fun and discovery! To help campers thrive in this program, they must be <strong>5 years old by the start of their camp week, toilet trained, and ready to follow group instructions.</strong>
 					</em>
 				</p>
 			</Container>
