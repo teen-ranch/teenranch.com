@@ -61,12 +61,23 @@ export default function Default({ data }) {
 								</tr>
 							</thead>
 							<tbody>
-								<tr>
+								{/* <tr>
 									<td>Fall Goalie Clinic</td>
 									<td>
 										<strong>Wednesdays:</strong> September 10, 2025 - October 15, 2025
 										<br />
 										(6 sessions)
+									</td>
+									<td>
+										<Time>1700</Time> - <Time>1750</Time>
+									</td>
+								</tr> */}
+								<tr>
+									<td>Winter Goalie Clinic</td>
+									<td>
+										<strong>Wednesdays:</strong> February 11, 2026 - March 25, 2026
+										<br />
+										(6 sessions - no session March 18, 2026)
 									</td>
 									<td>
 										<Time>1700</Time> - <Time>1750</Time>
@@ -100,7 +111,8 @@ export default function Default({ data }) {
 					</div>
 					<h3>Cost</h3>
 					<p>
-						<strong>Fall Goalie Clinic:</strong> $300 +HST/goalie (6 sessions)
+						{/* <strong>Fall Goalie Clinic:</strong> $300 +HST/goalie (6 sessions) */}
+						<strong>Winter Goalie Clinic:</strong> $300 +HST/goalie (6 sessions)
 						{/* <strong>(A) Summer session:</strong> $450 +HST/goalie (8 sessions)
 						<br />
 						<strong>(B) Summer session:</strong> $315 +HST/goalie (6 sessions) */}
