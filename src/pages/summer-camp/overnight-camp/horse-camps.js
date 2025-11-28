@@ -210,7 +210,7 @@ export default function Programs({ data }) {
 					<Program
 						small
 						name="Rodeo"
-						who="Intermediate to advanced (age 11+)"
+						who="Intermediate to advanced (age 13+)"
 						src={rodeo.childImageSharp.fluid}
 					>
 						For western riders who want a taste of rodeo competition.
