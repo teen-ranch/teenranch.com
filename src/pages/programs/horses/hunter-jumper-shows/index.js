@@ -131,8 +131,8 @@ export default function Default({ data }) {
 				</div>
 			</div>
 			<Container type="body">
-				<h1>2025 Marks our 40th Anniversary</h1>
-				<p>
+				<h1><center>2026 Details To Be Announced</center></h1>
+				{/* <p>
 					2025 Marks our 40th Anniversary – 40 years of hosting this amazing H/J
 					Series. Come and see why competitors, families and coaches alike have
 					been enjoying this professional, friendly and quality series since
@@ -147,7 +147,7 @@ export default function Default({ data }) {
 						ontariofallfinals.weebly.com
 					</a>{" "}
 					for details!
-				</p>
+				</p> */}
 				<center>
 					<img
 						src="https://ontariofallfinals.weebly.com/uploads/1/4/9/0/149072116/img-0073_orig.jpeg"
@@ -157,7 +157,7 @@ export default function Default({ data }) {
 				</center>
 				<Program
 					src={main.childImageSharp.fluid}
-					name="2025 Hunter/Jumper Shows"
+					name="2026 Hunter/Jumper Shows"
 				>
 					<div className="staffTable">
 						<table>
@@ -170,71 +170,63 @@ export default function Default({ data }) {
 							</thead>
 							<tbody>
 								<tr>
-									<td>May 4, 2025</td>
-									<td>April 30, 2025</td>
+									<td>May 31, 2026</td>
+									<td>April 27, 2026</td>
 									<td>
-										<Button
+										{/* <Button
 											target="_blank"
 											href="https://forms.zohopublic.com/teenranch1/form/HorseShowMay42025/formperma/3aOV7JyB3qQjWPygySsTkWbYkn0TyCfnhaQ6_EVZDmk"
 										>
 											May 4th entry form
-										</Button>
+										</Button> */}
 									</td>
 								</tr>
 								<tr>
-									<td>June 8, 2025</td>
-									<td>June 4, 2025</td>
+									<td>June 28, 2026</td>
+									<td>June 24, 2026</td>
 									<td>
-										<Button
+										{/* <Button
 											target="_blank"
 											href="https://forms.zohopublic.com/teenranch1/form/HorseShowJune82025/formperma/R-Lx69Q0GMPAotfFOLk0rut0tmmiGDkZF9ts6z0V3ts"
 										>
 											June 8th entry form
-										</Button>
+										</Button> */}
 									</td>
-									{/* <td>
-                    <Button
-                      target="_blank"
-                      href="https://forms.zohopublic.com/teenranch1/form/HorseShowJune1120231/formperma/7eqJQuGREMRk2hksfWr1hxkyTGBx8q_PZIcvYI3HjUI?referrername=teenranch.com"
-                    >
-                      July 13th entry form
-                    </Button>
-                  </td> */}
 								</tr>
 								<tr>
-									<td>July 13, 2025</td>
-									<td>July 9, 2025</td>
+									<td>July 26, 2026</td>
+									<td>July 22, 2026</td>
 									<td>
-										<Button
+										{/* <Button
 											target="_blank"
 											href="https://forms.zohopublic.com/teenranch1/form/HorseShowJuly132025/formperma/p8QVkR4zBTOkXunXa0SF71rQddiUegEolFZPbXJmG6E"
 										>
 											July 13th entry form
-										</Button>
+										</Button> */}
 									</td>
 								</tr>
 								<tr>
-									<td>August 10, 2025</td>
-									<td>August 6, 2025</td>
+									<td>August 23, 2026</td>
+									<td>August 19, 2026</td>
 									<td>
-										<Button
+										{/* <Button
 											target="_blank"
 											href="https://forms.zohopublic.com/teenranch1/form/HorseShowAugust102025/formperma/dWOnHoGcD7zalDBOLn-KDw5v5vmy49l7sgOQeooK9Nk"
 										>
 											August 10th entry form
-										</Button>
+										</Button> */}
 									</td>
 								</tr>
 								<tr>
-									<td>September 14, 2025</td>
-									<td>September 10, 2025</td>
+									<td>September 13, 2026</td>
+									<td>September 9, 2026</td>
 									<td>
-										<Button
+										{/* <Button
 											target="_blank"
 											href="https://forms.zohopublic.com/teenranch1/form/HorseShowSeptember142025/formperma/j9Ias4yMCus6w6sVWbZlsOIwQwDcoIVpyM1jRntmF2Q"
 										>
 											September 14th entry form
-										</Button>
+										</Button> */}
 									</td>
 								</tr>
 							</tbody>
