@@ -140,7 +140,6 @@ export default function Terms({ type }) {
 						<li>Be able and willing to follow group instructions, as individual one-on-one support cannot be provided in this camp setting and campers who are unable to follow instructions may be removed from the program and no refund will be issued.</li>
 					</ul>
 					</li>
-					<li><strong>Health and Environmental Risks:</strong> Campers enjoy group activities and outdoor adventures, which may occasionally involve exposure to illness or pests. Teen Ranch takes every reasonable precaution to ensure a safe and healthy environment, but cannot be held responsible for sickness or pest-related issues that may occur during or after camp.</li>
 					<li><strong>Bullying and Behavior Expectations:</strong> Teen Ranch has a zero-tolerance policy for bullying, harassment, or aggressive behavior. Campers are expected to treat all participants and staff with respect. Any camper found engaging in bullying or harmful behavior may be removed from camp at the parent/guardian's expense.</li>
 				</ul>
 			</>
