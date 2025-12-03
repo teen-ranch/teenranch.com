@@ -27,6 +27,7 @@ export default function Video({ src, short = false }) {
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             rel="0"
+            referrerPolicy="strict-origin-when-cross-origin"
           />
         </div>
       </Card>
