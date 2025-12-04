@@ -21,6 +21,8 @@ import Event from "components/Event";
 import { DateTime } from "luxon";
 import Img from "gatsby-image";
 import Terms, { Terms_MDEE } from "components/Terms";
+import Video from "components/Video";
+import { ProgramContainer } from "components/Program";
 
 const frontmatter = {
 	title: "Mother daughter equine escape",
@@ -36,7 +38,7 @@ const pageData = {
 
 const eventData = {
 	title: frontmatter.title,
-	price: 395,
+	price: 450,
 	description: pageData.subTitle,
 	venue: {
 		name: "Teen Ranch",
@@ -56,11 +58,11 @@ export default function Default({ data }) {
 		<Event
 			key={1}
 			title={frontmatter.title}
-			startDate={DateTime.fromISO("2025-05-11", {
+			startDate={DateTime.fromISO("2026-05-08", {
 				zone: "America/Toronto",
 			}).toISODate()}
 			startTime="19:00:00"
-			endDate={DateTime.fromISO("2025-05-11", {
+			endDate={DateTime.fromISO("2026-05-10", {
 				zone: "America/Toronto",
 			}).toISODate()}
 			endTime="14:00:00"
@@ -95,7 +97,7 @@ export default function Default({ data }) {
 					another over a common love of horses and adventure.
 				</p>
 				<p>
-					Beginning at 7:00pm on Friday May 9, 2025, enjoy a wonderful weekend
+					Beginning at 7:00pm on Friday May 8, 2026, enjoy a wonderful weekend
 					away together in beautiful accommodations with delicious food,
 					entertaining evenings, inspirational speakers, a one-hour horse riding
 					lesson with awesome instructors, scenic trail rides through the
@@ -103,9 +105,10 @@ export default function Default({ data }) {
 				</p>
 
 				<Button href="https://register.trmanager.com">Book now</Button>
-
+				<Grid md={2}>
+<div>
 				<h3>When is it?</h3>
-				<p>May 9-11, 2025</p>
+				<p>May 8-10, 2026</p>
 
 				<h3>This weekend getaway package includes:</h3>
 				<p>Breakfasts, Lunches and Supper.</p>
@@ -114,7 +117,7 @@ export default function Default({ data }) {
 
 				<ul>
 					<li>
-						<strong>Olympic Style/Chalet Room:</strong> $440 +HST /person (Bring
+						<strong>Olympic Style/Chalet Room:</strong> $450 +HST /person (Bring
 						your own bedding & towels)
 						<em>
 							{" "}
@@ -123,7 +126,7 @@ export default function Default({ data }) {
 						</em>
 					</li>
 					<li>
-						<strong>Western-style Hotel Room:</strong> $505 +HST /person (Linens
+						<strong>Western-style Hotel Room:</strong> $515 +HST /person (Linens
 						& towels provided)
 						<em>
 							{" "}
@@ -132,7 +135,7 @@ export default function Default({ data }) {
 						</em>
 					</li>
 					<li>
-						<strong>Coach House/Family Suite:</strong> $540 +HST /person (Linens
+						<strong>Coach House/Family Suite:</strong> $555 +HST /person (Linens
 						& towels provided)
 						<em>
 							{" "}
@@ -147,7 +150,11 @@ export default function Default({ data }) {
 						519-941-4501.
 					</li>
 				</ul>
-
+				</div>
+				<div>
+				<Video src="https://www.youtube.com/embed/WuCOMnAmYGw" title="Mother Daughter Equine Escape" />	
+				</div>
+				</Grid>
 				<h4>What you'll enjoy:</h4>
 
 				<ul>
@@ -242,10 +249,10 @@ export default function Default({ data }) {
 				<Terms_MDEE />
 			</Container>
 
-			{/* <Container>
+			<Container>
           <h1>Upcoming events</h1>
           {events}
-        </Container> */}
+        </Container>
 
 			{/* </div> */}
 		</>
