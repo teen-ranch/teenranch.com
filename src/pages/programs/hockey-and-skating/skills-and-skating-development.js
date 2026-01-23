@@ -205,7 +205,7 @@ export default function Default() {
 							</table>
 						</CardPadding>
 					</Card>
-					<Button href="https://register.trmanager.com">Book now</Button>
+					{/* <Button href="https://register.trmanager.com">Book now</Button> */}
 					
 					<Card>
 						<CardPadding>
