@@ -109,6 +109,8 @@ export default function Default({ data }) {
 <div>
 				<h3>When is it?</h3>
 				<p>May 8-10, 2026</p>
+				<h3>Who is it for?</h3>
+						<p>Mothers & Daughters, <strong>Age 8+</strong></p>
 
 				<h3>This weekend getaway package includes:</h3>
 				<p>Breakfasts, Lunches and Supper.</p>
