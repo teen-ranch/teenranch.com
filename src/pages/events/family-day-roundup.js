@@ -75,7 +75,7 @@ export default function Default({ data }) {
 					this Family Day!
 				</p>
 				<h2>When is it?</h2>
-				Monday, February 17, 2025: <Time>1000</Time> - <Time>1200</Time> (doors
+				Monday, February 16, 2026: <Time>1000</Time> - <Time>1200</Time> (doors
 				open at <Time>0945</Time>)<h2>Who is it for?</h2>
 				Open to all ages
 				<h2>Cost</h2>
