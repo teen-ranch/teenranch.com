@@ -15,7 +15,7 @@ export default function Default() {
 				src="https://teenranch.nyc3.digitaloceanspaces.com/website/assets/hockey15.jpg"
 				alt="Men's hockey league"
 				title="Men's hockey league"
-				subtitle="Summer and Fall hockey leagues for men age 30+"
+				subtitle="Summer and Fall hockey leagues for men"
 				keywords="men's hockey leage"
 				metaTitle="Men's hockey league"
 				metaDescription="Men's hockey leages near Orangeville, Ontario, Canada"
@@ -37,6 +37,87 @@ export default function Default() {
 				{/* <p>Spring and Fall hockey leagues for men age 30+</p> */}
 
 				<Grid md={1} gapSize="6rem">
+					<div>
+						<h2>Summer Leagues</h2>
+						<Card>
+							<CardPadding>
+								<h3>
+									Summer Men's League (30+){" "}
+									<sm style={{ fontSize: "11pt" }}>(6 teams)</sm>
+								</h3>
+								<p>
+									<strong>When:</strong> May 14, 2026 - August 27, 2026
+								</p>
+								<ul>
+									<li>
+										Thursday nights: <Time>2000</Time>, <Time>2100</Time>, and{" "}
+										<Time>2200</Time> game times
+									</li>
+									<li>
+										<strong>Cost:</strong> $320 +HST
+									</li>
+								</ul>
+								<strong>
+									Contact{" "}
+									<a href="mailto:brent.boschman@teenranch.com">
+										brent.boschman@teenranch.com
+									</a>{" "}
+									for team bookings.
+								</strong>
+							</CardPadding>
+						</Card>
+
+						<Card>
+							<CardPadding>
+								<h3>
+									Monday League (18+){" "}
+									<sm style={{ fontSize: "11pt" }}>(6-8 teams)</sm>
+								</h3>
+								<p>
+									<strong>When: May, 2026 - August, 2026</strong>
+								</p>
+								<ul>
+									<li>
+										Mondays: <Time>1900</Time>, <Time>2000</Time>, and <Time>2100</Time> game times (<Time>2200</Time> if necessary)
+									</li>
+									<li>Full-team entry</li>
+								</ul>
+								<strong>
+									Contact{" "}
+									<a href="mailto:brent.boschman@teenranch.com">
+										brent.boschman@teenranch.com
+									</a>{" "}
+									for team bookings.
+								</strong>
+							</CardPadding>
+						</Card>
+
+						<Card>
+							<CardPadding>
+								<h3>
+									Wednesday League (18+){" "}
+									<sm style={{ fontSize: "11pt" }}>(6 teams)</sm>
+								</h3>
+								<p>
+									<strong>When: May, 2026 - August, 2026</strong>
+								</p>
+								<ul>
+									<li>
+										Wednesdays: <Time>2000</Time>, <Time>2100</Time>, and <Time>2200</Time> game times
+									</li>
+									<li>Full-team entry</li>
+								</ul>
+								<strong>
+									Contact{" "}
+									<a href="mailto:brent.boschman@teenranch.com">
+										brent.boschman@teenranch.com
+									</a>{" "}
+									for team bookings.
+								</strong>
+							</CardPadding>
+						</Card>
+					</div>
+
 					<div>
 						<h2>Fall/Winter Leagues</h2>
 						<Card>
@@ -114,80 +195,6 @@ export default function Default() {
 							</CardPadding>
 						</Card>
 					</div>
-					{/* <div>
-						<h2>Summer Leagues</h2>
-						<Card>
-							<CardPadding>
-								<h3>
-									Summer Men's League (30+){" "}
-									<sm style={{ fontSize: "11pt" }}>(4-6 teams)</sm>
-								</h3>
-								<p>
-									<strong>When:</strong> May 15, 2025 - August 28, 2025
-								</p>
-								<ul>
-									<li>
-										Thursday nights: <Time>2000</Time>, <Time>2100</Time>, and{" "}
-										<Time>2200</Time> game times
-									</li>
-									<li>
-										<strong>Cost:</strong> $315 +HST
-									</li>
-								</ul>
-								<Button href="https://register.trmanager.com">Book now</Button>
-							</CardPadding>
-						</Card>
-
-						<Card>
-							<CardPadding>
-								<h3>
-									Monday League (18+){" "}
-									<sm style={{ fontSize: "11pt" }}>(6-8 teams)</sm>
-								</h3>
-								<p>
-									<strong>When: May, 2025 - August, 2025</strong>
-								</p>
-								<ul>
-									<li>
-										Mondays: <Time>1900</Time> - <Time>2200</Time> game times
-									</li>
-									<li>Full-team entry</li>
-								</ul>
-								<strong>
-									Contact{" "}
-									<a href="mailto:brent.boschman@teenranch.com">
-										brent.boschman@teenranch.com
-									</a>{" "}
-									for team bookings.
-								</strong>
-							</CardPadding>
-						</Card>
-
-						<Card>
-							<CardPadding>
-								<h3>
-									Wednesday League (18+){" "}
-									<sm style={{ fontSize: "11pt" }}>(6 teams)</sm>
-								</h3>
-								<p>
-									<strong>When: September 18, 2024 - April 17, 2025</strong>
-								</p>
-								<ul>
-									<li>
-										Wednesdays: <Time>2000</Time> - <Time>2200</Time> game times
-									</li>
-									<li>Full-team entry</li>
-								</ul>
-								<strong>
-									Contact{" "}
-									<a href="mailto:brent.boschman@teenranch.com">
-										brent.boschman@teenranch.com
-									</a>{" "}
-									for team bookings.
-								</strong>
-							</CardPadding>
-						</Card>
-					</div> */}
 				</Grid>
 
 				{/* </Program> */}

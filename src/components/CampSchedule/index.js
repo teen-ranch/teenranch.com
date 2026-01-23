@@ -516,7 +516,7 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
                   "5-8",
                   "5-8",
                   "5-8",
-                  "5-8",
+                  "5-7",
                 ],
               },
             ]

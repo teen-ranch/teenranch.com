@@ -4,6 +4,8 @@ import Heading from "components/Heading";
 import Button from "components/Button";
 import Program from "components/Program";
 import { Terms_HockeyAndSkating } from "components/Terms";
+import Card, { CardPadding } from "components/Card";
+import { HockeyAges } from "components/HockeyAges";
 
 export default function Default() {
 	return (
@@ -18,52 +20,50 @@ export default function Default() {
 				metaDescription="Spring hockey leagues for kids age 5-14"
 			/>
 			<Container type="body">
-				<Program
-					src="https://teenranch.nyc3.digitaloceanspaces.com/website/assets/hockey14.jpg"
-					name="Spring hockey league"
-				>
-					<p>
-						Join us for a fun, 9-week recreational program. Sessions will
-						consist of a ten-minute warm up drill, followed by a 35-minute game.
-						Two teams and two goalies per age group, with limited spots per
-						team.
-					</p>
-					<h3>When</h3>
-					{/* <div
-            style={{
-              padding: "4rem",
-              background: "purple",
-              borderRadius: "4px",
-              color: "#fff",
-              textAlign: "center",
-              fontSize: "2rem",
-            }}
-          >
-            Returning Summer 2023
-          </div> */}
-					<ul>
-						<li>
-							<strong>U-7 (Age 5-6, 2018-2019)</strong>: Tuesdays, 6:00pm -
-							6:50pm, April 22 - June 17, 2025
-						</li>
-						<li>
-							<strong>U-9 (Age 7-8, 2016-2017)</strong>: Tuesdays, 7:00pm -
-							7:50pm, April 22 - June 17, 2025
-						</li>
-						<li>
-							<strong>U-11 (Age 9-10, 2014-2015)</strong>: Wednesdays, 6:00pm -
-							6:50pm, April 23 - June 18, 2025
-						</li>
-						<li>
-							<strong>U-13/U-15 (Age 11-14, 2010-2013)</strong>: Wednesdays,
-							7:00pm - 7:50pm, April 23 - June 18, 2025
-						</li>
-					</ul>
-					<h3>Cost</h3>
-					$275 +HST (9 sessions, jersey included)
-					<br />
+				
+			Join us for a fun, 9-week recreational program. Sessions will consist of a ten-minute warm-up drill, followed by a 35-minute game. Two teams and two goalies per age group, with limited spots per team.				
+				<div className="staffTable">
+					<Card>
+						<CardPadding>
+							<table>
+								<thead>
+									<tr>
+										<th>Session #1</th>
+										<th>6:00pm - 6:50pm</th>
+										<th>7:00pm - 7:50pm</th>
+										<th>Cost</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<strong>Tuesdays:</strong>
+											<br />
+											April 21, 2026 - June 16, 2026
+											<br />
+										</td>
+										<td><HockeyAges years="2019, 2020"/></td>
+										<td><HockeyAges years="2017, 2018"/></td>
+										<td>$280 +HST (9 sessions)</td>
+									</tr>
+									<tr>
+										<td>
+											<strong>Wednesdays:</strong>
+											<br />
+											April 22, 2026 - June 17, 2026
+											<br />
+										</td>
+										<td><HockeyAges years="2015, 2016"/></td>
+										<td><HockeyAges years="2011, 2012, 2013, 2014"/></td>
+										<td>$280 +HST (9 sessions)</td>
+									</tr>
+								</tbody>
+							</table>
+						</CardPadding>
+					</Card>
 					<Button href="https://register.trmanager.com">Book now</Button>
-				</Program>
+					</div>
+
 				<Terms_HockeyAndSkating />
 			</Container>
 		</>

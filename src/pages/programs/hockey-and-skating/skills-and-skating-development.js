@@ -34,7 +34,7 @@ export default function Default() {
 					creativity, passing, as well as game situation type skills. For boys
 					and girls ages 6-13.
 				</p>
-				<h3>Ages 5-13</h3>
+				<h3>Ages 6-13</h3>
 				<div className="staffTable">
 					{/* <Card>
 <CardPadding>
@@ -99,7 +99,7 @@ export default function Default() {
 					</Card>
 					<Button href="https://register.trmanager.com">Book now</Button> */}
 
-					<Card>
+					{/* <Card>
 						<CardPadding>
 							<table>
 								<thead>
@@ -165,14 +165,14 @@ export default function Default() {
 							</table>
 						</CardPadding>
 					</Card>
-					<Button href="https://register.trmanager.com">Book now</Button>
+					<Button href="https://register.trmanager.com">Book now</Button> */}
 					
 					<Card>
 						<CardPadding>
 							<table>
 								<thead>
 									<tr>
-										<th>Session #3</th>
+										<th>Session #1</th>
 										<th>6:00pm - 6:50pm</th>
 										<th>7:00pm - 7:50pm</th>
 										<th>Cost</th>
@@ -206,6 +206,77 @@ export default function Default() {
 						</CardPadding>
 					</Card>
 					<Button href="https://register.trmanager.com">Book now</Button>
+					
+					<Card>
+						<CardPadding>
+							<table>
+								<thead>
+									<tr>
+										<th>Session #2 (Pre-tryout)</th>
+										<th>6:00pm - 6:50pm</th>
+										<th>7:00pm - 7:50pm</th>
+										<th>Cost</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<strong>Tuesdays:</strong>
+											<br />
+											March 3, 2026 - April 14, 2026<br/>(No session March 17)
+											<br />
+										</td>
+										<td><HockeyAges years="2018, 2019, 2020"/></td>
+										<td><HockeyAges years="2013, 2014, 2015, 2016, 2017"/></td>
+										<td>$260 +HST (6 sessions)</td>
+									</tr>
+									<tr>
+										<td>
+											<strong>Wednesdays (REP):</strong>
+											<br />
+											March 4, 2026 - April 15, 2026<br/>(No session March 18)
+											<br />
+										</td>
+										<td><HockeyAges years="2018, 2019, 2020"/></td>
+										<td><HockeyAges years="2013, 2014, 2015, 2016, 2017"/></td>
+										<td>$260 +HST (6 sessions)</td>
+									</tr>
+								</tbody>
+							</table>
+						</CardPadding>
+					</Card>
+					<Button href="https://register.trmanager.com">Book now</Button>
+					
+					<Card>
+						<CardPadding>
+							<table>
+								<thead>
+									<tr>
+										<th>Session #3</th>
+										<th>6:00pm - 6:50pm</th>
+										<th>7:00pm - 7:50pm</th>
+										<th>Cost</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<strong>Thursdays:</strong>
+											<br />
+											May 14, 2026 - June 18, 2026
+											<br />
+										</td>
+										<td><HockeyAges years="2018, 2019, 2020"/></td>
+										<td><HockeyAges years="2013, 2014, 2015, 2016, 2017"/></td>
+										<td>$260 +HST (6 sessions)</td>
+									</tr>
+								</tbody>
+							</table>
+						</CardPadding>
+					</Card>
+					<Button href="https://register.trmanager.com">Book now</Button>
+
+
 {/* 
 					<Card>
 						<CardPadding>
