@@ -172,7 +172,7 @@ export default function Default() {
 							<table>
 								<thead>
 									<tr>
-										<th>Session #1</th>
+										<th>Winter Session</th>
 										<th>6:00pm - 6:50pm</th>
 										<th>7:00pm - 7:50pm</th>
 										<th>Cost</th>
@@ -212,7 +212,7 @@ export default function Default() {
 							<table>
 								<thead>
 									<tr>
-										<th>Session #2 (Pre-tryout)</th>
+										<th>Pre-tryout Session</th>
 										<th>6:00pm - 6:50pm</th>
 										<th>7:00pm - 7:50pm</th>
 										<th>Cost</th>
@@ -252,7 +252,7 @@ export default function Default() {
 							<table>
 								<thead>
 									<tr>
-										<th>Session #3</th>
+										<th>Spring Session</th>
 										<th>6:00pm - 6:50pm</th>
 										<th>7:00pm - 7:50pm</th>
 										<th>Cost</th>
