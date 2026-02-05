@@ -95,7 +95,7 @@ export default function Default({ data }) {
 					perfect backdrop for this outdoor day bringing the community together.
 				</p>
 				<h2>When is it?</h2>
-				Saturday, April 19, 2025: <Time>1300</Time> - <Time>1700</Time>
+				Saturday, April 4, 2026: <Time>1300</Time> - <Time>1700</Time>
 				<br />
 				<br />
 				<strong>Indoor Ice Skating:</strong> <Time>1300</Time> -{" "}
