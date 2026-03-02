@@ -210,7 +210,7 @@ export default function Header({ location }) {
 												</NavLink>
 											</li>
 											<li>
-												<NavLink to="/programs/hockey-and-skating/womens-hockey-league/">
+												<NavLink to="/programs/hockey-and-skating/womens-hockey-league/" new>
 													Women's hockey league
 												</NavLink>
 											</li>
