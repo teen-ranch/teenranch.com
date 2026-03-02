@@ -145,6 +145,11 @@ export default function Footer() {
 									Men's hockey league
 								</Link>
 							</li>
+							<li>
+								<Link to="/programs/hockey-and-skating/womens-hockey-league/">
+									Women's hockey league
+								</Link>
+							</li>
 							<div className="subNavDivider">Recreation</div>
 							<li>
 								<Link to="/programs/hockey-and-skating/ice-rental/">
