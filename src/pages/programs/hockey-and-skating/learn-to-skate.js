@@ -96,7 +96,7 @@ export default function Default() {
 								<th>Fall: Sep. 8, 2025 - Nov. 14, 2025</th>
 								<th>Holiday: Nov. 17, 2025 - Jan. 23, 2026</th>
 								<th>Winter: Jan. 26, 2026 - Mar. 27, 2026</th>
-								{/* <th>Spring: Apr. 25, 2025 - May. 16, 2025</th> */}
+								<th>Spring: Apr. 10, 2026 - May. 15, 2026</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -127,6 +127,7 @@ export default function Default() {
                   <br />
                   No session Feb. 16
                 </td>
+								<td></td>
 							</tr>
 							<tr>
 								<td>
@@ -149,6 +150,9 @@ export default function Default() {
 								</td> */}
 								<td>
 									<strong>$280 +HST</strong> (9 sessions)
+								</td>
+								<td>
+									<strong>$190 +HST</strong> (6 sessions)
 								</td>
 							</tr>
 						</tbody>
