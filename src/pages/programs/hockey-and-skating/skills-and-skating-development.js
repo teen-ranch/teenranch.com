@@ -167,7 +167,7 @@ export default function Default() {
 					</Card>
 					<Button href="https://register.trmanager.com">Book now</Button> */}
 					
-					<Card>
+					{/* <Card>
 						<CardPadding>
 							<table>
 								<thead>
@@ -204,9 +204,48 @@ export default function Default() {
 								</tbody>
 							</table>
 						</CardPadding>
-					</Card>
+					</Card> */}
 					{/* <Button href="https://register.trmanager.com">Book now</Button> */}
 					
+					<Card>
+						<CardPadding>
+							<table>
+								<thead>
+									<tr>
+										<th>Pre-season Session</th>
+										<th>6:00pm - 6:50pm</th>
+										<th>7:00pm - 7:50pm</th>
+										<th>Cost</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<strong>Tuesdays:</strong>
+											<br />
+											July 21, 2026 - August 25, 2026
+											<br />
+										</td>
+										<td><HockeyAges years="2018, 2019, 2020, 2021"/></td>
+										<td><HockeyAges years="2013, 2014, 2015, 2016, 2017"/></td>
+										<td>$260 +HST (6 sessions)</td>
+									</tr>
+									<tr>
+										<td>
+											<strong>Wednesdays (REP):</strong>
+											<br />
+											July 22, 2026 - August 26, 2026<br/>(No session early August, date TBA)
+											<br />
+										</td>
+										<td><HockeyAges years="2018, 2019, 2020"/></td>
+										<td><HockeyAges years="2013, 2014, 2015, 2016, 2017"/></td>
+										<td>$220 +HST (5 sessions)</td>
+									</tr>
+								</tbody>
+							</table>
+						</CardPadding>
+					</Card>
+					<Button href="https://register.trmanager.com">Book now</Button>
 					<Card>
 						<CardPadding>
 							<table>
@@ -246,6 +285,7 @@ export default function Default() {
 						</CardPadding>
 					</Card>
 					<Button href="https://register.trmanager.com">Book now</Button>
+
 					
 					<Card>
 						<CardPadding>
