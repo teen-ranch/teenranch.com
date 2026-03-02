@@ -124,7 +124,7 @@ invoiced separately by the Coaching Team.</strong>
 								<th>Fall: Sep. 8, 2025 - Nov. 14, 2025</th>
 								<th>Holiday: Nov. 16, 2025 - Jan. 23, 2026</th>
 								<th>Winter: Jan. 25, 2026 - Apr. 2, 2026</th>
-								{/* <th>Spring: Apr. 13, 2025 - June. 20, 2025</th> */}
+								<th>Spring: Apr. 9, 2026 - June. 12, 2026</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -150,11 +150,11 @@ invoiced separately by the Coaching Team.</strong>
 								<td>
 									<strong>$310 +HST</strong> (10 sessions)
 								</td>
-								{/* <td>
+								<td>
 									<strong>$248 +HST</strong> (8 sessions)
 									<br />
-									No session Apr. 20, May 18
-								</td> */}
+									No session May 17 
+								</td>
 							</tr>
 							<tr>
 								<td>
@@ -177,11 +177,11 @@ invoiced separately by the Coaching Team.</strong>
 									<br />
 									No session Feb. 16
 								</td>
-								{/* <td>
+								<td>
 									<strong>$248 +HST</strong> (8 sessions)
 									<br />
-									No session Apr. 21, May 19
-								</td> */}
+									No session May 18 
+								</td>
 							</tr>
 							<tr>
 								<td>
@@ -202,9 +202,9 @@ invoiced separately by the Coaching Team.</strong>
 								<td>
 									<strong>$310 +HST</strong> (10 sessions)
 								</td>
-								{/* <td>
+								<td>
 									<strong>$310 +HST</strong> (10 sessions)
-								</td> */}
+								</td>
 							</tr>
 							<tr>
 								<td>
@@ -224,11 +224,9 @@ invoiced separately by the Coaching Team.</strong>
 								<td>
 									<strong>$280 +HST</strong> (9 sessions)
 								</td>
-								{/* <td>
-									<strong>$279 +HST</strong> (9 sessions)
-									<br />
-									No session Apr. 18
-								</td> */}
+								<td>
+									<strong>$310 +HST</strong> (10 sessions)
+								</td>
 							</tr>
 						</tbody>
 					</table>
@@ -300,16 +298,9 @@ invoiced separately by the Coaching Team.</strong>
 
 				<h3>
 					FutureSTARS Enrichment Program{" "}
-					<span
-						style={{ fontWeight: "normal", fontSize: "11pt", display: "block" }}
-					>
-						(FutureSTARS members MUST skate at least 3 days per week and should
-						participate in off-ice classes, performances, competitions & tests
-						under direction of the Head Coach.)
-					</span>
 				</h3>
 				<h4>Fall/Holiday/Winter - Cost: $1,600 +HST</h4>
-				{/* <h4>Spring - Cost: $600 +HST (35 sessions)</h4> */}
+				<h4>Spring - Cost: $600 +HST (36 sessions)</h4>
 				<p>
 					DPSC partnered with Teen Ranch supports the pursuit of excellence in sport & the life skills necessary to
 become an accomplished figure skater!
