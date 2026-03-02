@@ -72,7 +72,7 @@ export default function Default({ data }) {
 										<Time>1700</Time> - <Time>1750</Time>
 									</td>
 								</tr> */}
-								<tr>
+								{/* <tr>
 									<td>Winter Goalie Clinic</td>
 									<td>
 										<strong>Wednesdays:</strong> February 11, 2026 - March 25, 2026
@@ -82,40 +82,39 @@ export default function Default({ data }) {
 									<td>
 										<Time>1700</Time> - <Time>1750</Time>
 									</td>
-								</tr>
-								{/* <tr>
+								</tr> */}
+								<tr>
 									<td>(A) Summer session</td>
 									<td>
-										<strong>Thursdays:</strong> July 10, 2025 - August 28, 2025
+										<strong>Thursdays:</strong> July 9, 2026 - August 27, 2026
 										<br />
 										(8 sessions)
 									</td>
 									<td>
 										<Time>1230</Time> - <Time>1400</Time>
-										<br />(<strong>Aug. 28:</strong> <Time>1200</Time> -{" "}
-										<Time>1330</Time>)
 									</td>
 								</tr>
 								<tr>
 									<td>(B) Summer session</td>
 									<td>
-										<strong>Tuesdays:</strong> July 15, 2025 - August 19, 2025
+										<strong>Tuesdays:</strong> July 21, 2026 - August 25, 2026
+										<br />
 										(6 sessions)
 									</td>
 									<td>
 										<Time>1700</Time> - <Time>1800</Time>
 									</td>
-								</tr> */}
+								</tr>
 							</tbody>
 						</table>
 					</div>
 					<h3>Cost</h3>
 					<p>
 						{/* <strong>Fall Goalie Clinic:</strong> $300 +HST/goalie (6 sessions) */}
-						<strong>Winter Goalie Clinic:</strong> $300 +HST/goalie (6 sessions)
-						{/* <strong>(A) Summer session:</strong> $450 +HST/goalie (8 sessions)
+						{/* <strong>Winter Goalie Clinic:</strong> $300 +HST/goalie (6 sessions) */}
+						<strong>(A) Summer session:</strong> $450 +HST/goalie (8 sessions)
 						<br />
-						<strong>(B) Summer session:</strong> $315 +HST/goalie (6 sessions) */}
+						<strong>(B) Summer session:</strong> $315 +HST/goalie (6 sessions)
 					</p>
 					<p>
 						<em>Partnering with MAD Athletic Development</em>
