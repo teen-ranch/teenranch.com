@@ -44,18 +44,19 @@ export default function Default({ data }) {
 			setBannerIndex(0);
 		}
 	}, [5000]) */
+	console.log('banner----l',banner)
 
 	return (
 		<>
 			<Heading
-				src={banners.edges[bannerIndex].node.childImageSharp.fluid}
+				src={banner.childImageSharp.fluid}
 				alt="Rider and horse jumping at Teen Ranch"
-				title="Celebrating 40 Years"
+				title="Hunter / Jumper Shows"
 				subtitle="Professional hunter/jumper courses and divisions for first-time competitors to those schooling before Gold Shows."
 				keywords="horse shows, schooling horse shows, horse show orangeville ontario, horse show caledon ontario, gta horse show"
 				metaTitle="Hunter / Jumper shows"
 				metaDescription="Professional hunter/jumper courses and divisions for first-time competitors to those schooling before Gold Shows."
-				hunterJumper
+				// hunterJumper
 			/>
 
 			<SubNav>
@@ -131,7 +132,7 @@ export default function Default({ data }) {
 				</div>
 			</div>
 			<Container type="body">
-				<h1><center>2026 Details To Be Announced</center></h1>
+				<h1><center>2026 Hunter / Jumper Shows</center></h1>
 				{/* <p>
 					2025 Marks our 40th Anniversary – 40 years of hosting this amazing H/J
 					Series. Come and see why competitors, families and coaches alike have
@@ -148,13 +149,13 @@ export default function Default({ data }) {
 					</a>{" "}
 					for details!
 				</p> */}
-				<center>
+				{/* <center>
 					<img
 						src="https://ontariofallfinals.weebly.com/uploads/1/4/9/0/149072116/img-0073_orig.jpeg"
 						width="220"
 						alt="Ontario Fall Finals Logo"
 					/>
-				</center>
+				</center> */}
 				<Program
 					src={main.childImageSharp.fluid}
 					name="2026 Hunter/Jumper Shows"
@@ -324,14 +325,15 @@ export default function Default({ data }) {
 						<ul>
 							<li>Leadline Division</li>
 							<li>Starter Division</li>
-							<li>Beginner Division</li>
-							<li>Beginner WTC Division</li>
+							<li>Jr. Beginner Division</li>
+							<li>Sr. Beginner Division</li>
+							<li>TYRO Division</li>
 							<li>Rookie Division</li>
 						</ul>
 					</Card>
 					<Card style={{ padding: "2rem 2rem" }}>
 						<h3>
-							Ring #1 (<Time>0900</Time> start)
+							Ring #1 (<Time>0830</Time> start)
 						</h3>
 						<small>
 							<i>
@@ -340,16 +342,18 @@ export default function Default({ data }) {
 							</i>
 						</small>
 						<ul>
-							<li>2' / 2'3" Green Hunters</li>
-							<li>Novice Equitation Development - $ Added</li>
-							<li>1'9" Novice Hunters</li>
 							<li>1'6" Short Stirrup</li>
+							<li>1'9" Novice Hunters</li>
+							<li>1'9" / 2' Novice Equitation</li>
+							<li>2' / 2'3" Open Equitation <br/><sm>(not to start before 11:30)</sm></li>
+							<li>2' Low Hunters</li>
+							<li>2'3" / 2'6" High Hunters</li>
 						</ul>
 					</Card>
 
 					<Card style={{ padding: "2rem 2rem" }}>
 						<h3>
-							Ring #3 (<Time>0830</Time> start)
+							Ring #3 (<Time>0800</Time> start)
 						</h3>
 						<small>
 							<i>
@@ -358,17 +362,17 @@ export default function Default({ data }) {
 							</i>
 						</small>
 						<ul>
-							<li>Hack Division</li>
-							<li>2' Hunters</li>
-							<li>Amateur Equitation - $ Added</li>
-							<li>2'3" / 2'6" / 2'9" Hi/Low Hunters</li>
-							<li>0.6m / 0.75m / 0.9m Jumper Division</li>
+							<li>Novice Hack Division</li>
+							<li>Open Hack Division</li>
+							<li>Crossrail Jumpers</li>
+							<li>0.6m Jumper</li>
+							<li>0.7m / 0.9m Jumper</li>
 						</ul>
 					</Card>
 				</div>
 				<Button
 					target="_blank"
-					href="https://assets.teenranch.com/hunterJumperClassDescriptions_2025.pdf"
+					href="https://assets.teenranch.com/hunterJumperClassDescriptions_2026.pdf"
 				>
 					View class descriptions
 				</Button>
@@ -640,11 +644,10 @@ export default function Default({ data }) {
                 details.
               </li> */}
 							<li>
-								Please read class descriptions to see rules on cross-entering.
+							Please read class descriptions to see rules on cross-entering.  We ask that coaches be proactive in organizing order of go when riders/horses have conflicts between rings.  Ring will wait for a max. of 10 minutes.  After 10 minutes, competitor will be scratched with no reimbursement.
 							</li>
 							<li>
-								<strong>Entries</strong> MUST be submitted on the Monday before
-								each show.
+								Entries <strong>MUST</strong> be submitted on the Wednesday 11:59pm before each show.  Late entries must be emailed to <a href="mailto:events@teenranch.com">events@teenranch.com</a> and will be charged a $20 Late Entry Fee.
 							</li>
 							<li>
 								<strong>Hunter Classes</strong> - Flash nose bands and running
@@ -654,21 +657,22 @@ export default function Default({ data }) {
 							</li>
 							<li>
 								<strong>Champion/Reserve Champions</strong> at each show are
-								calculated as follows: 7,5,4,3,2,1. Champion Tie-Breakers – In
+								calculated as follows: 9,7,6,5,4,3,2,1. Champion Tie-Breakers – In
 								the Leadline, Short Stirrup, Starter, Beginner & Rookie
 								Division, most points in Equitation wins. In other divisions,
 								most points over fences wins. After that or in hack divisions,
 								judge may flip a coin or do conformation line up for the winner.
 							</li>
 							<li>
-								<strong>Year-End Awards</strong> – Must show in at least 3 shows
-								in the division to qualify. Points are awarded to horses in
-								hunter/jumper divisions, the rider in equitation/lead line
-								divisions and horse/rider combinations for the beginner, rookie,
-								and short stirrup divisions. Points are calculated as follows:
-								7xentries, 5xentries, 4xentries, 3xentries, 2xentries,
-								1xentries. Ontario Fall Finals in Ancaster, ON. We will be
-								sending 7 Riders into each of their divisions.
+								<strong>Year-End Awards</strong> 
+								<ol style={{listStyle:'lower-alpha'}}>
+									<li>
+									Must show in at least 3 shows in the division to qualify. Points are awarded to horses in hunter/jumper divisions, the rider in equitation/lead line divisions and horse/rider combinations for the beginner, rookie, and short stirrup divisions. Points are calculated as follows: 9xentries, 7xentries, 6xentries, 5xentries, 4xentries, 3xentries, 2xentries, 1xentries.	
+									</li>
+									<li>
+									Ontario Fall Finals - in Ancaster, ON. Top 7 from each division qualify.
+									</li>
+								</ol>
 							</li>
 							<li>
 								<strong>Fall of horse or rider</strong> = elimination. Rider
@@ -792,7 +796,7 @@ export default function Default({ data }) {
 				<Button
 					target="_blank"
 					//   href="https://forms.zohopublic.com/teenranch1/form/HorseShowSponsorshipPackage/formperma/F0i3DDm5ylIGPkS4c7JDnMr8oB1UxmOqi-DVzhjNkuM"
-					href="https://assets.teenranch.com/hunterJumperSponsorshipPackage_2025.pdf"
+					href="https://assets.teenranch.com/hunterJumperSponsorshipPackage_2026.pdf"
 				>
 					I want to sponsor
 				</Button>
