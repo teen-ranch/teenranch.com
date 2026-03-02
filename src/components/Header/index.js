@@ -209,6 +209,11 @@ export default function Header({ location }) {
 													Men's hockey league
 												</NavLink>
 											</li>
+											<li>
+												<NavLink to="/programs/hockey-and-skating/womens-hockey-league/">
+													Women's hockey league
+												</NavLink>
+											</li>
 										</ul>
 										<div className="subNavDivider">Recreation</div>
 										<ul className="subSubNav">
