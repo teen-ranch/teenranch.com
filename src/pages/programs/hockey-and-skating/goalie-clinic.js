@@ -137,7 +137,7 @@ export const query = graphql`
       }
     }
 
-    file2: file(relativePath: { eq: "programs/hockey/IMG_5015.JPG" }) {
+    file2: file(relativePath: { eq: "programs/hockey/goalie.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1920, quality: 64) {
           ...GatsbyImageSharpFluid_withWebp

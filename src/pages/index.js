@@ -462,7 +462,7 @@ export const query = graphql`
     }
 
     pondHockey: file(
-      relativePath: { eq: "programs/hockey/tr hockey group.jpg" }
+      relativePath: { eq: "programs/hockey/trriknk.jpg" }
     ) {
       childImageSharp {
         fluid(maxWidth: 1920, quality: 64) {
