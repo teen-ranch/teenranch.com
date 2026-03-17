@@ -32,7 +32,7 @@ const frontmatter = {
 };
 
 const pageData = {
-	subTitle: `Canada's most trusted sports camp`,
+	subTitle: `Aiming Higher for over 50 years`,
 	keywords: "summer camp, summer sports camp, summer camp ontario canada",
 };
 
