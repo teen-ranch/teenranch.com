@@ -25,7 +25,7 @@ import Img from "gatsby-image";
 import { Time } from "components/Time";
 
 const frontmatter = {
-	title: "Teen Ranch - Easter Roundup",
+	title: "Teen Ranch - Easter FREE Skate",
 	path: "/events/family-day/",
 };
 
@@ -70,6 +70,17 @@ export default function Default({ data }) {
 				<div style={{ display: "flex", justifyContent: "center" }}>
 					<div
 						style={{
+							border: "1px solid blue",
+							borderRadius: "12px",
+							background: "lightblue",
+							padding: "2rem",
+							fontStyle: "italic",
+						}}
+					>
+						Easter event updated!
+					</div>
+					{/* <div
+						style={{
 							border: "1px solid #ddd",
 							borderRadius: "12px",
 							background: "#efefef",
@@ -79,10 +90,12 @@ export default function Default({ data }) {
 					>
 						Camp impacts lives. Proceeds from this event help sponsor kids in
 						need.
-					</div>
+					</div> */}
 				</div>
 				<h1>{frontmatter.title}</h1>
-				<p>
+				<p>Join us this Easter at Teen Ranch for a special <strong>FREE Family Skate</strong>! Bring the whole family out for a fun-filled time on the ice as we celebrate the season together. Whether you're an experienced skater or just starting out, this is a great opportunity to enjoy laughter, community, and active family fun—completely free of charge. Come make lasting memories with us this Easter at Teen Ranch!
+				</p>
+				{/* <p>
 					Teen Ranch's much-loved Easter Roundup is back! Mark your calendars
 					for this spring event celebrating the true meaning of Easter and
 					providing springtime fun for the whole family. Roundup your family and
@@ -93,21 +106,22 @@ export default function Default({ data }) {
 				<p>
 					Our beautiful location in the rolling Caledon hills provides the
 					perfect backdrop for this outdoor day bringing the community together.
-				</p>
+				</p> */}
 				<h2>When is it?</h2>
-				Saturday, April 4, 2026: <Time>1300</Time> - <Time>1700</Time>
+				Saturday, April 4, 2026: <Time>1300</Time> - <Time>1430</Time>
 				<br />
 				<br />
-				<strong>Indoor Ice Skating:</strong> <Time>1300</Time> -{" "}
+				{/* <strong>Indoor Ice Skating:</strong> <Time>1300</Time> -{" "}
 				<Time>1500</Time>
 				<br />
 				<strong>Giant Egg Hunt Times:</strong> <Time>1315</Time>,{" "}
 				<Time>1400</Time>, <Time>1500</Time> & <Time>1600</Time>
 				<h2>Who is it for?</h2>
-				The whole family is invited! Activities for all ages.
+				The whole family is invited! Activities for all ages. */}
 				<h2>Cost</h2>
-				<strong>$50 (cash) per vehicle</strong>
-				<p>
+				{/* <strong>$50 (cash) per vehicle</strong> */}
+				<strong>FREE</strong>
+				{/* <p>
 					<strong>Entry includes:</strong> Egg Hunts, Petting Farm, Climbing
 					Wall, Hay Rides, Face Painting, Games, Crafts, Balloons, Ice Skating,
 					Treats.
@@ -125,7 +139,7 @@ export default function Default({ data }) {
 				<p>
 					This is a rain or shine event. Check back here or on Teen Ranch social
 					media for any inclement weather notices or closures.
-				</p>
+				</p> */}
 				{/* <div style={{ color: "red", fontSize: "2em" }}>
           Family day is full, we are no longer accepting registrations. Thank
           you!

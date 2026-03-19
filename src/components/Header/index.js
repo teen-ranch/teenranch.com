@@ -319,11 +319,11 @@ export default function Header({ location }) {
 														Family day roundup
 													</NavLink>
 												</li>
-												{/* <li>
+												<li>
 													<NavLink to="/events/easter-roundup/">
 														Easter roundup
 													</NavLink>
-												</li> */}
+												</li>
 											</ul>
 										</li>
 										{/* <li><NavLink to='/programs/leadership/'>Leadership & Development</NavLink>
