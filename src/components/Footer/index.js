@@ -238,9 +238,9 @@ export default function Footer() {
 							<li>
 								<Link to="/events/family-day-roundup/">Family day roundup</Link>
 							</li>
-							{/* <li>
+							<li>
 								<Link to="/events/easter-roundup/">Easter roundup</Link>
-							</li> */}
+							</li>
 							{/* <li><Link to='/events/teen-ranch-fall-gallop-a-cross-country-run/'>Teen Ranch Fall Gallop - A Cross Country Run</Link></li> */}
 							{/* <li><Link to='/events/christmas-photo-sessions/'>Christmas Photo Sessions</Link></li> */}
 							{/* <li><Link to='/events/the-christmas-winter-festival/'>Christmas Winter Festival</Link></li> */}
