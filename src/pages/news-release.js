@@ -47,7 +47,7 @@ export default function Programs({ data }) {
                 </div>
 
                 <p>
-                    Teen Ranch is aware of the recent charges laid by the Ontario Provincial Police regarding charges of alleged sexual assault in connection with an individual who was formerly associated with our organization. We are deeply concerned by the nature of the allegations and extend our deep care and concern for those who have been impacted. We recognize and applaud the courage it takes to bring this to light.
+                    Teen Ranch is aware of the recent charges laid by the Ontario Provincial Police regarding charges of sexual assault in connection with an individual who was formerly associated with our organization. We are deeply concerned by the nature of the allegations and extend our deep care and concern for those who have been impacted. We recognize and applaud the courage it takes to bring this to light.
                 </p>
                 
                 <p>
