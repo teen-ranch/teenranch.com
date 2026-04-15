@@ -60,9 +60,19 @@ header {
       border: 1px solid $primary-red;
       border-radius: $border-radius;
       color: $primary-red;
+      text-align: center;
     }
     .giveLink a:hover {
       background-color: lighten($primary-red, 48);
+    }
+    .newsLink a {
+      border: 1px solid $primary-light;
+      border-radius: $border-radius;
+      color: $primary-light;
+      text-align: center;
+    }
+    .newsLink a:hover {
+      background-color: lighten($primary-light, 48);
     }
 
     .subNavDivider {
@@ -102,7 +112,11 @@ header {
     }
 
     a.ctaLink {
-      margin-left: 2.5rem;
+      margin-left: 1.5rem;
+    }
+
+    .giveLink {
+      margin-left: 1.5rem;
     }
 
     li.hover {
@@ -210,6 +224,12 @@ header {
   .giveLink a {
     text-align: center;
     margin: 0 0 1rem 0;
+    display:block;
+  }
+  .newsLink a {
+    text-align: center;
+    margin: 0 0 1rem 0;
+    display:block;
   }
   .ctaLink {
     text-align: center;
