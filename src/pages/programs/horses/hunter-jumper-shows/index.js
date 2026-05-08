@@ -19,18 +19,18 @@ import { useInterval } from "hooks/useInterval";
 export default function Default({ data }) {
 	const {
 		banner,
-		banners,
+		// banners,
 		main,
-		image1,
-		image2,
+		// image1,
+		// image2,
 		eliteSponsors,
-		ringSponsors,
+		// ringSponsors,
 		goldSponsors,
 		silverSponsors,
 		bronzeSponsors,
-		banquetSponsors,
-		inkindSponsors,
-		equitationSponsors,
+		prizeSponsors,
+		// inkindSponsors,
+		// equitationSponsors,
 		photographers,
 	} = data;
 
@@ -166,7 +166,7 @@ export default function Default({ data }) {
 								<tr>
 									<th>Show date</th>
 									<th>Entries due</th>
-									{/* <th>Entries</th> */}
+									<th>Entries</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -174,60 +174,60 @@ export default function Default({ data }) {
 									<td>May 31, 2026</td>
 									<td>May 27, 2026</td>
 									<td>
-										{/* <Button
+										<Button
 											target="_blank"
-											href="https://forms.zohopublic.com/teenranch1/form/HorseShowMay42025/formperma/3aOV7JyB3qQjWPygySsTkWbYkn0TyCfnhaQ6_EVZDmk"
+											href="https://forms.zohopublic.com/teenranch1/form/HorseShowMay312026/formperma/cBobrZzxtJcgDcE9x4I62U1AdCoPnTKlGM-AXFIICeQ"
 										>
-											May 4th entry form
-										</Button> */}
+											Entry form - May 31
+										</Button>
 									</td>
 								</tr>
 								<tr>
 									<td>June 28, 2026</td>
 									<td>June 24, 2026</td>
 									<td>
-										{/* <Button
+										<Button
 											target="_blank"
-											href="https://forms.zohopublic.com/teenranch1/form/HorseShowJune82025/formperma/R-Lx69Q0GMPAotfFOLk0rut0tmmiGDkZF9ts6z0V3ts"
+											href="https://forms.zohopublic.com/teenranch1/form/HorseShowJune282026/formperma/35vQ61Jw2SDpYIfNMpeG2Q14ExgupIIl78yX65Lls-g"
 										>
-											June 8th entry form
-										</Button> */}
+											Entry form - June 28
+										</Button>
 									</td>
 								</tr>
 								<tr>
 									<td>July 26, 2026</td>
 									<td>July 22, 2026</td>
 									<td>
-										{/* <Button
+										<Button
 											target="_blank"
-											href="https://forms.zohopublic.com/teenranch1/form/HorseShowJuly132025/formperma/p8QVkR4zBTOkXunXa0SF71rQddiUegEolFZPbXJmG6E"
+											href="https://forms.zohopublic.com/teenranch1/form/HorseShowJuly262026/formperma/knwXNWHjWUrGGKO2rAKJcFooITrGw6B0zMT6HpKHhdw"
 										>
-											July 13th entry form
-										</Button> */}
+											Entry form - July 26
+										</Button>
 									</td>
 								</tr>
 								<tr>
 									<td>August 23, 2026</td>
 									<td>August 19, 2026</td>
 									<td>
-										{/* <Button
+										<Button
 											target="_blank"
-											href="https://forms.zohopublic.com/teenranch1/form/HorseShowAugust102025/formperma/dWOnHoGcD7zalDBOLn-KDw5v5vmy49l7sgOQeooK9Nk"
+											href="https://forms.zohopublic.com/teenranch1/form/HorseShowAugust232026/formperma/zFwivL_aQlVPGTItCBnCYjIpSztsHd45zz4bO_3Iw0o"
 										>
-											August 10th entry form
-										</Button> */}
+											Entry form - August 23
+										</Button>
 									</td>
 								</tr>
 								<tr>
 									<td>September 13, 2026</td>
 									<td>September 9, 2026</td>
 									<td>
-										{/* <Button
+										<Button
 											target="_blank"
-											href="https://forms.zohopublic.com/teenranch1/form/HorseShowSeptember142025/formperma/j9Ias4yMCus6w6sVWbZlsOIwQwDcoIVpyM1jRntmF2Q"
+											href="https://forms.zohopublic.com/teenranch1/form/HorseShowSeptember132026/formperma/khzIcy8NJN4zV3Jg6iqNHffE6A-aDzmzrmXic2VEcHg"
 										>
-											September 14th entry form
-										</Button> */}
+											Entry form - September 13
+										</Button>
 									</td>
 								</tr>
 							</tbody>
@@ -253,13 +253,13 @@ export default function Default({ data }) {
 				<Card style={{ padding: "2rem" }}>
 					<div className="showButtons">
 						<Button target="_blank" href="https://show.teenranch.com">
-							View 2025 season standings
+							View 2026 season standings
 						</Button>
 						<Button
 							target="_blank"
-							href="https://assets.teenranch.com/hunterJumperShowProgram_2025.pdf"
+							href="https://assets.teenranch.com/hunterJumperShowProgram_2026_compressed.pdf"
 						>
-							View 2025 show program
+							View 2026 show program
 						</Button>
 						<Button target="_blank" href="mailto:events@teenranch.com">
 							Send us an email
@@ -448,65 +448,73 @@ export default function Default({ data }) {
 					id="year-end"
 					style={{ position: "absolute", marginTop: "-180px" }}
 				/>
-				<h2>Year-end awards 2025</h2>
+				<h2>Year-end awards 2026</h2>
 				{/* <div style={{ color: "red" }}>
 					Note: 2025 details will be updated once sponsors are confirmed.
 				</div> */}
 
 				<Card style={{ padding: "2rem" }}>
 					<ul>
-						<li>Ribbons and Prizes to top 6 in each division.</li>
+						<li><strong>Beautiful Ribbons and Prizes</strong> to top 7 in each division.</li>
 						<li>
-							High Point Male Rider Award to the male rider earning most points
+							<strong>High Point Male Rider Award</strong> to the male rider earning most points
 							in one division. Winner receives an annual and keeper trophy.
 							Sponsored by Denworth Equine Mngt.
 						</li>
 						<li>
-							High point Welsh/Half Welsh Award to the pony earning the most
+							<strong>High point Welsh/Half Welsh Award</strong> to the pony earning the most
 							points throughout the season. Photo of papers to be sent to
 							events@teenranch.com to qualify. Winner receives a GIANT ribbon
 							sponsored by Beaverwood Farm.
 						</li>
 						<li>
-							High point TB Awards – All winners receive a ribbon & prize
+							<strong>High point TB Awards</strong> – Winners in the following categories receive a ribbon & prize
 							sponsored by the Jockey Club.
 							<ul>
-								<li>High Point Hack TB</li>
-								<li>Jumper TB * Green TB </li>
-								<li>Jr. Rider * Sr. Rider </li>
-								<li>Equitation Rider on a TB</li>
-								<li>Low Hunter TB (under 2’6)</li>
-								<li>High Hunter TB (2’6 & over)</li>
+								<li>Hack</li>
+								<li>Jumper</li>
+								<li>Green</li>
+								<li>Jr. Rider</li>
+								<li>Sr. Rider</li>
+								<li>Equitation Rider</li>
+								<li>Babysitter TB (Ring #4/SS)</li>
+								<li>Hunter TB (Ring #1)</li>
 							</ul>
 						</li>
 
 						<li>
-							Barn Challenge Annual Trophy and Ribbons to the stable earning the
-							most points this season.{" "}
+							<strong>Barn Challenge Annual Trophy</strong>, ribbons and prize to the stable earning the
+							most points this season. Sponsored by Jump Solutions. Send your team list to events@teenranch.com
 						</li>
 						<li>
-							Sportsmanship Award to be voted on by competitors, coaches and
+							<strong>Sportsmanship Award</strong> to be voted on by competitors, coaches and
 							show staff. All nominees get a ribbon, winner receives an annual
 							trophy & keeper trophy sponsored by Brian and Cathy Aker, and a
-							prize donated by Greenhawk.
+							prize donated by Greenhawk. Send nominations to events@teenranch.com
 						</li>
 						<li>
-							Tenacity Award–in memory of Layne Stevens. All nominees get a
+							<strong>Tenacity Award</strong> - in memory of Layne Stevens. All nominees get a
 							ribbon, winner receives an annual trophy and keeper trophy
-							sponsored by Laynlee Collection. Send nods to
-							leelee0701@hotmail.com{" "}
+							sponsored by Laynlee Collection, as well as a photo package sponsored by Sutherland Images. Send nominations to
+							leelee0701@hotmail.com
 						</li>
 						<li>
-							Horse of the Year – Horse earning the most points of the season in
+							<strong>Horse of the Year</strong> – Horse earning the most points of the season in
 							one division receives an annual trophy, a gift certificate from
 							Varik Animal Chiropractic and a $200 Gift Certificate to Running
 							Fox.
 						</li>
 						<li>
-							Professional Turnout Award: winner receives a $200 Gift Card to
+							<strong>Professional Turnout Award</strong> - winner receives a $200 Gift Card to
 							Running Fox and a beautiful cooler from Purina.{" "}
 						</li>
 						<li>
+							<strong>Jumper Champion Trophy</strong> - Year End Jumper Champion receives the annual and keeper Johnny Barkey Memorial Trophy.
+						</li>
+						<li>
+							<strong>High Point Equitation Rider of the Year</strong> - receives a prize package sponsored by Sprucewood Tack Shop.
+						</li>
+						{/* <li>
 							High Point Equitation Rider of the Year – receives a $500 prize
 							donated by Antares.
 						</li>
@@ -517,7 +525,7 @@ export default function Default({ data }) {
 						<li>
 							Year End Green Hunter Champion will receive the annual Christine
 							Legare Memorial Trophy.
-						</li>
+						</li> */}
 
 						{/* <li>Plan for Year End Celebration TBD.</li>
 						<li>Ribbons and Prizes to top 6 in each division.</li>
@@ -883,7 +891,7 @@ export default function Default({ data }) {
 					})}
 				</Grid>
 
-				<h3>Equitation sponsors</h3>
+				{/* <h3>Equitation sponsors</h3>
 				<Grid lg={5} xl={7} gap={false}>
 					{equitationSponsors?.edges?.map((edge, i) => {
 						return (
@@ -895,10 +903,10 @@ export default function Default({ data }) {
 							</Sponsor>
 						);
 					})}
-				</Grid>
-				<h3>In-kind sponsors</h3>
+				</Grid> */}
+				<h3>Prize sponsors</h3>
 				<Grid lg={5} xl={7} gap={false}>
-					{inkindSponsors?.edges?.map((edge, i) => {
+					{prizeSponsors?.edges?.map((edge, i) => {
 						return (
 							<Sponsor key={i}>
 								<Img
@@ -1019,7 +1027,7 @@ export const query = graphql`
     }
 
     eliteSponsors: allFile(
-      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2025/elite" } }
+      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2026/elite" } }
     ) {
       edges {
         node {
@@ -1038,7 +1046,7 @@ export const query = graphql`
 
     banquetSponsors: allFile(
       filter: {
-        relativeDirectory: { eq: "hunter-jumper/sponsors2025/banquet" }
+        relativeDirectory: { eq: "hunter-jumper/sponsors2026/banquet" }
       }
     ) {
       edges {
@@ -1054,7 +1062,7 @@ export const query = graphql`
     }
 
     ringSponsors: allFile(
-      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2025/ring" } }
+      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2026/ring" } }
     ) {
       edges {
         node {
@@ -1069,7 +1077,7 @@ export const query = graphql`
     }
 
     goldSponsors: allFile(
-      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2025/gold" } }
+      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2026/gold" } }
     ) {
       edges {
         node {
@@ -1083,7 +1091,7 @@ export const query = graphql`
       }
     }
     silverSponsors: allFile(
-      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2025/silver" } }
+      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2026/silver" } }
     ) {
       edges {
         node {
@@ -1097,21 +1105,7 @@ export const query = graphql`
       }
     }
     bronzeSponsors: allFile(
-      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2025/bronze" } }
-    ) {
-      edges {
-        node {
-          name
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    }
-    inkindSponsors: allFile(
-      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2025/inkind" } }
+      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2026/bronze" } }
     ) {
       edges {
         node {
@@ -1126,7 +1120,7 @@ export const query = graphql`
     }
 
     photographers: allFile(
-      filter: { relativeDirectory: { eq: "hunter-jumper/photographers2025" } }
+      filter: { relativeDirectory: { eq: "hunter-jumper/photographers2026" } }
     ) {
       edges {
         node {
@@ -1140,8 +1134,8 @@ export const query = graphql`
       }
     }
 
-    equitationSponsors: allFile(
-      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2025/equitation" } }
+    prizeSponsors: allFile(
+      filter: { relativeDirectory: { eq: "hunter-jumper/sponsors2026/prize" } }
     ) {
       edges {
         node {
