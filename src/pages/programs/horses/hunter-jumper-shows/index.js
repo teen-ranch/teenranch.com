@@ -69,9 +69,9 @@ export default function Default({ data }) {
 				<Link to="year-end" activeClass="active" spy={true}>
 					Year-end awards
 				</Link>
-				<Link to="rules" activeClass="active" spy={true}>
+				{/* <Link to="rules" activeClass="active" spy={true}>
 					Rules & policies
-				</Link>
+				</Link> */}
 				<Link to="sponsors" activeClass="active" spy={true}>
 					Sponsors
 				</Link>
