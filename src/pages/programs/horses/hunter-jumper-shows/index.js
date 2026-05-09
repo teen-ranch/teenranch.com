@@ -257,7 +257,7 @@ export default function Default({ data }) {
 						</Button>
 						<Button
 							target="_blank"
-							href="https://assets.teenranch.com/hunterJumperShowProgram_2026_compressed.pdf"
+							href="https://assets.teenranch.com/hunterJumperShowProgram_2026_compressed.pdf?v=2"
 						>
 							View 2026 Prize List
 						</Button>
@@ -388,7 +388,7 @@ export default function Default({ data }) {
 <li>PRIZES & BEAUTIFUL RIBBONS to Champion & Reserve in every division.</li>
 <li>OTTB AWARDS given at each show, chosen randomly, sponsored by Cowgirl Up with Green.</li>
 <li>PRIZE MONEY AND PURINA TREATS awarded in the Equitation Medal & Jumper Medal Classes sponsored by Marissa Mallais, Sue Stacey, Moon Meadow Stables, Jen Brabant, Wild Mango Marketing, Holly Zold & Sheryl Stevens.</li>
-<li>Top 7 in each division qualify to compete at the ONtario Fall Finals.</li>
+<li>Top 7 in each division qualify to compete at the Ontario Fall Finals.</li>
 <li>FOOD TRUCK available for lunch, snack and drink purchases at every show by Kabzza.	</li>
 				</ul>
 			</Container>
