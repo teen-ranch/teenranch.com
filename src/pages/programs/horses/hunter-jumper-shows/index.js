@@ -253,13 +253,13 @@ export default function Default({ data }) {
 				<Card style={{ padding: "2rem" }}>
 					<div className="showButtons">
 						<Button target="_blank" href="https://show.teenranch.com">
-							View 2026 season standings
+							View 2026 Season Standings
 						</Button>
 						<Button
 							target="_blank"
 							href="https://assets.teenranch.com/hunterJumperShowProgram_2026_compressed.pdf"
 						>
-							View 2026 show program
+							View 2026 Prize List
 						</Button>
 						<Button target="_blank" href="mailto:events@teenranch.com">
 							Send us an email
@@ -327,7 +327,7 @@ export default function Default({ data }) {
 							<li>Starter Division</li>
 							<li>Jr. Beginner Division</li>
 							<li>Sr. Beginner Division</li>
-							<li>TYRO Division</li>
+							<li>Tyro Division</li>
 							<li>Rookie Division</li>
 						</ul>
 					</Card>
@@ -357,8 +357,7 @@ export default function Default({ data }) {
 						</h3>
 						<small>
 							<i>
-								This ring is designed for the more experienced riders. All lines
-								are set for a 12' canter stride.
+		Large sand ring.
 							</i>
 						</small>
 						<ul>
@@ -366,65 +365,31 @@ export default function Default({ data }) {
 							<li>Open Hack Division</li>
 							<li>Crossrail Jumpers</li>
 							<li>0.6m Jumper</li>
-							<li>0.7m / 0.9m Jumper</li>
+							<li>0.7m / 0.8m Jumper</li>
 						</ul>
 					</Card>
 				</div>
-				<Button
+				{/* <Button
 					target="_blank"
 					href="https://assets.teenranch.com/hunterJumperClassDescriptions_2026.pdf"
 				>
 					View class descriptions
-				</Button>
+				</Button> */}
 			</Container>
 			<Container type="body">
 				<h2>Gifts & Awards</h2>
 				<ul>
-					<li>
-						Every entry receives a <strong>$10 GIFT CARD</strong> generously
-						sponsored by Bahr Saddlery.
-					</li>
-					<li>
-						<strong>FREE MAGAZINE</strong> to all guests generously sponsored by
-						Canadian Horse Journals.
-					</li>
-					<li>
-						<strong>RIBBONS</strong> 1st-6th in each class.{" "}
-					</li>
-					<li>Ribbons created by SE Equestrian.</li>
-					<li>
-						<strong>PARTICIPANT RIBBONS</strong> available for all competitors
-						in the Leadline, Starter, Beginner and Rookie Divisions. These
-						divisions will be split if more than 15.
-					</li>
-					<li>
-						<strong>CHAMPION & RESERVE CHAMPION RIBBONS</strong> in every
-						division.
-					</li>
-					<li>
-						<strong>PRIZES</strong> to the Champion and Reserve Champion of
-						every division, provided by our amazing sponsors!
-					</li>
-					<li>
-						<strong>EQUITATION MONEY ADDED</strong> goes to every ribbon winner
-						in our Equitation Divisions.
-					</li>
-					<li>
-						<strong>MEDALS</strong> to 1st-3rd placings in all equitation
-						classes.
-					</li>
-					<li>
-						<strong>AMAZING PRIZES & YEAR END RIBBONS</strong> to the top 6 in
-						each division.
-					</li>
-					<li>
-						Top 7 of each division qualify to compete at{" "}
-						<strong>ONTARIO FALL FINALS</strong> in a similar division.
-					</li>
-					<li>
-						<strong>FREE BOTTLED WATER</strong> at each in-gate sponsored by
-						Julie Huppe Real Estate.
-					</li>
+<li>Every entry receives a $10 GIFT CARD sponsored by Bahr Saddlery.</li>
+<li>FREE MAGAZINE to every guest sponsored by Canadian Horse Journal.</li>
+<li>FREE BOTTLED WATER at each in-gate sponsored by Julie Huppe Real Estate.</li>
+<li>TURN OUT AWARD at every show sponsored by Sprucewood Tack Shop.</li>
+<li>RIBBONS 1st-8th in each class.</li>
+<li>MEDALS 1st-3rd in all equitation classes.</li>
+<li>PRIZES & BEAUTIFUL RIBBONS to Champion & Reserve in every division.</li>
+<li>OTTB AWARDS given at each show, chosen randomly, sponsored by Cowgirl Up with Green.</li>
+<li>PRIZE MONEY AND PURINA TREATS awarded in the Equitation Medal & Jumper Medal Classes sponsored by Marissa Mallais, Sue Stacey, Moon Meadow Stables, Jen Brabant, Wild Mango Marketing, Holly Zold & Sheryl Stevens.</li>
+<li>Top 7 in each division qualify to compete at the ONtario Fall Finals.</li>
+<li>FOOD TRUCK available for lunch, snack and drink purchases at every show by Kabzza.	</li>
 				</ul>
 			</Container>
 			<Container type="body">
@@ -632,7 +597,7 @@ export default function Default({ data }) {
 					</ul>
 				</Card>
 			</Container>
-			<Container type="body">
+			{/* <Container type="body">
 				<div id="rules" style={{ position: "absolute", marginTop: "-180px" }} />
 				<h2>Rules & policies</h2>
 				<Grid lg={1} xl={1} gap={true}>
@@ -647,10 +612,7 @@ export default function Default({ data }) {
 								Back number must be worn and visible at all times while on
 								horseback.
 							</li>
-							{/* <li>
-                Covid Protocols in place. See Covid Policy on website for
-                details.
-              </li> */}
+							
 							<li>
 							Please read class descriptions to see rules on cross-entering.  We ask that coaches be proactive in organizing order of go when riders/horses have conflicts between rings.  Ring will wait for a max. of 10 minutes.  After 10 minutes, competitor will be scratched with no reimbursement.
 							</li>
@@ -703,13 +665,9 @@ export default function Default({ data }) {
 							</li>
 						</ol>
 					</Card>
-					{/* <Card style={{ padding: "2rem" }}>
-            <h4>COVID-19 policy</h4>
-            Please self screen. If you have any symptoms, please stay home.
-            <p>We are looking forward to a safe and fun competition!</p>
-          </Card> */}
+					
 				</Grid>
-			</Container>
+			</Container> */}
 
 			<Container type="body">
 				<div
