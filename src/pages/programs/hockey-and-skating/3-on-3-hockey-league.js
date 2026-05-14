@@ -30,7 +30,7 @@ export default function Default() {
 						situation. Limited space available.
 					</p>
 					<h3>When</h3>
-					Sunday's, July 5 - August 23, 2026 (No session August 2, 2026)
+					Sundays, July 5 - August 23, 2026 (No session August 2, 2026)
 					{/* <div
             style={{
               padding: "4rem",

@@ -146,7 +146,7 @@ export default function Programs({ data }) {
 					Check out our weekly camp themes and details in our overnight camp
 					info pack below:
 				</div>
-				<div>
+				{/* <div>
 					<PdfButton
 						target="_blank"
 						rel="noopener noreferrer"
@@ -154,7 +154,7 @@ export default function Programs({ data }) {
 					>
 						Overnight camp info pack
 					</PdfButton>
-				</div>
+				</div> */}
 				<div>
 					<PdfButton
 						target="_blank"

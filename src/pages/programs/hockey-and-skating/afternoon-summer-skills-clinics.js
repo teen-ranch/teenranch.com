@@ -8,6 +8,7 @@ import { RinkClosed } from "components/RinkClosed";
 import { Time } from "components/Time";
 import Card, { CardPadding } from "components/Card";
 import { Terms_HockeyAndSkating } from "components/Terms";
+import { HockeyAges } from "components/HockeyAges";
 
 export default function Default() {
 	return (
@@ -110,10 +111,10 @@ export default function Default() {
 								</thead>
 								<tbody>
 									<tr>
-										<td>July 21 - 25, 2025</td>
-										<td>Ages 5-7 (2017, 2018, 2019)</td>
+										<td>July 20 - 24, 2026</td>
+										<td><HockeyAges years="2018,2019,2020"/></td>
 										<td>
-											$135 +HST (Individual days available for $40, HST
+											$140 +HST (Individual days available for $40, HST
 											included)
 										</td>
 									</tr>
@@ -136,10 +137,11 @@ export default function Default() {
 								</thead>
 								<tbody>
 									<tr>
-										<td>August 5 - 8, 2025</td>
-										<td>Ages 8-11 (2013, 2014, 2015, 2016)</td>
+										<td>August 4 - 7, 2026</td>
+										{/* <td>Ages 8-11 (2013, 2014, 2015, 2016)</td> */}
+										<td><HockeyAges years="2014,2015,2016,2017"/></td>
 										<td>
-											$110 +HST (Individual days available for $40, HST
+											$115 +HST (Individual days available for $40, HST
 											included)
 										</td>
 									</tr>

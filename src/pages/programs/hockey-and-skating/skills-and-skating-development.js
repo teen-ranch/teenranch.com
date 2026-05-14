@@ -234,7 +234,7 @@ export default function Default() {
 										<td>
 											<strong>Wednesdays (REP):</strong>
 											<br />
-											July 22, 2026 - August 26, 2026<br/>(No session early August, date TBA)
+											July 22, 2026 - August 26, 2026<br/>(No session August 5)
 											<br />
 										</td>
 										<td><HockeyAges years="2018, 2019, 2020"/></td>

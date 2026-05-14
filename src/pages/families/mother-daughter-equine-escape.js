@@ -154,7 +154,7 @@ export default function Default({ data }) {
 				</ul>
 				</div>
 				<div>
-				<Video src="https://www.youtube.com/embed/WuCOMnAmYGw" title="Mother Daughter Equine Escape" />	
+				<Video src="https://www.youtube.com/embed/AV1qltDT7JE" title="Mother Daughter Equine Escape" />	
 				</div>
 				</Grid>
 				<h4>What you'll enjoy:</h4>
