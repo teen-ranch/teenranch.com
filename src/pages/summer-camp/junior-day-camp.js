@@ -200,6 +200,7 @@ export default function Programs({ data }) {
 							"Rubber Duck Roundup (NEW)",
 							"Campfire story time",
 							"Lunch",
+							"Snack",
 							"T-shirt included",
 							"New themes each week!",
 						]}
