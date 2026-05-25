@@ -108,7 +108,7 @@ export default function Programs({ data }) {
 					<PdfButton
 						target="_blank"
 						rel="noopener noreferrer"
-						href="https://www.canva.com/design/DAGoGdnyY6E/nqIanj2GHA11W8-XM-zLcg/view"
+						href="https://canva.link/2dp35brilgfql8x"
 					>
 						Ultimate day camp / junior day camp info pack
 					</PdfButton>

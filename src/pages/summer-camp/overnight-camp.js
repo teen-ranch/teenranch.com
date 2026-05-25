@@ -133,15 +133,15 @@ export default function Programs({ data }) {
 					Check out our weekly camp themes and details in our camp info pack
 					below:
 				</div>
-				{/* <div>
+				<div>
 					<PdfButton
 						target="_blank"
 						rel="noopener noreferrer"
-						href="https://www.canva.com/design/DAGoHIPLEFg/CwRhNWAQ4Q-8uWOaO3XORg/view"
+						href="https://canva.link/dq5bhmycroydfi7"
 					>
 						Overnight camp info pack
 					</PdfButton>
-				</div> */}
+				</div>
 				<p>
 					Families will be notified by email six weeks before the camp start
 					date for payment reminders and camp information.

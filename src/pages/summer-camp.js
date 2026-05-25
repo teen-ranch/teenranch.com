@@ -146,20 +146,20 @@ export default function Programs({ data }) {
 					Check out our weekly camp themes and details in our overnight camp
 					info pack below:
 				</div>
-				{/* <div>
-					<PdfButton
-						target="_blank"
-						rel="noopener noreferrer"
-						href="https://www.canva.com/design/DAGoHIPLEFg/CwRhNWAQ4Q-8uWOaO3XORg/view"
-					>
-						Overnight camp info pack
-					</PdfButton>
-				</div> */}
 				<div>
 					<PdfButton
 						target="_blank"
 						rel="noopener noreferrer"
-						href="https://www.canva.com/design/DAGoGdnyY6E/nqIanj2GHA11W8-XM-zLcg/view"
+						href="https://canva.link/dq5bhmycroydfi7"
+					>
+						Overnight camp info pack
+					</PdfButton>
+				</div>
+				<div>
+					<PdfButton
+						target="_blank"
+						rel="noopener noreferrer"
+						href="https://canva.link/2dp35brilgfql8x"
 					>
 						Ultimate day camp / junior day camp info pack
 					</PdfButton>
