@@ -275,6 +275,9 @@ export default function Footer() {
 						<ul className="footerNavigation">
 							{/* <li><Link to='https://shop.teenranch.com'>Shop Teen Ranch Apparel</Link></li> */}
 							{/* <li><Link to='/about-teen-ranch/'>About Teen Ranch</Link></li> */}
+							<li className="newsLink">
+								<Link to="/news-release/">News Release</Link>
+							</li>
 							<li>
 								<Link to="/teen-ranch-statement-of-faith/">
 									Our statement of faith
