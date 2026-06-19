@@ -337,7 +337,6 @@ export default function Default({ data }) {
 						</h3>
 						<small>
 							<i>
-								This ring is intended for riders or horses with less experience.
 								All lines in this sand ring are set for an 11' canter stride.
 							</i>
 						</small>
