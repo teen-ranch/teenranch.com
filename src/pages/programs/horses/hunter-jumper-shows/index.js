@@ -333,7 +333,7 @@ export default function Default({ data }) {
 					</Card>
 					<Card style={{ padding: "2rem 2rem" }}>
 						<h3>
-							Ring #1 (<Time>0830</Time> start)
+							Ring #1 (<Time>0800</Time> start)
 						</h3>
 						<small>
 							<i>
