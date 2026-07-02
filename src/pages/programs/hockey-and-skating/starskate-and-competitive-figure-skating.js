@@ -19,6 +19,25 @@ export default function Default() {
 				metaDescription="In association with Dufferin-Peel Skating Club"
 			/>
 			<Container type="body">
+				<div style={{
+					textAlign:"center",
+					border: "1px solid #ccc",
+					padding: "2rem",
+					marginBottom:"4rem",
+					borderRadius:"8px"
+				}}>
+					<h2>2026 Summer Program: June 29 - August 21, 2026</h2>
+					<p>Our flexible Summer Skating program is designed to fit in with
+busy summer schedules.</p>
+<p><strong>Mondays, Wednesdays, Thursdays, Fridays - <Time>1630</Time> to <Time>1750</Time></strong></p>
+					<p>No session on Wednesday July 1st, or Monday August 3rd</p>
+					<p><strong>Ice fees:</strong>
+						{" "}$45 per session payable at the Ice Corral office prior to each session. Save $5 per session if you pay in advance for 14 or more sessions.
+</p>
+					<p><strong>Instruction:</strong> Figure Skating session fees include only ice costs. Instruction
+must be arranged in advance in advance with Head Coaches.</p>
+					<p><strong>For more information:</strong> Please call the office <a href="tel:+15199414501">519-941-4501</a> or email <a href="mailto:dufferinpeelskatingclub@gmail.com">dufferinpeelskatingclub@gmail.com</a></p>
+				</div>
 				<div
 					style={{
 						padding: "4rem",
