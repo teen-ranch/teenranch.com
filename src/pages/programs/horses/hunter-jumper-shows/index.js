@@ -313,7 +313,7 @@ export default function Default({ data }) {
 				<div className="hunter-jumper-class-grid">
 					<Card style={{ padding: "2rem 2rem" }}>
 						<h3>
-							Ring #4 (<Time>0800</Time> start)
+							Ring #4 (<Time>0900</Time> start)
 						</h3>
 						<small>
 							<i>
