@@ -3,14 +3,19 @@ import Container from 'components/Container'
 import Heading from 'components/Heading'
 import Button from 'components/Button'
 import Quote from 'components/Quote'
+import { graphql } from "gatsby";
+import Img from "gatsby-image";
 
-export default function Default() {
+export default function Default({data}) {
 
+	const {
+main		
+	} = data;
 	return (
         <>
 
             <Heading
-                src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/staff2.jpg'
+				src={main.childImageSharp.fluid}
                 alt='Teen Ranch staff group photo'
 				title='Staff'
                 subtitle='Volunteer and full-time staff positions.'
@@ -110,3 +115,15 @@ export default function Default() {
         </>
     )
 }
+
+export const query = graphql`
+  query {
+    main: file(relativePath: { eq: "staff/tr_staffPhoto_2026.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1920, quality: 64) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+  }
+`
