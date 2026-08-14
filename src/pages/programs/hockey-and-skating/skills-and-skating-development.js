@@ -36,31 +36,90 @@ export default function Default() {
 				</p>
 				<h3>Ages 6-13</h3>
 				<div className="staffTable">
-					{/* <Card>
-<CardPadding>
-<table>
-              <thead>
-                <tr>
-                  <th>Session #1</th>
-                  <th>6:00pm - 6:50pm</th>
-                  <th>7:00pm - 7:50pm</th>
-                  <th>Cost</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>Tuesdays:</strong><br/>September 10, 2024 - October 15, 2024</td>
-                  <td>2016, 2017, 2018, 2019</td>
-                  <td>2011, 2012, 2013, 2014, 2015</td>
-                  <td>$250 +HST</td>
-                </tr>
-              </tbody>
-            </table>
+			    <Card>
+            <CardPadding>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Session Series #1</th>
+                    <th>6:00pm - 6:50pm</th>
+                    <th>7:00pm - 7:50pm</th>
+                    <th>Cost</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Tuesdays:</strong><br/>September 15, 2026 - October 20, 2026</td>
+                    <td><HockeyAges years="2019, 2020, 2021"/></td>
+                    <td><HockeyAges years="2013, 2014, 2015, 2016, 2017, 2018"/></td>
+                    <td>$260 +HST (6 sessions)</td>
+                  </tr>
+                 </tbody>
+              </table>
+            </CardPadding>
+          </Card>
+          <Button href="https://register.trmanager.com">Register now</Button>
+					
+			    <Card>
+            <CardPadding>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Session Series #2</th>
+                    <th>6:00pm - 6:50pm</th>
+                    <th>7:00pm - 7:50pm</th>
+                    <th>Cost</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Tuesdays:</strong><br/>November 10, 2026 - December 15, 2026</td>
+                    <td><HockeyAges years="2019, 2020, 2021"/></td>
+                    <td><HockeyAges years="2016, 2017, 2018"/></td>
+                    <td>$260 +HST (6 sessions)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Wednesdays:</strong><br/>November 11, 2026 - December 16, 2026</td>
+                    <td><HockeyAges years="2013, 2014, 2015, 2016"/></td>
+                    <td></td>
+                    <td>$260 +HST (6 sessions)</td>
+                  </tr>
+                 </tbody>
+              </table>
+            </CardPadding>
+          </Card>
+          <Button href="https://register.trmanager.com">Register now</Button>
+					
+								    <Card>
+            <CardPadding>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Session Series #3</th>
+                    <th>6:00pm - 6:50pm</th>
+                    <th>7:00pm - 7:50pm</th>
+                    <th>Cost</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Tuesdays:</strong><br/>January 12, 2027 - February 16, 2027</td>
+                    <td><HockeyAges years="2019, 2020, 2021"/></td>
+                    <td><HockeyAges years="2016, 2017, 2018"/></td>
+                    <td>$260 +HST (6 sessions)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Wednesdays:</strong><br/>January 13, 2027 - February 17, 2027</td>
+                    <td><HockeyAges years="2013, 2014, 2015, 2016"/></td>
+                    <td></td>
+                    <td>$260 +HST (6 sessions)</td>
+                  </tr>
+                 </tbody>
+              </table>
+            </CardPadding>
+          </Card>
+          <Button href="https://register.trmanager.com">Register now</Button>
 
-
-</CardPadding>
-            </Card>
-                        <Button href="https://register.trmanager.com">Book now</Button> */}
 					{/* <Card>
 						<CardPadding>
 							<table>
@@ -207,7 +266,7 @@ export default function Default() {
 					</Card> */}
 					{/* <Button href="https://register.trmanager.com">Book now</Button> */}
 					
-					<Card>
+					{/* <Card>
 						<CardPadding>
 							<table>
 								<thead>
@@ -244,9 +303,9 @@ export default function Default() {
 								</tbody>
 							</table>
 						</CardPadding>
-					</Card>
-					<Button href="https://register.trmanager.com">Book now</Button>
-					<Card>
+					</Card> */}
+					{/* <Button href="https://register.trmanager.com">Book now</Button> */}
+					{/* <Card>
 						<CardPadding>
 							<table>
 								<thead>
@@ -284,10 +343,10 @@ export default function Default() {
 							</table>
 						</CardPadding>
 					</Card>
-					<Button href="https://register.trmanager.com">Book now</Button>
+					<Button href="https://register.trmanager.com">Book now</Button> */}
 
 					
-					<Card>
+					{/* <Card>
 						<CardPadding>
 							<table>
 								<thead>
@@ -314,7 +373,7 @@ export default function Default() {
 							</table>
 						</CardPadding>
 					</Card>
-					<Button href="https://register.trmanager.com">Book now</Button>
+					<Button href="https://register.trmanager.com">Book now</Button> */}
 
 
 {/* 

@@ -37,7 +37,7 @@ export default function Default() {
 				{/* <p>Spring and Fall hockey leagues for men age 30+</p> */}
 
 				<Grid md={1} gapSize="6rem">
-					<div>
+					{/* <div>
 						<h2>Summer Leagues</h2>
 						<Card>
 							<CardPadding>
@@ -116,7 +116,7 @@ export default function Default() {
 								</strong>
 							</CardPadding>
 						</Card>
-					</div>
+					</div> */}
 
 					<div>
 						<h2>Fall/Winter Leagues</h2>
@@ -124,18 +124,18 @@ export default function Default() {
 							<CardPadding>
 								<h3>
 									Men's Recreational League (35+){" "}
-									<sm style={{ fontSize: "11pt" }}>(4-6 teams)</sm>
+									<sm style={{ fontSize: "11pt" }}>(6 teams, draft league)</sm>
 								</h3>
 								<p>
-									<strong>When:</strong> September 23, 2025 - April 21, 2026
+									<strong>When:</strong> September 22, 2026 - April 20, 2027
 								</p>
 								<ul>
 									<li>
 										Tuesday nights: <Time>2000</Time>, <Time>2100</Time>, and{" "}
-										<Time>2200</Time> (if necessary) game times
+										<Time>2200</Time> game times
 									</li>
 									<li>
-										<strong>Cost:</strong> $500 +HST
+										<strong>Cost:</strong> $510 +HST
 									</li>
 								</ul>
 								<Button href="https://register.trmanager.com">Book now</Button>
@@ -149,7 +149,7 @@ export default function Default() {
 									<sm style={{ fontSize: "11pt" }}>(18 teams)</sm>
 								</h3>
 								<p>
-									<strong>When: September, 2025 - April, 2026</strong>
+									<strong>When: September, 2026 - April, 2027</strong>
 								</p>
 								<ul>
 									<li>
@@ -173,18 +173,20 @@ export default function Default() {
 									Men's League (35+){" "}
 									<sm style={{ fontSize: "11pt" }}>(14 teams)</sm>
 								</h3>
-								<p>
-									<strong>When: September 17, 2025 - April 30, 2026</strong>
-								</p>
 								<ul>
 									<li>
-										Wednesdays: <Time>2000</Time> - <Time>2300</Time>
+										Wednesdays, September 16, 2026 - April, 2027: <Time>2000</Time> - <Time>2300</Time>
 									</li>
 									<li>
-										Thursdays: <Time>1900</Time> - <Time>2300</Time>
+										Thursdays, September 17, 2026 - April, 2027: <Time>1900</Time> - <Time>2300</Time>
 									</li>
-									<li>Full-team entry</li>
+									<li>
+										<strong>Cost:</strong> $535 +HST
+									</li>
+									{/* <li>Full-team entry</li> */}
 								</ul>
+								<Button href="https://register.trmanager.com">Book now</Button>
+								<br/>
 								<strong>
 									Contact{" "}
 									<a href="mailto:brent.boschman@teenranch.com">
