@@ -45,16 +45,18 @@ export default function Default() {
 					<h3>When</h3>
 
 					<p>
-						Saturdays: October 4, 2025 - April 11, 2026 (6:30pm - 7:50pm)
+						Saturdays: October 10, 2026 - April 10, 2027 (6:30pm - 7:50pm)
 						<br />
-						{/* <strong> */}
-							{/* Public skating is NOT available on: */}
-							{/* <ul> */}
-								{/* <li>Saturday, January 25</li> */}
-								{/* <li>January 27, 2024</li> */}
-								{/* <li>March 30, 2024</li> */}
-							{/* </ul> */}
-						{/* </strong> */}
+						<br />
+						<strong>
+							Public skating is NOT available on:
+							<ul>
+								<li>November 7, 2026</li>
+								<li>December 26, 2026</li>
+								<li>January 2, 2027</li>
+								<li>March 27, 2027</li>
+							</ul>
+						</strong>
 					</p>
 
 					<h3>Cost</h3>

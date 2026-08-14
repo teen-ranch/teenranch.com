@@ -48,19 +48,22 @@ export default function Default() {
 
 					<h3>When</h3>
 					<p>
-						Saturdays: October 18, 2025 - March 7, 2026 (19 sessions)
+						Saturdays: October 17, 2026 - March 6, 2027 (18 sessions)
 						<br/>
 						<Time>1000</Time> - <Time>1100</Time>
 						<br />
 						<br />
 						<strong>No session on:</strong>
 						<ul>
-							<li>December 27, 2025</li>
+							<li>November 7, 2026</li>
+							<li>December 26, 2026</li>
+							<li>January 2, 2027</li>
+							<li>March 27, 2027</li>
 						</ul>
 					</p>
 					
 					<h3>Ages</h3>
-					<HockeyAges years="2012,2013,2014,2015,2016,2017,2018,2017,2018,2019"/>
+					<HockeyAges years="2013,2014,2015,2016,2017,2018,2019,2020"/>
 					<br/>
 					(Organized into age-specific groups and lines.)
 
@@ -85,7 +88,7 @@ export default function Default() {
 						// 		Junior & Senior (ages 8-16)
 						// 	</>
 						// }
-						price={455}
+						price={465}
 						term="season"
 						includes={["1 hour skills & scrimmage every Saturday"]}
 					>
