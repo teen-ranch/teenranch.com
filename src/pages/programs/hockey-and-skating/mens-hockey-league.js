@@ -180,12 +180,12 @@ export default function Default() {
 									<li>
 										Thursdays, September 17, 2026 - April, 2027: <Time>1900</Time> - <Time>2300</Time>
 									</li>
-									<li>
+									{/* <li>
 										<strong>Cost:</strong> $535 +HST
-									</li>
-									{/* <li>Full-team entry</li> */}
+									</li> */}
+									<li>Full-team entry</li>
 								</ul>
-								<Button href="https://register.trmanager.com">Book now</Button>
+								{/* <Button href="https://register.trmanager.com">Book now</Button> */}
 								<br/>
 								<strong>
 									Contact{" "}
