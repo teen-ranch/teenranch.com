@@ -44,7 +44,6 @@ export default function Default({ data }) {
 			setBannerIndex(0);
 		}
 	}, [5000]) */
-	console.log('banner----l',banner)
 
 	return (
 		<>
@@ -257,9 +256,9 @@ export default function Default({ data }) {
 						</Button>
 						<Button
 							target="_blank"
-							href="https://assets.teenranch.com/hunterJumperShowProgram_2026_compressed.pdf?v=2"
+							href="https://assets.teenranch.com/hunterJumperShowProgram_2026_v3.pdf"
 						>
-							View 2026 Prize List
+							View 2026 Show Information 
 						</Button>
 						<Button target="_blank" href="mailto:events@teenranch.com">
 							Send us an email
@@ -352,7 +351,7 @@ export default function Default({ data }) {
 
 					<Card style={{ padding: "2rem 2rem" }}>
 						<h3>
-							Ring #3 (<Time>0800</Time> start)
+							Ring #3 (<Time>0830</Time> start)
 						</h3>
 						<small>
 							<i>
