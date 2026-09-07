@@ -19,7 +19,7 @@ export default function Default() {
 				metaDescription="In association with Dufferin-Peel Skating Club"
 			/>
 			<Container type="body">
-				<div style={{
+				{/* <div style={{
 					textAlign:"center",
 					border: "1px solid #ccc",
 					padding: "2rem",
@@ -37,7 +37,7 @@ busy summer schedules.</p>
 					<p><strong>Instruction:</strong> Figure Skating session fees include only ice costs. Instruction
 must be arranged in advance in advance with Head Coaches.</p>
 					<p><strong>For more information:</strong> Please call the office <a href="tel:+15199414501">519-941-4501</a> or email <a href="mailto:dufferinpeelskatingclub@gmail.com">dufferinpeelskatingclub@gmail.com</a></p>
-				</div>
+				</div> */}
 				<div
 					style={{
 						padding: "4rem",
@@ -140,10 +140,10 @@ invoiced separately by the Coaching Team.</strong>
 						<thead>
 							<tr>
 								<th aria-label="Empty cell"></th>
-								<th>Fall: Sep. 8, 2025 - Nov. 14, 2025</th>
-								<th>Holiday: Nov. 16, 2025 - Jan. 23, 2026</th>
-								<th>Winter: Jan. 25, 2026 - Apr. 2, 2026</th>
-								<th>Spring: Apr. 9, 2026 - June. 12, 2026</th>
+								<th>Fall: Sep. 13, 2026 - Nov. 13, 2026</th>
+								<th>Holiday: Nov. 15, 2026 - Jan. 29, 2027</th>
+								<th>Winter: Jan. 31, 2027 - Apr. 9, 2027</th>
+								{/* <th>Spring: Apr. 9, 2026 - June. 12, 2026</th> */}
 							</tr>
 						</thead>
 						<tbody>
@@ -157,23 +157,25 @@ invoiced separately by the Coaching Team.</strong>
 									<br />
 								</td>
 								<td>
-									<strong>$250 +HST</strong> (8 sessions)
+									<strong>$155 +HST</strong> (5 sessions)
 									<br />
-									No session Oct. 12
+									No session Sep. 13, Sep 20, Oct. 11, Nov. 8 
 								</td>
 								<td>
-									<strong>$250 +HST</strong> (8 sessions)
+									<strong>$280 +HST</strong> (9 sessions)
 									<br />
-									No session Dec. 21, Dec. 28
+									No session Dec. 20, Dec. 27
 								</td>
 								<td>
-									<strong>$310 +HST</strong> (10 sessions)
+									<strong>$280 +HST</strong> (9 sessions)
+									<br/>
+									No session Mar. 28
 								</td>
-								<td>
+								{/* <td>
 									<strong>$248 +HST</strong> (8 sessions)
 									<br />
 									No session May 17 
-								</td>
+								</td> */}
 							</tr>
 							<tr>
 								<td>
@@ -182,25 +184,25 @@ invoiced separately by the Coaching Team.</strong>
 									On-ice: <Time>1630</Time> - <Time>1750</Time>
 								</td>
 								<td>
+									<strong>$250 +HST</strong> (8 sessions)
+									<br />
+									No session Oct. 12
+								</td>
+								<td>
 									<strong>$280 +HST</strong> (9 sessions)
 									<br />
-									No session Oct. 13
+									No session Dec. 21, Dec. 28
 								</td>
 								<td>
 									<strong>$250 +HST</strong> (8 sessions)
 									<br />
-									No session Dec. 22, Dec. 29
+									No session Feb. 15, Mar. 29
 								</td>
-								<td>
-									<strong>$280 +HST</strong> (9 sessions)
-									<br />
-									No session Feb. 16
-								</td>
-								<td>
+								{/* <td>
 									<strong>$248 +HST</strong> (8 sessions)
 									<br />
 									No session May 18 
-								</td>
+								</td> */}
 							</tr>
 							<tr>
 								<td>
@@ -211,19 +213,19 @@ invoiced separately by the Coaching Team.</strong>
 									Off-ice: <Time>1800</Time> - <Time>1830</Time>
 								</td>
 								<td>
-									<strong>$310 +HST</strong> (10 sessions)
+									<strong>$280 +HST</strong> (9 sessions)
 								</td>
 								<td>
-									<strong>$250 +HST</strong> (8 sessions)
+									<strong>$280 +HST</strong> (9 sessions)
 									<br />
-									No session Dec. 25, Jan. 1
+									No session Dec. 24, Dec. 31
 								</td>
 								<td>
 									<strong>$310 +HST</strong> (10 sessions)
 								</td>
-								<td>
+								{/* <td>
 									<strong>$310 +HST</strong> (10 sessions)
-								</td>
+								</td> */}
 							</tr>
 							<tr>
 								<td>
@@ -232,20 +234,22 @@ invoiced separately by the Coaching Team.</strong>
 									On-ice: <Time>1630</Time> - <Time>1750</Time>
 								</td>
 								<td>
-									<strong>$280 +HST</strong> (9 sessions)
-									<br/>No session Oct. 31
-								</td>
-								<td>
 									<strong>$250 +HST</strong> (8 sessions)
-									<br />
-									No session Dec. 26, Jan. 2
+									<br/>No session Nov. 6
 								</td>
 								<td>
 									<strong>$280 +HST</strong> (9 sessions)
+									<br />
+									No session Dec. 25, Jan. 1
 								</td>
 								<td>
-									<strong>$310 +HST</strong> (10 sessions)
+									<strong>$280 +HST</strong> (9 sessions)
+									<br/>
+									No session Mar. 26
 								</td>
+								{/* <td>
+									<strong>$310 +HST</strong> (10 sessions)
+								</td> */}
 							</tr>
 						</tbody>
 					</table>
@@ -319,7 +323,7 @@ invoiced separately by the Coaching Team.</strong>
 					FutureSTARS Enrichment Program{" "}
 				</h3>
 				<h4>Fall/Holiday/Winter - Cost: $1,600 +HST</h4>
-				<h4>Spring - Cost: $600 +HST (36 sessions)</h4>
+				{/* <h4>Spring - Cost: $600 +HST (36 sessions)</h4> */}
 				<p>
 					DPSC partnered with Teen Ranch supports the pursuit of excellence in sport & the life skills necessary to
 become an accomplished figure skater!
