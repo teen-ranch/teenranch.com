@@ -17,7 +17,7 @@ export default function Default() {
 				title="Learn to skate"
 				subtitle="A beginner skating program for all ice sports."
 				keywords="starskate, competitive figure skating, dufferin peel skating club"
-				metaTitle="STARSKATE & Competitive Figure Skating"
+				metaTitle="Learn to skate"
 				metaDescription="A beginner skating program for all ice sports."
 			/>
 			<Container type="body">
@@ -93,10 +93,10 @@ export default function Default() {
 						<thead>
 							<tr>
 								<th aria-label="Empty cell"></th>
-								<th>Fall: Sep. 8, 2025 - Nov. 14, 2025</th>
-								<th>Holiday: Nov. 17, 2025 - Jan. 23, 2026</th>
-								<th>Winter: Jan. 26, 2026 - Mar. 27, 2026</th>
-								<th>Spring: Apr. 10, 2026 - May. 15, 2026</th>
+								<th>Fall: Sep. 21, 2026 - Nov. 16, 2026</th>
+								<th>Holiday: Nov. 23, 2026 - Jan. 25, 2027</th>
+								<th>Winter: Feb. 1, 2027 - Mar. 22, 2027</th>
+								{/* <th>Spring: Apr. 10, 2026 - May. 15, 2026</th> */}
 							</tr>
 						</thead>
 						<tbody>
@@ -107,29 +107,29 @@ export default function Default() {
 									On-ice: <Time>1800</Time> - <Time>1850</Time>
 								</td>
 								<td>
-									<strong>$280 +HST</strong> (9 sessions)
+									<strong>$250 +HST</strong> (8 sessions)
 									<br />
-									No session Oct. 13
+									No session Oct. 12
 								</td>
 								<td>
 									<strong>$250 +HST</strong> (8 sessions)
 									<br />
-									No session Dec. 22, Dec. 29
+									No session Dec. 21, Dec. 28
 								</td>
-								{/* <td>
-									<strong>$310 +HST</strong> (10 sessions)
-									<br />
-									No session Feb. 17
-								</td> */}
-								{/* <td></td> */}
 								<td>
+									<strong>$220 +HST</strong> (7 sessions)
+									<br />
+									No session Feb. 15
+								</td>
+								{/* <td></td> */}
+								{/* <td>
                   <strong>$250 +HST</strong> (8 sessions)
                   <br />
                   No session Feb. 16
-                </td>
+                </td> */}
 								<td></td>
 							</tr>
-							<tr>
+							{/* <tr>
 								<td>
 									<strong>Fridays</strong>
 									<br />
@@ -144,17 +144,17 @@ export default function Default() {
 									<strong>$250 +HST</strong> (8 sessions)
 									<br />
 									No session Dec. 26, Jan. 2
-								</td>
+								</td> */}
 								{/* <td>
 									<strong>$340 +HST</strong> (11 sessions)
 								</td> */}
-								<td>
+								{/* <td>
 									<strong>$280 +HST</strong> (9 sessions)
 								</td>
 								<td>
 									<strong>$190 +HST</strong> (6 sessions)
 								</td>
-							</tr>
+							</tr> */}
 						</tbody>
 					</table>
 				</div>
