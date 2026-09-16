@@ -27,3 +27,4 @@ User-agent: *
 Disallow: /news-release
 Disallow: /news-release/
 Disallow: /facebook.png
+Disallow: /facebook2.png
