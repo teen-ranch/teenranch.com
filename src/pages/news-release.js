@@ -43,7 +43,35 @@ export default function Programs({ data }) {
                 <div style={{maxWidth:"600px", margin: "0px auto", textAlign:"justify"}}>
                 <div style={{padding:'4rem', textAlign:'center'}}>
                 <h1>News Release</h1>
-                <h2>April 15, 2026</h2>
+                        
+                        <h2>Updated: September 16, 2026</h2>
+                        <em style={{fontSize:'9pt'}}>See original news release below</em>
+
+                </div>
+                        
+                    <p>
+                        We have just been informed of these further charges relating to a prior staff person; Alex Armitage. Original charges of this former employee were laid in March of 2026.
+                    </p>
+                    <p>We are continuing to fully cooperate with police investigators. If you have any information related to this investigation, please contact Caledon OPP.</p>
+                    <p>We understand the seriousness of this situation and the trust placed in our organization. We are committed to transparency, accountability and continuous safeguarding to ensure that our environment remains safe, supportive, and respectful for all.</p>
+                    <p>We are deeply concerned and our thoughts remain with those impacted and we will continue to take every necessary step to uphold the confidence of our community.</p>
+                    <p>For further information about this situation, please see the news release below provided by the OPP.</p>
+                <p>
+                    Tim Stevens<br/>
+                    Teen Ranch Executive Director
+                </p>
+                                        <div style={{
+                        border: "1px solid #ccc",
+                        borderRadius: '8px',
+                        padding: '8px'
+                    }}>
+                    <img src="/facebook2.png"/>
+                    </div>
+
+                        {/* <hr style={{border:'none', background:'#eee', height:'1px'}}/> */}
+                                    <div style={{padding:'4rem', textAlign:'center'}}>
+
+                <h2>Original: April 15, 2026</h2>
                 </div>
 
                 <p>
