@@ -51,7 +51,7 @@ export default function Default() {
 						<strong>
 							Public skating is NOT available on:
 							<ul>
-								<li>November 7, 2026</li>
+								<li>October 31, 2026</li>
 								<li>December 26, 2026</li>
 								<li>January 2, 2027</li>
 								<li>March 27, 2027</li>
