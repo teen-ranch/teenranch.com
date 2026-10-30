@@ -446,12 +446,13 @@ export default function Programs({ data }) {
 				<h1>Pricing</h1>
 				<OvernightCampTerms />
 				<JumpStart />
-				<PriceContainer xl={3}>
+				<PriceContainer xl={4}>
 					<Price
 						title="Hockey camp"
 						subTitle="Skills & skating development for players and goalies of all ability levels, with a focus on enjoying the game."
 						who="Players and goalies (co-ed)"
-						price={1435}
+						// price={1435}
+						ids={[2]}
 						term="week"
 						includes={[
 							"On-site, olympic-size ice rink",
@@ -473,7 +474,8 @@ export default function Programs({ data }) {
 						title="Girl's hockey camp"
 						subTitle="A skills & skating development program with the same high-quality instruction just for girls."
 						who="Players and goalies (female)"
-						price={1435}
+						// price={1435}
+												ids={[3]}
 						term="week"
 						includes={[
 							"On-site, olympic-size ice rink",
@@ -494,8 +496,9 @@ export default function Programs({ data }) {
 					<Price
 						title={<>Elite hockey camp</>}
 						subTitle="For high-performance players focused on advanced skills in skating, puck handling, shooting, and passing."
-						price={1355}
-						priceTo={1695}
+						// price={1355}
+						// priceTo={1695}
+						ids={[59]}
 						term="week"
 						primary
 						includes={[
@@ -519,7 +522,8 @@ export default function Programs({ data }) {
 						title="Goalie camp"
 						subTitle="Goalie specific training, with a focus on angles, technique, rebound-control, proper form, butterfly and much more."
 						who="Goalies (co-ed)"
-						price={1355}
+						// price={1355}
+						ids={[4]}
 						term="week"
 						includes={[
 							<>
@@ -540,7 +544,7 @@ export default function Programs({ data }) {
 							Register now
 						</CTAButton>
 					</Price>
-					<Price
+					{/* <Price
 						title={<>Hawerchuk Strong Hockey Camp</>}
 						subTitle="An elite specialty camp run in partnership with MASH Hockey featuring current and ex NHL coaches as well as other current professionals, in support of the Hawerchuk Strong foundation.  "
 						who="A/AA/AAA Players & goalies (Male)"
@@ -566,7 +570,7 @@ export default function Programs({ data }) {
 						<CTAButton href="https://register.trmanager.com">
 							Register now
 						</CTAButton>
-					</Price>
+					</Price> */}
 				</PriceContainer>
 			</Container>
 
