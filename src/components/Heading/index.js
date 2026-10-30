@@ -23,7 +23,8 @@ function Heading({
 	imageOptions,
 	children,
 	hunterJumper,
-	lighten
+	lighten,
+	lg
 }) {
 	const { pathname } = useLocation();
 
@@ -114,7 +115,7 @@ function Heading({
 				</div>
 				<div className={`overlayContainer ${lighten ? 'overlayContainerTransparency':''}`}>
 					<div className="overlay">
-						<h1 style={{ opacity: hunterJumper ? 0 : 1 }}>{title}</h1>
+						<h1 style={{...(lg && {textTransform: 'uppercase', fontSize: '9vw'}) , opacity: hunterJumper ? 0 : 1 }}>{title}</h1>
 						{hunterJumper && (
 							<center>
 								<img
@@ -128,7 +129,7 @@ function Heading({
 								/>
 							</center>
 						)}
-						{subtitle && <h2>{subtitle}</h2>}
+						{subtitle && <h2 style={{...(lg && {fontSize: '4vw'})}}>{subtitle}</h2>}
 						{children}
 						<div className="seeMoreContainer">
 							<Link className="seeMore" to="body-start">

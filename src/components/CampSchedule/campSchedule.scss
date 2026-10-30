@@ -5,6 +5,9 @@
   display: grid;
   grid-template-columns: 160px auto;
   font-size: 1.4rem;
+  overflow-x:auto;
+  overflow-y:hidden;
+  padding-bottom: 2px;
   .schedule__spacer,
   .schedule__date,
   .schedule__program,
@@ -17,9 +20,10 @@
     justify-content: center;
     align-items: center;
     height: 60px;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     box-sizing: border-box;
-    min-width: 120px;
+    min-width: 105px;
+    // font-size: 1.2rem;
   }
 
   .schedule__dateDiscount {
@@ -175,14 +179,14 @@
   .schedule__container {
     font-size: 1.3rem;
   }
-  .schedule__dates {
-    max-width: 100%;
-    overflow-x: auto;
-    // overflow-y: hidden;
-    .schedule__row {
-      width: 100%;
-    }
-  }
+  // .schedule__dates {
+  //   max-width: 100%;
+  //   overflow-x: auto;
+  //   // overflow-y: hidden;
+  //   .schedule__row {
+  //     width: 100%;
+  //   }
+  // }
   // .schedule__dateHeading {
   //   // white-space: nowrap;
   // }
@@ -190,7 +194,7 @@
 
 @media screen and (min-width: $lg) {
   .schedule__container {
-    grid-template-columns: 200px auto;
+    grid-template-columns: 140px auto;
   }
   .schedule__dateHeading {
     white-space: nowrap;
