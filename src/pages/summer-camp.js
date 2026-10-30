@@ -294,8 +294,9 @@ export default function Programs({ data }) {
 							</>
 						}
 						who="Kids age 5-8"
-						price={380}
-						priceTo={475}
+						// price={380}
+						// priceTo={475}
+						ids={[15,16]}
 						term="week"
 						includes={[
 							"Games",
@@ -325,8 +326,7 @@ export default function Programs({ data }) {
 						}
 						subTitle="The full camp experience with your sport of choice, including daily campfires featuring engaging, real-life topics shared from a biblical perspective."
 						who="Kids and teens 8+"
-						price={925}
-						priceTo={1145}
+																		ids={[63,64,74,67,68,70]}
 						term="week"
 						includes={[
 							"Full camp experience",
@@ -355,8 +355,7 @@ export default function Programs({ data }) {
 						}
 						subTitle="Campers experience all the fun and adventure of summer camp packed into five awesome days & nights as they enjoy the great outdoors, get active and build friendships that can last a lifetime."
 						who="Kids and teens 8+"
-						price={1100}
-						priceTo={1795}
+												ids={[73,27,7,8,4,3,59,2]}
 						term="week"
 						includes={[
 							"Complete camp experience",

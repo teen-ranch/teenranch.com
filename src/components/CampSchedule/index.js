@@ -48,7 +48,7 @@ export default function CampSchedule({
       }/capacities`
     ).then(res => res.json())
 
-    console.log(res)
+    // console.log(res)
     setCapacity(res)
   }
   
@@ -158,13 +158,13 @@ export default function CampSchedule({
               program?.ids?.includes(currentProgramCapacity.programId)
             )
             .sort((a, b) => a.startDate - b.startDate)
-          if (program.ids.includes(59))
-            console.log("PROGRAM CAPACITIES", programCapacities)
+          // if (program.ids.includes(59))
+          //   console.log("PROGRAM CAPACITIES", programCapacities)
           let realDateIndex = 0
           
           const programDates = capacity?.filter(date => program.ids.includes(date.programId))
 
-          console.log('dates----',programDates)
+          // console.log('dates----',programDates)
 
           return (
             <div
@@ -397,7 +397,7 @@ return (
                     : 0
                 )
 
-                if (program.ids.includes(59)) console.log(ages)
+                // if (program.ids.includes(59)) console.log(ages)
 
                 if (ages) {
                   realDateIndex += 1

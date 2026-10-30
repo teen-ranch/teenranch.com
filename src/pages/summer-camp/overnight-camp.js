@@ -284,8 +284,9 @@ strategic challenges, and more!
 						title="Hockey camps"
 						subTitle={`Skills & skating development for players and goalies from house-league to rep. Standard, high-performance, girl's hockey, and goalie camps.`}
 						who="Players and goalies"
-						price={1355}
-						priceTo={1795}
+						// price={1355}
+						// priceTo={1795}
+						ids={[2,59,3,4]}
 						term="week"
 						includes={[
 							"On-site, olympic-size ice rink",
@@ -312,8 +313,9 @@ strategic challenges, and more!
 						title="Horse camps"
 						subTitle="Horseback riding camps for beginner to advanced riders. Take your pick from western, english, or rodeo camps."
 						who="English & western riders"
-						price={1100}
-						priceTo={1645}
+						// price={1100}
+						// priceTo={1645}
+						ids={[8,7,27]}
 						term="week"
 						includes={[
 							"Ability-based lessons",
@@ -367,8 +369,9 @@ strategic challenges, and more!
 						title="WHAM camp"
 						subTitle="Epic activities like giant swing, horseback riding, rock climbing, woodland survival, initiatives course challenge, archery, waterslide, jousting pond, and so much more!"
 						who="Kids who want to try everything"
-						price={1100}
-						priceTo={1375}
+						// price={1100}
+						// priceTo={1375}
+						ids={[73]}
 						term="week"
 						includes={[
 							"Horseback riding",

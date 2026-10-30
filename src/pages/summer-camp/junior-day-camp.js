@@ -185,8 +185,9 @@ export default function Programs({ data }) {
 						}
 						subTitle={`Outdoor games, crafts, swimming, pony rides, story time and more! A week full of friendship and fun!`}
 						who="Kids age 5-8"
-						price={380}
-						priceTo={475}
+						// price={380}
+						// priceTo={475}
+						ids={[15,16]}
 						term="week"
 						includes={[
 							"Dynamic outdoor group activities",
