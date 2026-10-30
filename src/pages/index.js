@@ -34,7 +34,7 @@ export default function Index({ data }) {
         metaDescription={`Overnight & Ultimate Day Camps`}
       >
         <CTAButton to="/summer-camp/">
-          Register now for Summer Camp 2026
+          Register now for Summer Camp 2027
         </CTAButton>
         <h2 style={{ marginTop: "-3rem" }}>
           <p>Registration is now open!</p>

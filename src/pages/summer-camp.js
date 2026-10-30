@@ -32,7 +32,7 @@ const frontmatter = {
 };
 
 const pageData = {
-	subTitle: `Aiming Higher for over 50 years`,
+	subTitle: `Aiming Higher since 1967`,
 	keywords: "summer camp, summer sports camp, summer camp ontario canada",
 };
 
@@ -44,6 +44,7 @@ export default function Programs({ data }) {
 		<>
 			<Heading
 				src={file.childImageSharp.fluid}
+				lg
 				// src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/hockey14.jpg'
 				alt="Summer camp kids"
 				title={frontmatter.title}
@@ -76,7 +77,7 @@ export default function Programs({ data }) {
 			{/* <SummerCampRegistrationNotice /> */}
 
 			<Container type="body">
-				<h1>Summer Camp 2026 at Teen Ranch</h1>
+				<h1>Summer Camp 2027 at Teen Ranch</h1>
 
 				<h2>Here's what you can expect this summer:</h2>
 
@@ -172,7 +173,7 @@ export default function Programs({ data }) {
 
 			<Container type="body">
 				<div id="who" style={{ position: "absolute", marginTop: "-180px" }} />
-				<h1>Who it's for</h1>
+				<h1>Choose the summer camp experience that's right for your family:</h1>
 
 				<ProgramContainer xl={3}>
 					<Program
@@ -181,9 +182,7 @@ export default function Programs({ data }) {
 						who="Kids age 5-8"
 						src={file.childImageSharp.fluid}
 					>
-						Games, crafts, swimming, pony rides, story time and more! A week
-						full of friendship and fun!
-						<br />
+				A fun-filled day camp experience for younger campers, packed with activities, adventure, and opportunities to make new friends.						<br />
 						<PrimaryButton to="/summer-camp/junior-day-camp/">
 							Learn more
 						</PrimaryButton>
@@ -194,9 +193,7 @@ export default function Programs({ data }) {
 						who="Kids age 8+"
 						src={highPerformanceHockey.childImageSharp.fluid}
 					>
-						The full camp experience with your sport of choice, including daily
-						campfires featuring engaging, real-life topics shared from a
-						biblical perspective. Packed into a 5 day format.
+					An action-packed day camp for older kids and teens who want to make the most of their summer.
 						<br />
 						<PrimaryButton to="/summer-camp/ultimate-day-camp/">
 							Learn more
@@ -208,10 +205,7 @@ export default function Programs({ data }) {
 						who="Kids age 8+"
 						src={overnight.childImageSharp.fluid}
 					>
-						Our popular overnight camps are back this year and better than ever!
-						Campers experience all the fun and adventure of summer camp packed
-						into five awesome days and nights as they enjoy the great outdoors,
-						get active and build friendships that can last a lifetime.
+						The complete camp experience! Campers enjoy days full of activities, evenings with friends, and the excitement of staying overnight at Teen Ranch.
 						<br />
 						<PrimaryButton to="/summer-camp/overnight-camp/">
 							Learn more
