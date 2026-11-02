@@ -9,7 +9,6 @@ import { graphql } from 'gatsby'
 import { PriceContainer, Price } from 'components/Price'
 import { CTAButton } from 'components/Button'
 import Grid from 'components/Grid'
-import { InlineWidget } from "react-calendly";
 
 // import SubNav from 'components/SubNav'
 // import Verse from 'components/Verse'
@@ -175,20 +174,6 @@ going to Teen Ranch!
 
             </Container>
 
-            <Container>
-            <InlineWidget url="https://calendly.com/teen-ranch" 
-                styles={{
-                    height: '1060px'
-                }}
-                pageSettings={{
-                    // "backgroundColor": "ffffff",
-                    // "hideEventTypeDetails": false,
-                    // "hideLandingPageDetails": false,
-                    // "primaryColor": "00a2ff",
-                    // "textColor": "4d5055",
-                    // "hideGdprBanner": true
-                    }}/>
-            </Container>
             <Container>
                 <p><em>Teen Ranch is a member of Christian Camping International (CCI) and seeks to share God's love with those of all ages, through camps, retreats, community events and more.</em></p>
             </Container>
