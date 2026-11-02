@@ -41,21 +41,17 @@ export default function SchoolingRingPage({ data }) {
   )
 }
 
-export const query = graphql`
-  query {
-    schoolingRing: allFile(
-      filter: { relativeDirectory: { eq: "hunter-jumper/schoolingRing" } }
-    ) {
-      edges {
-        node {
-          name
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
+export const query = graphql`{
+  schoolingRing: allFile(
+    filter: {relativeDirectory: {eq: "hunter-jumper/schoolingRing"}}
+  ) {
+    edges {
+      node {
+        name
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
     }
   }
-`
+}`

@@ -1,4 +1,5 @@
-@import "styles/vars";
+@use "../../styles/vars" as vars;
+@use "sass:color";
 
 .schedule__container {
   margin-right: 1px;
@@ -48,44 +49,44 @@
 
   .schedule__programDate--blank.schedule__programDate--UDC,
   .schedule__programDate--otherCamp.schedule__programDate--UDC {
-    background-color: lighten($primary-dark, 80);
+    background-color: color.scale(vars.$primary-dark, $lightness: 80%);
   }
   .schedule__programDate--secondary.schedule__programDate--UDC {
-    background-color: lighten($primary-dark, 84);
-    // color: lighten($primary-dark, 65);
+    background-color: color.scale(vars.$primary-dark, $lightness: 84%);
+    // color: lighten(vars.$primary-dark, 65);
     color: rgba(0, 0, 0, 0.3);
   }
   .schedule__programDate--blank.schedule__programDate--ONC,
   .schedule__programDate--otherCamp.schedule__programDate--ONC {
-    background-color: lighten(rgb(122, 251, 126), 20);
+    background-color: color.scale(rgb(122, 251, 126), $lightness: 20%);
   }
   .schedule__programDate--secondary.schedule__programDate--ONC {
-    background-color: lighten(rgb(122, 251, 126), 24);
+    background-color: color.scale(rgb(122, 251, 126), $lightness: 24%);
     // color: darken(rgb(122, 251, 126), 5);
     color: rgba(0, 0, 0, 0.3);
   }
 
   .schedule__program {
-    background: $primary-dark;
-    color: $primary-white;
-    border-color: lighten($primary-dark, 10);
+    background: vars.$primary-dark;
+    color: vars.$primary-white;
+    border-color: color.scale(vars.$primary-dark, $lightness: 10%);
   }
 
   .schedule__date {
-    background: lighten($primary-dark, 70);
-    border-color: lighten($primary-dark, 75);
+    background: color.scale(vars.$primary-dark, $lightness: 70%);
+    border-color: color.scale(vars.$primary-dark, $lightness: 75%);
     // line-height: 12px;
   }
 
   .schedule__date--UDC {
-    background-color: lighten($primary-dark, 60);
+    background-color: color.scale(vars.$primary-dark, $lightness: 60%);
   }
   .schedule__dateColor--UDC {
     color: blue;
   }
   .schedule__date--ONC {
     background-color: rgb(122, 251, 126);
-    border-color: lighten(rgb(122, 251, 126), 20);
+    border-color: color.scale(rgb(122, 251, 126), $lightness: 20%);
   }
   .schedule__dateColor--ONC {
     color: darkgreen;
@@ -157,8 +158,8 @@
 }
 
 .scheduleFilterButton.scheduleFilterButton--selected {
-  background: $primary-dark;
-  color: $primary-white;
+  background: vars.$primary-dark;
+  color: vars.$primary-white;
 }
 
 .scheduleFilterButtonClear {
@@ -175,7 +176,7 @@
   color: rgba(0, 0, 0, 0.7);
 }
 
-@media screen and (max-width: $lg) {
+@media screen and (max-width: vars.$lg) {
   .schedule__container {
     font-size: 1.3rem;
   }
@@ -192,7 +193,7 @@
   // }
 }
 
-@media screen and (min-width: $lg) {
+@media screen and (min-width: vars.$lg) {
   .schedule__container {
     grid-template-columns: 140px auto;
   }

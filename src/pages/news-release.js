@@ -10,7 +10,7 @@ import Verse from 'components/Verse'
 
 import { PrimaryButton, CTAButton } from 'components/Button'
 
-import Img from 'gatsby-image'
+import Img from "gatsby-plugin-image"
 
 const frontmatter = {
     title: 'News Release',
@@ -144,46 +144,34 @@ const NavLink = ({ children, ...props }) => (
     <Link {...props} activeClassName='active'>{ children }</Link>
 )
 
-export const query = graphql`
-    query {
-        file(relativePath: { eq: "stock/chang-duong-Sj0iMtq_Z4w-unsplash.jpg" }) {
-            childImageSharp {
-				fluid(maxWidth: 1920 quality: 64) {
-					...GatsbyImageSharpFluid_withWebp
-				}
-			}
-        }
-
-        study: file(relativePath: { eq: "stock/ben-white-oUiTrFhnEkE-unsplash.jpg" }) {
-            childImageSharp {
-				fluid(maxWidth: 1920 quality: 64) {
-					...GatsbyImageSharpFluid_withWebp
-				}
-			}
-        }
-
-        outreach: file(relativePath: { eq: "stock/helena-lopes-PGnqT0rXWLs-unsplash.jpg" }) {
-            childImageSharp {
-				fluid(maxWidth: 1920 quality: 64) {
-					...GatsbyImageSharpFluid_withWebp
-				}
-			}
-        }
-
-        adventure: file(relativePath: { eq: "stock/joshua-earle-9idqIGrLuTE-unsplash.jpg" }) {
-            childImageSharp {
-				fluid(maxWidth: 1920 quality: 64) {
-					...GatsbyImageSharpFluid_withWebp
-				}
-			}
-        }
-
-        schedule: file(relativePath: { eq: "abp/schedule.JPG" }) {
-            childImageSharp {
-				fluid(maxWidth: 1920 quality: 64) {
-					...GatsbyImageSharpFluid_withWebp
-				}
-			}
-        }
+export const query = graphql`{
+  file(relativePath: {eq: "stock/chang-duong-Sj0iMtq_Z4w-unsplash.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(quality: 64, layout: FULL_WIDTH)
     }
-`
+  }
+  study: file(relativePath: {eq: "stock/ben-white-oUiTrFhnEkE-unsplash.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(quality: 64, layout: FULL_WIDTH)
+    }
+  }
+  outreach: file(
+    relativePath: {eq: "stock/helena-lopes-PGnqT0rXWLs-unsplash.jpg"}
+  ) {
+    childImageSharp {
+      gatsbyImageData(quality: 64, layout: FULL_WIDTH)
+    }
+  }
+  adventure: file(
+    relativePath: {eq: "stock/joshua-earle-9idqIGrLuTE-unsplash.jpg"}
+  ) {
+    childImageSharp {
+      gatsbyImageData(quality: 64, layout: FULL_WIDTH)
+    }
+  }
+  schedule: file(relativePath: {eq: "abp/schedule.JPG"}) {
+    childImageSharp {
+      gatsbyImageData(quality: 64, layout: FULL_WIDTH)
+    }
+  }
+}`

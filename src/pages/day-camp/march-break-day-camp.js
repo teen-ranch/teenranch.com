@@ -19,7 +19,7 @@ import {
 import { Time } from "components/Time"
 // import Grid from 'components/Grid'
 // import Sponsor from 'components/Sponsor'
-// import Img from 'gatsby-image'
+// import Img from "gatsby-plugin-image"
 
 const frontmatter = {
   title: "March Break Day Camp",
@@ -34,164 +34,158 @@ const pageData = {
 export default function Programs({ data }) {
   const { file, whamAll, activities } = data
 
-  return (
-    <>
-      <Heading
-        src={file.childImageSharp.fluid}
-        // src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/hockey14.jpg'
-        alt="Hockey player stopping with puck"
-        title={frontmatter.title}
-        subtitle={pageData.subTitle}
-        metaTitle={pageData.metaTitle || frontmatter.title}
-        metaDescription={pageData.metaDescription || pageData.subTitle}
-        keywords={pageData.keywords}
-      />
+  return <>
+    <Heading
+      src={file.childImageSharp.gatsbyImageData}
+      // src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/hockey14.jpg'
+      alt="Hockey player stopping with puck"
+      title={frontmatter.title}
+      subtitle={pageData.subTitle}
+      metaTitle={pageData.metaTitle || frontmatter.title}
+      metaDescription={pageData.metaDescription || pageData.subTitle}
+      keywords={pageData.keywords}
+    />
 
-      {/* <SubNav>
-                <Link to='top' activeClass='active' spy={true}>Overview</Link>
-                <Link to='dates' activeClass='active' spy={true}>Dates</Link>
-                <Link to='pricing' activeClass='active' spy={true}>Pricing</Link>
-            </SubNav> */}
+    {/* <SubNav>
+              <Link to='top' activeClass='active' spy={true}>Overview</Link>
+              <Link to='dates' activeClass='active' spy={true}>Dates</Link>
+              <Link to='pricing' activeClass='active' spy={true}>Pricing</Link>
+          </SubNav> */}
 
-      <div id="top" style={{ position: "absolute", marginTop: "-120px" }} />
+    <div id="top" style={{ position: "absolute", marginTop: "-120px" }} />
 
-      <Container type="body">
-        <h1>{frontmatter.title}</h1>
+    <Container type="body">
+      <h1>{frontmatter.title}</h1>
 
-        <p>
-          Treat your kids to an outdoor adventure only moments from home. Enjoy
-          flexibility with the option of registering them for a full week or
-          individual days and rest assured that they will be well-engaged as
-          they enjoy all kinds of active outdoor fun, games, and sports
-          alongside other campers and our committed staff team!
-        </p>
-        <p>Daily indoor Campfire Time with an emphasis on sharing God's love!</p>
-      </Container>
+      <p>
+        Treat your kids to an outdoor adventure only moments from home. Enjoy
+        flexibility with the option of registering them for a full week or
+        individual days and rest assured that they will be well-engaged as
+        they enjoy all kinds of active outdoor fun, games, and sports
+        alongside other campers and our committed staff team!
+      </p>
+      <p>Daily indoor Campfire Time with an emphasis on sharing God's love!</p>
+    </Container>
 
-      <Container type="body">
-        <h1>Available dates</h1>
+    <Container type="body">
+      <h1>Available dates</h1>
 
-        <ul>
-          <li>March 16-20, 2026</li>
-        </ul>
+      <ul>
+        <li>March 16-20, 2026</li>
+      </ul>
 
-        <p>
-          Drop off at <Time>0845</Time> and pick up at{" "}
-          <Time>1645</Time>
-        </p>
-      </Container>
+      <p>
+        Drop off at <Time>0845</Time> and pick up at{" "}
+        <Time>1645</Time>
+      </p>
+    </Container>
 
-      <div id="pricing" style={{ position: "absolute", marginTop: "-180px" }} />
+    <div id="pricing" style={{ position: "absolute", marginTop: "-180px" }} />
 
 
-      <Container type="body">
-        <h1>Pricing</h1>
-      
-        <PriceContainer>
-          <Price
-             title={ 
-               <> 
-                Day camp
-                <br />
-                (Classic)
-              </>
-             } 
-             subTitle={`Individual day`} 
-             who="Kids ages 5-12" 
-             price={93} 
-             term="day" 
-             includes={dayCampBulletsClassic} 
-           > 
-             <CTAButton href="https://register.trmanager.com"> 
-               Register now 
-             </CTAButton> 
-           </Price> 
-           <Price 
-             title={ 
-               <> 
-                 Day camp 
-                 <br /> 
-                 (Classic) 
-               </> 
-             } 
-             subTitle={ 
-               <> 
-                 Bundle 
-               </> 
-             } 
-             who="Kids ages 5-12" 
-             price={420} 
-             term="week" 
-             includes={dayCampBulletsClassic} 
-           > 
-             <CTAButton href="https://register.trmanager.com"> 
-               Register now 
-             </CTAButton> 
-           </Price> 
-      
-           <Price 
-             title={ 
-               <> 
-                 Day camp 
-                 <br /> 
-                 (Hockey) 
-               </> 
-             } 
-             subTitle={`Individual day`} 
-             who="Kids ages 5-12" 
-             price={125} 
-             term="day" 
-             includes={dayCampBulletsHockey} 
-           > 
-             <CTAButton href="https://register.trmanager.com"> 
-               Register now 
-             </CTAButton> 
-           </Price> 
-           <Price 
-             title={ 
-               <> 
-                 Day camp 
-                 <br /> 
-                 (Hockey) 
-               </> 
-             } 
-             subTitle={ 
-               <> 
-                 Bundle
-               </> 
-             } 
-             who="Kids ages 5-12" 
-             price={575} 
-             term="week" 
-             includes={dayCampBulletsHockey} 
-           > 
-             <CTAButton href="https://register.trmanager.com"> 
-               Register now 
-             </CTAButton> 
-           </Price> 
-         </PriceContainer> 
-       </Container> 
-      
-       <Container> 
-         <p>* Weather permitting</p> 
-         {/* <p>** Ice skating not available on January 28, 2022</p> */} 
-       </Container> 
-    </>
-  )
+    <Container type="body">
+      <h1>Pricing</h1>
+    
+      <PriceContainer>
+        <Price
+           title={ 
+             <> 
+              Day camp
+              <br />
+              (Classic)
+            </>
+           } 
+           subTitle={`Individual day`} 
+           who="Kids ages 5-12" 
+           price={93} 
+           term="day" 
+           includes={dayCampBulletsClassic} 
+         > 
+           <CTAButton href="https://register.trmanager.com"> 
+             Register now 
+           </CTAButton> 
+         </Price> 
+         <Price 
+           title={ 
+             <> 
+               Day camp 
+               <br /> 
+               (Classic) 
+             </> 
+           } 
+           subTitle={ 
+             <> 
+               Bundle 
+             </> 
+           } 
+           who="Kids ages 5-12" 
+           price={420} 
+           term="week" 
+           includes={dayCampBulletsClassic} 
+         > 
+           <CTAButton href="https://register.trmanager.com"> 
+             Register now 
+           </CTAButton> 
+         </Price> 
+    
+         <Price 
+           title={ 
+             <> 
+               Day camp 
+               <br /> 
+               (Hockey) 
+             </> 
+           } 
+           subTitle={`Individual day`} 
+           who="Kids ages 5-12" 
+           price={125} 
+           term="day" 
+           includes={dayCampBulletsHockey} 
+         > 
+           <CTAButton href="https://register.trmanager.com"> 
+             Register now 
+           </CTAButton> 
+         </Price> 
+         <Price 
+           title={ 
+             <> 
+               Day camp 
+               <br /> 
+               (Hockey) 
+             </> 
+           } 
+           subTitle={ 
+             <> 
+               Bundle
+             </> 
+           } 
+           who="Kids ages 5-12" 
+           price={575} 
+           term="week" 
+           includes={dayCampBulletsHockey} 
+         > 
+           <CTAButton href="https://register.trmanager.com"> 
+             Register now 
+           </CTAButton> 
+         </Price> 
+       </PriceContainer> 
+     </Container> 
+    
+     <Container> 
+       <p>* Weather permitting</p> 
+       {/* <p>** Ice skating not available on January 28, 2022</p> */} 
+     </Container> 
+  </>;
 }
 
 // const NavLink = ({ children, ...props }) => (
 //     <Link {...props} activeClassName='active'>{ children }</Link>
 // )
 
-export const query = graphql`
-  query {
-    file(relativePath: { eq: "events/winterTobogganing.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1920, quality: 64) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
+export const query = graphql`{
+  file(relativePath: {eq: "events/winterTobogganing.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(quality: 64, layout: FULL_WIDTH)
     }
   }
-`
+}`

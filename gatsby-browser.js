@@ -4,7 +4,7 @@ import TueriProvider from 'components/Tueri'
 import Header from 'components/Header'
 import Footer from 'components/Footer'
 
-import 'styles/app.scss'
+import './src/styles/app.scss'
 
 export const wrapRootElement = ({ element }) => (
     <TueriProvider 

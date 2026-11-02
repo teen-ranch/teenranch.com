@@ -1,4 +1,4 @@
-@import "styles/vars";
+@use "../../styles/vars" as vars;
 
 .programContainer {
   width: 100%;
@@ -27,7 +27,7 @@
   }
   .programNameSmall {
     font-size: 2rem;
-    color: $primary-dark;
+    color: vars.$primary-dark;
     margin-bottom: 1.5rem;
   }
 
