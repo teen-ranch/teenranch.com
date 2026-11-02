@@ -8,9 +8,9 @@ import { Router } from 'components/Router'
 
 import 'styles/app.scss'
 import Loader from 'components/Loader'
-import Header from 'components/Header'
+// import Header from 'components/Header'
 import TueriProvider from 'components/Tueri'
-import CovidBanner from 'components/CovidBanner'
+// import CovidBanner from 'components/CovidBanner'
 import Container from 'components/Container'
 
 // Any routes that start with 'dynamic' will be treated as non-static routes
@@ -23,8 +23,9 @@ function App() {
       <noscript>Please enable JavaScript to view this page.</noscript>
       <TueriProvider replacements={[['https://teenranch.nyc3.digitaloceanspaces.com/website/assets/', 'https://cdn.tueri.io/68719476739/assets/']]}>
         {/* <CovidBanner /> */}
-        <Header />
+        {/* <Header /> */}
         <React.Suspense fallback={<Container type='body' constrain={ false } style={{ flexGrow: 1, display: 'flex', flexDirection: 'column' }}><Loader /></Container>}>
+          <div id="tet---------------------------"></div>
           <Router>
             {/* <Dynamic path="dynamic" /> */}
             <Routes path="*" />
