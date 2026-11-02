@@ -1,4 +1,4 @@
-@import 'styles/vars';
+@use "../../styles/vars" as vars;
 
 .hamburgerMenu {
     width: 44px;
@@ -33,7 +33,7 @@
 .hamburgerInner::after {
     width: 18px;
     height: 2px;
-    background: $primary-dark;
+    background: vars.$primary-dark;
     position: absolute;
     left: 3px;
 

@@ -1,13 +1,14 @@
-@import "styles/vars";
+@use "styles/vars" as vars;
+@use "sass:color";
 
 .button {
   outline: none;
   appearance: none;
   border: none;
-  background: $primary-light;
+  background: vars.$primary-light;
   padding: 1.2rem 2rem;
-  border-radius: $border-radius;
-  color: $primary-white;
+  border-radius: vars.$border-radius;
+  color: vars.$primary-white;
   letter-spacing: 0.02em;
   margin: 1rem 0;
   display: inline-block;
@@ -15,8 +16,8 @@
 }
 
 .button:hover {
-  background: darken($primary-light, 10);
-  color: $primary-white;
+  background: color.scale(vars.$primary-light, $lightness:-10%);
+  color: vars.$primary-white;
 }
 
 .buttonContainer {
@@ -32,7 +33,7 @@
 
 .button.secondary {
   background: rgba(0, 0, 0, 0.2);
-  color: $primary-dark;
+  color: vars.$primary-dark;
 }
 .button.secondary:hover {
   background: rgba(0, 0, 0, 0.3);
@@ -48,5 +49,5 @@
 }
 
 .button.pdf:hover {
-  background: darken(rgb(235, 16, 0), 10);
+  background: color.scale(rgb(235, 16, 0), $lightness: -10%);
 }

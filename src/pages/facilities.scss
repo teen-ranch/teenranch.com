@@ -1,4 +1,4 @@
-@import "styles/vars";
+@use "../styles/vars" as vars;
 .facilityWrapper {
   display: grid;
   gap: 2rem;
@@ -6,7 +6,7 @@
     border-radius: 4px;
   }
 }
-@media screen and (min-width: $lg) {
+@media screen and (min-width: vars.$lg) {
   .facilityWrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

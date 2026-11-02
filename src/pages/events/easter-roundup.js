@@ -15,13 +15,13 @@ import Grid from "components/Grid";
 
 // import { PrimaryButton, CTAButton } from 'components/Button'
 
-// import Img from 'gatsby-image'
+// import Img from "gatsby-plugin-image"
 
 import Event from "components/Event";
 // import Card from 'components/Card'
 
 import { DateTime } from "luxon";
-import Img from "gatsby-image";
+import Img from "gatsby-plugin-image";
 import { Time } from "components/Time";
 
 const frontmatter = {
@@ -54,160 +54,154 @@ export default function Default({ data }) {
 	//   ? "https://buy.stripe.com/9AQ5nO6lqa1i98scMN"
 	//   : "https://buy.stripe.com/test_eVabKh7DidOO8dW7st"
 
-	return (
-		<>
-			<Heading
-				src={data.file.childImageSharp.fluid}
-				alt={frontmatter.title}
-				title={frontmatter.title}
-				subtitle={pageData.subTitle}
-				metaTitle={pageData.metaTitle || frontmatter.title}
-				metaDescription={pageData.metaDescription || pageData.subTitle}
-				keywords={pageData.keywords}
-			/>
-
-			<Container>
-				<div style={{ display: "flex", justifyContent: "center" }}>
-					<div
-						style={{
-							border: "1px solid blue",
-							borderRadius: "12px",
-							background: "lightblue",
-							padding: "2rem",
-							fontStyle: "italic",
-						}}
-					>
-						Easter event updated!
-					</div>
-					{/* <div
-						style={{
-							border: "1px solid #ddd",
-							borderRadius: "12px",
-							background: "#efefef",
-							padding: "2rem",
-							fontStyle: "italic",
-						}}
-					>
-						Camp impacts lives. Proceeds from this event help sponsor kids in
-						need.
-					</div> */}
-				</div>
-				<h1>{frontmatter.title}</h1>
-				<p>Join us this Easter at Teen Ranch for a special <strong>FREE Family Skate</strong>! Bring the whole family out for a fun-filled time on the ice as we celebrate the season together. Whether you're an experienced skater or just starting out, this is a great opportunity to enjoy laughter, community, and active family fun—completely free of charge. Come make lasting memories with us this Easter at Teen Ranch!
-				</p>
-				{/* <p>
-					Teen Ranch's much-loved Easter Roundup is back! Mark your calendars
-					for this spring event celebrating the true meaning of Easter and
-					providing springtime fun for the whole family. Roundup your family and
-					friends and join us for a full day of activities including egg hunts,
-					petting zoo, pony and trail rides, giant swing, indoor ice skating,
-					hayrides, and more!
-				</p>
-				<p>
-					Our beautiful location in the rolling Caledon hills provides the
-					perfect backdrop for this outdoor day bringing the community together.
-				</p> */}
-				<h2>When is it?</h2>
-				Saturday, April 4, 2026: <Time>1300</Time> - <Time>1430</Time>
-				<br />
-				<br />
-				{/* <strong>Indoor Ice Skating:</strong> <Time>1300</Time> -{" "}
-				<Time>1500</Time>
-				<br />
-				<strong>Giant Egg Hunt Times:</strong> <Time>1315</Time>,{" "}
-				<Time>1400</Time>, <Time>1500</Time> & <Time>1600</Time>
-				<h2>Who is it for?</h2>
-				The whole family is invited! Activities for all ages. */}
-				<h2>Cost</h2>
-				{/* <strong>$50 (cash) per vehicle</strong> */}
-				<strong>FREE</strong>
-				{/* <p>
-					<strong>Entry includes:</strong> Egg Hunts, Petting Farm, Climbing
-					Wall, Hay Rides, Face Painting, Games, Crafts, Balloons, Ice Skating,
-					Treats.
-				</p>
-				<p>
-					<strong>Add-ons include:</strong>
-					(cash or card)
-				</p>
-				<ul>
-					<li>Giant Swing $10 </li>
-					<li>Trail Rides $20 (ten years and older)</li>
-					<li>Pony Rides $5 (9 years and younger)</li>
-					<li>Concessions</li>
-				</ul>
-				<p>
-					This is a rain or shine event. Check back here or on Teen Ranch social
-					media for any inclement weather notices or closures.
-				</p> */}
-				{/* <div style={{ color: "red", fontSize: "2em" }}>
-          Family day is full, we are no longer accepting registrations. Thank
-          you!
-        </div> */}
-				{/* <p>
-          Less than an hour from Toronto and located in the beautiful Caledon
-          Hills, Teen Ranch is thrilled to offer you winter outdoor activities
-          to help celebrate your family, Enjoy playing, laughing, and making
-          lasting memories together.
-        </p>
-        <h2>When is it?</h2>
-        Monday, February 20, 2023: 10:00am - 1:00pm
-        <h2>Who is it for?</h2>
-        Open to all Ages
-        <h2>Activities include:</h2>
-        <ul>
-          <li>
-            Skating - bring your own skates; helmets are required for ages 8 &
-            under; helmets are encouraged for all ages
-          </li>
-          <li>Hayrides</li>
-          <li>Broomball</li>
-          <li>Tubing - use our tubes or bring your own</li>
-          <li>Snowshoeing - bring yours or use ours (adult sizes only)</li>
-          <li>Cross-country skiing - bring your own equipment</li>
-          <li>Hiking</li>
-          <li>Snow fort building</li>
-          <li>Campfire: warm up with hot chocolate & marshmallow roast</li>
-        </ul>
-        <span style={{ fontStyle: "italic" }}>
-          Snow activities and outdoor skating weather permitting
-        </span>
-        <h2>Pre-registration required</h2>
-        <ul>
-          <li>$80 +HST: up to 5 family members</li>
-          <li>Additional family members: $16/person</li>
-          <li>Children age two and under are free</li>
-        </ul>
-        <PrimaryButton href={stripePaymentLink}>Pre-register now</PrimaryButton> */}
-			</Container>
-
-			{/* <Container>
-        <h1>Upcoming events</h1>
-        <Event
-          title={frontmatter.title}
-          startDate={"2022-02-21"}
-          startTime="10:00:00"
-          endDate={"2022-02-21"}
-          endTime="13:00:00"
-          price={0}
-          description={eventData.description}
-          venue={eventData.venue}
-          images={[data.file.childImageSharp.fluid.src]}
-          status={"SCHEDULED"}
+	return <>
+        <Heading
+            src={data.file.childImageSharp.gatsbyImageData}
+            alt={frontmatter.title}
+            title={frontmatter.title}
+            subtitle={pageData.subTitle}
+            metaTitle={pageData.metaTitle || frontmatter.title}
+            metaDescription={pageData.metaDescription || pageData.subTitle}
+            keywords={pageData.keywords}
         />
-      </Container> */}
-		</>
-	);
+
+        <Container>
+            <div style={{ display: "flex", justifyContent: "center" }}>
+                <div
+                    style={{
+                        border: "1px solid blue",
+                        borderRadius: "12px",
+                        background: "lightblue",
+                        padding: "2rem",
+                        fontStyle: "italic",
+                    }}
+                >
+                    Easter event updated!
+                </div>
+                {/* <div
+                    style={{
+                        border: "1px solid #ddd",
+                        borderRadius: "12px",
+                        background: "#efefef",
+                        padding: "2rem",
+                        fontStyle: "italic",
+                    }}
+                >
+                    Camp impacts lives. Proceeds from this event help sponsor kids in
+                    need.
+                </div> */}
+            </div>
+            <h1>{frontmatter.title}</h1>
+            <p>Join us this Easter at Teen Ranch for a special <strong>FREE Family Skate</strong>! Bring the whole family out for a fun-filled time on the ice as we celebrate the season together. Whether you're an experienced skater or just starting out, this is a great opportunity to enjoy laughter, community, and active family fun—completely free of charge. Come make lasting memories with us this Easter at Teen Ranch!
+            </p>
+            {/* <p>
+                Teen Ranch's much-loved Easter Roundup is back! Mark your calendars
+                for this spring event celebrating the true meaning of Easter and
+                providing springtime fun for the whole family. Roundup your family and
+                friends and join us for a full day of activities including egg hunts,
+                petting zoo, pony and trail rides, giant swing, indoor ice skating,
+                hayrides, and more!
+            </p>
+            <p>
+                Our beautiful location in the rolling Caledon hills provides the
+                perfect backdrop for this outdoor day bringing the community together.
+            </p> */}
+            <h2>When is it?</h2>
+            Saturday, April 4, 2026: <Time>1300</Time> - <Time>1430</Time>
+            <br />
+            <br />
+            {/* <strong>Indoor Ice Skating:</strong> <Time>1300</Time> -{" "}
+            <Time>1500</Time>
+            <br />
+            <strong>Giant Egg Hunt Times:</strong> <Time>1315</Time>,{" "}
+            <Time>1400</Time>, <Time>1500</Time> & <Time>1600</Time>
+            <h2>Who is it for?</h2>
+            The whole family is invited! Activities for all ages. */}
+            <h2>Cost</h2>
+            {/* <strong>$50 (cash) per vehicle</strong> */}
+            <strong>FREE</strong>
+            {/* <p>
+                <strong>Entry includes:</strong> Egg Hunts, Petting Farm, Climbing
+                Wall, Hay Rides, Face Painting, Games, Crafts, Balloons, Ice Skating,
+                Treats.
+            </p>
+            <p>
+                <strong>Add-ons include:</strong>
+                (cash or card)
+            </p>
+            <ul>
+                <li>Giant Swing $10 </li>
+                <li>Trail Rides $20 (ten years and older)</li>
+                <li>Pony Rides $5 (9 years and younger)</li>
+                <li>Concessions</li>
+            </ul>
+            <p>
+                This is a rain or shine event. Check back here or on Teen Ranch social
+                media for any inclement weather notices or closures.
+            </p> */}
+            {/* <div style={{ color: "red", fontSize: "2em" }}>
+      Family day is full, we are no longer accepting registrations. Thank
+      you!
+    </div> */}
+            {/* <p>
+      Less than an hour from Toronto and located in the beautiful Caledon
+      Hills, Teen Ranch is thrilled to offer you winter outdoor activities
+      to help celebrate your family, Enjoy playing, laughing, and making
+      lasting memories together.
+    </p>
+    <h2>When is it?</h2>
+    Monday, February 20, 2023: 10:00am - 1:00pm
+    <h2>Who is it for?</h2>
+    Open to all Ages
+    <h2>Activities include:</h2>
+    <ul>
+      <li>
+        Skating - bring your own skates; helmets are required for ages 8 &
+        under; helmets are encouraged for all ages
+      </li>
+      <li>Hayrides</li>
+      <li>Broomball</li>
+      <li>Tubing - use our tubes or bring your own</li>
+      <li>Snowshoeing - bring yours or use ours (adult sizes only)</li>
+      <li>Cross-country skiing - bring your own equipment</li>
+      <li>Hiking</li>
+      <li>Snow fort building</li>
+      <li>Campfire: warm up with hot chocolate & marshmallow roast</li>
+    </ul>
+    <span style={{ fontStyle: "italic" }}>
+      Snow activities and outdoor skating weather permitting
+    </span>
+    <h2>Pre-registration required</h2>
+    <ul>
+      <li>$80 +HST: up to 5 family members</li>
+      <li>Additional family members: $16/person</li>
+      <li>Children age two and under are free</li>
+    </ul>
+    <PrimaryButton href={stripePaymentLink}>Pre-register now</PrimaryButton> */}
+        </Container>
+
+        {/* <Container>
+    <h1>Upcoming events</h1>
+    <Event
+      title={frontmatter.title}
+      startDate={"2022-02-21"}
+      startTime="10:00:00"
+      endDate={"2022-02-21"}
+      endTime="13:00:00"
+      price={0}
+      description={eventData.description}
+      venue={eventData.venue}
+      images={[data.file.childImageSharp.fluid.src]}
+      status={"SCHEDULED"}
+    />
+  </Container> */}
+    </>;
 }
 
-export const query = graphql`
-  query {
-    file(relativePath: { eq: "events/pisit-heng-ci1F55HaVWQ-unsplash.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1920, quality: 64) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
+export const query = graphql`{
+  file(relativePath: {eq: "events/pisit-heng-ci1F55HaVWQ-unsplash.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(quality: 64, layout: FULL_WIDTH)
     }
   }
-`;
+}`;

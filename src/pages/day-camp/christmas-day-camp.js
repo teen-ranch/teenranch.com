@@ -19,7 +19,7 @@ import {
 import { FormatTime, Time } from "components/Time"
 // import Grid from 'components/Grid'
 // import Sponsor from 'components/Sponsor'
-// import Img from 'gatsby-image'
+// import Img from "gatsby-plugin-image"
 
 const frontmatter = {
   title: "Christmas day camp",
@@ -35,165 +35,159 @@ const pageData = {
 export default function Programs({ data }) {
   const { file } = data
 
-  return (
-    <>
-      <Heading
-        src={file.childImageSharp.fluid}
-        // src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/hockey14.jpg'
-        alt="Hockey player stopping with puck"
-        title={frontmatter.title}
-        subtitle={pageData.subTitle}
-        metaTitle={pageData.metaTitle || frontmatter.title}
-        metaDescription={pageData.metaDescription || pageData.subTitle}
-        keywords={pageData.keywords}
-      />
+  return <>
+    <Heading
+      src={file.childImageSharp.gatsbyImageData}
+      // src='https://teenranch.nyc3.digitaloceanspaces.com/website/assets/hockey14.jpg'
+      alt="Hockey player stopping with puck"
+      title={frontmatter.title}
+      subtitle={pageData.subTitle}
+      metaTitle={pageData.metaTitle || frontmatter.title}
+      metaDescription={pageData.metaDescription || pageData.subTitle}
+      keywords={pageData.keywords}
+    />
 
-      {/* <SubNav>
-                <Link to='top' activeClass='active' spy={true}>Overview</Link>
-                <Link to='dates' activeClass='active' spy={true}>Dates</Link>
-                <Link to='pricing' activeClass='active' spy={true}>Pricing</Link>
-            </SubNav> */}
+    {/* <SubNav>
+              <Link to='top' activeClass='active' spy={true}>Overview</Link>
+              <Link to='dates' activeClass='active' spy={true}>Dates</Link>
+              <Link to='pricing' activeClass='active' spy={true}>Pricing</Link>
+          </SubNav> */}
 
-      <div id="top" style={{ position: "absolute", marginTop: "-120px" }} />
+    <div id="top" style={{ position: "absolute", marginTop: "-120px" }} />
 
-      <Container type="body">
-        <h1>Christmas day camp</h1>
+    <Container type="body">
+      <h1>Christmas day camp</h1>
 
-        <p>
-        The excitement of the season is multiplied with Teen Ranch Christmas Winter Break Day Camps! Our popular day camps offer outdoor fun and activity as well as indoor festivities to celebrate winter and the magic of the Christmas season! Treat your kids to a memorable day or bundle package all four days at a daily savings!
-        </p>
-        <p>
-        Daily Campfire Time with an emphasis on sharing God's love!
-        </p>
-      </Container>
+      <p>
+      The excitement of the season is multiplied with Teen Ranch Christmas Winter Break Day Camps! Our popular day camps offer outdoor fun and activity as well as indoor festivities to celebrate winter and the magic of the Christmas season! Treat your kids to a memorable day or bundle package all four days at a daily savings!
+      </p>
+      <p>
+      Daily Campfire Time with an emphasis on sharing God's love!
+      </p>
+    </Container>
 
-      <Container type="body">
-        <h1>Available dates</h1>
+    <Container type="body">
+      <h1>Available dates</h1>
 
-        <ul>
-          <li>Monday, December 22, 2025</li>
-          <li>Tuesday, December 23, 2025</li>
-          <li>Monday, December 29, 2025</li>
-          <li>Tuesday, December 30, 2025</li>
-          <li>Wednesday, December 31, 2025</li>
-        </ul>
+      <ul>
+        <li>Monday, December 22, 2025</li>
+        <li>Tuesday, December 23, 2025</li>
+        <li>Monday, December 29, 2025</li>
+        <li>Tuesday, December 30, 2025</li>
+        <li>Wednesday, December 31, 2025</li>
+      </ul>
 
-        <p>
-          Drop off <Time>0845</Time> and pick up
-          at <Time>1645</Time>
-        </p>
-      </Container>
+      <p>
+        Drop off <Time>0845</Time> and pick up
+        at <Time>1645</Time>
+      </p>
+    </Container>
 
-      <div id="pricing" style={{ position: "absolute", marginTop: "-180px" }} />
+    <div id="pricing" style={{ position: "absolute", marginTop: "-180px" }} />
 
-      <Container type="body">
-        <h1>Pricing</h1>
-        <PriceContainer>
-          <Price
-            title={
-              <>
-                Day camp
-                <br />
-                (Classic)
-              </>
-            }
-            subTitle={`Individual day`}
-            who="Kids ages 5-12"
-            price={89}
-            term="day"
-            includes={dayCampBulletsClassic}
-          >
-            <CTAButton href="https://register.trmanager.com">
-              Register now
-            </CTAButton>
-          </Price>
-      
-          <Price
-            title={
-              <>
-                Day camp
-                <br />
-                (Classic)
-              </>
-            }
-            subTitle={
-              <>
-                Bundle
-              </>
-            }
-            who="Kids ages 5-12"
-            price={395}
-            term="5 days"
-            includes={dayCampBulletsClassic}
-          >
-            <CTAButton href="https://register.trmanager.com">
-              Register now
-            </CTAButton>
-          </Price>
-      
-          <Price
-            title={
-              <>
-                Day camp
-                <br />
-                (Hockey)
-              </>
-            }
-            subTitle={`Individual day`}
-            who="Kids ages 5-12"
-            price={120}
-            term="day"
-            includes={dayCampBulletsHockey}
-          >
-            <CTAButton href="https://register.trmanager.com">
-              Register now
-            </CTAButton>
-          </Price>
-      
-          <Price
-            title={
-              <>
-                Day camp
-                <br />
-                (Hockey)
-              </>
-            }
-            subTitle={
-              <>
-                Bundle
-              </>
-            }
-            who="Kids ages 5-12"
-            price={545}
-            term="5 days"
-            includes={dayCampBulletsHockey}
-          >
-            <CTAButton href="https://register.trmanager.com">
-              Register now
-            </CTAButton>
-          </Price>
-        </PriceContainer>
-      </Container>
-      
-      <Container>
-        <p>* Weather permitting</p>
-      </Container>
-    </>
-  )
+    <Container type="body">
+      <h1>Pricing</h1>
+      <PriceContainer>
+        <Price
+          title={
+            <>
+              Day camp
+              <br />
+              (Classic)
+            </>
+          }
+          subTitle={`Individual day`}
+          who="Kids ages 5-12"
+          price={89}
+          term="day"
+          includes={dayCampBulletsClassic}
+        >
+          <CTAButton href="https://register.trmanager.com">
+            Register now
+          </CTAButton>
+        </Price>
+    
+        <Price
+          title={
+            <>
+              Day camp
+              <br />
+              (Classic)
+            </>
+          }
+          subTitle={
+            <>
+              Bundle
+            </>
+          }
+          who="Kids ages 5-12"
+          price={395}
+          term="5 days"
+          includes={dayCampBulletsClassic}
+        >
+          <CTAButton href="https://register.trmanager.com">
+            Register now
+          </CTAButton>
+        </Price>
+    
+        <Price
+          title={
+            <>
+              Day camp
+              <br />
+              (Hockey)
+            </>
+          }
+          subTitle={`Individual day`}
+          who="Kids ages 5-12"
+          price={120}
+          term="day"
+          includes={dayCampBulletsHockey}
+        >
+          <CTAButton href="https://register.trmanager.com">
+            Register now
+          </CTAButton>
+        </Price>
+    
+        <Price
+          title={
+            <>
+              Day camp
+              <br />
+              (Hockey)
+            </>
+          }
+          subTitle={
+            <>
+              Bundle
+            </>
+          }
+          who="Kids ages 5-12"
+          price={545}
+          term="5 days"
+          includes={dayCampBulletsHockey}
+        >
+          <CTAButton href="https://register.trmanager.com">
+            Register now
+          </CTAButton>
+        </Price>
+      </PriceContainer>
+    </Container>
+    
+    <Container>
+      <p>* Weather permitting</p>
+    </Container>
+  </>;
 }
 
 // const NavLink = ({ children, ...props }) => (
 //     <Link {...props} activeClassName='active'>{ children }</Link>
 // )
 
-export const query = graphql`
-  query {
-    file(relativePath: { eq: "events/winterTobogganing.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1920, quality: 64) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
+export const query = graphql`{
+  file(relativePath: {eq: "events/winterTobogganing.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(quality: 64, layout: FULL_WIDTH)
     }
   }
-`
+}`

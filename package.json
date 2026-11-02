@@ -1,7 +1,7 @@
 {
   "name": "teen-ranch-website",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "Teen Ranch website",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
@@ -11,40 +11,43 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests!\" && exit 1"
   },
   "dependencies": {
     "@iconify/react": "^4.1.1",
     "currency.js": "^2.0.4",
-    "gatsby": "^2.28.1",
-    "gatsby-image": "^3.11.0",
-    "gatsby-plugin-canonical-urls": "^2.6.0",
+    "gatsby": "^5.16.1",
+    "gatsby-plugin-canonical-urls": "^5.16.0",
     "gatsby-plugin-exclude": "^1.0.2",
-    "gatsby-plugin-manifest": "^2.8.0",
-    "gatsby-plugin-netlify": "^2.7.0",
-    "gatsby-plugin-offline": "^3.6.0",
+    "gatsby-plugin-image": "^3.16.0",
+    "gatsby-plugin-manifest": "^5.16.0",
+    "gatsby-plugin-netlify": "^5.1.1",
+    "gatsby-plugin-offline": "^6.16.0",
     "gatsby-plugin-plausible": "^0.0.7",
-    "gatsby-plugin-react-helmet": "^3.6.0",
+    "gatsby-plugin-react-helmet": "^6.16.0",
     "gatsby-plugin-remove-serviceworker": "^1.0.0",
     "gatsby-plugin-resolve-src": "^2.1.0",
-    "gatsby-plugin-sass": "^2.7.0",
+    "gatsby-plugin-sass": "^6.16.0",
     "gatsby-plugin-sharp": "^5.16.0",
-    "gatsby-plugin-sitemap": "^2.8.0",
-    "gatsby-source-filesystem": "^2.7.0",
-    "gatsby-transformer-javascript-frontmatter": "^2.6.0",
-    "gatsby-transformer-sharp": "^2.8.0",
-    "iframe-resizer-react": "^1.1.0",
-    "luxon": "^3.0.4",
-    "node-sass": "^4.14.1",
-    "react": "^17.0.1",
-    "react-calendly": "^2.2.2",
+    "gatsby-plugin-sitemap": "^6.16.0",
+    "gatsby-source-filesystem": "^5.16.0",
+    "gatsby-transformer-javascript-frontmatter": "^5.16.0",
+    "gatsby-transformer-sharp": "^5.16.0",
+    "iframe-resizer-react": "^1.1.1",
+    "luxon": "^1.28.1",
+    "prop-types": "^15.8.1",
+    "react": "^18.3.1",
+    "react-calendly": "^2.2.3",
     "react-device-detect": "^1.14.0",
-    "react-dom": "^17.0.1",
+    "react-dom": "^18.3.1",
     "react-helmet": "^6.1.0",
-    "react-scroll": "^1.8.1"
+    "react-scroll": "^1.9.3",
+    "sass": "^1.89.0",
+    "sharp": "^0.35.5"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "devDependencies": {
+    "gatsby-plugin-force-trailing-slashes": "^1.0.6",
+    "prettier": "^2.8.8"
   },
   "browserslist": {
     "production": [
@@ -58,18 +61,7 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "gatsby-plugin-force-trailing-slashes": "^1.0.4",
-    "prettier": "^2.7.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
-  "volta": {
-    "node": "14.21.3"
+  "engines": {
+    "node": ">=22.10.0 <23"
   }
 }

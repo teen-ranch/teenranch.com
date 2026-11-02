@@ -1,7 +1,7 @@
 import React from "react"
 
 import { Img } from "components/Tueri"
-import GatsbyImg from "gatsby-image"
+import {GatsbyImage, getImage} from "gatsby-plugin-image"
 import Grid from "components/Grid"
 
 import "./program.scss"
@@ -16,11 +16,12 @@ export default function Program({
   imageOptions,
   small = false,
 }) {
-  if (small)
+  // return null
+  if (small) {
     return (
       <div className="programContainerSmall">
         <div className="programImageSmall">
-          <GatsbyImg fluid={src} alt={name} aspectRatio="16:9" />
+          <GatsbyImage image={src} alt={name} aspectRatio="16:9" />
         </div>
         <div className="programBodySmall">
           <div className="programNameSmall">{name}</div>
@@ -29,14 +30,16 @@ export default function Program({
         </div>
       </div>
     )
+  }
 
+  // return null
   return (
     <div className={`programContainer ${swap ? "programContainer--swap" : ""}`}>
       <div className="programImage">
         {typeof src === "string" ? (
           <Img src={src} alt={alt || name} options={imageOptions} />
         ) : (
-          <GatsbyImg fluid={src} alt={alt || name} />
+          <GatsbyImage image={src} alt={alt || name}  />
         )}
       </div>
       <div className="programBody">

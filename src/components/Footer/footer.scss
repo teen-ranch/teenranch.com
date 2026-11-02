@@ -1,10 +1,11 @@
-@import 'styles/vars';
+@use "../../styles/vars" as vars;
+@use "sass:color";
 
 footer {
     padding: 8rem 0;
-    color: $primary-white;
+    color: vars.$primary-white;
     font-size: 1.2rem;
-    background: $primary-dark;
+    background: vars.$primary-dark;
 
     .footerTitle {
         text-transform: uppercase;
@@ -39,7 +40,7 @@ footer {
             padding-bottom: 1.5rem;
             a {
                 font-size: 1.4rem;
-                color: lighten($primary-light, 20);
+                color: color.scale(vars.$primary-light, $lightness: 20%);
             }
         }
 
@@ -58,7 +59,7 @@ footer {
    
 }
 
-@media screen and (min-width: $lg) {
+@media screen and (min-width: vars.$lg) {
 
     .footer__grid {
         display: grid;

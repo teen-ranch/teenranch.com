@@ -1,4 +1,4 @@
-@import 'styles/vars';
+@use "../../styles/vars" as vars;
 
 .container--quote {
     font-size: 1.8rem;
@@ -46,7 +46,7 @@
     height: 100px;
 }
 
-@media screen and (min-width: $md) {
+@media screen and (min-width: vars.$md) {
     .container--quote {
         font-size: 3rem;
         margin: 6rem;

@@ -1,5 +1,5 @@
 import React from 'react'
-import Img from 'gatsby-image'
+import { GatsbyImage } from "gatsby-plugin-image"
 
 import './coach.scss'
 
@@ -7,7 +7,7 @@ function Coach ({ src, name, title, achievements, description }) {
     return (
         <div className='coachContainer'>
             <div className='coachImage'>
-                <Img fluid={ src } alt={ name } />
+                <GatsbyImage image={ src } alt={ name } />
             </div>
             <h2 className='coach__name'>{ name }</h2>
             <h3 className='coach__title'>{ title }</h3>

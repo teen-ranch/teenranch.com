@@ -6,7 +6,7 @@ import { useLocation } from "@reach/router";
 import { Helmet } from "react-helmet";
 import { withOrientationChange } from "react-device-detect";
 
-import GatsbyImg from "gatsby-image";
+import {GatsbyImage} from "gatsby-plugin-image";
 import { Link } from "react-scroll";
 
 import "./heading.scss";
@@ -28,6 +28,7 @@ function Heading({
 }) {
 	const { pathname } = useLocation();
 
+	// return null
 	const pageTitle = metaTitle ? metaTitle : title;
 	const pageDescription = metaDescription ? metaDescription : subtitle;
 
@@ -111,7 +112,7 @@ function Heading({
 
 			<Container type="heading" constrain={false}>
 				<div className="imageContainer">
-					{src && <GatsbyImg fluid={src} alt={alt || pageTitle} />}
+					{src && <GatsbyImage image={src} alt={alt || pageTitle} />}
 				</div>
 				<div className={`overlayContainer ${lighten ? 'overlayContainerTransparency':''}`}>
 					<div className="overlay">

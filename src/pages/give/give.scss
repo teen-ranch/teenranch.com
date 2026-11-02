@@ -1,4 +1,4 @@
-@import 'styles/vars';
+@use "../../styles/vars" as vars;
 
 .donationOptionsContainer {
     
@@ -17,14 +17,14 @@
     h2, h3, h4 { text-align: center; }
     
     h3 {
-        color: $primary-dark;
+        color: vars.$primary-dark;
         margin: 0;
     }
     h2 {
-        color: $primary-light;
+        color: vars.$primary-light;
     }
     h4 {
-        color: $primary-red;
+        color: vars.$primary-red;
     }
 
     li {

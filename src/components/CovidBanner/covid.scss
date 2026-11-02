@@ -1,29 +1,30 @@
-@import 'styles/vars';
+@use "../../styles/vars" as vars;
+@use "sass:color";
 
 .covid {
     text-align: center;
-    color: lighten($primary-light, 20);
+    color: color.scale(vars.$primary-light, $lightness: 20%);
     p {
-        color: $primary-white;
+        color: vars.$primary-white;
     }
 }
 
 .container--covid {
     text-align: center;
-    background: $primary-dark;
-    color: $primary-white;
+    background: vars.$primary-dark;
+    color: vars.$primary-white;
     padding: 1rem 0;
     font-size: 1.4rem;
 
     a {
         display: inline-block;
         text-decoration: underline;
-        color: lighten($primary-light, 30);
+        color: color.scale(vars.$primary-light, $lightness: 30%);
         margin-top: 1rem;
     }
 
     a:hover {
-        color: $primary-white;
+        color: vars.$primary-white;
     }
 
 }

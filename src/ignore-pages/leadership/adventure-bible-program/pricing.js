@@ -25,109 +25,107 @@ const pageData = {
 }
 
 export default function Programs({ data }) {
-  return (
-    <>
-      <Heading
-        src={data.file.childImageSharp.fluid}
-        alt="Silhouette of people on a hill"
-        title={frontmatter.title}
-        subtitle={pageData.subTitle}
-        metaTitle={pageData.metaTitle || frontmatter.title}
-        metaDescription={pageData.metaDescription || pageData.subTitle}
-        keywords={pageData.keywords}
-      />
+  return <>
+    <Heading
+      src={data.file.childImageSharp.gatsbyImageData}
+      alt="Silhouette of people on a hill"
+      title={frontmatter.title}
+      subtitle={pageData.subTitle}
+      metaTitle={pageData.metaTitle || frontmatter.title}
+      metaDescription={pageData.metaDescription || pageData.subTitle}
+      keywords={pageData.keywords}
+    />
 
-      <SubNav>
-        <NavLink to={frontmatter.basePath}>Overview</NavLink>
-        {/* <NavLink to={ frontmatter.basePath + 'location/' }>Location</NavLink> */}
-        <NavLink to={frontmatter.basePath + "pricing/"}>Pricing</NavLink>
-      </SubNav>
+    <SubNav>
+      <NavLink to={frontmatter.basePath}>Overview</NavLink>
+      {/* <NavLink to={ frontmatter.basePath + 'location/' }>Location</NavLink> */}
+      <NavLink to={frontmatter.basePath + "pricing/"}>Pricing</NavLink>
+    </SubNav>
 
-      <Container type="pricing">
-        <div className="priceOuterWrapper">
-          <Price
-            amount={4900}
-            benefits={[
-              "6 weeks",
-              "Christ-centered",
-              "Growth",
-              "Outreach",
-              "Adventure",
-            ]}
-          />
-        </div>
+    <Container type="pricing">
+      <div className="priceOuterWrapper">
+        <Price
+          amount={4900}
+          benefits={[
+            "6 weeks",
+            "Christ-centered",
+            "Growth",
+            "Outreach",
+            "Adventure",
+          ]}
+        />
+      </div>
 
-        <div className="sessionWrapper">
-          <Session
-            title="Winter Session"
-            year="2021"
-            start="2021-01-17"
-            end="2021-02-28"
-            due={["January 5, 2021", "February 5, 2021"]}
-          />
+      <div className="sessionWrapper">
+        <Session
+          title="Winter Session"
+          year="2021"
+          start="2021-01-17"
+          end="2021-02-28"
+          due={["January 5, 2021", "February 5, 2021"]}
+        />
 
-          <Session
-            title="Spring Session"
-            year="2021"
-            start="2021-05-02"
-            end="2021-06-13"
-            due={["April 15, 2021", "May 25, 2021"]}
-          />
-        </div>
+        <Session
+          title="Spring Session"
+          year="2021"
+          start="2021-05-02"
+          end="2021-06-13"
+          due={["April 15, 2021", "May 25, 2021"]}
+        />
+      </div>
 
-        <CTAButton
-          target="_blank"
-          href="https://zfrmz.com/uFexR2s79N4btrSyO7nO"
-        >
-          Apply Now
-        </CTAButton>
-        <div className="priceLink">
-          <Link to="/programs/leadership/adventure-bible-program/pricing/">
-            See pricing
-          </Link>{" "}
-          |{" "}
-          <a href="mailto:camp@teenranch.com?subject=Adventure%20Bible%20Program">
-            More info
-          </a>
-        </div>
+      <CTAButton
+        target="_blank"
+        href="https://zfrmz.com/uFexR2s79N4btrSyO7nO"
+      >
+        Apply Now
+      </CTAButton>
+      <div className="priceLink">
+        <Link to="/programs/leadership/adventure-bible-program/pricing/">
+          See pricing
+        </Link>{" "}
+        |{" "}
+        <a href="mailto:camp@teenranch.com?subject=Adventure%20Bible%20Program">
+          More info
+        </a>
+      </div>
 
-        <div className="policies">
-          <h3>Cancellation policy</h3>
+      <div className="policies">
+        <h3>Cancellation policy</h3>
 
-          <p>
-            Knowing the uncertainty of the times, Teen Ranch will refund in full
-            less a $250 program admin fee in the case of cancellation prior to
-            the start of the program. The $250 fee is non-refundable and
-            non-transferable but will be kept for the registrant to use for one
-            year.
-          </p>
+        <p>
+          Knowing the uncertainty of the times, Teen Ranch will refund in full
+          less a $250 program admin fee in the case of cancellation prior to
+          the start of the program. The $250 fee is non-refundable and
+          non-transferable but will be kept for the registrant to use for one
+          year.
+        </p>
 
-          <p>
-            Any departure due to a Covid-19 positive test result will trigger a
-            prorated refund for the remaining time in the program less the $250
-            deposit or all efforts will be made to incorporate the participant
-            back into the program following a negative test result.
-          </p>
+        <p>
+          Any departure due to a Covid-19 positive test result will trigger a
+          prorated refund for the remaining time in the program less the $250
+          deposit or all efforts will be made to incorporate the participant
+          back into the program following a negative test result.
+        </p>
 
-          <p>
-            In the case that the program must be closed due to the government or
-            public health mandate, the prorated balance will be refunded in
-            full, less the $250 deposit.
-          </p>
+        <p>
+          In the case that the program must be closed due to the government or
+          public health mandate, the prorated balance will be refunded in
+          full, less the $250 deposit.
+        </p>
 
-          <p>
-            Please contact Teen Ranch Ministries if in financial need. We are
-            committed to helping those interested find the means to attend.
-          </p>
+        <p>
+          Please contact Teen Ranch Ministries if in financial need. We are
+          committed to helping those interested find the means to attend.
+        </p>
 
-          <p>
-            Donations toward the Teen Ranch Ministries Adventure Bible Program
-            are Tax Deductible.
-          </p>
-        </div>
-      </Container>
-    </>
-  )
+        <p>
+          Donations toward the Teen Ranch Ministries Adventure Bible Program
+          are Tax Deductible.
+        </p>
+      </div>
+    </Container>
+  </>;
 }
 
 const NavLink = ({ children, ...props }) => (
@@ -224,14 +222,10 @@ function Session({ title, year, start, end, due = [] }) {
   )
 }
 
-export const query = graphql`
-  query {
-    file(relativePath: { eq: "stock/chang-duong-Sj0iMtq_Z4w-unsplash.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1920, quality: 64) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
+export const query = graphql`{
+  file(relativePath: {eq: "stock/chang-duong-Sj0iMtq_Z4w-unsplash.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(quality: 64, layout: FULL_WIDTH)
     }
   }
-`
+}`

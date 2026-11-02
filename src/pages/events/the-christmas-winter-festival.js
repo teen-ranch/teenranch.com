@@ -10,7 +10,7 @@ import { graphql } from 'gatsby'
 
 // import { PrimaryButton, CTAButton } from 'components/Button'
 
-import Img from 'gatsby-image'
+import Img, { GatsbyImage } from "gatsby-plugin-image"
 
 import Event from 'components/Event'
 import Card from 'components/Card'
@@ -58,7 +58,7 @@ export default function Default({ data }) {
                     price={eventData.price}
                     description={ eventData.description }
                     venue={eventData.venue}
-                    images={[data.image.childImageSharp.fluid.src]}
+                    images={[data.image.childImageSharp.gatsbyImageData.src]}
                     status={ i > 25 ? 'CANCELLED' : 'SCHEDULED' }
                 />
             )
@@ -67,94 +67,85 @@ export default function Default({ data }) {
 
     }
 
-	return (
-        <>
+	return <>
 
-            <Heading
-                src={ data.file.childImageSharp.fluid }
-                alt='The Christmas Winter Festival'
-                title={ frontmatter.title }
-                subtitle={ pageData.subTitle }
-                metaTitle={ pageData.metaTitle || frontmatter.title }
-                metaDescription={ pageData.metaDescription || pageData.subTitle }
-                keywords={ pageData.keywords }
-			/>
+        <Heading
+            src={ data.file.childImageSharp.gatsbyImageData }
+            alt='The Christmas Winter Festival'
+            title={ frontmatter.title }
+            subtitle={ pageData.subTitle }
+            metaTitle={ pageData.metaTitle || frontmatter.title }
+            metaDescription={ pageData.metaDescription || pageData.subTitle }
+            keywords={ pageData.keywords }
+        />
 
-            <div style={{ maxWidth: '960px', margin: '0 auto', fontSize: '18px', color: 'rgb(41, 41, 41)', letterSpacing: '0.01em', lineHeight: '26px', padding: '0 2rem' }}>
+        <div style={{ maxWidth: '960px', margin: '0 auto', fontSize: '18px', color: 'rgb(41, 41, 41)', letterSpacing: '0.01em', lineHeight: '26px', padding: '0 2rem' }}>
 
-                <Container>
-                    <Card style={{ background: '#FFD7D7', color: 'red', padding: '2rem' }}>The Christmas Winter Festival is now cancelled December 26 & 27, 2020 due to the Covid-19 provincial lockdown. Thank you for your support and we wish you and your family a very Merry Christmas.</Card>
-                </Container>
+            <Container>
+                <Card style={{ background: '#FFD7D7', color: 'red', padding: '2rem' }}>The Christmas Winter Festival is now cancelled December 26 & 27, 2020 due to the Covid-19 provincial lockdown. Thank you for your support and we wish you and your family a very Merry Christmas.</Card>
+            </Container>
 
-                <Container>
-                    <h1>The Christmas Winter Festival</h1>
-                    <h4>In association with Active Lives Day Program</h4>
+            <Container>
+                <h1>The Christmas Winter Festival</h1>
+                <h4>In association with Active Lives Day Program</h4>
 
-                    <p>
-                        Start a new family tradition this Christmas season at the Christmas Winter Festival. 
-                        This interactive drive-thru event is the perfect evening out with your family. 
-                        Snuggle up and drive by more than thirty (that's right, 30) 3D Christmas hologram displays. 
-                        Sneak a peek at elves creating mischief in Santa's Workshop, watch Olaf throwing snowballs and witness Santa practice his sleigh take offs for Christmas Eve.
-                    </p>
+                <p>
+                    Start a new family tradition this Christmas season at the Christmas Winter Festival. 
+                    This interactive drive-thru event is the perfect evening out with your family. 
+                    Snuggle up and drive by more than thirty (that's right, 30) 3D Christmas hologram displays. 
+                    Sneak a peek at elves creating mischief in Santa's Workshop, watch Olaf throwing snowballs and witness Santa practice his sleigh take offs for Christmas Eve.
+                </p>
 
-                    <p>
-                        This year, there will be a special live nativity scene on Saturday and Sunday evenings thanks to local families from Orangeville.
-                    </p>
+                <p>
+                    This year, there will be a special live nativity scene on Saturday and Sunday evenings thanks to local families from Orangeville.
+                </p>
 
-                    <p>
-                        You won't find another interactive Christmas event like this one. This is the ultimate way to create memories and share the holidays with your family from the safety and comfort of your vehicle.
-                    </p>
+                <p>
+                    You won't find another interactive Christmas event like this one. This is the ultimate way to create memories and share the holidays with your family from the safety and comfort of your vehicle.
+                </p>
 
-                    <h2>Cost</h2>
-                    <p>
-                        $20 (tax included) per vehicle
-                    </p>
-                    <h3>Payment accepted at entry only</h3>
-                    
-                    <ul>
-                        <li>Debit/Credit (tap)</li>
-                        <li>Exact cash (cash drop box)</li>
-                    </ul>
+                <h2>Cost</h2>
+                <p>
+                    $20 (tax included) per vehicle
+                </p>
+                <h3>Payment accepted at entry only</h3>
+                
+                <ul>
+                    <li>Debit/Credit (tap)</li>
+                    <li>Exact cash (cash drop box)</li>
+                </ul>
 
-                    <h2>When</h2>
-                    <p>
-                        December 1 - 27, 2020 @ 7:00pm - 9:00pm (Excludes December 25)
-                    </p>
+                <h2>When</h2>
+                <p>
+                    December 1 - 27, 2020 @ 7:00pm - 9:00pm (Excludes December 25)
+                </p>
 
-                </Container>
+            </Container>
 
-                <Container>
-                    <Img fluid={ data.image.childImageSharp.fluid } />
-                </Container>
+            <Container>
+                <GatsbyImage image={ data.image.childImageSharp.gatsbyImageData } />
+            </Container>
 
-                <Container>
-                    <h1>Upcoming events</h1>
-                    { events }
-                </Container>
+            <Container>
+                <h1>Upcoming events</h1>
+                { events }
+            </Container>
 
-            </div>
+        </div>
 
-           
-        </>
-    )
+       
+    </>;
 }
 
-export const query = graphql`
-    query {
-        file(relativePath: { eq: "events/nativity.jpg" }) {
-            childImageSharp {
-				fluid(maxWidth: 1920 quality: 64) {
-					...GatsbyImageSharpFluid_withWebp
-				}
-			}
-        }
-
-        image: file(relativePath: { eq: "events/the-christmas-winter-festival.png" }) {
-            childImageSharp {
-				fluid(maxWidth: 1920 quality: 64) {
-					...GatsbyImageSharpFluid_withWebp
-				}
-			}
-        }
+export const query = graphql`{
+  file(relativePath: {eq: "events/nativity.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(quality: 64, layout: FULL_WIDTH)
     }
-`
+  }
+  image: file(relativePath: {eq: "events/the-christmas-winter-festival.png"}) {
+    childImageSharp {
+      gatsbyImageData(quality: 64, layout: FULL_WIDTH)
+    }
+  }
+}`

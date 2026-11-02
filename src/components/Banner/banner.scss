@@ -1,6 +1,8 @@
+@use "sass:color";
+
 .banner__wrapper {
   background: lightcyan;
-  border-bottom: 1px solid darken(lightcyan, 10);
+  border-bottom: 1px solid color.scale(lightcyan, $lightness: -10%);
   display:none;
 }
 .banner__container {

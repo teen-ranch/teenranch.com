@@ -1,5 +1,5 @@
 import React, { useEffect, useLayoutEffect, useRef, useState } from "react"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import Card from "components/Card"
 const breakpoints = [640, 768, 1024, 1280, 1536]
 
@@ -74,8 +74,8 @@ export function PhotoGrid({
                       }}
                       key={srcIndex}
                     >
-                      <Img
-                        fluid={src.node.childImageSharp.fluid}
+                      <GatsbyImage
+                        image={src.node.childImageSharp.gatsbyImageData}
                         alt={src}
                         // width={actualWidth || 500}
                         // height={actualHeight || 281.25}
@@ -94,10 +94,10 @@ export function PhotoGrid({
                         // style={{ width: calculatedWidth }}
                       />
                     </div>
-                  )
+                  );
                 })}
               </div>
-            )
+            );
 
             // const imagesRemaining = srcs.length - i
 
@@ -118,5 +118,5 @@ export function PhotoGrid({
           })}
       </Card>
     </div>
-  )
+  );
 }

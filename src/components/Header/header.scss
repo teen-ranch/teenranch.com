@@ -1,4 +1,5 @@
-@import "styles/vars";
+@use "../../styles/vars" as vars;
+@use "sass:color";
 header {
   position: sticky;
   top: 0;
@@ -10,7 +11,7 @@ header {
   background: #fff;
   z-index: 1;
 
-  // background: $primary-dark;
+  // background: vars.$primary-dark;
 
   .logo {
     height: 60px;
@@ -34,45 +35,45 @@ header {
       line-height: 20px;
       font-size: 1.6rem;
       letter-spacing: 0.02em;
-      color: $primary-dark;
+      color: vars.$primary-dark;
       cursor: pointer;
     }
 
     a:hover {
-      color: $primary-light;
+      color: vars.$primary-light;
     }
 
     a.active {
-      color: $primary-light;
+      color: vars.$primary-light;
     }
 
     a.ctaLink {
-      background: $primary-light;
-      border-radius: $border-radius;
-      color: $primary-white;
+      background: vars.$primary-light;
+      border-radius: vars.$border-radius;
+      color: vars.$primary-white;
     }
 
     a.ctaLink:hover {
-      background: darken($primary-light, 5);
+      background: color.scale(vars.$primary-light, $lightness: -5%);
     }
 
     .giveLink a {
-      border: 1px solid $primary-red;
-      border-radius: $border-radius;
-      color: $primary-red;
+      border: 1px solid vars.$primary-red;
+      border-radius: vars.$border-radius;
+      color: vars.$primary-red;
       text-align: center;
     }
     .giveLink a:hover {
-      background-color: lighten($primary-red, 48);
+      background-color: color.scale(vars.$primary-red, $lightness: 48%);
     }
     .newsLink a {
-      border: 1px solid $primary-light;
-      border-radius: $border-radius;
-      color: $primary-light;
+      border: 1px solid vars.$primary-light;
+      border-radius: vars.$border-radius;
+      color: vars.$primary-light;
       text-align: center;
     }
     .newsLink a:hover {
-      background-color: lighten($primary-light, 48);
+      background-color: color.scale(vars.$primary-light, $lightness: 48%);
     }
 
     .subNavDivider {
@@ -129,7 +130,7 @@ header {
       position: absolute;
       display: none;
       // display: flex;
-      border-radius: $border-radius;
+      border-radius: vars.$border-radius;
       box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
       padding: 4rem;
       left: 50%;

@@ -58,6 +58,7 @@ module.exports = {
         path: path.join(__dirname, `src`, `images`),
       },
     },
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-force-trailing-slashes`,
@@ -67,5 +68,5 @@ module.exports = {
         domain: "teenranch.com",
       },
     },
-  ],
+  ]
 }

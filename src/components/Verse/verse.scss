@@ -1,4 +1,4 @@
-@import 'styles/vars';
+@use "../../styles/vars" as vars;
 
 .verseContainer {
     text-align: center;
@@ -6,7 +6,7 @@
     max-width: 80%;
     margin: 0 auto;
     font-style: italic;
-    color: $primary-light;
+    color: vars.$primary-light;
     margin-top: 2rem;
     margin-bottom: 2rem;
 

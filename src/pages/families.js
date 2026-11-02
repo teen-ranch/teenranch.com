@@ -22,40 +22,36 @@ export default function Programs({ data }) {
 
     const { motherDaughter } = data
 
-	return (
-        <>
+	return <>
 
-            <Heading
-                src={ motherDaughter.childImageSharp.fluid }
-                alt='Girl screaming on giant swing'
-                title={ frontmatter.title }
-                subtitle={ pageData.subTitle }
-                metaTitle={ pageData.metaTitle || frontmatter.title }
-                metaDescription={ pageData.metaDescription || pageData.subTitle }
-                keywords={ pageData.keywords }
-			/>
-            <Container type='body'>
+        <Heading
+            src={ motherDaughter.childImageSharp.gatsbyImageData }
+            alt='Girl screaming on giant swing'
+            title={ frontmatter.title }
+            subtitle={ pageData.subTitle }
+            metaTitle={ pageData.metaTitle || frontmatter.title }
+            metaDescription={ pageData.metaDescription || pageData.subTitle }
+            keywords={ pageData.keywords }
+        />
+        <Container type='body'>
 
-                <Program src={ motherDaughter.childImageSharp.fluid } name='Mother daughter equine escape'>
-                    <p>A tremendous, once-a-year opportunity to leave your screens behind and create lifelong memories over a common love of horses and one another.</p>
+            <Program src={ motherDaughter.childImageSharp.gatsbyImageData } name='Mother daughter equine escape'>
+                <p>A tremendous, once-a-year opportunity to leave your screens behind and create lifelong memories over a common love of horses and one another.</p>
 
-                    <Button to='/families/mother-daughter-equine-escape/'>View now</Button>
-                </Program>             
+                <Button to='/families/mother-daughter-equine-escape/'>View now</Button>
+            </Program>             
 
-            </Container>
-        </>
-    )
+        </Container>
+    </>;
 }
 
 
-export const query = graphql`
-    query {
-        motherDaughter: file(relativePath: { eq: "motherDaughter/d556c391-315b-9e0d-d741-4a0bd91f7e9b.jpg" }) {
-            childImageSharp {
-				fluid(maxWidth: 1920 quality: 64) {
-					...GatsbyImageSharpFluid_withWebp
-				}
-			}
-        }
+export const query = graphql`{
+  motherDaughter: file(
+    relativePath: {eq: "motherDaughter/d556c391-315b-9e0d-d741-4a0bd91f7e9b.jpg"}
+  ) {
+    childImageSharp {
+      gatsbyImageData(quality: 64, layout: FULL_WIDTH)
     }
-`
+  }
+}`
