@@ -22,8 +22,8 @@ export function Price({
   ids
 }) {
   
-  const [basePrice,setBasePrice] = useState(price||0)
-  const [maxPrice, setMaxPrice] = useState(priceTo ||0)
+  const [basePrice,setBasePrice] = useState(price ?? 0)
+  const [maxPrice, setMaxPrice] = useState(priceTo)
   useEffect(() => {
     if (ids?.length > 0) {
     getPrices()
@@ -31,7 +31,7 @@ export function Price({
   }, [])
 
   async function getPrices() {
-    const url = new URL(`${process.env.NODE_ENV === "development"
+    const url = new URL(`${process.env.NODE_ENV === "development!"
         ? "http://localhost:4000"
         : "https://api.teenranch.com"
       }/prices`)
