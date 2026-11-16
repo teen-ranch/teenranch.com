@@ -376,9 +376,9 @@ export default function Header({ location }) {
 							<li>
 								<NavLink to="/contact/">Contact</NavLink>
 							</li>
-							<li className="newsLink">
+							{/* <li className="newsLink">
 								<NavLink to="/news-release/">News Release</NavLink>
-							</li>
+							</li> */}
 							<li className="giveLink">
 								<NavLink to="/give">Give</NavLink>
 							</li>
