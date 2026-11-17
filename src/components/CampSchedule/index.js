@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 
 import "./campSchedule.scss"
 import currency from "currency.js"
+import DateDiff from "date-diff"
 
 const colors ={
   primaryDark: '#002146',
@@ -65,7 +66,7 @@ export default function CampSchedule({
           <div key={i} 
           // className="schedule__program"
             style={{
-              height:'70px',
+              height:'56px',
               borderBottom:`1px solid ${colors.primaryLight}`,
               borderLeft:`1px solid ${colors.primaryLight}`,
               background: colors.primaryDark,
@@ -75,7 +76,8 @@ export default function CampSchedule({
               justifyContent:'center',
               textAlign:'center',
               boxSizing:'border-box',
-              padding:'0 8px'
+              padding:'0 8px',
+              position:'relative'
             }}
           >
             {program.name}
@@ -162,9 +164,24 @@ export default function CampSchedule({
           //   console.log("PROGRAM CAPACITIES", programCapacities)
           let realDateIndex = 0
           
-          const programDates = capacity?.filter(date => program.ids.includes(date.programId))
+          let programDates = capacity?.filter(date => program.ids.includes(date.programId))
 
-          // console.log('dates----',programDates)
+          if (program.fullWeek) {
+            programDates = programDates?.filter(date => {
+              const diff = new DateDiff(new Date(date.endDate), new Date(date.startDate))
+              if (diff.days() > 3) return true
+            return false
+            } )
+          }
+          if (program.halfWeek) {
+            programDates = programDates?.filter(date => {
+              const diff = new DateDiff(new Date(date.endDate), new Date(date.startDate))
+              if (diff.days() < 3) return true
+            return false
+            } )
+          }
+
+          console.log('dates----',programDates)
 
           return (
             <div
@@ -222,7 +239,7 @@ return (
                     className="schedule__programDate!"
                     style={{
                       display:'grid',
-                      height:'70px',
+                      height:'56px',
                       // minWidth:halfWeekProgram?.length > 1 ? '140px':'70px',
                       minWidth: '140px',
                       boxSizing:'border-box',
@@ -562,90 +579,39 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
           ...(!sections || sections.includes("hockey")
             ? [
               {
-                name: "Hockey Camp (ONC)",
-                dates: [
-                  "8-10",
-                  "11-14",
-                  "13-16",
-                  "11-14",
-                  null,
-                  "8-10",
-                  null,
-                  "13-16",
-                  null,
-                  ":span"
-                ],
+                name: <div>Hockey Camp <br/><span style={{fontSize:'9pt'}}>(ONC - Full Week)</span></div>,
                 ids: [2],
+                fullWeek: true
               },
               {
-                name: "Hockey Camp (UDC)",
+                name: <div>
+                  Hockey Camp <br/><span style={{fontSize:'9pt'}}>(ONC - Half Week)</span>
+                  <div style={{background:'red', position:'absolute', top:'-5px', right:'-5px', fontSize:'9pt', fontWeight:'bold', padding:'2px 4px', borderRadius:'100px'}}>NEW</div>
+                </div>,
+                ids: [2],
+                halfWeek: true,
+                new:true
+              },
+              {
+                name: <div>Hockey Camp<br/><span style={{fontSize:'9pt'}}>(UDC)</span></div>,
                 overrideType: 'UDC',
-                dates: [
-                  null,
-                  null,
-                  <>13-16<br/><span style={{fontSize:"9pt", fontWeight:'bold'}}>UDC</span></>,
-                  <>11-14<br/><span style={{fontSize:"9pt", fontWeight:'bold'}}>UDC</span></>,
-                  <>11-14<br/><span style={{fontSize:"9pt", fontWeight:'bold'}}>MASH UDC</span></>,
-                  null,
-                  null,
-                  null,
-                  "8-13",
-                  "8-13:span"
-                ],
                 ids: [63],
               },
               {
                 ids: [59,64],
                 name: "Elite Hockey Camp",
-                dates: [
-                  null,
-                  null,
-                  null,
-                  null,
-                  "11-14",
-                  "8-10",
-                  null,
-                  "13-16",
-                  "8-13",
-                  ":span"
-                ],
               },
               {
                 ids: [3],
                 name: "Girl's Hockey Camp",
-                dates: [
-                  null,
-                  null,
-                  null,
-                  "11-14",
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  ":span"
-                ],
               },
               {
                 ids: [4],
                 name: "Goalie Camp",
-                dates: [null, null, null, null, "11-14", null,  null, null, null,":span"],
               },
               {
                 ids: [74],
                 name: "Summer Drop-in Ice Time",
-                dates: [
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  "8-13",
-                  "8-13:span",
-                ],
               },
             ]
             : []),
@@ -654,51 +620,18 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
               {
                 ids: [8, 67],
                 name: "Western Riding Camp",
-                dates: [
-                  "8-10",
-                  "11-14",
-                  "13-16",
-                  "11-14",
-                  "11-14",
-                  "8-10",
-                  "11-14",
-                  "13-16",
-                  "8-13",
-                  ":span"
-                ],
+                
               },
               {
                 ids: [7, 68],
                 name: "English Riding Camp",
                 types:['ONC','UDC'],
-                dates: [
-                  "8-10",
-                  "11-14",
-                  "13-16",
-                  "11-14",
-                  "11-14",
-                  "8-10",
-                  "11-14",
-                  "13-16",
-                  "8-13",
-                  ":span"
-                ],
+                
               },
               {
                 ids: [27],
                 name: "Rodeo Camp",
-                dates: [
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  null,
-                  "13-16",
-                  null,
-                  ":span"
-                ],
+                
               },
               // {
               //   ids: [9],
@@ -721,19 +654,15 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
             ? [
               {
                 ids: [70, 73],
-                name: "WHAM Camp",
-                dates: [
-                  "8-10",
-                  "11-14",
-                  "13-16",
-                  "11-14",
-                  "11-14",
-                  "8-10",
-                  "11-14",
-                  "13-16",
-                  "8-13",
-                  "8-13:span"
-                ],
+                name: <div>WHAM Camp<br/><span style={{fontSize:'9pt'}}>(Full Week)</span></div>,
+                fullWeek: true
+              },
+              {
+                ids: [70, 73],
+                name: <div >WHAM Camp<br/><span style={{fontSize:'9pt'}}>(Half Week)</span>                 
+                 <div style={{background:'red', position:'absolute', top:'-5px', right:'-5px', fontSize:'9pt', fontWeight:'bold', padding:'2px 4px', borderRadius:'100px'}}>NEW</div>
+</div>,
+                halfWeek: true
               },
               
             ]
@@ -752,34 +681,20 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
               {
                 ids: [15],
                 name: "Junior Day Camp",
-                dates: [
-                  "5-8:span",
-                  "5-8",
-                  "5-8",
-                  "5-8",
-                  "5-8",
-                  "5-8",
-                  "5-8",
-                  "5-8",
-                  "5-8:span",
-                ],
+                
               },
               {
                 ids: [16],
-                name: "Junior Day Camp (Hockey)",
-                dates: [
-                  null,
-                  null,
-                  "5-8",
-                 null,
-                 null,
-                 null,
-                  "5-8",
-                  null,
-                  null,
-                  "5-8",
-                  "5-8",
-                ],
+                name: <div>Junior Camp <br/><span style={{fontSize:'9pt'}}>(Hockey - Full Week)</span></div>,
+                fullWeek: true
+              },
+              {
+                ids: [16],
+                name: <div >Junior Camp <br/><span style={{fontSize:'9pt'}}>(Hockey - Half Week)</span>
+                                   <div style={{background:'red', position:'absolute', top:'-5px', right:'-5px', fontSize:'9pt', fontWeight:'bold', padding:'2px 4px', borderRadius:'100px'}}>NEW</div>
+
+                </div>,
+                halfWeek: true
               },
             ]
             : []),
