@@ -11,18 +11,15 @@ import Program, { ProgramContainer } from "components/Program";
 // import Grid from 'components/Grid'
 // import Coach from 'components/Coach'
 import { Link } from "react-scroll";
-import { PriceContainer, Price, PriceAddon } from "components/Price";
+import { PriceContainer, Price } from "components/Price";
 import Quote from "components/Quote";
-import CampSchedule, { PreBuiltCampSchedule } from "components/CampSchedule";
-import Grid from "components/Grid";
+import  { PreBuiltCampSchedule } from "components/CampSchedule";
 // import Sponsor from 'components/Sponsor'
-import Img from "gatsby-plugin-image";
 import { UltimateDayCampTerms } from "components/Terms";
 import { Link as ReachLink } from "@reach/router";
 import JumpStart from "components/JumpStart";
 import UltimateDayCampIntro from "components/UltimateDayCampIntro";
 import { BalancePayments } from "components/BalancePayments";
-import Video from "components/Video";
 import { PhotoGrid } from "components/PhotoGrid";
 
 const frontmatter = {

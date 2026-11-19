@@ -11,17 +11,13 @@ import Program, { ProgramContainer } from "components/Program";
 // import Grid from 'components/Grid'
 // import Coach from 'components/Coach'
 import { Link } from "react-scroll";
-import { PriceContainer, Price, PriceAddon } from "components/Price";
+import { PriceContainer, Price } from "components/Price";
 import Quote from "components/Quote";
-import CampSchedule, { PreBuiltCampSchedule } from "components/CampSchedule";
-import Grid from "components/Grid";
-// import Sponsor from 'components/Sponsor'
-import Img from "gatsby-plugin-image";
+import  { PreBuiltCampSchedule } from "components/CampSchedule";
 import { OvernightCampTerms } from "../../../components/Terms";
 import JumpStart from "components/JumpStart";
 import { Time } from "components/Time";
 import { BalancePayments } from "components/BalancePayments";
-import Video from "components/Video";
 import { PhotoGrid } from "components/PhotoGrid";
 
 const frontmatter = {

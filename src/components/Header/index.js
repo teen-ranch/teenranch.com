@@ -261,11 +261,11 @@ export default function Header({ location }) {
 										<li>
 											<span className="linkTitle">Day camp</span>
 											<ul className="subSubNav">
-												<li>
+												{/* <li>
 													<NavLink to="/day-camp/pd-pa-day-camp/">
 														PD/PA day camp
 													</NavLink>
-												</li>
+												</li> */}
 												<li>
 													<NavLink to="/day-camp/christmas-day-camp/">
 														Christmas day camp
@@ -290,11 +290,11 @@ export default function Header({ location }) {
                             Family getaway weekends
                           </NavLink> */}
 												</li>
-												<li>
+												{/* <li>
 													<NavLink to="/families/father-son-hockey-weekend/">
 														Father-son hockey weekend
 													</NavLink>
-												</li>
+												</li> */}
 											</ul>
 										</li>
 										<li>
@@ -304,11 +304,11 @@ export default function Header({ location }) {
 												{/* <li><NavLink to='/events/christmas-photo-sessions/'>Christmas Photo Sessions</NavLink></li> */}
 												{/* <li><NavLink to='/events/the-christmas-winter-festival/'>Christmas Winter Festival</NavLink></li> */}
 												{/* <li><NavLink to='/events/march-april-break-day-camp/'><s>March</s> April Break Day Camp</NavLink></li> */}
-												<li>
+												{/* <li>
 													<NavLink to="/events/christmas-at-the-ranch/">
 														Christmas at the Ranch
 													</NavLink>
-												</li>
+												</li> */}
 												<li>
 													<NavLink to="/events/march-break-camp-for-a-weekend/">
 														March Break Camp for a Weekend
@@ -319,11 +319,11 @@ export default function Header({ location }) {
 														Family day roundup
 													</NavLink>
 												</li>
-												<li>
+												{/* <li>
 													<NavLink to="/events/easter-roundup/">
 														Easter roundup
 													</NavLink>
-												</li>
+												</li> */}
 											</ul>
 										</li>
 										{/* <li><NavLink to='/programs/leadership/'>Leadership & Development</NavLink>

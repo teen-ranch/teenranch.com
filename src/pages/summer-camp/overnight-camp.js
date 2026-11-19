@@ -18,9 +18,7 @@ import Program, { ProgramContainer } from "components/Program";
 import { Link } from "react-scroll";
 import { PriceContainer, Price, PriceAddon } from "components/Price";
 import Quote from "components/Quote";
-import CampSchedule, { PreBuiltCampSchedule } from "components/CampSchedule";
-import Grid from "components/Grid";
-// import Sponsor from 'components/Sponsor'
+import { PreBuiltCampSchedule } from "components/CampSchedule";
 import  { GatsbyImage } from "gatsby-plugin-image";
 import JumpStart from "../../components/JumpStart";
 import { OvernightCampTerms } from "components/Terms";
@@ -39,7 +37,7 @@ const pageData = {
 };
 
 export default function Programs({ data }) {
-	const { file, hockeyNowWinner, hockey, horse, adventure, wham, activities } =
+	const { file, hockeyNowWinner, hockey, horse,  wham, activities } =
 		data;
 
 	return <>

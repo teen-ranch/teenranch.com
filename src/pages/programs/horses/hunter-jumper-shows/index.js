@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Container from "components/Container";
 import Heading from "components/Heading";
 import Button from "components/Button";
@@ -14,7 +14,6 @@ import SubNav from "components/SubNav";
 import { Link } from "react-scroll";
 import Card from "components/Card";
 import { Time } from "components/Time";
-import { useInterval } from "hooks/useInterval";
 
 export default function Default({ data }) {
 	const {
@@ -35,7 +34,7 @@ export default function Default({ data }) {
 	} = data;
 
 	// const [bannerIndex, setBannerIndex] = useState(0);
-	const bannerIndex = 1;
+	// const bannerIndex = 1;
 
 	/* useInterval(() => {
 		if (bannerIndex < banners.edges.length - 1) {

@@ -209,9 +209,9 @@ export default function Footer() {
 					<div>
 						<div className="footerTitle">Day camp</div>
 						<ul className="footerNavigation">
-							<li>
+							{/* <li>
 								<Link to="/day-camp/pd-pa-day-camp/">PD/PA day camp</Link>
-							</li>
+							</li> */}
 							<li>
 								<Link to="/day-camp/christmas-day-camp/">
 									Christmas day camp
@@ -225,11 +225,11 @@ export default function Footer() {
 						</ul>
 						<div className="footerTitle">Events</div>
 						<ul className="footerNavigation">
-							<li>
+							{/* <li>
 								<Link to="/events/christmas-at-the-ranch/">
 									Christmas at the Ranch
 								</Link>
-							</li>
+							</li> */}
 							<li>
 								<Link to="/events/march-break-camp-for-a-weekend/">
 									March Break Camp for a Weekend
@@ -238,9 +238,9 @@ export default function Footer() {
 							<li>
 								<Link to="/events/family-day-roundup/">Family day roundup</Link>
 							</li>
-							<li>
+							{/* <li>
 								<Link to="/events/easter-roundup/">Easter roundup</Link>
-							</li>
+							</li> */}
 							{/* <li><Link to='/events/teen-ranch-fall-gallop-a-cross-country-run/'>Teen Ranch Fall Gallop - A Cross Country Run</Link></li> */}
 							{/* <li><Link to='/events/christmas-photo-sessions/'>Christmas Photo Sessions</Link></li> */}
 							{/* <li><Link to='/events/the-christmas-winter-festival/'>Christmas Winter Festival</Link></li> */}
@@ -255,11 +255,11 @@ export default function Footer() {
 									Mother daughter equine escape
 								</Link>
 							</li>
-							<li>
+							{/* <li>
 								<Link to="/families/father-son-hockey-weekend/">
 									Father-son hockey weekend
 								</Link>
-							</li>
+							</li> */}
 							{/* <li>
                 <Link to="/families/family-getaway-weekends">
                   Family getaway weekends

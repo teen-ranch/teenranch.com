@@ -2,10 +2,9 @@ import React from "react"
 import Container from "components/Container"
 import Heading from "components/Heading"
 
-import ExternalLink from "components/ExternalLink"
 
 import { graphql } from "gatsby"
-import Img, { GatsbyImage } from "gatsby-plugin-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 import Grid from "components/Grid"
 import Sponsor from "components/Sponsor"

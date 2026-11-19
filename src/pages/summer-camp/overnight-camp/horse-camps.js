@@ -5,20 +5,17 @@ import Heading from "components/Heading";
 import { graphql } from "gatsby";
 
 import SubNav from "components/SubNav";
-import { PrimaryButton, CTAButton, PdfButton } from "components/Button";
+import { CTAButton, PdfButton } from "components/Button";
 import Program, { ProgramContainer } from "components/Program";
 
 // import Grid from 'components/Grid'
 // import Coach from 'components/Coach'
 import { Link } from "react-scroll";
-import { PriceContainer, Price, PriceAddon } from "components/Price";
+import { PriceContainer, Price } from "components/Price";
 import Quote from "../../../components/Quote";
-import CampSchedule, {
+import {
 	PreBuiltCampSchedule,
 } from "../../../components/CampSchedule";
-import Grid from "components/Grid";
-// import Sponsor from 'components/Sponsor'
-import Img from "gatsby-plugin-image";
 import { OvernightCampTerms } from "../../../components/Terms";
 import JumpStart from "components/JumpStart";
 import { Time } from "components/Time";
@@ -37,7 +34,7 @@ const pageData = {
 };
 
 export default function Programs({ data }) {
-	const { file, western, english, intensive, rodeo, activities } = data;
+	const { file, western, english,  rodeo, activities } = data;
 
 	return <>
         <Heading

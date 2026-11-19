@@ -4,7 +4,6 @@ import Heading from 'components/Heading'
 import Button from 'components/Button'
 import Quote from 'components/Quote'
 import { graphql } from "gatsby";
-import Img from "gatsby-plugin-image";
 
 export default function Default({data}) {
 

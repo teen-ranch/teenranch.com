@@ -39,7 +39,7 @@ const pageData = {
 };
 
 export default function Programs({ data }) {
-	const { file, hockeyNowWinner, hockey, horse, bmx, wham, activities } = data;
+	const { file, hockeyNowWinner, hockey, horse,  wham, activities } = data;
 
 	return <>
         <Heading
