@@ -13,10 +13,9 @@ import Program, { ProgramContainer } from "components/Program"
 import { Link } from "react-scroll"
 import { PriceContainer, Price, PriceAddon } from "components/Price"
 import Quote from "../../../components/Quote"
-import CampSchedule, {
+import  {
   PreBuiltCampSchedule,
 } from "../../../components/CampSchedule"
-import Grid from "components/Grid"
 // import Sponsor from 'components/Sponsor'
 import { GatsbyImage } from "gatsby-plugin-image"
 import { UltimateDayCampTerms } from "components/Terms"

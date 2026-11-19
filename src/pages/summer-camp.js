@@ -18,12 +18,11 @@ import Program, { ProgramContainer } from "components/Program";
 import { Link } from "react-scroll";
 import { PriceContainer, Price, PriceAddon } from "components/Price";
 import Quote from "../components/Quote";
-import CampSchedule, { PreBuiltCampSchedule } from "../components/CampSchedule";
+import  { PreBuiltCampSchedule } from "../components/CampSchedule";
 import { SummerCampTerms } from "components/Terms";
 // import Sponsor from 'components/Sponsor'
 import {GatsbyImage} from "gatsby-plugin-image";
 import JumpStart from "components/JumpStart";
-import { SummerCampRegistrationNotice } from "components/SummerCampRegistrationNotice";
 import { Time } from "components/Time";
 
 const frontmatter = {

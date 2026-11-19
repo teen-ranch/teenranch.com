@@ -13,12 +13,10 @@ import Program, { ProgramContainer } from "components/Program";
 import { Link } from "react-scroll";
 import { PriceContainer, Price, PriceAddon } from "components/Price";
 import Quote from "../../../components/Quote";
-import CampSchedule, {
+import  {
 	PreBuiltCampSchedule,
 } from "../../../components/CampSchedule";
-import Grid from "components/Grid";
-// import Sponsor from 'components/Sponsor'
-import Img, { GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import { OvernightCampTerms } from "../../../components/Terms";
 import JumpStart from "components/JumpStart";
 import { Time } from "components/Time";
