@@ -62,7 +62,7 @@ export function Price({
             {oneWeekOnly && <div className="startingAt">One week only!</div>}
             {startingAt && <div className="startingAt">Starting at</div>}
             {startingAtSpace && <div className="startingAt">&nbsp;</div>}
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem' }}>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', fontSize:'16pt' }}>
               ${new Intl.NumberFormat("en-US").format(basePrice)}{maxPrice && maxPrice > basePrice && <> <sm style={{ fontSize: '14pt' }}>to</sm> ${new Intl.NumberFormat("en-US").format(maxPrice)}</>}{" "}
             </div>
             <span className="term">/{term}</span>
