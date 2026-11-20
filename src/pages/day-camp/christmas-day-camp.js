@@ -85,6 +85,7 @@ export default function Programs({ data }) {
 
     <Container type="body">
       <h1>Pricing</h1>
+
       <PriceContainer>
         <Price
           title={
@@ -94,7 +95,11 @@ export default function Programs({ data }) {
               (Classic)
             </>
           }
-          subTitle={`Individual day`}
+          subTitle={
+            <div style={{fontWeight:'bold'}}>
+              Individual Day
+            </div>
+}
           who="Kids ages 5-12"
           price={92}
           term="day"
@@ -114,12 +119,14 @@ export default function Programs({ data }) {
             </>
           }
           subTitle={
-            <>
+           <div style={{fontWeight:'bold'}}>
               Bundle
-            </>
+              <div style={{color:'red', marginTop:'1rem', position:'absolute', top:'4px', right:'8px', rotate:'-12deg'}}>Save $30!</div>
+            </div>
           }
           who="Kids ages 5-12"
           price={245}
+          save={30}
           term="3 days"
           includes={dayCampBulletsClassic}
         >
@@ -136,7 +143,11 @@ export default function Programs({ data }) {
               (Hockey)
             </>
           }
-          subTitle={`Individual day`}
+          subTitle={
+            <div style={{fontWeight:'bold'}}>
+              Individual Day
+            </div>
+}
           who="Kids ages 5-12"
           price={125}
           term="day"
@@ -156,9 +167,11 @@ export default function Programs({ data }) {
             </>
           }
           subTitle={
-            <>
+            <div style={{fontWeight:'bold'}}>
               Bundle
-            </>
+                            <div style={{color:'red', marginTop:'1rem', position:'absolute', top:'4px', right:'8px', rotate:'-12deg'}}>Save $40!</div>
+
+            </div>
           }
           who="Kids ages 5-12"
           price={335}
