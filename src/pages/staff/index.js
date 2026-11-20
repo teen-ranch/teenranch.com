@@ -10,6 +10,10 @@ export default function Default({data}) {
 	const {
 main		
 	} = data;
+  
+  const now = new Date()
+  const currentMonth = now.getMonth()
+
 	return <>
 
         <Heading
@@ -23,7 +27,7 @@ main
 
             <p>We deeply appreciate your desire to serve Teen Ranch guests alongside our staff family. Thank you! Our mission is to cultivate a staff family devoted to the Lord Jesus Christ, to one another, and to the salvation and spiritual growth of our staff, campers, and guests.</p>
             
-            <p>Yearly, God brings together a diverse team dedicated to a shared mission, who use their unique talents to enhance the guest and camper experience. We welcome international applicants who have a valid work visa or are eligible to obtain one. Below, you'll find more information about the volunteer and staff positions available.</p>
+            <p>Yearly, God brings together a diverse team dedicated to a shared mission, who use their unique talents to enhance the guest and camper experience. We welcome international applicants who are eligible to obtain an International Experience Canada (IEC) visa (for applicants aged 18–35 from eligible countries) or a Camp Counsellor visa for the summer months (June–September). Below, you'll find more information about the volunteer and staff positions available.</p>
             
             <h2>Weekend Volunteering</h2>
             
@@ -62,7 +66,40 @@ main
             <Quote cite="Proverbs 3:5, 6">
              Trust in the Lord with all your heart; do not depend on your own understanding. Seek His will in all you do, and He will show you which path to take.
             </Quote>
-            
+      
+      <h2>FAQs - Summer Camp Staff</h2>
+      
+      <FAQ question='Is there a minimum age to apply?'>
+        All summer staff must be at least 15 years old by July 1, {(currentMonth+1) > 8 ? now.getFullYear()+1:now.getFullYear() }. Some positions have additional age requirements, so be sure to review the qualifications for each role.
+      </FAQ>
+      
+      <FAQ question='When is staff training?'>
+        All summer staff are required to attend mandatory staff training from June 27 to July 2, 2027. Please ensure you are available for these dates before applying.
+      </FAQ>
+      
+      <FAQ question="Do I get any time off?">
+        Yes! Staff receive daily time off, as well as time on the weekend to rest and recharge. Staff finish after camper checkout on Friday evening, around 8:00 p.m., and return on Sunday for the 2:30 p.m. staff meeting before camper check-in.
+        <br/><br/>
+        Unless other arrangements have been made, staff who do not live onsite year-round are expected to return home between camp weeks.
+      </FAQ>
+      
+      <FAQ question="Are there any paid positions, or are all summer staff volunteers?">
+        The majority of our summer staff serve as volunteers, helping make camp possible for hundreds of campers each summer! High school students can earn up to 40 volunteer hours per week toward their required community involvement hours.
+        <br/><br/>
+Staff members who serve for a minimum of six weeks can receive a weekly honorarium of $120, plus room and board.
+        <br/><br/>
+We are also applying for additional funding through the Canada Summer Jobs (CSJ) program, which may allow us to offer paid positions to select staff, pending approval. These positions will be competitive, so please ensure your complete application is submitted by April 1, 2027, to be considered when funding decisions are announced.
+      </FAQ>
+      
+      <FAQ question="Can I apply for more than one position?">
+        Absolutely! Our staffing needs change throughout the summer depending on camper numbers, age groups, and the programs being offered. On your application, you can indicate all the areas where you are willing and qualified to help.
+      </FAQ>
+      <FAQ question="Do I have to be a Christian to work at Teen Ranch?">
+        Teen Ranch is an evangelical Christian ministry, and all staff members are expected to support and abide by our Statement of Faith, as well as our staff mission, qualifications, philosophy, and policies. As part of the application process, all applicants must read these documents in their entirety and acknowledge that they understand and agree to these expectations as a condition of their involvement with Teen Ranch.
+      </FAQ>
+           <FAQ question='Can I volunteer for only one or two weeks?'>
+        Our minimum commitment requirement for summer staff is four weeks. This allows us to invest in training and developing our staff while providing a consistent, positive experience for campers. Some positions or circumstances may be considered individually, but applicants should be prepared to commit to the minimum availability required for their role.
+            </FAQ> 
             {/* <p>Hello!</p>
 
             <p>So you're interested in Teen Ranch staff. We're glad you asked! Teen Ranch is a not-for-profit, Christian summer sports camp and year-round retreat facility. Attracting campers and guests from many backgrounds, we strive to serve them with excellence and thereby earn the right to share our faith in the Lord Jesus Christ with them as God gives opportunity. The task is not an easy one, but one that requires a deep love for the Lord Jesus Christ and an earnest desire to serve Him by serving others.</p>
@@ -120,3 +157,19 @@ export const query = graphql`{
     }
   }
 }`
+
+function FAQ({question,children}) {
+  return (
+    <div 
+    style={{
+      border: '1px solid #eee',
+      borderRadius:'8px',
+      padding: '0 16px',
+      marginBottom:'24px'
+    }}
+    >
+      <h3>Q: {question}</h3>
+      <p>{children}</p>
+    </div>
+  )
+}
