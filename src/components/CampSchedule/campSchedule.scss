@@ -1,6 +1,22 @@
 @use "../../styles/vars" as vars;
 @use "sass:color";
 
+$green-base: #a7f3d0;
+$green-base-alternate: #6ee7b7;
+$green-border: #6ee7b7;
+$green-text: #064e3b;
+$green-alternate: #d1fae5;
+
+$blue-base:#bae6fd;
+$blue-border: #7dd3fc;
+$blue-base-alternate: #7dd3fc;
+$blue-text:#075985;
+$blue-alternate: #e0f2fe;
+
+$red-background: #fecaca;
+$red-border: #ef4444;
+$red-text:#450a0a;
+
 .schedule__container {
   margin-right: 1px;
   display: grid;
@@ -13,7 +29,7 @@
   .schedule__date,
   .schedule__program,
   .schedule__programDate {
-    border: 1px solid #eee;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     margin-right: -1px;
     margin-bottom: -1px;
     text-align: center;
@@ -49,19 +65,22 @@
 
   .schedule__programDate--blank.schedule__programDate--UDC,
   .schedule__programDate--otherCamp.schedule__programDate--UDC {
-    background-color: color.scale(vars.$primary-dark, $lightness: 80%);
+    // background-color: color.scale(vars.$primary-dark, $lightness: 80%);
+    background-color: $blue-base;
   }
   .schedule__programDate--secondary.schedule__programDate--UDC {
-    background-color: color.scale(vars.$primary-dark, $lightness: 84%);
+    // background-color: color.scale(vars.$primary-dark, $lightness: 84%);
+    background-color: $blue-base;
     // color: lighten(vars.$primary-dark, 65);
     color: rgba(0, 0, 0, 0.3);
   }
   .schedule__programDate--blank.schedule__programDate--ONC,
   .schedule__programDate--otherCamp.schedule__programDate--ONC {
-    background-color: color.scale(rgb(122, 251, 126), $lightness: 20%);
+    // background-color: color.scale(rgb(122, 251, 126), $lightness: 20%);
+    background-color: $green-base;
   }
   .schedule__programDate--secondary.schedule__programDate--ONC {
-    background-color: color.scale(rgb(122, 251, 126), $lightness: 24%);
+    background-color: $green-base;
     // color: darken(rgb(122, 251, 126), 5);
     color: rgba(0, 0, 0, 0.3);
   }
@@ -73,23 +92,26 @@
   }
 
   .schedule__date {
-    background: color.scale(vars.$primary-dark, $lightness: 70%);
-    border-color: color.scale(vars.$primary-dark, $lightness: 75%);
+    background-color: $blue-base;
+    border-color: $blue-border; 
     // line-height: 12px;
   }
 
   .schedule__date--UDC {
-    background-color: color.scale(vars.$primary-dark, $lightness: 60%);
+    // background-color: color.scale(vars.$primary-dark, $lightness: 60%);
+    background-color: $blue-base;
   }
   .schedule__dateColor--UDC {
-    color: blue;
+    color: $blue-text;
   }
   .schedule__date--ONC {
-    background-color: rgb(122, 251, 126);
-    border-color: color.scale(rgb(122, 251, 126), $lightness: 20%);
+    // background-color: rgb(122, 251, 126);
+    background-color: $green-base; 
+    border-color: $green-border;
+    // border-color: color.scale(rgb(122, 251, 126), $lightness: 20%);
   }
   .schedule__dateColor--ONC {
-    color: darkgreen;
+    color: $green-text;
   }
 
   .schedule__date--secondary {
@@ -106,25 +128,27 @@
   }
 
   .schedule__dateDiscount--discounted {
-    background: rgb(255, 181, 181);
+    background: $red-background;
     border-radius: 4px 4px 0 0;
     text-transform: uppercase;
     text-align: center;
     font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
     padding: 0.5rem;
-    color: darkred;
+    color: $red-text;
     margin-right: -1px;
-    border-top: 1px solid red;
-    border-left: 1px solid red;
-    border-right: 1px solid red;
+    border-top: 1px solid $red-border;
+    border-left: 1px solid $red-border;
+    border-right: 1px solid $red-border;
   }
 
   .schedule__date--discount,
   .schedule__date--discountPrevious {
-    border-left-color: red;
+    border-left-color: $red-border;
   }
   .schedule__date--discountLast {
-    border-bottom-color: red;
+    border-bottom-color: $red-border;
   }
   // .schedule__row, .schedule__spacer, .schedule__program {
   //     height: 60px;

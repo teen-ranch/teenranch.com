@@ -7,8 +7,21 @@ import DateDiff from "date-diff"
 const colors ={
   primaryDark: '#002146',
   primaryLight: 'rgb(0, 57, 121)',
-  lightGreen: 'rgb(221, 254, 222)',
-  lightBlue: 'rgb(223, 238, 255)'
+  lightGreen: '#ecfdf5',
+  lightBlue: '#f0f9ff',
+  greenBorder:'#6ee7b7',
+  greenBorderAlternate:'#34d399',
+  blueBorder:'#7dd3fc',
+  blueBorderAlternate:'#38bdf8',
+  blueBaseAlternate: '#7dd3fc',
+  greenBaseAlternate: '#6ee7b7',
+  redBorder:'#ef4444',
+redBackground: '#fca5a5',
+redBackgroundAlternate: '#dc2626',
+redText:'#450a0a',
+redTextAlternate:'#fef2f2',
+
+
 }
 
 function formatDates(startDate, endDate) {
@@ -33,6 +46,7 @@ export default function CampSchedule({
   type,
   weeks,
   dates,
+  subDates,
   discountedWeeks,
   programs,
 }) {
@@ -61,8 +75,24 @@ export default function CampSchedule({
         {discountedWeeks?.length > 0 && (
           <div className="schedule__spacerDiscount">&nbsp;</div>
         )}
-        <div className="schedule__spacer">Program / Date</div>
-        {programs.map((program, i) => (
+        <div className="schedule__spacer" style={{borderRadius:'8px 0 0 0'}}>Full Week</div>
+        <div className="schedule__spacer" style={{height:'40px', position:'relative'}}>
+          Half Week
+          <div style={{
+            position:'absolute',
+            top: '-4px',
+            right: '-4px',
+            background:colors.redBackgroundAlternate,
+            color: colors.redTextAlternate,
+            padding:'2px 4px',
+            fontSize:'9pt',
+           fontWeight:'bold',
+            borderRadius:'100px'
+          }}>NEW</div>
+          </div>
+        {programs.map((program, i) => {
+          const isLastProgram = i === programs.length -1
+          return (
           <div key={i} 
           // className="schedule__program"
             style={{
@@ -77,12 +107,14 @@ export default function CampSchedule({
               textAlign:'center',
               boxSizing:'border-box',
               padding:'0 8px',
-              position:'relative'
+              position:'relative',
+              ...(isLastProgram && {borderRadius:'0 0 0 8px'})
             }}
           >
             {program.name}
           </div>
-        ))}
+        )
+        })}
       </div>
       <div className="schedule__dates">
         <div
@@ -114,7 +146,7 @@ export default function CampSchedule({
           {dates.map((date, i) => {
             const isDiscount = discountedWeeks[i]
             const isPreviousDiscount = discountedWeeks[i - 1]
-
+            
             return (
               <div
                 key={i}
@@ -128,7 +160,13 @@ export default function CampSchedule({
                   } ${weeks && type && weeks[i] !== type
                     ? "schedule__date--secondary"
                     : ""
-                  }`}
+                  }`
+                }
+                style={{
+                  fontWeight:'bold',
+                  ...(i === dates.length -1 && {borderRadius: '0px 8px 0px 0px'})
+                }}
+                  // style={{display:'block'}}
               >
                 <div>
                   <div className="schedule__dateHeading">{formatDates(date[0],date[1])}</div>
@@ -147,10 +185,108 @@ export default function CampSchedule({
                       {weeks[i]}
                     </div>
                   )}
+                  {/* {subDate && (
+                    <div style={{borderTop:'1px solid rgba(0,0,0,0.2)', display:'grid', gridTemplateColumns:'1fr 1fr', margin:'0 -10px'}}>
+                      {subDate?.map((date,i) => {
+                        return (
+                          <div key={i}
+                            style={{
+                              fontSize:'9pt',
+                              ...(i > 0 && {borderLeft: '1px solid rgba(0,0,0,0.2)'})
+                            }}
+                          >
+                            {formatDates(date[0], date[1])}
+                            </div>
+                        )
+                      })}
+                      </div>
+                  )} */}
                 </div>
               </div>
             )
           })}
+        </div>
+        <div
+          className="schedule__row"
+          style={{
+            display: "grid",
+            gridTemplateColumns: `repeat(${dates.length}, 1fr)`,
+          }}
+        >
+          {dates.map((date, i) => {
+            const isDiscount = discountedWeeks[i]
+            const isPreviousDiscount = discountedWeeks[i - 1]
+            
+            const subDate = subDates[i]
+            
+            const week = weeks[i]
+            
+            
+
+            return (
+              <div
+                key={i}
+                className={`schedule__date ${isDiscount ? "schedule__date--discount" : ""
+                  } ${isPreviousDiscount ? "schedule__date--discountPrevious" : ""
+                  } ${weeks && weeks[i] === "UDC"
+                    ? `schedule__date--UDC`
+                    : weeks && weeks[i] === "ONC"
+                      ? "schedule__date--ONC"
+                      : ""
+                  } ${weeks && type && weeks[i] !== type
+                    ? "schedule__date--secondary"
+                    : ""
+                  }`
+                }
+                  style={{display:'block', height:'40px', padding:'0', background:  week === 'ONC' ? colors.greenBaseAlternate: colors.blueBaseAlternate, borderLeft: `1px solid ${ (isDiscount || isPreviousDiscount) ? colors.redBorder :week==='ONC' ? colors.greenBorderAlternate:colors.blueBorderAlternate}`, borderTop: `1px solid ${week === 'ONC' ? colors.greenBorderAlternate:colors.blueBorderAlternate}`}}
+              >
+                <div style={{ width:'100%', height:'100%', fontWeight:'bold'}}>
+                {!subDate && <div style={{display:'flex', alignItems:'center',justifyContent:'center', height:'100%', color:'rgba(0,0,0,0.3)'}}>-</div>}
+                {subDate &&(
+           <>
+                             {weeks && (
+                    <div
+                      className={`${weeks && type && week !== type
+                        ? "schedule__date--secondary"
+                        : week === "UDC"
+                          ? "schedule__dateColor--UDC"
+                          : week === "ONC"
+                            ? "schedule__dateColor--ONC"
+                            : ""
+                        }`}
+                          style={{height:'100%'}}
+                    >
+                                        {subDate && (
+                    <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', height:'100%'}}>
+                      {subDate?.map((date,i) => {
+                        return (
+                          <div key={i}
+                            style={{
+                              fontSize:'9pt',
+                                      height:'100%',
+                                      display:'flex',
+                                      justifyContent:'center',
+                                      alignItems:'center',
+                              ...(i > 0 && {borderLeft: `1px solid ${week === 'ONC' ? colors.greenBorderAlternate:colors.blueBorderAlternate}`})
+                            }}
+                          >
+                            {formatDates(date[0], date[1])}
+                            </div>
+                        )
+                      })}
+                      </div>
+                  )}
+
+                    </div>
+                  )}
+</> 
+          )}
+
+              </div>
+              </div>
+            )
+          })}
+
         </div>
         {programs.map((program, programIndex) => {
           const isLastProgram = programIndex === programs.length - 1
@@ -194,6 +330,7 @@ export default function CampSchedule({
             >
               
               {dates?.map((date,dateIndex) => {
+                const isLastDate = dateIndex === dates.length -1
                 const weekLength = Math.floor(
                   Math.abs(
                     date[0].getTime() - date[1].getTime()
@@ -260,17 +397,22 @@ return (
                       }),
                       ...(fullWeekProgram?.length > 0 && halfWeekProgram?.length > 0 && { gridTemplateRows: '1fr 1fr' }),
                       ...(isDiscount && {
-                        borderLeft: '1px solid red',
+                        borderLeft: '1px solid #ef4444',
                         ...(programs.length -1 === programIndex && {
-                          borderBottom: '1px solid red'
+                          borderBottom: '1px solid #ef4444'
                         }),
                       }),
                       ...(isPreviousDiscount && {
-                        borderLeft: '1px solid red'
+                        borderLeft: '1px solid #ef4444'
                       }),
                       ...(type && weekType !== type && filteredPrograms?.length > 0 && {
                         color: 'rgba(0,0,0,0.2)',
+                      }),
+
+                      ...(isLastProgram && isLastDate && {
+                        borderRadius:'0 0 8px 0'
                       })
+
                     }}
   >
                                         {
@@ -575,23 +717,40 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
           [new Date('2027-08-23T00:00:00.000-04:00'), new Date('2027-08-27T23:59:59.999-04:00')],
           [new Date('2027-08-30T00:00:00.000-04:00'), new Date('2027-09-03T23:59:59.999-04:00')],
         ]}
+        subDates={[
+          [
+            [new Date('2027-07-04T00:00:00.000-04:00'), new Date('2027-07-06T23:59:59.999-04:00')],
+            [new Date('2027-07-07T00:00:00.000-04:00'), new Date('2027-07-09T23:59:59.999-04:00')],
+          ],
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          [
+            [new Date('2027-08-30T00:00:00.000-04:00'), new Date('2027-09-01T23:59:59.999-04:00')],
+            [new Date('2027-08-30T00:00:00.000-04:00'), new Date('2027-09-03T23:59:59.999-04:00')],
+          ],
+        ]}
         programs={[
           ...(!sections || sections.includes("hockey")
             ? [
               {
-                name: <div>Hockey Camp <br/><span style={{fontSize:'9pt'}}>(ONC - Full Week)</span></div>,
+                name: <div>Hockey Camp <br/><span style={{fontSize:'9pt'}}>(ONC)</span></div>,
                 ids: [2],
-                fullWeek: true
+                // fullWeek: true
               },
-              {
-                name: <div>
-                  Hockey Camp <br/><span style={{fontSize:'9pt'}}>(ONC - Half Week)</span>
-                  <div style={{background:'red', position:'absolute', top:'-5px', right:'-5px', fontSize:'9pt', fontWeight:'bold', padding:'2px 4px', borderRadius:'100px'}}>NEW</div>
-                </div>,
-                ids: [2],
-                halfWeek: true,
-                new:true
-              },
+              // {
+              //   name: <div>
+              //     Hockey Camp <br/><span style={{fontSize:'9pt'}}>(ONC - Half Week)</span>
+              //     <div style={{background:'red', position:'absolute', top:'-5px', right:'-5px', fontSize:'9pt', fontWeight:'bold', padding:'2px 4px', borderRadius:'100px'}}>NEW</div>
+              //   </div>,
+              //   ids: [2],
+              //   halfWeek: true,
+              //   new:true
+              // },
               {
                 name: <div>Hockey Camp<br/><span style={{fontSize:'9pt'}}>(UDC)</span></div>,
                 overrideType: 'UDC',
@@ -654,16 +813,16 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
             ? [
               {
                 ids: [70, 73],
-                name: <div>WHAM Camp<br/><span style={{fontSize:'9pt'}}>(Full Week)</span></div>,
-                fullWeek: true
+                name: <div>WHAM Camp</div>,
+                // fullWeek: true
               },
-              {
-                ids: [70, 73],
-                name: <div >WHAM Camp<br/><span style={{fontSize:'9pt'}}>(Half Week)</span>                 
-                 <div style={{background:'red', position:'absolute', top:'-5px', right:'-5px', fontSize:'9pt', fontWeight:'bold', padding:'2px 4px', borderRadius:'100px'}}>NEW</div>
-</div>,
-                halfWeek: true
-              },
+//               {
+//                 ids: [70, 73],
+//                 name: <div >WHAM Camp<br/><span style={{fontSize:'9pt'}}>(Half Week)</span>                 
+//                  <div style={{background:'red', position:'absolute', top:'-5px', right:'-5px', fontSize:'9pt', fontWeight:'bold', padding:'2px 4px', borderRadius:'100px'}}>NEW</div>
+// </div>,
+//                 halfWeek: true
+//               },
               
             ]
             : []),
@@ -685,17 +844,17 @@ export function PreBuiltCampSchedule({ sections, type: defaultType = null }) {
               },
               {
                 ids: [16],
-                name: <div>Junior Camp <br/><span style={{fontSize:'9pt'}}>(Hockey - Full Week)</span></div>,
-                fullWeek: true
+                name: <div>Junior Camp <br/><span style={{fontSize:'9pt'}}>(Hockey)</span></div>,
+                // fullWeek: true
               },
-              {
-                ids: [16],
-                name: <div >Junior Camp <br/><span style={{fontSize:'9pt'}}>(Hockey - Half Week)</span>
-                                   <div style={{background:'red', position:'absolute', top:'-5px', right:'-5px', fontSize:'9pt', fontWeight:'bold', padding:'2px 4px', borderRadius:'100px'}}>NEW</div>
+              // {
+              //   ids: [16],
+              //   name: <div >Junior Camp <br/><span style={{fontSize:'9pt'}}>(Hockey - Half Week)</span>
+              //                      <div style={{background:'red', position:'absolute', top:'-5px', right:'-5px', fontSize:'9pt', fontWeight:'bold', padding:'2px 4px', borderRadius:'100px'}}>NEW</div>
 
-                </div>,
-                halfWeek: true
-              },
+              //   </div>,
+              //   halfWeek: true
+              // },
             ]
             : []),
         ]}
