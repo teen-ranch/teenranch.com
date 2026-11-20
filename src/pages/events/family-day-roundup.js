@@ -26,7 +26,7 @@ import { Time } from "components/Time";
 
 const frontmatter = {
 	title: "Teen Ranch - Family Day Roundup",
-	path: "/events/family-day/",
+	path: "/events/family-day-roundup/",
 };
 
 const pageData = {
@@ -74,8 +74,8 @@ export default function Default({ data }) {
                 this Family Day!
             </p>
             <h2>When is it?</h2>
-            Monday, February 16, 2026: <Time>1000</Time> - <Time>1200</Time> (doors
-            open at <Time>0945</Time>)<h2>Who is it for?</h2>
+            Monday, February 15, 2027: <Time>1200</Time> - <Time>1400</Time> (doors
+            open at <Time>1145</Time>)<h2>Who is it for?</h2>
             Open to all ages
             <h2>Cost</h2>
             <strong>FREE</strong>
@@ -127,10 +127,10 @@ export default function Default({ data }) {
             <h1>Upcoming events</h1>
             <Event
                 title={frontmatter.title}
-                startDate={"2025-02-17"}
-                startTime="10:00:00"
-                endDate={"2025-02-17"}
-                endTime="12:00:00"
+                startDate={"2027-02-15"}
+                startTime="12:00:00"
+                endDate={"2027-02-15"}
+                endTime="14:00:00"
                 price={0}
                 description={eventData.description}
                 venue={eventData.venue}

@@ -316,7 +316,12 @@ export default function Header({ location }) {
 												</li>
 												<li>
 													<NavLink to="/events/family-day-roundup/">
-														Family day roundup
+														Family Day FREE Skate
+													</NavLink>
+												</li>
+												<li>
+													<NavLink to="/events/easter-roundup/">
+														Easter FREE Skate
 													</NavLink>
 												</li>
 												{/* <li>

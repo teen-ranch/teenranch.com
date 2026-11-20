@@ -236,7 +236,10 @@ export default function Footer() {
 								</Link>
 							</li>
 							<li>
-								<Link to="/events/family-day-roundup/">Family day roundup</Link>
+								<Link to="/events/family-day-roundup/">Family Day FREE Skate</Link>
+							</li>
+							<li>
+								<Link to="/events/easter-roundup/">Easter FREE Skate</Link>
 							</li>
 							{/* <li>
 								<Link to="/events/easter-roundup/">Easter roundup</Link>
