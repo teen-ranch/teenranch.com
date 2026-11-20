@@ -58,11 +58,11 @@ export default function Default({ data }) {
 		<Event
 			key={1}
 			title={frontmatter.title}
-			startDate={DateTime.fromISO("2026-05-08", {
+			startDate={DateTime.fromISO("2027-05-07", {
 				zone: "America/Toronto",
 			}).toISODate()}
 			startTime="19:00:00"
-			endDate={DateTime.fromISO("2026-05-10", {
+			endDate={DateTime.fromISO("2027-05-09", {
 				zone: "America/Toronto",
 			}).toISODate()}
 			endTime="14:00:00"
@@ -107,7 +107,7 @@ export default function Default({ data }) {
             <Grid md={2}>
 <div>
             <h3>When is it?</h3>
-            <p>May 8-10, 2026</p>
+            <p>May 7-9, 2027</p>
             <h3>Who is it for?</h3>
                     <p>Mothers & Daughters, <strong>Age 8+</strong></p>
 
@@ -118,7 +118,7 @@ export default function Default({ data }) {
 
             <ul>
                 <li>
-                    <strong>Olympic Style/Chalet Room:</strong> $450 +HST /person (Bring
+                    <strong>Olympic Style/Chalet Room:</strong> $465 +HST /person (Bring
                     your own bedding & towels)
                     <em>
                         {" "}
@@ -127,7 +127,7 @@ export default function Default({ data }) {
                     </em>
                 </li>
                 <li>
-                    <strong>Western-style Hotel Room:</strong> $515 +HST /person (Linens
+                    <strong>Western-style Hotel Room:</strong> $530 +HST /person (Linens
                     & towels provided)
                     <em>
                         {" "}
@@ -136,7 +136,7 @@ export default function Default({ data }) {
                     </em>
                 </li>
                 <li>
-                    <strong>Coach House/Family Suite:</strong> $555 +HST /person (Linens
+                    <strong>Coach House/Family Suite:</strong> $570 +HST /person (Linens
                     & towels provided)
                     <em>
                         {" "}
