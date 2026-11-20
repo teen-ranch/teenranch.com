@@ -70,11 +70,8 @@ export default function Programs({ data }) {
       <h1>Available dates</h1>
 
       <ul>
-        <li>Monday, December 22, 2025</li>
-        <li>Tuesday, December 23, 2025</li>
-        <li>Monday, December 29, 2025</li>
-        <li>Tuesday, December 30, 2025</li>
-        <li>Wednesday, December 31, 2025</li>
+        <li>Monday December 21, 2026 - Wednesday December 23, 2026</li>
+        <li>Tuesday December 29, 2026 - Thursday December 31, 2026</li>
       </ul>
 
       <p>
@@ -98,7 +95,7 @@ export default function Programs({ data }) {
           }
           subTitle={`Individual day`}
           who="Kids ages 5-12"
-          price={89}
+          price={92}
           term="day"
           includes={dayCampBulletsClassic}
         >
@@ -121,8 +118,8 @@ export default function Programs({ data }) {
             </>
           }
           who="Kids ages 5-12"
-          price={395}
-          term="5 days"
+          price={245}
+          term="3 days"
           includes={dayCampBulletsClassic}
         >
           <CTAButton href="https://register.trmanager.com">
@@ -140,7 +137,7 @@ export default function Programs({ data }) {
           }
           subTitle={`Individual day`}
           who="Kids ages 5-12"
-          price={120}
+          price={125}
           term="day"
           includes={dayCampBulletsHockey}
         >
@@ -163,8 +160,8 @@ export default function Programs({ data }) {
             </>
           }
           who="Kids ages 5-12"
-          price={545}
-          term="5 days"
+          price={335}
+          term="3 days"
           includes={dayCampBulletsHockey}
         >
           <CTAButton href="https://register.trmanager.com">
