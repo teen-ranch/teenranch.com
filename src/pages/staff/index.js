@@ -50,6 +50,9 @@ main
             <p><strong>Lifeguard:</strong> Play a vital role in ensuring a safe and enjoyable swimming experience for all campers. To qualify, you must hold a current NLS certification (Waterfront preferred), have waterfront experience or an equivalent qualification based on OCA standards, and possess strong communication skills. This position is often combined with another role to provide a well-rounded experience.</p>
             
             <p><strong>Maintenance:</strong> Be part of a hardworking team dedicated to keeping Teen Ranch's buildings, facilities, and grounds in top condition. Responsibilities include grounds maintenance such as grass cutting, raking, weeding, as well as facilities maintenance. Additional tasks may involve building repairs and construction to ensure a safe and welcoming environment for all.</p>
+      
+                  <Button target="_blank" href="https://forms.zohopublic.com/teenranch1/form/SummerStaffApplication2027/formperma/NnPbRa5gqar7vDxqVau3OZbp2eAA5n6O-J9uutLo3cA">Summer Camp: Staff Application Form</Button>
+
             
             <h2>Year Round Camp Staff</h2>
             
