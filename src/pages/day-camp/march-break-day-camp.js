@@ -71,7 +71,7 @@ export default function Programs({ data }) {
       <h1>Available dates</h1>
 
       <ul>
-        <li>March 16-20, 2026</li>
+        <li>March 15-19, 2027</li>
       </ul>
 
       <p>
@@ -83,7 +83,7 @@ export default function Programs({ data }) {
     <div id="pricing" style={{ position: "absolute", marginTop: "-180px" }} />
 
 
-    <Container type="body">
+    {/* <Container type="body">
       <h1>Pricing</h1>
     
       <PriceContainer>
@@ -169,12 +169,10 @@ export default function Programs({ data }) {
            </CTAButton> 
          </Price> 
        </PriceContainer> 
-     </Container> 
-    
-     <Container> 
+     </Container>  
+      <Container> 
        <p>* Weather permitting</p> 
-       {/* <p>** Ice skating not available on January 28, 2022</p> */} 
-     </Container> 
+     </Container>  */}
   </>;
 }
 
