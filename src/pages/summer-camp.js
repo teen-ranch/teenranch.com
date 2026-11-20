@@ -409,9 +409,10 @@ export default function Programs({ data }) {
                 <h2 style={{ margin: "0 0 2rem 0" }}>
                     Balance payments, info pack, and snackbar:
                 </h2>{" "}
-                6 weeks before your camp check-in date we'll send you an email with:
+        <p>Remaining Summer Camp balances are due May 15th.</p>
+                {/* 6 weeks before your camp check-in date we'll send you an email with:
                 all the details you need for camp, a link to pay your remaining
-                balance, and set up your snackbar account(s).
+                balance, and set up your snackbar account(s). */}
             </div>
         </Container>
     </>;

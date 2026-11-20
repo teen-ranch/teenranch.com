@@ -61,7 +61,7 @@ export default function Terms({ type }) {
 				<p>
 					In order to keep payments as low-risk as possible for you, we are only
 					requiring a $250 non-refundable deposit per overnight camp
-					registration. The balance will be due 6 weeks prior to arrival at camp
+					registration. The balance will be due May 15th
 					and is non-refundable. In the case of absence for any reason during
 					the camp week, including illness, injury, homesickness, or disciplinary
 					departure, no refund will be issued. In the case of special
@@ -70,7 +70,7 @@ export default function Terms({ type }) {
 				<ul>
 					<li>$250 non-refundable deposit per overnight camp registration</li>
 					<li>
-						The balance is due 6 weeks prior to arrival at camp and is
+						The balance is due May 15th and is
 						non-refundable.
 					</li>
 				</ul>
@@ -85,7 +85,7 @@ export default function Terms({ type }) {
 				<p>
 					In order to keep payments as low-risk as possible for you, we are only
 					requiring a $175 non-refundable deposit per ultimate day camp
-					registration. The balance will be due 6 weeks prior to arrival at camp
+					registration. The balance will be due May 15th
 					and is non-refundable. In the case of absence for any reason during
 					the camp week, including illness, injury, homesickness, or disciplinary
 					departure, no refund will be issued. In the case of special
@@ -96,7 +96,7 @@ export default function Terms({ type }) {
 						$175 non-refundable deposit per ultimate day camp registration
 					</li>
 					<li>
-						The balance is due 6 weeks prior to arrival at camp and is
+						The balance is due May 15th and is
 						non-refundable.
 					</li>
 				</ul>
@@ -111,7 +111,7 @@ export default function Terms({ type }) {
 				<p>
 					In order to keep payments as low-risk as possible for you, we are only
 					requiring a $100 non-refundable deposit per day camp registration. The
-					balance will be due 6 weeks prior to arrival at camp and is
+					balance will be due May 15th and is
 					non-refundable. In the case of absence for any reason during the camp
 					week, including illness, injury, homesickness, or disciplinary departure, no
 					refund will be issued. In the case of special circumstances, contact
@@ -120,7 +120,7 @@ export default function Terms({ type }) {
 				<ul>
 					<li>$100 non-refundable deposit per day camp registration</li>
 					<li>
-						The balance is due 6 weeks prior to arrival at camp and is
+						The balance is due May 15th and is
 						non-refundable.
 					</li>
 				</ul>
@@ -152,7 +152,7 @@ export default function Terms({ type }) {
 			<p>
 				In order to keep payments as low-risk as possible for you, we are only
 				requiring a non-refundable deposit per registration. The balance will be
-				due 6 weeks prior to arrival at camp and is non-refundable. In the case
+				due May 15th and is non-refundable. In the case
 				of absence for any reason during the camp week, including illness, injury,
 				homesickness, or disciplinary departure, no refund will be issued. In
 				the case of special circumstances, contact the camp registrar.
@@ -162,7 +162,7 @@ export default function Terms({ type }) {
 				<li>$175 non-refundable deposit ultimate day camp registration</li>
 				<li>$250 non-refundable deposit per overnight camp registration</li>
 				<li>
-					The balance is due 6 weeks prior to arrival at camp and is
+					The balance is due May 15th and is
 					non-refundable.
 				</li>
 			</ul>
