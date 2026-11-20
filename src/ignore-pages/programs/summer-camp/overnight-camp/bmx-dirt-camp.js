@@ -198,7 +198,7 @@ export default function Programs({ data }) {
       <p>
         In order to keep payments as low-risk as possible for you, we are only
         requiring a $50 non-refundable deposit per registration. The balance
-        will be due 6 weeks prior to arrival at camp and is non-refundable. In
+        will be due May 15th and is non-refundable. In
         the case of absence for any reason during the camp week, including
         homesickness or disciplinary departure, no refund will be issued
         except upon a signed physician’s order. In this event, a prorated camp
@@ -207,7 +207,7 @@ export default function Programs({ data }) {
       <ul>
         <li>$50 non-refundable deposit per registration</li>
         <li>
-          The balance is due 6 weeks prior to arrival at camp and is
+          The balance is due May 15th and is
           non-refundable.
         </li>
       </ul>
