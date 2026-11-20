@@ -68,15 +68,16 @@ export default function Programs({ data }) {
 
     <Container type="body">
       <h1>Available dates</h1>
+      
 
       <ul>
-        <li>Monday December 21, 2026 - Wednesday December 23, 2026</li>
-        <li>Tuesday December 29, 2026 - Thursday December 31, 2026</li>
+        <li><strong>Pre-Christmas:</strong> Monday December 21, 2026 - Wednesday December 23, 2026</li>
+        <li><strong>Post-Christmas:</strong>Tuesday December 29, 2026 - Thursday December 31, 2026</li>
       </ul>
 
       <p>
         Drop off <Time>0845</Time> and pick up
-        at <Time>1645</Time>
+        at <Time>1645</Time>, individual days and bundle options available.
       </p>
     </Container>
 
